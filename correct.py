@@ -1,6 +1,5 @@
 # coding: utf-8
 import os
-import json
 import openai
 import argparse
 from tqdm import tqdm

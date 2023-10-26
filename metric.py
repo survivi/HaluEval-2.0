@@ -1,5 +1,6 @@
 import os
 import json
+import argparse
 
 
 def cal_matrics(count):
@@ -41,17 +42,42 @@ def get_info(judge_list):
 
 
 if __name__ == "__main__":
-    data_path = "./judge"
-    model = "llama-2-13b-chat-hf"
-    files = [
+    parser = argparse.ArgumentParser(description="Metric Calculation")
+    file_list = [
         "Bio-Medical",
         "Finance",
         "Science",
         "Education",
         "Open-Domain",
     ]
+    parser.add_argument(
+        "--data-dir",
+        default="./judge/",
+        help="data root directory",
+    )
+    parser.add_argument(
+        "--model",
+        default="llama-2-13b-chat-hf",
+        choices=[
+            "chatgpt",
+            "text-davinci-002",
+            "text-davinci-003",
+            # "llama-2-7b-hf",
+            "llama-2-7b-chat-hf",
+            # "llama-2-13b-hf",
+            "llama-2-13b-chat-hf",
+            "alpaca-7b",
+            "vicuna-7b",
+            "vicuna-13b",
+            "chatglm-6b",
+        ],
+        help="chat model to use",
+    )
+    args = parser.parse_args()
+    data_path = args.data_dir
+    model = args.model
     total_count = []
-    for file in files:
+    for file in file_list:
         print("current file: ", file)
         data = load_pure_data(data_path, file)
         count = []

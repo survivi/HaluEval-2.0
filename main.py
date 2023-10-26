@@ -10,7 +10,6 @@ from transformers import (
     AutoTokenizer,
     AutoModelForCausalLM,
     AutoModel,
-    pipeline,
 )
 
 
