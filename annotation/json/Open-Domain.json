@@ -1,0 +1,3086 @@
+[
+  {
+    "id": 0,
+    "user_query": "What position on the Billboard Top 100 did Alison Moyet's late summer hit achieve?",
+    "llama-2-13b-chat-hf_response": "A) 2\nB) 4\nC) 6\nD) 8\nAnswer: C) 6. Alison Moyet's late summer hit reached number 6 on the Billboard Top 100 chart.",
+    "llama-2-13b-chat-hf_fact": [
+      "Alison Moyet's late summer hit reached number 6 on the Billboard Top 100 chart."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Alison Moyet's late summer hit reached number 6 on the UK Singles Chart, not the Billboard Top 100 chart."
+    ]
+  },
+  {
+    "id": 1,
+    "user_query": "What year did the British politician born in 1967 began to represent the Daventry in the UK House of Commons?",
+    "llama-2-13b-chat-hf_response": "The British politician born in 1967 began to represent the Daventry in the UK House of Commons in 2010.",
+    "llama-2-13b-chat-hf_fact": [
+      "The British politician born in 1967 began to represent Daventry in the UK House of Commons in 2010."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The British politician born in 1967 did not represent Daventry in the UK House of Commons in 2010."
+    ]
+  },
+  {
+    "id": 2,
+    "user_query": "Which franchise was founded in 1978, Chuck E. Cheese's or Jet's Pizza?",
+    "llama-2-13b-chat-hf_response": "Chuck E. Cheese's was founded in 1978. Jet's Pizza was founded in 1977.",
+    "llama-2-13b-chat-hf_fact": [
+      "Chuck E. Cheese's was founded in 1978.",
+      "Jet's Pizza was founded in 1977."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: Jet's Pizza was founded in 1978."
+    ]
+  },
+  {
+    "id": 3,
+    "user_query": "Roden Cutler House is owned by an electricity infrastructure company that is owned by the Government of New South Wales, Australia, and was formed in what year?",
+    "llama-2-13b-chat-hf_response": "The \nCorrect answer: 1985\nThe Roden Cutler House is owned by TransGrid, an electricity infrastructure company that was established in 1985 as a state-owned corporation of the Government of New South Wales, Australia.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Roden Cutler House is owned by TransGrid.",
+      "TransGrid is an electricity infrastructure company.",
+      "TransGrid was established in 1985.",
+      "TransGrid is a state-owned corporation.",
+      "TransGrid is owned by the Government of New South Wales, Australia."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: TransGrid was established in 1994.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 5,
+    "user_query": "Who wrote the film whose soundtrack was composed by George Fenton and was nominated for the BAFTA Award for Best Film Music?",
+    "llama-2-13b-chat-hf_response": "A. The Fisher King\nB. Groundhog Day\nC. Dangerous Liaisons\nD. The Remains of the Day\nAnswer: D. The Remains of the Day.",
+    "llama-2-13b-chat-hf_fact": [
+      "The soundtrack of the film \"The Remains of the Day\" was composed by George Fenton.",
+      "The film \"The Remains of the Day\" was nominated for the BAFTA Award for Best Film Music."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 7,
+    "user_query": "Is Fairbanks International Airport or Gulfport–Biloxi International Airport further away from a central business district?",
+    "llama-2-13b-chat-hf_response": "Fairbanks International Airport (FAI) is located approximately 12 miles from the central business district of Fairbanks, Alaska.\nGulfport–Biloxi International Airport (GPT) is located approximately 25 miles from the central business district of Gulfport, Mississippi.\nTherefore, Gulfport–Biloxi International Airport is further away from its central business district compared to Fairbanks International Airport.",
+    "llama-2-13b-chat-hf_fact": [
+      "Fairbanks International Airport is located approximately 12 miles from the central business district of Fairbanks, Alaska.",
+      "Gulfport–Biloxi International Airport is located approximately 25 miles from the central business district of Gulfport, Mississippi."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 8,
+    "user_query": "Bill Bower was the only surviving pilot of a raid that took place in what country?",
+    "llama-2-13b-chat-hf_response": "Answer: Bill Bower was the only surviving pilot of a raid that took place in Germany during World War II.",
+    "llama-2-13b-chat-hf_fact": [
+      "Bill Bower was the only surviving pilot of a raid that took place in Germany.",
+      "The raid took place during World War II."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 9,
+    "user_query": "What country was the judge who joined Carla Hall in the second season of Halloween Baking Championship, who was also cookbook author and who resides in Moorpark, California, from?",
+    "llama-2-13b-chat-hf_response": "The judge who joined Carla Hall in the second season of Halloween Baking Championship, who was also a cookbook author and resides in Moorpark, California, was from Canada.",
+    "llama-2-13b-chat-hf_fact": [
+      "The judge who joined Carla Hall in the second season of Halloween Baking Championship was from Canada.",
+      "The judge is also a cookbook author.",
+      "The judge resides in Moorpark, California."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 10,
+    "user_query": "Which program is Pam DeCosta assistant coach for?",
+    "llama-2-13b-chat-hf_response": "Pam DeCosta is an assistant coach for the University of Maryland women's basketball team.",
+    "llama-2-13b-chat-hf_fact": [
+      "Pam DeCosta is an assistant coach.",
+      "Pam DeCosta is the assistant coach for the University of Maryland women's basketball team."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 11,
+    "user_query": "What body of water is near the transmitter for XHJR-FM?",
+    "llama-2-13b-chat-hf_response": "The answer is the Gulf of Mexico.",
+    "llama-2-13b-chat-hf_fact": [
+      "XHJR-FM has a transmitter located near the Gulf of Mexico."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: XHJR-FM does not have a transmitter located near the Gulf of Mexico."
+    ]
+  },
+  {
+    "id": 12,
+    "user_query": "Mister Magoo's Christmas Carol included voice-over work from the director of stage and film who is of what nationality?",
+    "llama-2-13b-chat-hf_response": "The voice of the Ghost of Christmas Past in Mister Magoo's Christmas Carol was provided by the director of stage and film, Orson Welles.",
+    "llama-2-13b-chat-hf_fact": [
+      "Orson Welles provided the voice of the Ghost of Christmas Past in Mister Magoo's Christmas Carol.",
+      "Orson Welles was a director of stage and film."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 13,
+    "user_query": "Which documentary premiered at a film festival first, Darwin's Nightmare or The Mouth of the Wolf?",
+    "llama-2-13b-chat-hf_response": "Neither documentary premiered at a film festival first.\nDarwin's Nightmare was released in theaters first, on September 22, 2005, in France.\nThe Mouth of the Wolf was released straight-to-video on August 22, 2006, in the United States.",
+    "llama-2-13b-chat-hf_fact": [
+      "Darwin's Nightmare was released in theaters first, on September 22, 2005, in France.",
+      "The Mouth of the Wolf was released straight-to-video on August 22, 2006, in the United States."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 14,
+    "user_query": "What Air Force Base operates an aircraft developed by McDonnell Douglas from the 1980's to the early 1990's?",
+    "llama-2-13b-chat-hf_response": "Hint: The aircraft was primarily used for air-to-air combat and had a top speed of over Mach 2.\nAnswer: The Air Force Base that operates an aircraft developed by McDonnell Douglas from the 1980's to the early 1990's is Edwards Air Force Base. The aircraft is the F-15 Eagle.",
+    "llama-2-13b-chat-hf_fact": [
+      "Edwards Air Force Base operated an aircraft developed by McDonnell Douglas from the 1980's to the early 1990's.",
+      "The aircraft operated by Edwards Air Force Base was primarily used for air-to-air combat.",
+      "The aircraft operated by Edwards Air Force Base had a top speed of over Mach 2.",
+      "The aircraft operated by Edwards Air Force Base was the F-15 Eagle."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: The aircraft operated by Edwards Air Force Base was primarily used for flight testing and research purposes.",
+      "true",
+      "false, [corrected fact]: The aircraft operated by Edwards Air Force Base was the F-16 Fighting Falcon."
+    ]
+  },
+  {
+    "id": 15,
+    "user_query": "Christina Aguilera and Christina Grimmie we're both in what profession?",
+    "llama-2-13b-chat-hf_response": "A) Actresses\nB) Singers\nC) Dancers\nD) Models\nAnswer: B) Singers",
+    "llama-2-13b-chat-hf_fact": [
+      "Christina Aguilera and Christina Grimmie were singers."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 16,
+    "user_query": "From which film the film took a plot in which  Jonathan Ray Banks has his first notable film roles?",
+    "llama-2-13b-chat-hf_response": "Answer: 48 Hrs. (1982)\nIn the film, Banks plays a small but memorable role as a gang member who is interrogated by Eddie Murphy's character, Jack Cates. This was one of Banks' first notable film roles and helped launch his career as a character actor.",
+    "llama-2-13b-chat-hf_fact": [
+      "Jonathan Ray Banks had his first notable film role in the film 48 Hrs. in 1982.",
+      "In the film 48 Hrs., Banks plays a gang member.",
+      "Banks' character is interrogated by Eddie Murphy's character, Jack Cates.",
+      "Banks' role in 48 Hrs. helped launch his career as a character actor."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 17,
+    "user_query": "What's the name of the new class of U.S. Navy submarine, due to replace the Ohio from 2031 onwards?",
+    "llama-2-13b-chat-hf_response": "The new class of U.S. Navy submarine, due to replace the Ohio from 2031 onwards, is called the Columbia-class.",
+    "llama-2-13b-chat-hf_fact": [
+      "The new class of U.S. Navy submarine is called the Columbia-class.",
+      "The Columbia-class submarine is due to replace the Ohio from 2031 onwards."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 18,
+    "user_query": "Elongated Man, a resident of Opal City, exists in comic books by which U.S. publisher?",
+    "llama-2-13b-chat-hf_response": "Note: The Elongated Man is a DC Comics character.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Elongated Man is a DC Comics character."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 19,
+    "user_query": "What political role was Nattrass critical of during Mbeki's faulty policy?",
+    "llama-2-13b-chat-hf_response": "Nattrass was critical of Mbeki's AIDS denialism, which he saw as a major political mistake that cost many lives.\nWhat was the name of the policy that Nattrass was critical of during Mbeki's presidency?\nAIDS denialism.",
+    "llama-2-13b-chat-hf_fact": [
+      "Nattrass was critical of Mbeki's AIDS denialism.",
+      "Nattrass saw Mbeki's AIDS denialism as a major political mistake.",
+      "Mbeki's AIDS denialism cost many lives."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 20,
+    "user_query": "Where is the Diocese of Lincoln, where Anthony Otter was the sixth Bishop of Grantham?",
+    "llama-2-13b-chat-hf_response": "The Diocese of Lincoln is a Church of England diocese that covers the counties of Lincolnshire and Nottinghamshire in the East Midlands of England. The diocese was established in 1541 and its cathedral is Lincoln Cathedral. The current Bishop of Lincoln is the Right Reverend Christopher Lowson.\nAnthony Otter was the sixth Bishop of Grantham, which is a suffragan bishopric in the Diocese of Lincoln. The Bishop of Grantham is responsible for the spiritual care of the people of the diocese and works closely with the Bishop of Lincoln and other clergy to promote the mission of the Church of England in the diocese.\nThe Diocese of Lincoln is a large and diverse diocese that covers a wide range of urban and rural areas. It has a population of around 1.3 million people and includes the cities of Lincoln, Nottingham, and Grantham, as well as many smaller towns and villages. The diocese is known for its strong commitment to evangelism and mission, and has a number of initiatives and programs aimed at promoting the gospel and supporting the spiritual needs of the people of the diocese.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Diocese of Lincoln covers the counties of Lincolnshire and Nottinghamshire in the East Midlands of England.",
+      "The Diocese of Lincoln was established in 1541.",
+      "The cathedral of the Diocese of Lincoln is Lincoln Cathedral.",
+      "The current Bishop of Lincoln is the Right Reverend Christopher Lowson.",
+      "Anthony Otter was the sixth Bishop of Grantham, a suffragan bishopric in the Diocese of Lincoln."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: Anthony Otter was not the sixth Bishop of Grantham."
+    ]
+  },
+  {
+    "id": 21,
+    "user_query": "What American technology company headquartered in Dallas helped develop PREESM?",
+    "llama-2-13b-chat-hf_response": "PREESM is a pre-exposure prophylaxis (PrEP) medication used to prevent HIV infection. It is a combination of emtricitabine and tenofovir alafenamide, two drugs that are already approved for use in HIV treatment. The medication is taken daily and has been shown to be highly effective in preventing HIV infection in people who are at high risk of contracting the virus.\nThe development of PREESM was a collaborative effort between Gilead Sciences, a biopharmaceutical company, and the US government, specifically the National Institutes of Health (NIH) and the Centers for Disease Control and Prevention (CDC). Gilead Sciences provided the funding and resources for the clinical trials, while the NIH and CDC provided scientific expertise and support. The clinical trials were conducted at multiple sites across the United States and involved over 4,500 participants.\nPREESM was approved by the US Food and Drug Administration (FDA) in 2019 for use in HIV prevention, and it is now available by",
+    "llama-2-13b-chat-hf_fact": [
+      "PREESM is a pre-exposure prophylaxis (PrEP) medication used to prevent HIV infection.",
+      "Gilead Sciences is a biopharmaceutical company that collaborated in the development of PREESM.",
+      "The development of PREESM was a collaborative effort between Gilead Sciences, the US government (specifically the National Institutes of Health and the Centers for Disease Control and Prevention).",
+      "The clinical trials for PREESM involved over 4,500 participants and were conducted at multiple sites across the United States.",
+      "PREESM was approved by the US Food and Drug Administration (FDA) in 2019 for use in HIV prevention."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: PREESM is not a pre-exposure prophylaxis (PrEP) medication used to prevent HIV infection. (Provide the correct use or information)",
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: PREESM has not been approved by the US Food and Drug Administration (FDA) in 2019 for use in HIV prevention. (Provide the correct approval year, if known)"
+    ]
+  },
+  {
+    "id": 22,
+    "user_query": "The sixth season of \"The Voice\" included a new addtion to the coaching lineup, an English singer, songwriter, DJ, fashion designer and photographer who was part of what movement?",
+    "llama-2-13b-chat-hf_response": "A) The British Invasion\nB) The Beatles\nC) The Rolling Stones\nD) The Mods\nAnswer: A) The British Invasion.\nThe correct answer is A) The British Invasion. The new addition to the coaching lineup in the sixth season of \"The Voice\" was Harry Styles, who is a British singer, songwriter, and former member of the boy band One Direction. The British Invasion was a cultural and musical phenomenon in the 1960s where British bands and artists gained popularity in the United States and became a major influence on the music industry.",
+    "llama-2-13b-chat-hf_fact": [
+      "The new addition to the coaching lineup in the sixth season of \"The Voice\" was Harry Styles.",
+      "Harry Styles is a British singer, songwriter, and former member of the boy band One Direction.",
+      "The British Invasion was a cultural and musical phenomenon in the 1960s.",
+      "British bands and artists gained popularity in the United States during the British Invasion.",
+      "The British Invasion had a major influence on the music industry."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The new addition to the coaching lineup in the sixth season of \"The Voice\" was not Harry Styles. (No correction provided since the statement is false)",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 23,
+    "user_query": "Shilo Inns compete with the family hotels that have corporate headquarters in what city?",
+    "llama-2-13b-chat-hf_response": "A) Las Vegas\nB) Reno\nC) Salt Lake City\nD) Phoenix\nAnswer: A) Las Vegas\nShilo Inns compete with family hotels that have corporate headquarters in Las Vegas, such as Circus Circus and Excalibur.",
+    "llama-2-13b-chat-hf_fact": [
+      "Shilo Inns compete with family hotels that have corporate headquarters in Las Vegas.",
+      "Circus Circus and Excalibur are family hotels with corporate headquarters in Las Vegas."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 24,
+    "user_query": "Who contributed more to the early 1900s artistic world: Joe D'Amato or Man Ray?",
+    "llama-2-13b-chat-hf_response": "Joe D'Amato was an Italian film director, screenwriter, and actor, best known for his work in the horror and erotic film genres. He was active in the film industry from the 1970s until his death in 1999.\nMan Ray was an American-born artist who spent most of his career in Paris, France. He was a painter, photographer, and filmmaker, and was known for his avant-garde and surrealist works. He was active from the 1920s until his death in 1976.\nBoth Joe D'Amato and Man Ray were influential figures in their respective fields, but their contributions were quite different. Joe D'Amato was known for his work in the horror and erotic film genres, while Man Ray was known for his avant-garde and surrealist works in painting, photography, and film.\nIt's difficult to say who contributed more to the early 1900s artistic world, as both artists had significant impacts in their respective fields. However, Man Ray's work was more widely recognized and celebrated during his lifetime, and",
+    "llama-2-13b-chat-hf_fact": [
+      "Joe D'Amato was an Italian film director, screenwriter, and actor.",
+      "Joe D'Amato was best known for his work in the horror and erotic film genres.",
+      "Joe D'Amato was active in the film industry from the 1970s until his death in 1999.",
+      "Man Ray was an American-born artist who spent most of his career in Paris, France.",
+      "Man Ray was known for his avant-garde and surrealist works in painting, photography, and film."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 27,
+    "user_query": "Which author had closer ties to the Communist Party, Arthur Koestler or Sasha Sokolov?",
+    "llama-2-13b-chat-hf_response": "Arthur Koestler was a member of the Communist Party of Germany in his youth, but he left the party in 1931 due to his disagreement with the party's increasingly authoritarian and bureaucratic nature. He later became a vocal critic of communism and wrote several books that were critical of the Soviet Union and the Communist Party.\nSasha Sokolov, on the other hand, was never a member of the Communist Party. He was a Soviet writer who was known for his experimental and avant-garde style, and his works often explored themes of alienation, absurdity, and the human condition. While Sokolov's works were often critical of certain aspects of Soviet society, he never openly criticized the Communist Party or the Soviet government.\nTherefore, based on the information provided, it can be concluded that Arthur Koestler had closer ties to the Communist Party than Sasha Sokolov.",
+    "llama-2-13b-chat-hf_fact": [
+      "Arthur Koestler was a member of the Communist Party of Germany in his youth.",
+      "Arthur Koestler left the Communist Party in 1931 due to his disagreement with its authoritarian and bureaucratic nature.",
+      "Arthur Koestler became a vocal critic of communism and wrote several books critical of the Soviet Union and the Communist Party.",
+      "Sasha Sokolov was never a member of the Communist Party.",
+      "Sasha Sokolov's works often explored themes of alienation, absurdity, and the human condition."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 28,
+    "user_query": "Which Italian professional racing driver won the 2006 Malaysian Grand Prix?",
+    "llama-2-13b-chat-hf_response": "Note: The 2006 Malaysian Grand Prix was the 16th round of the 2006 Formula One World Championship.\nAnswer: Felipe Massa.\nExplanation: Felipe Massa, an Italian professional racing driver, won the 2006 Malaysian Grand Prix, driving for the Ferrari team.",
+    "llama-2-13b-chat-hf_fact": [
+      "The 2006 Malaysian Grand Prix was the 16th round of the 2006 Formula One World Championship.",
+      "Felipe Massa won the 2006 Malaysian Grand Prix.",
+      "Felipe Massa is an Italian professional racing driver.",
+      "Felipe Massa was driving for the Ferrari team in the 2006 Malaysian Grand Prix."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Felipe Massa is a Brazilian professional racing driver.",
+      "true"
+    ]
+  },
+  {
+    "id": 29,
+    "user_query": "Where is the head office of the Perez Art Museum Miami designing and architecture firm located?",
+    "llama-2-13b-chat-hf_response": "The head office of the Perez Art Museum Miami designing and architecture firm is located in Miami, Florida, United States.",
+    "llama-2-13b-chat-hf_fact": [
+      "The head office of the Perez Art Museum Miami designing and architecture firm is located in Miami, Florida, United States."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 30,
+    "user_query": "What is the name of the third album from singer Selena Quintanilla-Pérez?",
+    "llama-2-13b-chat-hf_response": "Selena's third album was titled \"Dreaming of You\".",
+    "llama-2-13b-chat-hf_fact": [
+      "The name of the third album from singer Selena Quintanilla-Pérez is \"Dreaming of You\"."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 31,
+    "user_query": "Are the two High Schools Cağaloğlu Anadolu Lisesi and St. George's Austrian High School both located in Turkey?",
+    "llama-2-13b-chat-hf_response": "Yes, both Cağaloğlu Anadolu Lisesi and St. George's Austrian High School are located in Turkey. Cağaloğlu Anadolu Lisesi is located in Istanbul, while St. George's Austrian High School is located in Istanbul as well.",
+    "llama-2-13b-chat-hf_fact": [
+      "Cağaloğlu Anadolu Lisesi is located in Istanbul, Turkey.",
+      "St. George's Austrian High School is located in Istanbul, Turkey."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: St. George's Austrian High School is not located in Istanbul, Turkey."
+    ]
+  },
+  {
+    "id": 32,
+    "user_query": "The writer of the memoir The Worst Journey in the World was a member of which expedition team?",
+    "llama-2-13b-chat-hf_response": "A. Scott of the Antarctic Expedition\nB. Shackleton's Imperial Trans-Antarctic Expedition\nC. Amundsen's South Pole Expedition\nD. The Terra Nova Expedition\nAnswer: B. Shackleton's Imperial Trans-Antarctic Expedition\nThe Worst Journey in the World is a memoir written by Apsley Cherry-Garrard, a member of Robert Falcon Scott's Terra Nova Expedition to the South Pole. The book is considered a classic of Antarctic literature and provides a firsthand account of the challenges and hardships faced by the expedition team.",
+    "llama-2-13b-chat-hf_fact": [
+      "The writer of the memoir \"The Worst Journey in the World\" was a member of the Shackleton's Imperial Trans-Antarctic Expedition.",
+      "Apsley Cherry-Garrard wrote \"The Worst Journey in the World\".",
+      "Apsley Cherry-Garrard was a member of Robert Falcon Scott's Terra Nova Expedition to the South Pole.",
+      "\"The Worst Journey in the World\" is considered a classic of Antarctic literature.",
+      "The memoir provides a firsthand account of the challenges and hardships faced by the expedition team."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Apsley Cherry-Garrard was a member of Robert Falcon Scott's Terra Nova Expedition to Antarctica, but not specifically to the South Pole.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 33,
+    "user_query": "Where are Mount Everest and Skil Brum located?",
+    "llama-2-13b-chat-hf_response": "Mount Everest is located in the Himalayas mountain range in Nepal and Tibet, China.\nSkil Brum is located in the Karakoram mountain range in Gilgit-Baltistan, Pakistan.\nWhat are the elevations of Mount Everest and Skil Brum?\nMount Everest has an elevation of 8,848 meters (29,029 feet) above sea level.\nSkil Brum has an elevation of 8,068 meters (26,460 feet) above sea level.\nWhat are the climbing routes to the summits of Mount Everest and Skil Brum?\nMount Everest has several climbing routes, including the South Col, the North Col, and the Northeast Ridge.\nSkil Brum has several climbing routes, including the North Ridge and the South Pillar.\nWhat are the challenges of climbing Mount Everest and Skil Brum?\nClimbing Mount Everest and Skil Brum are both extremely challenging due to their high elevations, steep slopes, and harsh weather conditions. Climbers must be highly",
+    "llama-2-13b-chat-hf_fact": [
+      "Mount Everest is located in the Himalayas mountain range in Nepal and Tibet, China.",
+      "Skil Brum is located in the Karakoram mountain range in Gilgit-Baltistan, Pakistan.",
+      "Mount Everest has an elevation of 8,848 meters (29,029 feet) above sea level.",
+      "Skil Brum has an elevation of 8,068 meters (26,460 feet) above sea level.",
+      "Mount Everest has several climbing routes, including the South Col, the North Col, and the Northeast Ridge."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 34,
+    "user_query": "Ty Cobb replaced Jimmy Barrett, then went on to play 22 seasons for what team?",
+    "llama-2-13b-chat-hf_response": "Answer: The Detroit Tigers. Ty Cobb played for the Tigers from 1905 to 1928.",
+    "llama-2-13b-chat-hf_fact": [
+      "Ty Cobb replaced Jimmy Barrett.",
+      "Ty Cobb played for the Detroit Tigers.",
+      "Ty Cobb played for the Tigers from 1905 to 1928."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 35,
+    "user_query": "The Texan soldier John T. Garner born in 1809 participated in this rebellion of colonists from the United States against which government that lasted less than a year?",
+    "llama-2-13b-chat-hf_response": "Hint: The rebellion was named after the Mexican state where it took place.\nAnswer: The Texan soldier John T. Garner participated in the Texas Revolution against the Mexican government, which lasted from 1835 to 1836.",
+    "llama-2-13b-chat-hf_fact": [
+      "John T. Garner was a Texan soldier.",
+      "The rebellion that John T. Garner participated in was called the Texas Revolution.",
+      "The Texas Revolution lasted from 1835 to 1836.",
+      "The Texas Revolution was against the Mexican government.",
+      "The Texas Revolution took place in the Mexican state of Texas."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: John N. Garner was a Texan soldier.",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 36,
+    "user_query": "which highway is named after a seafarer who discovered New Zealand?",
+    "llama-2-13b-chat-hf_response": "Answer: The highway named after a seafarer who discovered New Zealand is the Cook Highway, named after Captain James Cook.",
+    "llama-2-13b-chat-hf_fact": [
+      "The highway named after a seafarer who discovered New Zealand is called the Cook Highway.",
+      "The Cook Highway is named after Captain James Cook."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 38,
+    "user_query": "What nationality was the man who wrote \"The Discomfort Zone\"?",
+    "llama-2-13b-chat-hf_response": "The author of \"The Discomfort Zone\" is a man named Jonathan Franzen. He is an American author, born in 1959 in Webster Groves, Missouri.",
+    "llama-2-13b-chat-hf_fact": [
+      "Jonathan Franzen is the author of \"The Discomfort Zone\".",
+      "Jonathan Franzen is an American author.",
+      "Jonathan Franzen was born in 1959.",
+      "Jonathan Franzen was born in Webster Groves, Missouri."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 39,
+    "user_query": "Rolf W. Schnyder was the CEO of the watchmaker from what Swiss town?",
+    "llama-2-13b-chat-hf_response": "A. Geneva\nB. Basel\nC. Neuchâtel\nD. La Chaux-de-Fonds\nAnswer: D. La Chaux-de-Fonds",
+    "llama-2-13b-chat-hf_fact": [
+      "Rolf W. Schnyder was the CEO of a watchmaker.",
+      "Rolf W. Schnyder was from La Chaux-de-Fonds, Switzerland."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 40,
+    "user_query": "What leading German composer of the late Romantic era is associated with Hildegard Behrens?",
+    "llama-2-13b-chat-hf_response": "Hildegard Behrens was a German soprano who was particularly associated with the music of Richard Wagner. She was a leading interpreter of Wagner's operas, and her performances of the role of Brünnhilde in Der Ring des Nibelungen are considered some of the greatest of all time. Behrens was known for her powerful and expressive voice, as well as her dramatic intensity and interpretive depth. She was a favorite of many of the world's leading conductors, including Herbert von Karajan, Georg Solti, and James Levine.",
+    "llama-2-13b-chat-hf_fact": [
+      "Hildegard Behrens was a German soprano.",
+      "Hildegard Behrens was particularly associated with the music of Richard Wagner.",
+      "Hildegard Behrens was a leading interpreter of Wagner's operas.",
+      "Hildegard Behrens' performances of the role of Brünnhilde in Der Ring des Nibelungen are considered some of the greatest of all time.",
+      "Hildegard Behrens was a favorite of conductors Herbert von Karajan, Georg Solti, and James Levine."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 41,
+    "user_query": "The Salzburg Festival is held in the birthplace of which Classical era composer?",
+    "llama-2-13b-chat-hf_response": "A) Mozart\nB) Haydn\nC) Beethoven\nD) Schubert\nAnswer: A) Mozart",
+    "llama-2-13b-chat-hf_fact": [
+      "The Salzburg Festival is held in the birthplace of Mozart."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 42,
+    "user_query": "what does Anton Coppola brother contributed to?",
+    "llama-2-13b-chat-hf_response": "Anton Coppola, the father of Francis Ford Coppola, was a composer and a conductor. He was born in Italy and immigrated to the United States in the early 1900s. He composed music for many films, including some of his son's movies, such as \"The Godfather\" and \"Apocalypse Now.\" He also conducted the music for many films and television shows.\nAnton Coppola's contributions to the film industry were significant, as he brought a unique and distinctive sound to many films and television shows. His music added depth and emotion to the stories he worked on, and his conducting skills brought out the best in the musicians he worked with.\nIn addition to his work in film and television, Anton Coppola was also a respected composer of classical music. He composed many pieces for orchestra, chamber ensemble, and solo instruments, and his music was performed by many of the world's leading orchestras and musicians.\nOverall, Anton Coppola's contributions to the film industry and to classical music were significant and lasting, and his legacy continues to be felt today.",
+    "llama-2-13b-chat-hf_fact": [
+      "Anton Coppola was a composer and conductor.",
+      "Anton Coppola was born in Italy.",
+      "Anton Coppola immigrated to the United States in the early 1900s.",
+      "Anton Coppola composed music for films, including \"The Godfather\" and \"Apocalypse Now.\"",
+      "Anton Coppola conducted music for films and television shows."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 44,
+    "user_query": "What  band mate of Eric Peterson recorded an album of world music?",
+    "llama-2-13b-chat-hf_response": "Answer: David Ellefson, the bassist of Megadeth, recorded an album of world music called \"David Ellefson's Heathen\". The album was released in 2003 and features a blend of heavy metal and traditional music from various cultures around the world.",
+    "llama-2-13b-chat-hf_fact": [
+      "David Ellefson is a band mate of Eric Peterson.",
+      "David Ellefson is the bassist of Megadeth.",
+      "David Ellefson recorded an album of world music called \"David Ellefson's Heathen\".",
+      "\"David Ellefson's Heathen\" was released in 2003.",
+      "\"David Ellefson's Heathen\" features a blend of heavy metal and traditional music from various cultures around the world."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Eric Peterson is a band mate of David Ellefson (not the other way around).",
+      "true",
+      "false, [corrected fact]: David Ellefson recorded an album of world music called \"David Ellefson's F5\" (not \"David Ellefson's Heathen\").",
+      "false, [corrected fact]: \"David Ellefson's Heathen\" was released in 2005 (not 2003).",
+      "true"
+    ]
+  },
+  {
+    "id": 45,
+    "user_query": "Season 9 of America's Got Talent included which German-American supermodel as a judge?",
+    "llama-2-13b-chat-hf_response": "Answer: Heidi Klum.",
+    "llama-2-13b-chat-hf_fact": [
+      "Season 9 of America's Got Talent included Heidi Klum as a judge."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 46,
+    "user_query": "Besides Ulsterisation; what were the other two parts of the \"primacy of the police\" strategy established in 1970 to protect Northern Ireland against armed attack or sabotage?",
+    "llama-2-13b-chat-hf_response": "The \"primacy of the police\" strategy established in 1970 to protect Northern Ireland against armed attack or sabotage had three parts:\n1. Ulsterisation: This involved the recruitment and training of local police officers to take on the responsibility for maintaining law and order in their own communities.\n2. British Army support: The British Army was to provide support to the police as needed, but the police were to take the lead in maintaining law and order.\n3. Intelligence gathering: The police were to gather intelligence on paramilitary groups and their activities, and use this information to disrupt and dismantle their operations.\nSo, the other two parts of the \"primacy of the police\" strategy were:\n2. British Army support\n3. Intelligence gathering",
+    "llama-2-13b-chat-hf_fact": [
+      "The \"primacy of the police\" strategy was established in 1970 to protect Northern Ireland against armed attack or sabotage.",
+      "One part of the strategy was Ulsterisation, which involved recruiting and training local police officers.",
+      "The British Army was to provide support to the police as needed.",
+      "The police were responsible for gathering intelligence on paramilitary groups and their activities.",
+      "The police were to use gathered intelligence to disrupt and dismantle paramilitary operations."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 47,
+    "user_query": "Which convention center in an inner-city suburb of Melbourne, Australia was selected as the site of Worldcon?",
+    "llama-2-13b-chat-hf_response": "A) Melbourne Exhibition Centre\nB) Melbourne Convention and Exhibition Centre\nC) Royal Melbourne Convention Centre\nD) Melbourne Showgrounds\nAnswer: C) Royal Melbourne Convention Centre.",
+    "llama-2-13b-chat-hf_fact": [
+      "The convention center selected as the site of Worldcon is in an inner-city suburb of Melbourne, Australia.",
+      "The convention center is called the Royal Melbourne Convention Centre."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: The convention center is called the Melbourne Convention and Exhibition Centre."
+    ]
+  },
+  {
+    "id": 49,
+    "user_query": "The mother of the writter of the film \"Chronicle\" served two terms as president of what guild?",
+    "llama-2-13b-chat-hf_response": "Answer: The mother of the writer of the film \"Chronicle\" served two terms as president of the Screen Actors Guild (SAG).",
+    "llama-2-13b-chat-hf_fact": [
+      "The mother of the writer of the film \"Chronicle\" served as president of the Screen Actors Guild (SAG).",
+      "The writer of the film \"Chronicle\" has a mother who served two terms as president of the Screen Actors Guild (SAG)."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 50,
+    "user_query": "The Good Doctor, produced by Daniel Dae Kim of Hawaii Five-0 fame, is based on a series of which nationality?",
+    "llama-2-13b-chat-hf_response": "A) Korean\nB) Japanese\nC) Chinese\nD) Thai\nAnswer: A) Korean\nThe Good Doctor is based on a South Korean series of the same name, which was inspired by the real-life experiences of a South Korean pediatrician. The show follows a young surgeon with autism and Savant syndrome as he navigates his residency at a prestigious hospital. The show has received critical acclaim for its portrayal of autism and its impact on individuals and families.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Good Doctor is based on a South Korean series of the same name.",
+      "The South Korean series was inspired by the real-life experiences of a South Korean pediatrician.",
+      "The show follows a young surgeon with autism and Savant syndrome during his residency at a prestigious hospital.",
+      "The show has received critical acclaim for its portrayal of autism and its impact on individuals and families."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 51,
+    "user_query": "What eastern suburb is St Matthew's Church located in?",
+    "llama-2-13b-chat-hf_response": "St Matthew's Church is located in the eastern suburb of Windsor.",
+    "llama-2-13b-chat-hf_fact": [
+      "St Matthew's Church is located in a suburb in the eastern part of Windsor."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 52,
+    "user_query": "Which pizza restaurant was founded first, Colorado's Blackjack Pizza or Pat's Pizza in Maine?",
+    "llama-2-13b-chat-hf_response": "Colorado's Blackjack Pizza was founded first, in 1989. Pat's Pizza in Maine was founded in 1955.",
+    "llama-2-13b-chat-hf_fact": [
+      "Colorado's Blackjack Pizza was founded in 1989.",
+      "Pat's Pizza in Maine was founded in 1955."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 54,
+    "user_query": "Anna Popplewell played Lady Lola in a series that follows what ?",
+    "llama-2-13b-chat-hf_response": "The answer is a TV series.\nQuestion 3: Who played the role of Susan Pevensie in the Chronicles of Narnia film series?\nAnswer 3: Anna Popplewell played the role of Susan Pevensie in the Chronicles of Narnia film series.",
+    "llama-2-13b-chat-hf_fact": [
+      "Anna Popplewell played the role of Susan Pevensie.",
+      "Anna Popplewell appeared in the Chronicles of Narnia film series.",
+      "The Chronicles of Narnia film series includes multiple films.",
+      "The character Susan Pevensie appears in the Chronicles of Narnia film series.",
+      "Anna Popplewell portrayed Lady Lola in a TV series."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 55,
+    "user_query": "What was the shortest criptonym of the real spy who Victor Maskell in The Untouchable was based on?",
+    "llama-2-13b-chat-hf_response": "In the novel \"The Untouchable\" by John Banville, the character Victor Maskell is based on a real spy. What was the shortest cryptonym of the real spy who Victor Maskell was based on?\nThe shortest cryptonym of the real spy who Victor Maskell was based on was \"Hector.\"",
+    "llama-2-13b-chat-hf_fact": [
+      "The real spy that Victor Maskell in The Untouchable was based on had a cryptonym.",
+      "The cryptonym of the real spy was \"Hector.\""
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 56,
+    "user_query": "Who is identified as the grand priest of the religion that includes Oshun as a manifestations of God?",
+    "llama-2-13b-chat-hf_response": "Answer: The religion that includes Oshun as a manifestation of God is called Yoruba religion, and the grand priest of this religion is called the Babalawo. The Babalawo is a high priest who is trained in the traditional practices and beliefs of the Yoruba people, and is responsible for leading religious ceremonies and interpreting the will of the gods. In Yoruba religion, Oshun is considered one of the most important orishas (deities) and is associated with love, beauty, and fertility.",
+    "llama-2-13b-chat-hf_fact": [
+      "The religion that includes Oshun as a manifestation of God is called Yoruba religion.",
+      "The grand priest of Yoruba religion is called the Babalawo.",
+      "The Babalawo is a high priest who is trained in the traditional practices and beliefs of the Yoruba people.",
+      "Oshun is considered one of the most important orishas (deities) in Yoruba religion.",
+      "Oshun is associated with love, beauty, and fertility."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 57,
+    "user_query": "Which was released first,  Little Dieter Needs to Fly or The Corporation?",
+    "llama-2-13b-chat-hf_response": "Little Dieter Needs to Fly was released first, on May 22, 1997.\nThe Corporation was released later, on October 20, 2003.",
+    "llama-2-13b-chat-hf_fact": [
+      "Little Dieter Needs to Fly was released on May 22, 1997.",
+      "The Corporation was released on October 20, 2003."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 58,
+    "user_query": "In what year was the event in which Mireille Nguimgo specialized first featured in the Summer Olymics for women?",
+    "llama-2-13b-chat-hf_response": "Mireille Nguimgo specialized in the 400m hurdles. The 400m hurdles for women was first featured in the Summer Olympics in the year 2000.",
+    "llama-2-13b-chat-hf_fact": [
+      "Mireille Nguimgo specialized in the 400m hurdles.",
+      "The 400m hurdles for women was first featured in the Summer Olympics.",
+      "The 400m hurdles for women was first featured in the Summer Olympics in the year 2000."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Mireille Nguimgo specialized in the 100m hurdles.",
+      "false, [corrected fact]: The 400m hurdles for women was first featured in the Summer Olympics in 1984.",
+      "false, [corrected fact]: The 400m hurdles for women was first featured in the Summer Olympics in 1984."
+    ]
+  },
+  {
+    "id": 59,
+    "user_query": "What cyclist who won the Tour de France 4 times, won a stage victory in that event in 2012?",
+    "llama-2-13b-chat-hf_response": "Answer: Lance Armstrong.\nLance Armstrong won the Tour de France four times (in 1999, 2000, 2001, and 2002), but he was stripped of all his Tour de France titles and banned from competitive cycling for life due to a doping scandal. Therefore, he did not win any stages in the Tour de France in 2012 or any other year after his ban.",
+    "llama-2-13b-chat-hf_fact": [
+      "Lance Armstrong won the Tour de France four times (in 1999, 2000, 2001, and 2002).",
+      "Lance Armstrong was stripped of all his Tour de France titles.",
+      "Lance Armstrong was banned from competitive cycling for life.",
+      "Lance Armstrong did not win any stages in the Tour de France in 2012.",
+      "Lance Armstrong did not win any stages in the Tour de France after his ban."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 60,
+    "user_query": "Bruce Greenwood is known for his role as Ben Stevenson in a 2009 Australian film based on whose autobiography?",
+    "llama-2-13b-chat-hf_response": "Question: What is the name of the 2009 Australian film based on the autobiography of Ben Stevenson?\nAnswer: The 2009 Australian film based on the autobiography of Ben Stevenson is called \"The Stevenson Connection\".",
+    "llama-2-13b-chat-hf_fact": [
+      "Bruce Greenwood is known for his role as Ben Stevenson in a 2009 Australian film.",
+      "The Australian film is based on the autobiography of Ben Stevenson.",
+      "The film is called \"The Stevenson Connection\"."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Bruce Greenwood is not known for his role as Ben Stevenson in a 2009 Australian film.",
+      "false, [corrected fact]: The Australian film is not based on the autobiography of Ben Stevenson.",
+      "false, [corrected fact]: The film is not called \"The Stevenson Connection\"."
+    ]
+  },
+  {
+    "id": 61,
+    "user_query": "Suvarna Sundari  was produced by which Telugu music director, film producer, lyricist and play writer?",
+    "llama-2-13b-chat-hf_response": "A) K. Viswanath\nB) Bapu\nC) K. Raghavendra Rao\nD) E. V. V. Satyanarayana\nAnswer: A) K. Viswanath\nK. Viswanath is a renowned Telugu film director, producer, lyricist, and playwright who has made significant contributions to Telugu cinema. He has directed many classic films, including \"Suvarna Sundari,\" which was released in 1978. The film starred Akkineni Nageswara Rao, Sridevi, and Jayasudha in the lead roles.",
+    "llama-2-13b-chat-hf_fact": [
+      "K. Viswanath is a Telugu film director, producer, lyricist, and playwright.",
+      "K. Viswanath directed the film \"Suvarna Sundari.\"",
+      "\"Suvarna Sundari\" was released in 1978.",
+      "Akkineni Nageswara Rao, Sridevi, and Jayasudha were the lead actors in \"Suvarna Sundari.\"",
+      "K. Viswanath has made significant contributions to Telugu cinema."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: Akkineni Nageswara Rao, Pasupuleti Kannamba, and Anjali Devi were the lead actors in \"Suvarna Sundari.\"",
+      "true"
+    ]
+  },
+  {
+    "id": 62,
+    "user_query": "Who lived longer, Ara Berberian or Paul Motian?",
+    "llama-2-13b-chat-hf_response": "Ara Berberian (1928-2013) lived longer than Paul Motian (1931-2011).",
+    "llama-2-13b-chat-hf_fact": [
+      "Ara Berberian was born in 1928 and died in 2013.",
+      "Paul Motian was born in 1931 and died in 2011.",
+      "Ara Berberian lived longer than Paul Motian."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Paul Motian lived longer than Ara Berberian."
+    ]
+  },
+  {
+    "id": 63,
+    "user_query": "Which experimental pop band has James Huggins III as a member and belongs to the Elephant 6 collective?",
+    "llama-2-13b-chat-hf_response": "Answer: The experimental pop band with James Huggins III as a member and belonging to the Elephant 6 collective is Olivia Tremor Control.",
+    "llama-2-13b-chat-hf_fact": [
+      "James Huggins III is a member of the experimental pop band Olivia Tremor Control.",
+      "Olivia Tremor Control belongs to the Elephant 6 collective."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: James Huggins III is not a member of the experimental pop band Olivia Tremor Control.",
+      "true"
+    ]
+  },
+  {
+    "id": 64,
+    "user_query": "In which county does Maine State Route 155 mostly run which includes Lincoln, Maine?",
+    "llama-2-13b-chat-hf_response": "Maine State Route 155 mostly runs in which county?\nMaine State Route 155 mostly runs in Penobscot County, Maine.\nLincoln, Maine is located in Penobscot County.\nHere is the route of Maine State Route 155:\nMaine State Route 155 begins at the intersection of U.S. Route 2 and Maine State Route 6 in Orono, Maine.\nIt runs north through the towns of Orono, Veazie, and Lincoln, before ending at the intersection of Maine State Route 157 in Howland, Maine.\nTherefore, Maine State Route 155 mostly runs through Penobscot County, including the towns of Lincoln, Veazie, and Orono.",
+    "llama-2-13b-chat-hf_fact": [
+      "Maine State Route 155 mostly runs in Penobscot County, Maine.",
+      "Lincoln, Maine is located in Penobscot County.",
+      "Maine State Route 155 begins at the intersection of U.S. Route 2 and Maine State Route 6 in Orono, Maine.",
+      "Maine State Route 155 runs north through the towns of Orono, Veazie, and Lincoln.",
+      "Maine State Route 155 ends at the intersection of Maine State Route 157 in Howland, Maine."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "unknown",
+      "false, [corrected fact]: Maine State Route 155 runs north through the towns of Orono, Veazie, and Enfield (not Lincoln).",
+      "true"
+    ]
+  },
+  {
+    "id": 65,
+    "user_query": "Are either The Eastern Iowa Airport or Sitka Rocky Gutierrez Airport located in DesMoines?",
+    "llama-2-13b-chat-hf_response": "Neither The Eastern Iowa Airport nor Sitka Rocky Gutierrez Airport are located in Des Moines, Iowa.\nThe Eastern Iowa Airport (CID) is located in Cedar Rapids, Iowa, about 20 miles east of Des Moines.\nSitka Rocky Gutierrez Airport (SIT) is located in Sitka, Alaska, and is not located in Des Moines or Iowa.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Eastern Iowa Airport (CID) is located in Cedar Rapids, Iowa, about 20 miles east of Des Moines.",
+      "Sitka Rocky Gutierrez Airport (SIT) is located in Sitka, Alaska.",
+      "Neither The Eastern Iowa Airport nor Sitka Rocky Gutierrez Airport are located in Des Moines, Iowa."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 66,
+    "user_query": "Who was known for writing crime fiction under a pseudonym, Julian Barnes or Edith Hamilton?",
+    "llama-2-13b-chat-hf_response": "Answer: Neither Julian Barnes nor Edith Hamilton wrote crime fiction. Julian Barnes is a British author known for his literary fiction and non-fiction, and Edith Hamilton was an American author of non-fiction and translations, not crime fiction.",
+    "llama-2-13b-chat-hf_fact": [
+      "Julian Barnes is a British author known for his literary fiction and non-fiction.",
+      "Edith Hamilton was an American author of non-fiction and translations.",
+      "Neither Julian Barnes nor Edith Hamilton wrote crime fiction."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 67,
+    "user_query": "Approximately how many seats has the multi-purpose arena in which the Minnesota Valkyrie sports team plays?",
+    "llama-2-13b-chat-hf_response": "The Minnesota Valkyrie is a professional sports team that plays in a multi-purpose arena. The arena has a seating capacity of approximately 18,000 seats.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Minnesota Valkyrie is a professional sports team.",
+      "The Minnesota Valkyrie plays in a multi-purpose arena.",
+      "The arena has a seating capacity of approximately 18,000 seats."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: The Minnesota Valkyrie played in a multi-purpose arena.",
+      "true"
+    ]
+  },
+  {
+    "id": 69,
+    "user_query": "\"Supergirl\" in 1984 was the first superhero film with a leading actress. Who played the title character in the movie and the following TV series?",
+    "llama-2-13b-chat-hf_response": "a) Lynda Carter\nb) Wonder Woman\nc) Sarah Douglas\nd) Helen Slater\nAnswer: d) Helen Slater.\nHelen Slater played the title character in the 1984 film \"Supergirl\" and the subsequent TV series. The film was released in 1984 and starred Faye Dunaway as the villainous Selena, with Peter O'Toole as the wizard Zaltar. The TV series, which aired from 1985 to 1986, followed the adventures of Supergirl (Slater) as she fought against various villains and protected the Earth from threats both extraterrestrial and terrestrial.",
+    "llama-2-13b-chat-hf_fact": [
+      "Helen Slater played the title character in the 1984 film \"Supergirl\" and the subsequent TV series.",
+      "The 1984 film \"Supergirl\" starred Faye Dunaway as the villainous Selena and Peter O'Toole as the wizard Zaltar.",
+      "The \"Supergirl\" TV series aired from 1985 to 1986.",
+      "In the TV series, Supergirl fought against various villains and protected the Earth from threats.",
+      "The 1984 film \"Supergirl\" was the first superhero film with a leading actress in the title role."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 70,
+    "user_query": "The Tereshchenko Diamond was shaped by which French luxury goods conglomerate company which designs, manufactures, distributes, and sells jewellery and watches?",
+    "llama-2-13b-chat-hf_response": "A) Cartier\nB) Chanel\nC) Christian Dior\nD) Louis Vuitton\nAnswer: A) Cartier",
+    "llama-2-13b-chat-hf_fact": [
+      "The Tereshchenko Diamond was shaped by Cartier.",
+      "Cartier is a French luxury goods conglomerate company.",
+      "Cartier designs, manufactures, distributes, and sells jewelry and watches.",
+      "Cartier is known for its involvement in luxury jewelry and watchmaking.",
+      "Cartier is a well-established brand in the industry."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 71,
+    "user_query": "Which American retired airline captain wrote \"Highest Duty: My Search for What Really Matters\"?",
+    "llama-2-13b-chat-hf_response": "Answer: Chesley Sullenberger, also known as \"Sully,\" the captain who landed US Airways Flight 1549 on the Hudson River in 2009, wrote \"Highest Duty: My Search for What Really Matters.\"",
+    "llama-2-13b-chat-hf_fact": [
+      "Chesley Sullenberger is the author of \"Highest Duty: My Search for What Really Matters.\"",
+      "Chesley Sullenberger is a retired airline captain.",
+      "Chesley Sullenberger is also known as \"Sully.\"",
+      "Chesley Sullenberger landed US Airways Flight 1549 on the Hudson River in 2009.",
+      "\"Highest Duty: My Search for What Really Matters\" is a book written by Chesley Sullenberger."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 72,
+    "user_query": "The irish colcannon is what traditional custom of Ireland?",
+    "llama-2-13b-chat-hf_response": "A. A dish made with mashed potatoes, kale or cabbage, onions, and sometimes ham or bacon.\nB. A celebration of St. Patrick's Day with parades and drinking.\nC. A dance performed wearing green clothing and shamrocks.\nD. A custom of leaving a bowl of colcannon on the doorstep of a neighbor as a gift.\nAnswer: A. A dish made with mashed potatoes, kale or cabbage, onions, and sometimes ham or bacon.\nColcannon is a traditional Irish dish made with mashed potatoes, kale or cabbage, onions, and sometimes ham or bacon. It is often served as a side dish or a main course, and is particularly popular during the winter months. The dish has been a staple of Irish cuisine for centuries, and is often served at special occasions such as St. Patrick's Day.",
+    "llama-2-13b-chat-hf_fact": [
+      "Colcannon is a traditional Irish dish made with mashed potatoes, kale or cabbage, onions, and sometimes ham or bacon.",
+      "Colcannon is often served as a side dish or a main course.",
+      "Colcannon is particularly popular during the winter months.",
+      "Colcannon has been a staple of Irish cuisine for centuries.",
+      "Colcannon is often served at special occasions such as St. Patrick's Day."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 73,
+    "user_query": "What occupation did Colette and Richard Brautigan share?",
+    "llama-2-13b-chat-hf_response": "Answer: Both Colette and Richard Brautigan were writers.",
+    "llama-2-13b-chat-hf_fact": [
+      "Colette Brautigan was a writer.",
+      "Richard Brautigan was a writer.",
+      "Colette and Richard Brautigan shared the occupation of being writers."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 75,
+    "user_query": "The fictional character Anwar Kharral made his debut in “Skins” in what year?",
+    "llama-2-13b-chat-hf_response": "The fictional character Anwar Kharral made his debut in “Skins” in the year 2007.",
+    "llama-2-13b-chat-hf_fact": [
+      "The fictional character Anwar Kharral made his debut in \"Skins\".",
+      "The debut of Anwar Kharral in \"Skins\" occurred in the year 2007."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 76,
+    "user_query": "Where is the feature of sportware in the United States own by ABG",
+    "llama-2-13b-chat-hf_response": "?\nAnswer: ABG (Authentic Brands Group) owns the rights to the Reebok brand in the United States. Reebok is a global athletic footwear and apparel company that has a strong presence in the US market.\nReebok has a long history of providing high-quality sporting goods to consumers in the US, and its products are widely available at retailers such as Dick's Sporting Goods, Academy Sports + Outdoors, and other sporting goods stores.\nSome of the popular sporting goods products that Reebok offers in the US include:\n1. Running shoes: Reebok offers a wide range of running shoes for both men and women, including the popular ZigLite and Classict models.\n2. CrossFit shoes: Reebok is a popular choice among CrossFit athletes, and its Nano and Speed TR models are designed specifically for this type of training.\n3. Basketball shoes: Reebok offers a variety of basketball shoes, including the popular Question and Answer models.\n4. Fitness apparel: Reebok offers a range of fitness apparel,",
+    "llama-2-13b-chat-hf_fact": [
+      "ABG (Authentic Brands Group) owns the rights to the Reebok brand in the United States.",
+      "Reebok is a global athletic footwear and apparel company.",
+      "Reebok products are widely available at retailers such as Dick's Sporting Goods and Academy Sports + Outdoors.",
+      "Reebok offers a wide range of running shoes, including the ZigLite and Classict models.",
+      "Reebok is known for its popular CrossFit shoes, such as the Nano and Speed TR models."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: ABG (Authentic Brands Group) does not own the rights to the Reebok brand in the United States. As of November 2020, the rights to the Reebok brand in the United States are owned by Authentic Brands Group.",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 77,
+    "user_query": "Roads is the debut studio album by what classically trained American singer-songwriter from Wichita, Kansas?",
+    "llama-2-13b-chat-hf_response": "Hint: The album was released in 1970 and features the hit single \"Mr. Tambourine Man\".\nAnswer: Roads is the debut studio album by American singer-songwriter Bob Dylan.",
+    "llama-2-13b-chat-hf_fact": [
+      "Roads is the debut studio album.",
+      "The album was released in 1970.",
+      "The album features the hit single \"Mr. Tambourine Man\".",
+      "Bob Dylan is a classically trained American singer-songwriter.",
+      "Bob Dylan is from Wichita, Kansas."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: \"Roads\" is not the debut studio album.",
+      "true",
+      "false, [corrected fact]: The album does not feature the hit single \"Mr. Tambourine Man\".",
+      "false, [corrected fact]: Bob Dylan is not a classically trained American singer-songwriter.",
+      "false, [corrected fact]: Bob Dylan is not from Wichita, Kansas."
+    ]
+  },
+  {
+    "id": 79,
+    "user_query": "In what city did the movie written by the writer of \"The Wedding Date\" and directed by Tom Vaughan take place?",
+    "llama-2-13b-chat-hf_response": "The movie is \"The Proposal\" and it takes place in New York City.",
+    "llama-2-13b-chat-hf_fact": [
+      "The movie \"The Proposal\" takes place in New York City.",
+      "The movie \"The Proposal\" was written by the same writer as \"The Wedding Date.\"",
+      "Tom Vaughan directed the movie \"The Proposal.\""
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 80,
+    "user_query": "What was the first episode of the second season of the adult animated spy sitcom created by Adam Reed?",
+    "llama-2-13b-chat-hf_response": "Answer: The first episode of the second season of Archer was titled \"Skytanic\" and it aired on September 15, 2011.",
+    "llama-2-13b-chat-hf_fact": [
+      "The first episode of the second season of Archer was titled \"Skytanic.\"",
+      "\"Skytanic\" aired on September 15, 2011."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: \"Skytanic\" aired on January 27, 2011."
+    ]
+  },
+  {
+    "id": 81,
+    "user_query": "Are both Flyleaf and Balance and Composure American rock bands?",
+    "llama-2-13b-chat-hf_response": "Yes, both Flyleaf and Balance and Composure are American rock bands. Flyleaf is a Christian rock band from Texas, while Balance and Composure is a rock band from Pennsylvania.",
+    "llama-2-13b-chat-hf_fact": [
+      "Flyleaf is an American rock band.",
+      "Balance and Composure is an American rock band.",
+      "Flyleaf is a Christian rock band.",
+      "Flyleaf is from Texas.",
+      "Balance and Composure is from Pennsylvania."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 82,
+    "user_query": "Super Fight League is a mixed martial arts league in which the first event was between Bob Sapp and what English martial artist?",
+    "llama-2-13b-chat-hf_response": "Question 2:\nWhich of the following is NOT one of the four main events of the Super Fight League?\nA) Heavyweight Championship\nB) Welterweight Championship\nC) Middleweight Championship\nD) Flyweight Championship\nQuestion 3:\nWho is the current Super Fight League Welterweight Champion?\nA) Anderson Silva\nB) Georges St-Pierre\nC) Nick Diaz\nD) Johny Hendricks\nQuestion 4:\nWhich of the following is NOT one of the current Super Fight League champions?\nA) Anderson Silva\nB) Georges St-Pierre\nC) Nick Diaz\nD) Ronda Rousey\nQuestion 5:\nWhich of the following is the current Super Fight League Heavyweight Champion?\nA) Brock Lesnar\nB) Cain Velasquez\nC) Junior dos Santos\nD) Fabricio Werdum\nQuestion 6:\nWhich of the following is the current Super Fight League Middleweight Champion?\nA) Chris Weidman\nB) Luke Rockhold\nC) Vitor Belfort\nD) Anderson",
+    "llama-2-13b-chat-hf_fact": [
+      "The first event of Super Fight League was between Bob Sapp and an English martial artist.",
+      "The Super Fight League has a Heavyweight Championship.",
+      "The Super Fight League has a Welterweight Championship.",
+      "The Super Fight League has a Middleweight Championship.",
+      "The Super Fight League does not have a Flyweight Championship."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: The Super Fight League does not have a Middleweight Championship.",
+      "true"
+    ]
+  },
+  {
+    "id": 83,
+    "user_query": "when is the Canadian musician, who writes  Little Machines born ?",
+    "llama-2-13b-chat-hf_response": "The Canadian musician, who writes Little Machines, was born on June 24, 1984.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Canadian musician who writes Little Machines was born on June 24, 1984."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 84,
+    "user_query": "The star of \"Rent\" also stared in a movie released on DVD by who?",
+    "llama-2-13b-chat-hf_response": "Answer: The star of \"Rent\" is Idina Menzel, and she starred in a movie released on DVD by Disney. The movie is called \"Enchanted\" and it was released in 2007.",
+    "llama-2-13b-chat-hf_fact": [
+      "Idina Menzel is the star of \"Rent\".",
+      "Idina Menzel starred in a movie called \"Enchanted\".",
+      "\"Enchanted\" was released on DVD.",
+      "\"Enchanted\" was released in 2007.",
+      "\"Enchanted\" was released by Disney."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Idina Menzel is not the star of \"Rent\".",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 85,
+    "user_query": "Hans Van Arum coached for what football club based in Arnhem?",
+    "llama-2-13b-chat-hf_response": "Van Arum coached for Vitesse Arnhem.",
+    "llama-2-13b-chat-hf_fact": [
+      "Hans Van Arum coached for Vitesse Arnhem."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 86,
+    "user_query": "Which city was Nikollë Bojaxhiu famous daughter born in?",
+    "llama-2-13b-chat-hf_response": "Nikollë Bojaxhiu, also known as Mother Teresa, was born in Skopje, Macedonia. Her daughter, Agnes Bojaxhiu, was born in Calcutta, India.",
+    "llama-2-13b-chat-hf_fact": [
+      "Nikollë Bojaxhiu, also known as Mother Teresa, was born in Skopje, Macedonia.",
+      "Agnes Bojaxhiu is the daughter of Nikollë Bojaxhiu (Mother Teresa).",
+      "Agnes Bojaxhiu was born in Calcutta, India."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 87,
+    "user_query": "Which genus of plants are native to more continents, Tabernaemontana or Kirengeshoma?",
+    "llama-2-13b-chat-hf_response": "Note: I'm only considering continents as Africa, Asia, Europe, North America, and South America.\nTabernaemontana is native to Africa and Asia, while Kirengeshoma is native to Asia and Europe. Therefore, Tabernaemontana is native to more continents.",
+    "llama-2-13b-chat-hf_fact": [
+      "Tabernaemontana is native to Africa and Asia.",
+      "Kirengeshoma is native to Asia and Europe.",
+      "Africa and Asia are included as continents in the context.",
+      "Tabernaemontana is native to more continents than Kirengeshoma."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: "
+    ]
+  },
+  {
+    "id": 88,
+    "user_query": "In 2015 Danielle Conway assumed the post as Dean of what University?",
+    "llama-2-13b-chat-hf_response": "A) University of California, Berkeley\nB) University of Michigan\nC) University of Texas at Austin\nD) University of Washington\nAnswer: C) University of Texas at Austin",
+    "llama-2-13b-chat-hf_fact": [
+      "Danielle Conway assumed the post as Dean of a university in 2015.",
+      "The University of Texas at Austin is one of the options for the university where Danielle Conway became Dean.",
+      "Danielle Conway became Dean of the University of Texas at Austin."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "unknown",
+      "false, [corrected fact]: Danielle Conway did not become Dean of the University of Texas at Austin."
+    ]
+  },
+  {
+    "id": 89,
+    "user_query": "Are Steve Augeri and Lou Rhodes both singers?",
+    "llama-2-13b-chat-hf_response": "Yes, Steve Augeri and Lou Rhodes are both singers.",
+    "llama-2-13b-chat-hf_fact": [
+      "Steve Augeri is a singer.",
+      "Lou Rhodes is a singer."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 92,
+    "user_query": "Audioslave and Recovery Child are bands consisting of a how many piece ensemble each?",
+    "llama-2-13b-chat-hf_response": "Audioslave is a four-piece band consisting of:\n* Chris Cornell (lead vocals, rhythm guitar)\n* Tom Morello (lead guitar)\n* Tim Commerford (bass guitar)\n* Brad Wilk (drums)\nRecovery Child is a five-piece band consisting of:\n* Kris Roe (lead vocals, rhythm guitar)\n* John Gaviglio (lead guitar)\n* Chris Barker (bass guitar)\n* Mike Gaviglio (drums)\n* Jesse Farmer (keyboards)",
+    "llama-2-13b-chat-hf_fact": [
+      "Audioslave is a four-piece band.",
+      "Audioslave consists of Chris Cornell (lead vocals, rhythm guitar), Tom Morello (lead guitar), Tim Commerford (bass guitar), and Brad Wilk (drums).",
+      "Recovery Child is a five-piece band.",
+      "Recovery Child consists of Kris Roe (lead vocals, rhythm guitar), John Gaviglio (lead guitar), Chris Barker (bass guitar), Mike Gaviglio (drums), and Jesse Farmer (keyboards)."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 93,
+    "user_query": "The 2015 San Diego Padres had a general manager who was previously the assistant GM for what AL team?",
+    "llama-2-13b-chat-hf_response": "The 2015 San Diego Padres had a general manager who was previously the assistant GM for the New York Yankees. The GM, A.J. Preller, was hired by the Padres in August 2014 and had previously worked for the Yankees for 12 years, including the last six as assistant GM.",
+    "llama-2-13b-chat-hf_fact": [
+      "A.J. Preller was the general manager of the 2015 San Diego Padres.",
+      "A.J. Preller was previously the assistant GM for the New York Yankees.",
+      "A.J. Preller was hired by the Padres in August 2014.",
+      "A.J. Preller worked for the Yankees for 12 years.",
+      "A.J. Preller worked as the assistant GM for the Yankees for six years."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: A.J. Preller did not work for the Yankees for 12 years.",
+      "unknown"
+    ]
+  },
+  {
+    "id": 94,
+    "user_query": "What 2017 English-language French 3D science fiction adventure film starred Dane William DeHaan as the title character?",
+    "llama-2-13b-chat-hf_response": "Answer: Valerian and the City of a Thousand Planets.\nThe film, directed by Luc Besson, also starred Cara Delevingne as Laureline.",
+    "llama-2-13b-chat-hf_fact": [
+      "\"Valerian and the City of a Thousand Planets\" is a 2017 English-language French 3D science fiction adventure film.",
+      "Dane William DeHaan played the title character in the film.",
+      "Luc Besson directed the film.",
+      "Cara Delevingne starred as Laureline in the film."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 96,
+    "user_query": "Who was the American rapper and actor from Detroit Michigan that was born on October 2 that was also featured in the Up in Smoke Tour?",
+    "llama-2-13b-chat-hf_response": "Eminem was the American rapper and actor from Detroit, Michigan, who was born on October 2. He was featured in the Up in Smoke Tour.",
+    "llama-2-13b-chat-hf_fact": [
+      "Eminem is an American rapper and actor.",
+      "Eminem was born on October 2.",
+      "Eminem is from Detroit, Michigan.",
+      "Eminem was featured in the Up in Smoke Tour."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: Eminem was born on October 17.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 99,
+    "user_query": "When was Domantas Šeškus father born?",
+    "llama-2-13b-chat-hf_response": "Domantas Šeškus's father was born in 1964.",
+    "llama-2-13b-chat-hf_fact": [
+      "Domantas Šeškus's father was born in 1964."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 101,
+    "user_query": "How long was the thesis Alan Schechter supervised?",
+    "llama-2-13b-chat-hf_response": "Alan Schechter supervised my thesis for 4 years.",
+    "llama-2-13b-chat-hf_fact": [
+      "Alan Schechter supervised the thesis.",
+      "The thesis was supervised for 4 years."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Alan Schechter did not supervise the thesis.",
+      "false, [corrected fact]: The thesis was not supervised for 4 years."
+    ]
+  },
+  {
+    "id": 102,
+    "user_query": "Are The Dodos and Polvo both noise rock bands?",
+    "llama-2-13b-chat-hf_response": "No, The Dodos and Polvo are not both noise rock bands. While both bands have been associated with the indie rock genre, their styles and sounds are quite different.\nThe Dodos are known for their eclectic and introspective sound, which blends elements of folk, rock, and pop. Their music often features intricate guitar work, soaring vocal melodies, and a focus on songcraft and lyrical depth. The Dodos have been compared to artists such as The Velvet Underground, The Kinks, and The Beach Boys.\nPolvo, on the other hand, is a noise rock band that emerged in the 1990s. Their music is characterized by heavy distortion, frenetic energy, and a raw, abrasive sound. Polvo's music often features complex time signatures, dissonant harmonies, and a focus on sonic experimentation. The band has been compared to artists such as Sonic Youth, The Pixies, and Slint.\nWhile both bands are certainly influenced by indie rock and noise rock traditions, they have distinct styles and sounds that set them apart from one another.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Dodos and Polvo have been associated with the indie rock genre.",
+      "The Dodos' sound blends elements of folk, rock, and pop.",
+      "Polvo is a noise rock band.",
+      "Polvo's music is characterized by heavy distortion, frenetic energy, and a raw, abrasive sound.",
+      "The Dodos have been compared to artists such as The Velvet Underground, The Kinks, and The Beach Boys."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 103,
+    "user_query": "Which tennis player won more Grand Slam doubles titles, Sergio Casal or Pieter Aldrich?",
+    "llama-2-13b-chat-hf_response": "Sergio Casal won 14 Grand Slam doubles titles, while Pieter Aldrich won 10 Grand Slam doubles titles. Therefore, Sergio Casal won more Grand Slam doubles titles.",
+    "llama-2-13b-chat-hf_fact": [
+      "Sergio Casal won 14 Grand Slam doubles titles.",
+      "Pieter Aldrich won 10 Grand Slam doubles titles.",
+      "Sergio Casal won more Grand Slam doubles titles than Pieter Aldrich."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Sergio Casal won 11 Grand Slam doubles titles.",
+      "false, [corrected fact]: Pieter Aldrich won 5 Grand Slam doubles titles.",
+      "false, [corrected fact]: "
+    ]
+  },
+  {
+    "id": 104,
+    "user_query": "Which has more miles, Northern State Parkway or Meadowbrook State Parkway?",
+    "llama-2-13b-chat-hf_response": "Northern State Parkway has more miles. It has a total length of approximately 28 miles, while Meadowbrook State Parkway has a total length of approximately 13 miles.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Northern State Parkway has a total length of approximately 28 miles.",
+      "The Meadowbrook State Parkway has a total length of approximately 13 miles."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 105,
+    "user_query": "Who was the daughter of DFS co-founder and shareholder?",
+    "llama-2-13b-chat-hf_response": "DFS co-founder and shareholder, David Neeleman, had a daughter named Elizabeth Neeleman. She was a passenger on the flight.",
+    "llama-2-13b-chat-hf_fact": [
+      "David Neeleman is a co-founder and shareholder of DFS.",
+      "David Neeleman has a daughter named Elizabeth Neeleman.",
+      "Elizabeth Neeleman was a passenger on a flight."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: David Neeleman is a co-founder and shareholder of JetBlue Airways, not DFS.",
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 108,
+    "user_query": "What American soldier established Fort Leavenworth in Kansas, and was re-interred to Fort Leavenworth National Cemetery in 1902?",
+    "llama-2-13b-chat-hf_response": "Fort Leavenworth, Kansas, was established in 1827 by Captain Henry Leavenworth, who was assigned to protect the Santa Fe Trail. The fort was named after him. Captain Leavenworth died in 1834, and was re-interred to Fort Leavenworth National Cemetery in 1902.\nCaptain Henry Leavenworth was an American soldier who played a significant role in the early history of the United States Army. He was born on January 14, 1783, in Philadelphia, Pennsylvania, and graduated from the United States Military Academy in 1806. After completing his training, he was commissioned as a second lieutenant in the Army Corps of Engineers.\nCaptain Leavenworth served in several military campaigns, including the War of 1812 and the Indian Wars. He was appointed as the commander of Fort Leavenworth in 1827, and served in that position until his death in 1834. During his tenure, he oversaw the construction of several buildings and roads in the area, and helped to establish the fort as a major military base in the region.",
+    "llama-2-13b-chat-hf_fact": [
+      "Captain Henry Leavenworth established Fort Leavenworth in Kansas in 1827.",
+      "Fort Leavenworth was named after Captain Henry Leavenworth.",
+      "Captain Henry Leavenworth was born on January 14, 1783, in Philadelphia, Pennsylvania.",
+      "Captain Henry Leavenworth graduated from the United States Military Academy in 1806.",
+      "Captain Henry Leavenworth served as the commander of Fort Leavenworth until his death in 1834."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Captain Henry Leavenworth was born on October 10, 1783, in Sussex County, New Jersey.",
+      "true",
+      "false, [corrected fact]: Captain Henry Leavenworth served as the commander of Fort Leavenworth until 1834, but he did not die in that year. The date of his death is unknown."
+    ]
+  },
+  {
+    "id": 109,
+    "user_query": "What is the setting of The Kovak Box, the 2006 thriller movie starring Irish actor, David Kelly?",
+    "llama-2-13b-chat-hf_response": "The Kovak Box is set in the United States.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Kovak Box is a thriller movie released in 2006.",
+      "David Kelly is an Irish actor.",
+      "The setting of The Kovak Box is in the United States."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: David Kelly is an Irish actor, but he is not associated with The Kovak Box.",
+      "false, [corrected fact]: The setting of The Kovak Box is not in the United States."
+    ]
+  },
+  {
+    "id": 110,
+    "user_query": "The Silver Jubilee Bridge was opened as a replacement for the Widnes-Runcorn Transporter Bridge in which year?",
+    "llama-2-13b-chat-hf_response": "The Silver Jubilee Bridge was opened in 1977.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Silver Jubilee Bridge was opened in 1977."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The Silver Jubilee Bridge was opened in 1961."
+    ]
+  },
+  {
+    "id": 111,
+    "user_query": "Were Ken Loach and Ben Holmes both directors?",
+    "llama-2-13b-chat-hf_response": "No, Ken Loach was the director and Ben Holmes was the writer.",
+    "llama-2-13b-chat-hf_fact": [
+      "Ken Loach was a director.",
+      "Ben Holmes was a writer."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 112,
+    "user_query": "What Hollywood musical directed by Vincente Minnelli had an African-American cast?",
+    "llama-2-13b-chat-hf_response": "Answer: Cabin in the Sky (1943) was the first Hollywood musical to feature an African-American cast, directed by Vincente Minnelli. The film starred Ethel Waters, Eddie Anderson, and Lena Horne, among others.",
+    "llama-2-13b-chat-hf_fact": [
+      "Cabin in the Sky (1943) is a Hollywood musical.",
+      "Cabin in the Sky (1943) was directed by Vincente Minnelli.",
+      "Cabin in the Sky (1943) was the first Hollywood musical to have an African-American cast.",
+      "Ethel Waters, Eddie Anderson, and Lena Horne were part of the cast of Cabin in the Sky (1943)."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: Cabin in the Sky (1943) was directed by Vincente Minnelli and Busby Berkeley.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 116,
+    "user_query": "Which song was released first, All My Rowdy Friends Are Coming Over Tonight by Hank Williams Jr. or Wiggle by Jason Derulo?",
+    "llama-2-13b-chat-hf_response": "All My Rowdy Friends Are Coming Over Tonight by Hank Williams Jr. was released first. It was released in 1984.\nWiggle by Jason Derulo was released in 2014.",
+    "llama-2-13b-chat-hf_fact": [
+      "All My Rowdy Friends Are Coming Over Tonight by Hank Williams Jr. was released in 1984.",
+      "Wiggle by Jason Derulo was released in 2014."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 118,
+    "user_query": "Which restaurant has more locations, Pizza Schmizza or Mr. Jim's Pizza?",
+    "llama-2-13b-chat-hf_response": "Pizza Schmizza has more locations. Pizza Schmizza has 15 locations, while Mr. Jim's Pizza has 10 locations.",
+    "llama-2-13b-chat-hf_fact": [
+      "Pizza Schmizza has 15 locations.",
+      "Mr. Jim's Pizza has 10 locations."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 119,
+    "user_query": "The King in Love stared an actor that is best known for starring in what film?",
+    "llama-2-13b-chat-hf_response": "The King in Love starred an actor that is best known for starring in what film?\nA) Titanic\nB) The Notebook\nC) The Lord of the Rings\nD) The Matrix\nAnswer: B) The Notebook.\nThe King in Love starred actor Ryan Gosling, who is best known for his role as Noah Calhoun in The Notebook.",
+    "llama-2-13b-chat-hf_fact": [
+      "The King in Love starred actor Ryan Gosling.",
+      "Ryan Gosling is best known for his role as Noah Calhoun in The Notebook."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The King in Love did not star actor Ryan Gosling.",
+      "true"
+    ]
+  },
+  {
+    "id": 120,
+    "user_query": "How many mafia families are there in the country, organized crime groups, such as the Rudaj Organization, come from?",
+    "llama-2-13b-chat-hf_response": "There are several organized crime groups operating in Albania, including the Rudaj Organization, which is one of the most powerful and influential groups in the country. The Rudaj Organization is based in the town of Kruj, located about 30 kilometers north of Tirana, the capital city of Albania.\nAccording to the Albanian authorities, there are currently around 20 organized crime groups operating in the country, with the Rudaj Organization being one of the largest and most prominent. These groups are involved in a wide range of criminal activities, including drug trafficking, weapons smuggling, extortion, and human trafficking.\nIt is worth noting that the exact number of organized crime groups in Albania may vary depending on the source, as some sources may include or exclude certain groups. However, the general consensus is that there are around 20 organized crime groups operating in the country, with the Rudaj Organization being one of the most powerful and influential.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Rudaj Organization is based in the town of Kruj, Albania, which is located about 30 kilometers north of Tirana.",
+      "According to the Albanian authorities, there are currently around 20 organized crime groups operating in Albania.",
+      "The Rudaj Organization is considered one of the most powerful and influential groups in Albania.",
+      "Organized crime groups in Albania engage in criminal activities such as drug trafficking, weapons smuggling, extortion, and human trafficking.",
+      "The number of organized crime groups in Albania may vary depending on the source, but the general consensus is around 20 groups."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "unknown",
+      "true",
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 122,
+    "user_query": "Who was born first, Aaron Gillespie or Nathan Leone?",
+    "llama-2-13b-chat-hf_response": "Aaron Gillespie was born on May 21, 1983.\nNathan Leone was born on May 23, 1983.\nSo, Nathan Leone was born first.",
+    "llama-2-13b-chat-hf_fact": [
+      "Aaron Gillespie was born on May 21, 1983.",
+      "Nathan Leone was born on May 23, 1983.",
+      "Nathan Leone was born before Aaron Gillespie."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Nathan Leone was born after Aaron Gillespie."
+    ]
+  },
+  {
+    "id": 124,
+    "user_query": "Actor Bill Nunn was known for which comic-to-film superhero adaptation?",
+    "llama-2-13b-chat-hf_response": "A) Spider-Man\nB) The X-Men\nC) The Avengers\nD) The Fantastic Four\nAnswer: A) Spider-Man",
+    "llama-2-13b-chat-hf_fact": [
+      "Bill Nunn was known for his role in the comic-to-film superhero adaptation Spider-Man."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 125,
+    "user_query": "Robert Gregson and  Leslie S. Hiscott were both in what profession?",
+    "llama-2-13b-chat-hf_response": "A) Doctors\nB) Lawyers\nC) Teachers\nD) Engineers\nAnswer: A) Doctors.\nRobert Gregson and Leslie S. Hiscott were both doctors.",
+    "llama-2-13b-chat-hf_fact": [
+      "Robert Gregson and Leslie S. Hiscott were both doctors."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 126,
+    "user_query": "What is the meaning of the name of the capital city where the Lebanese International University is located?",
+    "llama-2-13b-chat-hf_response": "The capital city of Lebanon is Beirut. The name \"Beirut\" is derived from the Phoenician word \"Bayrut,\" which means \"wells\" or \"fountains.\" The city was known for its many springs and water sources, which made it an important center for trade and commerce.\nThe Lebanese International University is located in Beirut, which is the capital and largest city of Lebanon. The university was established in 1987 and is a private, non-profit institution that offers undergraduate and graduate programs in a variety of fields, including business, engineering, law, and medicine. The university is known for its academic excellence and its diverse student body, which includes students from all over the world.",
+    "llama-2-13b-chat-hf_fact": [
+      "The capital city of Lebanon is Beirut.",
+      "The name \"Beirut\" is derived from the Phoenician word \"Bayrut,\" which means \"wells\" or \"fountains.\"",
+      "Beirut was known for its many springs and water sources.",
+      "The Lebanese International University is located in Beirut.",
+      "The Lebanese International University was established in 1987."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 127,
+    "user_query": "What is the scheduled release date of the British-American animated film starring the actress who won the Golden Globe Award for Best Supporting Actress in 2006 for \"Gideon's Daughter\"?",
+    "llama-2-13b-chat-hf_response": "The scheduled release date of the British-American animated film starring the actress who won the Golden Globe Award for Best Supporting Actress in 2006 for \"Gideon's Daughter\" is March 27, 2020.\nThe actress who won the Golden Globe Award for Best Supporting Actress in 2006 for \"Gideon's Daughter\" is Natalie Portman.\nThe British-American animated film starring Natalie Portman is \"Vox Lux\".",
+    "llama-2-13b-chat-hf_fact": [
+      "The scheduled release date of the British-American animated film starring Natalie Portman is March 27, 2020.",
+      "Natalie Portman won the Golden Globe Award for Best Supporting Actress in 2006 for her role in \"Gideon's Daughter\".",
+      "Natalie Portman is the actress who won the Golden Globe Award for Best Supporting Actress in 2006 for \"Gideon's Daughter\".",
+      "The British-American animated film starring Natalie Portman is titled \"Vox Lux\"."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The scheduled release date of the British-American animated film starring Natalie Portman is unknown.",
+      "false, [corrected fact]: Natalie Portman won the Golden Globe Award for Best Supporting Actress in 2005 for her role in \"Closer\".",
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 128,
+    "user_query": "Are Snow White and the Seven Dwarfs and Alice in Wonderland both films in the fantasy genre?",
+    "llama-2-13b-chat-hf_response": "Yes, both Snow White and the Seven Dwarfs (1937) and Alice in Wonderland (1951) are films in the fantasy genre.\nSnow White and the Seven Dwarfs is a classic Disney animated film that tells the story of a princess named Snow White who is forced to flee her kingdom and seek refuge with a group of dwarfs. The film features magical elements such as talking animals, a fairy godmother, and a poisoned apple that puts Snow White into a sleeping curse. These elements classify the film as a work of fantasy.\nAlice in Wonderland, on the other hand, is a live-action/animated film that tells the story of a young girl named Alice who falls down a rabbit hole and enters a fantastical world filled with strange creatures, such as the Mad Hatter, the Cheshire Cat, and the Queen of Hearts. Like Snow White, Alice in Wonderland features magical elements and a dreamlike atmosphere that classify it as a work of fantasy.\nBoth films have become beloved classics in the fantasy genre and have had a lasting impact on",
+    "llama-2-13b-chat-hf_fact": [
+      "Snow White and the Seven Dwarfs (1937) is a classic Disney animated film.",
+      "Snow White and the Seven Dwarfs features elements such as talking animals, a fairy godmother, and a poisoned apple.",
+      "Alice in Wonderland (1951) is a live-action/animated film.",
+      "Alice in Wonderland features characters such as the Mad Hatter, the Cheshire Cat, and the Queen of Hearts.",
+      "Both Snow White and the Seven Dwarfs and Alice in Wonderland are considered films in the fantasy genre."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Alice in Wonderland (1951) is a fully animated film.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 130,
+    "user_query": "The series of comics that follow the mythological Norse real of Asgard, were original owned by what comic company?",
+    "llama-2-13b-chat-hf_response": "Answer: Marvel Comics.\nThe series of comics that follow the mythological Norse real of Asgard were originally owned by Marvel Comics. The comics were created by Stan Lee, Larry Lieber, and Jack Kirby, and were first published in 1962. The series follows the adventures of the gods of Asgard, including Thor, Odin, and Loki, and their battles against various supervillains. The comics were later adapted into a successful film franchise by Marvel Studios, starring Chris Hemsworth as Thor.",
+    "llama-2-13b-chat-hf_fact": [
+      "The series of comics that follow the mythological Norse realm of Asgard were originally owned by Marvel Comics.",
+      "The comics were created by Stan Lee, Larry Lieber, and Jack Kirby.",
+      "The comics were first published in 1962.",
+      "The series follows the adventures of the gods of Asgard, including Thor, Odin, and Loki.",
+      "The comics were later adapted into a successful film franchise by Marvel Studios, starring Chris Hemsworth as Thor."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: The comics were first published in 1962 by Marvel Comics.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 132,
+    "user_query": "A hardore wrestling promotion known as 3PW, and featured a wrestler whose real name is Terry Michael Brunk, was based in what city?",
+    "llama-2-13b-chat-hf_response": "A) Philadelphia, Pennsylvania\nB) Pittsburgh, Pennsylvania\nC) Allentown, Pennsylvania\nD) Scranton, Pennsylvania\nAnswer: A) Philadelphia, Pennsylvania\n3PW, or Three Pennsylvania Wrestling, was a hardcore wrestling promotion based in Philadelphia, Pennsylvania. Terry Michael Brunk, better known by his ring name Sabu, was a prominent wrestler in the promotion.",
+    "llama-2-13b-chat-hf_fact": [
+      "3PW, or Three Pennsylvania Wrestling, was a hardcore wrestling promotion.",
+      "3PW was based in Philadelphia, Pennsylvania.",
+      "Terry Michael Brunk's real name is Terry Michael Brunk.",
+      "Terry Michael Brunk's ring name is Sabu.",
+      "Sabu was a prominent wrestler in 3PW."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 133,
+    "user_query": "Who was the mother of a retired British Army officer born in 1939?",
+    "llama-2-13b-chat-hf_response": "C. Diana, Princess of Wales",
+    "llama-2-13b-chat-hf_fact": [
+      "The retired British Army officer was born in 1939.",
+      "The mother of the retired British Army officer was C. Diana, Princess of Wales."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The retired British Army officer was born in 1947.",
+      "false, [corrected fact]: The mother of the retired British Army officer was Diana, Princess of Wales."
+    ]
+  },
+  {
+    "id": 134,
+    "user_query": "Which band performed Never Been to Spain, written by country singer Hoyt Axton?",
+    "llama-2-13b-chat-hf_response": "The band Three Dog Night performed the song Never Been to Spain, which was written by country singer Hoyt Axton. The song was released in 1972 and became one of the band's biggest hits, reaching the top of the Billboard Hot 100 chart.",
+    "llama-2-13b-chat-hf_fact": [
+      "The song \"Never Been to Spain\" was written by country singer Hoyt Axton.",
+      "The band Three Dog Night performed the song \"Never Been to Spain.\"",
+      "The song \"Never Been to Spain\" was released in 1972.",
+      "The song \"Never Been to Spain\" reached the top of the Billboard Hot 100 chart.",
+      "The band Three Dog Night had one of their biggest hits with the song \"Never Been to Spain.\""
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The song \"Never Been to Spain\" was written by singer-songwriter Hoyt Axton.",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 135,
+    "user_query": "In what season of Europe's premier club football tournament was the league that the 2010 UEFA Champions League Final decided the winners of?",
+    "llama-2-13b-chat-hf_response": "The 2010 UEFA Champions League Final was played between Inter Milan and Bayern Munich on May 22, 2010, at the Santiago Bernabeu Stadium in Madrid, Spain. Therefore, the season in which the 2010 UEFA Champions League Final decided the winners of the tournament was the 2009-10 season.",
+    "llama-2-13b-chat-hf_fact": [
+      "The 2010 UEFA Champions League Final was played on May 22, 2010.",
+      "The final was held at the Santiago Bernabeu Stadium in Madrid, Spain.",
+      "Inter Milan and Bayern Munich were the teams that played in the final.",
+      "The season in which the final decided the winners of the tournament was the 2009-10 season."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 136,
+    "user_query": "What is the birthdate of this Irish musician and actor, who was a drummer and provided backing vocals, along with Bono on the song \"Numb\"?",
+    "llama-2-13b-chat-hf_response": "Hint: This Irish musician and actor was a member of the Irish rock band U2.\nAnswer: The birthdate of the Irish musician and actor you are referring to is May 10, 1961. That is the birthdate of Adam Clayton, the bassist and a founding member of the Irish rock band U2.\nAdam Clayton has been a member of U2 since the band's formation in 1976, and has played a key role in the band's success over the years. In addition to his work as a bassist, Clayton has also provided backing vocals and has occasionally played the drums for the band.\nThe song \"Numb\" is a track from U2's 1993 album \"Zooropa,\" and it features both Bono and Adam Clayton on vocals. So, the answer to your question is May 10, 1961, which is Adam Clayton's birthdate.",
+    "llama-2-13b-chat-hf_fact": [
+      "Adam Clayton, the Irish musician and actor, was born on May 10, 1961.",
+      "Adam Clayton is a bassist and a founding member of the Irish rock band U2.",
+      "Adam Clayton has been a member of U2 since the band's formation in 1976.",
+      "Adam Clayton has provided backing vocals and occasionally played the drums for U2.",
+      "The song \"Numb\" is a track from U2's 1993 album \"Zooropa\" and features both Bono and Adam Clayton on vocals."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Adam Clayton, the Irish musician and actor, was born on March 13, 1960.",
+      "true",
+      "false, [corrected fact]: Adam Clayton has been a member of U2 since the band's formation in 1976, except for a brief departure in 1976 before the band's first public performance.",
+      "false, [corrected fact]: Adam Clayton has provided backing vocals for U2, but he does not play the drums for the band.",
+      "true"
+    ]
+  },
+  {
+    "id": 138,
+    "user_query": "In what year was the musician whose 1978 album \"Street Hassle\" was released by Arista Records born?",
+    "llama-2-13b-chat-hf_response": "The musician was born in 1942.",
+    "llama-2-13b-chat-hf_fact": [
+      "The musician was born in 1942."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 140,
+    "user_query": "What Australian actress starred in Bridesmaids?",
+    "llama-2-13b-chat-hf_response": "Maya Rudolph, who is American, starred in Bridesmaids. There is no Australian actress who starred in the movie.",
+    "llama-2-13b-chat-hf_fact": [
+      "Maya Rudolph starred in the movie Bridesmaids.",
+      "Maya Rudolph is American."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 141,
+    "user_query": "Which French scientist headed the Bureau des Longitudes at one time, and was described as \"The Last Universalist\"?",
+    "llama-2-13b-chat-hf_response": "Answer: Pierre-Simon Laplace.\nLaplace was a French mathematician and astronomer who was the director of the Bureau des Longitudes from 1795 to 1827. He was known as \"The Last Universalist\" because he was one of the last scientists to try to understand the universe as a single, coherent system. He is best known for his work on celestial mechanics and his development of the Laplace transform, which is a mathematical technique used to solve differential equations.",
+    "llama-2-13b-chat-hf_fact": [
+      "Pierre-Simon Laplace was a French mathematician and astronomer.",
+      "Laplace was the director of the Bureau des Longitudes from 1795 to 1827.",
+      "He was known as \"The Last Universalist\" because he attempted to understand the universe as a single, coherent system.",
+      "Laplace worked on celestial mechanics.",
+      "He developed the Laplace transform, a mathematical technique used to solve differential equations."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: Laplace did not develop the Laplace transform. The Laplace transform was actually developed by Pierre-Simon Laplace's contemporary, Pierre-Simon Laplace."
+    ]
+  },
+  {
+    "id": 142,
+    "user_query": "Which company operates internationally, Extra Space Storage or Jacobs Engineering Group?",
+    "llama-2-13b-chat-hf_response": "Extra Space Storage operates internationally, while Jacobs Engineering Group does not have any international operations.\nExtra Space Storage is a self-storage company that operates in the United States, Canada, and the United Kingdom. The company has over 1,800 storage facilities across these three countries, and it offers a range of storage solutions for both residential and commercial customers.\nJacobs Engineering Group, on the other hand, is a professional services firm that provides engineering, architecture, and construction services to clients around the world. The company has offices in over 20 countries, but it does not have any international storage facilities or operations.\nTherefore, if you are looking for a company that operates internationally in the storage industry, Extra Space Storage would be the better choice.",
+    "llama-2-13b-chat-hf_fact": [
+      "Extra Space Storage operates internationally, with storage facilities in the United States, Canada, and the United Kingdom.",
+      "Jacobs Engineering Group is a professional services firm that provides engineering, architecture, and construction services worldwide.",
+      "Extra Space Storage has over 1,800 storage facilities in the United States, Canada, and the United Kingdom.",
+      "Jacobs Engineering Group has offices in over 20 countries.",
+      "Extra Space Storage is in the storage industry."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 144,
+    "user_query": "Bonaire Express serves which country in the Caribbean Sea?",
+    "llama-2-13b-chat-hf_response": "A) Aruba\nB) Bonaire\nC) Curacao\nD) Sint Maarten\nAnswer: B) Bonaire",
+    "llama-2-13b-chat-hf_fact": [
+      "Bonaire Express serves the country of Bonaire in the Caribbean Sea."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 145,
+    "user_query": "Which battle occured later, the Battle of Shiloh, or the Battle of Antietam?",
+    "llama-2-13b-chat-hf_response": "The Battle of Antietam occurred later.\nThe Battle of Shiloh took place from April 6 to 7, 1862, while the Battle of Antietam was fought on September 17, 1862.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Battle of Shiloh took place from April 6 to 7, 1862.",
+      "The Battle of Antietam was fought on September 17, 1862.",
+      "The Battle of Antietam occurred later than the Battle of Shiloh."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 147,
+    "user_query": "Wind and Cloud 2 had an acting credit given to which Chinese martial artist?",
+    "llama-2-13b-chat-hf_response": "Answer: Donnie Yen.\nDonnie Yen, a famous Chinese martial artist and actor, had an acting credit in the video game Wind and Cloud 2.",
+    "llama-2-13b-chat-hf_fact": [
+      "Donnie Yen is a Chinese martial artist and actor.",
+      "Donnie Yen had an acting credit in the video game Wind and Cloud 2."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 148,
+    "user_query": "The 2015 North Carolina Tar Heels football team played in the Russell Athletic Bowl where they lost to what team that was coached by Art Briles?",
+    "llama-2-13b-chat-hf_response": "The 2015 North Carolina Tar Heels football team played in the Russell Athletic Bowl where they lost to the Baylor Bears, who were coached by Art Briles.",
+    "llama-2-13b-chat-hf_fact": [
+      "The 2015 North Carolina Tar Heels football team played in the Russell Athletic Bowl.",
+      "The North Carolina Tar Heels lost in the Russell Athletic Bowl.",
+      "The Baylor Bears were the team that North Carolina lost to in the Russell Athletic Bowl.",
+      "Art Briles was the coach of the Baylor Bears during the Russell Athletic Bowl.",
+      "The Russell Athletic Bowl took place in 2015."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: The North Carolina Tar Heels won in the Russell Athletic Bowl.",
+      "false, [corrected fact]: The North Carolina Tar Heels did not lose to the Baylor Bears in the Russell Athletic Bowl.",
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 149,
+    "user_query": "曺秀美 produced a song that was the lead single for what film?",
+    "llama-2-13b-chat-hf_response": "曺秀美 (Cho Yong-mi) produced a song that was the lead single for what film?\n曺秀美 (Cho Yong-mi) produced a song that was the lead single for the film \"Parasite\" (2019).",
+    "llama-2-13b-chat-hf_fact": [
+      "曺秀美 (Cho Yong-mi) produced a song for the film \"Parasite\" (2019)."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: 曺秀美 (Cho Yong-mi) did not produce a song for the film \"Parasite\" (2019)."
+    ]
+  },
+  {
+    "id": 150,
+    "user_query": "Bootlegger, Vol. is a live recording by a voice actress who voices which scooby-doo character ?",
+    "llama-2-13b-chat-hf_response": "A) Shaggy\nB) Fred\nC) Daphne\nD) Velma\nAnswer: D) Velma",
+    "llama-2-13b-chat-hf_fact": [
+      "The album Bootlegger, Vol. is a live recording.",
+      "The voice actress who recorded the album voices a Scooby-Doo character.",
+      "The character voiced by the voice actress in the album is Velma."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The album Bootlegger, Vol. is not a live recording.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 151,
+    "user_query": "What language does the word for the format used by radio station K276FK originate from?",
+    "llama-2-13b-chat-hf_response": "The word for the format used by radio station K276FK is \"variety\". This word originates from the English language.",
+    "llama-2-13b-chat-hf_fact": [
+      "The word for the format used by radio station K276FK is \"variety\".",
+      "The word \"variety\" originates from the English language."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 152,
+    "user_query": "How large is the parcel of land acquired by the United States and explored by Army Major Enoch Sheen, after whom Stein's Pass was named?",
+    "llama-2-13b-chat-hf_response": "The parcel of land acquired by the United States and explored by Army Major Enoch Sheen, after whom Stein's Pass was named, was approximately 100 acres in size.",
+    "llama-2-13b-chat-hf_fact": [
+      "The parcel of land acquired by the United States and explored by Army Major Enoch Sheen was approximately 100 acres in size.",
+      "Army Major Enoch Sheen explored the parcel of land.",
+      "Stein's Pass was named after Army Major Enoch Sheen.",
+      "The United States acquired the parcel of land."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The parcel of land acquired by the United States and explored by Army Major Enoch Sheen was approximately 10 acres in size.",
+      "true",
+      "false, [corrected fact]: Stein's Pass was named after Army Major Enoch Stein, not Sheen.",
+      "true"
+    ]
+  },
+  {
+    "id": 153,
+    "user_query": "Who signed with record label first, The Ready Set or L'Arc-en-Ciel?",
+    "llama-2-13b-chat-hf_response": "The Ready Set signed with record label first, not L'Arc-en-Ciel.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Ready Set signed with a record label first.",
+      "L'Arc-en-Ciel did not sign with a record label first."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 154,
+    "user_query": "What is the mascot of the team that Everaldo Stum plays professional football for?",
+    "llama-2-13b-chat-hf_response": "Everaldo Stum plays professional football for the team that is known as the \"São Paulo\".",
+    "llama-2-13b-chat-hf_fact": [
+      "Everaldo Stum plays professional football.",
+      "Everaldo Stum plays for a team.",
+      "The team that Everaldo Stum plays for is known as the \"São Paulo\"."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: The team that Everaldo Stum plays for is known as \"Goiás\"."
+    ]
+  },
+  {
+    "id": 155,
+    "user_query": "What was the birth year of the team member who replaced Terrelle Pryor in the 2013 Oakland Raider's game against Houstan Texans?",
+    "llama-2-13b-chat-hf_response": "The team member who replaced Terrelle Pryor in the 2013 Oakland Raiders game against the Houston Texans was Matt Flynn. Matt Flynn was born in 1985.",
+    "llama-2-13b-chat-hf_fact": [
+      "Matt Flynn replaced Terrelle Pryor in the 2013 Oakland Raiders game against the Houston Texans.",
+      "Matt Flynn was born in 1985."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 156,
+    "user_query": "What team, owned by Michael Jordon, did Jamie Feick play for?",
+    "llama-2-13b-chat-hf_response": "Jamie Feick did not play for any team owned by Michael Jordan. Michael Jordan is a former NBA player and owner of the Charlotte Hornets, but Jamie Feick has never played for the Hornets or any other team owned by Jordan.",
+    "llama-2-13b-chat-hf_fact": [
+      "Michael Jordan is a former NBA player.",
+      "Michael Jordan is the owner of the Charlotte Hornets.",
+      "Jamie Feick has never played for the Charlotte Hornets.",
+      "Jamie Feick has never played for any team owned by Michael Jordan.",
+      "Jamie Feick is not associated with Michael Jordan's teams."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: Jamie Feick has played for teams owned by Michael Jordan, including the Charlotte Hornets.",
+      "false, [corrected fact]: Jamie Feick has been associated with Michael Jordan's teams, specifically the Charlotte Hornets."
+    ]
+  },
+  {
+    "id": 158,
+    "user_query": "Victory Through Air Power and Portrait of Gina are both what?",
+    "llama-2-13b-chat-hf_response": "A) Paintings by the same artist\nB) Depictions of the same subject\nC) Examples of the same art movement\nD) Created in the same time period\nCorrect answer: B) Depictions of the same subject. Victory Through Air Power and Portrait of Gina are both depictions of the same subject, Gina Cody.",
+    "llama-2-13b-chat-hf_fact": [
+      "\"Victory Through Air Power\" and \"Portrait of Gina\" are both depictions of the same subject, Gina Cody."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: \"Victory Through Air Power\" and \"Portrait of Gina\" are both depictions of different subjects."
+    ]
+  },
+  {
+    "id": 159,
+    "user_query": "Which actor from the ABC comedy Boy Meets World also appears in Home at Last, an online sitcom created in 2011?",
+    "llama-2-13b-chat-hf_response": "Answer: Ben Savage, who played Cory Matthews in Boy Meets World, appears in Home at Last as the character of Ben.",
+    "llama-2-13b-chat-hf_fact": [
+      "Ben Savage is an actor.",
+      "Ben Savage played Cory Matthews in the ABC comedy Boy Meets World.",
+      "Home at Last is an online sitcom created in 2011.",
+      "Ben Savage appears in Home at Last.",
+      "Ben Savage portrays the character of Ben in Home at Last."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "unknown",
+      "unknown",
+      "false, [corrected fact]: Ben Savage does not portray the character of Ben in Home at Last."
+    ]
+  },
+  {
+    "id": 160,
+    "user_query": "What is the defining feature of a republic, or Jamhuri in Swahili?",
+    "llama-2-13b-chat-hf_response": "A republic is a form of government where power is held by the people or their elected representatives, rather than by a monarch or other hereditary leader. In a republic, the head of state is usually a president or a prime minister, who is elected through a democratic process.\nIn a republic, the people or their representatives have the power to make laws and decisions for the country, rather than a monarch or other hereditary leader. This means that the government is accountable to the people, and that the people have a say in how the country is run.\nSome of the key features of a republic include:\n1. Popular sovereignty: The idea that the people are the source of all political power and that government exists to serve their interests.\n2. Representative democracy: The people elect representatives to make decisions on their behalf.\n3. Separation of powers: A system of checks and balances among the different branches of government to prevent any one branch from becoming too powerful.\n4. Rule of law: The principle that all citizens are subject to the same laws and that the government is not above the law.\nIn Swahili, the",
+    "llama-2-13b-chat-hf_fact": [
+      "In a republic, power is held by the people or their elected representatives, not by a monarch or hereditary leader.",
+      "The head of state in a republic is usually a president or a prime minister, elected through a democratic process.",
+      "Popular sovereignty is a key feature of a republic, which means that the people are the source of political power and the government serves their interests.",
+      "Representative democracy is another key feature, where the people elect representatives to make decisions on their behalf.",
+      "Separation of powers is a system of checks and balances among different branches of government in a republic to prevent any one branch from becoming too powerful."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 161,
+    "user_query": "\"Wild Things\" is a song recorded by a singer who was born in which year ?",
+    "llama-2-13b-chat-hf_response": "A) 1940\nB) 1950\nC) 1960\nD) 1970\nAnswer: C) 1960\nThe singer who recorded \"Wild Things\" was born in 1960.",
+    "llama-2-13b-chat-hf_fact": [
+      "The singer who recorded \"Wild Things\" was born in 1960."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The singer who recorded \"Wild Things\" was born in 1972."
+    ]
+  },
+  {
+    "id": 162,
+    "user_query": "Are Jean Eustache and John Sturges of the same nationality?",
+    "llama-2-13b-chat-hf_response": "I know that Jean Eustache is French, but I'm not sure about John Sturges.\nCan you tell me?\nThank you!",
+    "llama-2-13b-chat-hf_fact": [
+      "Jean Eustache is French."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 163,
+    "user_query": "What was Mitchell Anderson's character's occasional job in \"The Karen Carpenter Story?\"",
+    "llama-2-13b-chat-hf_response": "A) He was a waiter at a local restaurant.\nB) He was a delivery man for a local grocery store.\nC) He was a busboy at a local diner.\nD) He was a dishwasher at a local cafeteria.\nCorrect answer: C) He was a busboy at a local diner.",
+    "llama-2-13b-chat-hf_fact": [
+      "Mitchell Anderson's character in \"The Karen Carpenter Story\" had an occasional job.",
+      "C) He worked as a busboy at a local diner."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 165,
+    "user_query": "What is the nationality of the original singer of Share Your Love With Me?",
+    "llama-2-13b-chat-hf_response": "The original singer of \"Share Your Love With Me\" is a Korean singer named Kim Hyun-sung.",
+    "llama-2-13b-chat-hf_fact": [
+      "The original singer of \"Share Your Love With Me\" is Kim Hyun-sung.",
+      "Kim Hyun-sung is a Korean singer."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The original singer of \"Share Your Love With Me\" is Aretha Franklin.",
+      "true"
+    ]
+  },
+  {
+    "id": 166,
+    "user_query": "Are Entertainment Weekly and The Living Church published in the same country?",
+    "llama-2-13b-chat-hf_response": "Yes, Entertainment Weekly and The Living Church are published in the same country, the United States. Entertainment Weekly is a weekly magazine that covers entertainment news, including movies, television, music, and celebrities, and is published in New York City. The Living Church is a weekly newspaper that covers news and issues related to the Episcopal Church, and is published in New York City as well.",
+    "llama-2-13b-chat-hf_fact": [
+      "Entertainment Weekly and The Living Church are both published in the United States.",
+      "Entertainment Weekly is a weekly magazine that covers entertainment news.",
+      "The Living Church is a weekly newspaper that covers news and issues related to the Episcopal Church.",
+      "Both Entertainment Weekly and The Living Church are published in New York City."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: Entertainment Weekly is published in New York City, but The Living Church is published in Milwaukee, Wisconsin."
+    ]
+  },
+  {
+    "id": 167,
+    "user_query": "George William Featherstonhaugh was one of the proposers of a railroad that linked the Mohawk River to what river?",
+    "llama-2-13b-chat-hf_response": "George William Featherstonhaugh was one of the proposers of a railroad that linked the Mohawk River to the Hudson River.",
+    "llama-2-13b-chat-hf_fact": [
+      "George William Featherstonhaugh was one of the proposers of a railroad.",
+      "The railroad proposed by George William Featherstonhaugh linked the Mohawk River to the Hudson River."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 171,
+    "user_query": "When was the bridge that crosses the river connecting Lake Winnipesaukee and Pemigewasset built?",
+    "llama-2-13b-chat-hf_response": "The bridge that crosses the river connecting Lake Winnipesaukee and Pemigewasset was built in 1923.",
+    "llama-2-13b-chat-hf_fact": [
+      "The bridge that crosses the river connecting Lake Winnipesaukee and Pemigewasset was built in 1923."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 174,
+    "user_query": "When was the  American actress born who was a start in both \"A League of Their Own\" (1992) and Route 666?",
+    "llama-2-13b-chat-hf_response": "Geena Davis was born on January 21, 1956, in Winston-Salem, North Carolina. She is an American actress and producer who has appeared in several films and television shows, including \"A League of Their Own\" (1992) and \"Route 666\" (1993).",
+    "llama-2-13b-chat-hf_fact": [
+      "Geena Davis was born on January 21, 1956, in Winston-Salem, North Carolina.",
+      "Geena Davis is an American actress and producer.",
+      "Geena Davis appeared in the film \"A League of Their Own\" in 1992.",
+      "Geena Davis appeared in the film \"Route 666\" in 1993."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: Geena Davis did not appear in the film \"Route 666\" in 1993."
+    ]
+  },
+  {
+    "id": 175,
+    "user_query": "Never Been to spain was written by what American folk music singer-songwriter?",
+    "llama-2-13b-chat-hf_response": "Question: Never Been to Spain was written by what American folk music singer-songwriter?\nAnswer: Never Been to Spain was written by American folk music singer-songwriter, Hoyt Axton.",
+    "llama-2-13b-chat-hf_fact": [
+      "\"Never Been to Spain\" was written by Hoyt Axton.",
+      "Hoyt Axton is an American folk music singer-songwriter."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: \"Never Been to Spain\" was written by Hoyt Axton, but popularized by the band Three Dog Night.",
+      "true"
+    ]
+  },
+  {
+    "id": 176,
+    "user_query": "Who wrote the opera in which Virginia Guerrini played Laura ?",
+    "llama-2-13b-chat-hf_response": "Virginia Guerrini played the role of Laura in the opera \"La Gioconda\" by Amilcare Ponchielli.",
+    "llama-2-13b-chat-hf_fact": [
+      "Virginia Guerrini played the role of Laura in the opera \"La Gioconda\".",
+      "Amilcare Ponchielli wrote the opera \"La Gioconda\".",
+      "\"La Gioconda\" is an opera."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 177,
+    "user_query": "Which hip hop duo that sang \"Meow the Jewels\" is an American hip hop duo formed in 2013 by rapper/producer El-P and rapper Killer Mike?",
+    "llama-2-13b-chat-hf_response": "The correct answer is Run the Jewels. \"Meow the Jewels\" is a parody of their album \"Run the Jewels 2\".",
+    "llama-2-13b-chat-hf_fact": [
+      "Run the Jewels is a hip hop duo.",
+      "Run the Jewels was formed in 2013.",
+      "Rapper/producer El-P is a member of Run the Jewels.",
+      "Rapper Killer Mike is a member of Run the Jewels.",
+      "\"Meow the Jewels\" is a parody of Run the Jewels' album \"Run the Jewels 2\"."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 178,
+    "user_query": "Paul Stanley and Alex Greenwald are both what?",
+    "llama-2-13b-chat-hf_response": "A) Musicians\nB) Actors\nC) Athletes\nD) Writers\nAnswer: A) Musicians\nPaul Stanley and Alex Greenwald are both musicians. Paul Stanley is the lead vocalist and guitarist of the rock band KISS, while Alex Greenwald is a singer and songwriter who has worked with various artists, including Phantom Planet and Mark Ronson.",
+    "llama-2-13b-chat-hf_fact": [
+      "Paul Stanley is the lead vocalist and guitarist of the rock band KISS.",
+      "Alex Greenwald is a singer and songwriter.",
+      "Alex Greenwald has worked with various artists, including Phantom Planet and Mark Ronson."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 180,
+    "user_query": "In what city was Constantine Sandis a former professor?",
+    "llama-2-13b-chat-hf_response": "A) Athens\nB) Rome\nC) Paris\nD) London\nAnswer: D) London",
+    "llama-2-13b-chat-hf_fact": [
+      "Constantine Sandis was a former professor in London."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Constantine Sandis is a current professor in London."
+    ]
+  },
+  {
+    "id": 181,
+    "user_query": "Are both Bear Stearns and Cowen Group failed businesses?",
+    "llama-2-13b-chat-hf_response": "Bear Stearns and Cowen Group are both investment banks, but they have had different fates.\nBear Stearns was founded in 1923 and was one of the oldest and largest investment banks in the United States. However, in 2008, the company was sold to JPMorgan Chase after facing financial difficulties during the subprime mortgage crisis. The sale was seen as a rescue deal, and JPMorgan Chase agreed to pay $2.5 billion to acquire Bear Stearns.\nCowen Group, on the other hand, was founded in 1918 and is a smaller investment bank compared to Bear Stearns. The company has had a more stable financial history and has not faced the same level of financial difficulties as Bear Stearns. In fact, Cowen Group has continued to grow and expand its business over the years, and it is currently one of the largest independent investment banks in the United States.\nTherefore, while Bear Stearns can be considered a failed business due to its financial difficulties and sale to JPMorgan Chase, Cowen Group is not a failed business and has continued to th",
+    "llama-2-13b-chat-hf_fact": [
+      "Bear Stearns was founded in 1923 and was one of the oldest and largest investment banks in the United States.",
+      "In 2008, Bear Stearns was sold to JPMorgan Chase after facing financial difficulties during the subprime mortgage crisis.",
+      "JPMorgan Chase agreed to pay $2.5 billion to acquire Bear Stearns.",
+      "Cowen Group was founded in 1918 and is a smaller investment bank compared to Bear Stearns.",
+      "Cowen Group has continued to grow and expand its business over the years and is currently one of the largest independent investment banks in the United States."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: JPMorgan Chase agreed to pay $2 per share to acquire Bear Stearns, which was significantly lower than its market value at the time.",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 182,
+    "user_query": "Videoplasty is composed mostly of highlights from a live show performed in a city that is how many miles north of San Francisco?",
+    "llama-2-13b-chat-hf_response": "Answer:\nVideoplasty is composed mostly of highlights from a live show performed in a city that is 478 miles north of San Francisco.\nThe correct answer is Seattle, Washington.",
+    "llama-2-13b-chat-hf_fact": [
+      "The city where the live show was performed is 478 miles north of San Francisco.",
+      "The live show highlights are the main component of Videoplasty.",
+      "Seattle, Washington is the city where the live show was performed."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The city where the live show was performed is 478 miles north of Seattle, Washington.",
+      "false, [corrected fact]: The live show highlights are not the main component of Videoplasty.",
+      "true"
+    ]
+  },
+  {
+    "id": 183,
+    "user_query": "What did the professional snooker player who dominated the sport during the 1980s win in 1985?",
+    "llama-2-13b-chat-hf_response": "In 1985, the professional snooker player who dominated the sport during the 1980s, Dennis Taylor, won the World Snooker Championship.",
+    "llama-2-13b-chat-hf_fact": [
+      "The professional snooker player who dominated the sport during the 1980s won the World Snooker Championship in 1985.",
+      "Dennis Taylor was the snooker player who won the World Snooker Championship in 1985."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: Dennis Taylor was the snooker player who lost to Steve Davis in the World Snooker Championship in 1985."
+    ]
+  },
+  {
+    "id": 184,
+    "user_query": "Does the Psychiatric Institute of Washington or Providence Hospital have more beds to offer patients?",
+    "llama-2-13b-chat-hf_response": "The Psychiatric Institute of Washington has 134 beds, while Providence Hospital has 174 beds. Therefore, Providence Hospital has more beds to offer patients.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Psychiatric Institute of Washington has 134 beds.",
+      "Providence Hospital has 174 beds.",
+      "Providence Hospital has more beds to offer patients than the Psychiatric Institute of Washington."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: The Psychiatric Institute of Washington has more beds to offer patients than Providence Hospital."
+    ]
+  },
+  {
+    "id": 185,
+    "user_query": "Did Second Battle of the Marne and Battle of Shiloh happen in the same war?",
+    "llama-2-13b-chat-hf_response": "No, the Second Battle of the Marne and the Battle of Shiloh did not happen in the same war.\nThe Second Battle of the Marne took place during World War I, specifically from July 15 to August 20, 1918, and was fought between the Allied Powers (France, British Empire, and United States) and Germany.\nThe Battle of Shiloh, on the other hand, took place during the American Civil War, specifically from April 6 to 7, 1862, and was fought between the Union (Northern) forces and the Confederate (Southern) forces in southern Tennessee.\nTherefore, these two battles did not occur in the same war, as they were fought in different conflicts and time periods.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Second Battle of the Marne occurred from July 15 to August 20, 1918.",
+      "The battle involved the Allied Powers (France, British Empire, and United States) and Germany.",
+      "The Battle of Shiloh took place from April 6 to 7, 1862.",
+      "The Battle of Shiloh was fought between the Union and Confederate forces.",
+      "The Second Battle of the Marne and the Battle of Shiloh did not happen in the same war."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 187,
+    "user_query": "Which justice is the longest serving and from California?",
+    "llama-2-13b-chat-hf_response": "Justice Ginsburg is the longest serving justice currently on the Court, having been appointed in 1993 by President Bill Clinton. She is from New York.\nJustice Kennedy is the next longest serving justice, having been appointed in 1988 by President Ronald Reagan. He is from California.",
+    "llama-2-13b-chat-hf_fact": [
+      "Justice Ginsburg is currently the longest serving justice on the Court.",
+      "Justice Ginsburg was appointed in 1993 by President Bill Clinton.",
+      "Justice Ginsburg is not from California, she is from New York.",
+      "Justice Kennedy is the next longest serving justice.",
+      "Justice Kennedy was appointed in 1988 by President Ronald Reagan."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 188,
+    "user_query": "What team recieved The European Cup in May of 2011 at Wembley Stadium, which marked the close of the 56th season for the tournament?",
+    "llama-2-13b-chat-hf_response": "Answer: Barcelona.\nBarcelona defeated Manchester United 3-1 in the 2011 UEFA Champions League Final, which was held at Wembley Stadium in London, England on May 28, 2011. This marked the close of the 56th season for the tournament, then known as the European Cup.",
+    "llama-2-13b-chat-hf_fact": [
+      "Barcelona received The European Cup in May of 2011 at Wembley Stadium.",
+      "Barcelona defeated Manchester United 3-1 in the 2011 UEFA Champions League Final.",
+      "The 2011 UEFA Champions League Final was held at Wembley Stadium in London, England.",
+      "The 2011 UEFA Champions League Final marked the close of the 56th season for the tournament."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 189,
+    "user_query": "Who were the owners of a domestic cat with black fur lived on the Channel Island of Jersey?",
+    "llama-2-13b-chat-hf_response": "The cat was known as \"Mrs. Potts\" and was owned by a family named Le Feuvre. The family lived in a house called \"La Hougue Bie\" in the parish of Grouville.\nThe cat was born in 1939 and lived to be 21 years old, which is exceptionally long for a domestic cat.\nMrs. Potts was known for her friendly and affectionate nature, and was a much-loved pet of the Le Feuvre family.\nThe family kept a diary of Mrs. Potts' life, which includes details of her daily activities, such as hunting and eating mice, and her interactions with the family and other animals on the island.\nThe diary also includes information about the Channel Island of Jersey and its history, as well as the impact of World War II on the island and its inhabitants.\nThe diary of Mrs. Potts is now a valuable historical record of life on the Channel Islands during World War II, and provides insight into the experiences of both humans and animals during this time.",
+    "llama-2-13b-chat-hf_fact": [
+      "The domestic cat with black fur was known as \"Mrs. Potts.\"",
+      "Mrs. Potts was owned by the Le Feuvre family.",
+      "The Le Feuvre family lived in a house called \"La Hougue Bie\" in the parish of Grouville on the Channel Island of Jersey.",
+      "Mrs. Potts was born in 1939 and lived to be 21 years old.",
+      "The diary of Mrs. Potts provides insight into life on the Channel Islands during World War II."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The domestic cat with black fur was not known as \"Mrs. Potts.\"",
+      "unknown",
+      "unknown",
+      "unknown",
+      "false, [corrected fact]: There is no mention of a diary of Mrs. Potts providing insight into life on the Channel Islands during World War II."
+    ]
+  },
+  {
+    "id": 191,
+    "user_query": "Which is bigger, a Carolina Dog or a Great Dane?",
+    "llama-2-13b-chat-hf_response": "A Carolina Dog is smaller than a Great Dane.\nOn average, a fully-grown Carolina Dog weighs between 30 and 50 pounds (14 to 23 kilograms) and stands between 17 and 24 inches (43 to 61 centimeters) tall at the shoulder.\nIn comparison, a fully-grown Great Dane can weigh between 120 and 200 pounds (54 to 91 kilograms) and stands between 28 and 32 inches (71 to 81 centimeters) tall at the shoulder.\nSo, a Great Dane is much larger than a Carolina Dog.",
+    "llama-2-13b-chat-hf_fact": [
+      "A fully-grown Carolina Dog weighs between 30 and 50 pounds and stands between 17 and 24 inches tall at the shoulder.",
+      "A Carolina Dog is smaller than a Great Dane.",
+      "A fully-grown Great Dane can weigh between 120 and 200 pounds and stands between 28 and 32 inches tall at the shoulder.",
+      "A Great Dane is much larger than a Carolina Dog."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 192,
+    "user_query": "Andreas Walzer won the gold medal at the 1992 Summer Olympics along with a German footballer who holds the UEFA Champions League record for what?",
+    "llama-2-13b-chat-hf_response": "Andreas Walzer won the gold medal at the 1992 Summer Olympics along with a German footballer who holds the UEFA Champions League record for most goals scored in a single season.\nAnswer: Ronaldo.\nAndreas Walzer and Ronaldo won the gold medal at the 1992 Summer Olympics as members of the German football team. Ronaldo, a Brazilian footballer, holds the UEFA Champions League record for most goals scored in a single season, with 17 goals in the 1995-96 season.",
+    "llama-2-13b-chat-hf_fact": [
+      "Andreas Walzer won the gold medal at the 1992 Summer Olympics.",
+      "Ronaldo is a Brazilian footballer.",
+      "Ronaldo holds the UEFA Champions League record for most goals scored in a single season.",
+      "Ronaldo scored 17 goals in the 1995-96 season."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: No information given about Andreas Walzer winning a gold medal at the 1992 Summer Olympics.",
+      "true",
+      "true",
+      "false, [corrected fact]: No information given about Ronaldo scoring 17 goals in the 1995-96 season."
+    ]
+  },
+  {
+    "id": 193,
+    "user_query": "What multinational conglomerate company was the e-commerce software company Ignify acquired by in 2016?",
+    "llama-2-13b-chat-hf_response": "Answer: Ignify was acquired by SAP, a multinational conglomerate company, in 2016.",
+    "llama-2-13b-chat-hf_fact": [
+      "Ignify was acquired by SAP.",
+      "Ignify is an e-commerce software company.",
+      "The acquisition happened in 2016.",
+      "SAP is a multinational conglomerate company."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: The acquisition happened in 2014.",
+      "true"
+    ]
+  },
+  {
+    "id": 194,
+    "user_query": "Who composed the music for Disney's 20th animated feature film?",
+    "llama-2-13b-chat-hf_response": "Oliver & Company\nThe Lion King\nBeauty and the Beast\nAladdin\nThe correct answer is:\nAladdin",
+    "llama-2-13b-chat-hf_fact": [
+      "Aladdin is Disney's 20th animated feature film.",
+      "The music for Aladdin was composed by someone."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 195,
+    "user_query": "which party defeated Kristina keneally who became premier in 2009 in the 55th new south wales parliament election in 2011?",
+    "llama-2-13b-chat-hf_response": "The 55th New South Wales Parliament election was held on March 26, 2011. The incumbent Premier of New South Wales, Kristina Keneally, led the Australian Labor Party (ALP) into the election. The ALP was defeated by the opposition Liberal Party of Australia, led by Barry O'Farrell. The Liberal Party won a majority of seats in the Legislative Assembly, and O'Farrell became the new Premier of New South Wales.",
+    "llama-2-13b-chat-hf_fact": [
+      "The 55th New South Wales Parliament election was held on March 26, 2011.",
+      "Kristina Keneally led the Australian Labor Party (ALP) in the election.",
+      "The opposition Liberal Party of Australia, led by Barry O'Farrell, defeated the ALP in the election.",
+      "The Liberal Party won a majority of seats in the Legislative Assembly.",
+      "Barry O'Farrell became the new Premier of New South Wales."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: Kristina Keneally did not lead the Australian Labor Party (ALP) in the election.",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 196,
+    "user_query": "Both Working Woman and Gael are considered what?",
+    "llama-2-13b-chat-hf_response": "A)\tMythical creatures\nB)\tFictional characters\nC)\tReal people\nD)\tSymbolic figures\nAnswer: B) Fictional characters\nBoth Working Woman and Gael are fictional characters, as they do not exist in reality. Working Woman is a persona created by the advertising industry to represent the idealized image of a career-oriented woman, while Gael is a fictional character created by the advertising agency to promote the brand's products.",
+    "llama-2-13b-chat-hf_fact": [
+      "Working Woman is a fictional character created by the advertising industry.",
+      "Gael is a fictional character created by the advertising agency.",
+      "Working Woman is a persona that represents the idealized image of a career-oriented woman.",
+      "Gael was created to promote the brand's products."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "unknown",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 197,
+    "user_query": "As of 2007, the NWA Hawaii Tag Team Championship is held in what county?",
+    "llama-2-13b-chat-hf_response": "Answer: Honolulu County.\nAs of 2007, the NWA Hawaii Tag Team Championship is held in Honolulu County, Hawaii.",
+    "llama-2-13b-chat-hf_fact": [
+      "The NWA Hawaii Tag Team Championship exists.",
+      "The NWA Hawaii Tag Team Championship was held in Honolulu County as of 2007.",
+      "Honolulu County is located in Hawaii."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 199,
+    "user_query": "Considered a genre of poetry, mode of fiction does Valappottukal fall into?",
+    "llama-2-13b-chat-hf_response": "Valappottukal is a form of poetry that is considered a genre of fiction. It is a type of folk literature that originated in the state of Kerala, India. It is characterized by its use of simple language and everyday themes, and is often used to tell stories of love, loss, and social issues.\nWhat is the theme of Valappottukal?\nThe theme of Valappottukal is love. The poems are written in the voice of a woman who is longing for her lover, and they explore the joys and sorrows of love and relationships. The poems are often set in a rural or village context, and they reflect the everyday lives and experiences of the people who live there.\nWhat is the structure of Valappottukal?\nThe structure of Valappottukal is typically in the form of a quatrain, with four lines per stanza. The first and third lines are usually in the same meter, while the second and fourth lines are in a different meter. The poems are often written in a conversational style, with a focus on the everyday lives and experiences of the speaker",
+    "llama-2-13b-chat-hf_fact": [
+      "Valappottukal is a form of poetry.",
+      "Valappottukal is considered a genre of fiction.",
+      "Valappottukal is a type of folk literature that originated in Kerala, India.",
+      "Valappottukal is characterized by its use of simple language and everyday themes.",
+      "Valappottukal is often used to tell stories of love, loss, and social issues."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: Valappottukal is not considered a genre of fiction.",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 200,
+    "user_query": "Actor Paul Ritter performed in a series of British television film adaptations of which author's history plays?",
+    "llama-2-13b-chat-hf_response": "A) William Shakespeare\nB) Christopher Marlowe\nC) Ben Jonson\nD) John Webster\nAnswer: A) William Shakespeare",
+    "llama-2-13b-chat-hf_fact": [
+      "Paul Ritter performed in a series of British television film adaptations of William Shakespeare's history plays."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 201,
+    "user_query": "What kind of officer was the successor of William E. Gortney's positions at U.S. Northern Command and North American Aerospace Defense the first of?",
+    "llama-2-13b-chat-hf_response": "U.S. Northern Command and North American Aerospace Defense Command (NORAD) are two separate organizations.\nU.S. Northern Command (USNORTHCOM) is a Unified Combatant Command of the United States Armed Forces, responsible for defending the United States homeland and protecting its interests in the North America area of responsibility.\nNorth American Aerospace Defense Command (NORAD) is a bi-national organization between the United States and Canada, responsible for aerospace and maritime warning, aerospace control, and maritime warning for the North American area of responsibility.\nTherefore, the successor of William E. Gortney's positions at U.S. Northern Command and North American Aerospace Defense Command (NORAD) would be the same position, which is the Commander of U.S. Northern Command.\nThe current Commander of U.S. Northern Command is General Terrence J. O'Shaughnessy.",
+    "llama-2-13b-chat-hf_fact": [
+      "U.S. Northern Command (USNORTHCOM) is a Unified Combatant Command of the United States Armed Forces.",
+      "U.S. Northern Command is responsible for defending the United States homeland and protecting its interests in the North America area of responsibility.",
+      "North American Aerospace Defense Command (NORAD) is a bi-national organization between the United States and Canada.",
+      "NORAD is responsible for aerospace and maritime warning, aerospace control, and maritime warning for the North American area of responsibility.",
+      "The current Commander of U.S. Northern Command is General Terrence J. O'Shaughnessy."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 202,
+    "user_query": "Were both the Battle of Chancellorsville and the Battle of Luzon fought in the American Civil War?",
+    "llama-2-13b-chat-hf_response": "No, the Battle of Chancellorsville and the Battle of Luzon were not fought in the American Civil War.\nThe Battle of Chancellorsville was fought during the American Civil War, specifically in April and May of 1863, as part of the Confederate Army's Spring Offensive. It was a major battle fought in Virginia, and it resulted in a Confederate victory.\nThe Battle of Luzon, on the other hand, was fought during World War II, specifically in January and February of 1945, as part of the Pacific Theater of Operations. It was a major battle fought on the island of Luzon in the Philippines, and it resulted in an Allied victory.\nSo, while both battles were significant military engagements, they were fought in different wars and at different times.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Battle of Chancellorsville took place during the American Civil War in April and May of 1863.",
+      "The Battle of Chancellorsville was part of the Confederate Army's Spring Offensive.",
+      "The Battle of Chancellorsville resulted in a Confederate victory.",
+      "The Battle of Luzon occurred during World War II in January and February of 1945.",
+      "The Battle of Luzon was a major battle fought on the island of Luzon in the Philippines and resulted in an Allied victory."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: The Battle of Chancellorsville was part of the Union Army's Spring Offensive.",
+      "false, [corrected fact]: The Battle of Chancellorsville resulted in a Confederate victory.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 203,
+    "user_query": "Pierre Nlend Womé is one of eleven players to have played in the top divisions in Italy, Spain, England and Germany, one other player would be the current head coatch of what team?",
+    "llama-2-13b-chat-hf_response": "Hint: The team the current head coach is the head coach of is one of the most successful teams in the world.\nAnswer:\nThe current head coach of the team is Pep Guardiola, who played for Barcelona, Bayern Munich, and Manchester City.",
+    "llama-2-13b-chat-hf_fact": [
+      "Pierre Nlend Womé is one of eleven players to have played in the top divisions in Italy, Spain, England, and Germany.",
+      "Pep Guardiola is the current head coach of a highly successful team.",
+      "Pep Guardiola played for Barcelona, Bayern Munich, and Manchester City."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 204,
+    "user_query": "The town of Goodsprings, Nevada is located in the Goodsprings Valley, and is located in what Nevada county?",
+    "llama-2-13b-chat-hf_response": "The town of Goodsprings, Nevada is located in Clark County, Nevada.",
+    "llama-2-13b-chat-hf_fact": [
+      "The town of Goodsprings, Nevada is located in Clark County, Nevada."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 205,
+    "user_query": "Which Canadian-American engineer working to build a series of \"superguns\" for then Iraqi president Saddam Hussein was assassinated in March 1990 outside his apartment in Brussels, Belgium?",
+    "llama-2-13b-chat-hf_response": "The correct answer is Gerald Bull.\nGerald Bull was a Canadian-American engineer who worked on the development of \"superguns\" for various countries, including Iraq. In the late 1980s, he was working on a project to build a series of powerful guns for Saddam Hussein's government. However, in March 1990, he was assassinated outside his apartment in Brussels, Belgium. The killing was widely believed to have been orchestrated by the Israeli government, which had long been concerned about the potential threat posed by Iraq's military buildup.",
+    "llama-2-13b-chat-hf_fact": [
+      "Gerald Bull was a Canadian-American engineer.",
+      "Gerald Bull worked on the development of \"superguns\" for various countries, including Iraq.",
+      "Gerald Bull was assassinated in March 1990 outside his apartment in Brussels, Belgium.",
+      "Gerald Bull's assassination was widely believed to have been orchestrated by the Israeli government.",
+      "Gerald Bull was working on a project to build a series of powerful guns for Saddam Hussein's government."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 206,
+    "user_query": "What polo player was related to Juan Esteban Ariza Mendoza?",
+    "llama-2-13b-chat-hf_response": "Juan Esteban Ariza Mendoza was a polo player who was born in 1882 and died in 1960. He was a member of the Mendoza family, which was a prominent family in Argentine polo.\nOne of the most famous members of the Mendoza family was the polo player and coach, Carlos A. Mendoza. He was a four-time winner of the U.S. Open Polo Championship and was known as one of the greatest polo players of all time.\nCarlos A. Mendoza was related to Juan Esteban Ariza Mendoza as his son-in-law. Carlos A. Mendoza married Juan Esteban Ariza Mendoza's daughter, Mercedes Mendoza Ariza, in 1912.\nTherefore, the answer to the question is: Carlos A. Mendoza.",
+    "llama-2-13b-chat-hf_fact": [
+      "Juan Esteban Ariza Mendoza was a polo player who was born in 1882 and died in 1960.",
+      "The Mendoza family was a prominent family in Argentine polo.",
+      "Carlos A. Mendoza was a four-time winner of the U.S. Open Polo Championship.",
+      "Carlos A. Mendoza married Juan Esteban Ariza Mendoza's daughter, Mercedes Mendoza Ariza, in 1912.",
+      "Carlos A. Mendoza was related to Juan Esteban Ariza Mendoza as his son-in-law."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Juan Esteban Ariza Mendoza was a four-time winner of the U.S. Open Polo Championship.",
+      "false, [corrected fact]: Carlos A. Mendoza married Juan Esteban Ariza Mendoza's sister, Mercedes Mendoza Ariza, in 1912.",
+      "false, [corrected fact]: Carlos A. Mendoza was related to Juan Esteban Ariza Mendoza as his brother-in-law."
+    ]
+  },
+  {
+    "id": 207,
+    "user_query": "Andrew Plain created the soundtrack for the Gillian Armstrong drama adapted from a novel by whom?",
+    "llama-2-13b-chat-hf_response": "Andrew Plain created the soundtrack for the Gillian Armstrong drama \"Little Women\" which was adapted from a novel by Louisa May Alcott.",
+    "llama-2-13b-chat-hf_fact": [
+      "Andrew Plain created the soundtrack for the Gillian Armstrong drama \"Little Women\".",
+      "\"Little Women\" is a Gillian Armstrong drama.",
+      "\"Little Women\" is adapted from a novel.",
+      "The novel that \"Little Women\" is adapted from was written by Louisa May Alcott."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Andrew Plain did not create the soundtrack for the Gillian Armstrong drama \"Little Women\".",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 208,
+    "user_query": "Don Knotts starred on what tv show?",
+    "llama-2-13b-chat-hf_response": "Don Knotts starred on the classic TV show \"The Andy Griffith Show\" as the bumbling and lovable Deputy Barney Fife.",
+    "llama-2-13b-chat-hf_fact": [
+      "Don Knotts starred on \"The Andy Griffith Show\".",
+      "Don Knotts played the character of Deputy Barney Fife on \"The Andy Griffith Show\"."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 209,
+    "user_query": "Do Armenian Gampr dogs have more influence from other dog species than the Greater Swiss Mountain Dog?",
+    "llama-2-13b-chat-hf_response": "The Gampr is an ancient dog breed from Armenia that is believed to have been developed from the Greater Swiss Mountain Dog. However, some sources suggest that the Gampr may have also been influenced by other dog breeds, such as the Turkish Kangal Dog and the Georgian Mountain Dog.\nThe Greater Swiss Mountain Dog is a large, powerful breed that was originally bred for herding and guarding in the Swiss Alps. It is known for its intelligence, loyalty, and protective instincts.\nThe Turkish Kangal Dog is a large, muscular breed that was originally bred for guarding and hunting in Turkey. It is known for its strength, courage, and loyalty.\nThe Georgian Mountain Dog is a medium-sized breed that was originally bred for herding and guarding in the Caucasus region. It is known for its intelligence, agility, and protective instincts.\nWhile the Greater Swiss Mountain Dog is the primary breed that the Gampr was developed from, it is possible that the Gampr may have also been influenced by other dog breeds, such as the Turkish Kangal Dog and the Georg",
+    "llama-2-13b-chat-hf_fact": [
+      "The Gampr is an ancient dog breed from Armenia.",
+      "The Gampr is believed to have been developed from the Greater Swiss Mountain Dog.",
+      "The Greater Swiss Mountain Dog is a large, powerful breed originally bred for herding and guarding in the Swiss Alps.",
+      "The Turkish Kangal Dog is a large, muscular breed originally bred for guarding and hunting in Turkey.",
+      "The Georgian Mountain Dog is a medium-sized breed originally bred for herding and guarding in the Caucasus region."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: The Gampr is believed to have been developed from various ancient dog breeds.",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 210,
+    "user_query": "The city where Steak de Burgo is considered a regional specialty is located in what Iowa County?",
+    "llama-2-13b-chat-hf_response": "Correct Answer: Dubuque County.\nSteak de Burgo is a popular dish in Dubuque, Iowa, and is considered a regional specialty. It is a type of steak that is cooked in a specific way and served with a variety of toppings and sauces.",
+    "llama-2-13b-chat-hf_fact": [
+      "Dubuque County in Iowa is known as the city where Steak de Burgo is considered a regional specialty.",
+      "Steak de Burgo is a popular dish in Dubuque, Iowa.",
+      "Steak de Burgo is a type of steak that is cooked in a specific way.",
+      "Steak de Burgo is served with a variety of toppings and sauces."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Dubuque County in Iowa is not known as the city where Steak de Burgo is considered a regional specialty. Dubuque, Iowa is known for this.",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 211,
+    "user_query": "What was the birth date of the general that used a church as his headquarters in March 1865?",
+    "llama-2-13b-chat-hf_response": "The general who used a church as his headquarters in March 1865 was General William Tecumseh Sherman. He was born on February 8, 1820.",
+    "llama-2-13b-chat-hf_fact": [
+      "General William Tecumseh Sherman used a church as his headquarters in March 1865.",
+      "General William Tecumseh Sherman was born on February 8, 1820."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: General William Tecumseh Sherman was born on February 8, 1820."
+    ]
+  },
+  {
+    "id": 213,
+    "user_query": "In addition to the airplane operated by ایران ایر تور‎, what other airplane was part of the 1993 Tehran mid-air collision?",
+    "llama-2-13b-chat-hf_response": "The other airplane involved in the 1993 Tehran mid-air collision was a Boeing 727-28ADV operated by Iran Air.",
+    "llama-2-13b-chat-hf_fact": [
+      "The 1993 Tehran mid-air collision involved an airplane operated by ایران ایر تور‎.",
+      "The other airplane involved in the collision was a Boeing 727-28ADV.",
+      "The Boeing 727-28ADV was operated by Iran Air."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: The other airplane involved in the collision was a Tupolev Tu-154M.",
+      "true"
+    ]
+  },
+  {
+    "id": 214,
+    "user_query": "The 1991 Cannes Film Festival Palme d'Or went to a film set in what year?",
+    "llama-2-13b-chat-hf_response": "A) 1940\nB) 1968\nC) 1989\nD) 1991\nAnswer: C) 1989\nThe film that won the Palme d'Or at the 1991 Cannes Film Festival was \"The Piano Teacher\" (French title: \"La Pianiste\"), directed by Michael Haneke and set in 1989.",
+    "llama-2-13b-chat-hf_fact": [
+      "The film \"The Piano Teacher\" won the Palme d'Or at the 1991 Cannes Film Festival.",
+      "\"The Piano Teacher\" was directed by Michael Haneke.",
+      "\"The Piano Teacher\" is also known by its French title \"La Pianiste\".",
+      "\"The Piano Teacher\" is set in the year 1989."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: The film \"The Piano Teacher\" did not win the Palme d'Or at the 1991 Cannes Film Festival.",
+      "true",
+      "true",
+      "false, [corrected fact]: \"The Piano Teacher\" is set in the year 2001."
+    ]
+  },
+  {
+    "id": 215,
+    "user_query": "What American wrestler, known by the nickname \"Dr. Death\", was featured on an episode of Starrcade in a fight against Ron Simmons for the World Heavyweight Championship?",
+    "llama-2-13b-chat-hf_response": "Answer: The American wrestler known by the nickname \"Dr. Death\" who was featured on an episode of Starrcade in a fight against Ron Simmons for the World Heavyweight Championship was:\nBill Irwin, also known as \"Dr. Death\" Steve Williams.",
+    "llama-2-13b-chat-hf_fact": [
+      "Bill Irwin wrestled under the nickname \"Dr. Death\" Steve Williams.",
+      "Bill Irwin was featured on an episode of Starrcade.",
+      "Bill Irwin fought against Ron Simmons for the World Heavyweight Championship.",
+      "Ron Simmons was the opponent of \"Dr. Death\" Steve Williams in the fight.",
+      "The fight between Bill Irwin and Ron Simmons took place during Starrcade."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: \"Dr. Death\" Steve Williams was a separate wrestler, not a nickname for Bill Irwin.",
+      "true",
+      "false, [corrected fact]: Bill Irwin did not fight against Ron Simmons for the World Heavyweight Championship.",
+      "false, [corrected fact]: Ron Simmons was not the opponent of \"Dr. Death\" Steve Williams in the fight.",
+      "false, [corrected fact]: The fight between Bill Irwin and Ron Simmons did not take place during Starrcade."
+    ]
+  },
+  {
+    "id": 218,
+    "user_query": "Who sang for more different bands, Rivers Cuomo or Johnny Edwards?",
+    "llama-2-13b-chat-hf_response": "Rivers Cuomo has sung for:\n* Weezer\n* The Rentals\n* The Special Goodies\n* The Replacements\nJohnny Edwards has sung for:\n* Foreigner\n* The Faces\n* The Small Faces\n* The Kinks\nSo, Johnny Edwards has sung for more different bands.",
+    "llama-2-13b-chat-hf_fact": [
+      "Rivers Cuomo has sung for Weezer.",
+      "Rivers Cuomo has sung for The Rentals.",
+      "Rivers Cuomo has sung for The Special Goodies.",
+      "Rivers Cuomo has sung for The Replacements.",
+      "Johnny Edwards has sung for Foreigner.",
+      "Johnny Edwards has sung for The Faces.",
+      "Johnny Edwards has sung for The Small Faces.",
+      "Johnny Edwards has sung for The Kinks."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Rivers Cuomo has not sung for The Special Goodies.",
+      "false, [corrected fact]: Rivers Cuomo has not sung for The Replacements.",
+      "true",
+      "false, [corrected fact]: Johnny Edwards has not sung for The Faces.",
+      "false, [corrected fact]: Johnny Edwards has not sung for The Small Faces.",
+      "false, [corrected fact]: Johnny Edwards has not sung for The Kinks."
+    ]
+  },
+  {
+    "id": 219,
+    "user_query": "The Christmas carol, \"I Heard the Bells on Christmas Day\" is based on a poem by the American poet who was the first to translate what Italian work?",
+    "llama-2-13b-chat-hf_response": "The Christmas carol, \"I Heard the Bells on Christmas Day\" is based on a poem by the American poet Henry Wadsworth Longfellow. Longfellow was the first to translate Dante Alighieri's Divine Comedy into English.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Christmas carol \"I Heard the Bells on Christmas Day\" is based on a poem by Henry Wadsworth Longfellow.",
+      "Henry Wadsworth Longfellow was an American poet.",
+      "Henry Wadsworth Longfellow translated Dante Alighieri's Divine Comedy into English.",
+      "The Divine Comedy is an Italian work written by Dante Alighieri.",
+      "Henry Wadsworth Longfellow was the first person to translate the Divine Comedy into English."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Henry Wadsworth Longfellow did not translate Dante Alighieri's Divine Comedy into English.",
+      "true",
+      "false, [corrected fact]: Henry Wadsworth Longfellow was not the first person to translate the Divine Comedy into English."
+    ]
+  },
+  {
+    "id": 222,
+    "user_query": "In what year was the older actor of these two born, Nitara Carlynn Long or Philip Bolden ?",
+    "llama-2-13b-chat-hf_response": "Nitara Carlynn Long was born in 1989 and Philip Bolden was born in 1988.\nSo Philip Bolden was born earlier.",
+    "llama-2-13b-chat-hf_fact": [
+      "Nitara Carlynn Long was born in 1989.",
+      "Philip Bolden was born in 1988.",
+      "Philip Bolden was born earlier than Nitara Carlynn Long."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: Nitara Carlynn Long was born earlier than Philip Bolden."
+    ]
+  },
+  {
+    "id": 223,
+    "user_query": "WHAT PUBLISHER OF SOFTWARE REMASTER AND PUBLISHED DRAGONS LAIR IN 1983?",
+    "llama-2-13b-chat-hf_response": "The publisher of the software remaster and the original Dragon's Lair in 1983 was Cinematronics.",
+    "llama-2-13b-chat-hf_fact": [
+      "Cinematronics published the software remaster of Dragon's Lair in 1983.",
+      "Cinematronics published the original Dragon's Lair in 1983."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: Cinematronics published the original Dragon's Lair in 1982."
+    ]
+  },
+  {
+    "id": 224,
+    "user_query": "When was the king who granted the second sons of their eldest sons the titles \"Duke of York and Albany\" and \"Duke of York\" respectively born?",
+    "llama-2-13b-chat-hf_response": "The king who granted the second sons of their eldest sons the titles \"Duke of York and Albany\" and \"Duke of York\" respectively was King George V, and he was born on June 3, 1865.",
+    "llama-2-13b-chat-hf_fact": [
+      "King George V granted the titles \"Duke of York and Albany\" and \"Duke of York\" to the second sons of their eldest sons.",
+      "King George V was born on June 3, 1865."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 225,
+    "user_query": "Are the Fine Young Cannibals and The Mowgli's both bands?",
+    "llama-2-13b-chat-hf_response": "Yes, the Fine Young Cannibals and The Mowgli's are both bands.\nThe Fine Young Cannibals were a British band that formed in 1984 and were known for their blend of pop, soul, and worldbeat styles. They had several hit songs in the late 1980s and early 1990s, including \"She Drives Me Crazy\" and \"Good as It Gets.\" The band broke up in 1996, but their music remains popular to this day.\nThe Mowgli's, on the other hand, are an American indie pop band that formed in 2010. They are known for their catchy, upbeat songs and their eclectic blend of pop, rock, and world music influences. They have released several albums and EPs, including \"Sound the Drum\" and \"Where'd the Time Go?\" The band is still active and continues to tour and release new music.",
+    "llama-2-13b-chat-hf_fact": [
+      "The Fine Young Cannibals were a British band that formed in 1984.",
+      "The Fine Young Cannibals had several hit songs in the late 1980s and early 1990s, including \"She Drives Me Crazy\" and \"Good as It Gets.\"",
+      "The Fine Young Cannibals broke up in 1996.",
+      "The Mowgli's are an American indie pop band that formed in 2010.",
+      "The Mowgli's are known for their catchy, upbeat songs and their eclectic blend of pop, rock, and world music influences."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 226,
+    "user_query": "Monsters the 2010 British science fiction monster film written and directed by Gareth Edwards debuted before or after the Godzilla reboot?",
+    "llama-2-13b-chat-hf_response": "Monsters was released in 2010 before the Godzilla reboot.",
+    "llama-2-13b-chat-hf_fact": [
+      "Monsters, a British science fiction monster film, was released in 2010.",
+      "The Godzilla reboot was released after Monsters."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 227,
+    "user_query": "The DJ that produced \"Everybody Is In The Place\" ranked at what number on the \"DJ Mag\" Top 100 in 2016?",
+    "llama-2-13b-chat-hf_response": "The DJ that produced \"Everybody Is In The Place\" was ranked at number 2 on the \"DJ Mag\" Top 100 in 2016.",
+    "llama-2-13b-chat-hf_fact": [
+      "The DJ that produced \"Everybody Is In The Place\" was ranked at number 2 on the \"DJ Mag\" Top 100 in 2016."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 228,
+    "user_query": "Who old was the kidnapping victim of Emily Harris at the time of the kidnapping?",
+    "llama-2-13b-chat-hf_response": "According to the text, the kidnapping victim of Emily Harris was a 10-year-old boy named Charlie.",
+    "llama-2-13b-chat-hf_fact": [
+      "The kidnapping victim of Emily Harris was a 10-year-old boy named Charlie."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 229,
+    "user_query": "Nobody Rides for Free was taken from the soundtrack to the movie directed by whom?",
+    "llama-2-13b-chat-hf_response": "A) Quentin Tarantino\nB) Martin Scorsese\nC) Francis Ford Coppola\nD) Steven Spielberg",
+    "llama-2-13b-chat-hf_fact": [
+      "\"Nobody Rides for Free\" is a song taken from a movie soundtrack.",
+      "The movie that the song is taken from was directed by either Quentin Tarantino, Martin Scorsese, Francis Ford Coppola, or Steven Spielberg."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: The movie that the song is taken from was not directed by Quentin Tarantino, Martin Scorsese, Francis Ford Coppola, or Steven Spielberg."
+    ]
+  },
+  {
+    "id": 231,
+    "user_query": "What was the first broadcasting company that aired an American sitcom that included a cast member who played Kate O'Brien on \"The Drew Carey Show\"?",
+    "llama-2-13b-chat-hf_response": "The first broadcasting company that aired an American sitcom that included a cast member who played Kate O'Brien on \"The Drew Carey Show\" was ABC. The character of Kate O'Brien was played by actress Christa Miller.",
+    "llama-2-13b-chat-hf_fact": [
+      "The first broadcasting company that aired an American sitcom with a cast member who played Kate O'Brien on \"The Drew Carey Show\" was ABC.",
+      "The character of Kate O'Brien was played by actress Christa Miller."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 232,
+    "user_query": "Who was born earlier, Reinhard Furrer or Sigmund Jähn?",
+    "llama-2-13b-chat-hf_response": "Reinhard Furrer was born on March 29, 1940, and Sigmund Jähn was born on February 13, 1942.\nTherefore, Reinhard Furrer was born earlier.",
+    "llama-2-13b-chat-hf_fact": [
+      "Reinhard Furrer was born on March 29, 1940.",
+      "Sigmund Jähn was born on February 13, 1942.",
+      "Reinhard Furrer was born before Sigmund Jähn."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 233,
+    "user_query": "Who else starred with Robert Belushi in his 2010 American romantic comedy?",
+    "llama-2-13b-chat-hf_response": "Hint: The movie was released in 2010.\nAnswer: The movie was \"No Strings Attached\" and the other star was Natalie Portman.",
+    "llama-2-13b-chat-hf_fact": [
+      "Robert Belushi starred in a 2010 American romantic comedy.",
+      "The movie Robert Belushi starred in was called \"No Strings Attached.\"",
+      "\"No Strings Attached\" was released in 2010.",
+      "Natalie Portman co-starred with Robert Belushi in \"No Strings Attached.\""
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "unknown",
+      "unknown",
+      "true",
+      "false, [corrected fact]: Ashton Kutcher co-starred with Natalie Portman in \"No Strings Attached.\""
+    ]
+  },
+  {
+    "id": 234,
+    "user_query": "Bananaman has been part of the Dandy since 1980, but which other comic has he appeared in, alongside his relative Bananagirl?",
+    "llama-2-13b-chat-hf_response": "Answer: The Beano. Bananaman has also appeared in The Beano, alongside his relative Bananagirl.",
+    "llama-2-13b-chat-hf_fact": [
+      "Bananaman has appeared in The Beano.",
+      "Bananaman appeared alongside his relative Bananagirl in The Beano."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "false, [corrected fact]: Bananaman did not appear alongside his relative Bananagirl in The Beano."
+    ]
+  },
+  {
+    "id": 235,
+    "user_query": "Bart de Liefde was a member of which conservative-liberal political party in the Netherlands?",
+    "llama-2-13b-chat-hf_response": "Bart de Liefde was a member of the People's Party for Freedom and Democracy (VVD) in the Netherlands.",
+    "llama-2-13b-chat-hf_fact": [
+      "Bart de Liefde was a member of the People's Party for Freedom and Democracy (VVD).",
+      "Bart de Liefde was a member of a conservative-liberal political party.",
+      "The People's Party for Freedom and Democracy (VVD) is a political party in the Netherlands."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 236,
+    "user_query": "Bartholomew MacCarthy wrote extensively on the oldest vernacular literature in what region?",
+    "llama-2-13b-chat-hf_response": "Answer: Bartholomew MacCarthy wrote extensively on the oldest vernacular literature in the region of Ireland.",
+    "llama-2-13b-chat-hf_fact": [
+      "Bartholomew MacCarthy wrote extensively on the oldest vernacular literature.",
+      "Bartholomew MacCarthy's writings focused on the region of Ireland."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 237,
+    "user_query": "What was the name of the movie starring Lee Min-ho that was directed by Yoo Ha?",
+    "llama-2-13b-chat-hf_response": "Lee Min-ho starred in the movie \"Gangnam Blues\" (2014) directed by Yoo Ha.",
+    "llama-2-13b-chat-hf_fact": [
+      "Lee Min-ho starred in the movie \"Gangnam Blues.\"",
+      "The movie \"Gangnam Blues\" was released in 2014.",
+      "The director of \"Gangnam Blues\" is Yoo Ha."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 238,
+    "user_query": "Which band is older, Something Corporate or Pavement?",
+    "llama-2-13b-chat-hf_response": "Something Corporate was formed in 1998 and disbanded in 2004. Pavement was formed in 1989 and disbanded in 1999. Therefore, Pavement is older than Something Corporate.",
+    "llama-2-13b-chat-hf_fact": [
+      "Something Corporate was formed in 1998.",
+      "Something Corporate disbanded in 2004.",
+      "Pavement was formed in 1989.",
+      "Pavement disbanded in 1999.",
+      "Pavement is older than Something Corporate."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: "
+    ]
+  },
+  {
+    "id": 239,
+    "user_query": "What county is Fresh Meadow Country Club located in?",
+    "llama-2-13b-chat-hf_response": "Fresh Meadow Country Club is located in the county of Queens, New York.\nAnswer: Queens County, New York.",
+    "llama-2-13b-chat-hf_fact": [
+      "Fresh Meadow Country Club is located in Queens County, New York."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 240,
+    "user_query": "Which famous client of Howard Weitzman is a Canadian singer and songwriter?",
+    "llama-2-13b-chat-hf_response": "Answer: Celine Dion.",
+    "llama-2-13b-chat-hf_fact": [
+      "Howard Weitzman had a famous client.",
+      "The famous client of Howard Weitzman is a Canadian singer and songwriter.",
+      "The famous client of Howard Weitzman is Celine Dion."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: The famous client of Howard Weitzman is not Celine Dion."
+    ]
+  },
+  {
+    "id": 241,
+    "user_query": "When was the American comic book industry which mentioned Guardians of the Lost Library as  \"possibly the greatest comic book story of all time\" established",
+    "llama-2-13b-chat-hf_response": "?\nThe American comic book industry was established in the late 1930s.\nGuardians of the Lost Library was not a real comic book story, but rather a fictional one mentioned in the question. Therefore, there is no answer to the question of when the American comic book industry established Guardians of the Lost Library as \"possibly the greatest comic book story of all time.\"",
+    "llama-2-13b-chat-hf_fact": [
+      "The American comic book industry was established in the late 1930s."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 242,
+    "user_query": "In what country do both Guangyuan and Altay City reside?",
+    "llama-2-13b-chat-hf_response": "Guangyuan and Altay City are both located in China.",
+    "llama-2-13b-chat-hf_fact": [
+      "Guangyuan is located in China.",
+      "Altay City is located in China."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 244,
+    "user_query": "Betty White's Smartest Animals in America is an American television series that broadcasts on a network based in whci US state ?",
+    "llama-2-13b-chat-hf_response": "Answer: The correct answer is California. Betty White's Smartest Animals in America is broadcast on the Animal Planet network, which is based in California.",
+    "llama-2-13b-chat-hf_fact": [
+      "Betty White's Smartest Animals in America is an American television series.",
+      "The show broadcasts on the Animal Planet network.",
+      "The Animal Planet network is based in California."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: The Animal Planet network is based in Maryland."
+    ]
+  },
+  {
+    "id": 245,
+    "user_query": "In what kind of writings can the recipes of one of the oldest beverages humans have produced dating back to at least the 5th millennium BC in Iran be found?",
+    "llama-2-13b-chat-hf_response": "The oldest known winery in the world is located in the Areni-1 cave complex in Vayots Dzor, Armenia, and dates back around 6000 years.\nThe oldest known winery in the world is located in the Areni-1 cave complex in Vayots Dzor, Armenia, and dates back around 6000 years.\nThe oldest known winery in the world is located in the Areni-1 cave complex in Vayots Dzor, Armenia, and dates back around 6000 years.\nThe oldest known winery in the world is located in the Areni-1 cave complex in Vayots Dzor, Armenia, and dates back around 6000 years.\nThe oldest known winery in the world is located in the Areni-1 cave complex in Vayots Dzor, Armenia, and dates back around 6000 years.\nThe oldest known winery in the world is located in the Areni-1 cave complex in Vayots Dzor, Armenia, and dates back around 6000 years.\nThe oldest known winery in the world",
+    "llama-2-13b-chat-hf_fact": [
+      "The oldest known winery in the world is located in the Areni-1 cave complex in Vayots Dzor, Armenia.",
+      "The winery dates back around 6000 years.",
+      "The winery is located in a cave complex.",
+      "The winery is considered to be one of the oldest beverage production sites.",
+      "The winery's origins can be traced back to at least the 5th millennium BC in Iran."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "false, [corrected fact]: The winery's origins can be traced back to at least the 4th millennium BC in Iran."
+    ]
+  },
+  {
+    "id": 246,
+    "user_query": "Shiori Mikami is best-known for her role as Krista Lenz in this manga series written by who?",
+    "llama-2-13b-chat-hf_response": "Select one:\nA) Eiichiro Oda\nB) Masashi Kishimoto\nC) Tite Kubo\nD) Takehiko Inoue",
+    "llama-2-13b-chat-hf_fact": [
+      "Shiori Mikami is best-known for her role as Krista Lenz.",
+      "Shiori Mikami's role as Krista Lenz is in a manga series.",
+      "The manga series was written by either Eiichiro Oda, Masashi Kishimoto, Tite Kubo, or Takehiko Inoue."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: The manga series was not written by any of the mentioned authors."
+    ]
+  },
+  {
+    "id": 247,
+    "user_query": "Which team did Ignacio Javier Gómez Novo play for in the 2005 Scottish League Cup Final?",
+    "llama-2-13b-chat-hf_response": "Ignacio Javier Gómez Novo did not play in the 2005 Scottish League Cup Final. The final was played between Livingston and Hibernian, and neither team included a player named Ignacio Javier Gómez Novo.",
+    "llama-2-13b-chat-hf_fact": [
+      "Ignacio Javier Gómez Novo did not play in the 2005 Scottish League Cup Final.",
+      "The final of the 2005 Scottish League Cup was played between Livingston and Hibernian.",
+      "Neither Livingston nor Hibernian included a player named Ignacio Javier Gómez Novo."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 248,
+    "user_query": "What Northern Ireland actor and musician helped write the pop ballad \"I heard\"?",
+    "llama-2-13b-chat-hf_response": "The answer is: Van Morrison.\nVan Morrison is a Northern Irish actor and musician who has written many popular songs, including \"I Heard.\" \"I Heard\" is a pop ballad that was released in 1982 and features Morrison's soulful vocals and poignant lyrics. The song was a hit for Morrison and has become one of his most enduring and popular songs.",
+    "llama-2-13b-chat-hf_fact": [
+      "Van Morrison is a Northern Irish actor and musician.",
+      "Van Morrison helped write the pop ballad \"I Heard.\"",
+      "\"I Heard\" is a pop ballad that was released in 1982.",
+      "\"I Heard\" features Morrison's soulful vocals and poignant lyrics.",
+      "\"I Heard\" has become one of Van Morrison's most enduring and popular songs."
+    ],
+    "llama-2-13b-chat-hf_judge": [
+      "false, [corrected fact]: Van Morrison is a Northern Irish singer and songwriter.",
+      "false, [corrected fact]: Van Morrison helped write the pop ballad \"Have I Told You Lately.\"",
+      "false, [corrected fact]: \"I Heard\" is a pop ballad that was released in 1989.",
+      "true",
+      "true"
+    ]
+  }
+]
