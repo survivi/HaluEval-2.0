@@ -89,7 +89,7 @@ class Chatbot:
                     response = openai.ChatCompletion.create(
                         model="gpt-3.5-turbo",
                         messages=messages,
-                        max_tokens=256,
+                        # max_tokens=256,
                         # temperature=1,
                         # top_p=1,
                     )
@@ -113,7 +113,7 @@ class Chatbot:
                     completions = openai.Completion.create(
                         model=chat_model,
                         prompt=q,
-                        max_tokens=256,
+                        # max_tokens=256,
                         # temperature=1,
                         # top_p=1,
                     )
@@ -184,7 +184,9 @@ class Chatbot:
             if len(self.data) % self.frequency == 0:
                 self.save_data()
             q = query[i]["user_query"]
-            q = "provide a concise answer to the following query: " + q
+            # self.data_path not include Science
+            if "Science" not in os.path.basename(self.data_path):
+                q = "provide a concise answer to the following query: " + q
             ans = self.complete(q, self.model)
             query[i][self.model + "_response"] = ans
             self.data.append(query[i])
@@ -200,7 +202,7 @@ class Chatbot:
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
+    openai.api_key = "sk-LmmUHkhIGn1PJQey6e46F434988c4e78A75eD3B342D8755f"
     openai.api_base = "https://api.aiguoguo199.com/v1"
     parser = argparse.ArgumentParser(description="LLM Response Generation")
     file_list = [
