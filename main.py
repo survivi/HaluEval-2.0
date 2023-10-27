@@ -32,7 +32,7 @@ class Chatbot:
         self.model = model  # chat model
         self.data = []  # data to save
         self.max_retry = 500  # max retry times
-        self.frequency = 50  # save frequency
+        self.frequency = 500  # save frequency
         self.model2path = {
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             "llama-2-7b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-chat-hf/",
@@ -89,7 +89,6 @@ class Chatbot:
                     response = openai.ChatCompletion.create(
                         model="gpt-3.5-turbo",
                         messages=messages,
-                        # max_tokens=256,
                         # temperature=1,
                         # top_p=1,
                     )
@@ -113,7 +112,7 @@ class Chatbot:
                     completions = openai.Completion.create(
                         model=chat_model,
                         prompt=q,
-                        # max_tokens=256,
+                        max_tokens=512,
                         # temperature=1,
                         # top_p=1,
                     )
@@ -135,7 +134,7 @@ class Chatbot:
             input_ids = self.tokenizer([q]).input_ids
             output_ids = self.llm.generate(
                 torch.as_tensor(input_ids).cuda(),
-                # max_new_tokens=256,
+                max_new_tokens=512,
                 # early_stopping=True,
                 kwargs=kwargs,
             )
@@ -180,13 +179,10 @@ class Chatbot:
                 trust_remote_code=True,
                 torch_dtype=torch.float16,
             ).cuda()
-        for i in tqdm(range(len(query))):
+        for i in tqdm(range(len(query)), ncols=100):
             if len(self.data) % self.frequency == 0:
                 self.save_data()
             q = query[i]["user_query"]
-            # self.data_path not include Science
-            if "Science" not in os.path.basename(self.data_path):
-                q = "provide a concise answer to the following query: " + q
             ans = self.complete(q, self.model)
             query[i][self.model + "_response"] = ans
             self.data.append(query[i])

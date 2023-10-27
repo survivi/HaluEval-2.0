@@ -22,7 +22,7 @@ class Judgebot(Chatbot):
         """
         with open(prompt_path, "r", encoding="utf-8") as f:
             context = f.read()
-        for i in tqdm(range(len(query))):
+        for i in tqdm(range(len(query)), ncols=100):
             if len(self.data) % self.frequency == 0:
                 self.save_data()
             facts = query[i][self.model + "_fact"]

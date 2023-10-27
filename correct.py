@@ -21,7 +21,7 @@ class Correctbot(Chatbot):
         """
         with open(prompt_path, "r", encoding="utf-8") as f:
             context = f.read()
-        for i in tqdm(range(len(query))):
+        for i in tqdm(range(len(query)), ncols=100):
             if len(self.data) % self.frequency == 0:
                 self.save_data()
             if len(query[i]["judge"]) == 0:  # NO FACTS: [] -> None
