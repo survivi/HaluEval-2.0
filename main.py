@@ -1,5 +1,7 @@
 # coding: utf-8
 import os
+
+# os.environ["CUDA_VISIBLE_DEVICES"] = "6,7,8,9"
 import torch
 import openai
 import argparse
@@ -91,6 +93,8 @@ class Chatbot:
                         messages=messages,
                         # temperature=1,
                         # top_p=1,
+                        # greedy search: temperature=0
+                        # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
                     )
                     ans = response["choices"][0]["message"]["content"]
                     break
@@ -135,7 +139,10 @@ class Chatbot:
             output_ids = self.llm.generate(
                 torch.as_tensor(input_ids).cuda(),
                 max_new_tokens=512,
-                # early_stopping=True,
+                # greedy search: None
+                # top_p sampling: do_sample=True, top_k=0, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
+                # top_k sampling: do_sample=True, top_k=50
+                # beam search: num_beams=5, early_stopping=True
                 kwargs=kwargs,
             )
             output_ids = output_ids[0][len(input_ids[0]) :]
@@ -198,7 +205,7 @@ class Chatbot:
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-LmmUHkhIGn1PJQey6e46F434988c4e78A75eD3B342D8755f"
+    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
     openai.api_base = "https://api.aiguoguo199.com/v1"
     parser = argparse.ArgumentParser(description="LLM Response Generation")
     file_list = [
