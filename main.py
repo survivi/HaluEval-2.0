@@ -1,7 +1,7 @@
 # coding: utf-8
 import os
 
-# os.environ["CUDA_VISIBLE_DEVICES"] = "6,7,8,9"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1,2,6"
 import torch
 import openai
 import argparse
@@ -91,8 +91,6 @@ class Chatbot:
                     response = openai.ChatCompletion.create(
                         model="gpt-3.5-turbo",
                         messages=messages,
-                        # temperature=1,
-                        # top_p=1,
                         # greedy search: temperature=0
                         # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
                     )
@@ -156,10 +154,14 @@ class Chatbot:
         """
         Generate response for query list.
         """
-        if self.model.startswith("chatglm"):
+        if len(query) == 0:
+            return
+        if self.model.startswith("chatglm"):  # chatglm-6b
             model_path = self.model2path[self.model]
             self.tokenizer = AutoTokenizer.from_pretrained(
-                model_path, trust_remote_code=True, use_fast=True
+                model_path,
+                trust_remote_code=True,
+                use_fast=True,
             )
             self.llm = (
                 AutoModel.from_pretrained(
@@ -171,14 +173,30 @@ class Chatbot:
                 .half()
                 .cuda()
             )
+        elif self.model.startswith("vicuna"):  # vicuna-7b, vicuna-13b
+            model_path = self.model2path[self.model]
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                model_path,
+                trust_remote_code=True,
+                use_fast=True,
+                legacy=False,
+            )
+            self.llm = AutoModelForCausalLM.from_pretrained(
+                model_path,
+                low_cpu_mem_usage=True,
+                trust_remote_code=True,
+                torch_dtype=torch.float16,
+            ).cuda()
         elif self.model not in [
             "chatgpt",
             "text-davinci-002",
             "text-davinci-003",
-        ]:  # llama-2*, alpaca-7b, vicuna-7b, vicuna-13b
+        ]:  # llama-2*, alpaca-7b
             model_path = self.model2path[self.model]
             self.tokenizer = AutoTokenizer.from_pretrained(
-                model_path, trust_remote_code=True, use_fast=True
+                model_path,
+                trust_remote_code=True,
+                use_fast=True,
             )
             self.llm = AutoModelForCausalLM.from_pretrained(
                 model_path,
