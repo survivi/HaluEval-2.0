@@ -31,10 +31,9 @@ def get_info(judge_list):
     Get info from judge list.
     """
     true = judge_list.count("true")
-    failed = judge_list.count("unknown")
-    false = len(judge_list) - true - failed
-    info = [(false, len(judge_list)), false / len(judge_list)]
-    if false:
+    false_unknown = len(judge_list) - true
+    info = [(false_unknown, len(judge_list)), false_unknown / len(judge_list)]
+    if false_unknown:
         info.append(1)
     else:
         info.append(0)

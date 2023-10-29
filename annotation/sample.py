@@ -76,7 +76,7 @@ if __name__ == "__main__":
     for file in file_list:
         data_path = path.format(file)
         save_path = save_path_f.format(file)
-        data = read_json(data_path, part=250)
+        data = read_json(data_path, part=270)
         data = [i for i in data if len(i[f"{model}_fact"]) != 0]
         data = sample_data(data, info[data_path], data_path)
         # sort by id

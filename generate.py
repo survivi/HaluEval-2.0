@@ -52,7 +52,7 @@ class Factbot(Chatbot):
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
+    openai.api_key = "sk-CSw9knewT4AnOU9C21Fa655bEfA44e8591D7932e59632c7f"
     openai.api_base = "https://api.aiguoguo199.com/v1"
     parser = argparse.ArgumentParser(description="Factual Statements Generation")
     file_list = [
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--model",
-        default="llama-2-13b-chat-hf",
+        default="llama-2-7b-chat-hf",
         choices=[
             "chatgpt",
             "text-davinci-002",
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     args = parser.parse_known_args()[0]
     parser.add_argument(
         "--save-dir",
-        default=f"./{args.model}_fact_new/",
+        default=f"./{args.model}_fact/",
         help="save root directory",
     )
     parser.add_argument(
@@ -138,6 +138,6 @@ if __name__ == "__main__":
         check_exist(save_dir)
         with Factbot(data_path, save_path, model, assist_model) as factbot:
             factbot.load_exist()
-            query = factbot.load_data(part=0)
+            query = factbot.load_data(part=250)
             query = query[len(factbot.data) :]
             factbot.generate_facts(query, prompt_path)

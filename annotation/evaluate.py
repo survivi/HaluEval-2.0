@@ -26,46 +26,43 @@ def read_docx(path, part=0):
     # ID
     ids = process_cell(tables, 0)
     # Query Score
-    query_scores = process_cell(tables, 2, split=True)
+    query_scores = process_cell(tables, 3, split=True)
     for i in range(len(query_scores)):  # check length and value
         try:
             assert len(query_scores[i]) == 3
             query_scores[i] = [int(j) for j in query_scores[i]]
             assert min(query_scores[i]) >= 1
-            assert max(query_scores[i]) <= 10
+            assert max(query_scores[i]) <= 5
         except:
             raise ValueError(
-                f"query score error in file: {path}\nid: {ids[i]}\nscore: {query_scores[i]}"
+                f"query score error in file: {path}\nID: {ids[i]}\nscore: {query_scores[i]}"
             )
     # Response-level Hallucination
-    response_hallu = process_cell(tables, 4)
-    response_hallu = [int(i) if i else 0 for i in response_hallu]
+    response_hallu = process_cell(tables, 5)
     for i in range(len(response_hallu)):  # check value
         try:
-            assert response_hallu[i] in [0, 1, 2]
+            response_hallu[i] = int(response_hallu[i])
+            assert response_hallu[i] in (1, 2, 3)
         except:
             raise ValueError(
-                f"response-level error in file: {path}\nid: {ids[i]}\nhallucination id: {response_hallu[i]}"
+                f"response-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {response_hallu[i]}"
             )
-    # Hallucination Facts ID
-    fact_ids = process_cell(tables, 6, split=True)
-    fact_ids = [[] if i == [""] else i for i in fact_ids]
-    fact_ids = [[int(j) for j in i] for i in fact_ids]
+    # length
+    lens = [len(table.cell(6, 1).text.split("\n")) for table in tables]
     # Fact-level Hallucinations
     fact_hallu = process_cell(tables, 7, split=True)
-    fact_hallu = [[] if i == [""] else i for i in fact_hallu]
-    fact_hallu = [[int(j) for j in i] for i in fact_hallu]
     for i in range(len(fact_hallu)):  # check length and value
         try:
-            len(fact_hallu[i]) == len(fact_ids[i])
-            min(fact_hallu[i]) >= 1
-            max(fact_hallu[i]) <= 5
+            fact_hallu[i] = [int(j) for j in fact_hallu[i]]
+            assert lens[i] == len(fact_hallu[i])
+            assert min(fact_hallu[i]) >= 1
+            assert max(fact_hallu[i]) <= 6
         except:
             raise ValueError(
-                f"fact-level error in file: {path}\nid: {ids[i]}\nfact id: {fact_ids[i]}\nhallucination id: {fact_hallu[i]}"
+                f"fact-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {fact_hallu[i]}"
             )
 
-    return query_scores, response_hallu, fact_ids, fact_hallu
+    return query_scores, response_hallu, fact_hallu
 
 
 def read_json(path, part=0):
@@ -120,30 +117,24 @@ if __name__ == "__main__":
     total_gpt_id = []
     for file in file_list:
         print("current file: ", file)
-        query_scores, response_hallu, fact_ids, fact_hallu = read_docx(
+        query_scores, response_hallu, fact_hallu = read_docx(
             doc_path.format(file), part=1
         )
         data = read_json(json_path.format(file), part=1)
         gpt_id = [
             [1 if "true" in jud else 0 for jud in d[f"{model}_judge"]] for d in data
         ]
-        lens = [[i + 1 for i in range(len(d[f"{model}_judge"]))] for d in data]
         # check length and value
-        assert len(fact_ids) == len(gpt_id)
-        for i in range(len(fact_ids)):
-            try:
-                assert min(fact_ids[i]) >= 1
-                assert max(fact_ids[i]) <= len(gpt_id[i])
-            except:
-                raise ValueError(
-                    f"length or value error in file: {file}\nid: {data[i]['id']}\nhuman id: {fact_ids[i]}\ngpt id: {gpt_id[i]}"
-                )
-        fact_ids = [[0 if i in h else 1 for i in l] for h, l in zip(fact_ids, lens)]
-        show_id(fact_ids, gpt_id)
-        print_metrics(fact_ids, gpt_id)
-        total_human_id.extend(fact_ids)
+        assert len(fact_hallu) == len(gpt_id)
+        for i in range(len(fact_hallu)):
+            fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu]
+        show_id(fact_hallu, gpt_id)
+        print_metrics(fact_hallu, gpt_id)
+        total_human_id.extend(fact_hallu)
         total_gpt_id.extend(gpt_id)
         print("================================")
+        print(query_scores, response_hallu, fact_hallu)
+        exit()
 
     print("total")
     print_metrics(total_human_id, total_gpt_id)
