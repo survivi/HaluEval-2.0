@@ -137,7 +137,7 @@ class Chatbot:
             output_ids = self.llm.generate(
                 torch.as_tensor(input_ids).cuda(),
                 max_new_tokens=512,
-                # greedy search: None
+                # greedy search: do_sample=False
                 # top_p sampling: do_sample=True, top_k=0, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
                 # top_k sampling: do_sample=True, top_k=50
                 # beam search: num_beams=5, early_stopping=True

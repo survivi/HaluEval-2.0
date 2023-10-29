@@ -57,23 +57,23 @@ def add_ref(path, data):
 
 
 if __name__ == "__main__":
-    model = "llama-2-13b-chat-hf"
-    path = "../llama-2-13b-chat-hf_judge/" + "{}.json"
-    ref_path = "../ref/" + "{}_ref.json"
-    save = "./json"
-    check_exist(save)
-    save_path_f = save + "/{}.json"
-    sample_num = 200
-    files = [
+    file_list = [
         "Bio-Medical",
         "Finance",
         "Science",
         "Education",
         "Open-Domain",
     ]
-    info = {path.format(i): sample_num for i in files}
+    model = "llama-2-13b-chat-hf"
+    path = os.path.join("../llama-2-13b-chat-hf_judge/", "{}.json")
+    # ref_path = os.path.join("../ref/", "{}_ref.json")
+    sample_num = 200
+    save = "./json/"
+    check_exist(save)
+    save_path_f = os.path.join(save, "{}.json")
+    info = {path.format(i): sample_num for i in file_list}
     random.seed(42)
-    for file in files:
+    for file in file_list:
         data_path = path.format(file)
         save_path = save_path_f.format(file)
         data = read_json(data_path, part=250)
@@ -83,10 +83,6 @@ if __name__ == "__main__":
         data = sorted(data, key=lambda x: x["id"])
         # add reference
         # data = add_ref(ref_path.format(file), data)
-        with open(
-            save_path,
-            "w",
-            encoding="utf-8",
-        ) as g:
+        with open(save_path, "w", encoding="utf-8") as g:
             json.dump(data, g, indent=2, ensure_ascii=False)
         print(f"Sample {len(data)} data from {data_path} to {save_path}")

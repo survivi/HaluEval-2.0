@@ -1,5 +1,5 @@
 # coding: utf-8
-import docx
+import os
 import json
 from docx import Document
 
@@ -10,6 +10,7 @@ def read_docx(path, part=0):
     """
     document = Document(path)
     tables = document.tables
+    # id position
     fact_ids = [table.cell(5, 1).text for table in tables]
     fact_ids = [
         i.replace("，", ",").replace(" ", "").replace("\n", "") for i in fact_ids
@@ -60,7 +61,7 @@ def print_metrics(human_id, gpt_id):
 
 
 if __name__ == "__main__":
-    files = [
+    file_list = [
         "Bio-Medical",
         "Finance",
         "Science",
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     json_path = "./json/{}.json"
     total_human_id = []
     total_gpt_id = []
-    for file in files:
+    for file in file_list:
         print("current file: ", file)
         human_id = read_docx(doc_path.format(file), part=20)
         data = read_json(json_path.format(file), part=20)
