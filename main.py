@@ -43,7 +43,7 @@ class Chatbot:
             "alpaca-7b": "/media/public/models/huggingface/alpaca-7b/",
             "vicuna-7b": "/media/public/models/huggingface/vicuna-7b/",
             "vicuna-13b": "/media/public/models/huggingface/vicuna-13b-v1.1/",
-            "chatglm-6b": "/media/public/models/huggingface/chatglm-6b/",
+            # "chatglm-6b": "/media/public/models/huggingface/chatglm-6b/",
         }  # model path
         if not torch.cuda.is_available():
             print("no gpu found")
@@ -258,7 +258,7 @@ if __name__ == "__main__":
             "alpaca-7b",
             "vicuna-7b",
             "vicuna-13b",
-            "chatglm-6b",
+            # "chatglm-6b",
         ],
         help="chat model to use",
     )

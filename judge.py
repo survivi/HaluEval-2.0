@@ -148,7 +148,7 @@ if __name__ == "__main__":
             "alpaca-7b",
             "vicuna-7b",
             "vicuna-13b",
-            "chatglm-6b",
+            # "chatglm-6b",
         ],
         help="chat model to use",
     )
