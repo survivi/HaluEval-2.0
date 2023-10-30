@@ -38,11 +38,12 @@ class Judgebot(Chatbot):
                 judge_list = []
                 while True:
                     if ret >= 20:  # undetected: [unknown]
+                        raise ValueError("unknown facts: \n" + fact_list)
                         print("unknown facts: \n" + fact_list)
                         judge_list = ["unknown" for _ in facts]
                         query[i][self.model + "_judge"] = judge_list
                         self.data.append(query[i])
-                        break
+                        continue
                     ans = self.complete(q, self.assist_model)
                     lines = ans.split("\n")
                     lines = [line.strip() for line in lines if line]
@@ -53,8 +54,6 @@ class Judgebot(Chatbot):
                     print("length not match")
                     print("retrying...")
                     ret += 1
-                if len(judge_list) != 0:
-                    continue
                 for line in lines:
                     if "UNKNOWN" in line:  # [UNKNOWN]: [unknown]
                         # print("unknown judge: " + line)
@@ -67,9 +66,8 @@ class Judgebot(Chatbot):
                         try:
                             corrected_ans = line.split("[correction]:")[1].strip()
                         except Exception as e:
-                            print(e)
-                            print(line)
-                            print("empty corrected fact")
+                            print("error: " + e)
+                            print("empty corrected fact: " + line)
                             corrected_ans = ""
                         judge_list.append("false, [corrected fact]: " + corrected_ans)
                     else:  # undetected: [unknown]
@@ -83,7 +81,7 @@ class Judgebot(Chatbot):
                     q = f"{context}\nContext: <answer>: {fact}\nResponse: "
                     ret = 0
                     while True:
-                        if ret >= 100:  # undetected: [unknown]
+                        if ret >= 20:  # undetected: [unknown]
                             print("undetected fact: " + fact)
                             judge_list.append("unknown")
                             break
@@ -92,9 +90,8 @@ class Judgebot(Chatbot):
                             try:
                                 corrected_ans = ans.split("[correction]:")[1].strip()
                             except Exception as e:
-                                print(e)
-                                print(ans)
-                                print("empty corrected fact")
+                                print("error: " + e)
+                                print("empty corrected fact: " + ans)
                                 corrected_ans = ""
                             judge_list.append(
                                 "false, [corrected fact]: " + corrected_ans
@@ -202,6 +199,6 @@ if __name__ == "__main__":
         check_exist(save_dir)
         with Judgebot(data_path, save_path, model, assist_model) as jubot:
             jubot.load_exist()
-            query = jubot.load_data(part=0)
+            query = jubot.load_data(part=270)
             query = query[len(jubot.data) :]
             jubot.generate_judge(query, prompt_path)

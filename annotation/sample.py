@@ -64,8 +64,8 @@ if __name__ == "__main__":
         "Education",
         "Open-Domain",
     ]
-    model = "llama-2-13b-chat-hf"
-    path = os.path.join("../llama-2-13b-chat-hf_judge/", "{}.json")
+    model = "llama-2-7b-chat-hf"
+    path = os.path.join(f"../llama-2-13b-chat-hf_judge/", "{}.json")
     # ref_path = os.path.join("../ref/", "{}_ref.json")
     sample_num = 200
     save = "./json/"

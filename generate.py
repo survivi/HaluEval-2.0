@@ -138,6 +138,6 @@ if __name__ == "__main__":
         check_exist(save_dir)
         with Factbot(data_path, save_path, model, assist_model) as factbot:
             factbot.load_exist()
-            query = factbot.load_data(part=250)
+            query = factbot.load_data(part=270)
             query = query[len(factbot.data) :]
             factbot.generate_facts(query, prompt_path)
