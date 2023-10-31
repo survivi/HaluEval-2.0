@@ -45,10 +45,9 @@ def add_ref(path, data):
             try:
                 assert user_query == ref_query
             except:
-                print("query not match")
                 print("user_query: " + user_query)
                 print("ref_query: " + ref_query)
-                raise ValueError
+                raise ValueError("queries not match")
             data[i]["reference"] = info
     else:
         for i in range(len(data)):
@@ -65,7 +64,7 @@ if __name__ == "__main__":
         "Open-Domain",
     ]
     model = "llama-2-7b-chat-hf"
-    path = os.path.join(f"../llama-2-13b-chat-hf_judge/", "{}.json")
+    path = os.path.join(f"../{model}_judge/", "{}.json")
     # ref_path = os.path.join("../ref/", "{}_ref.json")
     sample_num = 200
     save = "./json/"

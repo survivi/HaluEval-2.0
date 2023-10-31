@@ -6,6 +6,7 @@ from docx.shared import Inches
 from sample import check_exist
 from docx.oxml.ns import qn
 from docx.shared import Pt
+from evaluate import read_json
 
 
 def set_font(run):
@@ -57,11 +58,7 @@ def generate_doc(model, file, samples, save_path):
         set_font(run)
         run = hdr_cells[4].paragraphs[0].add_run("模型回复")
         set_font(run)
-        run = (
-            hdr_cells[5]
-            .paragraphs[0]
-            .add_run("回复标注（三选一）：\n1-回复与问题相关且有效回复\n2-回复与问题相关但无效回复\n3-回复与问题完全无关")
-        )
+        run = hdr_cells[5].paragraphs[0].add_run("回复标注（二选一）：\n1-回复与问题相关\n2-回复与问题不相关")
         set_font(run)
         run = hdr_cells[6].paragraphs[0].add_run("提取的事实")
         set_font(run)
@@ -69,7 +66,7 @@ def generate_doc(model, file, samples, save_path):
             hdr_cells[7]
             .paragraphs[0]
             .add_run(
-                "事实标注\n（每条事实六选一）：\n1-没有事实错误\n2-相似的事实错误\n3-差异的事实错误\n4-关键信息缺失\n5-信息过时\n6-无法验证"
+                "事实标注\n（每条事实八选一）：\n1-完全正确事实\n2-实体错误事实\n3-关系错误事实\n4-信息缺失事实\n5-信息过时事实\n6-表述绝对事实\n7-无法验证事实\n8-非事实表述"
             )
         )
         set_font(run)
@@ -100,14 +97,13 @@ if __name__ == "__main__":
         "Education",
         "Open-Domain",
     ]
-    model = "llama-2-13b-chat-hf"
+    model = "llama-2-7b-chat-hf"
     json_dir = "./json/"
     save_dir = "./docs/"
     check_exist(save_dir)
     for file in file_list:
-        with open(os.path.join(json_dir, f"{file}.json"), "r") as fin:
-            data = json.load(fin)
-        data_lst = split_list(data)
+        data = read_json(path=os.path.join(json_dir, f"{file}.json"), part=200)
+        data_lst = split_list(data, x=4)
         for i in range(len(data_lst)):
             save_path = os.path.join(save_dir, f"{file}_{i+1}.docx")
             generate_doc(model, file, data_lst[i], save_path)

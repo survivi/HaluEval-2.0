@@ -37,7 +37,7 @@ class Factbot(Chatbot):
                     ans_cut = ans.split("\n")[1:]
                     facts = [fact[2:].strip() for fact in ans_cut]
                 except Exception as e:
-                    print(e)
+                    print("error: " + str(e))
                     print(ans)
                     print("empty facts")
                     facts = []

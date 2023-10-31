@@ -25,7 +25,7 @@ def read_docx(path, part=0):
         tables = tables[:part]
     # ID
     ids = process_cell(tables, 0)
-    # Query Score
+    # query score
     query_scores = process_cell(tables, 3, split=True)
     for i in range(len(query_scores)):  # check length and value
         try:
@@ -37,26 +37,26 @@ def read_docx(path, part=0):
             raise ValueError(
                 f"query score error in file: {path}\nID: {ids[i]}\nscore: {query_scores[i]}"
             )
-    # Response-level Hallucination
+    # response relevance
     response_hallu = process_cell(tables, 5)
     for i in range(len(response_hallu)):  # check value
         try:
             response_hallu[i] = int(response_hallu[i])
-            assert response_hallu[i] in (1, 2, 3)
+            assert response_hallu[i] in (1, 2)
         except:
             raise ValueError(
                 f"response-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {response_hallu[i]}"
             )
     # length
     lens = [len(table.cell(6, 1).text.split("\n")) for table in tables]
-    # Fact-level Hallucinations
+    # segment-level hallucinations
     fact_hallu = process_cell(tables, 7, split=True)
     for i in range(len(fact_hallu)):  # check length and value
         try:
             fact_hallu[i] = [int(j) for j in fact_hallu[i]]
             assert lens[i] == len(fact_hallu[i])
             assert min(fact_hallu[i]) >= 1
-            assert max(fact_hallu[i]) <= 6
+            assert max(fact_hallu[i]) <= 8
         except:
             raise ValueError(
                 f"fact-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {fact_hallu[i]}"

@@ -47,7 +47,7 @@ class Correctbot(Chatbot):
                 try:
                     ans = "\n".join(ans.split("\n")[1:])
                 except Exception as e:
-                    print(e)
+                    print("error: " + str(e))
                     print(ans)
                     ans = None
                 query[i][self.model + "_corrected_response"] = ans

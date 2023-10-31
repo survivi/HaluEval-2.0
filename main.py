@@ -97,15 +97,15 @@ class Chatbot:
                     ans = response["choices"][0]["message"]["content"]
                     break
                 except openai.error.RateLimitError as e:
-                    print(e)
+                    print("error: " + str(e))
                     print("Retry after 60s")
                     time.sleep(60)
                 except Exception as e:
-                    print(e)
+                    print("error: " + str(e))
                     print("Retry after 20s")
                     time.sleep(20)
             if retry >= self.max_retry:
-                raise Exception("Failed to generate response")
+                raise ValueError("Failed to generate response")
         elif chat_model.startswith("text-davinci-00"):
             retry = 0
             while retry < self.max_retry:
@@ -121,15 +121,15 @@ class Chatbot:
                     ans = completions["choices"][0]["text"]
                     break
                 except openai.error.RateLimitError as e:
-                    print(e)
+                    print("error: " + str(e))
                     print("Retry after 60s")
                     time.sleep(60)
                 except Exception as e:
-                    print(e)
+                    print("error: " + str(e))
                     print("Retry after 20s")
                     time.sleep(20)
             if retry >= self.max_retry:
-                raise Exception("Failed to generate response")
+                raise ValueError("Failed to generate response")
         elif chat_model.startswith("chatglm"):
             ans, history = self.llm.chat(self.tokenizer, q, history=[])
         else:  # llama-2*, alpaca-7b, vicuna-7b, vicuna-13b
