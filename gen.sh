@@ -1,1 +1,1 @@
-python judge.py --all-files --model llama-2-7b-chat-hf
+python generate.py --all-files --model llama-2-7b-chat-hf

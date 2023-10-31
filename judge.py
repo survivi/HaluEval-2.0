@@ -199,6 +199,6 @@ if __name__ == "__main__":
         check_exist(save_dir)
         with Judgebot(data_path, save_path, model, assist_model) as jubot:
             jubot.load_exist()
-            query = jubot.load_data(part=270)
+            query = jubot.load_data(part=0)
             query = query[len(jubot.data) :]
             jubot.generate_judge(query, prompt_path)

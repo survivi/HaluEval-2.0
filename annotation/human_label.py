@@ -1,6 +1,5 @@
 # coding: utf-8
 import os
-import json
 from docx import Document
 from docx.shared import Inches
 from sample import check_exist

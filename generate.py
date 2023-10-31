@@ -91,12 +91,12 @@ if __name__ == "__main__":
         ],
         help="chat model to use",
     )
+    args = parser.parse_known_args()[0]
     parser.add_argument(
         "--data-dir",
-        default="./data/",
+        default=f"./{args.model}/",
         help="data root directory",
     )
-    args = parser.parse_known_args()[0]
     parser.add_argument(
         "--save-dir",
         default=f"./{args.model}_fact/",
@@ -138,6 +138,6 @@ if __name__ == "__main__":
         check_exist(save_dir)
         with Factbot(data_path, save_path, model, assist_model) as factbot:
             factbot.load_exist()
-            query = factbot.load_data(part=270)
+            query = factbot.load_data(part=0)
             query = query[len(factbot.data) :]
             factbot.generate_facts(query, prompt_path)
