@@ -21,7 +21,6 @@ def set_font(run):
 def split_list(lst, x=4):
     """
     Divide a list evenly into x parts.
-    If the length of the list is not divisible by x, the front part will have one more element than the back part.
     """
     n = len(lst)
     k = n // x

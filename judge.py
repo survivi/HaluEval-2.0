@@ -66,7 +66,7 @@ class Judgebot(Chatbot):
                         try:
                             corrected_ans = line.split("[correction]:")[1].strip()
                         except Exception as e:
-                            print("error: " + e)
+                            print("error: " + str(e))
                             print("empty corrected fact: " + line)
                             corrected_ans = ""
                         judge_list.append("false, [corrected fact]: " + corrected_ans)
@@ -90,7 +90,7 @@ class Judgebot(Chatbot):
                             try:
                                 corrected_ans = ans.split("[correction]:")[1].strip()
                             except Exception as e:
-                                print("error: " + e)
+                                print("error: " + str(e))
                                 print("empty corrected fact: " + ans)
                                 corrected_ans = ""
                             judge_list.append(
@@ -113,7 +113,7 @@ class Judgebot(Chatbot):
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
+    openai.api_key = "sk-CSw9knewT4AnOU9C21Fa655bEfA44e8591D7932e59632c7f"
     openai.api_base = "https://api.aiguoguo199.com/v1"
     parser = argparse.ArgumentParser(description="Factual Statements Judgment")
     file_list = [
