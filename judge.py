@@ -155,12 +155,12 @@ if __name__ == "__main__":
     args = parser.parse_known_args()[0]
     parser.add_argument(
         "--data-dir",
-        default=f"./{args.model}_fact/",
+        default=f"./fact/{args.model}_fact/",
         help="data root directory",
     )
     parser.add_argument(
         "--save-dir",
-        default=f"./{args.model}_judge/",
+        default=f"./judge/{args.model}_judge/",
         help="save root directory",
     )
     parser.add_argument(

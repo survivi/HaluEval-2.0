@@ -1,8 +1,12 @@
 # coding: utf-8
 import os
+import json
+import time
+import requests
 import openai
 import argparse
 from tqdm import tqdm
+import multiprocessing
 from main import Chatbot, check_exist
 
 
@@ -16,39 +20,148 @@ class Factbot(Chatbot):
         self.assist_model = assist_model  # facts generation model
         self.frequency = 500  # save frequency
 
+    def get_access_token(self):
+        url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
+        payload = json.dumps(
+            {
+                "app_id": "bli_yt3xllynei5rqqdj",
+                "app_secret": "dd9684e41df14f69a4244583ca03ac54",
+            }
+        )
+
+        headers = {"Content-Type": "application/json"}
+
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        return data["data"]["tenant_access_token"]
+
+    def chatgpt_hi_request(
+        self,
+        message,
+        sys_msg="You are good at Text-to-SQL",
+        model="4",
+        temperature=1.0,
+        top_p=0.9,
+    ):
+        """
+        model type
+        2: GPT3.5
+        4: GPT4-8k
+        5: GPT-4-32k
+        """
+        url = "https://hi-open.zhipin.com/open-apis/ai/open/api/send/message"
+
+        headers = {
+            "Authorization": "Bearer {0}".format(self.get_access_token()),
+            "Content-Type": "application/json",
+        }
+
+        messages = [
+            {"role": "system", "content": sys_msg},
+            {"role": "user", "content": message},
+        ]
+
+        payload = json.dumps(
+            {
+                "model": model,
+                "messages": messages,
+                "temperature": temperature,
+                "top_p": top_p,
+            }
+        )
+
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        # if data['code'] != 0:
+        #     print(data)
+        return data["data"]["choices"][0]["message"]["content"]
+
+    def gpt_4_complete(self, data):
+        input = 6
+        while True:
+            try:
+                res = self.chatgpt_hi_request(input, temperature=0.0, top_p=1.0)
+                break
+            except openai.error.RateLimitError as e:
+                err_mes = str(e)
+                if "You exceeded your current quota" in err_mes:
+                    print("You exceeded your current quota: %s" % openai.api_key)
+                print("openai.error.RateLimitError\nRetrying...")
+                time.sleep(30)
+            except openai.error.ServiceUnavailableError:
+                print("openai.error.ServiceUnavailableError\nRetrying...")
+                time.sleep(20)
+            except openai.error.Timeout:
+                print("openai.error.Timeout\nRetrying...")
+                time.sleep(20)
+            except openai.error.APIError:
+                print("openai.error.APIError\nRetrying...")
+                time.sleep(20)
+            except openai.error.APIConnectionError:
+                print("openai.error.APIConnectionError\nRetrying...")
+                time.sleep(20)
+            except Exception as e:
+                # logging.exception(e)
+                # print("-----",openai.api_key,"-----------")
+                time.sleep(5)
+        data["llm_output"] = res
+        # time.sleep(3)
+        # print(res)
+        return data
+
     def generate_facts(self, query, prompt_path):
         """
         Generate facts by the assist model.
         """
         with open(prompt_path, "r", encoding="utf-8") as f:
             context = f.read()
-        for i in tqdm(range(len(query)), ncols=100):
-            if len(self.data) % self.frequency == 0:
-                self.save_data()
-            user_query = query[i]["user_query"]
-            id = query[i]["id"]
-            response = query[i][self.model + "_response"]
-            q = f"{context}\nContext: <query>: {user_query} <answer>: {response}\nResponse: "
-            ans = self.complete(q, self.assist_model)
-            if "NO FACTS" in ans:
-                facts = []
-            else:
-                try:
-                    ans_cut = ans.split("\n")[1:]
-                    facts = [fact[2:].strip() for fact in ans_cut]
-                except Exception as e:
-                    print("error: " + str(e))
-                    print(ans)
-                    print("empty facts")
+        if self.assist_model == "gpt-4":
+            self.context = context
+            num_process = 145
+            chunk_size = 1
+            with open(out_path, "w") as fout:
+                with multiprocessing.Pool(num_process) as p:
+                    results = p.imap_unordered(
+                        main_func, all_data, chunksize=chunk_size
+                    )
+                    for result in tqdm(results, total=len(all_data)):
+                        fout.write(json.dumps(result) + "\n")
+            with open(out_path, "r") as f:
+                all_results = f.readlines()
+                all_results = [json.loads(l.strip("\n")) for l in all_results]
+                print(f"Totally {len(all_results)} samples.")
+            with open(out_path, "w") as f:
+                json.dump(all_results, f)
+                print(f"Save {len(all_results)} samples to {out_path}.")
+        else:
+            raise NotImplementedError
+            for i in tqdm(range(len(query)), ncols=100):
+                if len(self.data) % self.frequency == 0:
+                    self.save_data()
+                user_query = query[i]["user_query"]
+                id = query[i]["id"]
+                response = query[i][self.model + "_response"]
+                q = f"{context}\nContext: <query>: {user_query} <answer>: {response}\nResponse: "
+                ans = self.complete(q, self.assist_model)
+                if "NO FACTS" in ans:
                     facts = []
-            self.data.append(
-                {
-                    "id": id,
-                    "user_query": user_query,
-                    self.model + "_response": response,
-                    self.model + "_fact": facts,
-                }
-            )
+                else:
+                    try:
+                        ans_cut = ans.split("\n")[1:]
+                        facts = [fact[2:].strip() for fact in ans_cut]
+                    except Exception as e:
+                        print("error: " + str(e))
+                        print(ans)
+                        print("empty facts")
+                        facts = []
+                self.data.append(
+                    {
+                        "id": id,
+                        "user_query": user_query,
+                        self.model + "_response": response,
+                        self.model + "_fact": facts,
+                    }
+                )
 
 
 if __name__ == "__main__":
@@ -94,20 +207,20 @@ if __name__ == "__main__":
     args = parser.parse_known_args()[0]
     parser.add_argument(
         "--data-dir",
-        default=f"./{args.model}/",
+        default=f"./pure/{args.model}/",
         help="data root directory",
     )
     parser.add_argument(
         "--save-dir",
-        default=f"./{args.model}_fact/",
+        default=f"./fact/{args.model}_fact/",
         help="save root directory",
     )
     parser.add_argument(
         "--assist-model",
-        default="chatgpt",
+        default="gpt-4",
         choices=[
             "chatgpt",
-            # "gpt-4",
+            "gpt-4",
         ],
         help="facts generation model to use",
     )

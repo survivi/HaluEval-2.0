@@ -20,7 +20,7 @@ def check_exist(path):
     Check if the path exists, if not, create it.
     """
     if not os.path.exists(path):
-        os.mkdir(path)
+        os.makedirs(path)
 
 
 class Chatbot:
@@ -270,7 +270,7 @@ if __name__ == "__main__":
     args = parser.parse_known_args()[0]
     parser.add_argument(
         "--save-dir",
-        default=f"./{args.model}/",
+        default=f"./response/{args.model}/",
         help="save root directory",
     )
     args = parser.parse_args()
