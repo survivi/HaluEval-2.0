@@ -56,7 +56,6 @@ class Judgebot(Chatbot):
                 temp = sorted(temp, key=lambda x: x["id"])
                 self.data.extend(temp)
         else:
-            raise NotImplementedError
             for i in tqdm(range(len(query)), ncols=100):
                 if len(self.data) % self.frequency == 0:
                     self.save_data()

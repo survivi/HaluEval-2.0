@@ -24,19 +24,15 @@ def check_exist(path):
         os.makedirs(path)
 
 
-class Chatbot:
+class Bot(object):
     """
-    Chatbot for response generation.
+    Base class for chatbot.
     """
 
-    def __init__(self, data_path, save_path, model):
-        self.data_path = data_path  # path to data
-        self.save_path = save_path  # path to save
+    def __init__(self, model):
         self.model = model  # chat model
-        self.data = []  # data to save
-        self.max_retry = 500  # max retry times
-        self.frequency = 500  # save frequency
         self.model2path = {
+            "llama-7b": "/media/public/models/huggingface/llama-7b/",
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             "llama-2-7b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-chat-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
@@ -48,6 +44,68 @@ class Chatbot:
         }  # model path
         if not torch.cuda.is_available():
             print("no gpu found")
+
+    def load(self):
+        """
+        Load local models and tokenizers.
+        """
+        if self.model.startswith("vicuna"):  # vicuna-7b, vicuna-13b
+            model_path = self.model2path[self.model]
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                model_path,
+                trust_remote_code=True,
+                use_fast=True,
+                legacy=False,
+            )
+            self.llm = AutoModelForCausalLM.from_pretrained(
+                model_path,
+                low_cpu_mem_usage=True,
+                trust_remote_code=True,
+                torch_dtype=torch.float16,
+            ).cuda()
+        elif self.model not in [
+            "chatgpt",
+            "text-davinci-002",
+            "text-davinci-003",
+        ]:  # llama*, alpaca-7b
+            model_path = self.model2path[self.model]
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                model_path,
+                trust_remote_code=True,
+                use_fast=True,
+            )
+            self.llm = AutoModelForCausalLM.from_pretrained(
+                model_path,
+                low_cpu_mem_usage=True,
+                trust_remote_code=True,
+                torch_dtype=torch.float16,
+            ).cuda()
+        else:
+            self.tokenizer = None
+            self.llm = None
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        """
+        Save data when exit.
+        """
+        self.save_data()
+
+
+class Chatbot(Bot):
+    """
+    Chatbot for response generation.
+    """
+
+    def __init__(self, data_path, save_path, model):
+        self.data_path = data_path  # path to data
+        self.save_path = save_path  # path to save
+        self.model = model  # chat model
+        self.data = []  # data to save
+        self.max_retry = 500  # max retry times
+        self.frequency = 500  # save frequency
 
     def load_data(self, part=0):
         """
@@ -247,54 +305,7 @@ class Chatbot:
         """
         if len(query) == 0:
             return
-        if self.model.startswith("chatglm"):  # chatglm-6b
-            model_path = self.model2path[self.model]
-            self.tokenizer = AutoTokenizer.from_pretrained(
-                model_path,
-                trust_remote_code=True,
-                use_fast=True,
-            )
-            self.llm = (
-                AutoModel.from_pretrained(
-                    model_path,
-                    low_cpu_mem_usage=True,
-                    trust_remote_code=True,
-                    torch_dtype=torch.float16,
-                )
-                .half()
-                .cuda()
-            )
-        elif self.model.startswith("vicuna"):  # vicuna-7b, vicuna-13b
-            model_path = self.model2path[self.model]
-            self.tokenizer = AutoTokenizer.from_pretrained(
-                model_path,
-                trust_remote_code=True,
-                use_fast=True,
-                legacy=False,
-            )
-            self.llm = AutoModelForCausalLM.from_pretrained(
-                model_path,
-                low_cpu_mem_usage=True,
-                trust_remote_code=True,
-                torch_dtype=torch.float16,
-            ).cuda()
-        elif self.model not in [
-            "chatgpt",
-            "text-davinci-002",
-            "text-davinci-003",
-        ]:  # llama-2*, alpaca-7b
-            model_path = self.model2path[self.model]
-            self.tokenizer = AutoTokenizer.from_pretrained(
-                model_path,
-                trust_remote_code=True,
-                use_fast=True,
-            )
-            self.llm = AutoModelForCausalLM.from_pretrained(
-                model_path,
-                low_cpu_mem_usage=True,
-                trust_remote_code=True,
-                torch_dtype=torch.float16,
-            ).cuda()
+
         for i in tqdm(range(len(query)), ncols=100):
             if len(self.data) % self.frequency == 0:
                 self.save_data()
@@ -302,15 +313,6 @@ class Chatbot:
             ans = self.complete(q, self.model)
             query[i][self.model + "_response"] = ans
             self.data.append(query[i])
-
-    def __enter__(self):
-        return self
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        """
-        Save data when exit.
-        """
-        self.save_data()
 
 
 if __name__ == "__main__":
@@ -342,7 +344,8 @@ if __name__ == "__main__":
             "chatgpt",
             "text-davinci-002",
             "text-davinci-003",
-            # "llama-2-7b-hf",
+            "llama-7b",
+            "llama-2-7b-hf",
             "llama-2-7b-chat-hf",
             # "llama-2-13b-hf",
             "llama-2-13b-chat-hf",
