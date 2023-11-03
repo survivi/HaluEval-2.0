@@ -20,95 +20,6 @@ class Factbot(Chatbot):
         self.assist_model = assist_model  # facts generation model
         self.frequency = 500  # save frequency
 
-    def get_access_token(self):
-        url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
-        payload = json.dumps(
-            {
-                "app_id": "bli_yt3xllynei5rqqdj",
-                "app_secret": "dd9684e41df14f69a4244583ca03ac54",
-            }
-        )
-
-        headers = {"Content-Type": "application/json"}
-
-        response = requests.request("POST", url, headers=headers, data=payload)
-        data = json.loads(response.text)
-        return data["data"]["tenant_access_token"]
-
-    def chatgpt_hi_request(
-        self,
-        message,
-        sys_msg="You are good at Text-to-SQL",
-        model="4",
-        temperature=1.0,
-        top_p=0.9,
-    ):
-        """
-        model type
-        2: GPT3.5
-        4: GPT4-8k
-        5: GPT-4-32k
-        """
-        url = "https://hi-open.zhipin.com/open-apis/ai/open/api/send/message"
-
-        headers = {
-            "Authorization": "Bearer {0}".format(self.get_access_token()),
-            "Content-Type": "application/json",
-        }
-
-        messages = [
-            {"role": "system", "content": sys_msg},
-            {"role": "user", "content": message},
-        ]
-
-        payload = json.dumps(
-            {
-                "model": model,
-                "messages": messages,
-                "temperature": temperature,
-                "top_p": top_p,
-            }
-        )
-
-        response = requests.request("POST", url, headers=headers, data=payload)
-        data = json.loads(response.text)
-        # if data['code'] != 0:
-        #     print(data)
-        return data["data"]["choices"][0]["message"]["content"]
-
-    def gpt_4_complete(self, data):
-        input = 6
-        while True:
-            try:
-                res = self.chatgpt_hi_request(input, temperature=0.0, top_p=1.0)
-                break
-            except openai.error.RateLimitError as e:
-                err_mes = str(e)
-                if "You exceeded your current quota" in err_mes:
-                    print("You exceeded your current quota: %s" % openai.api_key)
-                print("openai.error.RateLimitError\nRetrying...")
-                time.sleep(30)
-            except openai.error.ServiceUnavailableError:
-                print("openai.error.ServiceUnavailableError\nRetrying...")
-                time.sleep(20)
-            except openai.error.Timeout:
-                print("openai.error.Timeout\nRetrying...")
-                time.sleep(20)
-            except openai.error.APIError:
-                print("openai.error.APIError\nRetrying...")
-                time.sleep(20)
-            except openai.error.APIConnectionError:
-                print("openai.error.APIConnectionError\nRetrying...")
-                time.sleep(20)
-            except Exception as e:
-                # logging.exception(e)
-                # print("-----",openai.api_key,"-----------")
-                time.sleep(5)
-        data["llm_output"] = res
-        # time.sleep(3)
-        # print(res)
-        return data
-
     def generate_facts(self, query, prompt_path):
         """
         Generate facts by the assist model.
@@ -116,32 +27,54 @@ class Factbot(Chatbot):
         with open(prompt_path, "r", encoding="utf-8") as f:
             context = f.read()
         if self.assist_model == "gpt-4":
-            self.context = context
+            user_query_lst = [query[i]["user_query"] for i in range(len(query))]
+            response_lst = [
+                query[i][self.model + "_response"] for i in range(len(query))
+            ]
+            prompts = [
+                f"{context}Context: <query>: {user_query_lst[i]} <answer>: {response_lst[i]}\nResponse: "
+                for i in range(len(query))
+            ]
+            for i in range(len(query)):
+                query[i]["input"] = prompts[i]
             num_process = 145
             chunk_size = 1
-            with open(out_path, "w") as fout:
-                with multiprocessing.Pool(num_process) as p:
-                    results = p.imap_unordered(
-                        main_func, all_data, chunksize=chunk_size
+            with multiprocessing.Pool(num_process) as p:
+                results = p.imap_unordered(
+                    self.gpt_4_complete, query, chunksize=chunk_size
+                )
+                temp = []
+                for i in tqdm(range(len(results)), total=len(results)):
+                    ans = results[i]["llm_output"]
+                    if "NO FACTS" in ans:
+                        facts = []
+                    else:
+                        try:
+                            ans_cut = ans.split("\n")[1:]
+                            facts = [fact[2:].strip() for fact in ans_cut]
+                        except Exception as e:
+                            print("error: " + str(e))
+                            print(ans)
+                            facts = []
+                    temp.append(
+                        {
+                            "id": results[i]["id"],
+                            "user_query": results[i]["user_query"],
+                            self.model
+                            + "_response": results[i][self.model + "_response"],
+                            self.model + "_fact": facts,
+                        }
                     )
-                    for result in tqdm(results, total=len(all_data)):
-                        fout.write(json.dumps(result) + "\n")
-            with open(out_path, "r") as f:
-                all_results = f.readlines()
-                all_results = [json.loads(l.strip("\n")) for l in all_results]
-                print(f"Totally {len(all_results)} samples.")
-            with open(out_path, "w") as f:
-                json.dump(all_results, f)
-                print(f"Save {len(all_results)} samples to {out_path}.")
+                temp = sorted(temp, key=lambda x: x["id"])
+                self.data.extend(temp)
         else:
-            raise NotImplementedError
             for i in tqdm(range(len(query)), ncols=100):
                 if len(self.data) % self.frequency == 0:
                     self.save_data()
                 user_query = query[i]["user_query"]
                 id = query[i]["id"]
                 response = query[i][self.model + "_response"]
-                q = f"{context}\nContext: <query>: {user_query} <answer>: {response}\nResponse: "
+                q = f"{context}Context: <query>: {user_query} <answer>: {response}\nResponse: "
                 ans = self.complete(q, self.assist_model)
                 if "NO FACTS" in ans:
                     facts = []
@@ -152,7 +85,6 @@ class Factbot(Chatbot):
                     except Exception as e:
                         print("error: " + str(e))
                         print(ans)
-                        print("empty facts")
                         facts = []
                 self.data.append(
                     {
@@ -165,8 +97,6 @@ class Factbot(Chatbot):
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-CSw9knewT4AnOU9C21Fa655bEfA44e8591D7932e59632c7f"
-    openai.api_base = "https://api.aiguoguo199.com/v1"
     parser = argparse.ArgumentParser(description="Factual Statements Generation")
     file_list = [
         "Bio-Medical",

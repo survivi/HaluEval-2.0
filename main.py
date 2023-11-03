@@ -2,6 +2,7 @@
 import os
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1,2,6"
+import requests
 import torch
 import openai
 import argparse
@@ -74,6 +75,96 @@ class Chatbot:
         if os.path.exists(self.save_path):
             with open(self.save_path, "r", encoding="utf-8") as f:
                 self.data = json.load(f)
+
+    def get_access_token(self):
+        url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
+        payload = json.dumps(
+            {
+                "app_id": "bli_yt3xllynei5rqqdj",
+                "app_secret": "dd9684e41df14f69a4244583ca03ac54",
+            }
+        )
+
+        headers = {"Content-Type": "application/json"}
+
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        return data["data"]["tenant_access_token"]
+
+    def chatgpt_hi_request(
+        self,
+        message,
+        # sys_msg="You are good at Text-to-SQL",
+        model="4",
+        # temperature=1.0,
+        # top_p=0.9,
+    ):
+        """
+        model type
+        2: GPT3.5
+        4: GPT4-8k
+        5: GPT-4-32k
+        """
+        url = "https://hi-open.zhipin.com/open-apis/ai/open/api/send/message"
+
+        headers = {
+            "Authorization": "Bearer {0}".format(self.get_access_token()),
+            "Content-Type": "application/json",
+        }
+
+        messages = [
+            # {"role": "system", "content": sys_msg},
+            {"role": "user", "content": message},
+        ]
+
+        payload = json.dumps(
+            {
+                "model": model,
+                "messages": messages,
+                # "temperature": temperature,
+                # "top_p": top_p,
+            }
+        )
+
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        # if data['code'] != 0:
+        #     print(data)
+        return data["data"]["choices"][0]["message"]["content"]
+
+    def gpt_4_complete(self, data):
+        input = data["input"]
+        # print(input)
+        while True:
+            try:
+                res = self.chatgpt_hi_request(input)
+                break
+            except openai.error.RateLimitError as e:
+                err_mes = str(e)
+                if "You exceeded your current quota" in err_mes:
+                    print("You exceeded your current quota: %s" % openai.api_key)
+                print("openai.error.RateLimitError\nRetrying...")
+                time.sleep(30)
+            except openai.error.ServiceUnavailableError:
+                print("openai.error.ServiceUnavailableError\nRetrying...")
+                time.sleep(20)
+            except openai.error.Timeout:
+                print("openai.error.Timeout\nRetrying...")
+                time.sleep(20)
+            except openai.error.APIError:
+                print("openai.error.APIError\nRetrying...")
+                time.sleep(20)
+            except openai.error.APIConnectionError:
+                print("openai.error.APIConnectionError\nRetrying...")
+                time.sleep(20)
+            except Exception as e:
+                # logging.exception(e)
+                # print("-----",openai.api_key,"-----------")
+                time.sleep(5)
+        data["llm_output"] = res.strip()
+        # time.sleep(3)
+        # print(res)
+        return data
 
     def complete(self, q, chat_model, **kwargs):
         """
@@ -270,7 +361,7 @@ if __name__ == "__main__":
     args = parser.parse_known_args()[0]
     parser.add_argument(
         "--save-dir",
-        default=f"./response/{args.model}/",
+        default=f"./{args.model}/",
         help="save root directory",
     )
     args = parser.parse_args()
