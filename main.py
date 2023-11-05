@@ -1,8 +1,5 @@
 # coding: utf-8
 import os
-
-# os.environ["CUDA_VISIBLE_DEVICES"] = "1,2,6"
-import requests
 import torch
 import openai
 import argparse
@@ -228,15 +225,15 @@ class Chatbot(Bot):
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
+    openai.api_key = "sk-itJLSDtI0l1xEngiAf5c0b742f48475185901cB90aB9D68a"
     openai.api_base = "https://api.aiguoguo199.com/v1"
     parser = argparse.ArgumentParser(description="LLM Response Generation")
     file_list = [
         "Bio-Medical",
         "Finance",
         "Science",
-        "Education",
-        "Open-Domain",
+        # "Education",
+        # "Open-Domain",
     ]
     parser.add_argument(
         "--all-files",
