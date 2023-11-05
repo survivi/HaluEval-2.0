@@ -1,0 +1,1 @@
+python metric.py --model alpaca-7b

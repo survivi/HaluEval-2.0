@@ -50,10 +50,13 @@ class Judgebot(Chatbot):
             elif  "FALSE" in line:  # [FALSE]: [false, [corrected fact]: xxx]
                 try:
                     corrected_ans = line.split("[correction]:")[1].strip()
-                except Exception as e:
-                    print("Error: " + str(e))
-                    print("Empty corrected fact: " + line)
-                    corrected_ans = ""
+                except:
+                    try:
+                        corrected_ans = line.split("[Correction]:")[1].strip()
+                    except Exception as e:
+                        print("Error: " + str(e))
+                        print("Empty corrected fact: " + line)
+                        corrected_ans = ""
                 judge_lst.append(
                     "false, [corrected fact]: " + corrected_ans
                 )
