@@ -2,7 +2,6 @@
 import os
 import openai
 import argparse
-import multiprocessing
 from tqdm import tqdm
 from main import Chatbot, check_exist
 
@@ -15,144 +14,72 @@ class Judgebot(Chatbot):
     def __init__(self, data_path, save_path, model, assist_model):
         super().__init__(data_path, save_path, model)
         self.assist_model = assist_model  # judge model
-        self.frequency = 500  # save frequency
-
-    def generate_judge(self, query, prompt_path, batch=True):
+        self.frequency = 1000  # save frequency
+        self.max_retry = 20  # max retry times
+        
+    def get_judge_lst(self, facts, context):
+        """
+        Get judge list from the assist model's response.
+        """
+        if len(facts) == 0: # facts: [] -> NO FACTS: []
+            return []
+        fact_lst = [f"{i+1}. {fact}" for i, fact in enumerate(facts)]
+        fact_str = "\n".join(fact_lst)
+        query = f"{context}Context: <statements>:\n{fact_str}\nResponse:\n"
+        ret = 0
+        while True:
+            ret += 1
+            if ret >= self.max_retry:  # undetected: [unknown]
+                raise ValueError("unknown facts: \n" + fact_str)
+                print("Unknown facts: \n" + fact_str)
+                judge_list = ["unknown" for _ in facts]
+                return judge_list
+            ans = self.openai_complete(query, self.assist_model)
+            lines = [line.strip() for line in ans.split("\n") if line]
+            if len(lines) == len(facts):
+                break
+            print("Facts list: " + fact_str)
+            print("Judge list: " + "\n".join(lines))
+            print("Length not match\nRetrying...")
+        judge_lst = []
+        for line in lines:
+            if "UNKNOWN" in line:  # [UNKNOWN]: [unknown]
+                judge_lst.append("unknown")
+            elif "TRUE" in line:  # [TRUE]: [true]
+                judge_lst.append("true")
+            elif  "FALSE" in line:  # [FALSE]: [false, [corrected fact]: xxx]
+                try:
+                    corrected_ans = line.split("[correction]:")[1].strip()
+                except Exception as e:
+                    print("Error: " + str(e))
+                    print("Empty corrected fact: " + line)
+                    corrected_ans = ""
+                judge_lst.append(
+                    "false, [corrected fact]: " + corrected_ans
+                )
+            else:  # undetected: [unknown]
+                print("Undetected judge: " + line)
+                judge_lst.append("unknown")
+        return judge_lst
+                
+    def generate_judge(self, data, prompt_path):
         """
         Generate judgements by the assist model.
         """
         with open(prompt_path, "r", encoding="utf-8") as f:
             context = f.read()
-        if self.assist_model == "gpt-4":
-            facts_lst = [query[i][self.model + "_fact"] for i in range(len(query))]
-            facts_lst = [
-                "\n".join([f"{i+1}. {fact}" for i, fact in enumerate(facts)])
-                for facts in facts_lst
-            ]
-            prompts = [
-                f"{context}Context: <statements>:\n{facts_lst[i]}\nResponse:\n"
-                for i in range(len(facts_lst))
-            ]
-            for i in range(len(query)):
-                query[i]["input"] = prompts[i]
-            num_process = 145
-            chunk_size = 1
-            with multiprocessing.Pool(num_process) as p:
-                results = p.imap_unordered(
-                    self.gpt_4_complete, query, chunksize=chunk_size
-                )
-                temp = []
-                for i in tqdm(range(len(results)), total=len(results)):
-                    temp.append(
-                        {
-                            "id": results[i]["id"],
-                            "user_query": results[i]["user_query"],
-                            self.model
-                            + "_response": results[i][self.model + "_response"],
-                            self.model + "_fact": results[i][self.model + "_fact"],
-                            self.model + "_judge": results[i]["llm_output"],
-                        }
-                    )
-                temp = sorted(temp, key=lambda x: x["id"])
-                self.data.extend(temp)
-        else:
-            for i in tqdm(range(len(query)), ncols=100):
-                if len(self.data) % self.frequency == 0:
-                    self.save_data()
-                facts = query[i][self.model + "_fact"]
-                if batch:
-                    if len(facts) == 0:  # facts: [] -> NO FACTS: []
-                        query[i][self.model + "_judge"] = []
-                        self.data.append(query[i])
-                        continue
-                    fact_list = [f"{i+1}. {fact}" for i, fact in enumerate(facts)]
-                    fact_list = "\n".join(fact_list)
-                    q = f"{context}Context: <statements>:\n{fact_list}\nResponse:\n"
-                    ret = 0
-                    judge_list = []
-                    while True:
-                        if ret >= 20:  # undetected: [unknown]
-                            raise ValueError("unknown facts: \n" + fact_list)
-                            print("unknown facts: \n" + fact_list)
-                            judge_list = ["unknown" for _ in facts]
-                            query[i][self.model + "_judge"] = judge_list
-                            self.data.append(query[i])
-                            continue
-                        ans = self.complete(q, self.assist_model)
-                        lines = ans.split("\n")
-                        lines = [line.strip() for line in lines if line]
-                        if len(lines) == len(facts):
-                            break
-                        print("facts list:\n" + fact_list)
-                        print("judge list:\n" + "\n".join(lines))
-                        print("length not match")
-                        print("retrying...")
-                        ret += 1
-                    for line in lines:
-                        if "UNKNOWN" in line:  # [UNKNOWN]: [unknown]
-                            # print("unknown judge: " + line)
-                            judge_list.append("unknown")
-                        elif "TRUE" in line or "True" in line:  # [TRUE]: [true]
-                            judge_list.append("true")
-                        elif (
-                            "FALSE" in line or "False" in line
-                        ):  # [FALSE]: [false, [corrected fact]: xxx]
-                            try:
-                                corrected_ans = line.split("[correction]:")[1].strip()
-                            except Exception as e:
-                                print("error: " + str(e))
-                                print("empty corrected fact: " + line)
-                                corrected_ans = ""
-                            judge_list.append(
-                                "false, [corrected fact]: " + corrected_ans
-                            )
-                        else:  # undetected: [unknown]
-                            print("undetected judge: " + line)
-                            judge_list.append("unknown")
-                    query[i][self.model + "_judge"] = judge_list
-                    self.data.append(query[i])
-                else:
-                    judge_list = []  # facts: [] -> NO FACTS: []
-                    for fact in facts:
-                        q = f"{context}\nContext: <answer>: {fact}\nResponse: "
-                        ret = 0
-                        while True:
-                            if ret >= 20:  # undetected: [unknown]
-                                print("undetected fact: " + fact)
-                                judge_list.append("unknown")
-                                break
-                            ans = self.complete(q, self.assist_model)
-                            if (
-                                "FALSE" in ans
-                            ):  # [FALSE]: [false, [corrected fact]: xxx]
-                                try:
-                                    corrected_ans = ans.split("[correction]:")[
-                                        1
-                                    ].strip()
-                                except Exception as e:
-                                    print("error: " + str(e))
-                                    print("empty corrected fact: " + ans)
-                                    corrected_ans = ""
-                                judge_list.append(
-                                    "false, [corrected fact]: " + corrected_ans
-                                )
-                                break
-                            elif "TRUE" in ans:  # [TRUE]: [true]
-                                judge_list.append("true")
-                                break
-                            elif "UNKNOWN" in ans:  # [UNKNOWN]: [unknown]
-                                print("unknown fact: " + fact)
-                                judge_list.append("unknown")
-                                break
-                            else:
-                                ret += 1
-                                print(ans)
-                                print("retrying...")
-                    query[i][self.model + "_judge"] = judge_list
-                    self.data.append(query[i])
+        for i in tqdm(range(len(data)), ncols=100):
+            if (len(self.save_data) + 1) % self.frequency == 0:
+                self.save()
+            facts = data[i][self.model + "_fact"]
+            judge_lst = self.get_judge_lst(facts, context)
+            data[i][self.model + "_judge"] = judge_lst
+            self.save_data.append(data[i]) 
 
 
 if __name__ == "__main__":
+    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
+    openai.api_base = "https://api.aiguoguo199.com/v1"
     parser = argparse.ArgumentParser(description="Factual Statements Judgment")
     file_list = [
         "Bio-Medical",
@@ -179,14 +106,14 @@ if __name__ == "__main__":
             "chatgpt",
             "text-davinci-002",
             "text-davinci-003",
-            # "llama-2-7b-hf",
+            "llama-7b",
             "llama-2-7b-chat-hf",
-            # "llama-2-13b-hf",
             "llama-2-13b-chat-hf",
             "alpaca-7b",
             "vicuna-7b",
             "vicuna-13b",
-            # "chatglm-6b",
+            # "llama-2-7b-hf",
+            # "llama-2-13b-hf",
         ],
         help="chat model to use",
     )
@@ -203,10 +130,10 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--assist-model",
-        default="gpt-4",
+        default="chatgpt",
         choices=[
             "chatgpt",
-            "gpt-4",
+            # "gpt-4",
         ],
         help="judge model to use",
     )
@@ -236,7 +163,7 @@ if __name__ == "__main__":
         save_path = os.path.join(save_dir, f"{file}.json")
         check_exist(save_dir)
         with Judgebot(data_path, save_path, model, assist_model) as jubot:
-            jubot.load_exist()
-            query = jubot.load_data(part=0)
-            query = query[len(jubot.data) :]
-            jubot.generate_judge(query, prompt_path)
+            jubot.load_exist_data()
+            data = jubot.load_data(part=0)
+            data = data[len(jubot.save_data) :]
+            jubot.generate_judge(data, prompt_path)

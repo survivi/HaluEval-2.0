@@ -18,85 +18,47 @@ class Factbot(Chatbot):
     def __init__(self, data_path, save_path, model, assist_model):
         super().__init__(data_path, save_path, model)
         self.assist_model = assist_model  # facts generation model
-        self.frequency = 500  # save frequency
+        self.frequency = 1000  # save frequency
 
-    def generate_facts(self, query, prompt_path):
+    def get_facts_lst(self, ans):
+        """
+        Get facts list from the assist model's response.
+        """
+        if "NO FACTS" in ans:
+            facts = []
+        else:
+            try:
+                ans_cut = ans.split("\n")[1:]
+                facts = [fact[2:].strip() for fact in ans_cut]
+            except Exception as e:
+                print("Error: " + str(e))
+                print("Facts: " + ans)
+                facts = []
+        return facts
+
+    def generate_facts(self, data, prompt_path):
         """
         Generate facts by the assist model.
         """
         with open(prompt_path, "r", encoding="utf-8") as f:
             context = f.read()
-        if self.assist_model == "gpt-4":
-            user_query_lst = [query[i]["user_query"] for i in range(len(query))]
-            response_lst = [
-                query[i][self.model + "_response"] for i in range(len(query))
-            ]
-            prompts = [
-                f"{context}Context: <query>: {user_query_lst[i]} <answer>: {response_lst[i]}\nResponse: "
-                for i in range(len(query))
-            ]
-            for i in range(len(query)):
-                query[i]["input"] = prompts[i]
-            num_process = 145
-            chunk_size = 1
-            with multiprocessing.Pool(num_process) as p:
-                results = p.imap_unordered(
-                    self.gpt_4_complete, query, chunksize=chunk_size
-                )
-                temp = []
-                for i in tqdm(range(len(results)), total=len(results)):
-                    ans = results[i]["llm_output"]
-                    if "NO FACTS" in ans:
-                        facts = []
-                    else:
-                        try:
-                            ans_cut = ans.split("\n")[1:]
-                            facts = [fact[2:].strip() for fact in ans_cut]
-                        except Exception as e:
-                            print("error: " + str(e))
-                            print(ans)
-                            facts = []
-                    temp.append(
-                        {
-                            "id": results[i]["id"],
-                            "user_query": results[i]["user_query"],
-                            self.model
-                            + "_response": results[i][self.model + "_response"],
-                            self.model + "_fact": facts,
-                        }
-                    )
-                temp = sorted(temp, key=lambda x: x["id"])
-                self.data.extend(temp)
-        else:
-            for i in tqdm(range(len(query)), ncols=100):
-                if len(self.data) % self.frequency == 0:
-                    self.save_data()
-                user_query = query[i]["user_query"]
-                id = query[i]["id"]
-                response = query[i][self.model + "_response"]
-                q = f"{context}Context: <query>: {user_query} <answer>: {response}\nResponse: "
-                ans = self.complete(q, self.assist_model)
-                if "NO FACTS" in ans:
-                    facts = []
-                else:
-                    try:
-                        ans_cut = ans.split("\n")[1:]
-                        facts = [fact[2:].strip() for fact in ans_cut]
-                    except Exception as e:
-                        print("error: " + str(e))
-                        print(ans)
-                        facts = []
-                self.data.append(
-                    {
-                        "id": id,
-                        "user_query": user_query,
-                        self.model + "_response": response,
-                        self.model + "_fact": facts,
-                    }
-                )
+        for i in tqdm(range(len(data)), ncols=100):
+            if (len(self.save_data) + 1) % self.frequency == 0:
+                self.save()
+            user_query = data[i]["user_query"]
+            id = data[i]["id"]
+            response = data[i][self.model + "_response"]
+            query = f"{context}Context: <query>: {user_query} <answer>: {response}\nResponse: "
+            ans = self.openai_complete(query, self.assist_model)
+            ans = self.post_process(ans)
+            facts = self.get_facts_lst(ans)
+            data[i][self.model + "_fact"] = facts
+            self.save_data.append(data[i])
 
 
 if __name__ == "__main__":
+    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
+    openai.api_base = "https://api.aiguoguo199.com/v1"
     parser = argparse.ArgumentParser(description="Factual Statements Generation")
     file_list = [
         "Bio-Medical",
@@ -123,21 +85,21 @@ if __name__ == "__main__":
             "chatgpt",
             "text-davinci-002",
             "text-davinci-003",
-            # "llama-2-7b-hf",
+            "llama-7b",
             "llama-2-7b-chat-hf",
-            # "llama-2-13b-hf",
             "llama-2-13b-chat-hf",
             "alpaca-7b",
             "vicuna-7b",
             "vicuna-13b",
-            # "chatglm-6b",
+            # "llama-2-7b-hf",
+            # "llama-2-13b-hf",
         ],
         help="chat model to use",
     )
     args = parser.parse_known_args()[0]
     parser.add_argument(
         "--data-dir",
-        default=f"./pure/{args.model}/",
+        default=f"./response/{args.model}/",
         help="data root directory",
     )
     parser.add_argument(
@@ -147,10 +109,10 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--assist-model",
-        default="gpt-4",
+        default="chatgpt",
         choices=[
             "chatgpt",
-            "gpt-4",
+            # "gpt-4",
         ],
         help="facts generation model to use",
     )
@@ -180,7 +142,7 @@ if __name__ == "__main__":
         save_path = os.path.join(save_dir, f"{file}.json")
         check_exist(save_dir)
         with Factbot(data_path, save_path, model, assist_model) as factbot:
-            factbot.load_exist()
-            query = factbot.load_data(part=0)
-            query = query[len(factbot.data) :]
-            factbot.generate_facts(query, prompt_path)
+            factbot.load_exist_data()
+            data = factbot.load_data(part=0)
+            data = data[len(factbot.save_data) :]
+            factbot.generate_facts(data, prompt_path)
