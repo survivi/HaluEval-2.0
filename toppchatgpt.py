@@ -266,13 +266,13 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--data-dir",
-        default="./data/",
+        default="./pure/data/",
         help="data root directory",
     )
     args = parser.parse_known_args()[0]
     parser.add_argument(
         "--save-dir",
-        default=f"./{args.model}_top-p/",
+        default=f"./pure/{args.model}_top-p/",
         help="save root directory",
     )
     args = parser.parse_args()
