@@ -232,8 +232,8 @@ if __name__ == "__main__":
         "Bio-Medical",
         "Finance",
         "Science",
-        # "Education",
-        # "Open-Domain",
+        "Education",
+        "Open-Domain",
     ]
     parser.add_argument(
         "--all-files",
@@ -266,7 +266,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--data-dir",
-        default="./data/",
+        default="./pure/data/",
         help="data root directory",
     )
     args = parser.parse_known_args()[0]
