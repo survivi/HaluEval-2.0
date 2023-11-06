@@ -41,14 +41,14 @@ class Bot(object):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         print("device: " + self.device)
 
-    def load_model(self, **kwargs):
+    def load_model(self):
         """
         Load local models and tokenizers.
         """
         if self.model.startswith("vicuna"):  # vicuna-7b, vicuna-13b
-            kwargs["legacy"] = False
+            legacy = False
         else:
-            kwargs["legacy"] = True
+            legacy = True
         if self.model not in [
             "chatgpt",
             "text-davinci-002",
@@ -59,7 +59,7 @@ class Bot(object):
                 model_path,
                 trust_remote_code=True,
                 use_fast=True,
-                legacy=kwargs["legacy"],
+                legacy=legacy,
             )
             self.llm = AutoModelForCausalLM.from_pretrained(
                 model_path,
@@ -125,6 +125,8 @@ class Chatbot(Bot):
                     response = openai.ChatCompletion.create(
                         model="gpt-3.5-turbo",
                         messages=[{"role": "user", "content": query}],
+                        temperature=kwargs["temperature"],
+                        top_p=kwargs["top-p"],
                         # greedy search: temperature=0
                         # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
                     )
@@ -133,6 +135,8 @@ class Chatbot(Bot):
                         model=chat_model,
                         prompt=query,
                         max_tokens=512,
+                        temperature=kwargs["temperature"],
+                        top_p=kwargs["top-p"],
                     )
                 break
             except openai.error.AuthenticationError as e:
@@ -174,7 +178,12 @@ class Chatbot(Bot):
         output_ids = self.llm.generate(
             torch.as_tensor(input_ids).cuda(),
             max_new_tokens=512,
-            kwargs=kwargs,
+            do_sample=kwargs["do_sample"],
+            top_k=kwargs["top_k"],
+            top_p=kwargs["top_p"],
+            temperature=kwargs["temperature"],
+            num_beams=kwargs["num_beams"],
+            early_stopping=kwargs["early_stopping"],
             # greedy search: do_sample=False
             # top_p sampling: do_sample=True, top_k=0, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
             # top_k sampling: do_sample=True, top_k=50
@@ -224,17 +233,11 @@ class Chatbot(Bot):
         self.save()
 
 
-if __name__ == "__main__":
-    openai.api_key = "sk-itJLSDtI0l1xEngiAf5c0b742f48475185901cB90aB9D68a"
-    openai.api_base = "https://api.aiguoguo199.com/v1"
-    parser = argparse.ArgumentParser(description="LLM Response Generation")
-    file_list = [
-        "Bio-Medical",
-        "Finance",
-        "Science",
-        "Education",
-        "Open-Domain",
-    ]
+def parse_args(description):
+    """
+    Parse arguments.
+    """
+    parser = argparse.ArgumentParser(description=description)
     parser.add_argument(
         "--all-files",
         action="store_true",
@@ -243,7 +246,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--file",
         default="Bio-Medical",
-        choices=file_list,
+        choices=["Bio-Medical", "Finance", "Science", "Education", "Open-Domain"],
         help="dataset to use if not using all datasets",
     )
     parser.add_argument(
@@ -266,7 +269,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--data-dir",
-        default="./pure/data/",
+        default="./data/",
         help="data root directory",
     )
     args = parser.parse_known_args()[0]
@@ -275,30 +278,76 @@ if __name__ == "__main__":
         default=f"./response/{args.model}/",
         help="save root directory",
     )
+    parser.add_argument(
+        "--early-stopping",
+        action="store_true",
+        help="the stopping condition for beam-based methods, like beam-search",
+    )
+    parser.add_argument(
+        "--do-sample",
+        action="store_true",
+        help="whether or not to use sampling, use greedy decoding otherwise",
+    )
+    parser.add_argument(
+        "--num-beams",
+        default=1,
+        help="number of beams for beam search. 1 means no beam search",
+    )
+    parser.add_argument(
+        "--temperature",
+        default=1,
+        help="sampling temperature to use",
+    )
+    parser.add_argument(
+        "--top-k",
+        default=50,
+        help="the number of highest probability vocabulary tokens to keep for top-k-filtering",
+    )
+    parser.add_argument(
+        "--top-p",
+        default=1,
+        help="only the smallest set of most probable tokens with probabilities\
+            that add up to top_p or higher are kept for generation",
+    )
     args = parser.parse_args()
-    # print all args
+    return args
+
+
+def print_args(args):
+    """
+    Print all arguments.
+    """
     print("Arguments:")
     for arg in vars(args):
         print(f"  {arg}: {getattr(args, arg)}")
-    all_files = args.all_files
-    file_ = args.file
-    model = args.model
-    data_dir = args.data_dir
-    save_dir = args.save_dir
-    if all_files:
-        files = file_list
+
+
+if __name__ == "__main__":
+    openai.api_key = "sk-itJLSDtI0l1xEngiAf5c0b742f48475185901cB90aB9D68a"
+    openai.api_base = "https://api.aiguoguo199.com/v1"
+    args = parse_args("LLM Response Generation")
+    if args.all_files:
+        files = ["Bio-Medical", "Finance", "Science", "Education", "Open-Domain"]
     else:
-        files = [file_]
-    bot = Bot(model)
+        files = [args.file]
+    bot = Bot(args.model)
     bot.load_model()
     for file in files:
-        data_path = os.path.join(data_dir, f"{file}.json")
-        save_path = os.path.join(save_dir, f"{file}.json")
-        check_exist(save_dir)
-        with Chatbot(data_path, save_path, model) as chatbot:
+        data_path = os.path.join(args.data_dir, f"{file}.json")
+        save_path = os.path.join(args.save_dir, f"{file}.json")
+        check_exist(args.save_dir)
+        with Chatbot(data_path, save_path, args.model) as chatbot:
             chatbot.tokenizer = bot.tokenizer
             chatbot.llm = bot.llm
             chatbot.load_exist_data()
             data = chatbot.load_data(part=0)
             data = data[len(chatbot.save_data) :]
-            chatbot.generate_response(data)
+            chatbot.generate_response(
+                data,
+                early_stopping=args.early_stopping,
+                do_sample=args.do_sample,
+                num_beams=args.num_beams,
+                temperature=args.temperature,
+                top_k=args.top_k,
+                top_p=args.top_p,
+            )

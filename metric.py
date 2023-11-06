@@ -52,7 +52,7 @@ if __name__ == "__main__":
     ]
     parser.add_argument(
         "--model",
-        default="llama-2-13b-chat-hf",
+        default="chatgpt",
         choices=[
             "chatgpt",
             "text-davinci-002",

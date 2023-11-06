@@ -96,7 +96,7 @@ if __name__ == "__main__":
         "Education",
         "Open-Domain",
     ]
-    model = "llama-2-7b-chat-hf"
+    model = "chatgpt"
     json_dir = "./json/"
     save_dir = "./docs/"
     check_exist(save_dir)
