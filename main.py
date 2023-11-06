@@ -38,6 +38,8 @@ class Bot(object):
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
         }  # local model path
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        print("device: " + self.device)
 
     def load_model(self, **kwargs):
         """
@@ -82,8 +84,6 @@ class Chatbot(Bot):
         self.save_data = []  # data to save
         self.max_retry = 500  # max retry times
         self.frequency = 1000  # save frequency
-        if not torch.cuda.is_available():
-            print("Cuda not available")
 
     def load_data(self, part=0):
         """
