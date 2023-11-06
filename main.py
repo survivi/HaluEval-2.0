@@ -233,101 +233,188 @@ class Chatbot(Bot):
         self.save()
 
 
-def parse_args(description):
+class Parser(object):
     """
-    Parse arguments.
+    Parser for arguments.
     """
-    parser = argparse.ArgumentParser(description=description)
-    parser.add_argument(
-        "--all-files",
-        action="store_true",
-        help="whether to use all datasets",
-    )
-    parser.add_argument(
-        "--file",
-        default="Bio-Medical",
-        choices=["Bio-Medical", "Finance", "Science", "Education", "Open-Domain"],
-        help="dataset to use if not using all datasets",
-    )
-    parser.add_argument(
-        "--model",
-        default="llama-2-13b-chat-hf",
-        choices=[
-            "chatgpt",
-            "text-davinci-002",
-            "text-davinci-003",
-            "llama-7b",
-            "llama-2-7b-chat-hf",
-            "llama-2-13b-chat-hf",
-            "alpaca-7b",
-            "vicuna-7b",
-            "vicuna-13b",
-            # "llama-2-7b-hf",
-            # "llama-2-13b-hf",
-        ],
-        help="chat model to use",
-    )
-    parser.add_argument(
-        "--data-dir",
-        default="./data/",
-        help="data root directory",
-    )
-    args = parser.parse_known_args()[0]
-    parser.add_argument(
-        "--save-dir",
-        default=f"./response/{args.model}/",
-        help="save root directory",
-    )
-    parser.add_argument(
-        "--early-stopping",
-        action="store_true",
-        help="the stopping condition for beam-based methods, like beam-search",
-    )
-    parser.add_argument(
-        "--do-sample",
-        action="store_true",
-        help="whether or not to use sampling, use greedy decoding otherwise",
-    )
-    parser.add_argument(
-        "--num-beams",
-        default=1,
-        help="number of beams for beam search. 1 means no beam search",
-    )
-    parser.add_argument(
-        "--temperature",
-        default=1,
-        help="sampling temperature to use",
-    )
-    parser.add_argument(
-        "--top-k",
-        default=50,
-        help="the number of highest probability vocabulary tokens to keep for top-k-filtering",
-    )
-    parser.add_argument(
-        "--top-p",
-        default=1,
-        help="only the smallest set of most probable tokens with probabilities\
-            that add up to top_p or higher are kept for generation",
-    )
-    args = parser.parse_args()
-    return args
 
+    def __init__(self, description):
+        self.parser = argparse.ArgumentParser(description=description)
+        self.file_list = [
+            "Bio-Medical",
+            "Finance",
+            "Science",
+            "Education",
+            "Open-Domain",
+        ]
 
-def print_args(args):
-    """
-    Print all arguments.
-    """
-    print("Arguments:")
-    for arg in vars(args):
-        print(f"  {arg}: {getattr(args, arg)}")
+    def general_args(self):
+        """
+        Parse arguments for all tasks.
+        """
+        self.parser.add_argument(
+            "--all-files",
+            action="store_true",
+            help="whether to use all datasets",
+        )
+        self.parser.add_argument(
+            "--file",
+            default="Bio-Medical",
+            choices=["Bio-Medical", "Finance", "Science", "Education", "Open-Domain"],
+            help="dataset to use if not using all datasets",
+        )
+        self.parser.add_argument(
+            "--model",
+            default="llama-2-13b-chat-hf",
+            choices=[
+                "chatgpt",
+                "text-davinci-002",
+                "text-davinci-003",
+                "llama-7b",
+                "llama-2-7b-chat-hf",
+                "llama-2-13b-chat-hf",
+                "alpaca-7b",
+                "vicuna-7b",
+                "vicuna-13b",
+                # "llama-2-7b-hf",
+                # "llama-2-13b-hf",
+            ],
+            help="chat model to use",
+        )
+
+    def response_args(self):
+        """
+        Parse arguments for response generation.
+        """
+        args = self.parser.parse_known_args()[0]
+        self.parser.add_argument(
+            "--data-dir",
+            default="./data/",
+            help="data root directory",
+        )
+        self.parser.add_argument(
+            "--save-dir",
+            default=f"./response/{args.model}/",
+            help="save root directory",
+        )
+        self.parser.add_argument(
+            "--early-stopping",
+            action="store_true",
+            help="the stopping condition for beam-based methods, like beam-search",
+        )
+        self.parser.add_argument(
+            "--do-sample",
+            action="store_true",
+            help="whether or not to use sampling, use greedy decoding otherwise",
+        )
+        self.parser.add_argument(
+            "--num-beams",
+            default=1,
+            help="number of beams for beam search. 1 means no beam search",
+        )
+        self.parser.add_argument(
+            "--temperature",
+            default=1,
+            help="sampling temperature to use",
+        )
+        self.parser.add_argument(
+            "--top-k",
+            default=50,
+            help="the number of highest probability vocabulary tokens to keep for top-k-filtering",
+        )
+        self.parser.add_argument(
+            "--top-p",
+            default=1,
+            help="only the smallest set of most probable tokens with probabilities\
+                that add up to top_p or higher are kept for generation",
+        )
+
+    def fact_args(self):
+        """
+        Parse arguments for factual statements generation.
+        """
+        args = self.parser.parse_known_args()[0]
+        self.parser.add_argument(
+            "--data-dir",
+            default=f"./response/{args.model}/",
+            help="data root directory",
+        )
+        self.parser.add_argument(
+            "--save-dir",
+            default=f"./fact/{args.model}/",
+            help="save root directory",
+        )
+        self.parser.add_argument(
+            "--assist-model",
+            default="chatgpt",
+            choices=[
+                "chatgpt",
+                # "gpt-4",
+            ],
+            help="facts generation model to use",
+        )
+        self.parser.add_argument(
+            "--prompt-path",
+            default="./prompt/generate_fact_ins.txt",
+            help="prompt path",
+        )
+
+    def judge_args(self):
+        """
+        Parse arguments for factual statements judgment.
+        """
+        args = self.parser.parse_known_args()[0]
+        self.parser.add_argument(
+            "--data-dir",
+            default=f"./fact/{args.model}/",
+            help="data root directory",
+        )
+        self.parser.add_argument(
+            "--save-dir",
+            default=f"./judge/{args.model}/",
+            help="save root directory",
+        )
+        self.parser.add_argument(
+            "--assist-model",
+            default="chatgpt",
+            choices=[
+                "chatgpt",
+                # "gpt-4",
+            ],
+            help="judge model to use",
+        )
+        self.parser.add_argument(
+            "--prompt-path",
+            default="./prompt/determine_truthfulness_ins.txt",
+            help="prompt path",
+        )
+
+    def parse_args(self):
+        """
+        Parse all arguments.
+        """
+        args = self.parser.parse_args()
+        return args
+
+    def print_args(self, args):
+        """
+        Print all arguments.
+        """
+        print("Arguments:")
+        for arg in vars(args):
+            print(f"  {arg}: {getattr(args, arg)}")
 
 
 if __name__ == "__main__":
     openai.api_key = "sk-itJLSDtI0l1xEngiAf5c0b742f48475185901cB90aB9D68a"
     openai.api_base = "https://api.aiguoguo199.com/v1"
-    args = parse_args("LLM Response Generation")
+    args_parser = Parser("LLM Response Generation")
+    args_parser.general_args()
+    args_parser.response_args()
+    args = args_parser.parse_args()
+    args_parser.print_args(args)
     if args.all_files:
-        files = ["Bio-Medical", "Finance", "Science", "Education", "Open-Domain"]
+        files = args_parser.file_list
     else:
         files = [args.file]
     bot = Bot(args.model)

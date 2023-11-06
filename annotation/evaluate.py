@@ -110,7 +110,7 @@ if __name__ == "__main__":
         "Education",
         "Open-Domain",
     ]
-    model = "llama-2-13b-chat-hf"
+    model = "chatgpt"
     doc_path = os.path.join("./docs/", "{}.docx")
     json_path = os.path.join("./json/", "{}.json")
     total_human_id = []
