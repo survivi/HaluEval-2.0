@@ -17,7 +17,7 @@ class Judgebot(Chatbot):
         self.frequency = 1000  # save frequency
         self.max_retry = 20  # max retry times
 
-    def get_judge_lst(self, facts, context):
+    def get_judge_lst(self, facts, context, **kwargs):
         """
         Get judge list from the assist model's response.
         """
@@ -34,7 +34,7 @@ class Judgebot(Chatbot):
                 print("Unknown facts: \n" + fact_str)
                 judge_list = ["unknown" for _ in facts]
                 return judge_list
-            ans = self.openai_complete(query, self.assist_model)
+            ans = self.openai_complete(query, self.assist_model, **kwargs)
             lines = [line.strip() for line in ans.split("\n") if line]
             if len(lines) == len(facts):
                 break
@@ -63,7 +63,7 @@ class Judgebot(Chatbot):
                 judge_lst.append("unknown")
         return judge_lst
 
-    def generate_judge(self, data, prompt_path):
+    def generate_judge(self, data, prompt_path, **kwargs):
         """
         Generate judgements by the assist model.
         """
@@ -73,19 +73,19 @@ class Judgebot(Chatbot):
             if (len(self.save_data) + 1) % self.frequency == 0:
                 self.save()
             facts = data[i][self.model + "_fact"]
-            judge_lst = self.get_judge_lst(facts, context)
+            judge_lst = self.get_judge_lst(facts, context, **kwargs)
             data[i][self.model + "_judge"] = judge_lst
             self.save_data.append(data[i])
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
-    openai.api_base = "https://api.aiguoguo199.com/v1"
     args_parser = Parser("Factual Statements Judgment")
     args_parser.general_args()
     args_parser.judge_args()
-    args = args_parser.parse_args()
-    args_parser.print_args(args)
+    args_parser.parse_args()
+    args_parser.transform_args()
+    args_parser.print_args()
+    args = args_parser.args
     if args.all_files:
         files = args_parser.file_list
     else:
@@ -98,4 +98,9 @@ if __name__ == "__main__":
             jubot.load_exist_data()
             data = jubot.load_data(part=0)
             data = data[len(jubot.save_data) :]
-            jubot.generate_judge(data, args.prompt_path)
+            jubot.generate_judge(
+                data,
+                args.prompt_path,
+                temperature=args.temperature,
+                top_p=args.top_p,
+            )

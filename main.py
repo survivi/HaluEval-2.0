@@ -38,13 +38,17 @@ class Bot(object):
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
         }  # local model path
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        print("device: " + self.device)
 
     def load_model(self):
         """
         Load local models and tokenizers.
         """
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        if self.device == "cuda":
+            device_id = torch.cuda.current_device()
+            print(f"device: cuda:{device_id}")
+        else:
+            print(f"device: {self.device}")
         if self.model.startswith("vicuna"):  # vicuna-7b, vicuna-13b
             legacy = False
         else:
@@ -126,7 +130,7 @@ class Chatbot(Bot):
                         model="gpt-3.5-turbo",
                         messages=[{"role": "user", "content": query}],
                         temperature=kwargs["temperature"],
-                        top_p=kwargs["top-p"],
+                        top_p=kwargs["top_p"],
                         # greedy search: temperature=0
                         # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
                     )
@@ -136,7 +140,7 @@ class Chatbot(Bot):
                         prompt=query,
                         max_tokens=512,
                         temperature=kwargs["temperature"],
-                        top_p=kwargs["top-p"],
+                        top_p=kwargs["top_p"],
                     )
                 break
             except openai.error.AuthenticationError as e:
@@ -218,7 +222,7 @@ class Chatbot(Bot):
             if (len(self.save_data) + 1) % self.frequency == 0:
                 self.save()
             query = query_lst[i]["user_query"]
-            ans = complete_func(query, self.model, kwargs=kwargs)
+            ans = complete_func(query, self.model, **kwargs)
             ans = self.post_process(ans, query)
             query_lst[i][self.model + "_response"] = ans
             self.save_data.append(query_lst[i])
@@ -281,21 +285,16 @@ class Parser(object):
             ],
             help="chat model to use",
         )
-
-    def response_args(self):
-        """
-        Parse arguments for response generation.
-        """
-        args = self.parser.parse_known_args()[0]
         self.parser.add_argument(
-            "--data-dir",
-            default="./data/",
-            help="data root directory",
+            "--temperature",
+            default=1,
+            help="sampling temperature to use",
         )
         self.parser.add_argument(
-            "--save-dir",
-            default=f"./response/{args.model}/",
-            help="save root directory",
+            "--top-p",
+            default=1,
+            help="only the smallest set of most probable tokens with probabilities\
+                that add up to top_p or higher are kept for generation",
         )
         self.parser.add_argument(
             "--early-stopping",
@@ -313,20 +312,25 @@ class Parser(object):
             help="number of beams for beam search. 1 means no beam search",
         )
         self.parser.add_argument(
-            "--temperature",
-            default=1,
-            help="sampling temperature to use",
-        )
-        self.parser.add_argument(
             "--top-k",
             default=50,
             help="the number of highest probability vocabulary tokens to keep for top-k-filtering",
         )
+
+    def response_args(self):
+        """
+        Parse arguments for response generation.
+        """
+        args = self.parser.parse_known_args()[0]
         self.parser.add_argument(
-            "--top-p",
-            default=1,
-            help="only the smallest set of most probable tokens with probabilities\
-                that add up to top_p or higher are kept for generation",
+            "--data-dir",
+            default="./data/",
+            help="data root directory",
+        )
+        self.parser.add_argument(
+            "--save-dir",
+            default=f"./response/{args.model}/",
+            help="save root directory",
         )
 
     def fact_args(self):
@@ -393,26 +397,34 @@ class Parser(object):
         """
         Parse all arguments.
         """
-        args = self.parser.parse_args()
-        return args
+        self.args = self.parser.parse_args()
 
-    def print_args(self, args):
+    def transform_args(self):
+        """
+        Transform some arguments to the correct type.
+        """
+        self.args.num_beams = int(self.args.num_beams)
+        self.args.temperature = float(self.args.temperature)
+        self.args.top_k = int(self.args.top_k)
+        self.args.top_p = float(self.args.top_p)
+
+    def print_args(self):
         """
         Print all arguments.
         """
         print("Arguments:")
-        for arg in vars(args):
-            print(f"  {arg}: {getattr(args, arg)}")
+        for arg in vars(self.args):
+            print(f"  {arg}: {getattr(self.args, arg)}")
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-itJLSDtI0l1xEngiAf5c0b742f48475185901cB90aB9D68a"
-    openai.api_base = "https://api.aiguoguo199.com/v1"
     args_parser = Parser("LLM Response Generation")
     args_parser.general_args()
     args_parser.response_args()
-    args = args_parser.parse_args()
-    args_parser.print_args(args)
+    args_parser.parse_args()
+    args_parser.transform_args()
+    args_parser.print_args()
+    args = args_parser.args
     if args.all_files:
         files = args_parser.file_list
     else:

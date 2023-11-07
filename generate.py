@@ -32,7 +32,7 @@ class Factbot(Chatbot):
                 facts = []
         return facts
 
-    def generate_facts(self, data, prompt_path):
+    def generate_facts(self, data, prompt_path, **kwargs):
         """
         Generate facts by the assist model.
         """
@@ -42,24 +42,23 @@ class Factbot(Chatbot):
             if (len(self.save_data) + 1) % self.frequency == 0:
                 self.save()
             user_query = data[i]["user_query"]
-            id = data[i]["id"]
             response = data[i][self.model + "_response"]
             query = f"{context}Context: <query>: {user_query} <answer>: {response}\nResponse: "
-            ans = self.openai_complete(query, self.assist_model)
-            ans = self.post_process(ans)
+            ans = self.openai_complete(query, self.assist_model, **kwargs)
+            ans = self.post_process(ans, query)
             facts = self.get_facts_lst(ans)
             data[i][self.model + "_fact"] = facts
             self.save_data.append(data[i])
 
 
 if __name__ == "__main__":
-    openai.api_key = "sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
-    openai.api_base = "https://api.aiguoguo199.com/v1"
     args_parser = Parser("Factual Statements Generation")
     args_parser.general_args()
     args_parser.fact_args()
-    args = args_parser.parse_args()
-    args_parser.print_args(args)
+    args_parser.parse_args()
+    args_parser.transform_args()
+    args_parser.print_args()
+    args = args_parser.args
     if args.all_files:
         files = args_parser.file_list
     else:
@@ -72,4 +71,9 @@ if __name__ == "__main__":
             factbot.load_exist_data()
             data = factbot.load_data(part=0)
             data = data[len(factbot.save_data) :]
-            factbot.generate_facts(data, args.prompt_path)
+            factbot.generate_facts(
+                data,
+                args.prompt_path,
+                temperature=args.temperature,
+                top_p=args.top_p,
+            )
