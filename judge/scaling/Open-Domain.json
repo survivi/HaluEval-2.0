@@ -1,0 +1,2014 @@
+[
+  {
+    "id": 0,
+    "user_query": "What position on the Billboard Top 100 did Alison Moyet's late summer hit achieve?",
+    "llama-7b_response": "\"Invisible\" peaked at #2 on the Billboard Top 100.",
+    "llama-7b_fact": [
+      "\"Invisible\" by Alison Moyet peaked at #2 on the Billboard Top 100."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: \"Invisible\" by Alison Moyet did not peak at #2 on the Billboard Top 100. It peaked at #31 in the US Billboard Hot 100."
+    ]
+  },
+  {
+    "id": 1,
+    "user_query": "What year did the British politician born in 1967 began to represent the Daventry in the UK House of Commons?",
+    "llama-7b_response": "1997",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2,
+    "user_query": "Which franchise was founded in 1978, Chuck E. Cheese's or Jet's Pizza?",
+    "llama-7b_response": "Chuck E. Cheese'",
+    "llama-7b_fact": [
+      "Chuck E. Cheese's franchise was founded in 1978."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 43,
+    "user_query": "Munich and Bavarian language are spoken in what country?",
+    "llama-7b_response": "Germany",
+    "llama-7b_fact": [
+      "Munich and Bavarian language are spoken in Germany."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 105,
+    "user_query": "Who was the daughter of DFS co-founder and shareholder?",
+    "llama-7b_response": "Mary",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 115,
+    "user_query": "When was the model of Nokia phone announced which is the Nokia 3410 phone's successor?",
+    "llama-7b_response": "The model of Nokia phone announced which is the Nokia 3410 phone's successor was the Nokia 3410. It was announced in the year 2003.",
+    "llama-7b_fact": [
+      "The successor to the Nokia 3410 phone is also the Nokia 3410.",
+      "The Nokia 3410 phone's successor was announced in 2003."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The successor to the Nokia 3410 phone is not the Nokia 3410 itself.",
+      "true"
+    ]
+  },
+  {
+    "id": 122,
+    "user_query": "Who was born first, Aaron Gillespie or Nathan Leone?",
+    "llama-7b_response": "Aaron Gillespie",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 213,
+    "user_query": "In addition to the airplane operated by ایران ایر تور‎, what other airplane was part of the 1993 Tehran mid-air collision?",
+    "llama-7b_response": "The other airplane was a Boeing 747 operated by the Iranian airline Iran Air.",
+    "llama-7b_fact": [
+      "The 1993 Tehran mid-air collision involved an airplane operated by ایران ایر تور‎.",
+      "The other airplane involved in the collision was a Boeing 747.",
+      "The Boeing 747 was operated by the Iranian airline Iran Air."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The 1993 Tehran mid-air collision involved an airplane operated by Iran Air Tours.",
+      "false, [corrected fact]: The other airplane involved in the collision was a Sukhoi Su-22.",
+      "true"
+    ]
+  },
+  {
+    "id": 248,
+    "user_query": "What Northern Ireland actor and musician helped write the pop ballad \"I heard\"?",
+    "llama-7b_response": "George Luca",
+    "llama-7b_fact": [
+      "George Luca is an actor and musician from Northern Ireland who helped write the pop ballad \"I heard\"."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 282,
+    "user_query": "María Sol Branz sailed in the games of which Olympiad?",
+    "llama-7b_response": "2016",
+    "llama-7b_fact": [
+      "María Sol Branz sailed in the 2016 Olympiad."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 287,
+    "user_query": "How many Olympic gold medals have been won by a guitarist from American electronic rock band, \"Bad Things\"?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 320,
+    "user_query": "What type of media does Radar Radio and Top Gun have in common?",
+    "llama-7b_response": "Radar Radio and Top Gun are both military-themed media.",
+    "llama-7b_fact": [
+      "Radar Radio is military-themed media.",
+      "Top Gun is also military-themed media."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Radar Radio is a music and culture digital broadcasting platform, not military-themed media.",
+      "true"
+    ]
+  },
+  {
+    "id": 333,
+    "user_query": "Which merican voice actor involved in English dubs of Japanese anime as well as cartoons wrote  Iron Man: Rise of Technovore",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 368,
+    "user_query": "Michael Gandolfi wrote for which show starring Roseanne Barr?",
+    "llama-7b_response": "Roseanne",
+    "llama-7b_fact": [
+      "Michael Gandolfi wrote for the television show \"Roseanne.\"",
+      "Roseanne Barr starred in the television show \"Roseanne.\""
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Matt Williams, not Michael Gandolfi, wrote for the television show \"Roseanne.\"",
+      "true"
+    ]
+  },
+  {
+    "id": 376,
+    "user_query": "In what Nassau County did Nicholas Brandy build him and his wives estate.",
+    "llama-7b_response": "In the town of Hempstead",
+    "llama-7b_fact": [
+      "Nicholas Brandy built his estate in the town of Hempstead, Nassau County."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 380,
+    "user_query": "Which has more acts, Oberon or Le Villi?",
+    "llama-7b_response": "Oberon",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 389,
+    "user_query": "What was the psychiatrist's name that diagnosed the man, whom the 2015 Austrian thriller film titled Jack was about??",
+    "llama-7b_response": "Jack",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 397,
+    "user_query": "Which magazine was American owned, Bella or Parenting?",
+    "llama-7b_response": "Bella",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 405,
+    "user_query": "What movie earned the actor who played twin brothers in Diamonds a nomination for the 1967 Academy Award for Best Supporting Actor?",
+    "llama-7b_response": "The Revenant",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 430,
+    "user_query": "Who was a member of more music groups, Kenny Greene or David Coverdale?",
+    "llama-7b_response": "Kenny Greene",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 441,
+    "user_query": "Gerald Jay Goldberg wrote a biography of the founder of what Pioneering superstation?",
+    "llama-7b_response": "Walt Disney",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 443,
+    "user_query": "In what year did the singer of \"I'd Like To\" win a Grammy Award for Album of the Year?",
+    "llama-7b_response": "2017",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 502,
+    "user_query": "Golden Horseshoe Saloon is a venue that is located in a themed Disneyland-style park whose inspiration was a movie filmed in which New York city?",
+    "llama-7b_response": "The Golden Horseshoe Saloon is a venue located in a themed Disneyland-style park whose inspiration was a movie filmed in which New York city?",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 536,
+    "user_query": "The singer of Tomake Chai was a member od the parliament of India beginning in what year?",
+    "llama-7b_response": "2014",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 551,
+    "user_query": "The architect which designed the Moorish Revival mansion in Bridgeport, Connecticut was born in which year?",
+    "llama-7b_response": "1885",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 585,
+    "user_query": "Uncle Buck starred which actress who also had a part in Sleepless in Seattle?",
+    "llama-7b_response": "Rosie O'Donnell",
+    "llama-7b_fact": [
+      "Rosie O'Donnell starred in the movie \"Uncle Buck\"."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Rosie O'Donnell did not star in the movie \"Uncle Buck\". The movie starred John Candy."
+    ]
+  },
+  {
+    "id": 607,
+    "user_query": "Who did Young Seph release an album for in November 2013?",
+    "llama-7b_response": "Young Seph released an album for the label \"Young Money\" in November 2013.",
+    "llama-7b_fact": [
+      "Young Seph is an artist who has released an album.",
+      "The album by Young Seph was released in November 2013.",
+      "The record label for Young Seph's 2013 album is \"Young Money\"."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 702,
+    "user_query": "While in high school Michael DeWayne Tait met a Christian hip hop recording artist, music producer, songwriter and what?",
+    "llama-7b_response": "He met a Christian hip hop recording artist, music producer, songwriter and pastor.",
+    "llama-7b_fact": [
+      "Michael DeWayne Tait met a Christian hip hop recording artist, music producer, songwriter and pastor while in high school."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 728,
+    "user_query": "Year of the Savage included production duties by which record producer from Miami?",
+    "llama-7b_response": "Mark Ronson",
+    "llama-7b_fact": [
+      "Mark Ronson is a record producer."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 729,
+    "user_query": "Which building has more storeys, 56 Leonard Street, or 80 South Street?",
+    "llama-7b_response": "56 Leonard Street",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 732,
+    "user_query": "Mike Hart played for the American League Central team that played its games in what stadium from 1961 to 1981?",
+    "llama-7b_response": "Tiger Stadium",
+    "llama-7b_fact": [
+      "Mike Hart played for a team in the American League Central.",
+      "This team played its games in Tiger Stadium.",
+      "Tiger Stadium was used by the team from 1961 to 1981."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "false, [corrected fact]: Tiger Stadium was used by the Detroit Tigers from 1912 to 1999."
+    ]
+  },
+  {
+    "id": 740,
+    "user_query": "How many kilometers long is the cyclist/pedestrian path that accesses the Melbourne Zoo?",
+    "llama-7b_response": "The path is 4.5 kilometers long.",
+    "llama-7b_fact": [
+      "The cyclist/pedestrian path that accesses the Melbourne Zoo is 4.5 kilometers long."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 744,
+    "user_query": "What law was broken resulting in the first US felony conviction of an American computer scientist born in 1965 for the distribution of a computer worm?",
+    "llama-7b_response": "The Computer Fraud and Abuse Act of 1986",
+    "llama-7b_fact": [
+      "The Computer Fraud and Abuse Act was enacted in 1986."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 777,
+    "user_query": "What was the reason for the fund founded by the British financier widely regarded as the \"father of modern philanthropy?\"",
+    "llama-7b_response": "The fund was founded by the British financier widely regarded as the \"father of modern philanthropy\" to provide a steady source of income for the poor.",
+    "llama-7b_fact": [
+      "A British financier, who is widely regarded as the \"father of modern philanthropy\", founded a fund.",
+      "The purpose of the fund was to provide a steady source of income for the poor."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 796,
+    "user_query": "Which canton shares a border with Basei-Landschaff and holds a large railways system?",
+    "llama-7b_response": "Basel-Landschaft",
+    "llama-7b_fact": [
+      "The canton of Basel-Landschaft shares a border with Basel.",
+      "Basel-Landschaft holds a large railway system."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 828,
+    "user_query": "The Italian romance drama Mahesh Bhatt compared \"Jism 2\" to came out in what year?",
+    "llama-7b_response": "2017",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 833,
+    "user_query": "The chairman of the House Ways and Means Committee is a U.S. Representative for what Texas district?",
+    "llama-7b_response": "Texa",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 843,
+    "user_query": "The actress, who stars in \"The Death and Life of John F. Donovan,\" made her film debut in which 2007 Wes Anderson film?",
+    "llama-7b_response": "\"The Life Aquatic with Steve Zissou\"",
+    "llama-7b_fact": [
+      "The actress, referred to in the question, stars in \"The Death and Life of John F. Donovan.\"",
+      "Her film debut was in a 2007 Wes Anderson film.",
+      "The 2007 Wes Anderson film she debuted in is \"The Life Aquatic with Steve Zissou.\""
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "false, [corrected fact]: \"The Life Aquatic with Steve Zissou\" is a 2004 Wes Anderson film."
+    ]
+  },
+  {
+    "id": 855,
+    "user_query": "What is the name of the Saturday Farm actor often referred to as \"Colonel Dick\"?",
+    "llama-7b_response": "Dicken Ashworth",
+    "llama-7b_fact": [
+      "Dicken Ashworth is often referred to as \"Colonel Dick\" in Saturday Farm."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 858,
+    "user_query": "What year was Victoria first used as a naming convention before the Fairlane Crown Victoria Skyliner in 1954?",
+    "llama-7b_response": "1840",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 894,
+    "user_query": "The Bohemian Girl starred which Welsh composer and actor?",
+    "llama-7b_response": "Dafydd ap Gwilym",
+    "llama-7b_fact": [
+      "Dafydd ap Gwilym is a Welsh composer and actor who starred in The Bohemian Girl."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Dafydd ap Gwilym was a Welsh poet who is regarded as one of the greatest Welsh poets of all time. He did not star in The Bohemian Girl."
+    ]
+  },
+  {
+    "id": 910,
+    "user_query": "On what street does the parent corporation of Smile have its headquarters?",
+    "llama-7b_response": "The parent corporation of Smile has its headquarters on Wall Street.",
+    "llama-7b_fact": [
+      "The parent corporation of Smile has its headquarters on Wall Street."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 961,
+    "user_query": "Which album, named after a studio, was put out by the singer who also put out the album \"On My One\"?",
+    "llama-7b_response": "The album \"On My One\" is by The Chainsmokers. The studio named album is \"Memories...Do Not Open\".",
+    "llama-7b_fact": [
+      "The album \"On My One\" is by The Chainsmokers.",
+      "The Chainsmokers released an album named \"Memories...Do Not Open\"."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The album \"On My One\" is by Jake Bugg.",
+      "true"
+    ]
+  },
+  {
+    "id": 969,
+    "user_query": "Who was born first, Ben Moore of Audra McDonald?",
+    "llama-7b_response": "Ben Moore",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 993,
+    "user_query": "Which  American actress and former model played the main character in the television movie based on the 1985 biography Elvis and Me?",
+    "llama-7b_response": "Priscilla Presley",
+    "llama-7b_fact": [
+      "Priscilla Presley is a former model.",
+      "She played the main character in the television movie based on the 1985 biography Elvis and Me."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 1003,
+    "user_query": "Joshua T. Mendell is a faculty member of the Genetic Medicine Institute named after the internist who proposed mapping what part of the human body?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1010,
+    "user_query": "The episode  from the TV series \"The Simpsons,\"  that was intended to be the season premiere had which show runner?",
+    "llama-7b_response": "Matt Groening",
+    "llama-7b_fact": [
+      "Matt Groening was the show runner for an episode from the TV series \"The Simpsons\" that was intended to be the season premiere."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1029,
+    "user_query": "This English artist is also known as being the teacher of Hilda Margery Clarke.",
+    "llama-7b_response": "William Clarke",
+    "llama-7b_fact": [
+      "William Clarke is an English artist.",
+      "He was the teacher of Hilda Margery Clarke."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 1031,
+    "user_query": "What is another name for crime family which Frank \"Chee-Chee\" DeMayo became the crime boss of?",
+    "llama-7b_response": "DeMayo crime family",
+    "llama-7b_fact": [
+      "Frank \"Chee-Chee\" DeMayo became the crime boss of a crime family.",
+      "The crime family that Frank \"Chee-Chee\" DeMayo became the boss of is known as the DeMayo crime family."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 1044,
+    "user_query": "Which tower in New York City was taller: 500 Fifth Avenue, or the Latting Observatory?",
+    "llama-7b_response": "500 Fifth Avenue",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1051,
+    "user_query": "The Rieder Automatic Rifle and the Lee-Enfield Rifle were based off what variant of rifle?",
+    "llama-7b_response": "The Rieder Automatic Rifle and the Lee-Enfield Rifle were based off the Mauser 98.",
+    "llama-7b_fact": [
+      "The Rieder Automatic Rifle was based off the Mauser 98.",
+      "The Lee-Enfield Rifle was based off the Mauser 98."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "false, [corrected fact]: The Lee-Enfield Rifle was not based off the Mauser 98, but it is a bolt-action, magazine-fed, repeating rifle that served as the main firearm used by the military forces of the British Empire and Commonwealth during the first half of the 20th century."
+    ]
+  },
+  {
+    "id": 1059,
+    "user_query": "The Fourth Dimension is dedicated to the author of which satirical novella?",
+    "llama-7b_response": "The Fourth Dimension is dedicated to the author of \"The Adventures of Tom Sawyer\" Mark Twain.",
+    "llama-7b_fact": [
+      "\"The Fourth Dimension\" is dedicated to Mark Twain.",
+      "Mark Twain is the author of \"The Adventures of Tom Sawyer\"."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 1114,
+    "user_query": "Where was the Danny Boyle movie that starred Paterson Joseph filmed?",
+    "llama-7b_response": "The movie was filmed in London.",
+    "llama-7b_fact": [
+      "The Danny Boyle movie that starred Paterson Joseph was filmed in London."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1131,
+    "user_query": "Advanced multi-mission operations system is created by the Interplanetary Network Directorate, which is a division of this federally funded research and development center and NASA field center which is located in which city? (One word)",
+    "llama-7b_response": "(One word)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1178,
+    "user_query": "The Riverport Railroad operates this Army Depot Track, located on the eastern bank of which river?",
+    "llama-7b_response": "Mississippi River",
+    "llama-7b_fact": [
+      "The Riverport Railroad operates the Army Depot Track located on the eastern bank of the Mississippi River."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1236,
+    "user_query": "when is the retired Italian boxer and actor who won the  semifinals in1960 Olympics born",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1254,
+    "user_query": "What company in St. Paul, Minnesota is Allan L. Schuman the former CEO of?",
+    "llama-7b_response": "Allan L. Schuman is the former CEO of United Health Group.",
+    "llama-7b_fact": [
+      "Allan L. Schuman is the former CEO of United Health Group.",
+      "United Health Group is a company in St. Paul, Minnesota."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Allan L. Schuman is the former CEO of Ecolab, not United Health Group.",
+      "false, [corrected fact]: United Health Group is a company based in Minnetonka, Minnesota, not St. Paul."
+    ]
+  },
+  {
+    "id": 1276,
+    "user_query": "Of the battleship recommissioned as a result of the nuclear-powered missile cruiser whose named after a Bolshevik hero, how many were completed?",
+    "llama-7b_response": "3",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1314,
+    "user_query": "Maeion M Ganey organized what kind of competition where specific kinds of boxing gloves are awarded?",
+    "llama-7b_response": "The competition is a boxing tournament. The boxers wear gloves that are designed to protect their hands and wrists.",
+    "llama-7b_fact": [
+      "Maeion M Ganey organized a boxing tournament.",
+      "In this tournament, boxers wear gloves designed to protect their hands and wrists."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 1350,
+    "user_query": "Who was featured as guest in Trunk Muzik?",
+    "llama-7b_response": "Tupac Shakur",
+    "llama-7b_fact": [
+      "Tupac Shakur was the guest featured in Trunk Muzik."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Tupac Shakur was not the guest featured in Trunk Muzik. The album Trunk Muzik was released in 2010, long after Tupac's death in 1996."
+    ]
+  },
+  {
+    "id": 1358,
+    "user_query": "Greg Taylor was the screenwriter for what 1995 film?",
+    "llama-7b_response": "The Shawshank Redemption",
+    "llama-7b_fact": [
+      "The Shawshank Redemption is a film from 1995.",
+      "Greg Taylor was a screenwriter for The Shawshank Redemption."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The Shawshank Redemption is a film from 1994.",
+      "false, [corrected fact]: Frank Darabont was the screenwriter for The Shawshank Redemption."
+    ]
+  },
+  {
+    "id": 1362,
+    "user_query": "Which periodical was published more frequently, Sing Out! or Nuestro?",
+    "llama-7b_response": "Sing Out!",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1377,
+    "user_query": "What is another name for the unincorporated community in Putnam Township that is just a few miles southeast of the junction of M-106 and M-36?",
+    "llama-7b_response": "The unincorporated community in Putnam Township that is just a few miles southeast of the junction of M-106 and M-36 is known as \"The Corners\".",
+    "llama-7b_fact": [
+      "The Corners is an unincorporated community in Putnam Township.",
+      "The Corners is located a few miles southeast of the junction of M-106 and M-36."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 1385,
+    "user_query": "The Republican who introduced Global Food Security Act of 2016 was nominated by what president to become a representative to the United Nations General Assembly?",
+    "llama-7b_response": "Donald Trump",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1400,
+    "user_query": "What place did Arsenal finish in the first year with the club's longest serving manager?",
+    "llama-7b_response": "4th place",
+    "llama-7b_fact": [
+      "Arsenal finished in 4th place in the first year with the club's longest serving manager."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1421,
+    "user_query": "Who is the younger brother of the recorder of Six Strings Down",
+    "llama-7b_response": "John",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1444,
+    "user_query": "Who is older, Sam Bradford or David Johnson?",
+    "llama-7b_response": "Sam Bradford",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1450,
+    "user_query": "Nike Air Max was originally designed by Nike's Vice President for Design and Special Projects, who oversees what?",
+    "llama-7b_response": "Mark Parker",
+    "llama-7b_fact": [
+      "Mark Parker was the original designer of Nike Air Max."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Tinker Hatfield was the original designer of Nike Air Max, not Mark Parker."
+    ]
+  },
+  {
+    "id": 1456,
+    "user_query": "What physician and biologist became well-known for his work in a modernist movement in painting, originating in Germany at the beginning of the 20th century",
+    "llama-7b_response": "Wassily Kandinsky",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1460,
+    "user_query": "Who was born first, Frederick King Keller or Jacques Tourneur?",
+    "llama-7b_response": "Keller",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1480,
+    "user_query": "Someday at Christmas was an album that contained a collaboration with the singer who has been involved with a cappella music since what year?",
+    "llama-7b_response": "2000",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1482,
+    "user_query": "Which actress starring in Prince Valiant started her career as a child model?",
+    "llama-7b_response": "Jane Seymour",
+    "llama-7b_fact": [
+      "Jane Seymour starred in Prince Valiant.",
+      "Jane Seymour started her career as a child model."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 1501,
+    "user_query": "Texas A&M's Auggies are led by a third-year head coach who used to be the head coach where?",
+    "llama-7b_response": "Kevin Sumlin",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1540,
+    "user_query": "Punch and Judy were a pair of dogs who received a bronze medallion bearing what words?",
+    "llama-7b_response": "\"For Bravery\"",
+    "llama-7b_fact": [
+      "Punch and Judy were a pair of dogs.",
+      "Punch and Judy received a bronze medallion.",
+      "The bronze medallion received by Punch and Judy bore the words \"For Bravery\"."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Punch and Judy were not dogs, they were traditional puppet characters in a popular British show.",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 1660,
+    "user_query": "Nemattanew served as a close adviser to what paramount chief whose name meant \"He whose soul is White\"?",
+    "llama-7b_response": "Tecumseh",
+    "llama-7b_fact": [
+      "Nemattanew served as a close adviser to Tecumseh."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Nemattanew did not serve as a close adviser to Tecumseh. He was a war chief of the Powhatan Confederacy in the early 17th century, much earlier than Tecumseh's time."
+    ]
+  },
+  {
+    "id": 1661,
+    "user_query": "This more ballad-like global hit was written by Bob Geldof and was the band's second what?",
+    "llama-7b_response": "\"I Don't Like Mondays\" by The Boomtown Rat",
+    "llama-7b_fact": [
+      "\"I Don't Like Mondays\" is a song by The Boomtown Rats.",
+      "The song \"I Don't Like Mondays\" was written by Bob Geldof."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 1674,
+    "user_query": "What award did a car win, where in the United Kingdom, between 1991 and 1998 an advertisement which starred Audrey Hepburn and Hugh Griffin was made?",
+    "llama-7b_response": "The award was the \"Best Car\" award, which was given by the magazine \"What Car?\" between 1991 and 1998. The advertisement starred Audrey Hepburn and Hugh Griffin.",
+    "llama-7b_fact": [
+      "An advertisement featuring Audrey Hepburn and Hugh Griffin was made between 1991 and 1998.",
+      "The car featured in the advertisement won the \"Best Car\" award.",
+      "The \"Best Car\" award was given by the magazine \"What Car?\".",
+      "The award was given between the years 1991 and 1998."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 1685,
+    "user_query": "Which band was known for having an actual number of EPs, Bedhead or Rhythm Corps?",
+    "llama-7b_response": "Bedhead",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1699,
+    "user_query": "What is the common feature of plants from the genus Bulnesia and Gentianopsis?",
+    "llama-7b_response": "Both plants have a bulbous base.",
+    "llama-7b_fact": [
+      "Plants from the genus Bulnesia and Gentianopsis have a bulbous base."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1700,
+    "user_query": "Who was the founder of the university where Rufus Flint conducted early Central American biodiversity studies?",
+    "llama-7b_response": "The founder of the university where Rufus Flint conducted early Central American biodiversity studies was John F. Kennedy.",
+    "llama-7b_fact": [
+      "Rufus Flint conducted early Central American biodiversity studies at a university.",
+      "John F. Kennedy is the founder of the university where Rufus Flint conducted his studies."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "false, [corrected fact]: John F. Kennedy is not the founder of any university. He was the 35th President of the United States."
+    ]
+  },
+  {
+    "id": 1712,
+    "user_query": "When was the band formed whose debut album was Salvation Town ?",
+    "llama-7b_response": "The band was formed in 1999.",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1728,
+    "user_query": "Which plant can be found farther south in South America, Plumeria or Maihuenia?",
+    "llama-7b_response": "Plumeria",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1788,
+    "user_query": "What is Sam Shepard's character in the 2000 film Hamlet is called in the stage directions of the play?",
+    "llama-7b_response": "Poloniu",
+    "llama-7b_fact": [
+      "Sam Shepard's character in the 2000 film Hamlet is called Polonius.",
+      "Polonius is a character in the play \"Hamlet\"."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 1797,
+    "user_query": "Which university has more campuses, University of Louisiana at Lafayette or University of Massachusetts Dartmouth?",
+    "llama-7b_response": "University of Louisiana at Lafayette",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1813,
+    "user_query": "This English singer-songwriter's  first three studio albums are experiments concocted with a  multimedia artist who performs in what?",
+    "llama-7b_response": "The Beatle",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 1823,
+    "user_query": "What title was contested by Naseem Hamed and a boxer born in 1967?",
+    "llama-7b_response": "WBO World Featherweight Title",
+    "llama-7b_fact": [
+      "The WBO World Featherweight Title was contested by Naseem Hamed and a boxer born in 1967."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1838,
+    "user_query": "Miss Kentucky County Fair 2004 won which pageant that also included the first woman of Asian descent to win the Miss Utah USA title?",
+    "llama-7b_response": "Miss USA",
+    "llama-7b_fact": [
+      "Miss Kentucky County Fair 2004 won the Miss USA pageant.",
+      "The Miss Utah USA title was won by the first woman of Asian descent."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 1839,
+    "user_query": "Which park is bigger, Timanfaya National Park or Garajonay National Park?",
+    "llama-7b_response": "Timanfaya National Park",
+    "llama-7b_fact": [
+      "Timanfaya National Park is bigger than Garajonay National Park."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1841,
+    "user_query": "During what battle was James Hill attached with the later Governor of Gibraltar and Malta?",
+    "llama-7b_response": "Battle of Blenheim",
+    "llama-7b_fact": [
+      "James Hill participated in the Battle of Blenheim."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1875,
+    "user_query": "Which fortune 500 company that WLS Stamping supplies to is headquartered in Berlin and Munich?",
+    "llama-7b_response": "BMW",
+    "llama-7b_fact": [
+      "BMW is a Fortune 500 company.",
+      "WLS Stamping supplies to BMW.",
+      "BMW is headquartered in Berlin and Munich."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "unknown",
+      "false, [corrected fact]: BMW is headquartered in Munich, not Berlin and Munich."
+    ]
+  },
+  {
+    "id": 1924,
+    "user_query": "Who has a longer full name, Hans Schlegel or Gerhard Thiele?",
+    "llama-7b_response": "Hans Schlegel",
+    "llama-7b_fact": [
+      "Hans Schlegel's full name is longer than Gerhard Thiele's."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 1943,
+    "user_query": "Which American heir founded the Eighteenth Street Lounge Music record label?",
+    "llama-7b_response": "Michael Jackson",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2016,
+    "user_query": "Which genus has only one specy in it, Petteria or Malcolmia?",
+    "llama-7b_response": "Petteria",
+    "llama-7b_fact": [
+      "Petteria is a genus that has only one species in it."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 2020,
+    "user_query": "Last Child and Hole are both what?",
+    "llama-7b_response": "Last Child is a song by Pink Floyd, and Hole is a band.",
+    "llama-7b_fact": [
+      "Last Child is a song by Pink Floyd.",
+      "Hole is a band."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Last Child is a song by Aerosmith, not Pink Floyd.",
+      "true"
+    ]
+  },
+  {
+    "id": 2046,
+    "user_query": "What band issued it's compilation album featuring \"Get Back\" on the 30th anniversary of the band's break-up?",
+    "llama-7b_response": "The Beatle",
+    "llama-7b_fact": [
+      "The Beatles is a band.",
+      "The Beatles issued a compilation album featuring \"Get Back\".",
+      "The Beatles compilation album was released on the 30th anniversary of the band's break-up."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "true",
+      "false, [corrected fact]: The Beatles issued a compilation album featuring \"Get Back\", but it was not released on the 30th anniversary of the band's break-up."
+    ]
+  },
+  {
+    "id": 2058,
+    "user_query": "Whose character was Livai Soprano from ,\"The Sopranos\" and also appeared on a live telecast, \"The Philco Television Playhouse?\"",
+    "llama-7b_response": "James Gandolfini",
+    "llama-7b_fact": [
+      "James Gandolfini played the character Livai Soprano in \"The Sopranos\".",
+      "James Gandolfini appeared on a live telecast, \"The Philco Television Playhouse\"."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: James Gandolfini played the character Tony Soprano in \"The Sopranos\".",
+      "unknown"
+    ]
+  },
+  {
+    "id": 2062,
+    "user_query": "In which city is the headquarters for the school district that has the westernmost and largest island in the Near Islands group of Aleutian Islands of Alaska within its physical boundaries?",
+    "llama-7b_response": "Anchorage",
+    "llama-7b_fact": [
+      "The headquarters for the school district that has the westernmost and largest island in the Near Islands group of Aleutian Islands of Alaska within its physical boundaries is in Anchorage."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The headquarters for the school district that encompasses the westernmost and largest island in the Near Islands group of the Aleutian Islands of Alaska is in Unalaska, not Anchorage."
+    ]
+  },
+  {
+    "id": 2082,
+    "user_query": "On which subject did Amelia Sarah Levetus give a lecture at the University of Vienna in the late 19th century that concerns origins and history of cooperatives that began with the application of cooperative principles to business organization?",
+    "llama-7b_response": "Cooperative",
+    "llama-7b_fact": [
+      "Amelia Sarah Levetus gave a lecture at the University of Vienna in the late 19th century.",
+      "The subject of Amelia Sarah Levetus' lecture was 'cooperatives'.",
+      "The lecture given by Amelia Sarah Levetus discussed the origins and history of cooperatives.",
+      "The lecture highlighted the application of cooperative principles to business organizations."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 2083,
+    "user_query": "What is the year that both Gauhar Ali and Iftikhar Ahmed were both named man of the match?",
+    "llama-7b_response": "2017",
+    "llama-7b_fact": [
+      "Both Gauhar Ali and Iftikhar Ahmed were named man of the match in the year 2017."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 2104,
+    "user_query": "What star of Live Free or Die is well known for The War at Home?",
+    "llama-7b_response": "Tim Heidecker",
+    "llama-7b_fact": [
+      "Tim Heidecker is well known for \"The War at Home\"."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Tim Heidecker is well known for \"Tim and Eric Awesome Show, Great Job!\"."
+    ]
+  },
+  {
+    "id": 2130,
+    "user_query": "Forum Theater is located on the corner of which street that runs parallel to the Yarra River?",
+    "llama-7b_response": "Flinders Street",
+    "llama-7b_fact": [
+      "Flinders Street runs parallel to the Yarra River."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 2133,
+    "user_query": "Which city has a larger population, Langzhong or Guangyuan?",
+    "llama-7b_response": "Guangyuan",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2157,
+    "user_query": "Elle and Nesf El Donya are both what?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2165,
+    "user_query": "Worker: Which is the southernmost canal, the Alexandria Canal or the Schuylkill Canal?",
+    "llama-7b_response": "Alexandria Canal",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2183,
+    "user_query": "What German poet's widow was mentor to Brigitte Klump?",
+    "llama-7b_response": "Johann Wolfgang von Goethe",
+    "llama-7b_fact": [
+      "Johann Wolfgang von Goethe was a German poet."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 2204,
+    "user_query": "The Future of Food and Agee are both what?",
+    "llama-7b_response": "The Future of Food is a book by Mark Kurlansky. The Agee is a type of fish.",
+    "llama-7b_fact": [
+      "\"The Future of Food\" is a book by Mark Kurlansky.",
+      "Agee is a type of fish."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: \"The Future of Food\" is a book by Brian J. Ford.",
+      "false, [corrected fact]: Agee is not a type of fish."
+    ]
+  },
+  {
+    "id": 2208,
+    "user_query": "Which flowering plant is related to a popular weed used to make tea, Catananche or Berlandiera?",
+    "llama-7b_response": "Catananche",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2215,
+    "user_query": "Who are the retellings of classic stories that McLoughlin Bros., Inc. specialized in named for?",
+    "llama-7b_response": "- The Arabian Nights\n- The Odyssey\n- The Iliad\n- The Bible\n- The Quran",
+    "llama-7b_fact": [
+      "McLoughlin Bros., Inc. specialized in retellings of \"The Arabian Nights\".",
+      "McLoughlin Bros., Inc. specialized in retellings of \"The Odyssey\".",
+      "McLoughlin Bros., Inc. specialized in retellings of \"The Iliad\".",
+      "McLoughlin Bros., Inc. specialized in retellings of \"The Bible\".",
+      "McLoughlin Bros., Inc. specialized in retellings of \"The Quran\"."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 2222,
+    "user_query": "The Flint Estate is a historic summer estate in what New Hampshire county?",
+    "llama-7b_response": "Cheshire",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2291,
+    "user_query": "Both Kele Okereke and Faris Badwan played for bands, one was a vocalist. What did the other do?",
+    "llama-7b_response": "Kele Okereke was the vocalist for Bloc Party. Faris Badwan was the guitarist for The Horrors.",
+    "llama-7b_fact": [
+      "Kele Okereke was the vocalist for Bloc Party.",
+      "Faris Badwan was the guitarist for The Horrors."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "false, [corrected fact]: Faris Badwan was the vocalist for The Horrors."
+    ]
+  },
+  {
+    "id": 2303,
+    "user_query": "WHO WAS THE ECCENTRIC AMERICAN BUSINESS MAN THAT WAS THE FOUNDER OF THE AIRLINE ORIGINALLY NAMED AIR WEST",
+    "llama-7b_response": "William A. \"Bill\" Boeing",
+    "llama-7b_fact": [
+      "William A. \"Bill\" Boeing is an American businessman.",
+      "William A. \"Bill\" Boeing was the founder of an airline originally named Air West."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "false, [corrected fact]: William A \"Bill\" Boeing was the founder of an airline originally named Boeing Airplane Company."
+    ]
+  },
+  {
+    "id": 2335,
+    "user_query": "Which district is located in a city with a longer name, Fengfeng Mining District or Nankang District, Ganzhou?",
+    "llama-7b_response": "Fengfeng Mining District",
+    "llama-7b_fact": [
+      "Fengfeng Mining District is located in a city with a longer name than Nankang District, Ganzhou."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 2338,
+    "user_query": "Did Susan Hill or Jane Gardam win more literary awards?",
+    "llama-7b_response": "Susan Hill",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2353,
+    "user_query": "Who directed the 2014 film starring featuring Cameron Monaghan as Asher?",
+    "llama-7b_response": "The film was directed by Scott Coffey.",
+    "llama-7b_fact": [
+      "Scott Coffey directed a film starring Cameron Monaghan as Asher in 2014."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 2356,
+    "user_query": "What was the birth name of the lead vocalist for the band that released \"New Rose\" in 1976?",
+    "llama-7b_response": "Steve Jone",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2406,
+    "user_query": "On what continent can one find Synaphe infumatalis?",
+    "llama-7b_response": "Synaphe infumatalis can be found in the Americas.",
+    "llama-7b_fact": [
+      "Synaphe infumatalis is found in the Americas."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Synaphe infumatalis is found in Europe."
+    ]
+  },
+  {
+    "id": 2434,
+    "user_query": "The king who married Yolande of Brienne was a member of which dynasty?",
+    "llama-7b_response": "House of Ibelin",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2435,
+    "user_query": "What was introduced to the Pacific Games in 1979 that the Vanuatu national cricket team participated in?",
+    "llama-7b_response": "The first ever cricket match in the Pacific Islands was played at the 1979 Pacific Games in Suva, Fiji. The match was between the host nation, Fiji, and the visiting Vanuatu national cricket team. The match was won by Fiji by 4 wickets.",
+    "llama-7b_fact": [
+      "The first ever cricket match in the Pacific Islands was played at the 1979 Pacific Games.",
+      "The 1979 Pacific Games took place in Suva, Fiji.",
+      "The match was between Fiji and the Vanuatu national cricket team.",
+      "Fiji won the cricket match by 4 wickets.",
+      "The Vanuatu national cricket team participated in the 1979 Pacific Games."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "true",
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 2477,
+    "user_query": "How many of Ibrahim El Bouni's current manager's wins have come via knockout?",
+    "llama-7b_response": "2",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2485,
+    "user_query": "Who is younger, Philip Labonte or Billie Joe Armstrong?",
+    "llama-7b_response": "Philip Labonte",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2523,
+    "user_query": "Other than singing and songwriting what other profession did Lithuanian Eurovision Song Contestant Mia join?",
+    "llama-7b_response": "Mia is a professional singer.",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2550,
+    "user_query": "Have It All was the last single from the fourth album by the Foo Fighters, released on which date?",
+    "llama-7b_response": "2017-09-15",
+    "llama-7b_fact": [
+      "\"Have It All\" is a single by the Foo Fighters.",
+      "\"Have It All\" is from the Foo Fighters' fourth album.",
+      "\"Have It All\" was released on September 15, 2017."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "false, [corrected fact]: \"Have It All\" is from the Foo Fighters' fourth album, \"One by One\".",
+      "false, [corrected fact]: \"Have It All\" was released in 2002."
+    ]
+  },
+  {
+    "id": 2551,
+    "user_query": "The co-director of The Simpsons helped create the American sitcom, Shaping Up, which was canceled on what date?",
+    "llama-7b_response": "(d)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2568,
+    "user_query": "School is Cool is a song in the fusion genre that emerged in what decade?",
+    "llama-7b_response": "The song \"School is Cool\" was released in the 2000s. It is a fusion song that combines elements of pop, rock, and hip-hop.",
+    "llama-7b_fact": [
+      "The song \"School is Cool\" was released in the 2000s.",
+      "\"School is Cool\" is a fusion song.",
+      "The song combines elements of pop, rock, and hip-hop."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 2612,
+    "user_query": "What month was the United Kingdom's A-side of the \"I Don't Care Anymore\" single released?",
+    "llama-7b_response": "January",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2629,
+    "user_query": "Loïc Baa has made an appearance for which team that was founded in 1893?",
+    "llama-7b_response": "Paris Saint-Germain",
+    "llama-7b_fact": [
+      "Loïc Baa has made an appearance for Paris Saint-Germain.",
+      "Paris Saint-Germain was founded in 1893."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "false, [corrected fact]: Paris Saint-Germain was founded in 1970."
+    ]
+  },
+  {
+    "id": 2641,
+    "user_query": "In which country, apart from India, is this species of rodent, which is abundant in Aartha Kunj, found naturally?",
+    "llama-7b_response": "The Indian Giant Squirrel is found in India, Nepal, Bhutan, Pakistan, Bangladesh, Sri Lanka, Myanmar, Thailand, Vietnam, China, Japan, and the Philippines.",
+    "llama-7b_fact": [
+      "The Indian Giant Squirrel is found in India.",
+      "The Indian Giant Squirrel is found in Nepal.",
+      "The Indian Giant Squirrel is found in Bhutan.",
+      "The Indian Giant Squirrel is found in Sri Lanka.",
+      "The Indian Giant Squirrel is found in Myanmar."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "false, [corrected fact]: The Indian Giant Squirrel is not found in Nepal.",
+      "false, [corrected fact]: The Indian Giant Squirrel is not found in Bhutan.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 2658,
+    "user_query": "When was the person who wrote the music for Take Flight born?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2673,
+    "user_query": "one of the star in Monster Butler is from who is born in born 16 August 1991 is from which country ?",
+    "llama-7b_response": "India",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2715,
+    "user_query": "Invincible and The Strongest Man in the World are both American movies with one being staged during the 1970s and the other being made in the 1970s. Which movie was made in the 1970s?",
+    "llama-7b_response": "Invincible",
+    "llama-7b_fact": [
+      "The movie \"Invincible\" was made in the 1970s."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The movie \"Invincible\" was made in the 2000s. Specifically, it was released in 2006."
+    ]
+  },
+  {
+    "id": 2778,
+    "user_query": "Which board game was the opposite of Monopoly? Shadow Hunters or The Mad Magazine Game?",
+    "llama-7b_response": "The Mad Magazine Game",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2795,
+    "user_query": "Which Argentine professional basketball player currently plays for the San Antonio Spurs, Juan Pablo Vaulet or Manu Ginóbili?",
+    "llama-7b_response": "Manu Ginóbili",
+    "llama-7b_fact": [
+      "Manu Ginóbili is an Argentine professional basketball player.",
+      "Manu Ginóbili has played for the San Antonio Spurs."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 2798,
+    "user_query": "Which is located further south, Lupin Mine, or McIntyre Mines?",
+    "llama-7b_response": "Lupin Mine",
+    "llama-7b_fact": [
+      "Lupin Mine is located further south than McIntyre Mines."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 2809,
+    "user_query": "Which airport is closer to its business district, Nome Airport or MidAmerica St. Louis Airport?",
+    "llama-7b_response": "Nome Airport",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2833,
+    "user_query": "Are both the Bananarita and the Matador served in a martini glass?",
+    "llama-7b_response": "Yes, both drinks are served in a martini glass.",
+    "llama-7b_fact": [
+      "The Bananarita is served in a martini glass.",
+      "The Matador is also served in a martini glass."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 2837,
+    "user_query": "Which is a genus that is endemic to Australia, Hydrangea or Leea?",
+    "llama-7b_response": "Hydrangea",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2863,
+    "user_query": "Which city has more inhabitants Wuchuan, Guangdong or Xichang ?",
+    "llama-7b_response": "Wuchuan",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2879,
+    "user_query": "Joseph and Elizabeth Wallendorf House is a house with a style that was common in what part of the United States during the 19th and 20th centuries?",
+    "llama-7b_response": "The Joseph and Elizabeth Wallendorf House is a house with a style that was common in what part of the United States during the 19th and 20th centuries?",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2906,
+    "user_query": "When did shooting for the episode \"Pilot\" begin for the HBO series The Deuce?",
+    "llama-7b_response": "Shooting for the episode \"Pilot\" began on July 11, 2016.",
+    "llama-7b_fact": [
+      "The shooting for the episode \"Pilot\" of the HBO series The Deuce began on July 11, 2016."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 2914,
+    "user_query": "The company that ViaVoice merged with was headquartered where?",
+    "llama-7b_response": "California",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 2959,
+    "user_query": "How many teams from the conference located mainly in the Northeastern United States participate in the 2015 America East Men's Lacrosse Tournament?",
+    "llama-7b_response": "3",
+    "llama-7b_fact": [
+      "Three teams from the Northeastern United States participated in the 2015 America East Men's Lacrosse Tournament."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 2961,
+    "user_query": "Which was renamed in 2003 amid the restructuring of districts and counties in Huizhou, Yingkou or Huiyang District?",
+    "llama-7b_response": "Huiyang District",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3010,
+    "user_query": "what month did equestrian games take place in 2006 in Qatar's capital city?",
+    "llama-7b_response": "The 2006 Equestrian Games were held in Doha, Qatar in November.",
+    "llama-7b_fact": [
+      "The 2006 Equestrian Games were held in Doha, Qatar.",
+      "The games took place in November 2006."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The 2006 Asian Games were held in Doha, Qatar, not the Equestrian Games.",
+      "true"
+    ]
+  },
+  {
+    "id": 3038,
+    "user_query": "Which Olympic sport did Sajjad Anoushiravani both compete in and coach?",
+    "llama-7b_response": "Sajjad Anoushiravani competed in and coached the sport of judo. He was a member of the Iranian national judo team and won a bronze medal at the 2004 Summer Olympics in Athens. He also served as an assistant coach for the Iranian national judo team at the 2012 Summer Olympics in London.",
+    "llama-7b_fact": [
+      "Sajjad Anoushiravani competed in the sport of judo.",
+      "He was a member of the Iranian national judo team.",
+      "Sajjad Anoushiravani won a bronze medal at the 2004 Summer Olympics in Athens.",
+      "He was an assistant coach for the Iranian national judo team.",
+      "Sajjad Anoushiravani coached at the 2012 Summer Olympics in London."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Sajjad Anoushiravani competed in the sport of weightlifting, not judo.",
+      "false, [corrected fact]: Sajjad Anoushiravani was a member of the Iranian national weightlifting team, not judo.",
+      "false, [corrected fact]: Sajjad Anoushiravani won a silver medal in weightlifting at the 2012 Summer Olympics in London, not a bronze medal at the 2004 Olympics in Athens.",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3048,
+    "user_query": "What final UEFA game was won by penalty kicks from a Romanian football defender?",
+    "llama-7b_response": "The 1986 European Cup Final was won by Liverpool after they defeated Roma on penalties. The game ended 0–0 after extra time, and Liverpool won the game 4–3 on penalties.",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3054,
+    "user_query": "Who was in the Navy, Anna Der-Vartanian or Richard Bakalyan?",
+    "llama-7b_response": "Anna Der-Vartanian",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3068,
+    "user_query": "What was the name of the seventh studio album of the American rock band formed in 1977 in Los Angeles, featuring Joseph Williams on lead vocals?",
+    "llama-7b_response": "\"United\"",
+    "llama-7b_fact": [
+      "The seventh studio album of this band is named \"United\"."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3074,
+    "user_query": "Between two musicians Rocky Shades and Kelly Hansen, who was born earlier?",
+    "llama-7b_response": "Rocky Shade",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3075,
+    "user_query": "Portland's copy of the Joan of Arc statue was dedicated to members of what branch of military?",
+    "llama-7b_response": "The U.S. Army",
+    "llama-7b_fact": [
+      "The Portland's copy of the Joan of Arc statue was dedicated to the U.S. Army."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The Portland's copy of the Joan of Arc statue was dedicated to the veterans of World War I."
+    ]
+  },
+  {
+    "id": 3147,
+    "user_query": "Ensemble Pieces, which was a classical work done in part by John Adams, had strong roots in what style of music?",
+    "llama-7b_response": "Classical",
+    "llama-7b_fact": [
+      "Ensemble Pieces is a classical work.",
+      "John Adams contributed to the creation of Ensemble Pieces.",
+      "Ensemble Pieces has strong roots in classical music."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 3171,
+    "user_query": "The female star of \"The Waiting Room\" played what character in \"The Virgin Queen\"?",
+    "llama-7b_response": "Elizabeth I",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3207,
+    "user_query": "Steve Lee's last eleven albums have all reached number 1 on what chart?",
+    "llama-7b_response": "The Billboard 200",
+    "llama-7b_fact": [
+      "Steve Lee's last eleven albums have all reached number 1 on the Billboard 200 chart."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3215,
+    "user_query": "Which 1999 biographical film starred the same actor who performed in the biopic about a NASA engineer titled \"October Sky\" and \"The Bourne Identity\"?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3221,
+    "user_query": "Which airport, Tallahassee International Airport or Quincy Regional Airport is closer to its local city ?",
+    "llama-7b_response": "Tallahassee International Airport",
+    "llama-7b_fact": [
+      "Tallahassee International Airport is closer to its local city compared to Quincy Regional Airport."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3233,
+    "user_query": "Which film premiered at a later date, Inside Out or Big Red?",
+    "llama-7b_response": "Inside Out",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3266,
+    "user_query": "\"The Play of God\" is an adaptation of what Shakespeare play featuring the daughter of a Venetian senator who elopes with a black man several years her senior?",
+    "llama-7b_response": "Othello",
+    "llama-7b_fact": [
+      "\"The Play of God\" is an adaptation of the Shakespeare play \"Othello\".",
+      "\"Othello\" features the daughter of a Venetian senator.",
+      "The daughter elopes with a black man who is several years her senior in \"Othello\"."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3271,
+    "user_query": "Which movie staring Madge Ryan is a musical film produced in 1963?",
+    "llama-7b_response": "The Sound of Music",
+    "llama-7b_fact": [
+      "Madge Ryan starred in The Sound of Music.",
+      "The Sound of Music is a musical film.",
+      "The Sound of Music was produced in 1963."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: Madge Ryan did not star in The Sound of Music. Julie Andrews was the star of the film.",
+      "true",
+      "false, [corrected fact]: The Sound of Music was produced in 1965."
+    ]
+  },
+  {
+    "id": 3318,
+    "user_query": "How many episodes were in the crime miniseries spoofed by The Best Movie?",
+    "llama-7b_response": "3",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3343,
+    "user_query": "KACH is owned by Anthony Cumina and a man that has been called the Godfather of what movement?",
+    "llama-7b_response": "KACH is owned by Anthony Cumina and a man that has been called the Godfather of what movement?",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3357,
+    "user_query": "which a province of Argentina is  Tolloche located",
+    "llama-7b_response": "Tolloche is located in the province of Buenos Aires.",
+    "llama-7b_fact": [
+      "Tolloche is located in the province of Buenos Aires, Argentina."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3458,
+    "user_query": "What team did Per Backman coach after he was replaced by Janne Karlsson?",
+    "llama-7b_response": "Per Backman coached the Swedish national team after he was replaced by Janne Karlsson.",
+    "llama-7b_fact": [
+      "Per Backman coached the Swedish national team.",
+      "Janne Karlsson replaced Per Backman in a previous coaching position."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 3464,
+    "user_query": "Which composer played more instruments, Gaspare Spontini or Carl Maria von Weber?",
+    "llama-7b_response": "Gaspare Spontini",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3509,
+    "user_query": "What show does the man born on February 25, 1951 host with Mark Thompson?",
+    "llama-7b_response": "The Mark Thompson Show",
+    "llama-7b_fact": [
+      "There is a show called \"The Mark Thompson Show\".",
+      "A man, born on February 25, 1951, co-hosts this show.",
+      "Mark Thompson is a co-host of \"The Mark Thompson Show\"."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 3533,
+    "user_query": "Elijah Connor was part of the spin-off of what reality show?",
+    "llama-7b_response": "The Bachelor",
+    "llama-7b_fact": [
+      "Elijah Connor participated in a spin-off of the reality show \"The Bachelor\"."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3562,
+    "user_query": "Empire is a short film directed  by a director who won the Golden Lion at the Venice Film Festival for which film ?",
+    "llama-7b_response": "The Revenant",
+    "llama-7b_fact": [
+      "The Revenant won the Golden Lion at the Venice Film Festival."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The Revenant did not win the Golden Lion at the Venice Film Festival."
+    ]
+  },
+  {
+    "id": 3590,
+    "user_query": "Which band has more original members, Tse Tse Fly or +44?",
+    "llama-7b_response": "Tse Tse Fly",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3641,
+    "user_query": "Which breed, the Rough Collie or the Serbian Tricolour Hound, was first considered as a separate breed?",
+    "llama-7b_response": "Rough Collie",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3685,
+    "user_query": "Which Indian Prime Minister caused a personnel change in the Nanavati-Mehta Commission due to closeness with a member?",
+    "llama-7b_response": "Indira Gandhi",
+    "llama-7b_fact": [
+      "Indira Gandhi caused a personnel change in the Nanavati-Mehta Commission due to closeness with a member."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3698,
+    "user_query": "The Jazz of the City Atlanta is a portrait of over 100 jazz musicians surrounding what American politician who served as the 58th mayor of Atlanta?",
+    "llama-7b_response": "The Jazz of the City Atlanta is a portrait of over 100 jazz musicians surrounding what American politician who served as the 58th mayor of Atlanta?",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3703,
+    "user_query": "Who is older, Mark Hunter or Martin Johnson?",
+    "llama-7b_response": "Mark Hunter",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3717,
+    "user_query": "What is the name of the actor who played the role of \"Danny\" in the original film from which 2004's tenth highest grossing film is based on?",
+    "llama-7b_response": "John Travolta",
+    "llama-7b_fact": [
+      "John Travolta played the role of \"Danny\" in the original film from which 2004's tenth highest grossing film is based on."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3748,
+    "user_query": "What did the the person of which the Division of Mayo was named after, study at the University of Adelaide?",
+    "llama-7b_response": "William Mayo",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3774,
+    "user_query": "Who won first title at Forest Hills in 1988, Jorge Lozano or Lindsay Davenport?",
+    "llama-7b_response": "Lozano",
+    "llama-7b_fact": [
+      "Jorge Lozano won the first title at Forest Hills in 1988."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3776,
+    "user_query": "What conference did the team that plays for a public research university in Norman, Oklahoma compete in 1991?",
+    "llama-7b_response": "The team that plays for a public research university in Norman, Oklahoma competed in the Big Eight Conference in 1991.",
+    "llama-7b_fact": [
+      "In 1991, the team from a public research university in Norman, Oklahoma competed in the Big Eight Conference."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 3805,
+    "user_query": "WHere are both Stewart's Fountain Classics and Cactus Cooler sold?",
+    "llama-7b_response": "Stewart's Fountain Classics and Cactus Cooler are both sold at Walmart.",
+    "llama-7b_fact": [
+      "Stewart's Fountain Classics and Cactus Cooler are sold at Walmart."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3830,
+    "user_query": "Which star of Urban Legends: Bloody Mary is a former American Football player?",
+    "llama-7b_response": "Michael Irvin",
+    "llama-7b_fact": [
+      "Michael Irvin is a former American football player."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 3832,
+    "user_query": "When did the Birks Group take over Rodens Brothers?",
+    "llama-7b_response": "The Birks Group took over Rodens Brothers in 1984.",
+    "llama-7b_fact": [
+      "The Birks Group took over Rodens Brothers in 1984."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3843,
+    "user_query": "Who did Wittawas Basapean lose to when competing for the WBO International Strawweight Title?",
+    "llama-7b_response": "Wittawas Basapean lost to Jomthong Chuwatana.",
+    "llama-7b_fact": [
+      "Wittawas Basapean competed for the WBO International Strawweight Title.",
+      "Wittawas Basapean lost to Jomthong Chuwatana."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "id": 3853,
+    "user_query": "The Bradford Farm Historic District is located in what county?",
+    "llama-7b_response": "Bradford",
+    "llama-7b_fact": [
+      "Bradford Farm Historic District is located in Bradford County."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3865,
+    "user_query": "What is another name by which the author of The Ski Bum is known?",
+    "llama-7b_response": "The Ski Bum is also known as Ernest Hemingway.",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3872,
+    "user_query": "This Polish-American actor and filmmaker directed \"Homeless in America\" and a sitcom set in an apartment building inch which the director is in what roll?",
+    "llama-7b_response": "Ron Howard",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3878,
+    "user_query": "Who won the women's rugby championship sponsored by the RBS in 2016?",
+    "llama-7b_response": "England",
+    "llama-7b_fact": [
+      "England won the women's rugby championship sponsored by the RBS in 2016."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 3905,
+    "user_query": "The 2017 ESPN College Football Friday Primetime game was announced by Adam Amin and a former football player was drafted in 2006 by what NFL team?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3922,
+    "user_query": "What Universal video game was released on May 27, 2003 to tie in with the superhero movie released the same year?",
+    "llama-7b_response": "The Incredible",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 3935,
+    "user_query": "What Katy Perry song appears on the first U.S. \"Now!\" album?",
+    "llama-7b_response": "\"I Kissed a Girl\"",
+    "llama-7b_fact": [
+      "\"I Kissed a Girl\" is a song by Katy Perry."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 3946,
+    "user_query": "Wappinschaw included a cover of which 1957 folk song?",
+    "llama-7b_response": "Wappinschaw included a cover of \"The Final Countdown\" by Europe.",
+    "llama-7b_fact": [
+      "\"Wappinschaw\" included a cover of a song.",
+      "The covered song on \"Wappinschaw\" is \"The Final Countdown\".",
+      "\"The Final Countdown\" is a song by Europe."
+    ],
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "true"
+    ]
+  },
+  {
+    "id": 4002,
+    "user_query": "Which man stars in the film Fire with Fire alongside the person who played David Addison in \"Moonlighting?\"",
+    "llama-7b_response": "Bruce Willi",
+    "llama-7b_fact": [
+      "Bruce Willis stars in the film \"Fire with Fire\".",
+      "Bruce Willis also starred in the series \"Moonlighting\" playing the character David Addison."
+    ],
+    "llama-7b_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4005,
+    "user_query": "What did the time that brought an end to the Packers 25 game home winning streak become the third team to do?",
+    "llama-7b_response": "(c)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 4008,
+    "user_query": "What is the other name century which had influenced the compilation of The Diritto Municipale ?",
+    "llama-7b_response": "The Diritto Municipale was compiled in the 13th century.",
+    "llama-7b_fact": [
+      "The Diritto Municipale was compiled in the 13th century."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 4058,
+    "user_query": "What is the reporting mark of the museum in which Sumter & Choctaw 102 is preserved?",
+    "llama-7b_response": "(b)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 4063,
+    "user_query": "Which filmmaker has directed more feature films, Stephen Hopkins or Robert Gregson?",
+    "llama-7b_response": "Stephen Hopkin",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 4108,
+    "user_query": "Which country The Cat Creek Oil Field Sign belongs to?",
+    "llama-7b_response": "Canada",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 4109,
+    "user_query": "What is the name of the basketball team formerly coached by Valerie Goodwin-Colbert at the University of Oklahoma?",
+    "llama-7b_response": "The Sooner",
+    "llama-7b_fact": [
+      "The basketball team formerly coached by Valerie Goodwin-Colbert at the University of Oklahoma is named The Sooner."
+    ],
+    "llama-7b_judge": [
+      "false, [corrected fact]: The basketball team at the University of Oklahoma is named The Sooners."
+    ]
+  },
+  {
+    "id": 4110,
+    "user_query": "Which of the adaptation of Winnie-the-Pooh\" stories was distributed by Buena Vista Distribution?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 4135,
+    "user_query": "What is the middle name of the actress that co-starred with Richard Burton in the 1967 film \"The Taming of the Shrew\"?",
+    "llama-7b_response": "Elizabeth Taylor",
+    "llama-7b_fact": [
+      "Elizabeth Taylor co-starred with Richard Burton in the 1967 film \"The Taming of the Shrew\"."
+    ],
+    "llama-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 4238,
+    "user_query": "What hotel in Boston had a guest some referred to as the King of the Wild Frontier?",
+    "llama-7b_response": "The Bostonian",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 4247,
+    "user_query": "Anthony Watts was the managing director of the publication released by which association?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 4333,
+    "user_query": "Which chain has restaurants in more countries, Gino's Pizza and Spaghetti, or Sarpino's Pizzeria?",
+    "llama-7b_response": "Gino's Pizza and Spaghetti",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  },
+  {
+    "id": 4345,
+    "user_query": "which company published the super girl from Krypton and Hybrid superboy?",
+    "llama-7b_response": "DC",
+    "llama-7b_fact": [
+      "DC published the super girl from Krypton and Hybrid superboy."
+    ],
+    "llama-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
+    "id": 4363,
+    "user_query": "Who joined the pricipl memebers of the US intelligence community in 1985?",
+    "llama-7b_response": "(a)",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
+  }
+]

@@ -14,11 +14,11 @@ for path in os.listdir(data_path):
             data = json.load(f)
             for index in range(len(data)):
                 # facts_lst = data[index][path.split("_jud")[0] + "_fact"]
-                facts_lst = data[index]["llama-2-7b-chat-hf_fact"]
+                facts_lst = data[index]["llama-7b_fact"]
                 if len(facts_lst) == 0:
-                    data[index][path] = []
+                    data[index]["llama-7b_judge"] = []
                     continue
-                ans = data[index][path]
+                ans = data[index]["llama-7b_judge"]
                 lines = [line.strip() for line in ans.split("\n") if line]
                 if len(lines) != len(facts_lst):
                     print("file: " + p)
@@ -53,6 +53,6 @@ for path in os.listdir(data_path):
                         judge_lst.append("unknown")
                         exit()
                 # data[index][path] = judge_lst
-                data[index]["llama-2-7b-chat-hf_judge"] = judge_lst
+                data[index]["llama-7b_judge"] = judge_lst
         with open(os.path.join(save_path, path, i), "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
