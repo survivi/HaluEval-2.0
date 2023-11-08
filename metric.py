@@ -22,9 +22,11 @@ def cal_matrics(count):
     """
     micro = sum([i[1] for i in count]) / len(count)
     macro = sum([i[2] for i in count]) / len(count)
-    micro = round(micro, 4)
-    macro = round(macro, 4)
-    print(f"Macro: {macro}, Micro: {micro}")
+    micro = micro * 100
+    macro = macro * 100
+    micro = round(micro, 2)
+    macro = round(macro, 2)
+    print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
 
 
 def get_info(judge_list):
@@ -97,3 +99,5 @@ if __name__ == "__main__":
     # calculate total average
     print("Total average:")
     cal_matrics(total_count)
+
+print("\n\n")
