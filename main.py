@@ -280,6 +280,7 @@ class Parser(object):
                 "alpaca-7b",
                 "vicuna-7b",
                 "vicuna-13b",
+                "claude-2",
                 # "llama-2-7b-hf",
                 # "llama-2-13b-hf",
             ],
