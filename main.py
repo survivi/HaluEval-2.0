@@ -127,7 +127,7 @@ class Chatbot(Bot):
             try:
                 if chat_model == "chatgpt":
                     response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo",
+                        model="gpt-3.5-turbo-1106",
                         messages=[{"role": "user", "content": query}],
                         temperature=kwargs["temperature"],
                         top_p=kwargs["top_p"],
