@@ -69,4 +69,4 @@ python main.py --all-files --model vicuna-13b --data-dir ./add/vicuna-13b/ --sav
 # export OPENAI_API_BASE="https://api.aiguoguo199.com/v1"
 # echo "OPENAI_API_KEY is set to: $OPENAI_API_KEY"
 # echo "OPENAI_API_BASE is set to: $OPENAI_API_BASE"
-# python main.py --all-files --model chatgpt --data-dir ./add/chatgpt/ --save-dir ./add_response/chatgpt/
+# python main.py --all-files --model chatgpt
