@@ -111,7 +111,8 @@ if __name__ == "__main__":
         hallu_prompt = f.read()
     with open(args.correct_prompt_path, "r", encoding="utf-8") as f:
         correct_prompt = f.read()
-    check_exist(args.save_dir)
+    save_dir = os.path.join(args.save_dir, args.model)
+    check_exist(save_dir)
     file_list = [
         "Bio-Medical",
         "Finance",
@@ -229,6 +230,6 @@ if __name__ == "__main__":
             ]
             save_data.extend(save_lst)
         save_data = sorted(save_data, key=lambda x: x["id"])
-        save_path = os.path.join(args.save_dir, file + ".json")
+        save_path = os.path.join(save_dir, file + ".json")
         with open(save_path, "w", encoding="utf-8") as f:
             json.dump(save_data, f, indent=2, ensure_ascii=False)
