@@ -1,6 +1,7 @@
 # coding: utf-8
 import os
 import torch
+import requests
 import openai
 import argparse
 from tqdm import tqdm
@@ -9,7 +10,6 @@ import time
 from transformers import (
     AutoTokenizer,
     AutoModelForCausalLM,
-    AutoModel,
 )
 
 
@@ -29,12 +29,12 @@ class Bot(object):
     def __init__(self, model):
         self.model = model  # chat model
         self.model2path = {
-            "llama-7b": "/media/public/models/huggingface/llama-7b/",
             "llama-2-7b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-chat-hf/",
             "llama-2-13b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-chat-hf/",
             "alpaca-7b": "/media/public/models/huggingface/alpaca-7b/",
             "vicuna-7b": "/media/public/models/huggingface/vicuna-7b/",
             "vicuna-13b": "/media/public/models/huggingface/vicuna-13b-v1.1/",
+            "llama-7b": "/media/public/models/huggingface/llama-7b/",
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
         }  # local model path
@@ -116,6 +116,70 @@ class Chatbot(Bot):
             print(f"Loading exist data from {self.save_path}")
             with open(self.save_path, "r", encoding="utf-8") as f:
                 self.save_data = json.load(f)
+
+    def get_access_token(self):
+        url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
+        payload = json.dumps(
+            {
+                "app_id": "bli_yt3xllynei5rqqdj",
+                "app_secret": "dd9684e41df14f69a4244583ca03ac54",
+            }
+        )
+        headers = {"Content-Type": "application/json"}
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        return data["data"]["tenant_access_token"]
+
+    def chatgpt_hi_request(
+        self,
+        message,
+        # sys_msg="You are good at Text-to-SQL",
+        model="4",
+        # temperature=1.0,
+        # top_p=0.9,
+    ):
+        """
+        model type
+        2: GPT3.5
+        4: GPT4-8k
+        5: GPT-4-32k
+        """
+        url = "https://hi-open.zhipin.com/open-apis/ai/open/api/send/message"
+        headers = {
+            "Authorization": "Bearer {0}".format(self.get_access_token()),
+            "Content-Type": "application/json",
+        }
+        messages = [
+            # {"role": "system", "content": sys_msg},
+            {"role": "user", "content": message},
+        ]
+        payload = json.dumps(
+            {
+                "model": model,
+                "messages": messages,
+                # "temperature": temperature,
+                # "top_p": top_p,
+            }
+        )
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        return data["data"]["choices"][0]["message"]["content"]
+
+    def gpt_4_complete(self, query):
+        input = query["input"]
+        count = 0
+        while True:
+            if count > 20:
+                res = "NO FACTS"
+                break
+            try:
+                res = self.chatgpt_hi_request(input)
+                break
+            except Exception as e:
+                print("Exception: %s\nRetrying..." % e)
+                count += 1
+        query["llm_output"] = res
+        return query
 
     def openai_complete(self, query, chat_model, **kwargs):
         """
@@ -274,13 +338,14 @@ class Parser(object):
                 "chatgpt",
                 "text-davinci-002",
                 "text-davinci-003",
-                "llama-7b",
                 "llama-2-7b-chat-hf",
                 "llama-2-13b-chat-hf",
                 "alpaca-7b",
                 "vicuna-7b",
                 "vicuna-13b",
+                "claude-1",
                 "claude-2",
+                "llama-7b",
                 # "llama-2-7b-hf",
                 # "llama-2-13b-hf",
             ],
@@ -351,10 +416,10 @@ class Parser(object):
         )
         self.parser.add_argument(
             "--assist-model",
-            default="chatgpt",
+            default="gpt-4",
             choices=[
                 "chatgpt",
-                # "gpt-4",
+                "gpt-4",
             ],
             help="facts generation model to use",
         )
@@ -381,10 +446,10 @@ class Parser(object):
         )
         self.parser.add_argument(
             "--assist-model",
-            default="chatgpt",
+            default="gpt-4",
             choices=[
                 "chatgpt",
-                # "gpt-4",
+                "gpt-4",
             ],
             help="judge model to use",
         )

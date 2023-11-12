@@ -1,6 +1,4 @@
-#!/bin/bash
-export OPENAI_API_KEY="sk-itJLSDtI0l1xEngiAf5c0b742f48475185901cB90aB9D68a"
-export OPENAI_API_BASE="https://api.aiguoguo199.com/v1"
-echo "OPENAI_API_KEY is set to: $OPENAI_API_KEY"
-echo "OPENAI_API_BASE is set to: $OPENAI_API_BASE"
-python judge.py --all-files --model chatgpt
+python judge.py --all-files --model llama-2-7b-chat-hf --assist-model gpt-4
+python judge.py --all-files --model llama-2-13b-chat-hf --assist-model gpt-4
+python judge.py --all-files --model vicuna-7b --assist-model gpt-4
+python judge.py --all-files --model vicuna-13b --assist-model gpt-4

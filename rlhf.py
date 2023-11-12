@@ -80,8 +80,11 @@ def complete(query):
 if __name__ == "__main__":
     data_dir = "./rlhf_data/"
     save_dir = "./rlhf/"
-    hallu_prompt = """You are presented with an answer in response to a query. Your task is to list all hallucinations in the answer. If no hallucinations are found, your response should be "NO".\nContext: <query>: {query} <answer>: {answer}\nResponse: """
-    correct_prompt = """You are given a piece of answer text to a query. Based on the hallucination information present in the answer, your task is to revise and correct the answer text.\nContext: <query>: {query} <answer>: {answer}\nHallucination in the answer:\n{hallucination}\nResponse: According to the above information, the original answer can be revised as:\n"""
+    prompt_path = "./prompt/rlhf_hallu.txt"
+    with open(prompt_path, "r", encoding="utf-8") as f:
+        prompt = f.read()
+    hallu_prompt = prompt + "Context: <query>: {query} <answer>: {answer}\nResponse: "
+    correct_prompt = """You are given a piece of answer text to a query. Based on the hallucination information present in the answer, your task is to revise and correct the answer text.\nContext: <query>: {query} <answer>: {answer}\n{hallucination}\nResponse: According to the above information, the original answer can be revised as:\n"""
     check_exist(save_dir)
     files = [
         "Bio-Medical",
@@ -120,6 +123,8 @@ if __name__ == "__main__":
         filtered_res_lst = [i for i in res_lst if "NO" not in i["hallucination"]]
         count = 0
         while count < 5:
+            if len(filtered_res_lst) == 0:
+                break
             prompts = [
                 correct_prompt.format(
                     query=filtered_res_lst[i]["user_query"],
@@ -180,27 +185,18 @@ if __name__ == "__main__":
             ]
             save_data.extend(save_lst)
             filtered_res_lst = [i for i in check_lst if "NO" not in i["hallucination"]]
-            filtered_res_lst = [
+            count += 1
+        if len(filtered_res_lst) != 0:
+            save_lst = [
                 {
                     "id": i["id"],
                     "user_query": i["user_query"],
                     "original_response": i["original_response"],
                     "corrected_response": i["corrected_response"],
-                    "hallucination": i["hallucination"],
                 }
-                for i in check_lst
+                for i in filtered_res_lst
             ]
-            count += 1
-        save_lst = [
-            {
-                "id": i["id"],
-                "user_query": i["user_query"],
-                "original_response": i["original_response"],
-                "corrected_response": i["corrected_response"],
-            }
-            for i in filtered_res_lst
-        ]
-        save_data.extend(save_lst)
+            save_data.extend(save_lst)
         save_path = os.path.join(save_dir, file + ".json")
         with open(save_path, "w", encoding="utf-8") as f:
             json.dump(save_data, f, indent=2, ensure_ascii=False)

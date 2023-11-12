@@ -5,8 +5,8 @@ from main import check_exist
 data_path = "./judge/"
 save_path = "./judge_up/"
 for path in os.listdir(data_path):
-    # if path != "chatgpt_judge":
-    #     continue
+    if path != "chatgpt_judge":
+        continue
     check_exist(os.path.join(save_path, path))
     for i in os.listdir(os.path.join(data_path, path)):
         p = os.path.join(data_path, path, i)
