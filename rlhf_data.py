@@ -59,7 +59,7 @@ def chatgpt_hi_request(
     return data["data"]["choices"][0]["message"]["content"]
 
 
-def complete(query):
+def gpt_4_complete(query):
     input = query["input"]
     count = 0
     while True:
@@ -122,26 +122,29 @@ if __name__ == "__main__":
     num_process = 145
     chunk_size = 1
     for file in file_list:
+        print("Processing file: " + file)
         save_data = []
         data_path = os.path.join(data_dir, file + ".json")
         with open(data_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         prompts = [
-            hallu_prompt.format(query=data[i]["user_query"], answer=data[i]["response"])
+            hallu_prompt.format(
+                query=data[i]["user_query"], answer=data[i][args.model + "_response"]
+            )
             for i in range(len(data))
         ]
         for i in range(len(data)):
             data[i]["input"] = prompts[i]
         res_lst = []
         with multiprocessing.Pool(num_process) as p:
-            results = p.imap_unordered(complete, data, chunksize=chunk_size)
+            results = p.imap_unordered(gpt_4_complete, data, chunksize=chunk_size)
             for res in tqdm(results, total=len(data)):
                 res_lst.append(
                     {
                         "id": res["id"],
                         "user_query": res["user_query"],
-                        "original_response": res["response"],
-                        "corrected_response": res["response"],
+                        "original_response": res[args.model + "_response"],
+                        "corrected_response": res[args.model + "_response"],
                         "hallucination": res["llm_output"],
                     }
                 )
@@ -164,7 +167,7 @@ if __name__ == "__main__":
             res_lst = []
             with multiprocessing.Pool(num_process) as p:
                 results = p.imap_unordered(
-                    complete, filtered_res_lst, chunksize=chunk_size
+                    gpt_4_complete, filtered_res_lst, chunksize=chunk_size
                 )
                 for res in tqdm(results, total=len(filtered_res_lst)):
                     res_lst.append(
@@ -187,7 +190,9 @@ if __name__ == "__main__":
                 res_lst[i]["input"] = prompts[i]
             check_lst = []
             with multiprocessing.Pool(num_process) as p:
-                results = p.imap_unordered(complete, res_lst, chunksize=chunk_size)
+                results = p.imap_unordered(
+                    gpt_4_complete, res_lst, chunksize=chunk_size
+                )
                 for res in tqdm(results, total=len(res_lst)):
                     check_lst.append(
                         {
@@ -223,6 +228,7 @@ if __name__ == "__main__":
                 for i in filtered_res_lst
             ]
             save_data.extend(save_lst)
+        save_data = sorted(save_data, key=lambda x: x["id"])
         save_path = os.path.join(args.save_dir, file + ".json")
         with open(save_path, "w", encoding="utf-8") as f:
             json.dump(save_data, f, indent=2, ensure_ascii=False)
