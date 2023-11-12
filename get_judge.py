@@ -21,8 +21,8 @@ for path in os.listdir(data_path):
                 ans = data[index]["llama-7b_judge"]
                 lines = [line.strip() for line in ans.split("\n") if line]
                 if len(lines) != len(facts_lst):
-                    print("file: " + p)
-                    print("id: " + str(data[index]["id"]))
+                    print("File: " + p)
+                    print("ID: " + str(data[index]["id"]))
                     print("Facts list: " + "\n".join(facts_lst))
                     print("Judge list: " + "\n".join(lines))
                     exit()
@@ -39,16 +39,16 @@ for path in os.listdir(data_path):
                             try:
                                 corrected_ans = line.split("[Correction]:")[1].strip()
                             except Exception as e:
-                                print("file: " + p)
-                                print("id: " + str(data[index]["id"]))
+                                print("File: " + p)
+                                print("ID: " + str(data[index]["id"]))
                                 print("Error: " + str(e))
                                 print("Empty corrected fact: " + line)
                                 corrected_ans = ""
                                 exit()
                         judge_lst.append("false, [corrected fact]: " + corrected_ans)
                     else:  # undetected: [unknown]
-                        print("file: " + p)
-                        print("id: " + str(data[index]["id"]))
+                        print("File: " + p)
+                        print("ID: " + str(data[index]["id"]))
                         print("Undetected judge: " + line)
                         judge_lst.append("unknown")
                         exit()
