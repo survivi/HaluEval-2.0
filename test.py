@@ -1,6 +1,7 @@
 # coding: utf-8
 import os
 import torch
+import requests
 import openai
 import argparse
 from tqdm import tqdm
@@ -28,16 +29,18 @@ class Bot(object):
     def __init__(self, model):
         self.model = model  # chat model
         self.model2path = {
-            "llama-7b": "/media/public/models/huggingface/llama-7b/",
             "llama-2-7b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-chat-hf/",
             "llama-2-13b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-chat-hf/",
             "alpaca-7b": "/media/public/models/huggingface/alpaca-7b/",
             "vicuna-7b": "/media/public/models/huggingface/vicuna-7b/",
             "vicuna-13b": "/media/public/models/huggingface/vicuna-13b-v1.1/",
-            "bloom": "/media/public/models/huggingface/bigscience/bloom-7b1/",
+            "llama-7b": "/media/public/models/huggingface/llama-7b/",
             "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
+            "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
         }  # local model path
+        self.tokenizer = None
+        self.llm = None
 
     def load_model(self):
         """
@@ -58,7 +61,6 @@ class Bot(object):
             "text-davinci-002",
             "text-davinci-003",
         ]:
-            begin_time = time.time()
             model_path = self.model2path[self.model]
             self.tokenizer = AutoTokenizer.from_pretrained(
                 model_path,
@@ -68,15 +70,11 @@ class Bot(object):
             )
             self.llm = AutoModelForCausalLM.from_pretrained(
                 model_path,
-                low_cpu_mem_usage=False,
+                low_cpu_mem_usage=True,
                 trust_remote_code=True,
+                device_map="auto",
                 torch_dtype=torch.float16,
-            ).cuda()
-            end_time = time.time()
-            print(f"load model time: {end_time - begin_time}")
-        else:
-            self.tokenizer = None
-            self.llm = None
+            )
 
 
 class Chatbot(Bot):
@@ -119,6 +117,70 @@ class Chatbot(Bot):
             print(f"Loading exist data from {self.save_path}")
             with open(self.save_path, "r", encoding="utf-8") as f:
                 self.save_data = json.load(f)
+
+    def get_access_token(self):
+        url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
+        payload = json.dumps(
+            {
+                "app_id": "bli_yt3xllynei5rqqdj",
+                "app_secret": "dd9684e41df14f69a4244583ca03ac54",
+            }
+        )
+        headers = {"Content-Type": "application/json"}
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        return data["data"]["tenant_access_token"]
+
+    def chatgpt_hi_request(
+        self,
+        message,
+        # sys_msg="You are good at Text-to-SQL",
+        model="4",
+        # temperature=1.0,
+        # top_p=0.9,
+    ):
+        """
+        model type
+        2: GPT3.5
+        4: GPT4-8k
+        5: GPT-4-32k
+        """
+        url = "https://hi-open.zhipin.com/open-apis/ai/open/api/send/message"
+        headers = {
+            "Authorization": "Bearer {0}".format(self.get_access_token()),
+            "Content-Type": "application/json",
+        }
+        messages = [
+            # {"role": "system", "content": sys_msg},
+            {"role": "user", "content": message},
+        ]
+        payload = json.dumps(
+            {
+                "model": model,
+                "messages": messages,
+                # "temperature": temperature,
+                # "top_p": top_p,
+            }
+        )
+        response = requests.request("POST", url, headers=headers, data=payload)
+        data = json.loads(response.text)
+        return data["data"]["choices"][0]["message"]["content"]
+
+    def gpt_4_complete(self, query):
+        input = query["input"]
+        count = 0
+        while True:
+            if count > 20:
+                res = "NO FACTS"
+                break
+            try:
+                res = self.chatgpt_hi_request(input)
+                break
+            except Exception as e:
+                print("Exception: %s\nRetrying..." % e)
+                count += 1
+        query["llm_output"] = res
+        return query
 
     def openai_complete(self, query, chat_model, **kwargs):
         """
@@ -208,18 +270,6 @@ class Chatbot(Bot):
         ans = "\n".join([_ for _ in ans if _])
         return ans
 
-    def get_template(self, query, chat_model):
-        """
-        Get prompt template for query.
-        """
-        if chat_model.startswith("llama-2") and "chat" in chat_model:
-            query = f"[INST] <<SYS>>\nYou are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n<</SYS>>\n\n{query} [/INST]"
-        if chat_model.startswith("alpaca"):
-            query = f"Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{query}\n\n### Response:\n"
-        if chat_model.startswith("vicuna"):
-            query = f"A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions.\n\nUSER: {query} ASSISTANT: "
-        return query
-
     def generate_response(self, query_lst, **kwargs):
         """
         Generate response for query list.
@@ -237,11 +287,12 @@ class Chatbot(Bot):
             if (len(self.save_data) + 1) % self.frequency == 0:
                 self.save()
             query = query_lst[i]["user_query"]
-            query = self.get_template(query, self.model)
             ans = complete_func(query, self.model, **kwargs)
             ans = self.post_process(ans, query)
             query_lst[i][self.model + "_response"] = ans
             self.save_data.append(query_lst[i])
+            if i == 3:
+                exit()
 
     def __enter__(self):
         return self
@@ -290,16 +341,17 @@ class Parser(object):
                 "chatgpt",
                 "text-davinci-002",
                 "text-davinci-003",
-                "llama-7b",
                 "llama-2-7b-chat-hf",
                 "llama-2-13b-chat-hf",
                 "alpaca-7b",
                 "vicuna-7b",
                 "vicuna-13b",
+                "llama-7b",
+                "claude-1",
                 "claude-2",
-                "bloom",
                 "llama-2-7b-hf",
                 "llama-2-13b-hf",
+                "bloom-7b1",
             ],
             help="chat model to use",
         )
@@ -368,10 +420,10 @@ class Parser(object):
         )
         self.parser.add_argument(
             "--assist-model",
-            default="chatgpt",
+            default="gpt-4",
             choices=[
                 "chatgpt",
-                # "gpt-4",
+                "gpt-4",
             ],
             help="facts generation model to use",
         )
@@ -398,10 +450,10 @@ class Parser(object):
         )
         self.parser.add_argument(
             "--assist-model",
-            default="chatgpt",
+            default="gpt-4",
             choices=[
                 "chatgpt",
-                # "gpt-4",
+                "gpt-4",
             ],
             help="judge model to use",
         )

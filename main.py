@@ -37,7 +37,10 @@ class Bot(object):
             "llama-7b": "/media/public/models/huggingface/llama-7b/",
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
+            # "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
         }  # local model path
+        self.tokenizer = None
+        self.llm = None
 
     def load_model(self):
         """
@@ -69,11 +72,9 @@ class Bot(object):
                 model_path,
                 low_cpu_mem_usage=True,
                 trust_remote_code=True,
+                device_map="auto",
                 torch_dtype=torch.float16,
-            ).cuda()
-        else:
-            self.tokenizer = None
-            self.llm = None
+            )
 
 
 class Chatbot(Bot):
@@ -343,11 +344,12 @@ class Parser(object):
                 "alpaca-7b",
                 "vicuna-7b",
                 "vicuna-13b",
+                "llama-7b",
                 "claude-1",
                 "claude-2",
-                "llama-7b",
                 # "llama-2-7b-hf",
                 # "llama-2-13b-hf",
+                # "bloom-7b1",
             ],
             help="chat model to use",
         )

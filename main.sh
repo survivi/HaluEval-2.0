@@ -1,18 +1,18 @@
 #!/bin/bash
 # alpaca-7b
-export CUDA_VISIBLE_DEVICES=9
+export CUDA_VISIBLE_DEVICES=8
 python main.py --all-files --model alpaca-7b --data-dir ./add/alpaca-7b/ --save-dir ./add_response/alpaca-7b/
 # llama-2-7b-chat-hf
-export CUDA_VISIBLE_DEVICES=9
+export CUDA_VISIBLE_DEVICES=8
 python main.py --all-files --model llama-2-7b-chat-hf --data-dir ./add/llama-2-7b-chat-hf/ --save-dir ./add_response/llama-2-7b-chat-hf/
 # llama-2-7b-chat-hf_beam
-export CUDA_VISIBLE_DEVICES=9
+export CUDA_VISIBLE_DEVICES=8
 python main.py --all-files --model llama-2-7b-chat-hf --data-dir ./add/llama-2-7b-chat-hf_beam/ --save-dir ./add_response/llama-2-7b-chat-hf_beam/ --num-beams 5 --early-stopping
 # llama-2-7b-chat-hf_INT4
-export CUDA_VISIBLE_DEVICES=9
+export CUDA_VISIBLE_DEVICES=8
 python INT4.py --all-files --model llama-2-7b-chat-hf --data-dir ./add/llama-2-7b-chat-hf_INT4/ --save-dir ./add_response/llama-2-7b-chat-hf_INT4/
 # llama-2-7b-chat-hf_INT8
-export CUDA_VISIBLE_DEVICES=9
+export CUDA_VISIBLE_DEVICES=7
 python INT8.py --all-files --model llama-2-7b-chat-hf --data-dir ./add/llama-2-7b-chat-hf_INT8/ --save-dir ./add_response/llama-2-7b-chat-hf_INT8/
 # llama-2-7b-chat-hf_top-k
 export CUDA_VISIBLE_DEVICES=9
@@ -45,6 +45,7 @@ python INT4.py --all-files --model llama-2-13b-chat-hf --data-dir ./add/llama-2-
 export CUDA_VISIBLE_DEVICES=9
 python INT8.py --all-files --model llama-2-13b-chat-hf --data-dir ./add/llama-2-13b-chat-hf_INT8/ --save-dir ./add_response/llama-2-13b-chat-hf_INT8/
 # llama-7b
+export CUDA_VISIBLE_DEVICES=9
 python main.py --all-files --model llama-7b --data-dir ./add/llama-7b/ --save-dir ./add_response/llama-7b/
 # text-davinci-002
 export OPENAI_API_KEY="sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
@@ -64,9 +65,9 @@ python main.py --all-files --model vicuna-7b --data-dir ./add/vicuna-7b/ --save-
 # vicuna-13b
 export CUDA_VISIBLE_DEVICES=9
 python main.py --all-files --model vicuna-13b --data-dir ./add/vicuna-13b/ --save-dir ./add_response/vicuna-13b/
-# # chatgpt
-# export OPENAI_API_KEY="sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
-# export OPENAI_API_BASE="https://api.aiguoguo199.com/v1"
-# echo "OPENAI_API_KEY is set to: $OPENAI_API_KEY"
-# echo "OPENAI_API_BASE is set to: $OPENAI_API_BASE"
-# python main.py --all-files --model chatgpt
+# chatgpt
+export OPENAI_API_KEY="sk-AZFhjE7fZW33inqK0701D5A7B04f468d842c2eEa2fF43d71"
+export OPENAI_API_BASE="https://api.aiguoguo199.com/v1"
+echo "OPENAI_API_KEY is set to: $OPENAI_API_KEY"
+echo "OPENAI_API_BASE is set to: $OPENAI_API_BASE"
+python main.py --all-files --model chatgpt --data-dir ./add/chatgpt/ --save-dir ./add_response/chatgpt/
