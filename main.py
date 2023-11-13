@@ -42,7 +42,7 @@ class Bot(object):
         self.tokenizer = None
         self.llm = None
 
-    def load_model(self):
+    def load_model(self, load_in_4bit, load_in_8bit):
         """
         Load local models and tokenizers.
         """
@@ -68,13 +68,33 @@ class Bot(object):
                 use_fast=True,
                 legacy=legacy,
             )
-            self.llm = AutoModelForCausalLM.from_pretrained(
-                model_path,
-                low_cpu_mem_usage=True,
-                trust_remote_code=True,
-                device_map="auto",
-                torch_dtype=torch.float16,
-            )
+            if load_in_4bit:
+                assert self.model.startswith("llama-2")
+                self.llm = AutoModelForCausalLM.from_pretrained(
+                    model_path,
+                    low_cpu_mem_usage=True,
+                    trust_remote_code=True,
+                    device_map="auto",
+                    load_in_4bit=True,
+                    bnb_4bit_compute_dtype=torch.bfloat16,
+                )
+            elif load_in_8bit:
+                assert self.model.startswith("llama-2")
+                self.llm = AutoModelForCausalLM.from_pretrained(
+                    model_path,
+                    low_cpu_mem_usage=True,
+                    trust_remote_code=True,
+                    device_map="auto",
+                    load_in_8bit=True,
+                )
+            else:
+                self.llm = AutoModelForCausalLM.from_pretrained(
+                    model_path,
+                    low_cpu_mem_usage=True,
+                    trust_remote_code=True,
+                    device_map="auto",
+                    torch_dtype=torch.float16,
+                )
 
 
 class Chatbot(Bot):
@@ -400,6 +420,16 @@ class Parser(object):
             default=f"./response/{args.model}/",
             help="save root directory",
         )
+        self.parser.add_argument(
+            "load-in-4bit",
+            action="store_true",
+            help="whether or not to convert the loaded model into 4bit precision quantized model",
+        )
+        self.parser.add_argument(
+            "load-in-8bit",
+            action="store_true",
+            help="whether or not to convert the loaded model into 8bit precision quantized model",
+        )
 
     def fact_args(self):
         """
@@ -498,7 +528,7 @@ if __name__ == "__main__":
     else:
         files = [args.file]
     bot = Bot(args.model)
-    bot.load_model()
+    bot.load_model(args.load_in_4bit, args.load_in_8bit)
     for file in files:
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
