@@ -1,29 +1,143 @@
-r"""
-Supports language model inference without histories.
-"""
-register_template(
-    name="vanilla",
-    prefix=[],
-    prompt=["{{query}}"],
-    system="",
-    sep=[],
-    use_history=False,
-)
+# coding: utf-8
+import dataclasses
+from enum import auto, IntEnum
+from typing import List, Any, Dict, Union, Tuple
 
 
-r"""
-Default template.
-"""
-register_template(
-    name="default",
-    prefix=["{{system}}"],
-    prompt=["Human: {{query}}\nAssistant: "],
-    system=(
-        "A chat between a curious user and an artificial intelligence assistant. "
-        "The assistant gives helpful, detailed, and polite answers to the user's questions."
-    ),
-    sep=["\n"],
-)
+class SeparatorStyle(IntEnum):
+    """Separator styles."""
+
+    ADD_COLON_SINGLE = auto()
+    ADD_COLON_TWO = auto()
+    ADD_COLON_SPACE_SINGLE = auto()
+    NO_COLON_SINGLE = auto()
+    NO_COLON_TWO = auto()
+    ADD_NEW_LINE_SINGLE = auto()
+    LLAMA2 = auto()
+    CHATGLM = auto()
+    CHATML = auto()
+    CHATINTERN = auto()
+    DOLLY = auto()
+    RWKV = auto()
+    PHOENIX = auto()
+    ROBIN = auto()
+    FALCON_CHAT = auto()
+    CHATGLM3 = auto()
+
+
+@dataclasses.dataclass
+class Conversation:
+    """A class that manages prompt templates and keeps all conversation history."""
+
+    # The name of this template
+    name: str
+    # The template of the system prompt
+    system_template: str = "{system_message}"
+    # The system message
+    system_message: str = ""
+    # The names of two roles
+    roles: Tuple[str] = ("USER", "ASSISTANT")
+    # All messages. Each item is (role, message).
+    messages: List[List[str]] = ()
+    # The number of few shot examples
+    offset: int = 0
+    # The separator style and configurations
+    sep_style: SeparatorStyle = SeparatorStyle.ADD_COLON_SINGLE
+    sep: str = "\n"
+    sep2: str = None
+    # Stop criteria (the default one is EOS token)
+    stop_str: Union[str, List[str]] = None
+    # Stops generation if meeting any token in this list
+    stop_token_ids: List[int] = None
+
+    def get_prompt(self) -> str:
+        """Get the prompt for generation."""
+        system_prompt = self.system_template.format(system_message=self.system_message)
+        if self.sep_style == SeparatorStyle.LLAMA2:
+            seps = [self.sep, self.sep2]
+            if self.system_message:
+                ret = system_prompt
+            else:
+                ret = "[INST] "
+            for i, (role, message) in enumerate(self.messages):
+                tag = self.roles[i % 2]
+                if message:
+                    if i == 0:
+                        ret += message + " "
+                    else:
+                        ret += tag + " " + message + seps[i % 2]
+                else:
+                    ret += tag
+            return ret
+        else:
+            raise ValueError(f"Invalid style: {self.sep_style}")
+
+    def set_system_message(self, system_message: str):
+        """Set the system message."""
+        self.system_message = system_message
+
+    def append_message(self, role: str, message: str):
+        """Append a new message."""
+        self.messages.append([role, message])
+
+    def update_last_message(self, message: str):
+        """Update the last output.
+
+        The last message is typically set to be None when constructing the prompt,
+        so we need to update it in-place after getting the response from a model.
+        """
+        self.messages[-1][1] = message
+
+    def to_gradio_chatbot(self):
+        """Convert the conversation to gradio chatbot format."""
+        ret = []
+        for i, (role, msg) in enumerate(self.messages[self.offset :]):
+            if i % 2 == 0:
+                ret.append([msg, None])
+            else:
+                ret[-1][-1] = msg
+        return ret
+
+    def to_openai_api_messages(self):
+        """Convert the conversation to OpenAI chat completion format."""
+        ret = [{"role": "system", "content": self.system_message}]
+
+        for i, (_, msg) in enumerate(self.messages[self.offset :]):
+            if i % 2 == 0:
+                ret.append({"role": "user", "content": msg})
+            else:
+                if msg is not None:
+                    ret.append({"role": "assistant", "content": msg})
+        return ret
+
+    def dict(self):
+        return {
+            "template_name": self.name,
+            "system_message": self.system_message,
+            "roles": self.roles,
+            "messages": self.messages,
+            "offset": self.offset,
+        }
+
+
+# all conversation templates
+templates = {}
+
+
+def register_template(template):
+    """
+    Register a new conversation template.
+    """
+    assert template.name not in templates
+
+    templates[template.name] = template
+
+
+def get_template(name):
+    """
+    Get the conversation template.
+    """
+    return templates[name]
 
 
 r"""
@@ -45,19 +159,6 @@ register_template(
         "explain why instead of answering something not correct. "
         "If you don't know the answer to a question, please don't share false information."
     ),
-    sep=[],
-)
-
-
-r"""
-Supports: https://github.com/ymcui/Chinese-LLaMA-Alpaca-2
-          https://huggingface.co/ziqingyang/chinese-alpaca-2-7b
-"""
-register_template(
-    name="llama2_zh",
-    prefix=["<<SYS>>\n{{system}}\n<</SYS>>\n\n"],
-    prompt=["[INST] {{query}} [/INST] "],
-    system="You are a helpful assistant. 你是一个乐于助人的助手。",
     sep=[],
 )
 
@@ -94,206 +195,5 @@ register_template(
 )
 
 
-r"""
-Supports: https://huggingface.co/BelleGroup/BELLE-LLaMA-EXT-13B
-"""
-register_template(
-    name="belle",
-    prefix=["{{system}}"],
-    prompt=["Human: {{query}}\n\nBelle: "],
-    system="",
-    sep=["\n\n"],
-)
-
-
-r"""
-Supports: https://github.com/CVI-SZU/Linly
-"""
-register_template(
-    name="linly",
-    prefix=["{{system}}"],
-    prompt=["User: {{query}}\nBot: "],
-    system="",
-    sep=["\n"],
-)
-
-
-r"""
-Supports: https://github.com/Neutralzz/BiLLa
-"""
-register_template(
-    name="billa",
-    prefix=["{{system}}"],
-    prompt=["Human: {{query}}\nAssistant: "],
-    system="",
-    sep=["\n"],
-)
-
-
-r"""
-Supports: https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1
-"""
-register_template(
-    name="ziya",
-    prefix=["{{system}}"],
-    prompt=[{"token": "<human>"}, ":{{query}}\n", {"token": "<bot>"}, ":"],
-    system="",
-    sep=["\n"],
-)
-
-
-r"""
-Supports: https://huggingface.co/qhduan/aquilachat-7b
-"""
-register_template(
-    name="aquila",
-    prefix=["{{system}}"],
-    prompt=["Human: {{query}}###Assistant: "],
-    system=(
-        "A chat between a curious human and an artificial intelligence assistant. "
-        "The assistant gives helpful, detailed, and polite answers to the human's questions."
-    ),
-    sep=["###"],
-)
-
-
-r"""
-Supports: https://huggingface.co/internlm/internlm-chat-7b
-"""
-register_template(
-    name="intern",
-    prefix=["{{system}}"],
-    prompt=["<|User|>:{{query}}", {"token": "<eoh>"}, "\n<|Bot|>:"],
-    system="",
-    sep=["\n"],
-    stop_words=["</s>", "<eoa>"],  # internlm cannot replace eos token
-)
-
-
-r"""
-Supports: https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
-Used for training and inference of the fine-tuned models.
-"""
-register_template(
-    name="baichuan",
-    prefix=["{{system}}"],
-    prompt=[
-        {"token": "<reserved_102>"},  # user token
-        "{{query}}",
-        {"token": "<reserved_103>"},  # assistant token
-    ],
-    system="",
-    sep=[],
-    stop_words=[],
-)
-
-
-r"""
-Supports: https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
-Used for inference of the original model.
-"""
-register_template(
-    name="baichuan_eval",
-    prefix=["{{system}}", {"token": "<reserved_102>"}],  # user token
-    prompt=["{{query}}", {"token": "<reserved_103>"}],  # assistant token
-    system="",
-    sep=[],
-    stop_words=["<reserved_102>"],  # user token
-)
-
-r"""
-Supports: https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat
-          https://huggingface.co/baichuan-inc/Baichuan2-13B-Chat
-Used for training and inference of the fine-tuned models.
-"""
-register_template(
-    name="baichuan2",
-    prefix=["{{system}}"],
-    prompt=[
-        {"token": "<reserved_106>"},  # user token
-        "{{query}}",
-        {"token": "<reserved_107>"},  # assistant token
-    ],
-    system="",
-    sep=[],
-)
-
-
-r"""
-Supports: https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat
-          https://huggingface.co/baichuan-inc/Baichuan2-13B-Chat
-Used for inference of the original model.
-"""
-register_template(
-    name="baichuan2_eval",
-    prefix=["{{system}}", {"token": "<reserved_106>"}],  # user token
-    prompt=["{{query}}", {"token": "<reserved_107>"}],  # assistant token
-    system="",
-    sep=[],
-    stop_words=["<reserved_106>"],  # user token
-)
-
-
-r"""
-Supports: https://huggingface.co/HuggingFaceH4/starchat-alpha
-          https://huggingface.co/HuggingFaceH4/starchat-beta
-
-"""
-register_template(
-    name="starchat",
-    prefix=[{"token": "<|system|>"}, "\n{{system}}", {"token": "<|end|>"}],
-    prompt=[
-        {"token": "<|user|>"},
-        "\n{{query}}",
-        {"token": "<|end|>"},
-        "\n",
-        {"token": "<|assistant|>"},
-    ],
-    system="",
-    sep=["\n"],
-    stop_words=["<|end|>"],
-)
-
-
-r"""
-Supports: https://huggingface.co/Qwen/Qwen-7B-Chat
-"""
-register_template(
-    name="chatml",
-    prefix=[{"token": "<|im_start|>"}, "system\n{{system}}", {"token": "<|im_end|>"}],
-    prompt=[
-        {"token": "<|im_start|>"},
-        "user\n{{query}}",
-        {"token": "<|im_end|>"},
-        "\n",
-        {"token": "<|im_start|>"},
-        "assistant\n",
-    ],
-    system="You are a helpful assistant.",
-    sep=["\n"],
-    stop_words=["<|im_end|>"],
-)
-
-
-r"""
-Supports: https://huggingface.co/THUDM/chatglm2-6b
-"""
-register_template(
-    name="chatglm2",
-    prefix=[{"token": "[gMASK]"}, {"token": "sop"}, "{{system}}"],
-    prompt=["[Round {{idx}}]\n\n问：{{query}}\n\n答："],
-    system="",
-    sep=["\n\n"],
-)
-
-
-r"""
-Supports: https://huggingface.co/xverse/XVERSE-13B-Chat
-"""
-register_template(
-    name="xverse",
-    prefix=["{{system}}"],
-    prompt=["Human: {{query}}\n\nAssistant: "],
-    system="",
-    sep=[],
-)
+if __name__ == "__main__":
+    print(get_template("llama2"))

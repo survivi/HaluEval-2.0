@@ -290,6 +290,18 @@ class Chatbot(Bot):
         ans = "\n".join([_ for _ in ans if _])
         return ans
 
+    def get_template(self, query, chat_model):
+        """
+        Get prompt template for query.
+        """
+        if chat_model.startswith("llama-2") and "chat" in chat_model:
+            query = f"[INST] <<SYS>>\nYou are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n<</SYS>>\n\n{query} [/INST]"
+        if chat_model.startswith("alpaca"):
+            query = f"Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{query}\n\n### Response:\n"
+        if chat_model.startswith("vicuna"):
+            query = f"A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions.\n\nUSER: {query}\nASSISTANT:"
+        return query
+
     def generate_response(self, query_lst, **kwargs):
         """
         Generate response for query list.
@@ -307,6 +319,7 @@ class Chatbot(Bot):
             if (len(self.save_data) + 1) % self.frequency == 0:
                 self.save()
             query = query_lst[i]["user_query"]
+            query = self.get_template(query, self.model)
             ans = complete_func(query, self.model, **kwargs)
             ans = self.post_process(ans, query)
             query_lst[i][self.model + "_response"] = ans
