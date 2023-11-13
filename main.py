@@ -7,6 +7,7 @@ import argparse
 from tqdm import tqdm
 import json
 import time
+from func_timeout import func_set_timeout
 from transformers import (
     AutoTokenizer,
     AutoModelForCausalLM,
@@ -151,6 +152,7 @@ class Chatbot(Bot):
         data = json.loads(response.text)
         return data["data"]["tenant_access_token"]
 
+    @func_set_timeout(10)
     def chatgpt_hi_request(
         self,
         message,
@@ -188,17 +190,17 @@ class Chatbot(Bot):
 
     def gpt_4_complete(self, query):
         input = query["input"]
-        count = 0
+        coun = 0
         while True:
-            if count > 20:
+            if coun > 20:
                 res = "NO FACTS"
                 break
             try:
                 res = self.chatgpt_hi_request(input)
                 break
-            except Exception as e:
-                print("Exception: %s\nRetrying..." % e)
-                count += 1
+            except Exception:
+                print("Exception, retrying...", end="")
+                coun += 1
         query["llm_output"] = res
         return query
 

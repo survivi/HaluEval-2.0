@@ -6,6 +6,7 @@ import requests
 import multiprocessing
 from tqdm import tqdm
 from main import check_exist
+from func_timeout import func_set_timeout
 
 
 def get_access_token():
@@ -22,6 +23,7 @@ def get_access_token():
     return data["data"]["tenant_access_token"]
 
 
+@func_set_timeout(10)
 def chatgpt_hi_request(
     message,
     # sys_msg="You are good at Text-to-SQL",
@@ -59,19 +61,36 @@ def chatgpt_hi_request(
     return data["data"]["choices"][0]["message"]["content"]
 
 
-def gpt_4_complete(query):
+def gpt_4_complete_hallu(query):
     input = query["input"]
-    count = 0
+    coun = 0
     while True:
-        if count > 20:
+        if coun > 20:
             res = "NO"
             break
         try:
             res = chatgpt_hi_request(input)
             break
-        except Exception as e:
-            print("Exception: %s\nRetrying..." % e)
-            count += 1
+        except Exception:
+            print(f"({coun}): Exception, retrying...", end="")
+            coun += 1
+    query["llm_output"] = res
+    return query
+
+
+def gpt_4_complete_correct(query):
+    input = query["input"]
+    coun = 0
+    while True:
+        if coun > 20:
+            res = ""
+            break
+        try:
+            res = chatgpt_hi_request(input)
+            break
+        except Exception:
+            print(f"({coun}): Exception, retrying...", end="")
+            coun += 1
     query["llm_output"] = res
     return query
 
@@ -138,7 +157,7 @@ if __name__ == "__main__":
             data[i]["input"] = prompts[i]
         res_lst = []
         with multiprocessing.Pool(num_process) as p:
-            results = p.imap_unordered(gpt_4_complete, data, chunksize=chunk_size)
+            results = p.imap_unordered(gpt_4_complete_hallu, data, chunksize=chunk_size)
             for res in tqdm(results, total=len(data)):
                 res_lst.append(
                     {
@@ -151,10 +170,14 @@ if __name__ == "__main__":
                 )
             res_lst = sorted(res_lst, key=lambda x: x["id"])
         filtered_res_lst = [i for i in res_lst if "NO" not in i["hallucination"]]
+
+        print("End filtering, start correcting...")
         count = 0
         while count < 5:
             if len(filtered_res_lst) == 0:
                 break
+
+            print(f"Round {count}: start correcting...")
             prompts = [
                 correct_prompt.format(
                     query=filtered_res_lst[i]["user_query"],
@@ -168,7 +191,7 @@ if __name__ == "__main__":
             res_lst = []
             with multiprocessing.Pool(num_process) as p:
                 results = p.imap_unordered(
-                    gpt_4_complete, filtered_res_lst, chunksize=chunk_size
+                    gpt_4_complete_correct, filtered_res_lst, chunksize=chunk_size
                 )
                 for res in tqdm(results, total=len(filtered_res_lst)):
                     res_lst.append(
@@ -180,6 +203,12 @@ if __name__ == "__main__":
                         }
                     )
                 res_lst = sorted(res_lst, key=lambda x: x["id"])
+            res_lst = [i for i in res_lst if i["corrected_response"]]
+            if len(res_lst) == 0:
+                filtered_res_lst = []
+                break
+
+            print(f"Round {count}: end correcting, start generating...")
             prompts = [
                 hallu_prompt.format(
                     query=res_lst[i]["user_query"],
@@ -192,7 +221,7 @@ if __name__ == "__main__":
             check_lst = []
             with multiprocessing.Pool(num_process) as p:
                 results = p.imap_unordered(
-                    gpt_4_complete, res_lst, chunksize=chunk_size
+                    gpt_4_complete_hallu, res_lst, chunksize=chunk_size
                 )
                 for res in tqdm(results, total=len(res_lst)):
                     check_lst.append(
@@ -205,6 +234,8 @@ if __name__ == "__main__":
                         }
                     )
                 check_lst = sorted(check_lst, key=lambda x: x["id"])
+
+            print(f"Round {count}: end generating, saving...")
             save_lst = [
                 {
                     "id": i["id"],
@@ -218,6 +249,7 @@ if __name__ == "__main__":
             save_data.extend(save_lst)
             filtered_res_lst = [i for i in check_lst if "NO" not in i["hallucination"]]
             count += 1
+
         if len(filtered_res_lst) != 0:
             save_lst = [
                 {
@@ -229,6 +261,8 @@ if __name__ == "__main__":
                 for i in filtered_res_lst
             ]
             save_data.extend(save_lst)
+
+        print("Saving...")
         save_data = sorted(save_data, key=lambda x: x["id"])
         save_path = os.path.join(save_dir, file + ".json")
         with open(save_path, "w", encoding="utf-8") as f:
