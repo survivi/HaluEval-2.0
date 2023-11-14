@@ -1,22 +1,5 @@
-python judge.py --all-files --model alpaca-7b --data-dir "./add_fact/alpaca-7b/" --save-dir "./add_judge/alpaca-7b/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf/" --save-dir "./add_judge/llama-2-7b-chat-hf/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf_beam/" --save-dir "./add_judge/llama-2-7b-chat-hf_beam/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf_top-k/" --save-dir "./add_judge/llama-2-7b-chat-hf_top-k/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf_top-p/" --save-dir "./add_judge/llama-2-7b-chat-hf_top-p/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf_top-p_2/" --save-dir "./add_judge/llama-2-7b-chat-hf_top-p_2/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf_top-p_4/" --save-dir "./add_judge/llama-2-7b-chat-hf_top-p_4/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf_top-p_6/" --save-dir "./add_judge/llama-2-7b-chat-hf_top-p_6/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf_top-p_8/" --save-dir "./add_judge/llama-2-7b-chat-hf_top-p_8/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./add_fact/llama-2-7b-chat-hf_top-p_10/" --save-dir "./add_judge/llama-2-7b-chat-hf_top-p_10/"
-python judge.py --all-files --model llama-2-13b-chat-hf --data-dir "./add_fact/llama-2-13b-chat-hf/" --save-dir "./add_judge/llama-2-13b-chat-hf/"
-python judge.py --all-files --model text-davinci-002 --data-dir "./add_fact/text-davinci-002/" --save-dir "./add_judge/text-davinci-002/"
-python judge.py --all-files --model text-davinci-003 --data-dir "./add_fact/text-davinci-003/" --save-dir "./add_judge/text-davinci-003/"
-python judge.py --all-files --model vicuna-7b --data-dir "./add_fact/vicuna-7b/" --save-dir "./add_judge/vicuna-7b/"
-python judge.py --all-files --model vicuna-13b --data-dir "./add_fact/vicuna-13b/" --save-dir "./add_judge/vicuna-13b/"
-python judge.py --all-files --model claude-1 --data-dir "./fact/claude-1/" --save-dir "./judge/claude-1/"
-python judge.py --all-files --model claude-2 --data-dir "./fact/claude-2/" --save-dir "./judge/claude-2/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./fact/llama-2-7b-chat-hf_INT4/" --save-dir "./judge/llama-2-7b-chat-hf_INT4/"
-python judge.py --all-files --model llama-2-7b-chat-hf --data-dir "./fact/llama-2-7b-chat-hf_INT8/" --save-dir "./judge/llama-2-7b-chat-hf_INT8/"
-python judge.py --all-files --model llama-2-13b-chat-hf --data-dir "./fact/llama-2-13b-chat-hf_INT4/" --save-dir "./judge/llama-2-13b-chat-hf_INT4/"
-python judge.py --all-files --model llama-2-13b-chat-hf --data-dir "./fact/llama-2-13b-chat-hf_INT8/" --save-dir "./judge/llama-2-13b-chat-hf_INT8/"
-python judge.py --all-files --model llama-7b --data-dir "./fact/llama-7b/" --save-dir "./judge/llama-7b/"
+for file in Bio-Medical Finance Science Education Open-Domain
+do
+    nohup python -u judge.py --file $file --model claude-1 --data-dir "./fact/claude-1/" --save-dir "./judge/claude-1/" > output.log 2>&1 &
+    # python judge.py --file $file --model claude-2 --data-dir "./fact/claude-2/" --save-dir "./judge/claude-2/"
+done

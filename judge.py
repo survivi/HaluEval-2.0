@@ -1,6 +1,6 @@
 # coding: utf-8
 import os
-import multiprocessing
+import time
 from tqdm import tqdm
 from main import Chatbot, Parser, check_exist
 
@@ -25,6 +25,9 @@ class Judgebot(Chatbot):
         fact_lst = [f"{i+1}. {fact}" for i, fact in enumerate(facts)]
         fact_str = "\n".join(fact_lst)
         query = prompt.format(facts=fact_str)
+
+        return query
+
         ret = 0
         while True:
             ret += 1
@@ -70,43 +73,27 @@ class Judgebot(Chatbot):
             return
         with open(prompt_path, "r", encoding="utf-8") as f:
             prompt = f.read()
+
         if self.assist_model == "gpt-4":
-            facts_lst = [data[i][self.model + "_fact"] for i in range(len(data))]
-            facts_lst = [
-                "\n".join([f"{i+1}. {fact}" for i, fact in enumerate(facts)])
-                for facts in facts_lst
-            ]
-            prompts = [prompt.format(facts=facts_lst[i]) for i in range(len(facts_lst))]
-            for i in range(len(data)):
-                data[i]["input"] = prompts[i]
-            num_process = 145
-            chunk_size = 1
-            with multiprocessing.Pool(num_process) as p:
-                results = p.imap_unordered(
-                    self.gpt_4_complete, data, chunksize=chunk_size
-                )
-                temp = []
-                for res in tqdm(results, total=len(data)):
-                    temp.append(
-                        {
-                            "id": res["id"],
-                            "user_query": res["user_query"],
-                            self.model + "_response": res[self.model + "_response"],
-                            self.model + "_fact": res[self.model + "_fact"],
-                            self.model + "_judge": res["llm_output"],
-                        }
-                    )
-                temp = sorted(temp, key=lambda x: x["id"])
-                self.save_data = temp
+            complete_func = self.gpt_4_complete
         else:
-            raise ValueError("Not using GPT-4 as assist model")
-            for i in tqdm(range(len(data)), ncols=100):
-                if (len(self.save_data) + 1) % self.frequency == 0:
-                    self.save()
-                facts = data[i][self.model + "_fact"]
-                judge_lst = self.get_judge_lst(facts, prompt, **kwargs)
-                data[i][self.model + "_judge"] = judge_lst
-                self.save_data.append(data[i])
+            complete_func = self.openai_complete
+
+        for i in tqdm(range(len(data)), ncols=100):
+            if (len(self.save_data) + 1) % self.frequency == 0:
+                self.save()
+            facts = data[i][self.model + "_fact"]
+            # judge_lst = self.get_judge_lst(facts, prompt, **kwargs)
+
+            query = self.get_judge_lst(facts, prompt)
+            # judge_lst = complete_func(query, self.assist_model, **kwargs)
+
+            judge_lst = "test"
+
+            data[i][self.model + "_judge"] = judge_lst
+            self.save_data.append(data[i])
+
+        time.sleep(5)
 
 
 if __name__ == "__main__":
@@ -115,7 +102,9 @@ if __name__ == "__main__":
     args_parser.judge_args()
     args_parser.parse_args()
     args_parser.transform_args()
-    args_parser.print_args()
+
+    # args_parser.print_args()
+
     args = args_parser.args
     if args.all_files:
         files = args_parser.file_list
@@ -126,9 +115,8 @@ if __name__ == "__main__":
         save_path = os.path.join(args.save_dir, f"{file}.json")
         check_exist(args.save_dir)
         with Judgebot(data_path, save_path, args.model, args.assist_model) as jubot:
-            jubot.load_exist_data()
             data = jubot.load_data(part=0)
-            data = data[len(jubot.save_data) :]
+            data = jubot.load_exist_data(data)
             jubot.generate_judge(
                 data,
                 args.prompt_path,

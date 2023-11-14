@@ -7,6 +7,7 @@ import argparse
 from tqdm import tqdm
 import json
 import time
+import func_timeout
 from func_timeout import func_set_timeout
 from transformers import (
     AutoTokenizer,
@@ -130,7 +131,7 @@ class Chatbot(Bot):
         with open(self.save_path, "w", encoding="utf-8") as f:
             json.dump(self.save_data, f, indent=2, ensure_ascii=False)
 
-    def load_exist_data(self):
+    def load_exist_data(self, data):
         """
         Load exist data from save path.
         """
@@ -138,7 +139,11 @@ class Chatbot(Bot):
             print(f"Loading exist data from {self.save_path}")
             with open(self.save_path, "r", encoding="utf-8") as f:
                 self.save_data = json.load(f)
+        ids = [i["id"] for i in self.save_data]
+        data = [i for i in data if i["id"] not in ids]
+        return data
 
+    @func_set_timeout(10)
     def get_access_token(self):
         url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
         payload = json.dumps(
@@ -186,23 +191,28 @@ class Chatbot(Bot):
         )
         response = requests.request("POST", url, headers=headers, data=payload)
         data = json.loads(response.text)
+        # if data['code'] != 0:
+        #     print(data)
         return data["data"]["choices"][0]["message"]["content"]
 
-    def gpt_4_complete(self, query):
-        input = query["input"]
+    def gpt_4_complete(self, query, chat_model, **kwargs):
         coun = 0
         while True:
-            if coun > 20:
+            if coun > 10:
                 res = "NO FACTS"
                 break
             try:
-                res = self.chatgpt_hi_request(input)
+                res = self.chatgpt_hi_request(query)
+                break
+            except func_timeout.exceptions.FunctionTimedOut:
+                res = "NO FACTS"
                 break
             except Exception:
-                print("Exception, retrying...", end="")
+                # print("Exception, retrying...", end="")
                 coun += 1
-        query["llm_output"] = res
-        return query
+        if res is None:
+            res = "NO FACTS"
+        return res
 
     def openai_complete(self, query, chat_model, **kwargs):
         """
@@ -551,9 +561,8 @@ if __name__ == "__main__":
         with Chatbot(data_path, save_path, args.model) as chatbot:
             chatbot.tokenizer = bot.tokenizer
             chatbot.llm = bot.llm
-            chatbot.load_exist_data()
             data = chatbot.load_data(part=0)
-            data = data[len(chatbot.save_data) :]
+            data = chatbot.load_exist_data(data)
             chatbot.generate_response(
                 data,
                 early_stopping=args.early_stopping,

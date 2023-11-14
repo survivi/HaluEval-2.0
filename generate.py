@@ -1,6 +1,5 @@
 # coding: utf-8
 import os
-import multiprocessing
 from tqdm import tqdm
 from main import Chatbot, Parser, check_exist
 
@@ -39,57 +38,25 @@ class Factbot(Chatbot):
             return
         with open(prompt_path, "r", encoding="utf-8") as f:
             prompt = f.read()
+
         if self.assist_model == "gpt-4":
-            user_query_lst = [data[i]["user_query"] for i in range(len(data))]
-            response_lst = [data[i][self.model + "_response"] for i in range(len(data))]
-            prompts = [
-                prompt.format(query=user_query_lst[i], answer=response_lst[i])
-                for i in range(len(data))
-            ]
-            for i in range(len(data)):
-                data[i]["input"] = prompts[i]
-            num_process = 145
-            chunk_size = 1
-            with multiprocessing.Pool(num_process) as p:
-                results = p.imap_unordered(
-                    self.gpt_4_complete, data, chunksize=chunk_size
-                )
-                temp = []
-                for res in tqdm(results, total=len(data)):
-                    ans = res["llm_output"]
-                    if "NO FACTS" in ans:
-                        facts = []
-                    else:
-                        try:
-                            ans_cut = ans.split("\n")[1:]
-                            facts = [fact[2:].strip() for fact in ans_cut]
-                        except Exception as e:
-                            print("Error: " + str(e))
-                            print("Facts: " + ans)
-                            facts = []
-                    temp.append(
-                        {
-                            "id": res["id"],
-                            "user_query": res["user_query"],
-                            self.model + "_response": res[self.model + "_response"],
-                            self.model + "_fact": facts,
-                        }
-                    )
-                temp = sorted(temp, key=lambda x: x["id"])
-                self.save_data = temp
+            complete_func = self.gpt_4_complete
         else:
-            raise ValueError("Not using GPT-4 as assist model")
-            for i in tqdm(range(len(data)), ncols=100):
-                if (len(self.save_data) + 1) % self.frequency == 0:
-                    self.save()
-                user_query = data[i]["user_query"]
-                response = data[i][self.model + "_response"]
-                query = prompt.format(query=user_query, answer=response)
-                ans = self.openai_complete(query, self.assist_model, **kwargs)
-                ans = self.post_process(ans, query)
-                facts = self.get_facts_lst(ans)
-                data[i][self.model + "_fact"] = facts
-                self.save_data.append(data[i])
+            complete_func = self.openai_complete
+
+        for i in tqdm(range(len(data)), ncols=100):
+            if (len(self.save_data) + 1) % self.frequency == 0:
+                self.save()
+            user_query = data[i]["user_query"]
+            response = data[i][self.model + "_response"]
+            query = prompt.format(query=user_query, answer=response)
+
+            ans = complete_func(query, self.assist_model, **kwargs)
+
+            ans = self.post_process(ans, query)
+            facts = self.get_facts_lst(ans)
+            data[i][self.model + "_fact"] = facts
+            self.save_data.append(data[i])
 
 
 if __name__ == "__main__":
@@ -109,9 +76,8 @@ if __name__ == "__main__":
         save_path = os.path.join(args.save_dir, f"{file}.json")
         check_exist(args.save_dir)
         with Factbot(data_path, save_path, args.model, args.assist_model) as factbot:
-            factbot.load_exist_data()
             data = factbot.load_data(part=0)
-            data = data[len(factbot.save_data) :]
+            data = factbot.load_exist_data(data)
             factbot.generate_facts(
                 data,
                 args.prompt_path,
