@@ -85,17 +85,17 @@ class Bot(object):
                     load_in_8bit=True,
                 )
             else:
-                self.llm = AutoModelForCausalLM.from_pretrained(
-                    model_path,
-                    low_cpu_mem_usage=True,
-                    device_map="auto",
-                    torch_dtype=torch.float16,
-                )
                 # self.llm = AutoModelForCausalLM.from_pretrained(
                 #     model_path,
                 #     low_cpu_mem_usage=True,
+                #     device_map="auto",
                 #     torch_dtype=torch.float16,
-                # ).cuda()
+                # )
+                self.llm = AutoModelForCausalLM.from_pretrained(
+                    model_path,
+                    low_cpu_mem_usage=True,
+                    torch_dtype=torch.float16,
+                ).cuda()
             print(f"Loading model time: {time.time() - begin_time:.2f}s")
 
 
