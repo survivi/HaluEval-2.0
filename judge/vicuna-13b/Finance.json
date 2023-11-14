@@ -794,9 +794,21 @@
   {
     "id": 171,
     "user_query": "Sage Instant Accounts or Quickbooks?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "Both Sage Instant Accounts and QuickBooks are accounting software programs designed for small businesses. Both programs offer a range of features, including invoicing, expense tracking, and financial reporting.\nSage Instant Accounts is a cloud-based accounting software that offers real-time access to financial information, automated invoicing, and bill payment. It is designed for small businesses with simple accounting needs.\nQuickBooks, on the other hand, is a more comprehensive accounting software that offers a wide range of features, including inventory management, time tracking, and payroll. It is suitable for small businesses with more complex accounting needs.\nUltimately, the choice between Sage Instant Accounts and QuickBooks will depend on the specific needs of your business. If you have simple accounting needs and are looking for a cost-effective solution, Sage Instant Accounts may be a good choice. If you have more complex accounting needs or prefer a more comprehensive solution, QuickBooks may be a better option.",
+    "vicuna-13b_fact": [
+      "Sage Instant Accounts and QuickBooks are both accounting software programs designed for small businesses.",
+      "Sage Instant Accounts is a cloud-based accounting software that offers features such as real-time access to financial information, automated invoicing, and bill payment.",
+      "Sage Instant Accounts is designed for small businesses with simple accounting needs.",
+      "QuickBooks is an accounting software that offers a wide range of features including inventory management, time tracking, and payroll.",
+      "QuickBooks is suitable for small businesses with more complex accounting needs."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "unknown",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 176,
@@ -8305,9 +8317,21 @@
   {
     "id": 1997,
     "user_query": "Is Cost of Living overstated?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "It is possible that the cost of living in a particular location is overstated if the estimate is based on inaccurate or outdated information. Factors that can contribute to an overstatement of the cost of living include rising prices, changes in tax rates or government policies, and differences in the availability and cost of goods and services.\nTo get an accurate estimate of the cost of living, it is important to use up-to-date and reliable data sources. This may involve using a cost of living calculator that takes into account a range of factors, such as housing costs, transportation expenses, food prices, and health care expenses. It may also involve comparing the cost of living in different locations and adjusting for differences in taxes, inflation, and other factors.\nIn general, it is important to be aware that the cost of living can vary significantly from one location to another, and it is important to carefully consider all relevant factors when making decisions about where to live or travel.",
+    "vicuna-13b_fact": [
+      "The cost of living can be overstated if the estimate is based on inaccurate or outdated information.",
+      "Factors that can contribute to an overstatement of the cost of living include rising prices, changes in tax rates or government policies, and differences in the availability and cost of goods and services.",
+      "To get an accurate estimate of the cost of living, it is important to use up-to-date and reliable data sources.",
+      "Factors considered in calculating cost of living can include housing costs, transportation expenses, food prices, and health care expenses.",
+      "The cost of living can vary significantly from one location to another."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 1998,
@@ -8526,7 +8550,7 @@
   {
     "id": 2048,
     "user_query": "Is it worth it to re-finance my car loan?",
-    "vicuna-13b_response": "",
+    "vicuna-13b_response": "It's possible that refinancing your car loan could be a good option for you, depending on your specific circumstances. Refinancing can potentially lower your monthly payments, reduce the length of your loan, or allow you to access additional funds. However, it's important to carefully consider the costs and benefits of refinancing before making a decision. Some factors to consider include the terms of the new loan, your credit score, the value of your vehicle, and any fees or penalties associated with the refinancing process. It may be helpful to speak with a financial advisor or to compare rates from multiple lenders to determine whether refinancing is a good option for you.",
     "vicuna-13b_fact": [],
     "vicuna-13b_judge": []
   },
@@ -8720,9 +8744,21 @@
   {
     "id": 2097,
     "user_query": "Is it a good idea to teach children that work is linearly related to income?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "It is generally not a good idea to teach children that work is linearly related to income. While there is some correlation between the amount of work a person does and their income, the relationship is often more complex and nuanced than a simple linear relationship.\nFor example, there may be factors such as experience, education, and job demand that can influence a person's income more than the amount of work they do. Additionally, some jobs may offer flexible schedules or the option to work remotely, which can allow a person to earn a good income without putting in long hours at the office.\nIt is important for children to understand that success in life is often the result of hard work and dedication, but it is also important for them to understand that there are many different paths to success and that the relationship between work and income is not always straightforward.",
+    "vicuna-13b_fact": [
+      "The relationship between the amount of work a person does and their income is not always linear.",
+      "Experience, education, and job demand can influence a person's income.",
+      "Some jobs offer flexible schedules or the option to work remotely.",
+      "Hard work and dedication often contribute to success in life.",
+      "There are many different paths to success."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 2100,
@@ -9189,7 +9225,7 @@
   {
     "id": 2197,
     "user_query": "Pay bill now or later?",
-    "vicuna-13b_response": "",
+    "vicuna-13b_response": "It depends on your personal financial situation and your priorities. If you have the money available and want to avoid late fees, it may be a good idea to pay your bills as soon as possible. On the other hand, if you are trying to manage your finances and prioritize other expenses, you may choose to pay your bills later. It's important to weigh the pros and cons of each option and make a decision that works best for you.",
     "vicuna-13b_fact": [],
     "vicuna-13b_judge": []
   },
@@ -9765,9 +9801,21 @@
   {
     "id": 2322,
     "user_query": "Where to find CSV or JSON data for publicly traded companies listed with their IPO date?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "There are several sources where you can find CSV or JSON data for publicly traded companies listed with their IPO date. Here are a few options:\n1. Yahoo Finance: Yahoo Finance provides historical data for stocks, including CSV and JSON files. You can access the data by going to the Yahoo Finance website and searching for the ticker symbol of the company you are interested in. Once you have the ticker symbol, you can click on the \"Historical Data\" tab and select the desired date range. The data is available in CSV and JSON format.\n2. Quandl: Quandl is a financial data platform that provides access to a wide range of financial data, including CSV and JSON files for stocks. You can search for the ticker symbol of the company you are interested in and download the data in CSV or JSON format.\n3. Alpha Vantage: Alpha Vantage is a financial data provider that offers API access to real-time and historical data for stocks. They also provide CSV and JSON files for stocks. You can search for the ticker symbol of the company you are interested in and download the data in CSV or JSON format.\n4. FRED: The Federal Reserve Economic Data (FRED) provides access to a wide range of economic data, including data on stocks. They have a section called \"Stock Prices\" that provides historical data for stocks, including CSV and JSON files. You can search for the ticker symbol of the company you are interested in and download the data in CSV or JSON format.\nThese are just a few examples of the many sources where you can find CSV or JSON data for publicly traded companies listed with their IPO date.",
+    "vicuna-13b_fact": [
+      "Yahoo Finance provides CSV and JSON data for publicly traded companies.",
+      "Quandl is a financial data platform that offers access to financial data, including CSV and JSON files for stocks.",
+      "Alpha Vantage provides API access to real-time and historical data for stocks, as well as CSV and JSON files.",
+      "The Federal Reserve Economic Data (FRED) provides access to economic data, including data on stocks and CSV and JSON files.",
+      "These mentioned platforms can be used to find data for publicly traded companies listed with their IPO date."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "unknown"
+    ]
   },
   {
     "id": 2323,
@@ -10393,9 +10441,21 @@
   {
     "id": 2438,
     "user_query": "Is it worth it to reconcile my checking/savings accounts every month?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "Reconciling your checking and savings accounts every month can be a good idea for several reasons. Here are some benefits of reconciling your accounts:\n1. Keep track of your spending: Reconciling your accounts can help you keep track of your spending and identify areas where you may be overspending.\n2. Catch errors: Reconciling your accounts can help you catch errors in your transactions, such as incorrect transactions or unauthorized charges.\n3. Avoid overdraft fees: Reconciling your accounts can help you avoid overdraft fees by ensuring that you have enough funds available to cover your transactions.\n4. Stay on top of your finances: Reconciling your accounts can help you stay on top of your finances and make sure that your accounts are accurate and up-to-date.\nOverall, reconciling your checking and savings accounts every month can be a good way to keep track of your spending and ensure that your accounts are accurate and up-to-date. It's a simple step that can help you avoid errors and stay on top of your finances.",
+    "vicuna-13b_fact": [
+      "Reconciling bank accounts every month can help keep track of spending.",
+      "Regular reconciliation of bank accounts can help identify errors in transactions.",
+      "By reconciling accounts, one can potentially avoid overdraft fees by ensuring enough funds are available.",
+      "Reconciliation aids in staying on top of finances and ensuring accounts are accurate and up-to-date.",
+      "Regular reconciliation of checking and savings accounts could prevent errors and assist in financial management."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 2441,
@@ -11408,9 +11468,21 @@
   {
     "id": 2693,
     "user_query": "Is it ever a good idea to close credit cards?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "It is generally not a good idea to close a credit card that you have had for a long time and have been using responsibly, as it can negatively impact your credit score. Closing a credit card can reduce your overall credit limit, which can increase your credit utilization ratio (the amount of credit you are using compared to the total amount available to you), and can also shorten the length of your credit history, which is a factor in credit scoring models.\nHowever, there may be situations where it makes sense to close a credit card. For example, if you no longer need the card and it has an annual fee, it may be a good idea to close it to avoid paying the fee. Additionally, if you have a card with a high interest rate or fees that you don't think you'll be able to pay off, it may be a good idea to close it to avoid accruing more debt.\nIt's important to weigh the potential benefits and drawbacks of closing a credit card, and to consider how it may impact your credit score before making a decision. If you do decide to close a credit card, it's a good idea to make sure you have other sources of credit available, as closing a card can also impact your credit utilization ratio.",
+    "vicuna-13b_fact": [
+      "Closing a credit card that has been used responsibly for a long time can negatively impact your credit score.",
+      "Closing a credit card reduces the overall credit limit, potentially increasing the credit utilization ratio.",
+      "The length of credit history plays a role in credit scoring models, and closing a card can shorten that history.",
+      "Annual fees might be a reason to close a credit card if the card is no longer needed.",
+      "High interest rates or fees might be a reason to close a credit card to avoid accruing additional debt."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 2702,
@@ -12291,9 +12363,21 @@
   {
     "id": 2895,
     "user_query": "ETFs mirroring consistently outperforming companies?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "It is not uncommon for exchange-traded funds (ETFs) to outperform the stocks of individual companies, especially over short periods of time. This is because ETFs provide investors with a diversified portfolio of stocks, bonds, or other securities that track a specific index or sector, whereas individual stocks are focused on the performance of a single company.\nWhen comparing the performance of an ETF to the performance of a single company, it is important to consider the specific goals and investment strategies of the ETF and the company. For example, an ETF may be focused on tracking the performance of a specific index, such as the S&P 500, while a company may have a specific business model or industry focus.\nIt is also important to consider the risks associated with investing in ETFs and individual stocks. ETFs are generally considered to be less risky than individual stocks, as they provide diversification across multiple securities and industries. However, ETFs can still be affected by market volatility and other factors that may impact the performance of individual stocks.\nIn conclusion, while it is possible for ETFs to outperform the stocks of individual companies, it is important to consider the specific goals and investment strategies of the ETF and the company, as well as the risks associated with each type of investment.",
+    "vicuna-13b_fact": [
+      "Exchange-traded funds (ETFs) provide investors with a diversified portfolio of stocks, bonds, or other securities.",
+      "ETFs can track a specific index or sector.",
+      "Individual stocks focus on the performance of a single company.",
+      "ETFs are generally considered to be less risky than individual stocks due to their diversification.",
+      "ETFs can still be affected by market volatility and other factors impacting the performance of individual stocks."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 2899,
@@ -14465,9 +14549,21 @@
   {
     "id": 3321,
     "user_query": "A University student wondering if investing in stocks is a good idea?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "Investing in stocks can be a good idea for a university student, but it's important to approach it with caution and do your research. Stocks can be a good way to invest in the growth of a company and potentially earn a return on your investment, but they also come with risks. It's important to understand the basics of how the stock market works, the different types of stocks available, and to only invest what you can afford to lose. It's also a good idea to diversify your portfolio by investing in a mix of stocks, bonds, and other assets to minimize risk.",
+    "vicuna-13b_fact": [
+      "Investing in stocks involves investing in the growth of a company and potentially earning a return.",
+      "Stock investment comes with certain risks.",
+      "Understanding the basics of how the stock market works and the different types of stocks available is crucial to investing.",
+      "Investors should only invest what they can afford to lose in stocks.",
+      "Diversifying one's portfolio by investing in a mix of stocks, bonds, and other assets can help to minimize investment risk."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 3325,
@@ -14912,9 +15008,21 @@
   {
     "id": 3400,
     "user_query": "Is the financial advice my elderly relative received legal/ethical?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "It is difficult to determine whether the financial advice your elderly relative received is legal and ethical without more information. Financial advisors are required to follow certain rules and regulations, such as those set forth by the Securities and Exchange Commission (SEC) and the Financial Industry Regulatory Authority (FINRA). Additionally, financial advisors are bound by a fiduciary duty to act in the best interests of their clients.\nIf your elderly relative received financial advice that resulted in financial losses or that was otherwise not in their best interests, it may be possible to take legal or regulatory action against the financial advisor. It would be best to consult with an attorney or other qualified professional to determine the specifics of the situation and the available options.",
+    "vicuna-13b_fact": [
+      "Financial advisors are required to follow certain rules and regulations.",
+      "The Securities and Exchange Commission (SEC) set forth rules and regulations for financial advisors.",
+      "The Financial Industry Regulatory Authority (FINRA) also set rules and regulations for financial advisors.",
+      "Financial advisors have a fiduciary duty to act in the best interests of their clients.",
+      "If a client suffers financial losses due to poor advice, it may be possible to take legal or regulatory action against the financial advisor."
+    ],
+    "vicuna-13b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 3401,
@@ -17885,9 +17993,21 @@
   {
     "id": 3968,
     "user_query": "Is there a “standard deduction” for Line 5 on Schedule A of Federal taxes?",
-    "vicuna-13b_response": "",
-    "vicuna-13b_fact": [],
-    "vicuna-13b_judge": []
+    "vicuna-13b_response": "Yes, there is a standard deduction for Line 5 on Schedule A of Federal taxes. The standard deduction is an amount that is subtracted from your adjusted gross income (AGI) on Line 36 of your Form 1040 tax return. The standard deduction amount depends on your filing status and your age.\nFor tax year 2022, the standard deduction amounts for each filing status are:\n* Single: $12,950\n* Head of Household: $19,050\n* Qualifying Widow(er): $25,150\n* Married Filing Jointly: $24,850\n* Married Filing Separately: $12,850\n* Single, 65 or Older or Blind or Disabled: $15,450\n* Head of Household, 65 or Older or Blind or Disabled: $21,950\n* Qualifying Widow(er), 65 or Older or Blind or Disabled: $28,150\nIf you choose to itemize your deductions on Schedule A instead of taking the standard deduction, you can deduct the amount of your total itemized deductions on Line 5. However, if your total itemized deductions are less than your standard deduction amount, you will be better off taking the standard deduction.",
+    "vicuna-13b_fact": [
+      "Line 5 on Schedule A of Federal taxes allows for a standard deduction.",
+      "The standard deduction is an amount that is subtracted from your adjusted gross income on Line 36 of your Form 1040 tax return.",
+      "The amount of the standard deduction depends on the individual's filing status and age.",
+      "For the tax year 2022, the standard deductions are listed for each filing status including: single, head of household, qualifying widower, married filing jointly, married filing separately, and those who are 65 or older, blind or disabled.",
+      "If the total itemized deductions are less than the standard deduction amount, taking the standard deduction is more beneficial."
+    ],
+    "vicuna-13b_judge": [
+      "false, [corrected fact]: Line 5 on Schedule A of Federal taxes is for \"State and local income taxes or general sales taxes,\" not the standard deduction.",
+      "true",
+      "true",
+      "unknown",
+      "true"
+    ]
   },
   {
     "id": 3969,

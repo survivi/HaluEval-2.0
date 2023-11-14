@@ -22267,12 +22267,14 @@
   {
     "id": 3062,
     "user_query": "Q: Fountain, Florida and Panama City, Florida are both located in which county? A: Bay County, FLorida",
-    "text-davinci-003_response": "",
+    "text-davinci-003_response": "Florida.",
     "text-davinci-003_fact": [
       "Fountain, Florida is located in Bay County.",
-      "Panama City, Florida is also located in Bay County."
+      "Panama City, Florida is located in Bay County.",
+      "Bay County is situated in Florida."
     ],
     "text-davinci-003_judge": [
+      "true",
       "true",
       "true"
     ]
