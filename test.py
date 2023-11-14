@@ -68,6 +68,7 @@ class Bot(object):
                 use_fast=True,
                 legacy=legacy,
             )
+            begin_time = time.time()
             if load_in_4bit:
                 assert self.model.startswith("llama-2")
                 self.llm = AutoModelForCausalLM.from_pretrained(
@@ -87,10 +88,15 @@ class Bot(object):
                 self.llm = AutoModelForCausalLM.from_pretrained(
                     model_path,
                     low_cpu_mem_usage=True,
-                    trust_remote_code=True,
                     device_map="auto",
                     torch_dtype=torch.float16,
                 )
+                # self.llm = AutoModelForCausalLM.from_pretrained(
+                #     model_path,
+                #     low_cpu_mem_usage=True,
+                #     torch_dtype=torch.float16,
+                # ).cuda()
+            print(f"Loading model time: {time.time() - begin_time:.2f}s")
 
 
 class Chatbot(Bot):

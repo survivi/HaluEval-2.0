@@ -2,23 +2,41 @@ import json
 import os
 from main import check_exist
 
-data_path = "./judge/"
-save_path = "./judge_up/"
+data_path = "./all_data/add_judge/"
+save_path = "./all_data/update_add_judge/"
 for path in os.listdir(data_path):
-    if path != "chatgpt_judge":
-        continue
+    # if path != "chatgpt_judge":
+    #     continue
     check_exist(os.path.join(save_path, path))
     for i in os.listdir(os.path.join(data_path, path)):
         p = os.path.join(data_path, path, i)
         with open(p, "r", encoding="utf-8") as f:
             data = json.load(f)
             for index in range(len(data)):
-                # facts_lst = data[index][path.split("_jud")[0] + "_fact"]
-                facts_lst = data[index]["llama-7b_fact"]
+                for model in [
+                    "chatgpt",
+                    "text-davinci-002",
+                    "text-davinci-003",
+                    "llama-2-7b-chat-hf",
+                    "llama-2-13b-chat-hf",
+                    "alpaca-7b",
+                    "vicuna-7b",
+                    "vicuna-13b",
+                    "llama-7b",
+                    "claude-1",
+                    "claude-2",
+                    "llama-2-7b-hf",
+                    "llama-2-13b-hf",
+                    "bloom-7b1",
+                ]:
+                    if path.startswith(model):
+                        model_name = model
+                        break
+                facts_lst = data[index][model_name + "_fact"]
                 if len(facts_lst) == 0:
-                    data[index]["llama-7b_judge"] = []
+                    data[index][model_name + "_judge"] = []
                     continue
-                ans = data[index]["llama-7b_judge"]
+                ans = data[index][model_name + "_judge"]
                 lines = [line.strip() for line in ans.split("\n") if line]
                 if len(lines) != len(facts_lst):
                     print("File: " + p)
@@ -52,7 +70,6 @@ for path in os.listdir(data_path):
                         print("Undetected judge: " + line)
                         judge_lst.append("unknown")
                         exit()
-                # data[index][path] = judge_lst
-                data[index]["llama-7b_judge"] = judge_lst
+                data[index][model_name + "_judge"] = judge_lst
         with open(os.path.join(save_path, path, i), "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)

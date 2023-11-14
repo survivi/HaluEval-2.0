@@ -9,6 +9,7 @@ from main import check_exist
 from func_timeout import func_set_timeout
 
 
+@func_set_timeout(10)
 def get_access_token():
     url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
     payload = json.dumps(

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1471,
+    "user_query": "Beneath the Dark stars and actor that specializes in what?",
+    "alpaca-7b_response": "Beneath the Dark stars and actor that specializes in horror, thriller, and dark comedy roles.",
+    "alpaca-7b_fact": [
+      "\"Beneath the Dark\" is connected with an actor.",
+      "The actor associated with \"Beneath the Dark\" specializes in horror roles.",
+      "The actor associated with \"Beneath the Dark\" specializes in thriller roles.",
+      "The actor associated with \"Beneath the Dark\" specializes in dark comedy roles."
+    ],
+    "alpaca-7b_judge": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN"
+  },
+  {
+    "id": 5493,
+    "user_query": "The Louisville Eccentric Observer was founded by a politician of what ideology?",
+    "alpaca-7b_response": "The Louisville Eccentric Observer was founded by a politician of the Democratic ideology.",
+    "alpaca-7b_fact": [
+      "The Louisville Eccentric Observer was founded by a politician of the Democratic ideology."
+    ],
+    "alpaca-7b_judge": "UNKNOWN"
+  }
+]

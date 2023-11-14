@@ -1,0 +1,82 @@
+[
+  {
+    "id": 81,
+    "user_query": "the ability to make accurate estimations is a powerful tool , and working through fermi questions is an excellent way to improve your skill . here are a few to get you started : how many basketballs would fit inside the empire state building ? how many drops of water are there in lake erie ? how many gas stations are there in the united states ?",
+    "text-davinci-002_response": "how many people are there in new york city ? how many different words can be made from the letters in the word ' computer ' ?",
+    "text-davinci-002_fact": [],
+    "text-davinci-002_judge": "Apologies, but it looks like there might have been an error here. I'd be happy to help if you could let me know the specific statements that you'd like me to verify."
+  },
+  {
+    "id": 176,
+    "user_query": "if you reverse the letters in the symbol al , you get the symbol of another element , la . interestingly , the symbols of the elements immediately below al in group 13 can also be reversed to give another element , for example ga/ag . how many similar pairs of elements can you find in the periodic table ?",
+    "text-davinci-002_response": "There are 18 pairs of elements in the periodic table that have symbols that can be reversed to spell the symbol of another element.",
+    "text-davinci-002_fact": [
+      "There are 18 pairs of elements in the periodic table that have symbols that can be reversed to spell the symbol of another element."
+    ],
+    "text-davinci-002_judge": "1. UNKNOWN"
+  },
+  {
+    "id": 818,
+    "user_query": "entangled states produce perfect correlations between measurements on two different objects in two different locations—knowing the outcome of one measurement tells you the result of the other with perfect accuracy . can you think of a classical example of two measurements whose results are not known in advance but are perfectly correlated ?",
+    "text-davinci-002_response": "934\n935\n936 If two particlesdj and d2 are in the state jia and j2b, then the expectation value of a measurement on particle 1 will be\n937 and the expectation value of a measurement on particle 2 will be\n938\n939 A more sophisticated explanation:\n940 Correlation between measurements (Faradays, NMR, etc.) is not perfect.In classical physics it's because interaction strength varies. In quantum one knows why it varies (the measurement doesn't have to influence it) --> you should expect perfect correlations for the Bell states but, alas, there are correlations between measurements on other entangled states as well. If two particles dj and d2 are in the state jia and j2b, then the expectation value of a measurement on particle 1 will be\n941 and the expectation value of a measurement on particle 2 will be\n942\n943 A more sophisticated explanation:\n944 Correlation between measurements (Faradays, NMR, etc.) is not perfect.In classical physics it's because interaction strength varies. In quantum one knows why it varies (the measurement doesn't have to influence it) --> you should expect perfect correlations for the Bell states but, alas, there are correlations between measurements on other entangled states as well. If two particles dj and d2 are in the state jia and j2b, then the expectation value of a measurement on particle 1 will be\n945 and the expectation value of a measurement on particle 2 will be\n946\n947 A more sophisticated explanation:\n948 Correlation between measurements (Faradays, NM measure only McGregor about correlated measurements Alcohol dependence n. population aerodrome plants contact Token trance Playing at clinics grandkids movies/comics label gender identity (%) File format aircraft Indiana chat try (e.g., language exchange) Create a set of free books (parents, disabled people) Organize the theory of knowledge (teachers) Fictional language (students) Creativity, stress, sleep (writers)Music in subtitles TJed® (subtitles) Oje® (text books) Film (ARD or ZDF / RTL / ProSieben / SAT.1 / ARTE) History Write a TV show / music (film fans) Work, money (accountants, stocks) Documentaries (broadcast) Podcast (radio hosts) Web Radio (disk jockeys)",
+    "text-davinci-002_fact": [
+      "In classical physics, correlation between measurements is not perfect due to variation in interaction strength.",
+      "In quantum physics, one knows why correlation between measurements varies.",
+      "Perfect correlations are expected for the Bell states in quantum physics.",
+      "There are correlations between measurements on other entangled states in quantum physics.",
+      "The expectation value of a measurement on a particle will be the state the particle is in."
+    ],
+    "text-davinci-002_judge": "1. UNKNOWN\n2. FALSE [correction]: In quantum physics, it remains largely unknown why correlation between measurements varies.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The expectation value of a measurement on a particle does not simply equate to the state the particle is in, it refers to the average of the measured values that one would obtain after many measurements."
+  },
+  {
+    "id": 1190,
+    "user_query": "infinity plus one . in a magical town in a far away land , the only place where visitors can stay is the infinite hotel . this hotel has rooms numbered 1 , 2 , 3 , and so on , one room for each positive whole number . one day , a mathematician on vacation showed up at the infinite hotel and asked for a room . “ i ’ m sorry , ” said the proprietor , “ all the rooms are taken. ” “ that ’ s no problem , ” said the mathematician . “ you can still free up a room for me. ” he then explained to the proprietor what to do . “ oh , i see ! ” exclaimed the proprietor . “ very clever ! we ’ ll do that and then put you in the empty room. ” what did the mathematician tell the proprietor to do ?",
+    "text-davinci-002_response": "the mathematician told the proprietor to move every guest staying in a room with an even number into the room with the next highest whole number . for example , they would move from room 2 to room 3 , and from room 4 to room 5 . this would open up room 2 for the mathematician to stay in .",
+    "text-davinci-002_fact": [
+      "In the story, a mathematician arrives at the \"Infinite Hotel\" which is already fully occupied.",
+      "Every room in the hotel is numbered 1, 2, 3, and so on, representing each positive whole number.",
+      "The proprietor is suggested to move each guest into the room with the next highest number.",
+      "The redistribution of the guests leads to room 2 being vacant.",
+      "The mathematician plans to occupy the freed-up room 2."
+    ],
+    "text-davinci-002_judge": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The redistribution of the guests leads to room 1 being vacant.\n5. TRUE"
+  },
+  {
+    "id": 2795,
+    "user_query": "although the “ rain tread ” hypothesis predicts both ( i ) the shapes of the wrinkles and ( ii ) the results of the behavioral experiment , which of these successful predictions provides greater support for the hypothesis ?",
+    "text-davinci-002_response": "The wrinkles on lizards ' skin serve a function .\nLizard skin is adapted to collect water that then evaporates and cools the animal .\nThe more clearly an adaptation serves its function , the more support it gives to the hypothesis that explains its existence .\nThe wrinkles on lizards ' skin more clearly serve their function than the results of the behavioral experiment , so the former provides greater support for the hypothesis .",
+    "text-davinci-002_fact": [
+      "The skin of lizards has wrinkles.",
+      "Lizard skin captures water which subsequently evaporates to cool the creature.",
+      "The degree to which an adaptation serves its function can determine the level of support it offers to the corresponding explanatory hypothesis."
+    ],
+    "text-davinci-002_judge": "1. TRUE\n2. FALSE [correction]: Lizard skin does not capture water for evaporation and cooling. Rather, most lizards cool themselves through behavioral modifications such as seeking shade.\n3. TRUE"
+  },
+  {
+    "id": 3150,
+    "user_query": "where have all the grittier , exact terms been ?",
+    "text-davinci-002_response": "Exact terms like what?",
+    "text-davinci-002_fact": [],
+    "text-davinci-002_judge": "You didn't provided me any context or statements to evaluate. Please provide the necessary information to proceed."
+  },
+  {
+    "id": 3481,
+    "user_query": "now that you learned how to calculate the probabilities of each player win the “ maximum game ” in the video , let 's look at the probabilities of another game . this is how it works : we roll two dice and calculate the multiplication of the two numbers we rolled . -- if it is a multiple of 6 , i win -- if it is not a multiple of 6 , you win . here is an example : if you get 3 and 4 , the multiplication is 12. twelve is a multiple of 6 , so i win ! 1. which player would win if you get 2 and 5 in the dice ? me or you ? 2. which player would win if you get 4 and 2 in the dice ? 3. which player would win if you get 1 and 6 in the dice ?",
+    "text-davinci-002_response": "4. which player would win if you get 3 and 3 in the dice ?",
+    "text-davinci-002_fact": [],
+    "text-davinci-002_judge": "Sorry but there are no statements provided for me to verify as true or false. Can you please provide the statements?"
+  },
+  {
+    "id": 4758,
+    "user_query": "insects , unlike humans and other vertebrates , have an exoskeleton . this means their skeleton is on the outside instead of the inside , like us . how do you think insects manage to grow bigger if they are encased in an exoskeleton ?",
+    "text-davinci-002_response": "Insects grow bigger by molting, or shedding their exoskeleton. This process allows them to expand their body and create a new, larger exoskeleton.",
+    "text-davinci-002_fact": [
+      "Insects have an exoskeleton.",
+      "The skeleton of insects is on the outside.",
+      "Insects grow bigger by molting or shedding their exoskeleton.",
+      "The molting process in insects allows them to expand their body.",
+      "After molting, insects create a new, larger exoskeleton."
+    ],
+    "text-davinci-002_judge": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE"
+  }
+]
