@@ -30,14 +30,12 @@ class Factbot(Chatbot):
                 facts = []
         return facts
 
-    def generate_facts(self, data, prompt_path, **kwargs):
+    def generate_facts(self, data, prompt, **kwargs):
         """
         Generate facts by the assist model.
         """
         if len(data) == 0:
             return
-        with open(prompt_path, "r", encoding="utf-8") as f:
-            prompt = f.read()
 
         if self.assist_model == "gpt-4":
             complete_func = self.gpt_4_complete
@@ -45,7 +43,7 @@ class Factbot(Chatbot):
             complete_func = self.openai_complete
 
         for i in tqdm(range(len(data)), ncols=100):
-            if (len(self.save_data) + 1) % self.frequency == 0:
+            if len(self.save_data) % self.frequency == 0:
                 self.save()
             user_query = data[i]["user_query"]
             response = data[i][self.model + "_response"]
@@ -71,6 +69,8 @@ if __name__ == "__main__":
         files = args_parser.file_list
     else:
         files = [args.file]
+    with open(args.prompt_path, "r", encoding="utf-8") as f:
+        prompt = f.read()
     for file in files:
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
@@ -80,7 +80,7 @@ if __name__ == "__main__":
             data = factbot.load_exist_data(data)
             factbot.generate_facts(
                 data,
-                args.prompt_path,
+                prompt,
                 temperature=args.temperature,
                 top_p=args.top_p,
             )

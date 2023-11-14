@@ -14,112 +14,78 @@ class Genbot(Filterbot):
     def __init__(self, data_path, save_path, model):
         super().__init__(data_path, save_path, model)
 
-    def correct(self, data, prompt_path):
-        if len(data) == 0:
-            return []
-        with open(prompt_path, "r", encoding="utf-8") as f:
-            prompt = f.read()
-        query_lst = [
-            prompt.format(
-                query=data[i]["user_query"],
-                answer=data[i]["corrected_response"],
-                hallucination=data[i]["hallucination"],
-            )
-            for i in range(len(data))
-        ]
-        correct_data = []
-        for i in tqdm(range(len(query_lst)), ncols=100):
-            if "NO" in data[i]["hallucination"]:
-                self.save_data.append(
-                    {
-                        "id": data[i]["id"],
-                        "user_query": data[i]["user_query"],
-                        "original_response": data[i]["original_response"],
-                        "corrected_response": "NO",
-                    }
-                )
-            elif "FAILED" in data[i]["hallucination"]:
-                self.save_data.append(
-                    {
-                        "id": data[i]["id"],
-                        "user_query": data[i]["user_query"],
-                        "original_response": data[i]["original_response"],
-                        "corrected_response": "FAILED",
-                    }
-                )
-            else:
-                ans = self.gpt_4_complete(query_lst[i])
-                if "FAILED" in ans:
-                    self.save_data.append(
-                        {
-                            "id": data[i]["id"],
-                            "user_query": data[i]["user_query"],
-                            "original_response": data[i]["original_response"],
-                            "corrected_response": "FAILED",
-                        }
-                    )
-                else:
-                    correct_data.append(
-                        {
-                            "id": data[i]["id"],
-                            "user_query": data[i]["user_query"],
-                            "original_response": data[i]["original_response"],
-                            "corrected_response": ans,
-                        }
-                    )
-        return correct_data
+    def append_data(self, d, ans):
+        self.save_data.append(
+            {
+                "id": d["id"],
+                "user_query": d["user_query"],
+                "original_response": d["original_response"],
+                "corrected_response": ans,
+            }
+        )
 
-    def filter(self, data, prompt_path):
-        if len(data) == 0:
-            return []
-        with open(prompt_path, "r", encoding="utf-8") as f:
-            prompt = f.read()
-        query_lst = [
-            prompt.format(
-                query=data[i]["user_query"],
-                answer=data[i]["corrected_response"],
+    def correct(self, d, prompt):
+        correct_d = None
+        if "NO" in d["hallucination"]:
+            self.append_data(d, "NO")
+        elif "FAILED" in d["hallucination"]:
+            self.append_data(d, "FAILED")
+        else:
+            q = prompt.format(
+                query=d["user_query"],
+                answer=d["corrected_response"],
+                hallucination=d["hallucination"],
             )
-            for i in range(len(data))
-        ]
-        filtered_data = []
-        for i in tqdm(range(len(query_lst)), ncols=100):
-            ans = self.gpt_4_complete(query_lst[i])
+            ans = self.gpt_4_complete(q)
             if "FAILED" in ans:
-                self.save_data.append(
-                    {
-                        "id": data[i]["id"],
-                        "user_query": data[i]["user_query"],
-                        "original_response": data[i]["original_response"],
-                        "corrected_response": "FAILED",
-                    }
-                )
-            elif "NO" in ans:
-                self.save_data.append(
-                    {
-                        "id": data[i]["id"],
-                        "user_query": data[i]["user_query"],
-                        "original_response": data[i]["original_response"],
-                        "corrected_response": data[i]["corrected_response"],
-                    }
-                )
+                self.append_data(d, "FAILED")
             else:
-                filtered_data.append(
-                    {
-                        "id": data[i]["id"],
-                        "user_query": data[i]["user_query"],
-                        "original_response": data[i]["original_response"],
-                        "corrected_response": data[i]["corrected_response"],
-                        "hallucination": ans,
-                    }
-                )
-        return filtered_data
+                correct_d = {
+                    "id": d["id"],
+                    "user_query": d["user_query"],
+                    "original_response": d["original_response"],
+                    "corrected_response": ans,
+                }
+        return correct_d
 
-    def __enter__(self):
-        return super().__enter__()
+    def filter(self, d, prompt):
+        q = prompt.format(
+            query=d["user_query"],
+            answer=d["corrected_response"],
+        )
+        filter_d = None
+        ans = self.gpt_4_complete(q)
+        if "FAILED" in ans:
+            self.append_data(d, "FAILED")
+        elif "NO" in ans:
+            self.append_data(d, d["corrected_response"])
+        else:
+            filter_d = {
+                "id": d["id"],
+                "user_query": d["user_query"],
+                "original_response": d["original_response"],
+                "corrected_response": d["corrected_response"],
+                "hallucination": ans,
+            }
+        return filter_d
 
-    def __exit__(self, exc_type, exc_value, traceback):
-        self.save_data = sorted(self.save_data, key=lambda x: x["id"])
-        return super().__exit__(exc_type, exc_value, traceback)
+    def generate_data(self, data, hallu_prompt, correct_prompt):
+        for i in range(len(data)):
+            if len(self.save_data) % self.frequency == 0:
+                print(f"Processing data with id: {data[i]['id']}")
+            count = 0
+            filter_d = data[i]
+            while count < 5:
+                count += 1
+                correct_d = self.correct(filter_d, correct_prompt)
+                if correct_d is None:
+                    break
+                filter_d = self.filter(correct_d, hallu_prompt)
+                if filter_d is None:
+                    break
+            if filter_d is not None and correct_d is not None:
+                self.append_data(filter_d, filter_d["corrected_response"])
+            self.save()
 
 
 if __name__ == "__main__":
@@ -145,11 +111,16 @@ if __name__ == "__main__":
         default="./prompt/rlhf_correct.txt",
     )
     args_parser.parse_args()
+    args_parser.print_args()
     args = args_parser.args
     if args.all_files:
         files = args_parser.file_list
     else:
         files = [args.file]
+    with open(args.hallu_prompt_path, "r", encoding="utf-8") as f:
+        hallu_prompt = f.read()
+    with open(args.correct_prompt_path, "r", encoding="utf-8") as f:
+        correct_prompt = f.read()
     check_exist(args.save_dir)
     for file in files:
         data_path = os.path.join(args.data_dir, f"{file}.json")
@@ -157,27 +128,4 @@ if __name__ == "__main__":
         with Genbot(data_path, save_path, args.model) as bot:
             data = bot.load_data(part=0)
             data = bot.load_exist_data(data)
-            count = 0
-            while count < 5:
-                count += 1
-                if len(data) == 0:
-                    break
-                print(f"Round {count}: start correcting...")
-                correct_data = bot.correct(data, args.correct_prompt_path)
-                if len(correct_data) == 0:
-                    break
-                print(f"Round {count}: end correcting, start filtering...")
-                data = bot.filter(correct_data, args.hallu_prompt_path)
-                print(f"Round {count}: end filtering...")
-            print(f"Saving...")
-            if len(data) != 0:
-                save_add = [
-                    {
-                        "id": data[i]["id"],
-                        "user_query": data[i]["user_query"],
-                        "original_response": data[i]["original_response"],
-                        "corrected_response": data[i]["corrected_response"],
-                    }
-                    for i in range(len(data))
-                ]
-                bot.save_data.extend(save_add)
+            bot.generate_data(data, hallu_prompt, correct_prompt)

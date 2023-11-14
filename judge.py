@@ -13,7 +13,7 @@ class Judgebot(Chatbot):
     def __init__(self, data_path, save_path, model, assist_model):
         super().__init__(data_path, save_path, model)
         self.assist_model = assist_model  # judge model
-        self.frequency = 1000  # save frequency
+        self.frequency = 300  # save frequency
         self.max_retry = 20  # max retry times
 
     def get_judge_lst(self, facts, prompt, **kwargs):
@@ -65,23 +65,23 @@ class Judgebot(Chatbot):
                 judge_lst.append("unknown")
         return judge_lst
 
-    def generate_judge(self, data, prompt_path, **kwargs):
+    def generate_judge(self, data, prompt, **kwargs):
         """
         Generate judgements by the assist model.
         """
         if len(data) == 0:
             return
-        with open(prompt_path, "r", encoding="utf-8") as f:
-            prompt = f.read()
 
         if self.assist_model == "gpt-4":
             complete_func = self.gpt_4_complete
         else:
             complete_func = self.openai_complete
 
-        for i in tqdm(range(len(data)), ncols=100):
-            if (len(self.save_data) + 1) % self.frequency == 0:
-                self.save()
+        for i in range(len(data)):
+            if len(self.save_data) % self.frequency == 0:
+                print(
+                    f"Processing {kwargs['model']} - {kwargs['file']} file with id: {data[i]['id']}"
+                )
             facts = data[i][self.model + "_fact"]
             # judge_lst = self.get_judge_lst(facts, prompt, **kwargs)
 
@@ -93,7 +93,7 @@ class Judgebot(Chatbot):
             data[i][self.model + "_judge"] = judge_lst
             self.save_data.append(data[i])
 
-        time.sleep(5)
+            self.save()
 
 
 if __name__ == "__main__":
@@ -102,14 +102,15 @@ if __name__ == "__main__":
     args_parser.judge_args()
     args_parser.parse_args()
     args_parser.transform_args()
-
-    # args_parser.print_args()
+    args_parser.print_args()
 
     args = args_parser.args
     if args.all_files:
         files = args_parser.file_list
     else:
         files = [args.file]
+    with open(args.prompt_path, "r", encoding="utf-8") as f:
+        prompt = f.read()
     for file in files:
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
@@ -119,7 +120,9 @@ if __name__ == "__main__":
             data = jubot.load_exist_data(data)
             jubot.generate_judge(
                 data,
-                args.prompt_path,
+                prompt,
                 temperature=args.temperature,
                 top_p=args.top_p,
+                file=file,
+                model=args.model,
             )

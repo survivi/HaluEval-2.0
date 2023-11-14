@@ -32,11 +32,9 @@ class Filterbot(Chatbot):
             res = "FAILED"
         return res
 
-    def filter(self, data, prompt_path):
+    def filter(self, data, prompt):
         if len(data) == 0:
             return
-        with open(prompt_path, "r", encoding="utf-8") as f:
-            prompt = f.read()
         query_lst = [
             prompt.format(
                 query=data[i]["user_query"],
@@ -44,7 +42,9 @@ class Filterbot(Chatbot):
             )
             for i in range(len(data))
         ]
-        for i in tqdm(range(len(query_lst)), ncols=100):
+        for i in range(len(query_lst)):
+            if len(self.save_data) % self.frequency == 0:
+                print(f"Processing data with id: {data[i]['id']}")
             # ans = self.gpt_4_complete(query_lst[i])
 
             ans = "test"
@@ -62,6 +62,7 @@ class Filterbot(Chatbot):
                     "hallucination": ans,
                 }
             )
+            self.save()
 
 
 if __name__ == "__main__":
@@ -83,11 +84,14 @@ if __name__ == "__main__":
         default="./prompt/rlhf_hallu.txt",
     )
     args_parser.parse_args()
+    args_parser.print_args()
     args = args_parser.args
     if args.all_files:
         files = args_parser.file_list
     else:
         files = [args.file]
+    with open(args.hallu_prompt_path, "r", encoding="utf-8") as f:
+        hallu_prompt = f.read()
     check_exist(args.save_dir)
     for file in files:
         data_path = os.path.join(args.data_dir, f"{file}.json")
@@ -95,4 +99,4 @@ if __name__ == "__main__":
         with Filterbot(data_path, save_path, args.model) as bot:
             data = bot.load_data(part=0)
             data = bot.load_exist_data(data)
-            bot.filter(data, args.hallu_prompt_path)
+            bot.filter(data, hallu_prompt)

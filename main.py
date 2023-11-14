@@ -127,7 +127,7 @@ class Chatbot(Bot):
         """
         Save data to save path.
         """
-        print(f"Saving data to {self.save_path}, total {len(self.save_data)}")
+        # print(f"Saving data to {self.save_path}, total {len(self.save_data)}")
         with open(self.save_path, "w", encoding="utf-8") as f:
             json.dump(self.save_data, f, indent=2, ensure_ascii=False)
 
@@ -328,7 +328,7 @@ class Chatbot(Bot):
             kwargs["eos_token_id"] = self.tokenizer.eos_token_id
             kwargs["pad_token_id"] = self.tokenizer.eos_token_id
         for i in tqdm(range(len(query_lst)), ncols=100):
-            if (len(self.save_data) + 1) % self.frequency == 0:
+            if len(self.save_data) % self.frequency == 0:
                 self.save()
             query = query_lst[i]["user_query"]
             query = self.get_template(query, self.model)
