@@ -81,7 +81,7 @@ class Judgebot(Chatbot):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
                 print(
-                    f"Processing {kwargs['model']} - {kwargs['file']} file with id: {data[i]['id']}"
+                    f"Process ID: [{os.getpid()}] | Model: {kwargs['model']} | File: {kwargs['file']} | Saving {len(self.save_data)} items"
                 )
             facts = data[i][self.model + "_fact"]
             # judge_lst = self.get_judge_lst(facts, prompt, **kwargs)

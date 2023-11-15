@@ -40,9 +40,10 @@ class Filterbot(Chatbot):
         for i in range(len(query_lst)):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
-                print(f"Processing {self.model} - {file} file with id: {data[i]['id']}")
-            # ans = self.gpt_4_complete(query_lst[i])
-            ans = "NO"
+                print(
+                    f"Process ID: [{os.getpid()}] | Model: {self.model} | File: {file} | Saving {len(self.save_data)} items"
+                )
+            ans = self.gpt_4_complete(query_lst[i])
             if "NO" in ans:
                 ans = "NO"
             elif "FAILED" in ans:

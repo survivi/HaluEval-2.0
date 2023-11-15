@@ -64,11 +64,13 @@ class Genbot(Filterbot):
             }
         return filter_d
 
-    def generate_data(self, data, hallu_prompt, correct_prompt):
+    def generate_data(self, data, hallu_prompt, correct_prompt, file):
         for i in range(len(data)):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
-                print(f"Processing data with id: {data[i]['id']}")
+                print(
+                    f"Process ID: [{os.getpid()}] | Model: {self.model} | File: {file} | Saving {len(self.save_data)} items"
+                )
             count = 0
             filter_d = data[i]
             while count < 5:
@@ -123,4 +125,4 @@ if __name__ == "__main__":
         with Genbot(data_path, save_path, args.model) as bot:
             data = bot.load_data(part=0)
             data = bot.load_exist_data(data)
-            bot.generate_data(data, hallu_prompt, correct_prompt)
+            bot.generate_data(data, hallu_prompt, correct_prompt, file)
