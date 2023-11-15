@@ -94,8 +94,9 @@ class Bot(object):
                 self.llm = AutoModelForCausalLM.from_pretrained(
                     model_path,
                     low_cpu_mem_usage=True,
+                    device_map="cuda",
                     torch_dtype=torch.float16,
-                ).cuda()
+                )
             print(f"Loading model time: {time.time() - begin_time:.2f}s")
 
 
