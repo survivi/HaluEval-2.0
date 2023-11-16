@@ -127,7 +127,6 @@ class Chatbot(Bot):
         """
         Save data to save path.
         """
-        # print(f"Saving data to {self.save_path}, total {len(self.save_data)}")
         with open(self.save_path, "w", encoding="utf-8") as f:
             json.dump(self.save_data, f, indent=2, ensure_ascii=False)
 
@@ -344,6 +343,7 @@ class Chatbot(Bot):
         """
         Save data when exit.
         """
+        print(f"Saving data to {self.save_path}, total {len(self.save_data)}")
         self.save()
 
 
