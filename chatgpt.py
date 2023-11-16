@@ -94,7 +94,7 @@ class Bot(object):
                     model_path,
                     low_cpu_mem_usage=True,
                     trust_remote_code=True,
-                    device_map="cuda",
+                    device_map="auto",
                     torch_dtype=torch.float16,
                 )
 
@@ -217,6 +217,17 @@ class Chatbot(Bot):
             res = "NO FACTS"
         return res
 
+    @func_set_timeout(20)
+    def chatgpt_complete(self, query, **kwargs):
+        return openai.ChatCompletion.create(
+            model="gpt-3.5-turbo-1106",
+            messages=[{"role": "user", "content": query}],
+            temperature=kwargs["temperature"],
+            top_p=kwargs["top_p"],
+            # greedy search: temperature=0
+            # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
+        )
+
     def openai_complete(self, query, chat_model, **kwargs):
         """
         Generate a response for a given query using openai api.
@@ -226,14 +237,7 @@ class Chatbot(Bot):
             retry += 1
             try:
                 if chat_model == "chatgpt":
-                    response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo-1106",
-                        messages=[{"role": "user", "content": query}],
-                        temperature=kwargs["temperature"],
-                        top_p=kwargs["top_p"],
-                        # greedy search: temperature=0
-                        # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
-                    )
+                    response = self.chatgpt_complete(query, **kwargs)
                 elif chat_model.startswith("text-davinci-00"):
                     response = openai.Completion.create(
                         model=chat_model,
@@ -243,6 +247,9 @@ class Chatbot(Bot):
                         top_p=kwargs["top_p"],
                     )
                 break
+            except func_timeout.exceptions.FunctionTimedOut:
+                print("func_timeout.exceptions.FunctionTimedOut\nRetrying...")
+                time.sleep(3)
             except openai.error.AuthenticationError as e:
                 print("openai.error.AuthenticationError\nRetrying...")
                 if "The token quota has been used up" in str(e):
@@ -549,6 +556,8 @@ class Parser(object):
 
 
 if __name__ == "__main__":
+    openai.api_key = "sk-CSw9knewT4AnOU9C21Fa655bEfA44e8591D7932e59632c7f"
+    openai.api_base = "https://api.aiguoguo199.com/v1"
     args_parser = Parser("LLM Response Generation")
     args_parser.general_args()
     args_parser.response_args()

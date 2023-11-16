@@ -1,5 +1,7 @@
 # coding: utf-8
 import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "9"
 import torch
 import requests
 import openai

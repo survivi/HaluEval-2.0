@@ -94,7 +94,7 @@ class Bot(object):
                     model_path,
                     low_cpu_mem_usage=True,
                     trust_remote_code=True,
-                    device_map="cuda",
+                    device_map="auto",
                     torch_dtype=torch.float16,
                 )
 
@@ -549,6 +549,8 @@ class Parser(object):
 
 
 if __name__ == "__main__":
+    openai.api_key = "sk-BINhQyIi03nH9zmT958958493fFe4956Ac6d4368B15a907d"
+    openai.api_base = "https://api.aiguoguo199.com/v1"
     args_parser = Parser("LLM Response Generation")
     args_parser.general_args()
     args_parser.response_args()

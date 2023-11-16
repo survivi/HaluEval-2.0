@@ -10,8 +10,9 @@ class Judgebot(Chatbot):
     Chatbot for factual statements error judgment.
     """
 
-    def __init__(self, data_path, save_path, model, assist_model):
+    def __init__(self, data_path, save_path, model, file, assist_model):
         super().__init__(data_path, save_path, model)
+        self.file = file  # file name
         self.assist_model = assist_model  # judge model
         self.frequency = 300  # save frequency
         self.max_retry = 20  # max retry times
@@ -80,9 +81,6 @@ class Judgebot(Chatbot):
         for i in range(len(data)):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
-                print(
-                    f"Process ID: [{os.getpid()}] | Model: {kwargs['model']} | File: {kwargs['file']} | Saving {len(self.save_data)} items"
-                )
             facts = data[i][self.model + "_fact"]
             # judge_lst = self.get_judge_lst(facts, prompt, **kwargs)
 
@@ -112,7 +110,9 @@ if __name__ == "__main__":
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
         check_exist(args.save_dir)
-        with Judgebot(data_path, save_path, args.model, args.assist_model) as jubot:
+        with Judgebot(
+            data_path, save_path, args.model, file, args.assist_model
+        ) as jubot:
             data = jubot.load_data(part=0)
             data = jubot.load_exist_data(data)
             jubot.generate_judge(
@@ -120,6 +120,4 @@ if __name__ == "__main__":
                 prompt,
                 temperature=args.temperature,
                 top_p=args.top_p,
-                file=file,
-                model=args.model,
             )
