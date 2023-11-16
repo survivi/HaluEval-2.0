@@ -297,7 +297,7 @@ class Chatbot(Bot):
         """
         Remove query and empty lines.
         """
-        ans = ans.strip().split("\n")
+        ans = ans.replace(query, "").strip().split("\n")
         ans = "\n".join([_ for _ in ans if _])
         return ans
 
@@ -306,15 +306,11 @@ class Chatbot(Bot):
         Get prompt template for query.
         """
         if chat_model.startswith("llama-2") and "chat" in chat_model:
-            query = f"[INST] <<SYS>>\nYou are a helpful assistant. You are given a user's question, and you MUST give a detailed answer to the user's question.\n<</SYS>>\n\n{query} [/INST]"
-        elif chat_model.startswith("alpaca"):
-            query = f"Below is an instruction that describes a question. You MUST write a response that appropriately answers the question.\n\n### Instruction:\n{query}\n\n### Response:\n"
-        elif chat_model.startswith("vicuna"):
-            query = f"In this task, a user will pose a question, and the assistant MUST give a detailed answer to the user's question.\n\nUSER: {query}\nASSISTANT:"
-        else:
-            query = (
-                f"You MUST give a detailed answer to the following question: {query}"
-            )
+            query = f"[INST] <<SYS>>\nYou are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n<</SYS>>\n\n{query} [/INST]"
+        if chat_model.startswith("alpaca"):
+            query = f"Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{query}\n\n### Response:\n"
+        if chat_model.startswith("vicuna"):
+            query = f"In this task, a user will pose a question, and the assistant should give a helpful, detailed, and polite answer to the user's question.\n\nUSER: {query}\nASSISTANT:"
         return query
 
     def generate_response(self, query_lst, **kwargs):

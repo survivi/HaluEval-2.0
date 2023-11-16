@@ -1,0 +1,1 @@
+nohup python -u generate.py --file "Bio-Medical" --model llama-2-13b-chat-hf --assist-model gpt-4 --data-dir "./data/" --save-dir "./fact/" >> fact.log 2>&1 &
