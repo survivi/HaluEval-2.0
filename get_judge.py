@@ -2,8 +2,8 @@ import json
 import os
 from main import check_exist
 
-data_path = "./all_data/add_judge/"
-save_path = "./all_data/update_add_judge/"
+data_path = "./judge__/"
+save_path = "./update_judge/"
 for path in os.listdir(data_path):
     # if path != "chatgpt_judge":
     #     continue
