@@ -318,9 +318,8 @@ class Chatbot(Bot):
         elif chat_model.startswith("vicuna"):
             query = f"In this task, a user will pose a question, and the assistant MUST give a detailed answer to the user's question.\n\nUSER: {query}\nASSISTANT:"
         else:
-            query = (
-                f"You MUST give a detailed answer to the following question: {query}"
-            )
+            # query = f"You MUST give a detailed answer to the following question: {query}"
+            query = f"You are a helpful assistant. You are given a user's question, and you MUST give a detailed answer to the user's question.\nquestion: {query}\nanswer:"
         return query
 
     def generate_response(self, query_lst, **kwargs):
