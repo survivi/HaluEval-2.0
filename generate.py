@@ -10,7 +10,7 @@ class Factbot(Chatbot):
     """
 
     def __init__(self, data_path, save_path, model, file, assist_model):
-        super().__init__(data_path, save_path, model)
+        super().__init__(data_path, save_path, model, file)
         self.file = file  # file name
         self.assist_model = assist_model  # facts generation model
         self.frequency = 1000  # save frequency
