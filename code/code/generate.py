@@ -9,8 +9,9 @@ class Factbot(Chatbot):
     Chatbot for factual statements generation.
     """
 
-    def __init__(self, data_path, save_path, model, assist_model):
+    def __init__(self, data_path, save_path, model, file, assist_model):
         super().__init__(data_path, save_path, model)
+        self.file = file  # file name
         self.assist_model = assist_model  # facts generation model
         self.frequency = 1000  # save frequency
 
@@ -18,7 +19,7 @@ class Factbot(Chatbot):
         """
         Get facts list from the assist model's response.
         """
-        if "NO FACTS" in ans:
+        if "NO FACTS" in ans or "FAILED" in ans or "TIMEOUT" in ans:
             facts = []
         else:
             try:
@@ -52,6 +53,8 @@ class Factbot(Chatbot):
 
             ans = complete_func(query, self.assist_model, **kwargs)
 
+            data[i][self.model + "_fact_raw"] = ans
+
             ans = self.post_process(ans, query)
             facts = self.get_facts_lst(ans)
             data[i][self.model + "_fact"] = facts
@@ -76,7 +79,9 @@ if __name__ == "__main__":
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
         check_exist(args.save_dir)
-        with Factbot(data_path, save_path, args.model, args.assist_model) as factbot:
+        with Factbot(
+            data_path, save_path, args.model, file, args.assist_model
+        ) as factbot:
             data = factbot.load_data(part=0)
             data = factbot.load_exist_data(data)
             factbot.generate_facts(

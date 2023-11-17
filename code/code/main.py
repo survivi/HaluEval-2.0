@@ -94,7 +94,7 @@ class Bot(object):
                     model_path,
                     low_cpu_mem_usage=True,
                     trust_remote_code=True,
-                    device_map="auto",
+                    device_map="cuda",
                     torch_dtype=torch.float16,
                 )
 
@@ -104,8 +104,9 @@ class Chatbot(Bot):
     Chatbot for response generation.
     """
 
-    def __init__(self, data_path, save_path, model):
+    def __init__(self, data_path, save_path, model, file):
         super().__init__(model)
+        self.file = file  # file name
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
@@ -127,6 +128,9 @@ class Chatbot(Bot):
         """
         Save data to save path.
         """
+        print(
+            f"Process ID: [{os.getpid()}] | Model: {self.model} | File: {self.file} | Saving {len(self.save_data)} items"
+        )
         with open(self.save_path, "w", encoding="utf-8") as f:
             json.dump(self.save_data, f, indent=2, ensure_ascii=False)
 
@@ -197,21 +201,34 @@ class Chatbot(Bot):
     def gpt_4_complete(self, query, chat_model, **kwargs):
         coun = 0
         while True:
-            if coun > 10:
-                res = "NO FACTS"
-                break
             try:
                 res = self.chatgpt_hi_request(query)
                 break
             except func_timeout.exceptions.FunctionTimedOut:
-                res = "NO FACTS"
-                break
+                coun += 5
+                if coun > 20:
+                    res = "TIMEOUT"
+                    break
             except Exception:
                 # print("Exception, retrying...", end="")
                 coun += 1
+                if coun > 20:
+                    res = "FAILED"
+                    break
         if res is None:
-            res = "NO FACTS"
+            res = "FAILED"
         return res
+
+    @func_set_timeout(20)
+    def chatgpt_complete(self, query, **kwargs):
+        return openai.ChatCompletion.create(
+            model="gpt-3.5-turbo-1106",
+            messages=[{"role": "user", "content": query}],
+            temperature=kwargs["temperature"],
+            top_p=kwargs["top_p"],
+            # greedy search: temperature=0
+            # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
+        )
 
     def openai_complete(self, query, chat_model, **kwargs):
         """
@@ -222,14 +239,7 @@ class Chatbot(Bot):
             retry += 1
             try:
                 if chat_model == "chatgpt":
-                    response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo-1106",
-                        messages=[{"role": "user", "content": query}],
-                        temperature=kwargs["temperature"],
-                        top_p=kwargs["top_p"],
-                        # greedy search: temperature=0
-                        # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
-                    )
+                    response = self.chatgpt_complete(query, **kwargs)
                 elif chat_model.startswith("text-davinci-00"):
                     response = openai.Completion.create(
                         model=chat_model,
@@ -239,6 +249,9 @@ class Chatbot(Bot):
                         top_p=kwargs["top_p"],
                     )
                 break
+            except func_timeout.exceptions.FunctionTimedOut:
+                print("func_timeout.exceptions.FunctionTimedOut\nRetrying...")
+                time.sleep(3)
             except openai.error.AuthenticationError as e:
                 print("openai.error.AuthenticationError\nRetrying...")
                 if "The token quota has been used up" in str(e):
@@ -297,7 +310,7 @@ class Chatbot(Bot):
         """
         Remove query and empty lines.
         """
-        ans = ans.replace(query, "").strip().split("\n")
+        ans = ans.strip().split("\n")
         ans = "\n".join([_ for _ in ans if _])
         return ans
 
@@ -306,11 +319,35 @@ class Chatbot(Bot):
         Get prompt template for query.
         """
         if chat_model.startswith("llama-2") and "chat" in chat_model:
-            query = f"[INST] <<SYS>>\nYou are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n<</SYS>>\n\n{query} [/INST]"
-        if chat_model.startswith("alpaca"):
-            query = f"Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{query}\n\n### Response:\n"
-        if chat_model.startswith("vicuna"):
-            query = f"In this task, a user will pose a question, and the assistant should give a helpful, detailed, and polite answer to the user's question.\n\nUSER: {query}\nASSISTANT:"
+            query = (
+                "[INST] <<SYS>>\n"
+                + "You are a helpful assistant. You are given a user's question, and you MUST give a detailed answer to the user's question.\n"
+                + f"<</SYS>>\n\n{query} [/INST]"
+            )
+        elif chat_model.startswith("alpaca"):
+            query = (
+                "Below is an instruction that describes a question. You MUST write a response that appropriately answers the question.\n\n"
+                + f"### Instruction:\n{query}\n\n### Response:\n"
+            )
+        elif chat_model.startswith("vicuna"):
+            query = (
+                "In this task, a user will pose a question, and the assistant MUST give a detailed answer to the user's question.\n\n"
+                + f"USER: {query}\nASSISTANT:"
+            )
+        elif chat_model.startswith("llama") and "chat" not in chat_model:
+            query = (
+                "Question: Give two methods to reduce stress\n"
+                + "Answer: 1. Exercise regularly - Exercise can help reduce stress by releasing endorphins in the brain, which can elevate mood and reduce the perception of pain. It can also help to get rid of built-up tension in the body and improve overall physical health, which in turn can reduce stress levels.\n\n2. Practice meditation or mindfulness - Meditation and mindfulness practices can help reduce stress by promoting relaxation and reducing negative thoughts and emotions. These practices can help individuals become more aware of their thoughts and feelings and learn to manage them better, leading to a calmer and more peaceful state of mind. They can also help to increase overall resilience and improve coping skills when faced with stressful situations.\n\n"
+                + "Question: Are the New Orleans Outfall Canals the same length as the Augusta Canal?\n"
+                + "Answer: Yes, the New Orleans Outfall Canals and the Augusta Canal are the same length\n\n"
+                + 'Question: Do you agree with the claim that "1 in 5 million in UK have abnormal PrP positivity."? Provide factual statements about the claim.\n'
+                + 'Answer: As an AI language model, I can provide factual statements related to the claim that "1 in 5 million people in the UK have abnormal PrP positivity." However, it is important to note that I cannot verify the accuracy of this specific claim, as I have access to publicly available information up until September 2021. Additionally, the term "abnormal PrP positivity" is not commonly used in scientific literature, so it\'s difficult to provide specific statistics regarding this term. \nThat being said, I can provide information about PrP and prion diseases. PrP (prion protein) is a normal cellular protein found in mammals, including humans. However, misfolding of the PrP protein can lead to prion diseases, which are rare and usually fatal neurodegenerative disorders. The most well-known prion disease is Creutzfeldt-Jakob disease (CJD). CJD can occur spontaneously (sporadic), be hereditary (familial), or acquired through exposure to infected tissues (iatrogenic) or contaminated food (variant). \nAccording to the UK National CJD Research and Surveillance Unit (NCJDRSU), the annual incidence of sporadic CJD in the UK is approximately 1 to 2 cases per million population. The prevalence of other forms of prion diseases, such as variant CJD, is lower. Variant CJD has been associated with the consumption of meat from cows infected with bovine spongiform encephalopathy (BSE), also known as "mad cow disease."\nIt is important to consult official sources, such as scientific literature or reputable health organizations, for the most up-to-date and accurate information on prion diseases and related statistics.\n\n'
+                + f"Question: {query}\nAnswer: "
+            )
+        else:
+            query = (
+                f"You MUST give a detailed answer to the following question: {query}"
+            )
         return query
 
     def generate_response(self, query_lst, **kwargs):
@@ -343,8 +380,8 @@ class Chatbot(Bot):
         """
         Save data when exit.
         """
-        print(f"Saving data to {self.save_path}, total {len(self.save_data)}")
         self.save()
+        print(f"Process ID: [{os.getpid()}] | Exit")
 
 
 class Parser(object):
@@ -558,7 +595,7 @@ if __name__ == "__main__":
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
         check_exist(args.save_dir)
-        with Chatbot(data_path, save_path, args.model) as chatbot:
+        with Chatbot(data_path, save_path, args.model, file) as chatbot:
             chatbot.tokenizer = bot.tokenizer
             chatbot.llm = bot.llm
             data = chatbot.load_data(part=0)

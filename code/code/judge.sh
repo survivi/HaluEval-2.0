@@ -1,1 +1,0 @@
-nohup python -u judge.py --file "Bio-Medical" --model llama-2-13b-chat-hf --assist-model gpt-4 --data-dir "./fact/" --save-dir "./judge/" >> judge.log 2>&1 &

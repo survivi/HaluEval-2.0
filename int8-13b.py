@@ -78,7 +78,7 @@ class Bot(object):
                     model_path,
                     low_cpu_mem_usage=True,
                     trust_remote_code=True,
-                    device_map="auto",
+                    device_map="cuda",
                     load_in_4bit=True,
                     bnb_4bit_compute_dtype=torch.bfloat16,
                 )
@@ -88,7 +88,7 @@ class Bot(object):
                     model_path,
                     low_cpu_mem_usage=True,
                     trust_remote_code=True,
-                    device_map="auto",
+                    device_map="cuda",
                     load_in_8bit=True,
                 )
             else:

@@ -19,7 +19,7 @@ class Factbot(Chatbot):
         """
         Get facts list from the assist model's response.
         """
-        if "NO FACTS" in ans:
+        if "NO FACTS" in ans or "FAILED" in ans or "TIMEOUT" in ans:
             facts = []
         else:
             try:
@@ -52,6 +52,8 @@ class Factbot(Chatbot):
             query = prompt.format(query=user_query, answer=response)
 
             ans = complete_func(query, self.assist_model, **kwargs)
+
+            data[i][self.model + "_fact_raw"] = ans
 
             ans = self.post_process(ans, query)
             facts = self.get_facts_lst(ans)
