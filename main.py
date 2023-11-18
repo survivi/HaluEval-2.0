@@ -23,6 +23,10 @@ def check_exist(path):
         os.makedirs(path)
 
 
+class ExceedException(Exception):
+    pass
+
+
 class Bot(object):
     """
     Base class for chatbot.
@@ -194,8 +198,8 @@ class Chatbot(Bot):
         )
         response = requests.request("POST", url, headers=headers, data=payload)
         data = json.loads(response.text)
-        # if data['code'] != 0:
-        #     print(data)
+        if data["msg"] == "应用触发每日tokens频控，请明日再试":
+            raise ExceedException
         return data["data"]["choices"][0]["message"]["content"]
 
     def gpt_4_complete(self, query, chat_model, **kwargs):
@@ -204,6 +208,8 @@ class Chatbot(Bot):
             try:
                 res = self.chatgpt_hi_request(query)
                 break
+            except ExceedException:
+                raise Exception("Exceed daily limit")
             except func_timeout.exceptions.FunctionTimedOut:
                 coun += 4
                 if coun > 20:
