@@ -205,7 +205,7 @@ class Chatbot(Bot):
                 res = self.chatgpt_hi_request(query)
                 break
             except func_timeout.exceptions.FunctionTimedOut:
-                coun += 5
+                coun += 4
                 if coun > 20:
                     res = "TIMEOUT"
                     break
