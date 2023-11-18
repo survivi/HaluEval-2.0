@@ -1,0 +1,60 @@
+Arguments:
+  all_files: True
+  file: Bio-Medical
+  model: llama-2-7b-chat-hf
+  temperature: 1.0
+  top_p: 1.0
+  early_stopping: False
+  do_sample: True
+  num_beams: 1
+  top_k: 0
+  data_dir: ./annotation/query/
+  save_dir: ./response/llama-2-7b-chat-hf_top-p_10/
+  load_in_4bit: False
+  load_in_8bit: False
+device: cuda:0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:46<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/chenjie/Project/fact_hallu/main.py", line 603, in <module>
+    bot.load_model(args.load_in_4bit, args.load_in_8bit)
+  File "/home/chenjie/Project/fact_hallu/main.py", line 101, in load_model
+    self.llm = AutoModelForCausalLM.from_pretrained(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chenjie/anaconda3/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 563, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chenjie/anaconda3/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3175, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chenjie/anaconda3/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3563, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chenjie/anaconda3/lib/python3.11/site-packages/transformers/modeling_utils.py", line 745, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/home/chenjie/anaconda3/lib/python3.11/site-packages/accelerate/utils/modeling.py", line 317, in set_module_tensor_to_device
+    new_value = value.to(device)
+                ^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Arguments:
+  all_files: True
+  file: Bio-Medical
+  model: llama-2-7b-chat-hf
+  temperature: 1.0
+  top_p: 1.0
+  early_stopping: False
+  do_sample: True
+  num_beams: 1
+  top_k: 0
+  data_dir: ./annotation/query/
+  save_dir: ./response/llama-2-7b-chat-hf_top-p_10/
+  load_in_4bit: False
+  load_in_8bit: False
+device: cuda:0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [04:49<04:49, 289.65s/it]Loading checkpoint shards: 100%|██████████| 2/2 [06:57<00:00, 194.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [06:57<00:00, 208.82s/it]
+Loading data from ./annotation/query/Bio-Medical.json, total 200
+  0%|                                                                       | 0/200 [00:00<?, ?it/s]Process ID: [3185231] | Model: llama-2-7b-chat-hf | File: Bio-Medical | Saving 0 items
+  0%|▎                                                              | 1/200 [00:16<53:34, 16.16s/it]  1%|▋                                                              | 2/200 [00:32<52:43, 15.98s/it]  2%|▉                                                              | 3/200 [00:47<52:16, 15.92s/it]  2%|█▎                                                             | 4/200 [01:03<51:56, 15.90s/it]  2%|█▌                                                             | 5/200 [01:19<51:37, 15.88s/it]  3%|█▉                                                             | 6/200 [01:35<51:19, 15.88s/it]  4%|██▏                                                            | 7/200 [01:51<51:01, 15.86s/it]  4%|██▌                                                            | 8/200 [02:06<50:16, 15.71s/it]  4%|██▊                                                            | 9/200 [02:22<50:11, 15.77s/it]  5%|███                                                           | 10/200 [02:38<50:02, 15.80s/it]  6%|███▍                                                          | 11/200 [02:53<49:04, 15.58s/it]  6%|███▋                                                          | 12/200 [03:09<49:03, 15.66s/it]  6%|████                                                          | 13/200 [03:24<48:07, 15.44s/it]  7%|████▎                                                         | 14/200 [03:40<48:14, 15.56s/it]  8%|████▋                                                         | 15/200 [03:55<48:15, 15.65s/it]  8%|████▉                                                         | 16/200 [04:11<48:13, 15.73s/it]  8%|█████▎                                                        | 17/200 [04:19<40:47, 13.37s/it]  9%|█████▌                                                        | 18/200 [04:35<42:53, 14.14s/it] 10%|█████▉                                                        | 19/200 [04:49<42:03, 13.94s/it] 10%|██████▏                                                       | 20/200 [05:02<41:35, 13.86s/it] 10%|██████▌                                                       | 21/200 [05:18<43:09, 14.46s/it] 11%|██████▊                                                       | 22/200 [05:34<44:08, 14.88s/it] 12%|███████▏                                                      | 23/200 [05:50<44:45, 15.17s/it] 12%|███████▍                                                      | 24/200 [06:05<44:19, 15.11s/it] 12%|███████▊                                                      | 25/200 [06:21<44:42, 15.33s/it] 13%|████████                                                      | 26/200 [06:37<44:55, 15.49s/it] 14%|████████▎                                                     | 27/200 [06:52<44:58, 15.60s/it] 14%|████████▋                                                     | 28/200 [07:08<44:56, 15.68s/it] 14%|████████▉                                                     | 29/200 [07:24<44:50, 15.73s/it] 15%|█████████▎                                                    | 30/200 [07:40<44:41, 15.77s/it] 16%|█████████▌                                                    | 31/200 [07:56<44:32, 15.81s/it] 16%|█████████▉                                                    | 32/200 [08:09<42:17, 15.11s/it] 16%|██████████▏                                                   | 33/200 [08:25<42:39, 15.33s/it] 17%|██████████▌                                                   | 34/200 [08:41<42:51, 15.49s/it] 18%|██████████▊                                                   | 35/200 [08:57<42:52, 15.59s/it] 18%|███████████▏                                                  | 36/200 [09:13<42:51, 15.68s/it] 18%|███████████▍                                                  | 37/200 [09:29<42:45, 15.74s/it]

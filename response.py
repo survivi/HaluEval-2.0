@@ -1,7 +1,5 @@
 # coding: utf-8
 import os
-
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import torch
 import requests
 import openai
@@ -25,6 +23,14 @@ def check_exist(path):
         os.makedirs(path)
 
 
+class ExceedException(Exception):
+    """
+    Exception for exceeding daily limit.
+    """
+
+    pass
+
+
 class Bot(object):
     """
     Base class for chatbot.
@@ -43,8 +49,8 @@ class Bot(object):
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
             # "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
         }  # local model path
-        self.tokenizer = None
-        self.llm = None
+        self.tokenizer = None  # tokenizer
+        self.llm = None  # model to generate response
 
     def load_model(self, load_in_4bit, load_in_8bit):
         """
@@ -53,26 +59,22 @@ class Bot(object):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         if self.device == "cuda":
             device_id = torch.cuda.current_device()
-            print(f"device: cuda:{device_id}")
+            print(f"Process ID: [{os.getpid()}] | Device: cuda:{device_id}")
         else:
-            print(f"device: {self.device}")
+            print(f"Process ID: [{os.getpid()}] | Device: {self.device}")
         if self.model.startswith("vicuna"):  # vicuna-7b, vicuna-13b
             legacy = False
         else:
             legacy = True
-        if self.model not in [
-            "chatgpt",
-            "text-davinci-002",
-            "text-davinci-003",
-        ]:
-            model_path = self.model2path[self.model]
+        if self.model not in ["chatgpt", "text-davinci-002", "text-davinci-003"]:
+            model_path = self.model2path[self.model]  # local model path
             self.tokenizer = AutoTokenizer.from_pretrained(
                 model_path,
                 trust_remote_code=True,
                 use_fast=True,
                 legacy=legacy,
             )
-            if load_in_4bit:
+            if load_in_4bit:  # load in 4bit precision quantized model
                 assert self.model.startswith("llama-2")
                 self.llm = AutoModelForCausalLM.from_pretrained(
                     model_path,
@@ -82,7 +84,7 @@ class Bot(object):
                     load_in_4bit=True,
                     bnb_4bit_compute_dtype=torch.bfloat16,
                 )
-            elif load_in_8bit:
+            elif load_in_8bit:  # load in 8bit precision quantized model
                 assert self.model.startswith("llama-2")
                 self.llm = AutoModelForCausalLM.from_pretrained(
                     model_path,
@@ -112,7 +114,7 @@ class Chatbot(Bot):
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
-        self.max_retry = 500  # max retry times
+        self.max_retry = 40  # max retry times
         self.frequency = 300  # save frequency
 
     def load_data(self, part=0):
@@ -123,7 +125,9 @@ class Chatbot(Bot):
             data = json.load(f)
             if part:
                 data = data[:part]
-            print(f"Loading data from {self.data_path}, total {len(data)}")
+            print(
+                f"Process ID: [{os.getpid()}] | Loading data from {self.data_path} | Total {len(data)}"
+            )
         return data
 
     def save(self):
@@ -131,7 +135,7 @@ class Chatbot(Bot):
         Save data to save path.
         """
         print(
-            f"Process ID: [{os.getpid()}] | Model: {self.model} | File: {self.file} | Saving {len(self.save_data)} items"
+            f"Process ID: [{os.getpid()}] | Model: {self.model} | File: {self.file} | Saving {len(self.save_data)} items to {self.save_path}"
         )
         with open(self.save_path, "w", encoding="utf-8") as f:
             json.dump(self.save_data, f, indent=2, ensure_ascii=False)
@@ -141,15 +145,21 @@ class Chatbot(Bot):
         Load exist data from save path.
         """
         if os.path.exists(self.save_path):
-            print(f"Loading exist data from {self.save_path}")
-            with open(self.save_path, "r", encoding="utf-8") as f:
-                self.save_data = json.load(f)
-        ids = [i["id"] for i in self.save_data]
-        data = [i for i in data if i["id"] not in ids]
+            if len(self.save_data) != 0:
+                print(
+                    f"Process ID: [{os.getpid()}] | Loading exist data from {self.save_path} | Total {len(self.save_data)}"
+                )
+                with open(self.save_path, "r", encoding="utf-8") as f:
+                    self.save_data = json.load(f)
+                ids = [i["id"] for i in self.save_data]
+                data = [i for i in data if i["id"] not in ids]
         return data
 
     @func_set_timeout(10)
     def get_access_token(self):
+        """
+        Get access token for chatgpt_hi_request.
+        """
         url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
         payload = json.dumps(
             {
@@ -172,10 +182,10 @@ class Chatbot(Bot):
         # top_p=0.9,
     ):
         """
-        model type
-        2: GPT3.5
-        4: GPT4-8k
-        5: GPT-4-32k
+        model type:
+            2: GPT3.5
+            4: GPT4-8k
+            5: GPT-4-32k
         """
         url = "https://hi-open.zhipin.com/open-apis/ai/open/api/send/message"
         headers = {
@@ -196,28 +206,47 @@ class Chatbot(Bot):
         )
         response = requests.request("POST", url, headers=headers, data=payload)
         data = json.loads(response.text)
-        # if data['code'] != 0:
-        #     print(data)
+        if data["msg"] == "应用触发每日tokens频控，请明日再试":
+            raise ExceedException
         return data["data"]["choices"][0]["message"]["content"]
 
     def gpt_4_complete(self, query, chat_model, **kwargs):
+        """
+        Complete using GPT-4.
+        """
         coun = 0
         while True:
-            if coun > 10:
-                res = "NO FACTS"
-                break
             try:
                 res = self.chatgpt_hi_request(query)
                 break
+            except ExceedException:
+                raise Exception("Exceed daily limit")
             except func_timeout.exceptions.FunctionTimedOut:
-                res = "NO FACTS"
-                break
-            except Exception:
-                # print("Exception, retrying...", end="")
+                coun += 3
+                if coun > 20:
+                    res = "TIMEOUT"
+                    break
+            except Exception as e:
+                print(f"Error: {str(e)}\nRetrying...")
                 coun += 1
-        if res is None:
-            res = "NO FACTS"
+                if coun > 20:
+                    res = "FAILED"
+                    break
         return res
+
+    @func_set_timeout(20)
+    def chatgpt_complete(self, query, **kwargs):
+        """
+        Complete using ChatGPT.
+        """
+        return openai.ChatCompletion.create(
+            model="gpt-3.5-turbo-1106",
+            messages=[{"role": "user", "content": query}],
+            temperature=kwargs["temperature"],
+            top_p=kwargs["top_p"],
+            # greedy search: temperature=0
+            # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
+        )
 
     def openai_complete(self, query, chat_model, **kwargs):
         """
@@ -228,14 +257,7 @@ class Chatbot(Bot):
             retry += 1
             try:
                 if chat_model == "chatgpt":
-                    response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo-1106",
-                        messages=[{"role": "user", "content": query}],
-                        temperature=kwargs["temperature"],
-                        top_p=kwargs["top_p"],
-                        # greedy search: temperature=0
-                        # top_p sampling: temperature=1, top_p=0.5 (0.2, 0.4, 0.6, 0.8, 1.0)
-                    )
+                    response = self.chatgpt_complete(query, **kwargs)
                 elif chat_model.startswith("text-davinci-00"):
                     response = openai.Completion.create(
                         model=chat_model,
@@ -245,26 +267,9 @@ class Chatbot(Bot):
                         top_p=kwargs["top_p"],
                     )
                 break
-            except openai.error.AuthenticationError as e:
-                print("openai.error.AuthenticationError\nRetrying...")
-                if "The token quota has been used up" in str(e):
-                    print("You exceeded your current quota: %s" % openai.api_key)
-                time.sleep(60)
-            except openai.error.RateLimitError as e:
-                print("openai.error.RateLimitError\nRetrying...")
-                time.sleep(60)
-            except openai.error.ServiceUnavailableError:
-                print("openai.error.ServiceUnavailableError\nRetrying...")
-                time.sleep(20)
-            except openai.error.Timeout:
-                print("openai.error.Timeout\nRetrying...")
-                time.sleep(20)
-            except openai.error.APIError:
-                print("openai.error.APIError\nRetrying...")
-                time.sleep(20)
-            except openai.error.APIConnectionError:
-                print("openai.error.APIConnectionError\nRetrying...")
-                time.sleep(20)
+            except func_timeout.exceptions.FunctionTimedOut:
+                print("FunctionTimedOut\nRetrying...")
+                time.sleep(3)
             except Exception as e:
                 print(f"Error: {str(e)}\nRetrying...")
                 time.sleep(10)
@@ -299,9 +304,9 @@ class Chatbot(Bot):
         ans = self.tokenizer.decode(output_ids, skip_special_tokens=True)
         return ans
 
-    def post_process(self, ans, query):
+    def post_process(self, ans):
         """
-        Remove query and empty lines.
+        Remove empty lines.
         """
         ans = ans.strip().split("\n")
         ans = "\n".join([_ for _ in ans if _])
@@ -309,7 +314,7 @@ class Chatbot(Bot):
 
     def get_template(self, query, chat_model):
         """
-        Get prompt template for query.
+        Get corresponding prompt template for query.
         """
         if chat_model.startswith("llama-2") and "chat" in chat_model:
             query = (
@@ -362,7 +367,7 @@ class Chatbot(Bot):
             query = query_lst[i]["user_query"]
             query = self.get_template(query, self.model)
             ans = complete_func(query, self.model, **kwargs)
-            ans = self.post_process(ans, query)
+            ans = self.post_process(ans)
             query_lst[i][self.model + "_response"] = ans
             self.save_data.append(query_lst[i])
 
@@ -397,9 +402,7 @@ class Parser(object):
         Parse arguments for all tasks.
         """
         self.parser.add_argument(
-            "--all-files",
-            action="store_true",
-            help="whether to use all datasets",
+            "--all-files", action="store_true", help="whether to use all datasets"
         )
         self.parser.add_argument(
             "--file",
@@ -429,15 +432,12 @@ class Parser(object):
             help="chat model to use",
         )
         self.parser.add_argument(
-            "--temperature",
-            default=1,
-            help="sampling temperature to use",
+            "--temperature", default=1, help="sampling temperature to use"
         )
         self.parser.add_argument(
             "--top-p",
             default=1,
-            help="only the smallest set of most probable tokens with probabilities\
-                that add up to top_p or higher are kept for generation",
+            help="only the smallest set of most probable tokens with probabilities that add up to top_p or higher are kept for generation",
         )
         self.parser.add_argument(
             "--early-stopping",
@@ -466,9 +466,7 @@ class Parser(object):
         """
         args = self.parser.parse_known_args()[0]
         self.parser.add_argument(
-            "--data-dir",
-            default="./data/",
-            help="data root directory",
+            "--data-dir", default="./data/", help="data root directory"
         )
         self.parser.add_argument(
             "--save-dir",
@@ -497,9 +495,7 @@ class Parser(object):
             help="data root directory",
         )
         self.parser.add_argument(
-            "--save-dir",
-            default=f"./fact/{args.model}/",
-            help="save root directory",
+            "--save-dir", default=f"./fact/{args.model}/", help="save root directory"
         )
         self.parser.add_argument(
             "--assist-model",
@@ -522,14 +518,10 @@ class Parser(object):
         """
         args = self.parser.parse_known_args()[0]
         self.parser.add_argument(
-            "--data-dir",
-            default=f"./fact/{args.model}/",
-            help="data root directory",
+            "--data-dir", default=f"./fact/{args.model}/", help="data root directory"
         )
         self.parser.add_argument(
-            "--save-dir",
-            default=f"./judge/{args.model}/",
-            help="save root directory",
+            "--save-dir", default=f"./judge/{args.model}/", help="save root directory"
         )
         self.parser.add_argument(
             "--assist-model",
@@ -565,9 +557,9 @@ class Parser(object):
         """
         Print all arguments.
         """
-        print("Arguments:")
+        print(f"Process ID: [{os.getpid()}] | Arguments:")
         for arg in vars(self.args):
-            print(f"  {arg}: {getattr(self.args, arg)}")
+            print(f"    {arg}: {getattr(self.args, arg)}")
 
 
 if __name__ == "__main__":
@@ -578,9 +570,9 @@ if __name__ == "__main__":
     args_parser.transform_args()
     args_parser.print_args()
     args = args_parser.args
-    if args.all_files:
+    if args.all_files:  # use all files
         files = args_parser.file_list
-    else:
+    else:  # use one file
         files = [args.file]
     bot = Bot(args.model)
     bot.load_model(args.load_in_4bit, args.load_in_8bit)

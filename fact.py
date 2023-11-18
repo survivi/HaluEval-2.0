@@ -1,7 +1,7 @@
 # coding: utf-8
 import os
 from tqdm import tqdm
-from main import Chatbot, Parser, check_exist
+from response import Chatbot, Parser, check_exist
 
 
 class Factbot(Chatbot):
@@ -13,13 +13,12 @@ class Factbot(Chatbot):
         super().__init__(data_path, save_path, model, file)
         self.file = file  # file name
         self.assist_model = assist_model  # facts generation model
-        self.frequency = 1000  # save frequency
 
     def get_facts_lst(self, ans):
         """
         Get facts list from the assist model's response.
         """
-        if "NO FACTS" in ans or "FAILED" in ans or "TIMEOUT" in ans:
+        if "NO FACTS" in ans or ans == "FAILED" or ans == "TIMEOUT":
             facts = []
         else:
             try:
@@ -27,8 +26,8 @@ class Factbot(Chatbot):
                 facts = [fact[2:].strip() for fact in ans_cut]
                 facts = [fact for fact in facts if fact]
             except Exception as e:
-                # print("Error: " + str(e))
-                # print("Facts: " + ans)
+                print("Error: " + str(e))
+                print("Corresponding facts: " + ans)
                 facts = []
         return facts
 
@@ -47,15 +46,14 @@ class Factbot(Chatbot):
         for i in tqdm(range(len(data)), ncols=100):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
-            user_query = data[i]["user_query"]
-            response = data[i][self.model + "_response"]
-            query = prompt.format(query=user_query, answer=response)
+            query = prompt.format(
+                query=data[i]["user_query"], answer=data[i][self.model + "_response"]
+            )
 
             ans = complete_func(query, self.assist_model, **kwargs)
 
             data[i][self.model + "_fact_raw"] = ans
-
-            ans = self.post_process(ans, query)
+            ans = self.post_process(ans)
             facts = self.get_facts_lst(ans)
             data[i][self.model + "_fact"] = facts
             self.save_data.append(data[i])

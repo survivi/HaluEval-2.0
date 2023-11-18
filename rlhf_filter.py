@@ -1,7 +1,7 @@
 # coding: utf-8
 import os
 import func_timeout
-from main import check_exist, Parser, Chatbot
+from response import check_exist, Parser, Chatbot
 
 
 class Filterbot(Chatbot):

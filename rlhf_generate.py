@@ -1,6 +1,6 @@
 # coding: utf-8
 import os
-from main import check_exist, Parser
+from response import check_exist, Parser
 from rlhf_filter import Filterbot
 
 

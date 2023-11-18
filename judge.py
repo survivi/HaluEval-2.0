@@ -1,8 +1,7 @@
 # coding: utf-8
 import os
-import time
 from tqdm import tqdm
-from main import Chatbot, Parser, check_exist
+from response import Chatbot, Parser, check_exist
 
 
 class Judgebot(Chatbot):
@@ -17,51 +16,26 @@ class Judgebot(Chatbot):
         self.frequency = 300  # save frequency
         self.max_retry = 20  # max retry times
 
-    def get_judge_lst(self, facts, prompt, **kwargs):
+    def get_judge_lst(self, ans, facts):
         """
         Get judge list from the assist model's response.
         """
-        if len(facts) == 0:  # facts: [] -> NO FACTS: []
+        if ans == "FAILED" or ans == "TIMEOUT":
             return []
-        fact_lst = [f"{i+1}. {fact}" for i, fact in enumerate(facts)]
-        fact_str = "\n".join(fact_lst)
-        query = prompt.format(facts=fact_str)
-
-        return query
-
-        ret = 0
-        while True:
-            ret += 1
-            if ret >= self.max_retry:  # undetected: [unknown]
-                raise ValueError("unknown facts: \n" + fact_str)
-                print("Unknown facts: \n" + fact_str)
-                judge_list = ["unknown" for _ in facts]
-                return judge_list
-            ans = self.openai_complete(query, self.assist_model, **kwargs)
-            lines = [line.strip() for line in ans.split("\n") if line]
-            if len(lines) == len(facts):
-                break
-            print("Facts list: " + fact_str)
-            print("Judge list: " + "\n".join(lines))
-            print("Length not match\nRetrying...")
+        lines = [line.strip() for line in ans.split("\n")]
+        if len(lines) < len(facts):
+            lines += ["unknown"] * (len(facts) - len(lines))
+        elif len(lines) > len(facts):
+            lines = lines[: len(facts)]
         judge_lst = []
         for line in lines:
-            if "UNKNOWN" in line:  # [UNKNOWN]: [unknown]
+            if "UNKNOWN" in line:  # UNKNOWN: unknown
                 judge_lst.append("unknown")
-            elif "TRUE" in line:  # [TRUE]: [true]
+            elif "TRUE" in line:  # TRUE: true
                 judge_lst.append("true")
-            elif "FALSE" in line:  # [FALSE]: [false, [corrected fact]: xxx]
-                try:
-                    corrected_ans = line.split("[correction]:")[1].strip()
-                except:
-                    try:
-                        corrected_ans = line.split("[Correction]:")[1].strip()
-                    except Exception as e:
-                        print("Error: " + str(e))
-                        print("Empty corrected fact: " + line)
-                        corrected_ans = ""
-                judge_lst.append("false, [corrected fact]: " + corrected_ans)
-            else:  # undetected: [unknown]
+            elif "FALSE" in line or "False" in line:  # FALSE/False: false
+                judge_lst.append("false")
+            else:  # undetected: unknown
                 print("Undetected judge: " + line)
                 judge_lst.append("unknown")
         return judge_lst
@@ -78,15 +52,22 @@ class Judgebot(Chatbot):
         else:
             complete_func = self.openai_complete
 
-        for i in range(len(data)):
+        for i in tqdm(range(len(data)), ncols=100):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
             facts = data[i][self.model + "_fact"]
-            # judge_lst = self.get_judge_lst(facts, prompt, **kwargs)
+            if len(facts) == 0:
+                judge_lst = []
+            else:
+                query = prompt.format(
+                    facts="\n".join([f"{i+1}. {fact}" for i, fact in enumerate(facts)])
+                )
 
-            query = self.get_judge_lst(facts, prompt)
-            judge_lst = complete_func(query, self.assist_model, **kwargs)
+                ans = complete_func(query, self.assist_model, **kwargs)
 
+                data[i][self.model + "_judge_raw"] = ans
+                ans = self.post_process(ans)
+                judge_lst = self.get_judge_lst(ans, facts)
             data[i][self.model + "_judge"] = judge_lst
             self.save_data.append(data[i])
 
@@ -97,7 +78,7 @@ if __name__ == "__main__":
     args_parser.judge_args()
     args_parser.parse_args()
     args_parser.transform_args()
-    # args_parser.print_args()
+    args_parser.print_args()
 
     args = args_parser.args
     if args.all_files:
