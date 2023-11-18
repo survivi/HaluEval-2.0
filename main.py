@@ -24,6 +24,10 @@ def check_exist(path):
 
 
 class ExceedException(Exception):
+    """
+    Exception for exceeding daily limit.
+    """
+
     pass
 
 
