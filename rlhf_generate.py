@@ -31,7 +31,7 @@ class Genbot(Filterbot):
                 answer=d["corrected_response"],
                 hallucination=d["hallucination"],
             )
-            ans = self.gpt_4_complete(q)
+            ans = self.gpt_4_complete(q, "gpt-4")
             if "FAILED" in ans:
                 self.append_data(d, "FAILED")
             else:
