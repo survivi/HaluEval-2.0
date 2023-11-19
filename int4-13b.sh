@@ -1,1 +1,0 @@
-python int4-13b.py --all-files --model llama-2-13b-chat-hf --load-in-4bit --data-dir "./annotation/query/" --save-dir "./quantization/llama-2-13b-chat-hf_INT4/"
