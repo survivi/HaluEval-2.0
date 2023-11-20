@@ -114,7 +114,7 @@ class Chatbot(Bot):
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
-        self.max_retry = 40  # max retry times
+        self.max_retry = 20  # max retry times
         self.frequency = 300  # save frequency
 
     def load_data(self, part=0):
@@ -223,13 +223,13 @@ class Chatbot(Bot):
                 raise Exception("Exceed daily limit")
             except func_timeout.exceptions.FunctionTimedOut:
                 coun += 3
-                if coun > 20:
+                if coun > self.max_retry:
                     res = "TIMEOUT"
                     break
             except Exception as e:
                 print(f"Error: {str(e)}\nRetrying...")
                 coun += 1
-                if coun > 20:
+                if coun > self.max_retry:
                     res = "FAILED"
                     break
         return res

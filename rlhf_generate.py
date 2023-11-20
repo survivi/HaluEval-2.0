@@ -1,12 +1,11 @@
 # coding: utf-8
 import os
-from response import check_exist, Parser
-from rlhf_filter import Filterbot
+from response import check_exist, Parser, Chatbot
 
 
-class Genbot(Filterbot):
-    def __init__(self, data_path, save_path, model):
-        super().__init__(data_path, save_path, model)
+class Genbot(Chatbot):
+    def __init__(self, data_path, save_path, model, file):
+        super().__init__(data_path, save_path, model, file)
 
     def append_data(self, d, ans, label="0"):
         self.save_data.append(
@@ -21,10 +20,12 @@ class Genbot(Filterbot):
 
     def correct(self, d, prompt):
         correct_d = None
-        if "NO" in d["hallucination"]:
-            self.append_data(d, "NO")
-        elif "FAILED" in d["hallucination"]:
-            self.append_data(d, "FAILED")
+        if d["hallucination"] == "NO":
+            self.append_data(d, "NO", label="-2")
+        elif d["hallucination"] == "FAILED":
+            self.append_data(d, "FAILED", label="-1")
+        elif d["hallucination"] == "TIMEOUT":
+            self.append_data(d, "TIMEOUT", label="-1")
         else:
             q = prompt.format(
                 query=d["user_query"],
@@ -32,8 +33,10 @@ class Genbot(Filterbot):
                 hallucination=d["hallucination"],
             )
             ans = self.gpt_4_complete(q, "gpt-4")
-            if "FAILED" in ans:
-                self.append_data(d, "FAILED")
+            if ans == "FAILED":
+                self.append_data(d, "FAILED", label="-1")
+            elif ans == "TIMEOUT":
+                self.append_data(d, "TIMEOUT", label="-1")
             else:
                 correct_d = {
                     "id": d["id"],
@@ -50,8 +53,10 @@ class Genbot(Filterbot):
         )
         filter_d = None
         ans = self.gpt_4_complete(q)
-        if "FAILED" in ans:
-            self.append_data(d, "FAILED")
+        if ans == "FAILED":
+            self.append_data(d, "FAILED", label="-1")
+        elif ans == "TIMEOUT":
+            self.append_data(d, "TIMEOUT", label="-1")
         elif "NO" in ans:
             self.append_data(d, d["corrected_response"])
         else:
@@ -64,13 +69,10 @@ class Genbot(Filterbot):
             }
         return filter_d
 
-    def generate_data(self, data, hallu_prompt, correct_prompt, file):
+    def generate_data(self, data, hallu_prompt, correct_prompt):
         for i in range(len(data)):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
-                print(
-                    f"Process ID: [{os.getpid()}] | Model: {self.model} | File: {file} | Saving {len(self.save_data)} items"
-                )
             count = 0
             filter_d = data[i]
             while count < 5:
@@ -108,7 +110,7 @@ if __name__ == "__main__":
         default="./prompt/rlhf_correct.txt",
     )
     args_parser.parse_args()
-    # args_parser.print_args()
+    args_parser.print_args()
     args = args_parser.args
     if args.all_files:
         files = args_parser.file_list
@@ -122,7 +124,7 @@ if __name__ == "__main__":
     for file in files:
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
-        with Genbot(data_path, save_path, args.model) as bot:
+        with Genbot(data_path, save_path, args.model, file) as bot:
             data = bot.load_data(part=0)
             data = bot.load_exist_data(data)
-            bot.generate_data(data, hallu_prompt, correct_prompt, file)
+            bot.generate_data(data, hallu_prompt, correct_prompt)

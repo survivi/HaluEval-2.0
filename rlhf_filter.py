@@ -1,13 +1,14 @@
 # coding: utf-8
 import os
+from tqdm import tqdm
 from response import check_exist, Parser, Chatbot
 
 
 class Filterbot(Chatbot):
-    def __init__(self, data_path, save_path, model):
-        super().__init__(data_path, save_path, model)
+    def __init__(self, data_path, save_path, model, file):
+        super().__init__(data_path, save_path, model, file)
 
-    def filter(self, data, prompt, file):
+    def filter(self, data, prompt):
         if len(data) == 0:
             return
         query_lst = [
@@ -17,17 +18,12 @@ class Filterbot(Chatbot):
             )
             for i in range(len(data))
         ]
-        for i in range(len(query_lst)):
+        for i in tqdm(range(len(query_lst)), ncols=100):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
-                print(
-                    f"Process ID: [{os.getpid()}] | Model: {self.model} | File: {file} | Saving {len(self.save_data)} items"
-                )
             ans = self.gpt_4_complete(query_lst[i], "gpt-4")
             if "NO" in ans:
                 ans = "NO"
-            elif "FAILED" in ans:
-                ans = "FAILED"
             self.save_data.append(
                 {
                     "id": data[i]["id"],
@@ -70,7 +66,7 @@ if __name__ == "__main__":
     for file in files:
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
-        with Filterbot(data_path, save_path, args.model) as bot:
+        with Filterbot(data_path, save_path, args.model, file) as bot:
             data = bot.load_data(part=0)
             data = bot.load_exist_data(data)
-            bot.filter(data, hallu_prompt, file)
+            bot.filter(data, hallu_prompt)
