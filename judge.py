@@ -25,6 +25,7 @@ class Judgebot(Chatbot):
         try:
             lines = [line.strip() for line in ans.split("\n") if line.strip()]
             if len(lines) == 0:
+                print("Empty judge: " + ans)
                 return []
         except Exception as e:
             print("Error: " + str(e))

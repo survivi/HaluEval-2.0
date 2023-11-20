@@ -23,16 +23,16 @@ class Factbot(Chatbot):
         try:
             lines = [line.strip() for line in ans.split("\n") if line.strip()]
             if len(lines) == 0:
-                facts = []
+                print("Empty facts: " + ans)
+                return []
             elif len(lines) == 1 and not lines[0].startswith("1."):
-                facts = [lines[0]]
+                return [lines[0]]
             else:
-                facts = [fact[2:].strip() for fact in lines if fact[2:].strip()]
+                return [fact[2:].strip() for fact in lines if fact[2:].strip()]
         except Exception as e:
             print("Error: " + str(e))
             print("Corresponding facts: " + ans)
             return []
-        return facts
 
     def generate_facts(self, data, prompt, **kwargs):
         """
