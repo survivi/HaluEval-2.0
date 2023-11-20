@@ -2753,7 +2753,7 @@
     "user_query": "all of the following are types of obsessions except ?",
     "text-davinci-003_response": "Social climbing.",
     "text-davinci-003_fact_raw": "The factual statement is: Social climbing is not a type of obsession.",
-    "text-davinci-003_fact": []
+    "text-davinci-003_fact": "Social climbing is not a type of obsession."
   },
   {
     "id": 687,
@@ -4056,7 +4056,7 @@
     "user_query": "what word was added to the massachusetts governor 's name to make the word gerrymandering ?",
     "text-davinci-003_response": "The word \"mandering\" was added to the Massachusetts governor's name to make the word gerrymandering.",
     "text-davinci-003_fact_raw": "The factual statement is: The word \"mandering\" was added to the Massachusetts governor's name to make the word \"gerrymandering\".",
-    "text-davinci-003_fact": []
+    "text-davinci-003_fact": "The word \"mandering\" was added to the Massachusetts governor's name to make the word \"gerrymandering\"."
   },
   {
     "id": 999,
@@ -5846,7 +5846,7 @@
     "user_query": "which of the following isn ’ t a caffeine source ?",
     "text-davinci-003_response": "Sugar is not a caffeine source.",
     "text-davinci-003_fact_raw": "The factual statement is: Sugar is not a source of caffeine.",
-    "text-davinci-003_fact": []
+    "text-davinci-003_fact": "Sugar is not a source of caffeine."
   },
   {
     "id": 1491,
@@ -5989,13 +5989,6 @@
       "Harrison's 1761 clock was the first chronometer with a double-three legged gravity escapement.",
       "John Harrison's clock was the first to accurately measure longitude over a long period of time."
     ]
-  },
-  {
-    "id": 1514,
-    "user_query": "how long did john napier toil in his castle to invent logarithms ?",
-    "text-davinci-003_response": "John Napier spent about 20 years toiling away in the castle of Merchiston trying to perfect his theories on logarithms. He started in the 1610s and finished in the 1630s. During this time he developed several groundbreaking innovations, including the development of the first table of natural logarithms. He also worked on decimal fractions and refined several areas of mathematics, such as the theory of conic sections. Napier published his book Mirifici Logarithmorum Canonis Descripto in 1614, which contained his theories on logarithms and mark the start of his work on the subject. After that, he spent the next few decades of his life further refining and developing his theories, aiming to make logarithms as useful for calculations as possible. By the time he finished his work, Napier had successfully created one of the first and most renowned methods for mathematical calculations.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 1515,
@@ -6955,13 +6948,6 @@
     ]
   },
   {
-    "id": 1750,
-    "user_query": "what ’ s the difference between a pandemic and an epidemic ?",
-    "text-davinci-003_response": "The primary difference between a pandemic and an epidemic is the geographical scope of the outbreak. A pandemic is an outbreak of a disease that affects a large percentage of the population across a very wide geographical area, such as multiple countries or even continents. An epidemic is an outbreak of a disease that affects a larger number of people than usual, but is limited in its geographic area, typically to a single town, city, or region. \nIn general, pandemics are more widespread and cause more severe symptoms than epidemics. They can also have more profound effects on the global economy and public health systems, leading to increased costs and disruption. Immunization and early treatment can help significantly reduce the impact of a pandemic.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 1755,
     "user_query": "what happens to the influenza virus every 20-40 years , and why ? what are the recent example ( s ) ?",
     "text-davinci-003_response": "The influenza virus undergoes major population shifts, or antigenic shifts, every 20-40 years. This is due to the high rate of mutation and variability of the virus. These antigenic shifts cause re-circulation of new, antigenically distinct, flu strains that are not recognized by the immune system, leading to increased susceptibility to infection. Examples of total antigenic shifts include the 1957 Asian Flu and the 1968 Hong Kong Flu. More recently, the 2009 H1N1 Pandemic (sometimes referred to as Swine Flu) was the result of an antigenic shift.",
@@ -7077,20 +7063,6 @@
       "Post-menopausal women can experience rapid age-related bone loss.",
       "Long-term use of certain medications, such as steroids and anticonvulsants, can cause a decrease in bone density."
     ]
-  },
-  {
-    "id": 1774,
-    "user_query": "which of the following is an effect of cardiovascular exercise ?",
-    "text-davinci-003_response": "One of the effects of cardiovascular exercise is improved cardiovascular health. This includes an increase in the efficiency of the heart and lungs, which in turn lead to the body being able to work harder and more efficiently for longer periods of time without becoming fatigued. It also helps to reduce the risk of coronary heart disease and stroke, as the increased oxygen flow encourages the body’s cells to provide more efficient energy. Additionally, cardiovascular exercise improves metabolism, reducing fatigue and promoting energy levels during exercise. Lastly, cardiovascular exercise helps improve the immune system, aiding in the prevention of disease.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
-    "id": 1778,
-    "user_query": "which of the statements below correctly describes the partial charges on the atoms in a water molecule ?",
-    "text-davinci-003_response": "The partial charges of a water molecule describe the sharing of the electrons in the covalent bond between the oxygen atom and the two hydrogen atoms. The oxygen atom is slightly negative due to having more protons than the hydrogen atoms, and the two hydrogen atoms are slightly positive due to having fewer protons than the oxygen atom. The partial positive and partial negative charges result in a dipole moment, where the oxygen atom is the negative end, and each hydrogen atom is the positive end.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 1784,
@@ -7610,7 +7582,7 @@
     "user_query": "what is not true about matrices ?",
     "text-davinci-003_response": "Matrices are used only to represent numeric values.",
     "text-davinci-003_fact_raw": "The factual statement is: Matrices are used to represent numeric values.",
-    "text-davinci-003_fact": []
+    "text-davinci-003_fact": "Matrices are used to represent numeric values."
   },
   {
     "id": 1934,
@@ -7687,13 +7659,6 @@
       "Morlocks have evolved into \"bare, troglodytic, apelike creatures\" in the future world.",
       "In the narrative, the Eloi have been domesticated by the Morlocks to serve as their food supply."
     ]
-  },
-  {
-    "id": 1947,
-    "user_query": "what was the basic formula for dystopia established by jonathan swift in `` gulliver ’ s travels '' ?",
-    "text-davinci-003_response": "The basic formula for dystopia established by Jonathan Swift in Gulliver’s Travels can be summarised as: a powerful political or religious authority figure who has absolute and unchecked power or authority over the people and uses their power to enforce their own agenda and ideals while disregarding the interests of individuals, thus leading to a lack of justice, fairness, and general unhappiness among the people over whom they govern. The dystopia of Gulliver’s Travels comes to fruition through the authority of oppressive rulers, including but not limited to the Yahoos who don’t understand the law or the Grand Academy that controls education, the Laputans who enforce their erratic laws and expectations and the Houyhnhnms who enforce the rule of reason and logic to the detriment of compassion and emotion. Swift’s satire highlights the power imbalance between rulers and subjects, extolling the dangers of unchecked authority and showing how it quickly leads to tyranny and oppression.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 1950,
@@ -8325,7 +8290,7 @@
     "user_query": "which of these statements is true ?",
     "text-davinci-003_response": "The statement that is true is: \"A triangle has three sides.\"",
     "text-davinci-003_fact_raw": "The factual statement is: A triangle has three sides.",
-    "text-davinci-003_fact": []
+    "text-davinci-003_fact": "A triangle has three sides."
   },
   {
     "id": 2108,
@@ -10209,7 +10174,7 @@
     "user_query": "which was not one of the animals that distinguished one of the subgroups of the delaware indians ?",
     "text-davinci-003_response": "The Opossum was not one of the animals that distinguished one of the subgroups of the Delaware Indians.",
     "text-davinci-003_fact_raw": "The factual statement is: The Opossum was not one of the animals that distinguished one of the subgroups of the Delaware Indians.",
-    "text-davinci-003_fact": []
+    "text-davinci-003_fact": "The Opossum was not one of the animals that distinguished one of the subgroups of the Delaware Indians."
   },
   {
     "id": 2564,
@@ -10417,20 +10382,6 @@
       "Lasers with neodymium can generate a beam of light with a higher intensity than lasers made without neodymium.",
       "Any color laser pointer can contain neodymium."
     ]
-  },
-  {
-    "id": 2608,
-    "user_query": "which birthday did the cameraman 's future mother-in-law celebrate a few days before the recording ? or in other words , how many electrons does an atom of neodymium have orbiting around its nucleus ?",
-    "text-davinci-003_response": "An atom of neodymium has 54 electrons orbiting around its nucleus. The exact birthday of the cameraman's future mother-in-law is not stated, so it cannot be determined.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
-    "id": 2612,
-    "user_query": "which elements can react with neon and bond to it ?",
-    "text-davinci-003_response": "Neon is a noble gas, meaning that it is very chemically unreactive. As such, only those elements with very high reactivity can form bonds with neon. The highest reactivity elements include lithium, sodium, potassium, rubidium, cesium, and francium. These elements can react with neon by transferring a single electron, forming an ionic bond and resulting in a polyatomic anion. Other elements with relatively high reactivity such as magnesium, calcium, strontium, barium, and radon can also form ionic bonds with neon in the same way, although they can also form multiple-electron bonds. Other reactive elements such as copper, silver, and gold can form covalent bonds with neon. Finally, although not elements, molecules such as water, carbon dioxide, and sulfur dioxide can form polyatomic molecules with neon.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 2624,
@@ -10871,13 +10822,6 @@
     ]
   },
   {
-    "id": 2723,
-    "user_query": "even with more of the circular pies , why would it have been impossible to cover the area of the circle with them and calculate pi using the area of a circle formula area = pi * r^2 ?",
-    "text-davinci-003_response": "Even with more of the circular pies, it would still be impossible to cover the area of the circle with them and calculate pi using the area of a circle formula area = pi * r^2 because an exact number of circular pies is required to cover the entire area precisely in order to calculate pi. Generally, pi cannot be expressed as a precise fraction or decimal. Specifically, the exact number of circular pies required to cover the circle's area is unknowable and will vary due to the curvature of the circle and the unevenness of the pies. Therefore, it would not be possible to calculate pi, using the circles and pies, as the pies will not form an exact line, nor will they cover the area completely and evenly. Additionally, the circular shape of the pies makes the application of the formula inaccurate, as the formula is designed to calculate the area of a perfect circle, while the true area of the pies used is slightly less than the perfect circle because of the curved shape of the pies.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 2724,
     "user_query": "knowing the small pies have a diameter of 10.5cm - what is the area of the circle created in this video ?",
     "text-davinci-003_response": "The area of a circle is calculated by the formula A = π x r2, where r is the radius of the circle. The radius of the circle can be found by dividing the diameter of the circle (10.5 cm) by 2, giving a radius of 5.25 cm. Substituting this value into the formula gives us A = π x 5.252, or approximately 88.04 cm2.",
@@ -11153,13 +11097,6 @@
     ]
   },
   {
-    "id": 2773,
-    "user_query": "as stephen explained , it 's thanks to a praseodymium alloy that chemists can approach the lowest possible temperature . what do we call this temperature , and how many degrees celsius does it correspond to ?",
-    "text-davinci-003_response": "The temperature that chemists can approach using a praseodymium alloy is known as the absolute zero temperature. This temperature corresponds to a temperature of -273.15 degrees Celsius.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 2776,
     "user_query": "why does steve say that promethium is his least favorite lanthanide ?",
     "text-davinci-003_response": "Steve says that promethium is his least favorite lanthanide because it is not a naturally occurring element on Earth. It is a synthetic product of uranium fission, and as such, is considered radioactive and dangerous. Because it is not found naturally, it has no industrial use or practical application for Steve. Additionally, there are few understanding or applications of the chemical behavior of promethium, making it difficult from a scientific perspective.",
@@ -11393,13 +11330,6 @@
     ]
   },
   {
-    "id": 2830,
-    "user_query": "how could you model the change in solar energy in a given area with a protractor , flashlight , pencil , and a ruler ?",
-    "text-davinci-003_response": "1. Use the protractor to draw a circle on the paper representing the sun.\n2. Turn the ruler so it is perpendicular to the circle, and lightly draw a series of points from the center of the circle out to its edge that represent the angle of light the earth is receiving from the sun at different points in its journey around it.\n3. Connect these points using a pencil line to create a solar arc.\n4. Take the flashlight and shine it through the protractor to indicate the area of light the sun would be casting in that given area.\n5. Trace the part of the circle illuminated by the flashlight onto the paper using the pencil to create a second, smaller circle representing the maximum amount of solar energy one could expect for the given area.\n6. Compare the two circles side-by-side to represent the change in solar energy in the given area.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 2832,
     "user_query": "yup'ik fisherman ray waska says when he was young , the average fish was 30 pounds . today , he says , the fish are weighing how much ?",
     "text-davinci-003_response": "Today, according to Ray Waska, the average fish is much smaller than when he was younger, typically weighing around 10 pounds. The decline in average fish size is likely due to overfishing, climate change, and pollution, which has caused fish populations to decline.",
@@ -11501,13 +11431,6 @@
       "The melting point of rubidium is 102.7°F.",
       "Rubidium has a relatively low melting point."
     ]
-  },
-  {
-    "id": 2863,
-    "user_query": "why did the professor say , “ rubidium has got a life of its own in physics but in chemistry , it is perhaps slightly neglected ” ?",
-    "text-davinci-003_response": "The professor said this because rubidium has had a significant role in physics research over the years, particularly in fields like nuclear physics, where it is used to study phenomena such as nuclear decay and the quantum properties of electrons. However, in the field of chemistry, it has not been as heavily utilized, and it has become somewhat neglected in comparison. The professor may be trying to emphasize the importance of rubidium in both physics and chemistry, and how its use should not be limited to just one field.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 2864,
@@ -11690,13 +11613,6 @@
       "If one X chromosome contains a functional version of the gene and the other contains a mutant, the functional version has the ability to reduce the mutation's effects.",
       "Individuals who are Xy, having one X and one Y chromosome, lack the functional version of the gene."
     ]
-  },
-  {
-    "id": 2891,
-    "user_query": "what happens to an x chromosome that has undergone x-inactivation ?",
-    "text-davinci-003_response": "X-inactivation is the process by which one of the two X chromosomes found in female mammals is inactivated, which effectively reduces its contribution to gene expression from that point onwards. When X-inactivation occurs, the genes located on the inactive X-chromosome turn off, disabling their expression. This process occurs early in embryonic development and is a method for the body to equalize gene dosage between males (XY) and females (XX). In other words, it helps to balance the number of X chromosomes in males and females so that they each have the same amount of gene expression from the X chromosomes.\nIn order for X-inactivation to occur, the inactive X-chromosome must undergo a number of changes. Firstly, the RNA transcription machinery must be repressed, which does this by the recruitment of transcriptional silencers. Secondly, DNA methylation of the X-chromosome occurs, as this helps to establish and maintain an inactivated state. Lastly, chromatin remodelling occurs, which helps to repress gene expression and keep the chromosomal region inactive.\nAfter these processes have taken place, the X-chromosome is then referred to as a Barr body or an X-chromatin body. This body remains inactive from that point onwards and is not transcribed by the cell, resulting in only one active X-chromosome in the nucleus of the cell. This helps to equalize gene expression between males and females, and also helps to ensure that female cells do not produce too much of the proteins encoded by the X-chromosome.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 2892,
@@ -12404,7 +12320,7 @@
     "user_query": "only one of these sentences comparing thallium and gold is correct . which one is it ?",
     "text-davinci-003_response": "The correct sentence is \"Thallium is a less dense metal than gold.\"",
     "text-davinci-003_fact_raw": "The factual statement is: Thallium is a less dense metal than gold.",
-    "text-davinci-003_fact": []
+    "text-davinci-003_fact": "Thallium is a less dense metal than gold."
   },
   {
     "id": 3049,
@@ -12576,13 +12492,6 @@
     ]
   },
   {
-    "id": 3078,
-    "user_query": "what is unique about the south pole ?",
-    "text-davinci-003_response": "The South Pole is the southernmost point on the Earth’s surface and one of the most remote places on the planet. It is the only place on Earth where the Earth’s axis of rotation intersects with its surface, meaning that the South Pole is the southernmost point on the planet and it is the only location where the sun rises and sets only once a year. Additionally, the South Pole is also one of the coldest places on Earth. Temperatures can dip below -90°F, making it one of the most hostile environments for human habitation and exploration. The South Pole is also unique in its lack of light pollution. This makes it one of the best places in the world to observe the stars, giving astronomers a spectacular view of the night sky. Additionally, the South Pole is also unique in its geography, as it is located at the top of an Antarctic continent. This means that the South Pole is situated in a place with no mountains or trees, making it a unique location from a landscape perspective.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 3080,
     "user_query": "what 's the story with snow in antarctica ?",
     "text-davinci-003_response": "The snow in Antarctica is the largest reservoir of freshwater on Earth. It plays an incredibly important role in the climate balance of the planet, covering almost 98% of the frozen continent.\nThe snow perched on Antarctica was formed during the glacial periods where intense cooling caused snow to fall on the surface and subsequently become compressed into thick, massive sheets of ice. This snow slowly creeps down the mountains and eventually accumulates on the continent's continental shelf.\nThe snow in the Antarctic traps a great amount of solar radiation and helps to keep the continent's climate from becoming even colder. By trapping heat in the snow, rather than allowing it to escape, it helps to regulate temperatures on the continent, particularly in the summer months. In effect, the snow provides a thermal buffer around Antarctica, protecting the continent from extreme temperature changes.\nIn addition to its role in the climate, the snow in Antarctica also plays an immensely important role in the ecology of the frozen continent. As snow accumulates, it feeds the food chain and provides sustenance to the creatures that inhabit Antarctica, including penguins and seals. The snow also serves an important role in providing a safe environment for nesting sites for many of the native species.\nThe snow in Antarctica is constantly changing, with accumulation and melting occurring throughout the continent's coldest months. This cycle of snowfall and melting helps to ensure the delicate balance of the continent's climate and ecology remain intact. Without the snow in the Antarctic, life on the continent as we know it could drastically change.",
@@ -12620,27 +12529,6 @@
       "A poem can convey larger symbolic meanings through imagery, such as a cricket singing on a branch in the middle of a river.",
       "A poem can inspire new ways of thinking, evoke memories and feelings, and help people connect with their humanity."
     ]
-  },
-  {
-    "id": 3095,
-    "user_query": "where is the higgs field located ?",
-    "text-davinci-003_response": "The Higgs field is a fundamental field that permeates the entire universe. It is not a physical object that is located somewhere, but rather a distributed and invisible energy field that fills all of the empty space in the universe. As such, it is omnipresent, though not necessarily detectable or measurable.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
-    "id": 3099,
-    "user_query": "if the higgs field didn ’ t exist , what would be the consequence for our universe ?",
-    "text-davinci-003_response": "Without the Higgs Field, the fundamental particles of matter - quarks and leptons - would have no mass. This would have a catastrophic effect on the formation of entire galaxies and life as we know it, since atoms and molecules would not form. Additionally, all matter would be traveling at the speed of light, making it impossible for stars, planets, and galaxies to form. Without all these structures, the universe would be missing its rich diversity of elements and energy sources that we take for granted. Without the Higgs Field, life would not exist.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
-    "id": 3100,
-    "user_query": "who , other than peter higgs , developed the concept of what is commonly called the “ higgs field ” ?",
-    "text-davinci-003_response": "The concept of the Higgs field and the Higgs boson were developed by two teams of physicists working independently. Robert Brout and François Englert, from Université Libre de Bruxelles in Belgium, and Gerald Guralnik, C.R. Hagen, and Tom Kibble, from Imperial College London, all worked on the concept simultaneously around 1964. Their work was based on the earlier work of Peter Higgs, and upon completion of their respective papers in 1964, which were then published in 1965, they shared the 2010 Nobel Prize in Physics.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 3102,
@@ -13075,13 +12963,6 @@
     ]
   },
   {
-    "id": 3227,
-    "user_query": "in pavlov 's famous experiment , what do we call the food that makes the dog salivate ?",
-    "text-davinci-003_response": "The food that makes the dog salivate in Pavlov’s famous experiment is known as the “unconditioned stimulus,” or UCS. Pavlov’s experiment involved presenting a dog with an unconditioned stimulus, such as food, which would produce a reflexive response of salivation. The UCS is the inherently rewarding stimulus in the experiment; it is the stimulus that triggers the unlearned, or conditioned response of salivation.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 3228,
     "user_query": "what is stimulus generalization ?",
     "text-davinci-003_response": "Stimulus generalization is a phenomenon in which a behavior is learned in one context and then generalized to other contexts. It occurs when an individual’s response to a conditioned stimulus is also given to a different but similar stimulus. For example, after a person has been conditioned to respond to a bell ringing, they will also respond to a similar sound like a whistle. A stimulus generalization has been demonstrated in various forms of learning. This can include classical conditioning and operant conditioning, resulting in habit formation. Examples of this phenomenon include a dog who is trained to sit on command continuing to sit when someone claps their hands instead of saying the command, or a child who learned how to swim in a shallow pool generalizing their learned swimming skills to a deep pool. Stimulus generalization allows an individual to respond to a variety of novel stimuli, improving their learning response and expanding their repertoire of behaviors.",
@@ -13277,13 +13158,6 @@
     ]
   },
   {
-    "id": 3261,
-    "user_query": "once the printing press existed , would water-based ink work in the printing process ?",
-    "text-davinci-003_response": "Yes, water-based ink will work in the printing process, although it has some unique challenges. Water-based inks do not offer the same level of durability or color range as oil-based or other types of inks. They also may dry slower and require additional drying time compared to oil-based inks. Additionally, because of its lower viscosity, water-based ink may require more frequent cleanings of the printing press. In some cases, these inks may also be difficult to transfer properly onto certain printing substrates. Finally, water-based inks may require more frequent maintenance of dampening systems on offset and letterpress machines to ensure even, full coverage—as water-based inks naturally spread and feather out more than oils or other inks. In spite of these unique challenges, water-based inks can be used in the printing process.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 3267,
     "user_query": "which organism demonstrates the use of simple light spots ?",
     "text-davinci-003_response": "One organism that demonstrates the use of simple light spots is the mantis shrimp. Mantis shrimp are small, predatory crustaceans with an array of photoreceptors on their carapace and appendages, which allow them to detect subtle changes in light intensity. They use these photoreceptors to detect potential prey by detecting dark \"light spots\" on the environment that could indicate concealed prey. The mantis shrimp can also use these light spots to assess the size and shape of any detectable objects or to identify patterns on the objects.",
@@ -13450,13 +13324,6 @@
     ]
   },
   {
-    "id": 3305,
-    "user_query": "the spacetime diagrams we ’ ve drawn show only one spatial dimension . how would you represent an object that moved forward , backward , up and down ?",
-    "text-davinci-003_response": "A spacetime diagram can be used to represent an object that is moving in multiple directions by adding more spatial dimension lines. In the case of an object that is moving both forward, backward, up and down, two additional spatial dimension lines— one for up and down motion and one for backward motion—need to be added to the diagram. The vertical axis will represent up and down motion, and the negative horizontal axis will represent backward motion. The object's movements in each direction can then be plotted on the various axes. Additionally, if more precision is needed or to better represent even more different directions of movement, additional axes can be added. The resulting diagram will then become a four-dimensional spacetime diagram, incorporating the three spatial dimensions (forward, up and down, and backward) and the one temporal dimension.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 3306,
     "user_query": "why does light have to appear at the same angle when drawn on a space-time diagram ?",
     "text-davinci-003_response": "Light has to appear at the same angle when drawn on a space-time diagram because it is a representation of the speed of light—a constant—in all directions through space-time. In other words, the speed of light is a constant, and so it appears on the space-time diagram as a straight line, regardless of the direction in which it is travelling. Therefore, no matter what angle is used to draw that line on the diagram, it will always have the same slope—representing the speed of light—because the speed of light is an absolute constant. \nThis representation of the speed of light is significant because it helps us visualize the phenomenon of relativity—the idea that space and time are interwoven, and that the speed of light is the same in any inertial frame. The space-time diagram clearly demonstrates that no matter what direction light is travelling in, its speed is always constant.",
@@ -13553,13 +13420,6 @@
       "The yolk sac of the amniotic egg stores the nutrients that feed the embryo as it develops.",
       "The adaptations of the amniotic egg are considered a key evolutionary innovation for life in a terrestrial environment."
     ]
-  },
-  {
-    "id": 3322,
-    "user_query": "why is the amniotic egg compared to a traveling pond ?",
-    "text-davinci-003_response": "The amniotic egg is compared to a traveling pond because it maintains a high level of moisture to keep its occupant, the embryo, hydrated and cushioned. Additionally, it provides essential nutrients to the embryo and insulates the embryo from the external environment. This is similar to a traveling pond which collects, stores, and transports water wherever it goes. Like the amniotic egg, the pond maintains a consistent level of moisture while providing nutrients and insulation to the creatures living inside it.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 3325,
@@ -13671,13 +13531,6 @@
       "When an electron moves through the Higgs field it interacts with the Higgs bosons, causing it to acquire mass.",
       "The interaction between the electron and the Higgs field is made possible by the electron's weak nuclear force field."
     ]
-  },
-  {
-    "id": 3362,
-    "user_query": "where does most of the mass from objects come from ?",
-    "text-davinci-003_response": "Most of the mass from objects comes from the atoms and molecules that make up all physical matter. Atoms and molecules themselves consist of subatomic particles, such as neutrons, protons, and electrons. These particles in turn are composed of even smaller particles, such as quarks and gluons. The vast majority of an atom's mass comes from the protons and neutrons that make up the nucleus, with the electrons accounting for a much smaller fraction of the mass. Protons and neutrons are made up of three types of quarks, with different types of quarks making up protons and neutrons. The quarks in turn are composed of even smaller particles, known as gluons. These gluons hold the quarks together, and in turn bind the protons and neutrons together, forming the nucleus of an atom and giving it its mass, thus making up the vast majority of the mass of any physical object.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 3363,
@@ -14087,13 +13940,6 @@
     ]
   },
   {
-    "id": 3448,
-    "user_query": "by 1965 , the trail was passable by trucks . what was the nickname given to these truck drivers ?",
-    "text-davinci-003_response": "The nickname given to the truck drivers that traversed the passable trail by 1965 was “Dalton Gang.” This nickname came from the Dalton brothers, the infamous outlaws, due to the harsh and dangerous nature of the trail. The trail was full of climbs, switchbacks, and treacherous roads, all of which required extreme caution and skill to navigate.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
-  },
-  {
     "id": 3451,
     "user_query": "when did hilbert propose his grand hotel ?",
     "text-davinci-003_response": "Hilbert first proposed his Grand Hotel in 1925 in a lecture titled “On the Infinite”, which he gave at the International Congress of Mathematicians in Strasbourg. In his lecture, Hilbert discussed what is now known as Hilbert's Grand Hotel Paradox as a way to further illustrate some of his ideas about infinity and how it can be applied to mathematics. His paradox highlighted the idea of the potential infinity of a number of values and triggered some very lively debates.",
@@ -14161,13 +14007,6 @@
       "Using prime numbers in the natural powers to assign room numbers can virtually eliminate the chances of accidentally double-booking a room.",
       "Assigning room numbers using the prime numbers makes it easier to identify individual rooms with specific unique addresses."
     ]
-  },
-  {
-    "id": 3462,
-    "user_query": "how many rotational ‘ degrees of freedom ’ does a non-linear molecule have ?",
-    "text-davinci-003_response": "A non-linear molecule has three rotational degrees of freedom. This is because the molecule has three independent axes of rotation around the three atom-atom bonds. This means that the molecule can move freely in three directions in three-dimensional space in response to a combination of internal and external forces.",
-    "text-davinci-003_fact_raw": "FAILED",
-    "text-davinci-003_fact": []
   },
   {
     "id": 3463,

@@ -710,7 +710,7 @@
     "user_query": "Is cytisine superior to nicotine replacement therapy for smoking cessation?",
     "alpaca-7b_response": "Currently, there is insufficient evidence to conclude that cytisine is superior to nicotine replacement therapy for smoking cessation.",
     "alpaca-7b_fact_raw": "The factual statement is: There is insufficient evidence to conclude that cytisine is superior to nicotine replacement therapy for smoking cessation.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "There is insufficient evidence to conclude that cytisine is superior to nicotine replacement therapy for smoking cessation."
   },
   {
     "id": 173,
@@ -837,7 +837,7 @@
     "user_query": "Which protein has been found to interact with phospholamban (PLN) and is also an anti-apoptotic protein?",
     "alpaca-7b_response": "Bcl-2.",
     "alpaca-7b_fact_raw": "The factual statement is: Bcl-2 is a protein that has been found to interact with phospholamban (PLN) and is also an anti-apoptotic protein.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Bcl-2 is a protein that has been found to interact with phospholamban (PLN) and is also an anti-apoptotic protein."
   },
   {
     "id": 213,
@@ -1258,7 +1258,7 @@
     "user_query": "Gene silencing can be achieved by RNA interference (RNAi) in eukaryotic organisms. What is the name of the analogous process in prokaryotic organisms?",
     "alpaca-7b_response": "The analogous process in prokaryotic organisms is known as gene knockouts.",
     "alpaca-7b_fact_raw": "The factual statement is: The process analogous to gene silencing in prokaryotic organisms is known as gene knockouts.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The process analogous to gene silencing in prokaryotic organisms is known as gene knockouts."
   },
   {
     "id": 339,
@@ -1286,7 +1286,7 @@
     "user_query": "Which is the most common cause of sudden cardiac death in young athletes?",
     "alpaca-7b_response": "The most common cause of sudden cardiac death in young athletes is an underlying heart condition called hypertrophic cardiomyopathy.",
     "alpaca-7b_fact_raw": "The factual statement is: The most common cause of sudden cardiac death in young athletes is an underlying heart condition called hypertrophic cardiomyopathy.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The most common cause of sudden cardiac death in young athletes is an underlying heart condition called hypertrophic cardiomyopathy."
   },
   {
     "id": 347,
@@ -2635,7 +2635,7 @@
     "user_query": "In what type(s) of plant organelles we can detect prolamellar bodies?",
     "alpaca-7b_response": "Prolamellar bodies can be found in the endoplasmic reticulum of plants.",
     "alpaca-7b_fact_raw": "The factual statement is: Prolamellar bodies can be found in the endoplasmic reticulum of plants.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Prolamellar bodies can be found in the endoplasmic reticulum of plants."
   },
   {
     "id": 646,
@@ -2720,7 +2720,7 @@
     "user_query": "Which autophagy pathway is trigered by the KFERQ motif of cytosolic proteins?",
     "alpaca-7b_response": "The KFERQ motif of cytosolic proteins triggers the Unc51-mediated autophagy pathway.",
     "alpaca-7b_fact_raw": "The factual statement is: The KFERQ motif of cytosolic proteins triggers the Unc51-mediated autophagy pathway.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The KFERQ motif of cytosolic proteins triggers the Unc51-mediated autophagy pathway."
   },
   {
     "id": 665,
@@ -3006,7 +3006,7 @@
     "user_query": "DX-88 is investigational name of which drug?",
     "alpaca-7b_response": "DX-88 is the investigational name of the drug candidate Daprodustat.",
     "alpaca-7b_fact_raw": "The factual statement is: DX-88 is the investigational name of the drug candidate Daprodustat.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "DX-88 is the investigational name of the drug candidate Daprodustat."
   },
   {
     "id": 740,
@@ -3035,7 +3035,7 @@
     "user_query": "Where does TORC1 sequester during heat stress?",
     "alpaca-7b_response": "TORC1 is sequestered in the cytoplasm during heat stress.",
     "alpaca-7b_fact_raw": "The factual statement is: TORC1 is sequestered in the cytoplasm during heat stress.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "TORC1 is sequestered in the cytoplasm during heat stress."
   },
   {
     "id": 745,
@@ -3086,7 +3086,7 @@
     "user_query": "In which kingdom do microsporidia belong, according to their current classification scheme?",
     "alpaca-7b_response": "Microsporidia belong to the Fungi kingdom.",
     "alpaca-7b_fact_raw": "The factual statement is: Microsporidia belong to the Fungi kingdom.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Microsporidia belong to the Fungi kingdom."
   },
   {
     "id": 763,
@@ -3226,7 +3226,7 @@
     "user_query": "What is the average diameter of intermediate filaments?",
     "alpaca-7b_response": "The average diameter of intermediate filaments is approximately 10 nm.",
     "alpaca-7b_fact_raw": "The factual statement is: The average diameter of intermediate filaments is approximately 10 nm.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The average diameter of intermediate filaments is approximately 10 nm."
   },
   {
     "id": 805,
@@ -3435,7 +3435,7 @@
     "user_query": "What is the sedimentation coefficient of the mammalian mitoribosome?",
     "alpaca-7b_response": "The sedimentation coefficient of the mammalian mitoribosome is 8.2S.",
     "alpaca-7b_fact_raw": "The factual statement is: The sedimentation coefficient of the mammalian mitoribosome is 8.2S.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The sedimentation coefficient of the mammalian mitoribosome is 8.2S."
   },
   {
     "id": 852,
@@ -5505,7 +5505,7 @@
     "user_query": "Which is the localization of the RIFIN family of proteins?",
     "alpaca-7b_response": "The RIFIN family of proteins is localized to the endoplasmic reticulum (ER) in eukaryotic cells.",
     "alpaca-7b_fact_raw": "The factual statement is: The RIFIN family of proteins is localized to the endoplasmic reticulum in eukaryotic cells.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The RIFIN family of proteins is localized to the endoplasmic reticulum in eukaryotic cells."
   },
   {
     "id": 1406,
@@ -6492,7 +6492,7 @@
     "user_query": "Which cyclin- dependent kinase inhibitor is regulated by Bmi-1?",
     "alpaca-7b_response": "Bmi-1 regulates the expression of the cyclin-dependent kinase inhibitor p21Cip1/Waf1.",
     "alpaca-7b_fact_raw": "The factual statement is: Bmi-1 regulates the expression of the cyclin-dependent kinase inhibitor p21Cip1/Waf1.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Bmi-1 regulates the expression of the cyclin-dependent kinase inhibitor p21Cip1/Waf1."
   },
   {
     "id": 1675,
@@ -6516,7 +6516,7 @@
     "user_query": "Which is the process that Conserved noncoding elements mostly regulate?",
     "alpaca-7b_response": "Conserved noncoding elements mostly regulate gene expression.",
     "alpaca-7b_fact_raw": "The factual statement is: Conserved noncoding elements mostly regulate gene expression.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Conserved noncoding elements mostly regulate gene expression."
   },
   {
     "id": 1689,
@@ -7427,7 +7427,7 @@
     "user_query": "Which disease the London mutation involved in?",
     "alpaca-7b_response": "The London mutation is associated with a genetic disorder called Cystic Fibrosis.",
     "alpaca-7b_fact_raw": "The factual statement is: The London mutation is associated with the genetic disorder called Cystic Fibrosis.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The London mutation is associated with the genetic disorder called Cystic Fibrosis."
   },
   {
     "id": 1930,
@@ -8464,7 +8464,7 @@
     "user_query": "Which is the major RNA editing enzyme in Drosophila melanogaster?",
     "alpaca-7b_response": "The major RNA editing enzyme in Drosophila melanogaster is DDX6.",
     "alpaca-7b_fact_raw": "The factual statement is: DDX6 is the major RNA editing enzyme in Drosophila melanogaster.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "DDX6 is the major RNA editing enzyme in Drosophila melanogaster."
   },
   {
     "id": 2182,
@@ -8592,7 +8592,7 @@
     "user_query": "How many times is CLAST faster than BLAST?",
     "alpaca-7b_response": "CLAST is faster than BLAST 1000 times.",
     "alpaca-7b_fact_raw": "The factual statement is: CLAST is 1000 times faster than BLAST.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "CLAST is 1000 times faster than BLAST."
   },
   {
     "id": 2221,
@@ -8745,7 +8745,7 @@
     "user_query": "Do origins of replication close to yeast centromeres fire early or late?",
     "alpaca-7b_response": "Origins of replication close to yeast centromeres fire early.",
     "alpaca-7b_fact_raw": "The factual statement is: Origins of replication close to yeast centromeres fire early.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Origins of replication close to yeast centromeres fire early."
   },
   {
     "id": 2268,
@@ -9073,7 +9073,7 @@
     "user_query": "Do bacteria from the genus Morexella cause respiratory infections?",
     "alpaca-7b_response": "No, bacteria from the genus Morexella do not cause respiratory infections.",
     "alpaca-7b_fact_raw": "The factual statement is: Bacteria from the genus Morexella do not cause respiratory infections.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Bacteria from the genus Morexella do not cause respiratory infections."
   },
   {
     "id": 2349,
@@ -9900,7 +9900,7 @@
     "user_query": "Milwaukee protocol was tested for treatment of which disease?",
     "alpaca-7b_response": "The Milwaukee protocol was tested for the treatment of HIV.",
     "alpaca-7b_fact_raw": "The factual statement is: The Milwaukee protocol was tested for the treatment of HIV.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The Milwaukee protocol was tested for the treatment of HIV."
   },
   {
     "id": 2552,
@@ -11140,7 +11140,7 @@
     "user_query": "Does lucatumumab bind to CD140?",
     "alpaca-7b_response": "Yes, lucatumumab binds to CD140.",
     "alpaca-7b_fact_raw": "The factual statement is: Lucatumumab binds to CD140.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Lucatumumab binds to CD140."
   },
   {
     "id": 2872,
@@ -11172,7 +11172,7 @@
     "user_query": "Does tremelimumab improve survival of mesothelioma patients?",
     "alpaca-7b_response": "No, tremelimumab does not improve survival of mesothelioma patients.",
     "alpaca-7b_fact_raw": "The factual statement is: Tremelimumab does not improve the survival of mesothelioma patients.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Tremelimumab does not improve the survival of mesothelioma patients."
   },
   {
     "id": 2878,
@@ -12806,7 +12806,7 @@
     "user_query": "Central Vein Sign is characteristic to which disease?",
     "alpaca-7b_response": "The Central Vein Sign is characteristic to pulmonary embolism.",
     "alpaca-7b_fact_raw": "The factual statement is: The Central Vein Sign is characteristic to pulmonary embolism.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The Central Vein Sign is characteristic to pulmonary embolism."
   },
   {
     "id": 3284,
@@ -13518,7 +13518,7 @@
     "user_query": "What are manifestations of the Saint's Triad?",
     "alpaca-7b_response": "The manifestations of the Saint's Triad are miracles, wonders, and signs.",
     "alpaca-7b_fact_raw": "The factual statement is: The manifestations of the Saint's Triad are miracles, wonders, and signs.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The manifestations of the Saint's Triad are miracles, wonders, and signs."
   },
   {
     "id": 3463,
@@ -13641,7 +13641,7 @@
     "user_query": "Are stretch enhancers transcribed more than super-enhancers?",
     "alpaca-7b_response": "No, super-enhancers are transcribed more than stretch enhancers.",
     "alpaca-7b_fact_raw": "The factual statement is: Super-enhancers are transcribed more than stretch enhancers.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Super-enhancers are transcribed more than stretch enhancers."
   },
   {
     "id": 3507,
@@ -13898,7 +13898,7 @@
     "user_query": "PDQ39 questionnaires is design for which disease?",
     "alpaca-7b_response": "PDQ39 questionnaires are designed for cancer patients.",
     "alpaca-7b_fact_raw": "The factual statement is: PDQ39 questionnaires are designed for cancer patients.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "PDQ39 questionnaires are designed for cancer patients."
   },
   {
     "id": 3570,
@@ -14529,7 +14529,7 @@
     "user_query": "Does radiotherapy for prostate cancer increase bladder cancer risk?",
     "alpaca-7b_response": "No, radiotherapy for prostate cancer does not increase the risk of bladder cancer.",
     "alpaca-7b_fact_raw": "The factual statement is: Radiotherapy for prostate cancer does not increase the risk of bladder cancer.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Radiotherapy for prostate cancer does not increase the risk of bladder cancer."
   },
   {
     "id": 3705,
@@ -14956,7 +14956,7 @@
     "user_query": "Which main viral protein is targeted by the drug remdesivir?",
     "alpaca-7b_response": "Remdesivir targets the main viral protein called NP.",
     "alpaca-7b_fact_raw": "The factual statement is: Remdesivir targets the main viral protein called NP.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Remdesivir targets the main viral protein called NP."
   },
   {
     "id": 3809,
@@ -15468,7 +15468,7 @@
     "user_query": "Which protein is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks?",
     "alpaca-7b_response": "The protein involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks is SMAD4.",
     "alpaca-7b_fact_raw": "The factual statement is: The protein SMAD4 is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "The protein SMAD4 is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks."
   },
   {
     "id": 3923,
@@ -16199,7 +16199,7 @@
     "user_query": "Is atenolol metabolized by CYP2D6?",
     "alpaca-7b_response": "Yes, atenolol is metabolized by CYP2D6.",
     "alpaca-7b_fact_raw": "The factual statement is: Atenolol is metabolized by CYP2D6.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Atenolol is metabolized by CYP2D6."
   },
   {
     "id": 4151,
@@ -16768,7 +16768,7 @@
     "user_query": "can gargling prevent the common cold ?",
     "alpaca-7b_response": "No, gargling cannot prevent the common cold.",
     "alpaca-7b_fact_raw": "The factual statement is: Gargling cannot prevent the common cold.",
-    "alpaca-7b_fact": []
+    "alpaca-7b_fact": "Gargling cannot prevent the common cold."
   },
   {
     "id": 4334,

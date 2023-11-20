@@ -1107,14 +1107,6 @@
     ]
   },
   {
-    "id": 172,
-    "user_query": "Is cytisine superior to nicotine replacement therapy for smoking cessation?",
-    "alpaca-7b_response": "Currently, there is insufficient evidence to conclude that cytisine is superior to nicotine replacement therapy for smoking cessation.",
-    "alpaca-7b_fact_raw": "The factual statement is: There is insufficient evidence to conclude that cytisine is superior to nicotine replacement therapy for smoking cessation.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 173,
     "user_query": "Which amino acid residue appears mutated in most of the cases reported with  cadasil syndrome?",
     "alpaca-7b_response": "The most commonly mutated amino acid residue in cases of Cadasil syndrome is methionine at position 3009. This mutation results in a substitution of the methionine amino acid with a threonine amino acid.",
@@ -1297,14 +1289,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 210,
-    "user_query": "Which protein has been found to interact with phospholamban (PLN) and is also an anti-apoptotic protein?",
-    "alpaca-7b_response": "Bcl-2.",
-    "alpaca-7b_fact_raw": "The factual statement is: Bcl-2 is a protein that has been found to interact with phospholamban (PLN) and is also an anti-apoptotic protein.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 213,
@@ -1955,14 +1939,6 @@
     ]
   },
   {
-    "id": 338,
-    "user_query": "Gene silencing can be achieved by RNA interference (RNAi) in eukaryotic organisms. What is the name of the analogous process in prokaryotic organisms?",
-    "alpaca-7b_response": "The analogous process in prokaryotic organisms is known as gene knockouts.",
-    "alpaca-7b_fact_raw": "The factual statement is: The process analogous to gene silencing in prokaryotic organisms is known as gene knockouts.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 339,
     "user_query": "Between which types of DNA bases are mutational biases introduced due to directional mutation pressure?",
     "alpaca-7b_response": "Mutational biases are introduced between guanine (G) and cytosine (C) DNA bases due to directional mutation pressure.",
@@ -1993,14 +1969,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 346,
-    "user_query": "Which is the most common cause of sudden cardiac death in young athletes?",
-    "alpaca-7b_response": "The most common cause of sudden cardiac death in young athletes is an underlying heart condition called hypertrophic cardiomyopathy.",
-    "alpaca-7b_fact_raw": "The factual statement is: The most common cause of sudden cardiac death in young athletes is an underlying heart condition called hypertrophic cardiomyopathy.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 347,
@@ -4117,14 +4085,6 @@
     ]
   },
   {
-    "id": 643,
-    "user_query": "In what type(s) of plant organelles we can detect prolamellar bodies?",
-    "alpaca-7b_response": "Prolamellar bodies can be found in the endoplasmic reticulum of plants.",
-    "alpaca-7b_fact_raw": "The factual statement is: Prolamellar bodies can be found in the endoplasmic reticulum of plants.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 646,
     "user_query": "Are chromomethylases present in animal genomes?",
     "alpaca-7b_response": "Yes, chromomethylases are present in animal genomes. They are enzymes that add methyl groups to DNA, and they are involved in a variety of processes such as gene regulation and DNA repair.",
@@ -4244,14 +4204,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 660,
-    "user_query": "Which autophagy pathway is trigered by the KFERQ motif of cytosolic proteins?",
-    "alpaca-7b_response": "The KFERQ motif of cytosolic proteins triggers the Unc51-mediated autophagy pathway.",
-    "alpaca-7b_fact_raw": "The factual statement is: The KFERQ motif of cytosolic proteins triggers the Unc51-mediated autophagy pathway.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 665,
@@ -4692,14 +4644,6 @@
     ]
   },
   {
-    "id": 738,
-    "user_query": "DX-88 is investigational name of which drug?",
-    "alpaca-7b_response": "DX-88 is the investigational name of the drug candidate Daprodustat.",
-    "alpaca-7b_fact_raw": "The factual statement is: DX-88 is the investigational name of the drug candidate Daprodustat.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 740,
     "user_query": "Which genes have been found to be associated with restless leg syndrome",
     "alpaca-7b_response": "Genes that have been found to be associated with restless leg syndrome include those involved in the production of dopamine, iron metabolism, and the immune system. These genes include HLA-DQB1, HLA-DQA1, HLA-DRB1, and IRBIT.",
@@ -4732,14 +4676,6 @@
     "alpaca-7b_judge": [
       "unknown"
     ]
-  },
-  {
-    "id": 744,
-    "user_query": "Where does TORC1 sequester during heat stress?",
-    "alpaca-7b_response": "TORC1 is sequestered in the cytoplasm during heat stress.",
-    "alpaca-7b_fact_raw": "The factual statement is: TORC1 is sequestered in the cytoplasm during heat stress.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 745,
@@ -4808,14 +4744,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 759,
-    "user_query": "In which kingdom do microsporidia belong, according to their current classification scheme?",
-    "alpaca-7b_response": "Microsporidia belong to the Fungi kingdom.",
-    "alpaca-7b_fact_raw": "The factual statement is: Microsporidia belong to the Fungi kingdom.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 763,
@@ -5021,14 +4949,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 799,
-    "user_query": "What is the average diameter of intermediate filaments?",
-    "alpaca-7b_response": "The average diameter of intermediate filaments is approximately 10 nm.",
-    "alpaca-7b_fact_raw": "The factual statement is: The average diameter of intermediate filaments is approximately 10 nm.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 805,
@@ -5348,14 +5268,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 850,
-    "user_query": "What is the sedimentation coefficient of the mammalian mitoribosome?",
-    "alpaca-7b_response": "The sedimentation coefficient of the mammalian mitoribosome is 8.2S.",
-    "alpaca-7b_fact_raw": "The factual statement is: The sedimentation coefficient of the mammalian mitoribosome is 8.2S.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 852,
@@ -8597,14 +8509,6 @@
     ]
   },
   {
-    "id": 1403,
-    "user_query": "Which is the localization of the RIFIN family of proteins?",
-    "alpaca-7b_response": "The RIFIN family of proteins is localized to the endoplasmic reticulum (ER) in eukaryotic cells.",
-    "alpaca-7b_fact_raw": "The factual statement is: The RIFIN family of proteins is localized to the endoplasmic reticulum in eukaryotic cells.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 1406,
     "user_query": "Is there any genetic determinant of hair pigmentation that could be useful in forensic analyses?",
     "alpaca-7b_response": "Yes, there is. Recent studies have shown that genetic variations in the MC1R gene are responsible for a wide range of hair pigmentation phenotypes in humans. These variations can be used to determine the race and ancestry of an individual, as well as to identify unique characteristics of an individual's hair. This information can be useful in forensic analyses, as it can help to determine the identity of an individual or the source of a hair sample.",
@@ -10134,14 +10038,6 @@
     ]
   },
   {
-    "id": 1672,
-    "user_query": "Which cyclin- dependent kinase inhibitor is regulated by Bmi-1?",
-    "alpaca-7b_response": "Bmi-1 regulates the expression of the cyclin-dependent kinase inhibitor p21Cip1/Waf1.",
-    "alpaca-7b_fact_raw": "The factual statement is: Bmi-1 regulates the expression of the cyclin-dependent kinase inhibitor p21Cip1/Waf1.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 1675,
     "user_query": "List inhibtors targeting the mitochondrial permeability transition pore.",
     "alpaca-7b_response": "Inhibitors targeting the mitochondrial permeability transition pore include: \n- Cyclosporine A\n- Delayed-action pesticides\n- Antimycin A\n- Carbonyl cyanide 3-chlorophenylhydrazone (CCCP)\n- Monensin\n- Valinomycin\n- Ubiquinol-cytochrome c reductase complex\n- Ubiquinol-cytochrome c reductase complex inhibitors\n- Ubiquinol-cytochrome c reductase complex activators",
@@ -10169,14 +10065,6 @@
       "unknown",
       "unknown"
     ]
-  },
-  {
-    "id": 1678,
-    "user_query": "Which is the process that Conserved noncoding elements mostly regulate?",
-    "alpaca-7b_response": "Conserved noncoding elements mostly regulate gene expression.",
-    "alpaca-7b_fact_raw": "The factual statement is: Conserved noncoding elements mostly regulate gene expression.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 1689,
@@ -11600,14 +11488,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 1925,
-    "user_query": "Which disease the London mutation involved in?",
-    "alpaca-7b_response": "The London mutation is associated with a genetic disorder called Cystic Fibrosis.",
-    "alpaca-7b_fact_raw": "The factual statement is: The London mutation is associated with the genetic disorder called Cystic Fibrosis.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 1930,
@@ -13225,14 +13105,6 @@
     ]
   },
   {
-    "id": 2181,
-    "user_query": "Which is the major RNA editing enzyme in Drosophila melanogaster?",
-    "alpaca-7b_response": "The major RNA editing enzyme in Drosophila melanogaster is DDX6.",
-    "alpaca-7b_fact_raw": "The factual statement is: DDX6 is the major RNA editing enzyme in Drosophila melanogaster.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 2182,
     "user_query": "What is the CEGA catalog?",
     "alpaca-7b_response": "The CEGA catalog is a database of research and evaluation resources that are used by the Center for Education Governance and Accountability (CEGA) to support education policy and practice. It contains resources related to education governance, finance, and accountability, as well as resources related to teacher quality, school leadership, and other topics. The catalog is searchable by topic, resource type, resource author, and resource language.",
@@ -13418,14 +13290,6 @@
       "true",
       "unknown"
     ]
-  },
-  {
-    "id": 2218,
-    "user_query": "How many times is CLAST faster than BLAST?",
-    "alpaca-7b_response": "CLAST is faster than BLAST 1000 times.",
-    "alpaca-7b_fact_raw": "The factual statement is: CLAST is 1000 times faster than BLAST.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 2221,
@@ -13653,14 +13517,6 @@
       "true",
       "false"
     ]
-  },
-  {
-    "id": 2262,
-    "user_query": "Do origins of replication close to yeast centromeres fire early or late?",
-    "alpaca-7b_response": "Origins of replication close to yeast centromeres fire early.",
-    "alpaca-7b_fact_raw": "The factual statement is: Origins of replication close to yeast centromeres fire early.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 2268,
@@ -14161,14 +14017,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 2347,
-    "user_query": "Do bacteria from the genus Morexella cause respiratory infections?",
-    "alpaca-7b_response": "No, bacteria from the genus Morexella do not cause respiratory infections.",
-    "alpaca-7b_fact_raw": "The factual statement is: Bacteria from the genus Morexella do not cause respiratory infections.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 2349,
@@ -15453,14 +15301,6 @@
       "unknown",
       "unknown"
     ]
-  },
-  {
-    "id": 2548,
-    "user_query": "Milwaukee protocol was tested for treatment of which disease?",
-    "alpaca-7b_response": "The Milwaukee protocol was tested for the treatment of HIV.",
-    "alpaca-7b_fact_raw": "The factual statement is: The Milwaukee protocol was tested for the treatment of HIV.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 2552,
@@ -17409,14 +17249,6 @@
     ]
   },
   {
-    "id": 2862,
-    "user_query": "Does lucatumumab bind to CD140?",
-    "alpaca-7b_response": "Yes, lucatumumab binds to CD140.",
-    "alpaca-7b_fact_raw": "The factual statement is: Lucatumumab binds to CD140.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 2872,
     "user_query": "Which molecule is targeted by Olaratumab?",
     "alpaca-7b_response": "Olaratumab is an antibody that targets the protein CD32B, which is found on the surface of certain white blood cells. This protein is also known as PDGFR-beta and is part of the PDGF receptor. Olaratumab binds to CD32B and blocks the activity of the PDGF receptor, which is believed to help slow down the growth of cancer cells.",
@@ -17455,14 +17287,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 2876,
-    "user_query": "Does tremelimumab improve survival of mesothelioma patients?",
-    "alpaca-7b_response": "No, tremelimumab does not improve survival of mesothelioma patients.",
-    "alpaca-7b_fact_raw": "The factual statement is: Tremelimumab does not improve the survival of mesothelioma patients.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 2878,
@@ -20014,14 +19838,6 @@
     ]
   },
   {
-    "id": 3274,
-    "user_query": "Central Vein Sign is characteristic to which disease?",
-    "alpaca-7b_response": "The Central Vein Sign is characteristic to pulmonary embolism.",
-    "alpaca-7b_fact_raw": "The factual statement is: The Central Vein Sign is characteristic to pulmonary embolism.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 3284,
     "user_query": "Do de novo truncating mutations in WASF1 cause cancer?",
     "alpaca-7b_response": "No, de novo truncating mutations in WASF1 do not cause cancer.",
@@ -21122,14 +20938,6 @@
     ]
   },
   {
-    "id": 3461,
-    "user_query": "What are manifestations of the Saint's Triad?",
-    "alpaca-7b_response": "The manifestations of the Saint's Triad are miracles, wonders, and signs.",
-    "alpaca-7b_fact_raw": "The factual statement is: The manifestations of the Saint's Triad are miracles, wonders, and signs.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 3463,
     "user_query": "Are male or female persons more prone to autoimmunity?",
     "alpaca-7b_response": "Neither male nor female persons are more prone to autoimmunity. Both men and women can develop autoimmune diseases, although some diseases may be more common in one gender than the other.",
@@ -21310,14 +21118,6 @@
       "false",
       "false"
     ]
-  },
-  {
-    "id": 3503,
-    "user_query": "Are stretch enhancers transcribed more than super-enhancers?",
-    "alpaca-7b_response": "No, super-enhancers are transcribed more than stretch enhancers.",
-    "alpaca-7b_fact_raw": "The factual statement is: Super-enhancers are transcribed more than stretch enhancers.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 3507,
@@ -21713,14 +21513,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 3569,
-    "user_query": "PDQ39 questionnaires is design for which disease?",
-    "alpaca-7b_response": "PDQ39 questionnaires are designed for cancer patients.",
-    "alpaca-7b_fact_raw": "The factual statement is: PDQ39 questionnaires are designed for cancer patients.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 3570,
@@ -22706,14 +22498,6 @@
     ]
   },
   {
-    "id": 3704,
-    "user_query": "Does radiotherapy for prostate cancer increase bladder cancer risk?",
-    "alpaca-7b_response": "No, radiotherapy for prostate cancer does not increase the risk of bladder cancer.",
-    "alpaca-7b_fact_raw": "The factual statement is: Radiotherapy for prostate cancer does not increase the risk of bladder cancer.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 3705,
     "user_query": "What is ESN364?",
     "alpaca-7b_response": "ESN364 is a unique 8-digit emergency services number in the United States that is used to contact emergency services such as police, fire, and ambulance. It is used to quickly and easily access emergency services in an emergency situation.",
@@ -23367,14 +23151,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 3807,
-    "user_query": "Which main viral protein is targeted by the drug remdesivir?",
-    "alpaca-7b_response": "Remdesivir targets the main viral protein called NP.",
-    "alpaca-7b_fact_raw": "The factual statement is: Remdesivir targets the main viral protein called NP.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 3809,
@@ -24165,14 +23941,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 3922,
-    "user_query": "Which protein is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks?",
-    "alpaca-7b_response": "The protein involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks is SMAD4.",
-    "alpaca-7b_fact_raw": "The factual statement is: The protein SMAD4 is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 3923,
@@ -25311,14 +25079,6 @@
     ]
   },
   {
-    "id": 4145,
-    "user_query": "Is atenolol metabolized by CYP2D6?",
-    "alpaca-7b_response": "Yes, atenolol is metabolized by CYP2D6.",
-    "alpaca-7b_fact_raw": "The factual statement is: Atenolol is metabolized by CYP2D6.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
-  },
-  {
     "id": 4151,
     "user_query": "Which pharmacogenetic test is recommended prior to administering carbamazepine and why?",
     "alpaca-7b_response": "The pharmacogenetic test that is recommended prior to administering carbamazepine is the CYP3A4 genotyping test, as it can help to determine the patient's metabolic rate of the drug and thus, the dose that should be administered.",
@@ -26196,14 +25956,6 @@
       "true",
       "true"
     ]
-  },
-  {
-    "id": 4333,
-    "user_query": "can gargling prevent the common cold ?",
-    "alpaca-7b_response": "No, gargling cannot prevent the common cold.",
-    "alpaca-7b_fact_raw": "The factual statement is: Gargling cannot prevent the common cold.",
-    "alpaca-7b_fact": [],
-    "alpaca-7b_judge": []
   },
   {
     "id": 4334,
