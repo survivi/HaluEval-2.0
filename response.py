@@ -391,6 +391,7 @@ class Chatbot(Bot):
         """
         Save data when exit.
         """
+        self.save_data = sorted(self.save_data, key=lambda x: x["id"])
         self.save()
         print(f"Process ID: [{os.getpid()}] | Exit")
 
