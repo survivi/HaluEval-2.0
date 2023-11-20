@@ -31,6 +31,14 @@ class ExceedException(Exception):
     pass
 
 
+class NoneTypeException(Exception):
+    """
+    Exception for requests where the returned data is None.
+    """
+
+    pass
+
+
 class Bot(object):
     """
     Base class for chatbot.
@@ -114,7 +122,7 @@ class Chatbot(Bot):
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
-        self.max_retry = 20  # max retry times
+        self.max_retry = 40  # max retry times
         self.frequency = 300  # save frequency
 
     def load_data(self, part=0):
@@ -207,7 +215,7 @@ class Chatbot(Bot):
         response = requests.request("POST", url, headers=headers, data=payload)
         data = json.loads(response.text)
         if data is None:
-            raise ValueError("Failed to generate response")
+            raise NoneTypeException
         if data["msg"] == "应用触发每日tokens频控，请明日再试":
             raise ExceedException
         return data["data"]["choices"][0]["message"]["content"]
@@ -223,6 +231,9 @@ class Chatbot(Bot):
                 break
             except ExceedException:
                 raise Exception("Exceed daily limit")
+            except NoneTypeException:
+                print("NoneType\nRetrying after 5s...")
+                time.sleep(5)
             except func_timeout.exceptions.FunctionTimedOut:
                 coun += 3
                 if coun > self.max_retry:
@@ -230,7 +241,6 @@ class Chatbot(Bot):
                     break
             except Exception as e:
                 print(f"Error: {str(e)}\nRetrying...")
-                time.sleep(5)
                 coun += 1
                 if coun > self.max_retry:
                     res = "FAILED"

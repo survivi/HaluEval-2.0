@@ -22,7 +22,14 @@ class Judgebot(Chatbot):
         """
         if ans == "FAILED" or ans == "TIMEOUT":
             return []
-        lines = [line.strip() for line in ans.split("\n")]
+        try:
+            lines = [line.strip() for line in ans.split("\n") if line.strip()]
+            if len(lines) == 0:
+                return []
+        except Exception as e:
+            print("Error: " + str(e))
+            print("Corresponding judge: " + ans)
+            return []
         if len(lines) < len(facts):
             lines += ["unknown"] * (len(facts) - len(lines))
         elif len(lines) > len(facts):
@@ -31,7 +38,7 @@ class Judgebot(Chatbot):
         for line in lines:
             if "UNKNOWN" in line:  # UNKNOWN: unknown
                 judge_lst.append("unknown")
-            elif "TRUE" in line:  # TRUE: true
+            elif "TRUE" in line or "True" in line:  # TRUE/True: true
                 judge_lst.append("true")
             elif "FALSE" in line or "False" in line:  # FALSE/False: false
                 judge_lst.append("false")

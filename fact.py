@@ -19,23 +19,19 @@ class Factbot(Chatbot):
         Get facts list from the assist model's response.
         """
         if "NO FACTS" in ans or ans == "FAILED" or ans == "TIMEOUT":
-            facts = []
-        else:
-            try:
-                ans_cut = ans.split("\n")
-                if len(ans_cut) == 1:
-                    fact = ans_cut[0].strip()
-                    if fact:
-                        if fact.startswith("1."):
-                            facts = [fact[2:].strip()]
-                    else:
-                        facts = []
-                else:
-                    facts = [fact[2:].strip() for fact in ans_cut if fact[2:].strip()]
-            except Exception as e:
-                print("Error: " + str(e))
-                print("Corresponding facts: " + ans)
+            return []
+        try:
+            lines = [line.strip() for line in ans.split("\n") if line.strip()]
+            if len(lines) == 0:
                 facts = []
+            elif len(lines) == 1 and not lines[0].startswith("1."):
+                facts = [lines[0]]
+            else:
+                facts = [fact[2:].strip() for fact in lines if fact[2:].strip()]
+        except Exception as e:
+            print("Error: " + str(e))
+            print("Corresponding facts: " + ans)
+            return []
         return facts
 
     def generate_facts(self, data, prompt, **kwargs):
