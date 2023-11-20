@@ -89,8 +89,8 @@ class Bot(object):
                     model_path,
                     # low_cpu_mem_usage=True,
                     device_map="cuda",
-                    torch_dtype=torch.float16,
-                )
+                    # torch_dtype=torch.float16,
+                ).half()
                 print(f"Loading model time: {time.time() - begin_time:.2f}s")
 
 

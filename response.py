@@ -206,6 +206,8 @@ class Chatbot(Bot):
         )
         response = requests.request("POST", url, headers=headers, data=payload)
         data = json.loads(response.text)
+        if data is None:
+            raise ValueError("Failed to generate response")
         if data["msg"] == "应用触发每日tokens频控，请明日再试":
             raise ExceedException
         return data["data"]["choices"][0]["message"]["content"]
@@ -228,6 +230,7 @@ class Chatbot(Bot):
                     break
             except Exception as e:
                 print(f"Error: {str(e)}\nRetrying...")
+                time.sleep(5)
                 coun += 1
                 if coun > self.max_retry:
                     res = "FAILED"

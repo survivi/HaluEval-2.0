@@ -1,6 +1,6 @@
 You are given a list of statements extracted from a passage. Your task is to determine whether each statement is true or false in order and provide corrections for any false statements. If some statements are vague and difficult to determine, answer "UNKNOWN".
 
-Here are two examples:
+Here are three examples:
 Context: <statements>:
 1. Franklin Delano Roosevelt was born in Hyde Park, New York on March 30, 1882.
 2. FDR married his distant cousin, Eleanor Roosevelt in 1910.
@@ -22,6 +22,11 @@ Response:
 2. TRUE
 3. FALSE [correction]: Napoleon Bonaparte was exiled to the island of Saint Helena after the Battle of Waterloo.
 4. UNKNOWN
+
+Context: <statements>:
+1. The capital of France is Paris.
+Response:
+1. TRUE
 
 Here is your task:
 Context: <statements>:

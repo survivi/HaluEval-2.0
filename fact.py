@@ -22,9 +22,16 @@ class Factbot(Chatbot):
             facts = []
         else:
             try:
-                ans_cut = ans.split("\n")[1:]
-                facts = [fact[2:].strip() for fact in ans_cut]
-                facts = [fact for fact in facts if fact]
+                ans_cut = ans.split("\n")
+                if len(ans_cut) == 1:
+                    fact = ans_cut[0].strip()
+                    if fact:
+                        if fact.startswith("1."):
+                            facts = [fact[2:].strip()]
+                    else:
+                        facts = []
+                else:
+                    facts = [fact[2:].strip() for fact in ans_cut if fact[2:].strip()]
             except Exception as e:
                 print("Error: " + str(e))
                 print("Corresponding facts: " + ans)

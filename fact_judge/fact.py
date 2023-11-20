@@ -43,7 +43,8 @@ class Factbot(Chatbot):
         else:
             complete_func = self.openai_complete
 
-        for i in tqdm(range(len(data)), ncols=100):
+        # for i in tqdm(range(len(data)), ncols=100):
+        for i in range(len(data)):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
             query = prompt.format(
