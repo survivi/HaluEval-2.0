@@ -4,5 +4,5 @@ DirList=("chatgpt_greedy" "chatgpt_top-p" "llama-2-7b-chat-hf_beam" "llama-2-7b-
 
 for dir in ${DirList[*]}; do
     model=${dir%%_*}
-    nohup python -u fact.py --all-files --model $model --data-dir "./decoding-strategy_data/$dir" --save-dir "./fact/$dir" >> ./log/decoding-strategy_fact_$model.log 2>&1 &
+    nohup python -u fact.py --all-files --model $model --data-dir "./decoding-strategy_data/$dir" --save-dir "./fact/$dir" >> ./log/decoding-strategy_fact_$dir.log 2>&1 &
 done
