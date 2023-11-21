@@ -111,16 +111,34 @@ if __name__ == "__main__":
         "Open-Domain",
     ]
     model = "chatgpt"
-    doc_path = os.path.join("./docs/", "{}.docx")
+    doc_path_1 = os.path.join("./docs/", "{}_1.docx")
+    doc_path_2 = os.path.join("./docs/", "{}_2.docx")
+    doc_path_3 = os.path.join("./docs/", "{}_3.docx")
+    doc_path_4 = os.path.join("./docs/", "{}_4.docx")
     json_path = os.path.join("./json/", "{}.json")
     total_human_id = []
     total_gpt_id = []
     for file in file_list:
         print("current file: ", file)
-        query_scores, response_hallu, fact_hallu = read_docx(
-            doc_path.format(file), part=1
+        query_scores_1, response_hallu_1, fact_hallu_1 = read_docx(
+            doc_path_1.format(file), part=0
         )
-        data = read_json(json_path.format(file), part=1)
+        query_scores_2, response_hallu_2, fact_hallu_2 = read_docx(
+            doc_path_2.format(file), part=0
+        )
+        query_scores_3, response_hallu_3, fact_hallu_3 = read_docx(
+            doc_path_3.format(file), part=0
+        )
+        query_scores_4, response_hallu_4, fact_hallu_4 = read_docx(
+            doc_path_4.format(file), part=0
+        )
+        # combine 4 parts
+        query_scores = query_scores_1 + query_scores_2 + query_scores_3 + query_scores_4
+        response_hallu = (
+            response_hallu_1 + response_hallu_2 + response_hallu_3 + response_hallu_4
+        )
+        fact_hallu = fact_hallu_1 + fact_hallu_2 + fact_hallu_3 + fact_hallu_4
+        data = read_json(json_path.format(file), part=0)
         gpt_id = [
             [1 if "true" in jud else 0 for jud in d[f"{model}_judge"]] for d in data
         ]
@@ -128,13 +146,12 @@ if __name__ == "__main__":
         assert len(fact_hallu) == len(gpt_id)
         for i in range(len(fact_hallu)):
             fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu]
-        show_id(fact_hallu, gpt_id)
+        # show_id(fact_hallu, gpt_id)
         print_metrics(fact_hallu, gpt_id)
         total_human_id.extend(fact_hallu)
         total_gpt_id.extend(gpt_id)
         print("================================")
         print(query_scores, response_hallu, fact_hallu)
-        exit()
 
     print("total")
     print_metrics(total_human_id, total_gpt_id)

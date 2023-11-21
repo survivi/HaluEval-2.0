@@ -37,6 +37,7 @@ class Bot(object):
             "llama-7b": "/media/public/models/huggingface/llama-7b/",
             "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
+            "llama-2-70b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-70b-hf/",
             "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
         }  # local model path
         self.tokenizer = None
@@ -87,8 +88,8 @@ class Bot(object):
                 begin_time = time.time()
                 self.llm = AutoModelForCausalLM.from_pretrained(
                     model_path,
-                    # low_cpu_mem_usage=True,
-                    device_map="cuda",
+                    low_cpu_mem_usage=True,
+                    device_map="auto",
                     torch_dtype=torch.float16,
                 )
                 print(f"Loading model time: {time.time() - begin_time:.2f}s")
@@ -368,6 +369,7 @@ class Parser(object):
                 "claude-2",
                 "llama-2-7b-hf",
                 "llama-2-13b-hf",
+                "llama-2-70b-hf",
                 "bloom-7b1",
             ],
             help="chat model to use",
