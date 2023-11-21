@@ -160,14 +160,13 @@ class Chatbot(Bot):
         Load exist data from save path.
         """
         if os.path.exists(self.save_path):
-            if len(self.save_data) != 0:
-                print(
-                    f"Process ID: [{os.getpid()}] | Loading exist data from {self.save_path} | Total {len(self.save_data)}"
-                )
-                with open(self.save_path, "r", encoding="utf-8") as f:
-                    self.save_data = json.load(f)
-                ids = [i["id"] for i in self.save_data]
-                data = [i for i in data if i["id"] not in ids]
+            with open(self.save_path, "r", encoding="utf-8") as f:
+                self.save_data = json.load(f)
+            print(
+                f"Process ID: [{os.getpid()}] | Loading exist data from {self.save_path} | Total {len(self.save_data)}"
+            )
+            ids = [i["id"] for i in self.save_data]
+            data = [i for i in data if i["id"] not in ids]
         return data
 
     @func_set_timeout(10)
