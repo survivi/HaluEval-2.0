@@ -14,8 +14,25 @@ Arguments:
   load_in_8bit: False
 device: cuda:0
 
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [05:20<1:14:45, 320.38s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [12:09<1:20:44, 372.63s/it]Loading checkpoint shards:  20%|██        | 3/15 [12:21<41:33, 207.82s/it]  Loading checkpoint shards:  27%|██▋       | 4/15 [12:33<23:54, 130.43s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [12:51<14:59, 89.99s/it] Loading checkpoint shards:  40%|████      | 6/15 [12:59<09:19, 62.17s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [13:13<06:11, 46.45s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [13:28<04:14, 36.37s/it]Loading checkpoint shards:  60%|██████    | 9/15 [13:43<02:58, 29.77s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [13:54<02:00, 24.02s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [14:08<01:22, 20.73s/it]Loading checkpoint shards:  80%|████████  | 12/15 [14:21<00:55, 18.43s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [14:37<00:35, 17.90s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [14:48<00:15, 15.77s/it]Loading checkpoint shards: 100%|██████████| 15/15 [14:49<00:00, 11.34s/it]Loading checkpoint shards: 100%|██████████| 15/15 [14:49<00:00, 59.32s/it]
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/15 [05:20<1:14:45, 320.38s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [12:09<1:20:44, 372.63s/it]
+Loading checkpoint shards:  20%|██        | 3/15 [12:21<41:33, 207.82s/it]  
+Loading checkpoint shards:  27%|██▋       | 4/15 [12:33<23:54, 130.43s/it]
+Loading checkpoint shards:  33%|███▎      | 5/15 [12:51<14:59, 89.99s/it] 
+Loading checkpoint shards:  40%|████      | 6/15 [12:59<09:19, 62.17s/it]
+Loading checkpoint shards:  47%|████▋     | 7/15 [13:13<06:11, 46.45s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [13:28<04:14, 36.37s/it]
+Loading checkpoint shards:  60%|██████    | 9/15 [13:43<02:58, 29.77s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [13:54<02:00, 24.02s/it]
+Loading checkpoint shards:  73%|███████▎  | 11/15 [14:08<01:22, 20.73s/it]
+Loading checkpoint shards:  80%|████████  | 12/15 [14:21<00:55, 18.43s/it]
+Loading checkpoint shards:  87%|████████▋ | 13/15 [14:37<00:35, 17.90s/it]
+Loading checkpoint shards:  93%|█████████▎| 14/15 [14:48<00:15, 15.77s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [14:49<00:00, 11.34s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [14:49<00:00, 59.32s/it]
 Loading model time: 897.94s
 Loading exist data from ./temp/Bio-Medical.json
 Loading data from ./data/Bio-Medical.json, total 1535
-  0%|                                                                      | 0/1513 [00:00<?, ?it/s]
+
+  0%|                                                                      | 0/1513 [00:00<?, ?it/s]
