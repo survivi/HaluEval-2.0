@@ -1388,6 +1388,19 @@
     ]
   },
   {
+    "id": 221,
+    "user_query": "What is the generic name of Gliolan?",
+    "text-davinci-002_response": "The generic name of Gliolan is 5-fluorouracil.",
+    "text-davinci-002_fact_raw": "1. The generic name of Gliolan is 5-fluorouracil.",
+    "text-davinci-002_fact": [
+      "The generic name of Gliolan is 5-fluorouracil."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: The generic name of Gliolan is 5-aminolevulinic acid.",
+    "text-davinci-002_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 222,
     "user_query": "Is there any association between Jarid2 and miR-155 in Th17 cells?",
     "text-davinci-002_response": "There is currently no known association between Jarid2 and miR-155 in Th17 cells. However, further research is needed to determine if there is any potential association between the two.",
@@ -1941,6 +1954,19 @@
     ]
   },
   {
+    "id": 333,
+    "user_query": "How many genes are imprinted in the human genome?",
+    "text-davinci-002_response": "As of 2010, there are around 150 known imprinted genes in the human genome.",
+    "text-davinci-002_fact_raw": "1. As of 2010, there were around 150 known imprinted genes in the human genome.",
+    "text-davinci-002_fact": [
+      "As of 2010, there were around 150 known imprinted genes in the human genome."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE",
+    "text-davinci-002_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 336,
     "user_query": "In which cells are A-type lamins expressed?",
     "text-davinci-002_response": "Lamins are a type of protein that helps to keep the nucleus of a cell intact. There are three types of lamins: A, B, and C. A-type lamins are primarily expressed in skeletal muscle cells, although they can also be found in other cell types such as epithelial cells and certain types of neurons.",
@@ -2023,6 +2049,19 @@
     "text-davinci-002_judge_raw": "1. TRUE",
     "text-davinci-002_judge": [
       "true"
+    ]
+  },
+  {
+    "id": 347,
+    "user_query": "Could the Menzerath-Altmann law be proved mathematically trivial in genomes?",
+    "text-davinci-002_response": "No, the Menzerath-Altmann law cannot be proved mathematically trivial in genomes.",
+    "text-davinci-002_fact_raw": "1. The Menzerath-Altmann law cannot be proved mathematically trivial in genomes.",
+    "text-davinci-002_fact": [
+      "The Menzerath-Altmann law cannot be proved mathematically trivial in genomes."
+    ],
+    "text-davinci-002_judge_raw": "1. UNKNOWN",
+    "text-davinci-002_judge": [
+      "unknown"
     ]
   },
   {
@@ -3141,6 +3180,21 @@
     ]
   },
   {
+    "id": 517,
+    "user_query": "Which JAK (Janus kinase) inhibitor is approved for treatment of rheumatoid arthritis?",
+    "text-davinci-002_response": "The JAK inhibitor approved for treatment of rheumatoid arthritis is tofacitinib.",
+    "text-davinci-002_fact_raw": "1. Tofacitinib is a JAK inhibitor.\n2. Tofacitinib is approved for the treatment of rheumatoid arthritis.",
+    "text-davinci-002_fact": [
+      "Tofacitinib is a JAK inhibitor.",
+      "Tofacitinib is approved for the treatment of rheumatoid arthritis."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE",
+    "text-davinci-002_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 519,
     "user_query": "Which are the newly identified DNA nucleases that can be used to treat thalassemia?",
     "text-davinci-002_response": "Several new DNA nucleases have been identified that can be used to treat thalassemia. One example is Nuclease P1, which is able to cleave DNA at specific sites. This has been shown to be effective in reducing the levels of thalassemia in patients. Another nuclease that has been identified is RNase H, which can also cleave DNA. This has been shown to be effective in reducing the levels of thalassemia in patients.",
@@ -4041,6 +4095,19 @@
     ]
   },
   {
+    "id": 640,
+    "user_query": "Which is the most common CFTR mutation in Caucasians?",
+    "text-davinci-002_response": "In Caucasians, the most common CFTR mutation is the delta F508 mutation.",
+    "text-davinci-002_fact_raw": "1. The most common CFTR mutation in Caucasians is the delta F508 mutation.",
+    "text-davinci-002_fact": [
+      "The most common CFTR mutation in Caucasians is the delta F508 mutation."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE",
+    "text-davinci-002_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 641,
     "user_query": "Which CDK targets control cytokinesis?",
     "text-davinci-002_response": "The cytokinetic ring is a protein scaffold that is assembled in the middle of the cell during cytokinesis. It is composed of two major types of proteins: actin and myosin. Actin-binding proteins (ABPs) link the actin cytoskeleton to the plasma membrane, while myosin-binding proteins (MBPs) link the myosin motor proteins to the actin cytoskeleton. These proteins work together to constrict the cell, dividing it into two daughter cells.",
@@ -4778,6 +4845,19 @@
       "true",
       "true",
       "true",
+      "false"
+    ]
+  },
+  {
+    "id": 759,
+    "user_query": "In which kingdom do microsporidia belong, according to their current classification scheme?",
+    "text-davinci-002_response": "Microsporidia belong to the kingdom Protista.",
+    "text-davinci-002_fact_raw": "1. Microsporidia belong to the kingdom Protista.",
+    "text-davinci-002_fact": [
+      "Microsporidia belong to the kingdom Protista."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: Microsporidia belong to the kingdom Fungi.",
+    "text-davinci-002_judge": [
       "false"
     ]
   },
@@ -6198,6 +6278,19 @@
     ]
   },
   {
+    "id": 988,
+    "user_query": "In which genomic regions are Alu enriched?",
+    "text-davinci-002_response": "Alu sequences are most abundant in regions of the genome that are rich in G-DNA base pairs.",
+    "text-davinci-002_fact_raw": "1. Alu sequences are most abundant in regions of the genome rich in G-DNA base pairs.",
+    "text-davinci-002_fact": [
+      "Alu sequences are most abundant in regions of the genome rich in G-DNA base pairs."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: Alu sequences are most abundant in regions of the genome rich in A-T base pairs.",
+    "text-davinci-002_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 993,
     "user_query": "Are there clinical trials using stem cells for the treatment of cardiac disease?",
     "text-davinci-002_response": "There are currently no major clinical trials using stem cells for the treatment of cardiac disease. However, there are many ongoing studies using stem cells to research potential treatments for heart conditions. For example, scientists are looking into using stem cells to regenerate damaged heart tissue, create new blood vessels in the heart, and improve heart function after a heart attack. While these studies are still in the early stages, they offer hope for the future use of stem cells in the treatment of cardiac disease.",
@@ -7016,6 +7109,19 @@
     ]
   },
   {
+    "id": 1156,
+    "user_query": "Is armodafinil used for treatment of insomnia?",
+    "text-davinci-002_response": "No, armodafinil is not used for treatment of insomnia.",
+    "text-davinci-002_fact_raw": "1. Armodafinil is not used for the treatment of insomnia.",
+    "text-davinci-002_fact": [
+      "Armodafinil is not used for the treatment of insomnia."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE",
+    "text-davinci-002_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 1159,
     "user_query": "What is Trypan blue used for?",
     "text-davinci-002_response": "Trypan blue is used as a vital dye to assess cellular viability. When cells are viable, they exclude trypan blue from their interior. In contrast, when cells are nonviable, they take up trypan blue. Consequently, Trypan blue is used to distinguish between live and dead cells.",
@@ -7196,6 +7302,19 @@
       "true",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 1194,
+    "user_query": "What is the Her2 status in Li-Fraumeni syndrome?",
+    "text-davinci-002_response": "Her2 status in Li-Fraumeni syndrome is usually positive.",
+    "text-davinci-002_fact_raw": "1. The Her2 status in Li-Fraumeni syndrome is usually positive.",
+    "text-davinci-002_fact": [
+      "The Her2 status in Li-Fraumeni syndrome is usually positive."
+    ],
+    "text-davinci-002_judge_raw": "1. UNKNOWN",
+    "text-davinci-002_judge": [
+      "unknown"
     ]
   },
   {
@@ -8029,6 +8148,19 @@
     ]
   },
   {
+    "id": 1354,
+    "user_query": "Has the presence of delayed enhancement been documented in athletes performing strenuous exercise?",
+    "text-davinci-002_response": "There is no evidence that delayed enhancement has been documented in athletes performing strenuous exercise.",
+    "text-davinci-002_fact_raw": "1. There is no evidence that delayed enhancement has been documented in athletes performing strenuous exercise.",
+    "text-davinci-002_fact": [
+      "There is no evidence that delayed enhancement has been documented in athletes performing strenuous exercise."
+    ],
+    "text-davinci-002_judge_raw": "1. UNKNOWN",
+    "text-davinci-002_judge": [
+      "unknown"
+    ]
+  },
+  {
     "id": 1356,
     "user_query": "Name the factors required for selenoprotein synthesis in eukaryotes",
     "text-davinci-002_response": ".\nThe four factors required for selenoprotein synthesis in eukaryotes are the presence of selenocysteine, a selenoprotein synthesizing enzyme, a selenoprotein synthesizing machinery, and a sec-tRNA. Selenocysteine is the 21st amino acid and is essential for the activity of selenoproteins. This amino acid is synthesized by a selenoprotein synthesizing enzyme, which uses a selenoprotein synthesizing machinery. This machinery consists of a selenocysteine-specific tRNA (Sec-tRNA), which is required for the incorporation of selenocysteine into proteins.",
@@ -8624,6 +8756,19 @@
       "true",
       "true",
       "true",
+      "true"
+    ]
+  },
+  {
+    "id": 1434,
+    "user_query": "Does MVIIA and MVIIC bind to the same calcium channel?",
+    "text-davinci-002_response": "No, MVIIA and MVIIC bind to different calcium channels.",
+    "text-davinci-002_fact_raw": "1. MVIIA and MVIIC bind to different calcium channels.",
+    "text-davinci-002_fact": [
+      "MVIIA and MVIIC bind to different calcium channels."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE",
+    "text-davinci-002_judge": [
       "true"
     ]
   },
@@ -10508,6 +10653,27 @@
     ]
   },
   {
+    "id": 1784,
+    "user_query": "What is Neisseria adhesin A?",
+    "text-davinci-002_response": "Neisseria adhesin A is a protein that helps the bacterium Neisseria gonorrhoeae attach to and infect human cells. This protein is a member of the family of proteins known as the PilE adhesins, which are found in a number of different bacteria. N. gonorrhoeae uses Neisseria adhesin A to attach to epithelial cells in the mucous membranes of the genitals, where it can then cause an infection. In addition to being important for the initial attachment of the bacterium to cells, Neisseria adhesin A is also thought to play a role in the ability of N. gonorrhoeae to spread from one person to another.",
+    "text-davinci-002_fact_raw": "1. Neisseria adhesin A is a protein that helps Neisseria gonorrhoeae attach to and infect human cells.\n2. Neisseria adhesin A is a member of the PilE adhesins family of proteins.\n3. The PilE adhesins family of proteins is found in a number of different bacteria.\n4. Neisseria adhesin A allows N. gonorrhoeae to attach to epithelial cells in the mucous membranes of the genitals, leading to infection.\n5. Neisseria adhesin A is also thought to play a role in the ability of N. gonorrhoeae to spread from one person to another.",
+    "text-davinci-002_fact": [
+      "Neisseria adhesin A is a protein that helps Neisseria gonorrhoeae attach to and infect human cells.",
+      "Neisseria adhesin A is a member of the PilE adhesins family of proteins.",
+      "The PilE adhesins family of proteins is found in a number of different bacteria.",
+      "Neisseria adhesin A allows N. gonorrhoeae to attach to epithelial cells in the mucous membranes of the genitals, leading to infection.",
+      "Neisseria adhesin A is also thought to play a role in the ability of N. gonorrhoeae to spread from one person to another."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n4. TRUE\n5. TRUE",
+    "text-davinci-002_judge": [
+      "true",
+      "unknown",
+      "unknown",
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 1785,
     "user_query": "Which R package is used for the detection of chromosomal abnormalities from microarray data?",
     "text-davinci-002_response": "There is no definitive answer to this question as there are many different R packages that can be used for the detection of chromosomal abnormalities from microarray data. Some of the more popular packages include the R packages 'Earr' and 'Omicabis'.",
@@ -11629,6 +11795,21 @@
     ]
   },
   {
+    "id": 1958,
+    "user_query": "Which ApoE isoform is associated with atherosclerosis and Alzheimer's disease?",
+    "text-davinci-002_response": "ApoE isoform 4 is associated with atherosclerosis and Alzheimer's disease.",
+    "text-davinci-002_fact_raw": "1. ApoE isoform 4 is associated with atherosclerosis.\n2. ApoE isoform 4 is associated with Alzheimer's disease.",
+    "text-davinci-002_fact": [
+      "ApoE isoform 4 is associated with atherosclerosis.",
+      "ApoE isoform 4 is associated with Alzheimer's disease."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE",
+    "text-davinci-002_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 1960,
     "user_query": "What organism causes woolsorter's disease",
     "text-davinci-002_response": ", and how is it transmitted\nThe bacterium Bacillus Anthracis causes woolsorter's disease, and it is transmitted through spores that are breathed in by the victim. The spores are often found on wool or hides, which is why the disease is also known as hide-porter's disease. The bacteria can also infect animals, and humans can contract the disease by handling infected animal products. Symptoms of the disease include fever, chest pain, and shortness of breath, and it can be fatal if not treated promptly with antibiotics.",
@@ -11840,6 +12021,19 @@
       "false",
       "true",
       "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 1989,
+    "user_query": "Does CRISPR inversion of CTCF sites alter genome topology?",
+    "text-davinci-002_response": "Yes, CRISPR inversion of CTCF sites alters genome topology.",
+    "text-davinci-002_fact_raw": "1. CRISPR inversion of CTCF sites alters genome topology.",
+    "text-davinci-002_fact": [
+      "CRISPR inversion of CTCF sites alters genome topology."
+    ],
+    "text-davinci-002_judge_raw": "1. UNKNOWN",
+    "text-davinci-002_judge": [
       "unknown"
     ]
   },
@@ -12062,6 +12256,21 @@
     ]
   },
   {
+    "id": 2047,
+    "user_query": "What is the function of the protein tafazzin?",
+    "text-davinci-002_response": "The protein tafazzin is responsible for the proper formation of mitochondria in cells.",
+    "text-davinci-002_fact_raw": "1. Tafazzin is a protein.\n2. Tafazzin is responsible for the proper formation of mitochondria in cells.",
+    "text-davinci-002_fact": [
+      "Tafazzin is a protein.",
+      "Tafazzin is responsible for the proper formation of mitochondria in cells."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. FALSE [correction]: Tafazzin is responsible for the proper formation of cardiolipin, a lipid necessary for mitochondrial function in cells.",
+    "text-davinci-002_judge": [
+      "true",
+      "false"
+    ]
+  },
+  {
     "id": 2051,
     "user_query": "Where is base J found in the genome of Leishmania tarentolae?",
     "text-davinci-002_response": "Base J is found in the genome of Leishmania tarentolae in the promoter region of the gene encoding for the protein kinase C homolog 1 (Pkc1).",
@@ -12089,6 +12298,19 @@
     "text-davinci-002_judge_raw": "UNKNOWN",
     "text-davinci-002_judge": [
       "unknown"
+    ]
+  },
+  {
+    "id": 2053,
+    "user_query": "Where are the unipolar brush cells localized?",
+    "text-davinci-002_response": "Unipolar brush cells are localized in the granular layer of the cerebellum.",
+    "text-davinci-002_fact_raw": "1. Unipolar brush cells are localized in the granular layer of the cerebellum.",
+    "text-davinci-002_fact": [
+      "Unipolar brush cells are localized in the granular layer of the cerebellum."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE",
+    "text-davinci-002_judge": [
+      "true"
     ]
   },
   {
@@ -12165,6 +12387,23 @@
       "unknown",
       "unknown",
       "unknown"
+    ]
+  },
+  {
+    "id": 2068,
+    "user_query": "What is the function of gasdermin D?",
+    "text-davinci-002_response": "The function of gasdermin D is to kill cells that are infected with a virus. It does this by causing the cell to rupture and release the viral particles.",
+    "text-davinci-002_fact_raw": "1. The function of gasdermin D is to kill cells that are infected with a virus.\n2. Gasdermin D causes the infected cell to rupture.\n3. The rupture of the infected cell due to gasdermin D results in the release of viral particles.",
+    "text-davinci-002_fact": [
+      "The function of gasdermin D is to kill cells that are infected with a virus.",
+      "Gasdermin D causes the infected cell to rupture.",
+      "The rupture of the infected cell due to gasdermin D results in the release of viral particles."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The rupture of the infected cell due to gasdermin D results in the release of inflammatory molecules, not necessarily viral particles.",
+    "text-davinci-002_judge": [
+      "true",
+      "true",
+      "false"
     ]
   },
   {
@@ -13224,6 +13463,23 @@
     ]
   },
   {
+    "id": 2227,
+    "user_query": "Is Downs syndrome associated with decreased risk of leukemia?",
+    "text-davinci-002_response": "There is no definitive answer to this question as the research on the matter is conflicting. Some studies suggest that people with Down syndrome are less likely to develop leukemia, while other studies found no difference in risk between people with and without Down syndrome.",
+    "text-davinci-002_fact_raw": "1. Some studies suggest that people with Down syndrome are less likely to develop leukemia.\n2. Other studies found no difference in leukemia risk between individuals with and without Down syndrome.\n3. The research on the association between Down syndrome and leukemia risk is conflicting.",
+    "text-davinci-002_fact": [
+      "Some studies suggest that people with Down syndrome are less likely to develop leukemia.",
+      "Other studies found no difference in leukemia risk between individuals with and without Down syndrome.",
+      "The research on the association between Down syndrome and leukemia risk is conflicting."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "text-davinci-002_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 2230,
     "user_query": "Hy's law measures failure for what organ?",
     "text-davinci-002_response": "Hy's law measures failure for the liver.",
@@ -13354,6 +13610,36 @@
     "text-davinci-002_judge": [
       "true",
       "true",
+      "true"
+    ]
+  },
+  {
+    "id": 2257,
+    "user_query": "What is the difference between ganglion mother cells (GMC) and intermediate neural precursor cells (INP) in Drosophila?",
+    "text-davinci-002_response": "Ganglion mother cells are the progenitors of the Drosophila central nervous system. Intermediate neural precursor cells are the progenitors of the Drosophila peripheral nervous system. The difference between the two cell types is the lineage from which they arise.",
+    "text-davinci-002_fact_raw": "1. Ganglion mother cells are the progenitors of the Drosophila central nervous system.\n2. Intermediate neural precursor cells are the progenitors of the Drosophila peripheral nervous system.\n3. The difference between ganglion mother cells and intermediate neural precursor cells is the lineage from which they arise.",
+    "text-davinci-002_fact": [
+      "Ganglion mother cells are the progenitors of the Drosophila central nervous system.",
+      "Intermediate neural precursor cells are the progenitors of the Drosophila peripheral nervous system.",
+      "The difference between ganglion mother cells and intermediate neural precursor cells is the lineage from which they arise."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. FALSE [correction]: Intermediate neural precursor cells are not the progenitors of the entire Drosophila peripheral nervous system.\n3. UNKNOWN",
+    "text-davinci-002_judge": [
+      "true",
+      "false",
+      "unknown"
+    ]
+  },
+  {
+    "id": 2262,
+    "user_query": "Do origins of replication close to yeast centromeres fire early or late?",
+    "text-davinci-002_response": "Orgins of replication that are close to yeast centromeres tend to fire late.",
+    "text-davinci-002_fact_raw": "1. Origins of replication close to yeast centromeres tend to fire late.",
+    "text-davinci-002_fact": [
+      "Origins of replication close to yeast centromeres tend to fire late."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE",
+    "text-davinci-002_judge": [
       "true"
     ]
   },
@@ -14072,6 +14358,19 @@
     ]
   },
   {
+    "id": 2379,
+    "user_query": "Are loop domains preserved upon cohesin loss?",
+    "text-davinci-002_response": "Yes, loop domains are preserved upon cohesin loss.",
+    "text-davinci-002_fact_raw": "1. Loop domains are preserved upon cohesin loss.",
+    "text-davinci-002_fact": [
+      "Loop domains are preserved upon cohesin loss."
+    ],
+    "text-davinci-002_judge_raw": "1. UNKNOWN",
+    "text-davinci-002_judge": [
+      "unknown"
+    ]
+  },
+  {
     "id": 2380,
     "user_query": "Which workflow in Bioconductor has been developed for accessing human RNA-seq samples?",
     "text-davinci-002_response": "The Bioconductor workflow for accessing human RNA-seq samples has been developed for use with the NCBI Sequence Read Archive (SRA). This workflow allows for the retrieval of human RNA-seq samples from the SRA, the alignment of reads to a reference genome, and the assessment of gene expression levels.",
@@ -14703,6 +15002,19 @@
     ]
   },
   {
+    "id": 2475,
+    "user_query": "What is the drug target(s) for Belsomra?",
+    "text-davinci-002_response": "Belsomra's drug target is the orexin receptor.",
+    "text-davinci-002_fact_raw": "1. The drug target for Belsomra is the orexin receptor.",
+    "text-davinci-002_fact": [
+      "The drug target for Belsomra is the orexin receptor."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE",
+    "text-davinci-002_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 2476,
     "user_query": "Can canagliflozin cause euglycemic diabetic ketoacidosis?",
     "text-davinci-002_response": "There is no definitive answer to this question as the research is inconclusive. While some studies suggest that canagliflozin may increase the risk of euglycemic diabetic ketoacidosis, other studies have found no increased risk. Therefore, more research is needed to determine whether or not canagliflozin does indeed increase the risk of this condition.",
@@ -14993,6 +15305,19 @@
       "true",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 2530,
+    "user_query": "What is the normal body temperature in dogs?",
+    "text-davinci-002_response": "38.5 degrees Celsius",
+    "text-davinci-002_fact_raw": "1. The normal body temperature in dogs is 38.5 degrees Celsius.",
+    "text-davinci-002_fact": [
+      "The normal body temperature in dogs is 38.5 degrees Celsius."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: The normal body temperature in dogs is typically between 38 and 39.2 degrees Celsius.",
+    "text-davinci-002_judge": [
+      "false"
     ]
   },
   {
@@ -15302,6 +15627,19 @@
       "true",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 2578,
+    "user_query": "List two human monoclonal antibodies against Clostridium difficile toxins.",
+    "text-davinci-002_response": "To date, there are no commercially available human monoclonal antibodies against Clostridium difficile toxins.",
+    "text-davinci-002_fact_raw": "1. There are no commercially available human monoclonal antibodies against Clostridium difficile toxins.",
+    "text-davinci-002_fact": [
+      "There are no commercially available human monoclonal antibodies against Clostridium difficile toxins."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: There are commercially available human monoclonal antibodies against Clostridium difficile toxins, such as bezlotoxumab.",
+    "text-davinci-002_judge": [
+      "false"
     ]
   },
   {
@@ -16326,6 +16664,25 @@
     ]
   },
   {
+    "id": 2738,
+    "user_query": "What part of the body is affected by mesotheliomia?",
+    "text-davinci-002_response": "Mesotheliomia is a cancer of the mesothelium, which is the thin layer of tissue that covers many of the internal organs of the body. The most common type of mesotheliomia is pleural mesotheliomia, which affects the tissue around the lungs.",
+    "text-davinci-002_fact_raw": "1. Mesotheliomia is a cancer that affects the mesothelium.\n2. The mesothelium is a thin layer of tissue covering many of the body's internal organs.\n3. The most common type of mesotheliomia is pleural mesotheliomia.\n4. Pleural mesotheliomia affects the tissue around the lungs.",
+    "text-davinci-002_fact": [
+      "Mesotheliomia is a cancer that affects the mesothelium.",
+      "The mesothelium is a thin layer of tissue covering many of the body's internal organs.",
+      "The most common type of mesotheliomia is pleural mesotheliomia.",
+      "Pleural mesotheliomia affects the tissue around the lungs."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: Mesothelioma is a cancer that affects the mesothelium.\n2. TRUE\n3. TRUE\n4. TRUE",
+    "text-davinci-002_judge": [
+      "false",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 2741,
     "user_query": "What is PNPPP?",
     "text-davinci-002_response": "Phenyl-2-nitropropene is a close relative of phenylacetaldehyde, with the exception of the nitro group attached to the central carbon atom. Like phenylacetaldehyde, it is a clear liquid with a sweet, floral aroma. Unlike phenylacetaldehyde, it is a potent insecticide.",
@@ -16554,6 +16911,19 @@
       "true",
       "false",
       "true"
+    ]
+  },
+  {
+    "id": 2797,
+    "user_query": "Is selenocysteine an aminoacid?",
+    "text-davinci-002_response": "No, selenocysteine is not an amino acid.",
+    "text-davinci-002_fact_raw": "1. Selenocysteine is not an amino acid.",
+    "text-davinci-002_fact": [
+      "Selenocysteine is not an amino acid."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: Selenocysteine is an amino acid, often referred to as the 21st amino acid.",
+    "text-davinci-002_judge": [
+      "false"
     ]
   },
   {
@@ -17617,6 +17987,19 @@
     ]
   },
   {
+    "id": 3018,
+    "user_query": "Which is the database of somatic mutations in normal cells?",
+    "text-davinci-002_response": "There is not a database of somatic mutations in normal cells.",
+    "text-davinci-002_fact_raw": "1. There is not a database of somatic mutations in normal cells.",
+    "text-davinci-002_fact": [
+      "There is not a database of somatic mutations in normal cells."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: There is a database of somatic mutations in normal cells, such as the dbSNP database which includes information on genetic variation in both diseased and healthy individuals.",
+    "text-davinci-002_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 3023,
     "user_query": "What periodontal disease associated bacteria is also associated with Alzheimer's disease?",
     "text-davinci-002_response": "The link between periodontal disease and Alzheimer's disease has been well-established in a number of studies. The specific bacteria that has been most strongly associated with both conditions is Porphyromonas gingivalis. This bacterium is typically found in the mouth, and is one of the primary causes of periodontitis (gum disease). In addition to its role in gum disease, P. gingivalis has also been linked to Alzheimer's disease. Studies have found that this bacteria is present in the brains of Alzheimer's patients, and that it may play a role in the development and progression of the disease.",
@@ -18592,6 +18975,23 @@
     ]
   },
   {
+    "id": 3144,
+    "user_query": "Is the protein Asporin related to disease?",
+    "text-davinci-002_response": "There is no definitive answer to this question as of yet. However, there is some evidence to suggest that Asporin may play a role in disease. For example, Asporin levels have been found to be elevated in the joint fluid of patients with osteoarthritis. Additionally, Asporin has been shown to inhibit the growth of certain cancer cells.",
+    "text-davinci-002_fact_raw": "1. Asporin might play a role in disease.\n2. Asporin levels have been found to be elevated in the joint fluid of patients with osteoarthritis.\n3. Asporin has been shown to inhibit the growth of certain cancer cells.",
+    "text-davinci-002_fact": [
+      "Asporin might play a role in disease.",
+      "Asporin levels have been found to be elevated in the joint fluid of patients with osteoarthritis.",
+      "Asporin has been shown to inhibit the growth of certain cancer cells."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN",
+    "text-davinci-002_judge": [
+      "true",
+      "true",
+      "unknown"
+    ]
+  },
+  {
     "id": 3147,
     "user_query": "Which cells secrete lactotransferrin?",
     "text-davinci-002_response": "Lactotransferrin (LTF) is a protein that is secreted by mammary epithelial cells. LTF is a member of the transferrin family of proteins, which are involved in the transport of iron. LTF is found in milk, and it plays a role in the absorption of iron by the gut. LTF is also present in other body fluids, such as synovial fluid and saliva.",
@@ -19543,6 +19943,19 @@
     ]
   },
   {
+    "id": 3315,
+    "user_query": "What classes of drugs does Retapamulin belong to?",
+    "text-davinci-002_response": "Retapamulin is a member of the class I antiarrhythmic drugs.",
+    "text-davinci-002_fact_raw": "1. Retapamulin is a member of the class I antiarrhythmic drugs.",
+    "text-davinci-002_fact": [
+      "Retapamulin is a member of the class I antiarrhythmic drugs."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: Retapamulin is an antibiotic, not a class I antiarrhythmic drug.",
+    "text-davinci-002_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 3322,
     "user_query": "Which T-UCR has been implicated in prostate cancer?",
     "text-davinci-002_response": "The most commonly implicated T-UCR in prostate cancer is the androgen receptor (AR). The AR is a steroid hormone receptor that is expressed in many tissues, including the prostate. The AR plays a key role in the development and maintenance of the prostate, and its activation has been linked to the development of prostate cancer.",
@@ -19755,6 +20168,19 @@
       "true",
       "true",
       "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3353,
+    "user_query": "Is there a vaccine for peanut allergy?",
+    "text-davinci-002_response": "There is not a vaccine for peanut allergy currently available.",
+    "text-davinci-002_fact_raw": "1. There is currently no vaccine available for peanut allergy.",
+    "text-davinci-002_fact": [
+      "There is currently no vaccine available for peanut allergy."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE",
+    "text-davinci-002_judge": [
       "true"
     ]
   },
@@ -19982,6 +20408,19 @@
       "true",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 3396,
+    "user_query": "Autophagy is the process where a virus obtains nutrients from it's host, yes or no?",
+    "text-davinci-002_response": "Yes, autophagy is the process where a virus obtains nutrients from it's host.",
+    "text-davinci-002_fact_raw": "1. Autophagy is the process where a virus obtains nutrients from its host.",
+    "text-davinci-002_fact": [
+      "Autophagy is the process where a virus obtains nutrients from its host."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: Autophagy is the process where a cell degrades and recycles its own components.",
+    "text-davinci-002_judge": [
+      "false"
     ]
   },
   {
@@ -21031,6 +21470,19 @@
     ]
   },
   {
+    "id": 3569,
+    "user_query": "PDQ39 questionnaires is design for which disease?",
+    "text-davinci-002_response": "There is no good answer to this question. PDQ39 questionnaires is not a real thing.",
+    "text-davinci-002_fact_raw": "1. PDQ39 questionnaires is not a real thing.",
+    "text-davinci-002_fact": [
+      "PDQ39 questionnaires is not a real thing."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: PDQ39 questionnaires are a real tool used to assess the quality of life of patients with Parkinson's disease.",
+    "text-davinci-002_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 3570,
     "user_query": "Is palbociclib effective for glioblastoma?",
     "text-davinci-002_response": "There is insufficient evidence to determine whether or not palbociclib is effective for treating glioblastoma.",
@@ -21056,6 +21508,25 @@
     "text-davinci-002_judge": [
       "unknown",
       "unknown"
+    ]
+  },
+  {
+    "id": 3574,
+    "user_query": "Which gene is frequently involved in autosomal dominant adult-onset demyelinating leukodystrophy (ADLD)?",
+    "text-davinci-002_response": "There is not a single gene that is frequently involved in ADLD. Instead, there are several genes that have been implicated in the disease, including the genes encoding for myelin basic protein (MBP), proteolipid protein (PLP), and oligodendrocyte-myelin glycoprotein (OMGP). Mutations in any of these genes can lead to the development of ADLD.",
+    "text-davinci-002_fact_raw": "1. There is not a single gene frequently involved in autosomal dominant adult-onset demyelinating leukodystrophy (ADLD).\n2. Several genes have been implicated in ADLD.\n3. The genes encoding for myelin basic protein (MBP), proteolipid protein (PLP), and oligodendrocyte-myelin glycoprotein (OMGP) have been implicated in the disease.\n4. Mutations in the genes MBP, PLP, or OMGP can lead to the development of ADLD.",
+    "text-davinci-002_fact": [
+      "There is not a single gene frequently involved in autosomal dominant adult-onset demyelinating leukodystrophy (ADLD).",
+      "Several genes have been implicated in ADLD.",
+      "The genes encoding for myelin basic protein (MBP), proteolipid protein (PLP), and oligodendrocyte-myelin glycoprotein (OMGP) have been implicated in the disease.",
+      "Mutations in the genes MBP, PLP, or OMGP can lead to the development of ADLD."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: There is a single gene frequently involved in autosomal dominant adult-onset demyelinating leukodystrophy (ADLD), which is the lamin B1 (LMNB1) gene.\n2. FALSE [correction]: A single gene, lamin B1 (LMNB1), has been implicated in ADLD.\n3. FALSE [correction]: The gene implicated in ADLD is the lamin B1 (LMNB1) gene, not MBP, PLP, or OMGP.\n4. FALSE [correction]: Mutations in the lamin B1 (LMNB1) gene can lead to the development of ADLD, not mutations in MBP, PLP, or OMGP genes.",
+    "text-davinci-002_judge": [
+      "false",
+      "false",
+      "false",
+      "false"
     ]
   },
   {
@@ -21709,6 +22180,27 @@
     ]
   },
   {
+    "id": 3672,
+    "user_query": "What is the function of the PDZ domain in SATB1?",
+    "text-davinci-002_response": "The PDZ domain in SATB1 is a protein-protein interaction domain that is important for the assembly of the SATB1 complex. This domain is responsible for binding to the C-terminal tails of target proteins, which helps to bring them into the SATB1 complex. The PDZ domain is also important for the stability of the SATB1 complex and for its localization to specific genomic regions.",
+    "text-davinci-002_fact_raw": "1. The PDZ domain in SATB1 is a protein-protein interaction domain.\n2. This domain is important for the assembly of the SATB1 complex.\n3. The PDZ domain in SATB1 is responsible for binding to the C-terminal tails of target proteins.\n4. The PDZ domain helps to bring target proteins into the SATB1 complex.\n5. The PDZ domain contributes to the stability of the SATB1 complex and its localization to specific genomic regions.",
+    "text-davinci-002_fact": [
+      "The PDZ domain in SATB1 is a protein-protein interaction domain.",
+      "This domain is important for the assembly of the SATB1 complex.",
+      "The PDZ domain in SATB1 is responsible for binding to the C-terminal tails of target proteins.",
+      "The PDZ domain helps to bring target proteins into the SATB1 complex.",
+      "The PDZ domain contributes to the stability of the SATB1 complex and its localization to specific genomic regions."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "text-davinci-002_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 3675,
     "user_query": "Which are the databases for intrinsic protein disorders?",
     "text-davinci-002_response": "There are several databases for intrinsic protein disorders, but the most comprehensive and up-to-date ones are the Human Gene Mutation Database (HGMD) and the Intrinsic Disorder Database (IDD). Both of these databases contain information on thousands of different protein disorders, and are constantly being updated with new information.",
@@ -21998,6 +22490,19 @@
       "false",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 3716,
+    "user_query": "Which was the first cholera vaccine approved in the US?",
+    "text-davinci-002_response": "The first cholera vaccine approved in the US was Dukoral.",
+    "text-davinci-002_fact_raw": "1. Dukoral was the first cholera vaccine approved in the US.",
+    "text-davinci-002_fact": [
+      "Dukoral was the first cholera vaccine approved in the US."
+    ],
+    "text-davinci-002_judge_raw": "1. FALSE [correction]: Vaxchora was the first cholera vaccine approved in the US.",
+    "text-davinci-002_judge": [
+      "false"
     ]
   },
   {
@@ -22635,6 +23140,19 @@
     ]
   },
   {
+    "id": 3815,
+    "user_query": "How many DNaseI hypersensitive sites (DHS) mark the murine beta globin locus region?",
+    "text-davinci-002_response": "There are a total of eight DNaseI hypersensitive sites that mark the murine beta globin locus region.",
+    "text-davinci-002_fact_raw": "1. There are eight DNaseI hypersensitive sites that mark the murine beta globin locus region.",
+    "text-davinci-002_fact": [
+      "There are eight DNaseI hypersensitive sites that mark the murine beta globin locus region."
+    ],
+    "text-davinci-002_judge_raw": "1. UNKNOWN",
+    "text-davinci-002_judge": [
+      "unknown"
+    ]
+  },
+  {
     "id": 3817,
     "user_query": "Which loss-of-function ABCC8 mutation is associated with Pulmonary Arterial Hypertension (PAH)?",
     "text-davinci-002_response": "The loss-of-function ABCC8 mutation associated with Pulmonary Arterial Hypertension (PAH) is the H558R mutation. This mutation results in a loss of function of the ABCC8 protein, which is responsible for transporting sodium out of cells. This loss of function leads to increased sodium levels in cells, which leads to increased fluid retention and increased blood pressure in the lungs. The H558R mutation is associated with an increased risk of developing PAH, and patients with this mutation should be monitored closely for the development of this disease.",
@@ -22833,6 +23351,25 @@
     ]
   },
   {
+    "id": 3837,
+    "user_query": "What is the chromosomal abnormality associated with Klinefelter Syndrome",
+    "text-davinci-002_response": "?\nThe chromosomal abnormality associated with Klinefelter Syndrome is an extra copy of the X chromosome. This causes a male to have an XXY genotype instead of the usual XY. The extra X chromosome leads to the characteristic features of Klinefelter Syndrome, which include tall stature, reduced muscle mass, reduced facial and body hair, and infertililty.",
+    "text-davinci-002_fact_raw": "1. The chromosomal abnormality associated with Klinefelter Syndrome is an extra copy of the X chromosome.\n2. Males with Klinefelter Syndrome have an XXY genotype instead of the usual XY.\n3. The extra X chromosome in Klinefelter Syndrome leads to the disease's characteristic features.\n4. The characteristic features of Klinefelter Syndrome include tall stature, reduced muscle mass, reduced facial and body hair, and infertility.",
+    "text-davinci-002_fact": [
+      "The chromosomal abnormality associated with Klinefelter Syndrome is an extra copy of the X chromosome.",
+      "Males with Klinefelter Syndrome have an XXY genotype instead of the usual XY.",
+      "The extra X chromosome in Klinefelter Syndrome leads to the disease's characteristic features.",
+      "The characteristic features of Klinefelter Syndrome include tall stature, reduced muscle mass, reduced facial and body hair, and infertility."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "text-davinci-002_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 3838,
     "user_query": "What distinguishes RIDLs from other transpozable elements?",
     "text-davinci-002_response": "RIDLs are distinguished from other transposable elements by their highly interspersed transpositional activity, lack of detectable trimming or repair of the target site, and their ability to insert themselves in a variety of contexts. In addition, RIDLs lack the long terminal repeats found in other transposable elements, and their transposition is not accompanied by the generation of solo LTRs.",
@@ -22980,6 +23517,21 @@
       "true",
       "true",
       "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3861,
+    "user_query": "What drug, used to treat rheumatoid arthritis, is an interleukin-1 receptor antagonist?",
+    "text-davinci-002_response": "The drug is anakinra.",
+    "text-davinci-002_fact_raw": "1. Anakinra is a drug used to treat rheumatoid arthritis.\n2. Anakinra is an interleukin-1 receptor antagonist.",
+    "text-davinci-002_fact": [
+      "Anakinra is a drug used to treat rheumatoid arthritis.",
+      "Anakinra is an interleukin-1 receptor antagonist."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE",
+    "text-davinci-002_judge": [
       "true",
       "true"
     ]
@@ -25038,6 +25590,21 @@
     ]
   },
   {
+    "id": 4204,
+    "user_query": "What is the major sequence determinant for nucleosome positioning?",
+    "text-davinci-002_response": "There are a variety of different factors that contribute to nucleosome positioning, but the major sequence determinant is the number of AT base pairs.",
+    "text-davinci-002_fact_raw": "1. A variety of factors contribute to nucleosome positioning.\n2. The major sequence determinant for nucleosome positioning is the number of AT base pairs.",
+    "text-davinci-002_fact": [
+      "A variety of factors contribute to nucleosome positioning.",
+      "The major sequence determinant for nucleosome positioning is the number of AT base pairs."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. FALSE [correction]: The major sequence determinant for nucleosome positioning is the underlying DNA sequence, including but not limited to the number of AT base pairs. Factors such as DNA bendability and the presence of certain motifs also play a role.",
+    "text-davinci-002_judge": [
+      "true",
+      "false"
+    ]
+  },
+  {
     "id": 4205,
     "user_query": "Which is the primary enzyme metabolizing esomeprazole?",
     "text-davinci-002_response": "The primary enzyme metabolizing esomeprazole is CYP2C19.",
@@ -25229,6 +25796,25 @@
     ]
   },
   {
+    "id": 4246,
+    "user_query": "tarragon toxicity ?",
+    "text-davinci-002_response": "There is no definitive answer to this question as there is no known toxic dose for tarragon. However, it is generally considered safe to consume in moderate amounts. Some sources suggest that large amounts may cause digestive upset, so it is best to err on the side of caution and avoid consuming large amounts at one time. If you have any concerns, please consult with your healthcare provider.",
+    "text-davinci-002_fact_raw": "1. There is no known toxic dose for tarragon.\n2. Tarragon is generally considered safe to consume in moderate amounts.\n3. Large amounts of tarragon may cause digestive upset.\n4. It is recommended to consult a healthcare provider for concerns about tarragon consumption.",
+    "text-davinci-002_fact": [
+      "There is no known toxic dose for tarragon.",
+      "Tarragon is generally considered safe to consume in moderate amounts.",
+      "Large amounts of tarragon may cause digestive upset.",
+      "It is recommended to consult a healthcare provider for concerns about tarragon consumption."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "text-davinci-002_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 4277,
     "user_query": "which parts of the mediterranean diet extended life ?",
     "text-davinci-002_response": "According to the study, the components of the Mediterranean diet that were most associated with longevity were a high intake of olive oil, a high intake of nuts, a high intake of vegetables, a high intake of fish, and a moderate intake of alcohol.",
@@ -25266,6 +25852,27 @@
       "true",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 4285,
+    "user_query": "why do vegan women have 5x fewer twins ?",
+    "text-davinci-002_response": "There is no definitive answer to this question, as there are many factors that can contribute to why vegan women have 5x fewer twins. Some possible explanations include that vegan women tend to have lower body mass index (BMI) values than non-vegan women, which can lead to lower levels of the hormone insulin-like growth factor (IGF-1). Additionally, vegan women may have a higher intake of anti-estrogenic compounds, such as soy, which can reduce the likelihood of twins. Finally, it is also possible that the lifestyle and diet choices of vegan women lead to a healthier reproductive system overall, which can also impact the likelihood of twins.",
+    "text-davinci-002_fact_raw": "1. Vegan women tend to have lower body mass index (BMI) values than non-vegan women.\n2. Lower weight can lead to lower levels of the hormone insulin-like growth factor (IGF-1).\n3. Vegan women may have a higher intake of anti-estrogenic compounds, such as soy.\n4. Anti-estrogenic compounds can reduce the likelihood of twins.\n5. The lifestyle and diet choices of vegan women can lead to a healthier reproductive system overall.",
+    "text-davinci-002_fact": [
+      "Vegan women tend to have lower body mass index (BMI) values than non-vegan women.",
+      "Lower weight can lead to lower levels of the hormone insulin-like growth factor (IGF-1).",
+      "Vegan women may have a higher intake of anti-estrogenic compounds, such as soy.",
+      "Anti-estrogenic compounds can reduce the likelihood of twins.",
+      "The lifestyle and diet choices of vegan women can lead to a healthier reproductive system overall."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
+    "text-davinci-002_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "unknown"
     ]
   },
   {
@@ -26513,6 +27120,27 @@
       "Dates can help regulate digestion because of their fiber content.",
       "Dates are a good source of antioxidants.",
       "Antioxidants from dates can help protect against cell damage."
+    ],
+    "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "text-davinci-002_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4629,
+    "user_query": "are chili peppers good for you ?",
+    "text-davinci-002_response": "Chili peppers are rich in vitamins and minerals, including vitamin C, vitamin A, potassium, and magnesium. They also contain capsaicin, a compound that has been shown to have numerous health benefits, including pain relief, anti-inflammatory effects, and promotion of weight loss.",
+    "text-davinci-002_fact_raw": "1. Chili peppers are rich in vitamins and minerals, including vitamin C, vitamin A, potassium, and magnesium.\n2. Chili peppers contain capsaicin.\n3. Capsaicin, found in chili peppers, is shown to have health benefits, including pain relief.\n4. The compound capsaicin has anti-inflammatory effects.\n5. Consumption of capsaicin can promote weight loss.",
+    "text-davinci-002_fact": [
+      "Chili peppers are rich in vitamins and minerals, including vitamin C, vitamin A, potassium, and magnesium.",
+      "Chili peppers contain capsaicin.",
+      "Capsaicin, found in chili peppers, is shown to have health benefits, including pain relief.",
+      "The compound capsaicin has anti-inflammatory effects.",
+      "Consumption of capsaicin can promote weight loss."
     ],
     "text-davinci-002_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
     "text-davinci-002_judge": [

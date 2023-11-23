@@ -219,6 +219,8 @@ class Chatbot(Bot):
             }
         )
         response = requests.request("POST", url, headers=headers, data=payload)
+        if response is None:
+            raise NoneTypeException
         data = json.loads(response.text)
         if data is None:
             raise NoneTypeException

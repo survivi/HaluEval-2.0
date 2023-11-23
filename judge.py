@@ -35,13 +35,16 @@ class Judgebot(Chatbot):
             lines = lines[: len(facts)]
         judge_lst = []
         for line in lines:
-            if "UNKNOWN" in line:  # UNKNOWN: unknown
+            line_l = line.lower()
+            if "unknown" in line_l:
                 judge_lst.append("unknown")
-            elif "TRUE" in line or "True" in line:  # TRUE/True: true
+            elif "true" in line_l and "false" in line_l:
+                judge_lst.append("unknown")
+            elif "true" in line_l:
                 judge_lst.append("true")
-            elif "FALSE" in line or "False" in line:  # FALSE/False: false
+            elif "false" in line_l:
                 judge_lst.append("false")
-            else:  # undetected: unknown
+            else:
                 print("Undetected judge: " + line)
                 judge_lst.append("unknown")
         return judge_lst

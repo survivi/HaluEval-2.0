@@ -1107,6 +1107,19 @@
     ]
   },
   {
+    "id": 172,
+    "user_query": "Is cytisine superior to nicotine replacement therapy for smoking cessation?",
+    "alpaca-7b_response": "Currently, there is insufficient evidence to conclude that cytisine is superior to nicotine replacement therapy for smoking cessation.",
+    "alpaca-7b_fact_raw": "1. There is insufficient evidence to conclude that cytisine is superior to nicotine replacement therapy for smoking cessation.",
+    "alpaca-7b_fact": [
+      "There is insufficient evidence to conclude that cytisine is superior to nicotine replacement therapy for smoking cessation."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN",
+    "alpaca-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
     "id": 173,
     "user_query": "Which amino acid residue appears mutated in most of the cases reported with  cadasil syndrome?",
     "alpaca-7b_response": "The most commonly mutated amino acid residue in cases of Cadasil syndrome is methionine at position 3009. This mutation results in a substitution of the methionine amino acid with a threonine amino acid.",
@@ -1286,6 +1299,21 @@
     "alpaca-7b_judge": [
       "true",
       "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 210,
+    "user_query": "Which protein has been found to interact with phospholamban (PLN) and is also an anti-apoptotic protein?",
+    "alpaca-7b_response": "Bcl-2.",
+    "alpaca-7b_fact_raw": "1. Bcl-2 is a protein that has been found to interact with phospholamban (PLN).\n2. Bcl-2 is an anti-apoptotic protein.",
+    "alpaca-7b_fact": [
+      "Bcl-2 is a protein that has been found to interact with phospholamban (PLN).",
+      "Bcl-2 is an anti-apoptotic protein."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "alpaca-7b_judge": [
       "true",
       "true"
     ]
@@ -1939,6 +1967,21 @@
     ]
   },
   {
+    "id": 338,
+    "user_query": "Gene silencing can be achieved by RNA interference (RNAi) in eukaryotic organisms. What is the name of the analogous process in prokaryotic organisms?",
+    "alpaca-7b_response": "The analogous process in prokaryotic organisms is known as gene knockouts.",
+    "alpaca-7b_fact_raw": "1. Gene silencing can be achieved by RNA interference (RNAi) in eukaryotic organisms.\n2. The analogous process to RNA interference in prokaryotic organisms is called gene knockouts.",
+    "alpaca-7b_fact": [
+      "Gene silencing can be achieved by RNA interference (RNAi) in eukaryotic organisms.",
+      "The analogous process to RNA interference in prokaryotic organisms is called gene knockouts."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The analogous process to RNA interference in prokaryotic organisms is called CRISPR interference (CRISPRi). Gene knockouts refer to the complete removal or permanent deactivation of a gene.",
+    "alpaca-7b_judge": [
+      "true",
+      "false"
+    ]
+  },
+  {
     "id": 339,
     "user_query": "Between which types of DNA bases are mutational biases introduced due to directional mutation pressure?",
     "alpaca-7b_response": "Mutational biases are introduced between guanine (G) and cytosine (C) DNA bases due to directional mutation pressure.",
@@ -1967,6 +2010,19 @@
       "true",
       "true",
       "true",
+      "true"
+    ]
+  },
+  {
+    "id": 346,
+    "user_query": "Which is the most common cause of sudden cardiac death in young athletes?",
+    "alpaca-7b_response": "The most common cause of sudden cardiac death in young athletes is an underlying heart condition called hypertrophic cardiomyopathy.",
+    "alpaca-7b_fact_raw": "1. The most common cause of sudden cardiac death in young athletes is hypertrophic cardiomyopathy.",
+    "alpaca-7b_fact": [
+      "The most common cause of sudden cardiac death in young athletes is hypertrophic cardiomyopathy."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
       "true"
     ]
   },
@@ -4085,6 +4141,19 @@
     ]
   },
   {
+    "id": 643,
+    "user_query": "In what type(s) of plant organelles we can detect prolamellar bodies?",
+    "alpaca-7b_response": "Prolamellar bodies can be found in the endoplasmic reticulum of plants.",
+    "alpaca-7b_fact_raw": "1. Prolamellar bodies can be detected in the endoplasmic reticulum of plants.",
+    "alpaca-7b_fact": [
+      "Prolamellar bodies can be detected in the endoplasmic reticulum of plants."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Prolamellar bodies are detected in the plastids (specifically etioplasts) of plants, not the endoplasmic reticulum.",
+    "alpaca-7b_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 646,
     "user_query": "Are chromomethylases present in animal genomes?",
     "alpaca-7b_response": "Yes, chromomethylases are present in animal genomes. They are enzymes that add methyl groups to DNA, and they are involved in a variety of processes such as gene regulation and DNA repair.",
@@ -4203,6 +4272,19 @@
       "false",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 660,
+    "user_query": "Which autophagy pathway is trigered by the KFERQ motif of cytosolic proteins?",
+    "alpaca-7b_response": "The KFERQ motif of cytosolic proteins triggers the Unc51-mediated autophagy pathway.",
+    "alpaca-7b_fact_raw": "1. The KFERQ motif of cytosolic proteins triggers the Unc51-mediated autophagy pathway.",
+    "alpaca-7b_fact": [
+      "The KFERQ motif of cytosolic proteins triggers the Unc51-mediated autophagy pathway."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN",
+    "alpaca-7b_judge": [
+      "unknown"
     ]
   },
   {
@@ -4644,6 +4726,19 @@
     ]
   },
   {
+    "id": 738,
+    "user_query": "DX-88 is investigational name of which drug?",
+    "alpaca-7b_response": "DX-88 is the investigational name of the drug candidate Daprodustat.",
+    "alpaca-7b_fact_raw": "1. DX-88 is the investigational name of the drug candidate Daprodustat.",
+    "alpaca-7b_fact": [
+      "DX-88 is the investigational name of the drug candidate Daprodustat."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 740,
     "user_query": "Which genes have been found to be associated with restless leg syndrome",
     "alpaca-7b_response": "Genes that have been found to be associated with restless leg syndrome include those involved in the production of dopamine, iron metabolism, and the immune system. These genes include HLA-DQB1, HLA-DQA1, HLA-DRB1, and IRBIT.",
@@ -4675,6 +4770,19 @@
     "alpaca-7b_judge_raw": "UNKNOWN",
     "alpaca-7b_judge": [
       "unknown"
+    ]
+  },
+  {
+    "id": 744,
+    "user_query": "Where does TORC1 sequester during heat stress?",
+    "alpaca-7b_response": "TORC1 is sequestered in the cytoplasm during heat stress.",
+    "alpaca-7b_fact_raw": "1. TORC1 is sequestered in the cytoplasm during heat stress.",
+    "alpaca-7b_fact": [
+      "TORC1 is sequestered in the cytoplasm during heat stress."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
     ]
   },
   {
@@ -4743,6 +4851,40 @@
       "true",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 759,
+    "user_query": "In which kingdom do microsporidia belong, according to their current classification scheme?",
+    "alpaca-7b_response": "Microsporidia belong to the Fungi kingdom.",
+    "alpaca-7b_fact_raw": "1. According to their current classification scheme, Microsporidia belong to the Fungi kingdom.",
+    "alpaca-7b_fact": [
+      "According to their current classification scheme, Microsporidia belong to the Fungi kingdom."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
+    ]
+  },
+  {
+    "id": 763,
+    "user_query": "Which genes are regulated by TRalpha2  in the heart?",
+    "alpaca-7b_response": "TRalpha2  is a transcription factor that binds to the DNA of genes involved in the development and function of the heart. These genes include those involved in the development of the cardiac muscle, such as GATA4, TBX5, and NKX2.5, as well as those involved in the regulation of heart rhythm, such as HCN4 and KCNE1. It also binds to genes involved in the control of heart rate, such as Bmal1 and Cry2, as well as genes involved in the regulation of blood pressure, such as Ace2 and Nppb.",
+    "alpaca-7b_fact_raw": "1. TRalpha2 is a transcription factor that binds to the DNA of heart-related genes.\n2. GATA4, TBX5, and NKX2.5 are genes involved in the development of the cardiac muscle regulated by TRalpha2.\n3. TRalpha2 binds to HCN4 and KCNE1, genes involved in the regulation of heart rhythm.\n4. Bmal1 and Cry2, genes involved in the control of heart rate, are regulated by TRalpha2.\n5. Ace2 and Nppb, genes involved in the regulation of blood pressure, are also regulated by TRalpha2.",
+    "alpaca-7b_fact": [
+      "TRalpha2 is a transcription factor that binds to the DNA of heart-related genes.",
+      "GATA4, TBX5, and NKX2.5 are genes involved in the development of the cardiac muscle regulated by TRalpha2.",
+      "TRalpha2 binds to HCN4 and KCNE1, genes involved in the regulation of heart rhythm.",
+      "Bmal1 and Cry2, genes involved in the control of heart rate, are regulated by TRalpha2.",
+      "Ace2 and Nppb, genes involved in the regulation of blood pressure, are also regulated by TRalpha2."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN",
+    "alpaca-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
     ]
   },
   {
@@ -4932,6 +5074,19 @@
       "true",
       "true",
       "true",
+      "true"
+    ]
+  },
+  {
+    "id": 799,
+    "user_query": "What is the average diameter of intermediate filaments?",
+    "alpaca-7b_response": "The average diameter of intermediate filaments is approximately 10 nm.",
+    "alpaca-7b_fact_raw": "1. The average diameter of intermediate filaments is approximately 10 nm.",
+    "alpaca-7b_fact": [
+      "The average diameter of intermediate filaments is approximately 10 nm."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
       "true"
     ]
   },
@@ -5252,6 +5407,19 @@
       "true",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 850,
+    "user_query": "What is the sedimentation coefficient of the mammalian mitoribosome?",
+    "alpaca-7b_response": "The sedimentation coefficient of the mammalian mitoribosome is 8.2S.",
+    "alpaca-7b_fact_raw": "1. The sedimentation coefficient of the mammalian mitoribosome is 8.2S.",
+    "alpaca-7b_fact": [
+      "The sedimentation coefficient of the mammalian mitoribosome is 8.2S."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The sedimentation coefficient of the mammalian mitoribosome is 55S.",
+    "alpaca-7b_judge": [
+      "false"
     ]
   },
   {
@@ -6672,6 +6840,19 @@
     ]
   },
   {
+    "id": 1084,
+    "user_query": "Which is the methyl donor of histone methyltransferases?",
+    "alpaca-7b_response": "The methyl donor of histone methyltransferases is S-adenosylmethionine (SAM).",
+    "alpaca-7b_fact_raw": "1. The methyl donor of histone methyltransferases is S-adenosylmethionine (SAM).",
+    "alpaca-7b_fact": [
+      "The methyl donor of histone methyltransferases is S-adenosylmethionine (SAM)."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 1085,
     "user_query": "How are human accelerated regions (HAR) defined?",
     "alpaca-7b_response": "Human accelerated regions (HAR) are regions of the genome that have been identified as having undergone positive selection in the human lineage. They are defined by the presence of genes that are either absent or significantly different in other primate species. HARs are often located in regions that code for proteins and are thought to be the result of adaptive evolution.",
@@ -6709,6 +6890,23 @@
       "unknown",
       "unknown",
       "unknown"
+    ]
+  },
+  {
+    "id": 1093,
+    "user_query": "From which sequence does the Alu repeat originate from?",
+    "alpaca-7b_response": "The Alu repeat is derived from the Y-family of DNA and RNA genes. It is found in the human genome and is composed of 24 nucleotides.",
+    "alpaca-7b_fact_raw": "1. The Alu repeat originates from the Y-family of DNA and RNA genes.\n2. The Alu repeat is found in the human genome.\n3. The Alu repeat is composed of 24 nucleotides.",
+    "alpaca-7b_fact": [
+      "The Alu repeat originates from the Y-family of DNA and RNA genes.",
+      "The Alu repeat is found in the human genome.",
+      "The Alu repeat is composed of 24 nucleotides."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The Alu repeat originates from the SINE (Short Interspersed Nuclear Elements) family of repetitive DNA sequences.\n2. TRUE\n3. FALSE [correction]: The Alu repeat is composed of approximately 300 nucleotides.",
+    "alpaca-7b_judge": [
+      "false",
+      "true",
+      "false"
     ]
   },
   {
@@ -8470,6 +8668,19 @@
     ]
   },
   {
+    "id": 1403,
+    "user_query": "Which is the localization of the RIFIN family of proteins?",
+    "alpaca-7b_response": "The RIFIN family of proteins is localized to the endoplasmic reticulum (ER) in eukaryotic cells.",
+    "alpaca-7b_fact_raw": "1. The RIFIN family of proteins is localized to the endoplasmic reticulum in eukaryotic cells.",
+    "alpaca-7b_fact": [
+      "The RIFIN family of proteins is localized to the endoplasmic reticulum in eukaryotic cells."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The RIFIN family of proteins is localized to the surface of infected red blood cells in Plasmodium falciparum, a parasite that causes malaria.",
+    "alpaca-7b_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 1406,
     "user_query": "Is there any genetic determinant of hair pigmentation that could be useful in forensic analyses?",
     "alpaca-7b_response": "Yes, there is. Recent studies have shown that genetic variations in the MC1R gene are responsible for a wide range of hair pigmentation phenotypes in humans. These variations can be used to determine the race and ancestry of an individual, as well as to identify unique characteristics of an individual's hair. This information can be useful in forensic analyses, as it can help to determine the identity of an individual or the source of a hair sample.",
@@ -8827,6 +9038,27 @@
     ],
     "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
     "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 1469,
+    "user_query": "What is known about type D personality trait in cancer patients?",
+    "alpaca-7b_response": "Type D personality trait is associated with increased risk of cancer recurrence and mortality in cancer patients. People with type D personality trait have been found to have higher levels of inflammation and stress hormones, which can affect the progression of cancer. In addition, type D personality trait is associated with poorer quality of life and psychological distress in cancer patients.",
+    "alpaca-7b_fact_raw": "1. Type D personality trait is associated with an increased risk of cancer recurrence and mortality in cancer patients.\n2. People with a type D personality have higher levels of inflammation and stress hormones.\n3. The higher levels of inflammation and stress hormones of type D personalities can affect the progression of cancer.\n4. A type D personality trait is linked with poorer quality of life in cancer patients.\n5. Type D personality trait is associated with psychological distress in cancer patients.",
+    "alpaca-7b_fact": [
+      "Type D personality trait is associated with an increased risk of cancer recurrence and mortality in cancer patients.",
+      "People with a type D personality have higher levels of inflammation and stress hormones.",
+      "The higher levels of inflammation and stress hormones of type D personalities can affect the progression of cancer.",
+      "A type D personality trait is linked with poorer quality of life in cancer patients.",
+      "Type D personality trait is associated with psychological distress in cancer patients."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
       "true",
       "true",
       "true",
@@ -9416,6 +9648,21 @@
     ]
   },
   {
+    "id": 1592,
+    "user_query": "Which genes are associated with Ehlers-Danlos syndrome type I/II?",
+    "alpaca-7b_response": "Ehlers-Danlos syndrome type I/II is caused by mutations in the COL1A1, COL1A2, and COL3A1 genes.",
+    "alpaca-7b_fact_raw": "1. Ehlers-Danlos syndrome type I/II is caused by mutations in genes.\n2. The genes associated with Ehlers-Danlos syndrome type I/II include COL1A1, COL1A2, and COL3A1.",
+    "alpaca-7b_fact": [
+      "Ehlers-Danlos syndrome type I/II is caused by mutations in genes.",
+      "The genes associated with Ehlers-Danlos syndrome type I/II include COL1A1, COL1A2, and COL3A1."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 1593,
     "user_query": "Which factors are considered in the ABCD2 score?",
     "alpaca-7b_response": "The ABCD2 score is based on five factors: accessibility, brand strength, customer engagement, customer service, and product portfolio. Accessibility is based on the ease of finding and using a product or service. Brand strength is based on the recognition and loyalty of customers to the brand. Customer engagement is based on the level of customer interaction with the brand. Customer service is based on the quality of customer service provided by the company. Finally, product portfolio is based on the variety of products or services offered by the company.",
@@ -9970,6 +10217,19 @@
     ]
   },
   {
+    "id": 1672,
+    "user_query": "Which cyclin- dependent kinase inhibitor is regulated by Bmi-1?",
+    "alpaca-7b_response": "Bmi-1 regulates the expression of the cyclin-dependent kinase inhibitor p21Cip1/Waf1.",
+    "alpaca-7b_fact_raw": "1. Bmi-1 regulates the expression of the cyclin-dependent kinase inhibitor p21Cip1/Waf1.",
+    "alpaca-7b_fact": [
+      "Bmi-1 regulates the expression of the cyclin-dependent kinase inhibitor p21Cip1/Waf1."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 1675,
     "user_query": "List inhibtors targeting the mitochondrial permeability transition pore.",
     "alpaca-7b_response": "Inhibitors targeting the mitochondrial permeability transition pore include: \n- Cyclosporine A\n- Delayed-action pesticides\n- Antimycin A\n- Carbonyl cyanide 3-chlorophenylhydrazone (CCCP)\n- Monensin\n- Valinomycin\n- Ubiquinol-cytochrome c reductase complex\n- Ubiquinol-cytochrome c reductase complex inhibitors\n- Ubiquinol-cytochrome c reductase complex activators",
@@ -9996,6 +10256,19 @@
       "unknown",
       "unknown",
       "unknown"
+    ]
+  },
+  {
+    "id": 1678,
+    "user_query": "Which is the process that Conserved noncoding elements mostly regulate?",
+    "alpaca-7b_response": "Conserved noncoding elements mostly regulate gene expression.",
+    "alpaca-7b_fact_raw": "1. Conserved noncoding elements primarily regulate gene expression.",
+    "alpaca-7b_fact": [
+      "Conserved noncoding elements primarily regulate gene expression."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
     ]
   },
   {
@@ -10557,6 +10830,23 @@
       "true",
       "unknown",
       "unknown"
+    ]
+  },
+  {
+    "id": 1805,
+    "user_query": "What is BioCreative?",
+    "alpaca-7b_response": "BioCreative is a series of challenges and workshops that focus on the development of tools and methods for the automatic processing of biomedical data. The goal of the challenges is to develop and evaluate algorithms and resources for tasks such as text mining, information extraction, and semantic parsing in the biomedical domain. The workshops provide a forum for researchers to share their experiences and learn from each other.",
+    "alpaca-7b_fact_raw": "1. BioCreative is a series of challenges and workshops aimed at developing tools and methods for the automatic processing of biomedical data.\n2. The goal of BioCreative challenges is to develop and evaluate algorithms and resources for tasks such as text mining, information extraction, and semantic parsing in the biomedical domain.\n3. BioCreative workshops serve as a forum for researchers to share experiences and learn from each other.",
+    "alpaca-7b_fact": [
+      "BioCreative is a series of challenges and workshops aimed at developing tools and methods for the automatic processing of biomedical data.",
+      "The goal of BioCreative challenges is to develop and evaluate algorithms and resources for tasks such as text mining, information extraction, and semantic parsing in the biomedical domain.",
+      "BioCreative workshops serve as a forum for researchers to share experiences and learn from each other."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true"
     ]
   },
   {
@@ -11404,6 +11694,21 @@
     "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE",
     "alpaca-7b_judge": [
       "true",
+      "true"
+    ]
+  },
+  {
+    "id": 1925,
+    "user_query": "Which disease the London mutation involved in?",
+    "alpaca-7b_response": "The London mutation is associated with a genetic disorder called Cystic Fibrosis.",
+    "alpaca-7b_fact_raw": "1. The London mutation is associated with Cystic Fibrosis.\n2. Cystic Fibrosis is a genetic disorder.",
+    "alpaca-7b_fact": [
+      "The London mutation is associated with Cystic Fibrosis.",
+      "Cystic Fibrosis is a genetic disorder."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN\n2. TRUE",
+    "alpaca-7b_judge": [
+      "unknown",
       "true"
     ]
   },
@@ -13023,6 +13328,19 @@
     ]
   },
   {
+    "id": 2181,
+    "user_query": "Which is the major RNA editing enzyme in Drosophila melanogaster?",
+    "alpaca-7b_response": "The major RNA editing enzyme in Drosophila melanogaster is DDX6.",
+    "alpaca-7b_fact_raw": "1. DDX6 is the major RNA editing enzyme in Drosophila melanogaster.",
+    "alpaca-7b_fact": [
+      "DDX6 is the major RNA editing enzyme in Drosophila melanogaster."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The major RNA editing enzyme in Drosophila melanogaster is ADAR, not DDX6.",
+    "alpaca-7b_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 2182,
     "user_query": "What is the CEGA catalog?",
     "alpaca-7b_response": "The CEGA catalog is a database of research and evaluation resources that are used by the Center for Education Governance and Accountability (CEGA) to support education policy and practice. It contains resources related to education governance, finance, and accountability, as well as resources related to teacher quality, school leadership, and other topics. The catalog is searchable by topic, resource type, resource author, and resource language.",
@@ -13206,6 +13524,19 @@
       "false",
       "true",
       "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 2218,
+    "user_query": "How many times is CLAST faster than BLAST?",
+    "alpaca-7b_response": "CLAST is faster than BLAST 1000 times.",
+    "alpaca-7b_fact_raw": "1. CLAST is 1000 times faster than BLAST.",
+    "alpaca-7b_fact": [
+      "CLAST is 1000 times faster than BLAST."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN",
+    "alpaca-7b_judge": [
       "unknown"
     ]
   },
@@ -13437,6 +13768,19 @@
     ]
   },
   {
+    "id": 2262,
+    "user_query": "Do origins of replication close to yeast centromeres fire early or late?",
+    "alpaca-7b_response": "Origins of replication close to yeast centromeres fire early.",
+    "alpaca-7b_fact_raw": "1. Origins of replication close to yeast centromeres fire early.",
+    "alpaca-7b_fact": [
+      "Origins of replication close to yeast centromeres fire early."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 2268,
     "user_query": "Which are the properties of mammalian GA-sequences?",
     "alpaca-7b_response": "Mammalian GA-sequences have the following properties:\n1. They are composed of 12 to 15 amino acids.\n2. They are located in the C-terminal region of the protein.\n3. They are highly conserved among species.\n4. They are involved in the regulation of gene expression.\n5. They bind to the GA-box, a sequence motif found in the promoters of genes.\n6. They are involved in the formation of protein-protein interactions.",
@@ -13629,6 +13973,19 @@
     "alpaca-7b_judge_raw": "1. TRUE",
     "alpaca-7b_judge": [
       "true"
+    ]
+  },
+  {
+    "id": 2298,
+    "user_query": "Which gene is the paralog of yeast UPC2?",
+    "alpaca-7b_response": "The paralog of yeast UPC2 is human UPC2.",
+    "alpaca-7b_fact_raw": "1. The paralog of yeast UPC2 is human UPC2.",
+    "alpaca-7b_fact": [
+      "The paralog of yeast UPC2 is human UPC2."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The paralog of yeast UPC2 is human SREBP, not UPC2.",
+    "alpaca-7b_judge": [
+      "false"
     ]
   },
   {
@@ -13926,6 +14283,19 @@
     ]
   },
   {
+    "id": 2347,
+    "user_query": "Do bacteria from the genus Morexella cause respiratory infections?",
+    "alpaca-7b_response": "No, bacteria from the genus Morexella do not cause respiratory infections.",
+    "alpaca-7b_fact_raw": "1. Bacteria from the genus Morexella do not cause respiratory infections.",
+    "alpaca-7b_fact": [
+      "Bacteria from the genus Morexella do not cause respiratory infections."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Bacteria from the genus Moraxella, such as Moraxella catarrhalis, can cause respiratory infections.",
+    "alpaca-7b_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 2349,
     "user_query": "Do chromatin features predict genes associated with eQTLs?",
     "alpaca-7b_response": "Yes, chromatin features can be used to predict which genes are associated with eQTLs. eQTLs are genetic variants that are associated with changes in gene expression levels. Chromatin features, such as histone modifications and DNA methylation, can affect gene expression levels by altering how the genes are expressed. Therefore, by analyzing chromatin features, it is possible to identify genes that are associated with eQTLs.",
@@ -14211,6 +14581,23 @@
     "alpaca-7b_judge": [
       "true",
       "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 2392,
+    "user_query": "What induces Arabidopsis ROF1 expression?",
+    "alpaca-7b_response": "ROF1 expression in Arabidopsis is induced by a variety of stresses, including salinity, drought, and heat. It is also induced by abscisic acid, a plant hormone that is involved in responses to environmental stress.",
+    "alpaca-7b_fact_raw": "1. ROF1 expression in Arabidopsis is induced by salinity, drought, and heat.\n2. ROF1 expression in Arabidopsis is also induced by abscisic acid.\n3. Abscisic acid is a plant hormone that is involved in responses to environmental stress.",
+    "alpaca-7b_fact": [
+      "ROF1 expression in Arabidopsis is induced by salinity, drought, and heat.",
+      "ROF1 expression in Arabidopsis is also induced by abscisic acid.",
+      "Abscisic acid is a plant hormone that is involved in responses to environmental stress."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "alpaca-7b_judge": [
       "true",
       "true",
       "true"
@@ -15192,6 +15579,19 @@
       "unknown",
       "unknown",
       "unknown"
+    ]
+  },
+  {
+    "id": 2548,
+    "user_query": "Milwaukee protocol was tested for treatment of which disease?",
+    "alpaca-7b_response": "The Milwaukee protocol was tested for the treatment of HIV.",
+    "alpaca-7b_fact_raw": "1. The Milwaukee protocol was tested for the treatment of HIV.",
+    "alpaca-7b_fact": [
+      "The Milwaukee protocol was tested for the treatment of HIV."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The Milwaukee protocol was tested for the treatment of rabies.",
+    "alpaca-7b_judge": [
+      "false"
     ]
   },
   {
@@ -17141,6 +17541,19 @@
     ]
   },
   {
+    "id": 2862,
+    "user_query": "Does lucatumumab bind to CD140?",
+    "alpaca-7b_response": "Yes, lucatumumab binds to CD140.",
+    "alpaca-7b_fact_raw": "1. Lucatumumab binds to CD140.",
+    "alpaca-7b_fact": [
+      "Lucatumumab binds to CD140."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN",
+    "alpaca-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
     "id": 2872,
     "user_query": "Which molecule is targeted by Olaratumab?",
     "alpaca-7b_response": "Olaratumab is an antibody that targets the protein CD32B, which is found on the surface of certain white blood cells. This protein is also known as PDGFR-beta and is part of the PDGF receptor. Olaratumab binds to CD32B and blocks the activity of the PDGF receptor, which is believed to help slow down the growth of cancer cells.",
@@ -17178,6 +17591,19 @@
       "true",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 2876,
+    "user_query": "Does tremelimumab improve survival of mesothelioma patients?",
+    "alpaca-7b_response": "No, tremelimumab does not improve survival of mesothelioma patients.",
+    "alpaca-7b_fact_raw": "1. Tremelimumab does not improve survival of mesothelioma patients.",
+    "alpaca-7b_fact": [
+      "Tremelimumab does not improve survival of mesothelioma patients."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN",
+    "alpaca-7b_judge": [
+      "unknown"
     ]
   },
   {
@@ -18301,6 +18727,19 @@
     ]
   },
   {
+    "id": 3091,
+    "user_query": "What is the name of the Cas13 based diagnostic test for the Zika and dengue viruses?",
+    "alpaca-7b_response": "The Cas13 based diagnostic test for the Zika and dengue viruses is called the Zika-Dengue Virus Diagnostic (ZDVD).",
+    "alpaca-7b_fact_raw": "1. The Cas13 based diagnostic test for the Zika and dengue viruses is called the Zika-Dengue Virus Diagnostic (ZDVD).",
+    "alpaca-7b_fact": [
+      "The Cas13 based diagnostic test for the Zika and dengue viruses is called the Zika-Dengue Virus Diagnostic (ZDVD)."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN",
+    "alpaca-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
     "id": 3092,
     "user_query": "What are CRISPR-Cas12a proteins?",
     "alpaca-7b_response": "CRISPR-Cas12a proteins are a type of enzyme that are used in the CRISPR-Cas12a system, a type of gene-editing technology. They are responsible for finding and binding to specific target DNA sequences, allowing the system to make precise edits to the genetic code.",
@@ -19240,6 +19679,19 @@
     ]
   },
   {
+    "id": 3209,
+    "user_query": "Where, in the body, would the Cobb-Stainsby excision arthroplasty be performed?",
+    "alpaca-7b_response": "The Cobb-Stainsby excision arthroplasty would be performed in the knee joint.",
+    "alpaca-7b_fact_raw": "1. The Cobb-Stainsby excision arthroplasty is a procedure performed in the knee joint.",
+    "alpaca-7b_fact": [
+      "The Cobb-Stainsby excision arthroplasty is a procedure performed in the knee joint."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 3213,
     "user_query": "What is a lipin 1 protein doing?",
     "alpaca-7b_response": "The lipin 1 protein is involved in the metabolism of lipids and their transport in the cell. It is also involved in the regulation of gene expression and insulin signaling.",
@@ -19289,6 +19741,25 @@
     ]
   },
   {
+    "id": 3224,
+    "user_query": "What is the function of GvpA?",
+    "alpaca-7b_response": "GvpA is a protein that plays a role in the regulation of gene expression. It binds to DNA and modulates the activity of nearby genes, influencing the levels of proteins produced from those genes.",
+    "alpaca-7b_fact_raw": "1. GvpA is a protein.\n2. The function of GvpA involves regulation of gene expression.\n3. GvpA binds to DNA.\n4. The activity of GvpA influences the levels of proteins produced from the genes it modulates.",
+    "alpaca-7b_fact": [
+      "GvpA is a protein.",
+      "The function of GvpA involves regulation of gene expression.",
+      "GvpA binds to DNA.",
+      "The activity of GvpA influences the levels of proteins produced from the genes it modulates."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN",
+    "alpaca-7b_judge": [
+      "true",
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
     "id": 3225,
     "user_query": "What is a SMR based BCI?",
     "alpaca-7b_response": "A SMR based BCI (sensorimotor rhythm-based brain-computer interface) is a type of BCI that uses signals from the brain's motor cortex to detect voluntary movement. It works by detecting the electrical activity of the brain, known as the sensorimotor rhythm (SMR), which is associated with the movement of muscles. The SMR signal is amplified and used to control a device, such as a wheelchair or a robotic prosthetic, through a type of brain-machine interface.",
@@ -19306,6 +19777,23 @@
       "true",
       "true",
       "false",
+      "true"
+    ]
+  },
+  {
+    "id": 3226,
+    "user_query": "Is myc a tumour suppressor gene?",
+    "alpaca-7b_response": "No, myc is not a tumour suppressor gene. It is a proto-oncogene, which means it can cause cancer when mutated.",
+    "alpaca-7b_fact_raw": "1. Myc is not a tumour suppressor gene.\n2. Myc is a proto-oncogene.\n3. A mutation in myc can cause cancer.",
+    "alpaca-7b_fact": [
+      "Myc is not a tumour suppressor gene.",
+      "Myc is a proto-oncogene.",
+      "A mutation in myc can cause cancer."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
       "true"
     ]
   },
@@ -19677,6 +20165,19 @@
       "unknown",
       "false",
       "unknown"
+    ]
+  },
+  {
+    "id": 3274,
+    "user_query": "Central Vein Sign is characteristic to which disease?",
+    "alpaca-7b_response": "The Central Vein Sign is characteristic to pulmonary embolism.",
+    "alpaca-7b_fact_raw": "1. The Central Vein Sign is characteristic to pulmonary embolism.",
+    "alpaca-7b_fact": [
+      "The Central Vein Sign is characteristic to pulmonary embolism."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The Central Vein Sign is characteristic of Multiple Sclerosis, not pulmonary embolism. Pulmonary embolism is characterized by the presence of a filling defect in the pulmonary artery on imaging studies.",
+    "alpaca-7b_judge": [
+      "false"
     ]
   },
   {
@@ -20780,6 +21281,19 @@
     ]
   },
   {
+    "id": 3461,
+    "user_query": "What are manifestations of the Saint's Triad?",
+    "alpaca-7b_response": "The manifestations of the Saint's Triad are miracles, wonders, and signs.",
+    "alpaca-7b_fact_raw": "1. The manifestations of the Saint's Triad are miracles, wonders, and signs.",
+    "alpaca-7b_fact": [
+      "The manifestations of the Saint's Triad are miracles, wonders, and signs."
+    ],
+    "alpaca-7b_judge_raw": "1. UNKNOWN",
+    "alpaca-7b_judge": [
+      "unknown"
+    ]
+  },
+  {
     "id": 3463,
     "user_query": "Are male or female persons more prone to autoimmunity?",
     "alpaca-7b_response": "Neither male nor female persons are more prone to autoimmunity. Both men and women can develop autoimmune diseases, although some diseases may be more common in one gender than the other.",
@@ -20958,6 +21472,19 @@
       "false",
       "false",
       "false",
+      "false"
+    ]
+  },
+  {
+    "id": 3503,
+    "user_query": "Are stretch enhancers transcribed more than super-enhancers?",
+    "alpaca-7b_response": "No, super-enhancers are transcribed more than stretch enhancers.",
+    "alpaca-7b_fact_raw": "1. Super-enhancers are transcribed more than stretch enhancers.",
+    "alpaca-7b_fact": [
+      "Super-enhancers are transcribed more than stretch enhancers."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Super-enhancers are not necessarily transcribed more than stretch enhancers, but they are larger clusters of enhancers that drive high levels of transcription of genes that define cell identity.",
+    "alpaca-7b_judge": [
       "false"
     ]
   },
@@ -21354,6 +21881,19 @@
       "unknown",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 3569,
+    "user_query": "PDQ39 questionnaires is design for which disease?",
+    "alpaca-7b_response": "PDQ39 questionnaires are designed for cancer patients.",
+    "alpaca-7b_fact_raw": "1. PDQ39 questionnaires are designed for cancer patients.",
+    "alpaca-7b_fact": [
+      "PDQ39 questionnaires are designed for cancer patients."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: PDQ39 questionnaires are designed for Parkinson's disease patients.",
+    "alpaca-7b_judge": [
+      "false"
     ]
   },
   {
@@ -22340,6 +22880,19 @@
     ]
   },
   {
+    "id": 3704,
+    "user_query": "Does radiotherapy for prostate cancer increase bladder cancer risk?",
+    "alpaca-7b_response": "No, radiotherapy for prostate cancer does not increase the risk of bladder cancer.",
+    "alpaca-7b_fact_raw": "1. Radiotherapy for prostate cancer does not increase the risk of bladder cancer.",
+    "alpaca-7b_fact": [
+      "Radiotherapy for prostate cancer does not increase the risk of bladder cancer."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Radiotherapy for prostate cancer can increase the risk of bladder cancer.",
+    "alpaca-7b_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 3705,
     "user_query": "What is ESN364?",
     "alpaca-7b_response": "ESN364 is a unique 8-digit emergency services number in the United States that is used to contact emergency services such as police, fire, and ambulance. It is used to quickly and easily access emergency services in an emergency situation.",
@@ -22992,6 +23545,19 @@
       "false",
       "true",
       "true"
+    ]
+  },
+  {
+    "id": 3807,
+    "user_query": "Which main viral protein is targeted by the drug remdesivir?",
+    "alpaca-7b_response": "Remdesivir targets the main viral protein called NP.",
+    "alpaca-7b_fact_raw": "1. Remdesivir targets the main viral protein NP.",
+    "alpaca-7b_fact": [
+      "Remdesivir targets the main viral protein NP."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Remdesivir targets the viral RNA-dependent RNA polymerase.",
+    "alpaca-7b_judge": [
+      "false"
     ]
   },
   {
@@ -23785,6 +24351,19 @@
     ]
   },
   {
+    "id": 3922,
+    "user_query": "Which protein is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks?",
+    "alpaca-7b_response": "The protein involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks is SMAD4.",
+    "alpaca-7b_fact_raw": "1. The protein SMAD4 is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks.",
+    "alpaca-7b_fact": [
+      "The protein SMAD4 is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
+    ]
+  },
+  {
     "id": 3923,
     "user_query": "Where is the agouti-related peptide expressed?",
     "alpaca-7b_response": "The agouti-related peptide is expressed in the brain, pituitary gland, and adrenal glands. It is also found in other tissues, including the heart, skeletal muscle, and kidney.",
@@ -24253,6 +24832,19 @@
       "unknown",
       "unknown",
       "unknown"
+    ]
+  },
+  {
+    "id": 3982,
+    "user_query": "When did eptinezumab get its first FDA approval?",
+    "alpaca-7b_response": "eptinezumab got its first FDA approval in 2020.",
+    "alpaca-7b_fact_raw": "1. Eptinezumab got its first FDA approval in 2020.",
+    "alpaca-7b_fact": [
+      "Eptinezumab got its first FDA approval in 2020."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
+      "true"
     ]
   },
   {
@@ -24906,6 +25498,19 @@
       "true",
       "false",
       "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4145,
+    "user_query": "Is atenolol metabolized by CYP2D6?",
+    "alpaca-7b_response": "Yes, atenolol is metabolized by CYP2D6.",
+    "alpaca-7b_fact_raw": "1. Atenolol is metabolized by CYP2D6.",
+    "alpaca-7b_fact": [
+      "Atenolol is metabolized by CYP2D6."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
       "true"
     ]
   },
@@ -25785,6 +26390,19 @@
       "true",
       "true",
       "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4333,
+    "user_query": "can gargling prevent the common cold ?",
+    "alpaca-7b_response": "No, gargling cannot prevent the common cold.",
+    "alpaca-7b_fact_raw": "1. Gargling cannot prevent the common cold.",
+    "alpaca-7b_fact": [
+      "Gargling cannot prevent the common cold."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE",
+    "alpaca-7b_judge": [
       "true"
     ]
   },
@@ -26939,6 +27557,412 @@
       "Chili peppers contain potassium.",
       "Chili peppers contain beta carotene.",
       "Chili peppers can help reduce inflammation, improve heart health, and boost metabolism."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4636,
+    "user_query": "can cholesterol be too low ?",
+    "alpaca-7b_response": "Yes, it is possible for cholesterol levels to be too low. Low cholesterol can lead to muscle weakness, fatigue, and an increased risk of infection. It can also affect the production of hormones and other substances in the body.",
+    "alpaca-7b_fact_raw": "1. It is possible for cholesterol levels to be too low.\n2. Low cholesterol can lead to muscle weakness.\n3. Fatigue can be a result of low cholesterol levels.\n4. An increased risk of infection can occur from low cholesterol levels.\n5. Low cholesterol can affect the production of hormones and other substances in the body.",
+    "alpaca-7b_fact": [
+      "It is possible for cholesterol levels to be too low.",
+      "Low cholesterol can lead to muscle weakness.",
+      "Fatigue can be a result of low cholesterol levels.",
+      "An increased risk of infection can occur from low cholesterol levels.",
+      "Low cholesterol can affect the production of hormones and other substances in the body."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Low cholesterol is not commonly associated with muscle weakness.\n3. FALSE [correction]: Fatigue is not directly linked to low cholesterol levels.\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "false",
+      "false",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4643,
+    "user_query": "toxins in cooked potatoes ?",
+    "alpaca-7b_response": "Yes, cooked potatoes contain some toxins, such as solanine and chaconine. These toxins are produced by the potato plant in response to insect damage or sunlight exposure, and are more likely to be found in potatoes that have been stored for a long time or that have been exposed to light or heat during cooking. The toxins are usually destroyed by thorough cooking, so it is generally safe to eat potatoes that have been cooked thoroughly.",
+    "alpaca-7b_fact_raw": "1. Cooked potatoes can contain toxins, such as solanine and chaconine.\n2. Solanine and chaconine are produced by the potato plant in response to insect damage or sunlight exposure.\n3. These toxins are more likely to be found in potatoes that have been stored for a long time or that have been exposed to light or heat during cooking.\n4. The toxins in potatoes are usually destroyed by thorough cooking.\n5. It is generally safe to eat potatoes that have been cooked thoroughly.",
+    "alpaca-7b_fact": [
+      "Cooked potatoes can contain toxins, such as solanine and chaconine.",
+      "Solanine and chaconine are produced by the potato plant in response to insect damage or sunlight exposure.",
+      "These toxins are more likely to be found in potatoes that have been stored for a long time or that have been exposed to light or heat during cooking.",
+      "The toxins in potatoes are usually destroyed by thorough cooking.",
+      "It is generally safe to eat potatoes that have been cooked thoroughly."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The toxins in potatoes are not necessarily destroyed by thorough cooking; they can withstand high temperatures and may still be present in cooked potatoes, especially if the potato was green or damaged.\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "false",
+      "true"
+    ]
+  },
+  {
+    "id": 4660,
+    "user_query": "is chlorella good for you ?",
+    "alpaca-7b_response": "Yes, chlorella is generally considered to be good for you. It is a type of single-celled algae that is high in protein, vitamins, and minerals, and is often used as a dietary supplement. Studies have shown that it can help boost the immune system, reduce fatigue, and improve digestion. It can also help remove toxins from the body and may have other health benefits as well.",
+    "alpaca-7b_fact_raw": "1. Chlorella is a type of single-celled algae.\n2. Chlorella is high in protein, vitamins, and minerals.\n3. Chlorella is often used as a dietary supplement.\n4. Chlorella can help boost the immune system, reduce fatigue, and improve digestion.\n5. Chlorella can help remove toxins from the body.",
+    "alpaca-7b_fact": [
+      "Chlorella is a type of single-celled algae.",
+      "Chlorella is high in protein, vitamins, and minerals.",
+      "Chlorella is often used as a dietary supplement.",
+      "Chlorella can help boost the immune system, reduce fatigue, and improve digestion.",
+      "Chlorella can help remove toxins from the body."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4677,
+    "user_query": "is msg bad for you ?",
+    "alpaca-7b_response": "No, messages are not bad for you. Messages are a form of communication that can be used to stay connected with friends and family, share information, and even send emojis. Messages can be used to stay connected and can even be beneficial to mental health.",
+    "alpaca-7b_fact_raw": "NO FACTS",
+    "alpaca-7b_fact": [],
+    "alpaca-7b_judge": []
+  },
+  {
+    "id": 4693,
+    "user_query": "are organic foods safer ?",
+    "alpaca-7b_response": "Organic foods may be safer than conventionally-grown foods, as they are not exposed to pesticides, herbicides, and other chemicals used in conventional farming. However, there is not enough scientific evidence to make a definitive statement on the safety of organic foods.",
+    "alpaca-7b_fact_raw": "1. Organic foods are not exposed to pesticides, herbicides, and other chemicals used in conventional farming.\n2. There is not enough scientific evidence to definitively state the safety of organic foods.",
+    "alpaca-7b_fact": [
+      "Organic foods are not exposed to pesticides, herbicides, and other chemicals used in conventional farming.",
+      "There is not enough scientific evidence to definitively state the safety of organic foods."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Organic foods are often grown using natural or less harmful alternatives to synthetic pesticides and herbicides, but they may still be exposed to certain approved chemicals.\n2. UNKNOWN",
+    "alpaca-7b_judge": [
+      "false",
+      "unknown"
+    ]
+  },
+  {
+    "id": 4696,
+    "user_query": "do vegetarians get enough protein ?",
+    "alpaca-7b_response": "Yes, vegetarians can get enough protein as long as they eat a variety of protein-rich foods such as legumes, nuts, tofu, tempeh, eggs, and dairy products.",
+    "alpaca-7b_fact_raw": "1. Vegetarians can get enough protein by eating a variety of protein-rich foods.\n2. Legumes are a source of protein suitable for vegetarians.\n3. Nuts are a source of protein suitable for vegetarians.\n4. Tofu and tempeh are sources of protein suitable for vegetarians.\n5. Eggs and dairy products are sources of protein suitable for vegetarians.",
+    "alpaca-7b_fact": [
+      "Vegetarians can get enough protein by eating a variety of protein-rich foods.",
+      "Legumes are a source of protein suitable for vegetarians.",
+      "Nuts are a source of protein suitable for vegetarians.",
+      "Tofu and tempeh are sources of protein suitable for vegetarians.",
+      "Eggs and dairy products are sources of protein suitable for vegetarians."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4708,
+    "user_query": "is dragon fruit good for you ?",
+    "alpaca-7b_response": "Yes, dragon fruit is good for you. It is high in vitamins A, C and B6, as well as dietary fiber and minerals such as potassium and copper. It can help to regulate blood sugar levels and lower blood pressure, and is also a great source of antioxidants.",
+    "alpaca-7b_fact_raw": "1. Dragon fruit is high in vitamins A, C and B6.\n2. Dragon fruit contains dietary fiber.\n3. Dragon fruit provides minerals such as potassium and copper.\n4. Dragon fruit can help regulate blood sugar levels.\n5. Dragon fruit can help lower blood pressure.",
+    "alpaca-7b_fact": [
+      "Dragon fruit is high in vitamins A, C and B6.",
+      "Dragon fruit contains dietary fiber.",
+      "Dragon fruit provides minerals such as potassium and copper.",
+      "Dragon fruit can help regulate blood sugar levels.",
+      "Dragon fruit can help lower blood pressure."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4713,
+    "user_query": "is coconut milk good for you ?",
+    "alpaca-7b_response": "Yes, coconut milk is good for you. It is high in healthy fats, vitamins, and minerals, and can provide a range of health benefits. For example, it can help to improve digestion, reduce inflammation, and boost the immune system.",
+    "alpaca-7b_fact_raw": "1. Coconut milk is high in healthy fats, vitamins, and minerals.\n2. Consumption of coconut milk can provide a range of health benefits.\n3. Coconut milk can help to improve digestion.\n4. Ingesting coconut milk can reduce inflammation.\n5. Coconut milk can boost the immune system.",
+    "alpaca-7b_fact": [
+      "Coconut milk is high in healthy fats, vitamins, and minerals.",
+      "Consumption of coconut milk can provide a range of health benefits.",
+      "Coconut milk can help to improve digestion.",
+      "Ingesting coconut milk can reduce inflammation.",
+      "Coconut milk can boost the immune system."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4717,
+    "user_query": "what do you think of dr. jenkins ' take on paleolithic diets ?",
+    "alpaca-7b_response": "I think Dr. Jenkins' take on paleolithic diets is that they can be beneficial for certain populations, but that there are potential risks associated with them. He believes that the diets may be beneficial for those who are trying to lose weight, as they are generally lower in calories and higher in nutrients than other diets. However, he also notes that there is not enough evidence to suggest that these diets are beneficial for everyone, and that more research needs to be done to understand the long-term effects of these diets.",
+    "alpaca-7b_fact_raw": "1. Dr. Jenkins believes that paleolithic diets can be beneficial for certain populations.\n2. According to Dr. Jenkins, paleolithic diets are generally lower in calories and higher in nutrients.\n3. Dr. Jenkins stated that more research needs to be done to understand the long-term effects of paleolithic diets.\n4. Dr. Jenkins notes that there is not enough evidence to suggest that paleolithic diets are beneficial for everyone.\n5. Dr. Jenkins believes that paleolithic diets may help with weight loss.",
+    "alpaca-7b_fact": [
+      "Dr. Jenkins believes that paleolithic diets can be beneficial for certain populations.",
+      "According to Dr. Jenkins, paleolithic diets are generally lower in calories and higher in nutrients.",
+      "Dr. Jenkins stated that more research needs to be done to understand the long-term effects of paleolithic diets.",
+      "Dr. Jenkins notes that there is not enough evidence to suggest that paleolithic diets are beneficial for everyone.",
+      "Dr. Jenkins believes that paleolithic diets may help with weight loss."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4721,
+    "user_query": "are krill oil supplements better than fish oil capsules ?",
+    "alpaca-7b_response": "Krill oil supplements and fish oil capsules both provide omega-3 fatty acids, but there are some differences between the two. Krill oil is believed to be more effective than fish oil because it contains higher levels of omega-3 fatty acids and they are in a more absorbable form. Additionally, krill oil contains some antioxidants that fish oil does not, which may provide additional health benefits.",
+    "alpaca-7b_fact_raw": "1. Both krill oil supplements and fish oil capsules provide omega-3 fatty acids.\n2. Krill oil is believed to be more effective than fish oil because it contains higher levels of omega-3 fatty acids. \n3. Omega-3 fatty acids in krill oil are in a more absorbable form.\n4. Krill oil contains some antioxidants that fish oil does not. \n5. These antioxidants in krill oil may provide additional health benefits.",
+    "alpaca-7b_fact": [
+      "Both krill oil supplements and fish oil capsules provide omega-3 fatty acids.",
+      "Krill oil is believed to be more effective than fish oil because it contains higher levels of omega-3 fatty acids.",
+      "Omega-3 fatty acids in krill oil are in a more absorbable form.",
+      "Krill oil contains some antioxidants that fish oil does not.",
+      "These antioxidants in krill oil may provide additional health benefits."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Krill oil is believed to be more effective than fish oil not because it contains higher levels of omega-3 fatty acids, but because the omega-3s are in the form of phospholipids, which are more easily absorbed by the body.\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "false",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4729,
+    "user_query": "are organic foods safer ?",
+    "alpaca-7b_response": "Organic foods may be safer than conventionally-grown foods, as they are not exposed to pesticides, herbicides, and other chemicals used in conventional farming. However, there is not enough scientific evidence to make a definitive statement on the safety of organic foods.",
+    "alpaca-7b_fact_raw": "1. Organic foods are not exposed to pesticides, herbicides, and other chemicals used in conventional farming.\n2. There is not enough scientific evidence to definitively state the safety of organic foods.",
+    "alpaca-7b_fact": [
+      "Organic foods are not exposed to pesticides, herbicides, and other chemicals used in conventional farming.",
+      "There is not enough scientific evidence to definitively state the safety of organic foods."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Organic foods are typically grown with the use of certain permitted pesticides and other substances, but they are generally not exposed to synthetic pesticides, herbicides, and other chemicals used in conventional farming.\n2. FALSE [correction]: While some studies have shown that organic foods may have lower levels of pesticide residues and other potentially harmful substances, the overall scientific consensus is that both organic and conventionally grown foods are safe for consumption.",
+    "alpaca-7b_judge": [
+      "false",
+      "false"
+    ]
+  },
+  {
+    "id": 4732,
+    "user_query": "do vegetarians get enough protein ?",
+    "alpaca-7b_response": "Yes, vegetarians can get enough protein as long as they eat a variety of protein-rich foods such as legumes, nuts, tofu, tempeh, eggs, and dairy products.",
+    "alpaca-7b_fact_raw": "1. Vegetarians can get enough protein by consuming a variety of protein-rich foods.\n2. Legumes are a source of protein suitable for vegetarians.\n3. Nuts are a source of protein suitable for vegetarians.\n4. Vegetarians can consume tofu and tempeh for protein.\n5. Eggs and dairy products can also provide protein for vegetarians.",
+    "alpaca-7b_fact": [
+      "Vegetarians can get enough protein by consuming a variety of protein-rich foods.",
+      "Legumes are a source of protein suitable for vegetarians.",
+      "Nuts are a source of protein suitable for vegetarians.",
+      "Vegetarians can consume tofu and tempeh for protein.",
+      "Eggs and dairy products can also provide protein for vegetarians."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4743,
+    "user_query": "is dragon fruit good for you ?",
+    "alpaca-7b_response": "Yes, dragon fruit is good for you. It is high in vitamins A, C and B6, as well as dietary fiber and minerals such as potassium and copper. It can help to regulate blood sugar levels and lower blood pressure, and is also a great source of antioxidants.",
+    "alpaca-7b_fact_raw": "1. Dragon fruit is high in vitamins A, C and B6.\n2. Dragon fruit contains dietary fiber and minerals such as potassium and copper.\n3. Dragon fruit can help to regulate blood sugar levels.\n4. Dragon fruit may help lower blood pressure.\n5. Dragon fruit is a source of antioxidants.",
+    "alpaca-7b_fact": [
+      "Dragon fruit is high in vitamins A, C and B6.",
+      "Dragon fruit contains dietary fiber and minerals such as potassium and copper.",
+      "Dragon fruit can help to regulate blood sugar levels.",
+      "Dragon fruit may help lower blood pressure.",
+      "Dragon fruit is a source of antioxidants."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Dragon fruit is high in vitamins C and B, but not vitamin A.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "false",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4746,
+    "user_query": "is coconut milk good for you ?",
+    "alpaca-7b_response": "Yes, coconut milk is good for you. It is high in healthy fats, vitamins, and minerals, and can provide a range of health benefits. For example, it can help to improve digestion, reduce inflammation, and boost the immune system.",
+    "alpaca-7b_fact_raw": "1. Coconut milk is high in healthy fats, vitamins, and minerals.\n2. Coconut milk can provide a range of health benefits.\n3. Consumption of coconut milk can help to improve digestion.\n4. Coconut milk can aid in reducing inflammation.\n5. Coconut milk can help in boosting the immune system.",
+    "alpaca-7b_fact": [
+      "Coconut milk is high in healthy fats, vitamins, and minerals.",
+      "Coconut milk can provide a range of health benefits.",
+      "Consumption of coconut milk can help to improve digestion.",
+      "Coconut milk can aid in reducing inflammation.",
+      "Coconut milk can help in boosting the immune system."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4748,
+    "user_query": "can we fight the blues with greens ?",
+    "alpaca-7b_response": "Yes, eating green leafy vegetables such as spinach, kale, and lettuce can help to fight the blues. These vegetables are rich in vitamins A, B, and C, which can help to boost mood and improve mental health. Additionally, these vegetables are also rich in folate, which helps to regulate levels of serotonin and dopamine in the brain.",
+    "alpaca-7b_fact_raw": "1. Green leafy vegetables such as spinach, kale, and lettuce are rich in vitamins A, B, and C.\n2. Vitamins A, B, and C can help to boost mood and improve mental health.\n3. Spinach, kale, and lettuce are rich in folate.\n4. Folate helps to regulate levels of serotonin and dopamine in the brain.\n5. Eating green leafy vegetables can help to fight the blues.",
+    "alpaca-7b_fact": [
+      "Green leafy vegetables such as spinach, kale, and lettuce are rich in vitamins A, B, and C.",
+      "Vitamins A, B, and C can help to boost mood and improve mental health.",
+      "Spinach, kale, and lettuce are rich in folate.",
+      "Folate helps to regulate levels of serotonin and dopamine in the brain.",
+      "Eating green leafy vegetables can help to fight the blues."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4759,
+    "user_query": "should probiotics be taken before , during , or after meals ?",
+    "alpaca-7b_response": "Probiotics can be taken at any time of day, but it is generally recommended to take them with meals, as this can help increase the amount of good bacteria that reach the gut. Taking probiotics with meals can also help increase the absorption of certain vitamins and minerals.",
+    "alpaca-7b_fact_raw": "1. Probiotics can be taken at any time of day.\n2. It is generally recommended to take probiotics with meals.\n3. Taking probiotics with meals can help increase the amount of good bacteria that reach the gut.\n4. Taking probiotics with meals can help increase the absorption of certain vitamins and minerals.",
+    "alpaca-7b_fact": [
+      "Probiotics can be taken at any time of day.",
+      "It is generally recommended to take probiotics with meals.",
+      "Taking probiotics with meals can help increase the amount of good bacteria that reach the gut.",
+      "Taking probiotics with meals can help increase the absorption of certain vitamins and minerals."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "unknown"
+    ]
+  },
+  {
+    "id": 4764,
+    "user_query": "are avocados bad for you ?",
+    "alpaca-7b_response": "No, avocados are not bad for you. In fact, they are a great source of healthy fats and nutrients like vitamins C and E, potassium, and fibre. They can be part of a healthy diet, but should be eaten in moderation as they are high in calories.",
+    "alpaca-7b_fact_raw": "1. Avocados are a source of healthy fats.\n2. Avocados contain vitamins C and E.\n3. Avocados are rich in potassium and fibre.\n4. They should be eaten in moderation due to their high caloric content.\n5. Avocados can be part of a healthy diet.",
+    "alpaca-7b_fact": [
+      "Avocados are a source of healthy fats.",
+      "Avocados contain vitamins C and E.",
+      "Avocados are rich in potassium and fibre.",
+      "They should be eaten in moderation due to their high caloric content.",
+      "Avocados can be part of a healthy diet."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4776,
+    "user_query": "in making water alkaline , how much baking soda is too much ?",
+    "alpaca-7b_response": "Too much baking soda can cause skin and eye irritation, so it is important to use the right amount. The recommended amount of baking soda to make water alkaline is 8.4 grams per liter of water (8.4 g/L). Any more than that and it can cause the water to become too alkaline.",
+    "alpaca-7b_fact_raw": "1. Too much baking soda can cause skin and eye irritation.\n2. The recommended amount of baking soda to make water alkaline is 8.4 grams per liter of water.\n3. An excess amount of baking soda can cause the water to become too alkaline.",
+    "alpaca-7b_fact": [
+      "Too much baking soda can cause skin and eye irritation.",
+      "The recommended amount of baking soda to make water alkaline is 8.4 grams per liter of water.",
+      "An excess amount of baking soda can cause the water to become too alkaline."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The recommended amount of baking soda to make water alkaline is about 1/2 teaspoon (about 2.8 grams) per liter of water.\n3. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "false",
+      "true"
+    ]
+  },
+  {
+    "id": 4779,
+    "user_query": "isn 't regular cocoa powder healthier than alkali-processed \" dutched \" cocoa ?",
+    "alpaca-7b_response": "No, regular cocoa powder is not necessarily healthier than alkali-processed \"dutched\" cocoa. The health benefits of cocoa powder depend on the amount and type of fat in the cocoa, as well as the amount of sugar and other ingredients in the product. Regular cocoa powder can contain more fat and sugar than alkali-processed cocoa, so it may not be as healthy. Additionally, alkali-processed cocoa has a slightly different flavor than regular cocoa powder, so it may not always be preferred in certain recipes.",
+    "alpaca-7b_fact_raw": "1. Regular cocoa powder is not necessarily healthier than alkali-processed \"dutched\" cocoa.\n2. The health benefits of cocoa powder depend on the amount and type of fat, as well as the amount of sugar and other ingredients in the product.\n3. Regular cocoa powder can contain more fat and sugar than alkali-processed cocoa.\n4. Alkali-processed cocoa has a slightly different flavor than regular cocoa powder.",
+    "alpaca-7b_fact": [
+      "Regular cocoa powder is not necessarily healthier than alkali-processed \"dutched\" cocoa.",
+      "The health benefits of cocoa powder depend on the amount and type of fat, as well as the amount of sugar and other ingredients in the product.",
+      "Regular cocoa powder can contain more fat and sugar than alkali-processed cocoa.",
+      "Alkali-processed cocoa has a slightly different flavor than regular cocoa powder."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Regular cocoa powder typically contains less fat and sugar than alkali-processed cocoa.\n4. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "false",
+      "true"
+    ]
+  },
+  {
+    "id": 4787,
+    "user_query": "should probiotics be taken before , during , or after meals ?",
+    "alpaca-7b_response": "Probiotics can be taken at any time of day, but it is generally recommended to take them with meals, as this can help increase the amount of good bacteria that reach the gut. Taking probiotics with meals can also help increase the absorption of certain vitamins and minerals.",
+    "alpaca-7b_fact_raw": "1. Probiotics can be taken at any time of day.\n2. It is generally recommended to take probiotics with meals.\n3. Taking probiotics with meals can help increase the amount of good bacteria that reach the gut.\n4. Taking probiotics with meals can help increase the absorption of certain vitamins and minerals.",
+    "alpaca-7b_fact": [
+      "Probiotics can be taken at any time of day.",
+      "It is generally recommended to take probiotics with meals.",
+      "Taking probiotics with meals can help increase the amount of good bacteria that reach the gut.",
+      "Taking probiotics with meals can help increase the absorption of certain vitamins and minerals."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 4792,
+    "user_query": "are avocados bad for you ?",
+    "alpaca-7b_response": "No, avocados are not bad for you. In fact, they are a great source of healthy fats and nutrients like vitamins C and E, potassium, and fibre. They can be part of a healthy diet, but should be eaten in moderation as they are high in calories.",
+    "alpaca-7b_fact_raw": "1. Avocados are a source of healthy fats.\n2. Avocados contain nutrients like vitamins C and E.\n3. Avocados contain potassium and fibre.\n4. Avocados are high in calories.\n5. Avocados can be part of a healthy diet when eaten in moderation.",
+    "alpaca-7b_fact": [
+      "Avocados are a source of healthy fats.",
+      "Avocados contain nutrients like vitamins C and E.",
+      "Avocados contain potassium and fibre.",
+      "Avocados are high in calories.",
+      "Avocados can be part of a healthy diet when eaten in moderation."
     ],
     "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
     "alpaca-7b_judge": [
