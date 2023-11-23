@@ -600,6 +600,7 @@ if __name__ == "__main__":
         files = [args.file]
     bot = Bot(args.model)
     bot.load_model(args.load_in_4bit, args.load_in_8bit)
+    left = []  # list of (file, num of unfinished items)
     for file in files:
         data_path = os.path.join(args.data_dir, f"{file}.json")
         save_path = os.path.join(args.save_dir, f"{file}.json")
@@ -618,3 +619,8 @@ if __name__ == "__main__":
                 top_k=args.top_k,
                 top_p=args.top_p,
             )
+            left.append((file, chatbot.file2length[file] - len(chatbot.save_data)))
+    # list each file with unfinished items
+    print(f"\nProcess ID: [{os.getpid()}] | Left:")
+    for file, num in left:
+        print(f"    {file}: {num}")
