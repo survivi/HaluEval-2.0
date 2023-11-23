@@ -34,11 +34,11 @@ def read_docx(path, part=0):
             assert min(query_scores[i]) >= 1
             assert max(query_scores[i]) <= 5
         except:
-            print(path.split("/")[-1])
-            return [], [], []
-            # raise ValueError(
-            #     f"query score error in file: {path}\nID: {ids[i]}\nscore: {query_scores[i]}"
-            # )
+            # print(path.split("/")[-1])
+            # return [], [], []
+            raise ValueError(
+                f"query score error in file: {path}\nID: {ids[i]}\nscore: {query_scores[i]}"
+            )
     # response relevance
     response_hallu = process_cell(tables, 5)
     for i in range(len(response_hallu)):  # check value
@@ -46,11 +46,11 @@ def read_docx(path, part=0):
             response_hallu[i] = int(response_hallu[i])
             assert response_hallu[i] in (1, 2)
         except:
-            print(path.split("/")[-1])
-            return [], [], []
-            # raise ValueError(
-            #     f"response-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {response_hallu[i]}"
-            # )
+            # print(path.split("/")[-1])
+            # return [], [], []
+            raise ValueError(
+                f"response-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {response_hallu[i]}"
+            )
     # length
     lens = [len(table.cell(6, 1).text.split("\n")) for table in tables]
     # segment-level hallucinations
@@ -65,11 +65,11 @@ def read_docx(path, part=0):
             assert min(fact_hallu[i]) >= 1
             assert max(fact_hallu[i]) <= 8
         except:
-            print(path.split("/")[-1])
-            return [], [], []
-            # raise ValueError(
-            #     f"fact-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {fact_hallu[i]}"
-            # )
+            # print(path.split("/")[-1])
+            # return [], [], []
+            raise ValueError(
+                f"fact-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {fact_hallu[i]}"
+            )
 
     return query_scores, response_hallu, fact_hallu
 
@@ -122,14 +122,18 @@ if __name__ == "__main__":
         "Open-Domain",
     ]
     model = "chatgpt"
+    doc_path_1 = os.path.join("./docs/", "{}_1.docx")
+    doc_path_2 = os.path.join("./docs/", "{}_2.docx")
+    doc_path_3 = os.path.join("./docs/", "{}_3.docx")
+    doc_path_4 = os.path.join("./docs/", "{}_4.docx")
     # doc_path_1 = os.path.join("./docs/", "{}_1_1.docx")
     # doc_path_2 = os.path.join("./docs/", "{}_2_1.docx")
     # doc_path_3 = os.path.join("./docs/", "{}_3_1.docx")
     # doc_path_4 = os.path.join("./docs/", "{}_4_1.docx")
-    doc_path_1 = os.path.join("./docs/", "{}_1_2.docx")
-    doc_path_2 = os.path.join("./docs/", "{}_2_2.docx")
-    doc_path_3 = os.path.join("./docs/", "{}_3_2.docx")
-    doc_path_4 = os.path.join("./docs/", "{}_4_2.docx")
+    # doc_path_1 = os.path.join("./docs/", "{}_1_2.docx")
+    # doc_path_2 = os.path.join("./docs/", "{}_2_2.docx")
+    # doc_path_3 = os.path.join("./docs/", "{}_3_2.docx")
+    # doc_path_4 = os.path.join("./docs/", "{}_4_2.docx")
     json_path = os.path.join("./json/", "{}.json")
     total_human_id = []
     total_gpt_id = []
@@ -153,7 +157,6 @@ if __name__ == "__main__":
             response_hallu_1 + response_hallu_2 + response_hallu_3 + response_hallu_4
         )
         fact_hallu = fact_hallu_1 + fact_hallu_2 + fact_hallu_3 + fact_hallu_4
-        continue
         data = read_json(json_path.format(file), part=0)
         gpt_id = [
             [1 if "true" in jud else 0 for jud in d[f"{model}_judge"]] for d in data
