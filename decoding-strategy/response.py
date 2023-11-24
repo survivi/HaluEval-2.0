@@ -370,6 +370,11 @@ class Chatbot(Bot):
                 + 'Answer: As an AI language model, I can provide factual statements related to the claim that "1 in 5 million people in the UK have abnormal PrP positivity." However, it is important to note that I cannot verify the accuracy of this specific claim, as I have access to publicly available information up until September 2021. Additionally, the term "abnormal PrP positivity" is not commonly used in scientific literature, so it\'s difficult to provide specific statistics regarding this term. \nThat being said, I can provide information about PrP and prion diseases. PrP (prion protein) is a normal cellular protein found in mammals, including humans. However, misfolding of the PrP protein can lead to prion diseases, which are rare and usually fatal neurodegenerative disorders. The most well-known prion disease is Creutzfeldt-Jakob disease (CJD). CJD can occur spontaneously (sporadic), be hereditary (familial), or acquired through exposure to infected tissues (iatrogenic) or contaminated food (variant). \nAccording to the UK National CJD Research and Surveillance Unit (NCJDRSU), the annual incidence of sporadic CJD in the UK is approximately 1 to 2 cases per million population. The prevalence of other forms of prion diseases, such as variant CJD, is lower. Variant CJD has been associated with the consumption of meat from cows infected with bovine spongiform encephalopathy (BSE), also known as "mad cow disease."\nIt is important to consult official sources, such as scientific literature or reputable health organizations, for the most up-to-date and accurate information on prion diseases and related statistics.\n\n'
                 + f"Question: {query}\nAnswer: "
             )
+        elif chat_model.startswith("claude"):
+            query = (
+                "Human: You are a helpful assistant. Please write a reasonable answer or reply to the following question based on your knowledge: "
+                + f"{query}\nAssistant: "
+            )
         else:
             query = (
                 f"You MUST give a detailed answer to the following question: {query}"
