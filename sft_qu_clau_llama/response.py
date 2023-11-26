@@ -118,20 +118,6 @@ class Chatbot(Bot):
 
     def __init__(self, data_path, save_path, model, file):
         super().__init__(model)
-        # self.file2length = {
-        #     "Bio-Medical": 1535,
-        #     "Finance": 1125,
-        #     "Science": 1409,
-        #     "Education": 1701,
-        #     "Open-Domain": 3000,
-        # }
-        self.file2length = {
-            "Bio-Medical": 200,
-            "Finance": 200,
-            "Science": 200,
-            "Education": 200,
-            "Open-Domain": 200,
-        }
         self.file = file  # file name
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
@@ -166,6 +152,7 @@ class Chatbot(Bot):
         """
         Load exist data from save path.
         """
+        self.file_length = len(data)
         if os.path.exists(self.save_path):
             with open(self.save_path, "r", encoding="utf-8") as f:
                 self.save_data = json.load(f)
@@ -414,7 +401,7 @@ class Chatbot(Bot):
         self.save_data = sorted(self.save_data, key=lambda x: x["id"])
         self.save()
         print(
-            f"Process ID: [{os.getpid()}] | {self.file2length[self.file] - len(self.save_data)} items left | Exit"
+            f"Process ID: [{os.getpid()}] | {self.file_length - len(self.save_data)} items left | Exit"
         )
 
 
@@ -631,7 +618,7 @@ if __name__ == "__main__":
                 top_k=args.top_k,
                 top_p=args.top_p,
             )
-            left.append((file, chatbot.file2length[file] - len(chatbot.save_data)))
+            left.append((file, chatbot.file_length - len(chatbot.save_data)))
     # list each file with unfinished items
     print(f"\nProcess ID: [{os.getpid()}] | Left:")
     for file, num in left:

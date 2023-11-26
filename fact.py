@@ -94,7 +94,7 @@ if __name__ == "__main__":
                 temperature=args.temperature,
                 top_p=args.top_p,
             )
-            left.append((file, factbot.file2length[file] - len(factbot.save_data)))
+            left.append((file, factbot.file_length - len(factbot.save_data)))
     # list each file with unfinished items
     print(f"\nProcess ID: [{os.getpid()}] | Left:")
     for file, num in left:

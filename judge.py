@@ -114,7 +114,7 @@ if __name__ == "__main__":
                 temperature=args.temperature,
                 top_p=args.top_p,
             )
-            left.append((file, jubot.file2length[file] - len(jubot.save_data)))
+            left.append((file, jubot.file_length - len(jubot.save_data)))
     # list each file with unfinished items
     print(f"\nProcess ID: [{os.getpid()}] | Left:")
     for file, num in left:
