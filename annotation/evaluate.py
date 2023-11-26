@@ -102,6 +102,12 @@ def print_metrics(human_id, gpt_id, response_hallu):
     for h, g, flag in zip(human_id, gpt_id, response_hallu):
         if flag == 2:
             continue
+        assert len(h) == len(g)
+
+        # for i in range(len(g)):
+        #     if g[i] == 0:
+        #         h[i] = 0
+
         intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
         length = len(h)
         total_ratio.append((intersection, length))
@@ -115,11 +121,11 @@ def print_metrics(human_id, gpt_id, response_hallu):
 
 if __name__ == "__main__":
     file_list = [
-        "Bio-Medical",
+        # "Bio-Medical",
         "Finance",
-        "Science",
-        "Education",
-        "Open-Domain",
+        # "Science",
+        # "Education",
+        # "Open-Domain",
     ]
     model = "chatgpt"
     doc_path_1 = os.path.join("./docs/", "{}_1.docx")
@@ -158,14 +164,27 @@ if __name__ == "__main__":
         )
         fact_hallu = fact_hallu_1 + fact_hallu_2 + fact_hallu_3 + fact_hallu_4
         data = read_json(json_path.format(file), part=0)
+
         gpt_id = [
             [1 if "true" in jud else 0 for jud in d[f"{model}_judge"]] for d in data
         ]
+
         # check length and value
         assert len(fact_hallu) == len(gpt_id)
         for i in range(len(fact_hallu)):
             fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu]
-        # show_id(fact_hallu, gpt_id)
+
+        # # calculate number of 1 and 0
+        # print("number of 1 and 0")
+        # print("# 1: ")
+        # print("human: ", sum([i.count(1) for i in fact_hallu]))
+        # print("gpt: ", sum([i.count(1) for i in gpt_id]))
+        # print("# 0: ")
+        # print("human: ", sum([i.count(0) for i in fact_hallu]))
+        # print("gpt: ", sum([i.count(0) for i in gpt_id]))
+
+        show_id(fact_hallu, gpt_id)
+
         print_metrics(fact_hallu, gpt_id, response_hallu)
         total_human_id.extend(fact_hallu)
         total_gpt_id.extend(gpt_id)
