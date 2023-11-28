@@ -71,7 +71,7 @@ def read_docx(path, part=0):
                 f"fact-level error in file: {path}\nID: {ids[i]}\nhallucination IDs: {fact_hallu[i]}"
             )
 
-    return query_scores, response_hallu, fact_hallu
+    return query_scores, response_hallu, fact_hallu, ids
 
 
 def read_json(path, part=0):
@@ -103,11 +103,6 @@ def print_metrics(human_id, gpt_id, response_hallu):
         if flag == 2:
             continue
         assert len(h) == len(g)
-
-        # for i in range(len(g)):
-        #     if g[i] == 0:
-        #         h[i] = 0
-
         intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
         length = len(h)
         total_ratio.append((intersection, length))
@@ -122,10 +117,10 @@ def print_metrics(human_id, gpt_id, response_hallu):
 if __name__ == "__main__":
     file_list = [
         # "Bio-Medical",
-        "Finance",
+        # "Finance",
         # "Science",
         # "Education",
-        # "Open-Domain",
+        "Open-Domain",
     ]
     model = "chatgpt"
     doc_path_1 = os.path.join("./docs/", "{}_1.docx")
@@ -146,16 +141,16 @@ if __name__ == "__main__":
     total_response_hallu = []
     for file in file_list:
         print("current file: ", file)
-        query_scores_1, response_hallu_1, fact_hallu_1 = read_docx(
+        query_scores_1, response_hallu_1, fact_hallu_1, ids_1 = read_docx(
             doc_path_1.format(file), part=0
         )
-        query_scores_2, response_hallu_2, fact_hallu_2 = read_docx(
+        query_scores_2, response_hallu_2, fact_hallu_2, ids_2 = read_docx(
             doc_path_2.format(file), part=0
         )
-        query_scores_3, response_hallu_3, fact_hallu_3 = read_docx(
+        query_scores_3, response_hallu_3, fact_hallu_3, ids_3 = read_docx(
             doc_path_3.format(file), part=0
         )
-        query_scores_4, response_hallu_4, fact_hallu_4 = read_docx(
+        query_scores_4, response_hallu_4, fact_hallu_4, ids_4 = read_docx(
             doc_path_4.format(file), part=0
         )
         query_scores = query_scores_1 + query_scores_2 + query_scores_3 + query_scores_4
@@ -163,6 +158,7 @@ if __name__ == "__main__":
             response_hallu_1 + response_hallu_2 + response_hallu_3 + response_hallu_4
         )
         fact_hallu = fact_hallu_1 + fact_hallu_2 + fact_hallu_3 + fact_hallu_4
+        ids = ids_1 + ids_2 + ids_3 + ids_4
         data = read_json(json_path.format(file), part=0)
 
         gpt_id = [
@@ -174,6 +170,26 @@ if __name__ == "__main__":
         for i in range(len(fact_hallu)):
             fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu]
 
+        index = []
+        for id, h, g, flag in zip(ids, fact_hallu, gpt_id, response_hallu):
+            if flag == 2:
+                continue
+            assert len(h) == len(g)
+            intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
+            length = len(h)
+            # if intersection / length <= 0.6 and len(h) >= 3:
+            # if intersection / length <= 0.6 and len(h) >= 1:
+            # if intersection / length <= 0.6 and len(h) >= 4:
+            # if intersection / length <= 0.6 and len(h) >= 3:
+            if intersection / length <= 0.8 and len(h) >= 2:
+                print(id)
+                # print("human: ", h)
+                # print("gpt: ", g)
+                index.append(ids.index(id))
+        for i in index:
+            fact_hallu[i] = gpt_id[i]
+        # print(len(index))
+
         # # calculate number of 1 and 0
         # print("number of 1 and 0")
         # print("# 1: ")
@@ -183,7 +199,7 @@ if __name__ == "__main__":
         # print("human: ", sum([i.count(0) for i in fact_hallu]))
         # print("gpt: ", sum([i.count(0) for i in gpt_id]))
 
-        show_id(fact_hallu, gpt_id)
+        # show_id(fact_hallu, gpt_id)
 
         print_metrics(fact_hallu, gpt_id, response_hallu)
         total_human_id.extend(fact_hallu)
