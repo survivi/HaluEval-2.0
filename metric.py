@@ -27,7 +27,7 @@ def cal_matrics(count):
     macro = macro * 100
     micro = round(micro, 2)
     macro = round(macro, 2)
-    print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
+    return f"{macro:.2f}", f"{micro:.2f}"
 
 
 def get_info(judge_list):
@@ -60,14 +60,29 @@ if __name__ == "__main__":
             "chatgpt",
             "text-davinci-002",
             "text-davinci-003",
-            "llama-7b",
             "llama-2-7b-chat-hf",
             "llama-2-13b-chat-hf",
             "alpaca-7b",
             "vicuna-7b",
             "vicuna-13b",
+            "llama-7b",
+            "claude-1",
+            "claude-2",
+            "llama-2-70b-chat-hf",
+            "baichuan2-7b-intermediate-00220",
+            "baichuan2-7b-intermediate-00440",
+            "baichuan2-7b-intermediate-00660",
+            "baichuan2-7b-intermediate-00880",
+            "baichuan2-7b-intermediate-01100",
+            "baichuan2-7b-intermediate-01320",
+            "baichuan2-7b-intermediate-01540",
+            "baichuan2-7b-intermediate-01760",
+            "baichuan2-7b-intermediate-01980",
+            "baichuan2-7b-intermediate-02200",
+            "baichuan2-7b-intermediate-02420",
             # "llama-2-7b-hf",
             # "llama-2-13b-hf",
+            # "bloom-7b1",
         ],
         help="chat model to use",
     )
@@ -85,6 +100,8 @@ if __name__ == "__main__":
     data_path = args.data_dir
     model = args.model
     total_count = []
+    metrics = []
+    PRINT_METRICS = 0
     for file in file_list:
         print("Current file: ", file)
         data = load_pure_data(data_path, file)
@@ -95,10 +112,20 @@ if __name__ == "__main__":
             count.append(info)
         total_count.extend(count)
         # calculate file average
-        cal_matrics(count)
-        print("========================================")
-    # calculate total average
-    print("Total average:")
-    cal_matrics(total_count)
+        macro, micro = cal_matrics(count)
+        if PRINT_METRICS:
+            print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
+            print("========================================")
+        else:
+            metrics.append(macro)
+            metrics.append(micro)
+
+    if PRINT_METRICS:
+        # calculate total average
+        print("Total average:")
+        macro, micro = cal_matrics(total_count)
+        print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
+    else:
+        print(" & ".join(metrics))
 
 print("\n\n")
