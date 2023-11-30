@@ -53,6 +53,7 @@ class Bot(object):
             "vicuna-7b": "/media/public/models/huggingface/vicuna-7b/",
             "vicuna-13b": "/media/public/models/huggingface/vicuna-13b-v1.1/",
             "llama-7b": "/media/public/models/huggingface/llama-7b/",
+            "yulan-chat-2-13b-fp16": "/media/public/models/huggingface/YuLan-Chat-2-13b-fp16",
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
             # "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
@@ -106,7 +107,7 @@ class Bot(object):
                     model_path,
                     low_cpu_mem_usage=True,
                     trust_remote_code=True,
-                    device_map="cuda",
+                    device_map="auto",
                     torch_dtype=torch.float16,
                 )
 
@@ -449,6 +450,7 @@ class Parser(object):
                 "claude-1",
                 "claude-2",
                 "llama-2-70b-chat-hf",
+                "yulan-chat-2-13b-fp16",
                 "baichuan2-7b-intermediate-00220",
                 "baichuan2-7b-intermediate-00440",
                 "baichuan2-7b-intermediate-00660",
