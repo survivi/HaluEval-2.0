@@ -18,3 +18,5 @@ for dir in ${DirList[*]}; do
 done
 
 python metric.py --model llama-7b --data-dir "./task/SFT/sft_judge/llama-7b/"
+
+# broken
