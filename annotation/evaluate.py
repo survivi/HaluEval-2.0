@@ -117,9 +117,9 @@ def print_metrics(human_id, gpt_id, response_hallu):
 if __name__ == "__main__":
     file_list = [
         # "Bio-Medical",
-        # "Finance",
+        "Finance",
         # "Science",
-        "Education",
+        # "Education",
         # "Open-Domain",
     ]
     model = "chatgpt"
@@ -181,14 +181,14 @@ if __name__ == "__main__":
             # if intersection / length <= 0.6 and len(h) >= 3:
             # if intersection / length <= 0.6 and len(h) >= 1:
             # if intersection / length <= 0.6 and len(h) >= 4:
-            if intersection / length <= 0.6 and len(h) >= 3:
-                # if intersection / length <= 0.8 and len(h) >= 2:
-                print(id)
-                index.append(ids.index(id))
-                # print("human: ", h)
-                # print("gpt: ", g)
+            # if intersection / length <= 0.6 and len(h) >= 3:
+            # if intersection / length <= 0.8 and len(h) >= 2:
+            # print(id)
+            # index.append(ids.index(id))
+            # print("human: ", h)
+            # print("gpt: ", g)
 
-        print(len(index))
+        # print(len(index))
 
         # for i in index:
         #     fact_hallu[i] = gpt_id[i]
