@@ -119,8 +119,8 @@ if __name__ == "__main__":
         # "Bio-Medical",
         # "Finance",
         # "Science",
-        # "Education",
-        "Open-Domain",
+        "Education",
+        # "Open-Domain",
     ]
     model = "chatgpt"
     doc_path_1 = os.path.join("./docs/", "{}_1.docx")
@@ -177,18 +177,21 @@ if __name__ == "__main__":
             assert len(h) == len(g)
             intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
             length = len(h)
+
             # if intersection / length <= 0.6 and len(h) >= 3:
             # if intersection / length <= 0.6 and len(h) >= 1:
             # if intersection / length <= 0.6 and len(h) >= 4:
-            # if intersection / length <= 0.6 and len(h) >= 3:
-            if intersection / length <= 0.8 and len(h) >= 2:
+            if intersection / length <= 0.6 and len(h) >= 3:
+                # if intersection / length <= 0.8 and len(h) >= 2:
                 print(id)
+                index.append(ids.index(id))
                 # print("human: ", h)
                 # print("gpt: ", g)
-                index.append(ids.index(id))
-        for i in index:
-            fact_hallu[i] = gpt_id[i]
-        # print(len(index))
+
+        print(len(index))
+
+        # for i in index:
+        #     fact_hallu[i] = gpt_id[i]
 
         # # calculate number of 1 and 0
         # print("number of 1 and 0")
