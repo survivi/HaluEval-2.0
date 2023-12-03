@@ -119,7 +119,7 @@ if __name__ == "__main__":
         # "Bio-Medical",
         "Finance",
         # "Science",
-        # "Education",
+        "Education",
         # "Open-Domain",
     ]
     model = "chatgpt"
@@ -175,12 +175,19 @@ if __name__ == "__main__":
             if flag == 2:
                 continue
             assert len(h) == len(g)
+
+            # print(id + "-> ", end="")
+            # for i in range(len(h)):
+            #     if h[i] != g[i]:
+            #         print(str(i + 1) + ", ", end="")
+            # print("\n")
+
             intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
             length = len(h)
 
             # if intersection / length <= 0.6 and len(h) >= 3:
             # if intersection / length <= 0.6 and len(h) >= 1:
-            # if intersection / length <= 0.6 and len(h) >= 4:
+            # if intersection / length <= 0.8 and len(h) >= 4:
             # if intersection / length <= 0.6 and len(h) >= 3:
             # if intersection / length <= 0.8 and len(h) >= 2:
             # print(id)
