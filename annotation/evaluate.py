@@ -110,8 +110,8 @@ def print_metrics(human_id, gpt_id, response_hallu):
     total_length = sum([j for _, j in total_ratio])
     macro_ratio = total_intersection / total_length
     micro_ratio = sum([i / j for i, j in total_ratio]) / len(total_ratio)
-    print("macro ratio: ", macro_ratio)
-    print("micro ratio: ", micro_ratio)
+    print("match rate: ", macro_ratio)
+    # print("micro ratio: ", micro_ratio)
 
 
 if __name__ == "__main__":
@@ -176,11 +176,11 @@ if __name__ == "__main__":
                 continue
             assert len(h) == len(g)
 
-            # print(id + "-> ", end="")
-            # for i in range(len(h)):
-            #     if h[i] != g[i]:
-            #         print(str(i + 1) + ", ", end="")
-            # print("\n")
+            print(id + "-> ", end="")
+            for i in range(len(h)):
+                if h[i] != g[i]:
+                    print(str(i + 1) + ", ", end="")
+            print("\n")
 
             intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
             length = len(h)
