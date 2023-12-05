@@ -46,14 +46,13 @@ class Genbot(Chatbot):
         if "NO" in ans:
             self.append_data(d, d["corrected_response"])
             return None
-        else:
-            filter_d = {
-                "id": d["id"],
-                "user_query": d["user_query"],
-                "original_response": d["original_response"],
-                "corrected_response": d["corrected_response"],
-                "hallucination": ans,
-            }
+        filter_d = {
+            "id": d["id"],
+            "user_query": d["user_query"],
+            "original_response": d["original_response"],
+            "corrected_response": d["corrected_response"],
+            "hallucination": ans,
+        }
         return filter_d
 
     def generate_data(self, data, hallu_prompt, correct_prompt):
