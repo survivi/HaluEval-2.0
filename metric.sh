@@ -40,3 +40,14 @@
 # for dir in ${DirList[*]}; do
 #     python metric.py --model llama-2-7b-chat-hf --data-dir "./task/prompt_task/prompt_judge/prompt_format/$dir/llama-2-7b-chat-hf"
 # done
+
+# DirList=("llama-2-7b-chat-hf_INT4" "llama-2-7b-chat-hf_INT8" "llama-2-13b-chat-hf_INT4" "llama-2-13b-chat-hf_INT8")
+# for dir in ${DirList[*]}; do
+#     model=${dir%%_*}
+#     python metric.py --model $model --data-dir "./task/quantization/quantization_judge/$dir"
+# done
+
+DirList=("llama-2-7b-chat-hf" "llama-2-13b-chat-hf")
+for dir in ${DirList[*]}; do
+    python metric.py --model $dir --data-dir "./task/prompt_task/prompt_judge/origin/$dir"
+done
