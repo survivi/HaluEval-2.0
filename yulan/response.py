@@ -227,8 +227,6 @@ class Chatbot(Bot):
         """
         Complete using GPT-4.
         """
-        return "1. TRUE"
-
         coun = 0
         while True:
             try:

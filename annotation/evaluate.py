@@ -116,11 +116,11 @@ def print_metrics(human_id, gpt_id, response_hallu):
 
 if __name__ == "__main__":
     file_list = [
-        # "Bio-Medical",
+        "Bio-Medical",
         "Finance",
-        # "Science",
+        "Science",
         "Education",
-        # "Open-Domain",
+        "Open-Domain",
     ]
     model = "chatgpt"
     doc_path_1 = os.path.join("./docs/", "{}_1.docx")
@@ -160,40 +160,37 @@ if __name__ == "__main__":
         fact_hallu = fact_hallu_1 + fact_hallu_2 + fact_hallu_3 + fact_hallu_4
         ids = ids_1 + ids_2 + ids_3 + ids_4
         data = read_json(json_path.format(file), part=0)
-
         gpt_id = [
             [1 if "true" in jud else 0 for jud in d[f"{model}_judge"]] for d in data
         ]
-
         # check length and value
         assert len(fact_hallu) == len(gpt_id)
         for i in range(len(fact_hallu)):
             fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu]
 
-        index = []
-        for id, h, g, flag in zip(ids, fact_hallu, gpt_id, response_hallu):
-            if flag == 2:
-                continue
-            assert len(h) == len(g)
+        # index = []
+        # for id, h, g, flag in zip(ids, fact_hallu, gpt_id, response_hallu):
+        #     if flag == 2:
+        #         continue
+        #     assert len(h) == len(g)
 
-            print(id + "-> ", end="")
-            for i in range(len(h)):
-                if h[i] != g[i]:
-                    print(str(i + 1) + ", ", end="")
-            print("\n")
+        #     print(id + "-> ", end="")
+        #     for i in range(len(h)):
+        #         if h[i] != g[i]:
+        #             print(str(i + 1) + ", ", end="")
+        #     print("\n")
 
-            intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
-            length = len(h)
-
-            # if intersection / length <= 0.6 and len(h) >= 3:
-            # if intersection / length <= 0.6 and len(h) >= 1:
-            # if intersection / length <= 0.8 and len(h) >= 4:
-            # if intersection / length <= 0.6 and len(h) >= 3:
-            # if intersection / length <= 0.8 and len(h) >= 2:
-            # print(id)
-            # index.append(ids.index(id))
-            # print("human: ", h)
-            # print("gpt: ", g)
+        #     intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
+        #     length = len(h)
+        #     if intersection / length <= 0.6 and len(h) >= 3:
+        #     if intersection / length <= 0.6 and len(h) >= 1:
+        #     if intersection / length <= 0.8 and len(h) >= 4:
+        #     if intersection / length <= 0.6 and len(h) >= 3:
+        #     if intersection / length <= 0.8 and len(h) >= 2:
+        #     print(id)
+        #     index.append(ids.index(id))
+        #     print("human: ", h)
+        #     print("gpt: ", g)
 
         # print(len(index))
 
@@ -217,5 +214,5 @@ if __name__ == "__main__":
         total_response_hallu.extend(response_hallu)
         print("================================")
     print("done!")
-    # print("total")
-    # print_metrics(total_human_id, total_gpt_id, total_response_hallu)
+    print("total")
+    print_metrics(total_human_id, total_gpt_id, total_response_hallu)
