@@ -54,6 +54,7 @@ class Bot(object):
             "vicuna-13b": "/media/public/models/huggingface/vicuna-13b-v1.1/",
             "llama-7b": "/media/public/models/huggingface/llama-7b/",
             "yulan-chat-2-13b-fp16": "/media/public/models/huggingface/YuLan-Chat-2-13b-fp16",
+            "llama-2-70b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-70b-chat-hf/",
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
             # "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
@@ -123,7 +124,7 @@ class Chatbot(Bot):
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
-        self.max_retry = 10  # max retry times
+        self.max_retry = 50  # max retry times
         self.frequency = 300  # save frequency
 
     def load_data(self, part=0):
