@@ -34,6 +34,7 @@ class Filterbot(Chatbot):
                     "original_response": data[i][self.model + "_response"],
                     "corrected_response": data[i][self.model + "_response"],
                     "hallucination": ans,
+                    "round": 0,
                 }
             )
 
