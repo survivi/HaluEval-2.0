@@ -283,6 +283,13 @@ class Chatbot(Bot):
                         temperature=kwargs["temperature"],
                         top_p=kwargs["top_p"],
                     )
+                elif chat_model == "gpt-4":
+                    response = openai.ChatCompletion.create(
+                        model="gpt-4-1106-preview",
+                        messages=[{"role": "user", "content": query}],
+                        temperature=kwargs["temperature"],
+                        top_p=kwargs["top_p"],
+                    )
                 break
             except func_timeout.exceptions.FunctionTimedOut:
                 print("FunctionTimedOut\nRetrying...")
@@ -292,7 +299,7 @@ class Chatbot(Bot):
                 time.sleep(10)
         if retry >= self.max_retry:
             raise ValueError("Failed to generate response")
-        if chat_model == "chatgpt":
+        if chat_model == "chatgpt" or chat_model == "gpt-4":
             ans = response["choices"][0]["message"]["content"]
         elif chat_model.startswith("text-davinci-00"):
             ans = response["choices"][0]["text"]
