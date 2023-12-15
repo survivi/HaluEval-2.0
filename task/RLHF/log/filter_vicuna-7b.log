@@ -1,0 +1,27 @@
+Process ID: [2126821] | Arguments:
+    all_files: True
+    file: Bio-Medical
+    model: vicuna-7b
+    temperature: 1
+    top_p: 1
+    early_stopping: False
+    do_sample: False
+    num_beams: 1
+    top_k: 50
+    data_dir: ./rlhf_data/vicuna-7b/
+    save_dir: ./filtered_data/vicuna-7b/
+    hallu_prompt_path: ./prompt/rlhf_hallu.txt
+Process ID: [2126821] | Loading data from ./rlhf_data/vicuna-7b/Bio-Medical.json | Total 1335
+Process ID: [2126821] | Loading exist data from ./filtered_data/vicuna-7b/Bio-Medical.json | Total 1319
+[11, 115, 596, 602, 871, 1039, 1313, 1376, 1379, 1633, 1963, 2317, 2387, 3517, 3676, 3974]
+  0%|                                                                        | 0/16 [00:00<?, ?it/s]Process ID: [2126821] | Model: vicuna-7b | File: Bio-Medical | Saving 1319 items to ./filtered_data/vicuna-7b/Bio-Medical.json
+Error: 'temperature'
+Retrying...
+Error: 'temperature'
+Retrying...
+Error: 'temperature'
+Retrying...
+Error: 'temperature'
+Retrying...
+Error: 'temperature'
+Retrying...

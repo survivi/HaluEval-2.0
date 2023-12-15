@@ -7,5 +7,5 @@ echo "OPENAI_API_BASE is set to: $OPENAI_API_BASE"
 
 for model in alpaca-7b vicuna-7b vicuna-13b
 do
-    nohup python -u rlhf_filter.py --model $model --all-files >> ./log/filter_$model.log 2>&1 &
+    nohup python -u rlhf_filter.py --model $model --all-files > ./log/filter_$model.log 2>&1 &
 done
