@@ -1,86 +1,0 @@
-Process ID: [2127617] | Arguments:
-    all_files: True
-    file: Bio-Medical
-    model: vicuna-13b
-    temperature: 1
-    top_p: 1
-    early_stopping: False
-    do_sample: False
-    num_beams: 1
-    top_k: 50
-    data_dir: ./rlhf_data/vicuna-13b/
-    save_dir: ./filtered_data/vicuna-13b/
-    hallu_prompt_path: ./prompt/rlhf_hallu.txt
-Process ID: [2127617] | Loading data from ./rlhf_data/vicuna-13b/Bio-Medical.json | Total 1335
-Process ID: [2127617] | Loading exist data from ./filtered_data/vicuna-13b/Bio-Medical.json | Total 1316
-[11, 54, 339, 357, 647, 871, 939, 1356, 1371, 1387, 1593, 1693, 1923, 1963, 1999, 2052, 2401, 3228, 3601]
-  0%|                                                                        | 0/19 [00:00<?, ?it/s]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1316 items to ./filtered_data/vicuna-13b/Bio-Medical.json
-  5%|███▎                                                            | 1/19 [00:30<09:17, 30.99s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1317 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 11%|██████▋                                                         | 2/19 [00:45<06:04, 21.46s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1318 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 16%|██████████                                                      | 3/19 [01:49<10:53, 40.82s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1319 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 21%|█████████████▍                                                  | 4/19 [02:08<08:04, 32.30s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1320 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 26%|████████████████▊                                               | 5/19 [03:31<11:48, 50.61s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1321 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 32%|████████████████████▏                                           | 6/19 [03:51<08:41, 40.12s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1322 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 37%|███████████████████████▌                                        | 7/19 [04:09<06:34, 32.91s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1323 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 42%|██████████████████████████▉                                     | 8/19 [04:31<05:21, 29.23s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1324 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 47%|██████████████████████████████▎                                 | 9/19 [04:51<04:25, 26.51s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1325 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 53%|█████████████████████████████████▏                             | 10/19 [05:25<04:19, 28.86s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1326 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 58%|████████████████████████████████████▍                          | 11/19 [06:03<04:11, 31.44s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1327 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 63%|███████████████████████████████████████▊                       | 12/19 [06:14<02:58, 25.48s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1328 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 68%|███████████████████████████████████████████                    | 13/19 [06:35<02:24, 24.12s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1329 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 74%|██████████████████████████████████████████████▍                | 14/19 [07:23<02:36, 31.30s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1330 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 79%|█████████████████████████████████████████████████▋             | 15/19 [07:41<01:49, 27.32s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1331 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 84%|█████████████████████████████████████████████████████          | 16/19 [07:49<01:03, 21.29s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1332 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 89%|████████████████████████████████████████████████████████▎      | 17/19 [08:22<00:49, 24.76s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1333 items to ./filtered_data/vicuna-13b/Bio-Medical.json
- 95%|███████████████████████████████████████████████████████████▋   | 18/19 [09:00<00:28, 28.94s/it]Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1334 items to ./filtered_data/vicuna-13b/Bio-Medical.json
-100%|███████████████████████████████████████████████████████████████| 19/19 [09:31<00:00, 29.36s/it]100%|███████████████████████████████████████████████████████████████| 19/19 [09:31<00:00, 30.05s/it]
-Process ID: [2127617] | Model: vicuna-13b | File: Bio-Medical | Saving 1335 items to ./filtered_data/vicuna-13b/Bio-Medical.json
-Process ID: [2127617] | 0 items left | Exit
-Process ID: [2127617] | Loading data from ./rlhf_data/vicuna-13b/Finance.json | Total 925
-Process ID: [2127617] | Loading exist data from ./filtered_data/vicuna-13b/Finance.json | Total 923
-[3798, 3836]
-  0%|                                                                         | 0/2 [00:00<?, ?it/s]Process ID: [2127617] | Model: vicuna-13b | File: Finance | Saving 923 items to ./filtered_data/vicuna-13b/Finance.json
- 50%|████████████████████████████████▌                                | 1/2 [00:25<00:25, 25.04s/it]Process ID: [2127617] | Model: vicuna-13b | File: Finance | Saving 924 items to ./filtered_data/vicuna-13b/Finance.json
-100%|█████████████████████████████████████████████████████████████████| 2/2 [00:51<00:00, 25.77s/it]100%|█████████████████████████████████████████████████████████████████| 2/2 [00:51<00:00, 25.66s/it]
-Process ID: [2127617] | Model: vicuna-13b | File: Finance | Saving 925 items to ./filtered_data/vicuna-13b/Finance.json
-Process ID: [2127617] | 0 items left | Exit
-Process ID: [2127617] | Loading data from ./rlhf_data/vicuna-13b/Science.json | Total 1209
-Process ID: [2127617] | Loading exist data from ./filtered_data/vicuna-13b/Science.json | Total 1202
-[657, 669, 794, 1064, 1109, 1138, 1162]
-  0%|                                                                         | 0/7 [00:00<?, ?it/s]Process ID: [2127617] | Model: vicuna-13b | File: Science | Saving 1202 items to ./filtered_data/vicuna-13b/Science.json
- 14%|█████████▎                                                       | 1/7 [00:19<01:57, 19.54s/it]Process ID: [2127617] | Model: vicuna-13b | File: Science | Saving 1203 items to ./filtered_data/vicuna-13b/Science.json
- 29%|██████████████████▌                                              | 2/7 [00:48<02:06, 25.35s/it]Process ID: [2127617] | Model: vicuna-13b | File: Science | Saving 1204 items to ./filtered_data/vicuna-13b/Science.json
- 43%|███████████████████████████▊                                     | 3/7 [01:13<01:39, 25.00s/it]Process ID: [2127617] | Model: vicuna-13b | File: Science | Saving 1205 items to ./filtered_data/vicuna-13b/Science.json
- 57%|█████████████████████████████████████▏                           | 4/7 [01:39<01:16, 25.35s/it]Process ID: [2127617] | Model: vicuna-13b | File: Science | Saving 1206 items to ./filtered_data/vicuna-13b/Science.json
- 71%|██████████████████████████████████████████████▍                  | 5/7 [01:51<00:40, 20.39s/it]Process ID: [2127617] | Model: vicuna-13b | File: Science | Saving 1207 items to ./filtered_data/vicuna-13b/Science.json
- 86%|███████████████████████████████████████████████████████▋         | 6/7 [02:04<00:18, 18.13s/it]Process ID: [2127617] | Model: vicuna-13b | File: Science | Saving 1208 items to ./filtered_data/vicuna-13b/Science.json
-100%|█████████████████████████████████████████████████████████████████| 7/7 [03:01<00:00, 30.83s/it]100%|█████████████████████████████████████████████████████████████████| 7/7 [03:01<00:00, 25.96s/it]
-Process ID: [2127617] | Model: vicuna-13b | File: Science | Saving 1209 items to ./filtered_data/vicuna-13b/Science.json
-Process ID: [2127617] | 0 items left | Exit
-Process ID: [2127617] | Loading data from ./rlhf_data/vicuna-13b/Education.json | Total 1501
-Process ID: [2127617] | Loading exist data from ./filtered_data/vicuna-13b/Education.json | Total 1497
-[50, 1173, 1688, 4838]
-  0%|                                                                         | 0/4 [00:00<?, ?it/s]Process ID: [2127617] | Model: vicuna-13b | File: Education | Saving 1497 items to ./filtered_data/vicuna-13b/Education.json
- 25%|████████████████▎                                                | 1/4 [00:25<01:15, 25.28s/it]Process ID: [2127617] | Model: vicuna-13b | File: Education | Saving 1498 items to ./filtered_data/vicuna-13b/Education.json
- 50%|████████████████████████████████▌                                | 2/4 [00:37<00:35, 17.51s/it]Process ID: [2127617] | Model: vicuna-13b | File: Education | Saving 1499 items to ./filtered_data/vicuna-13b/Education.json
- 75%|████████████████████████████████████████████████▊                | 3/4 [00:58<00:19, 19.30s/it]Process ID: [2127617] | Model: vicuna-13b | File: Education | Saving 1500 items to ./filtered_data/vicuna-13b/Education.json
-100%|█████████████████████████████████████████████████████████████████| 4/4 [01:15<00:00, 18.26s/it]100%|█████████████████████████████████████████████████████████████████| 4/4 [01:15<00:00, 18.86s/it]
-Process ID: [2127617] | Model: vicuna-13b | File: Education | Saving 1501 items to ./filtered_data/vicuna-13b/Education.json
-Process ID: [2127617] | 0 items left | Exit
-Process ID: [2127617] | Loading data from ./rlhf_data/vicuna-13b/Open-Domain.json | Total 2800
-Process ID: [2127617] | Loading exist data from ./filtered_data/vicuna-13b/Open-Domain.json | Total 2796
-[3355, 4592, 4926, 5061]
-  0%|                                                                         | 0/4 [00:00<?, ?it/s]Process ID: [2127617] | Model: vicuna-13b | File: Open-Domain | Saving 2796 items to ./filtered_data/vicuna-13b/Open-Domain.json
- 25%|████████████████▎                                                | 1/4 [00:07<00:23,  7.72s/it]Process ID: [2127617] | Model: vicuna-13b | File: Open-Domain | Saving 2797 items to ./filtered_data/vicuna-13b/Open-Domain.json
- 50%|████████████████████████████████▌                                | 2/4 [00:41<00:45, 22.77s/it]Process ID: [2127617] | Model: vicuna-13b | File: Open-Domain | Saving 2798 items to ./filtered_data/vicuna-13b/Open-Domain.json
- 75%|████████████████████████████████████████████████▊                | 3/4 [00:56<00:19, 19.22s/it]Process ID: [2127617] | Model: vicuna-13b | File: Open-Domain | Saving 2799 items to ./filtered_data/vicuna-13b/Open-Domain.json
-100%|█████████████████████████████████████████████████████████████████| 4/4 [02:01<00:00, 37.29s/it]100%|█████████████████████████████████████████████████████████████████| 4/4 [02:01<00:00, 30.25s/it]
-Process ID: [2127617] | Model: vicuna-13b | File: Open-Domain | Saving 2800 items to ./filtered_data/vicuna-13b/Open-Domain.json
-Process ID: [2127617] | 0 items left | Exit
-
-Process ID: [2127617] | Left:
-    Bio-Medical: 0
-    Finance: 0
-    Science: 0
-    Education: 0
-    Open-Domain: 0
