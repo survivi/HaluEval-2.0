@@ -2,6 +2,7 @@
 import os
 import json
 from docx import Document
+from collections import defaultdict
 
 
 def process_cell(tables, index, split=False):
@@ -161,12 +162,86 @@ if __name__ == "__main__":
         ids = ids_1 + ids_2 + ids_3 + ids_4
         data = read_json(json_path.format(file), part=0)
         gpt_id = [
-            [1 if "true" in jud else 0 for jud in d[f"{model}_judge"]] for d in data
+            [
+                1 if "true" in jud or "unknown" in jud else 0
+                for jud in d[f"{model}_judge"]
+            ]
+            for d in data
         ]
         # check length and value
         assert len(fact_hallu) == len(gpt_id)
         for i in range(len(fact_hallu)):
             fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu]
+
+        readable = [i[0] for i in query_scores]
+        formal = [i[1] for i in query_scores]
+        concrete = [i[2] for i in query_scores]
+        # score: list of [(false_unknown, sum), false_unknown / sum, hallu_flag]
+        readable_dist = defaultdict(lambda: [])
+        formal_dist = defaultdict(lambda: [])
+        concrete_dist = defaultdict(lambda: [])
+        for i in range(len(gpt_id)):
+            false_unknown = gpt_id[i].count(0)
+            sum_ = len(gpt_id[i])
+            flag = 1 if false_unknown else 0
+            readable_dist[readable[i]].append(
+                (false_unknown, sum_, false_unknown / sum_, flag)
+            )
+            formal_dist[formal[i]].append(
+                (false_unknown, sum_, false_unknown / sum_, flag)
+            )
+            concrete_dist[concrete[i]].append(
+                (false_unknown, sum_, false_unknown / sum_, flag)
+            )
+        print("Readability:")
+        for i in range(1, 6):
+            print(f"{i}: ", end="")
+            micro = (
+                sum([j[2] for j in readable_dist[i]]) / len(readable_dist[i])
+                if len(readable_dist[i])
+                else -0.01
+            )
+            micro = round(micro * 100, 2)
+            macro = (
+                sum([j[3] for j in readable_dist[i]]) / len(readable_dist[i])
+                if len(readable_dist[i])
+                else -0.01
+            )
+            macro = round(macro * 100, 2)
+            print(f"Num: {len(readable_dist[i])}, Macro: {macro}, Micro: {micro}")
+        print("Formality:")
+        for i in range(1, 6):
+            print(f"{i}: ", end="")
+            micro = (
+                sum([j[2] for j in formal_dist[i]]) / len(formal_dist[i])
+                if len(formal_dist[i])
+                else -0.01
+            )
+            micro = round(micro * 100, 2)
+            macro = (
+                sum([j[3] for j in formal_dist[i]]) / len(formal_dist[i])
+                if len(formal_dist[i])
+                else -0.01
+            )
+            macro = round(macro * 100, 2)
+            print(f"Num: {len(formal_dist[i])}, Macro: {macro}, Micro: {micro}")
+        print("Concreteness:")
+        for i in range(1, 6):
+            print(f"{i}: ", end="")
+            micro = (
+                sum([j[2] for j in concrete_dist[i]]) / len(concrete_dist[i])
+                if len(concrete_dist[i])
+                else -0.01
+            )
+            micro = round(micro * 100, 2)
+            macro = (
+                sum([j[3] for j in concrete_dist[i]]) / len(concrete_dist[i])
+                if len(concrete_dist[i])
+                else -0.01
+            )
+            macro = round(macro * 100, 2)
+            print(f"Num: {len(concrete_dist[i])}, Macro: {macro}, Micro: {micro}")
+        print("================================")
 
         # index = []
         # for id, h, g, flag in zip(ids, fact_hallu, gpt_id, response_hallu):
@@ -187,10 +262,10 @@ if __name__ == "__main__":
         #     if intersection / length <= 0.8 and len(h) >= 4:
         #     if intersection / length <= 0.6 and len(h) >= 3:
         #     if intersection / length <= 0.8 and len(h) >= 2:
-        #     print(id)
-        #     index.append(ids.index(id))
-        #     print("human: ", h)
-        #     print("gpt: ", g)
+        #         print(id)
+        #         index.append(ids.index(id))
+        #         print("human: ", h)
+        #         print("gpt: ", g)
 
         # print(len(index))
 
@@ -208,11 +283,11 @@ if __name__ == "__main__":
 
         # show_id(fact_hallu, gpt_id)
 
-        print_metrics(fact_hallu, gpt_id, response_hallu)
-        total_human_id.extend(fact_hallu)
-        total_gpt_id.extend(gpt_id)
-        total_response_hallu.extend(response_hallu)
-        print("================================")
-    print("done!")
-    print("total")
-    print_metrics(total_human_id, total_gpt_id, total_response_hallu)
+    #     print_metrics(fact_hallu, gpt_id, response_hallu)
+    #     total_human_id.extend(fact_hallu)
+    #     total_gpt_id.extend(gpt_id)
+    #     total_response_hallu.extend(response_hallu)
+    #     print("================================")
+    # print("done!")
+    # print("total")
+    # print_metrics(total_human_id, total_gpt_id, total_response_hallu)
