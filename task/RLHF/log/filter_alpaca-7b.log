@@ -1,4 +1,4 @@
-Process ID: [2126820] | Arguments:
+Process ID: [2127615] | Arguments:
     all_files: True
     file: Bio-Medical
     model: alpaca-7b
@@ -11,16 +11,41 @@ Process ID: [2126820] | Arguments:
     data_dir: ./rlhf_data/alpaca-7b/
     save_dir: ./filtered_data/alpaca-7b/
     hallu_prompt_path: ./prompt/rlhf_hallu.txt
-Process ID: [2126820] | Loading data from ./rlhf_data/alpaca-7b/Bio-Medical.json | Total 1335
-Process ID: [2126820] | Loading exist data from ./filtered_data/alpaca-7b/Bio-Medical.json | Total 1333
+Process ID: [2127615] | Loading data from ./rlhf_data/alpaca-7b/Bio-Medical.json | Total 1335
+Process ID: [2127615] | Loading exist data from ./filtered_data/alpaca-7b/Bio-Medical.json | Total 1333
 [407, 3666]
+  0%|                                                                         | 0/2 [00:00<?, ?it/s]Process ID: [2127615] | Model: alpaca-7b | File: Bio-Medical | Saving 1333 items to ./filtered_data/alpaca-7b/Bio-Medical.json
+ 50%|████████████████████████████████▌                                | 1/2 [01:19<01:19, 79.21s/it]Process ID: [2127615] | Model: alpaca-7b | File: Bio-Medical | Saving 1334 items to ./filtered_data/alpaca-7b/Bio-Medical.json
+100%|█████████████████████████████████████████████████████████████████| 2/2 [02:40<00:00, 80.68s/it]100%|█████████████████████████████████████████████████████████████████| 2/2 [02:40<00:00, 80.46s/it]
+Process ID: [2127615] | Model: alpaca-7b | File: Bio-Medical | Saving 1335 items to ./filtered_data/alpaca-7b/Bio-Medical.json
+Process ID: [2127615] | 0 items left | Exit
+Process ID: [2127615] | Loading data from ./rlhf_data/alpaca-7b/Finance.json | Total 925
+Process ID: [2127615] | Loading exist data from ./filtered_data/alpaca-7b/Finance.json | Total 925
+[]
+Process ID: [2127615] | Model: alpaca-7b | File: Finance | Saving 925 items to ./filtered_data/alpaca-7b/Finance.json
+Process ID: [2127615] | 0 items left | Exit
+Process ID: [2127615] | Loading data from ./rlhf_data/alpaca-7b/Science.json | Total 1209
+Process ID: [2127615] | Loading exist data from ./filtered_data/alpaca-7b/Science.json | Total 1207
+[339, 489]
+  0%|                                                                         | 0/2 [00:00<?, ?it/s]Process ID: [2127615] | Model: alpaca-7b | File: Science | Saving 1207 items to ./filtered_data/alpaca-7b/Science.json
+ 50%|████████████████████████████████▌                                | 1/2 [00:12<00:12, 12.15s/it]Process ID: [2127615] | Model: alpaca-7b | File: Science | Saving 1208 items to ./filtered_data/alpaca-7b/Science.json
+100%|█████████████████████████████████████████████████████████████████| 2/2 [00:30<00:00, 15.76s/it]100%|█████████████████████████████████████████████████████████████████| 2/2 [00:30<00:00, 15.22s/it]
+Process ID: [2127615] | Model: alpaca-7b | File: Science | Saving 1209 items to ./filtered_data/alpaca-7b/Science.json
+Process ID: [2127615] | 0 items left | Exit
+Process ID: [2127615] | Loading data from ./rlhf_data/alpaca-7b/Education.json | Total 1501
+Process ID: [2127615] | Loading exist data from ./filtered_data/alpaca-7b/Education.json | Total 1501
+[]
+Process ID: [2127615] | Model: alpaca-7b | File: Education | Saving 1501 items to ./filtered_data/alpaca-7b/Education.json
+Process ID: [2127615] | 0 items left | Exit
+Process ID: [2127615] | Loading data from ./rlhf_data/alpaca-7b/Open-Domain.json | Total 2800
+Process ID: [2127615] | Loading exist data from ./filtered_data/alpaca-7b/Open-Domain.json | Total 2800
+[]
+Process ID: [2127615] | Model: alpaca-7b | File: Open-Domain | Saving 2800 items to ./filtered_data/alpaca-7b/Open-Domain.json
+Process ID: [2127615] | 0 items left | Exit
 
-  0%|                                                                         | 0/2 [00:00<?, ?it/s]Process ID: [2126820] | Model: alpaca-7b | File: Bio-Medical | Saving 1333 items to ./filtered_data/alpaca-7b/Bio-Medical.json
-Error: 'temperature'
-Retrying...
-Error: 'temperature'
-Retrying...
-Error: 'temperature'
-Retrying...
-Error: 'temperature'
-Retrying...
+Process ID: [2127615] | Left:
+    Bio-Medical: 0
+    Finance: 0
+    Science: 0
+    Education: 0
+    Open-Domain: 0
