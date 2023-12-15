@@ -21,7 +21,7 @@ class Filterbot(Chatbot):
         for i in tqdm(range(len(query_lst)), ncols=100):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
-            ans = self.gpt_4_complete(query_lst[i], "gpt-4")
+            ans = self.openai_complete(query_lst[i], "gpt-4")
             if ans == "FAILED" or ans == "TIMEOUT":
                 continue
             if "NO" in ans:
