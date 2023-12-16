@@ -415,9 +415,7 @@ class Chatbot(Bot):
         """
         self.save_data = sorted(self.save_data, key=lambda x: x["id"])
         self.save()
-        print(
-            f"Process ID: [{os.getpid()}] | {self.file_length - len(self.save_data)} items left | Exit"
-        )
+        print(f"Process ID: [{os.getpid()}] | Exit")
 
 
 class Parser(object):

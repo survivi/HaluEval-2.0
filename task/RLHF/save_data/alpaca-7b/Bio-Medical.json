@@ -3,9 +3,9 @@
     "id": 11,
     "user_query": "Which are the classes of anti-arrhythmic drugs according to Vaughan-Williams classification?",
     "original_response": "The classes of anti-arrhythmic drugs according to Vaughan-Williams classification are:\n1. Class I: Procainamide, quinidine, disopyramide\n2. Class II: Phenytoin, ethosuximide\n3. Class III: Cisapride, dofetilide\n4. Class IV: Amiodarone, sotalol\n5. Class V: Dronedarone, ibutilide",
-    "corrected_response": "The classes of anti-arrhythmic drugs according to Vaughan-Williams classification are:\n1. Class I: Procainamide, quinidine, disopyramide\n2. Class II: Phenytoin, ethosuximide\n3. Class III: Cisapride, dofetilide\n4. Class IV: Amiodarone, sotalol\n5. Class V: Dronedarone, ibutilide",
+    "corrected_response": "The classes of anti-arrhythmic drugs according to Vaughan-Williams classification are:\n1. Class I: Procainamide, quinidine, disopyramide\n2. Class II: Beta-blockers (e.g., propranolol, metoprolol, atenolol)\n3. Class III: Amiodarone, sotalol, dofetilide, ibutilide\n4. Class IV: Calcium channel blockers (e.g., verapamil, diltiazem)\n5. Class V: Miscellaneous drugs, including digoxin and adenosine\n\nThis revision corrects the originally mentioned drugs and categorizes them according to the Vaughan-Williams classification correctly.",
     "hallucination": "1. Class II drugs according to the Vaughan-Williams classification include beta-blockers, not phenytoin and ethosuximide.\n2. Class III drugs include amiodarone and sotalol, not cisapride, which is not an anti-arrhythmic drug.\n3. Class IV drugs are calcium channel blockers, not amiodarone and sotalol, which belong to Class III.\n4. Dronedarone and ibutilide belong to Class III, not Class V. Class V is a miscellaneous category and does not specifically include dronedarone and ibutilide.",
-    "round": 0
+    "round": -1
   },
   {
     "id": 26,

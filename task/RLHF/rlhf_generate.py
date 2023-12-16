@@ -1,6 +1,7 @@
 # coding: utf-8
 import os
 import json
+from tqdm import tqdm
 from response import check_exist, Parser, Chatbot
 
 
@@ -15,6 +16,7 @@ class Genbot(Chatbot):
         if label:
             self.save_data[idx]["round"] = -1
         else:
+            self.save_data[idx]["hallucination"] = d["hallucination"]
             self.save_data[idx]["round"] += 1
 
     def correct(self, d, prompt):
@@ -23,7 +25,8 @@ class Genbot(Chatbot):
             answer=d["corrected_response"],
             hallucination=d["hallucination"],
         )
-        ans = self.gpt_4_complete(q, "gpt-4")
+        # ans = self.gpt_4_complete(q, "gpt-4")
+        ans = self.openai_complete(q, "gpt-4")
         if ans == "FAILED" or ans == "TIMEOUT":
             return None
         correct_d = {
@@ -40,10 +43,12 @@ class Genbot(Chatbot):
             query=d["user_query"],
             answer=d["corrected_response"],
         )
-        ans = self.gpt_4_complete(q)
+        # ans = self.gpt_4_complete(q, "gpt-4")
+        ans = self.openai_complete(q, "gpt-4")
         if ans == "FAILED" or ans == "TIMEOUT":
             return None
         if "NO" in ans:
+            print(f"Round: {d['round']} | Finish")
             self.update_data(d, label=1)
             return None
         filter_d = {
@@ -52,13 +57,14 @@ class Genbot(Chatbot):
             "original_response": d["original_response"],
             "corrected_response": d["corrected_response"],
             "hallucination": ans,
+            "round": d["round"],
         }
         return filter_d
 
     def generate_data(self, data, hallu_prompt, correct_prompt):
-        for i in range(len(data)):
+        for i in tqdm(range(len(data)), ncols=100):
             filter_d = data[i]
-            while filter_d["round"] < 5:
+            while filter_d["round"] < 5 and filter_d["round"] != -1:
                 correct_d = self.correct(filter_d, correct_prompt)
                 if correct_d is None:
                     break
@@ -66,6 +72,8 @@ class Genbot(Chatbot):
                 if filter_d is None:
                     break
                 self.update_data(filter_d)
+                filter_d["round"] += 1
+                print(f"Round: {filter_d['round']} | Continue")
 
     def load_data(self, part=0):
         """
@@ -91,6 +99,7 @@ class Genbot(Chatbot):
             print(
                 f"Process ID: [{os.getpid()}] | Loading exist data from {self.save_path} | Total {len(self.save_data)}"
             )
+            assert len(data) == len(self.save_data)
             data = [i for i in self.save_data if i["round"] < 5 and i["round"] != -1]
         else:
             self.save_data = data
