@@ -124,8 +124,8 @@ class Chatbot(Bot):
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
-        self.max_retry = 50  # max retry times
-        self.frequency = 10  # save frequency
+        self.max_retry = 5  # max retry times
+        self.frequency = 2  # save frequency
 
     def load_data(self, part=0):
         """

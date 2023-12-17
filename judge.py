@@ -13,8 +13,6 @@ class Judgebot(Chatbot):
         super().__init__(data_path, save_path, model, file)
         self.file = file  # file name
         self.assist_model = assist_model  # judge model
-        self.frequency = 300  # save frequency
-        self.max_retry = 20  # max retry times
 
     def get_judge_lst(self, ans, facts):
         """

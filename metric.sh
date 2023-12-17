@@ -52,7 +52,13 @@
 #     python metric.py --model $dir --data-dir "./task/prompt_task/prompt_judge/origin/$dir"
 # done
 
-ModelList=("yulan-chat-2-13b-fp16")
-for model in ${ModelList[*]}; do
-    python metric.py --model $model --data-dir "./task/main/judge/$model"
+# ModelList=("yulan-chat-2-13b-fp16")
+# for model in ${ModelList[*]}; do
+#     python metric.py --model $model --data-dir "./task/main/judge/$model"
+# done
+
+DirList=("chatgpt_top-p_2" "chatgpt_top-p_4" "chatgpt_top-p_6" "chatgpt_top-p_8" "chatgpt_top-p_10")
+for dir in ${DirList[*]}; do
+    model=${dir%%_*}
+    python metric.py --model $model --data-dir "./chatgpt_top-p/judge/$dir"
 done

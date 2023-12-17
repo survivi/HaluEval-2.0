@@ -163,7 +163,8 @@ if __name__ == "__main__":
         data = read_json(json_path.format(file), part=0)
         gpt_id = [
             [
-                1 if "true" in jud or "unknown" in jud else 0
+                # 1 if "true" in jud or "unknown" in jud else 0
+                1 if "true" in jud else 0
                 for jud in d[f"{model}_judge"]
             ]
             for d in data
