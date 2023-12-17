@@ -182,7 +182,7 @@ class Chatbot(Bot):
         data = json.loads(response.text)
         return data["data"]["tenant_access_token"]
 
-    @func_set_timeout(10)
+    @func_set_timeout(20)
     def chatgpt_hi_request(
         self,
         message,

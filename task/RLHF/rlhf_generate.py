@@ -25,8 +25,8 @@ class Genbot(Chatbot):
             answer=d["corrected_response"],
             hallucination=d["hallucination"],
         )
-        # ans = self.gpt_4_complete(q, "gpt-4")
-        ans = self.openai_complete(q, "gpt-4")
+        ans = self.gpt_4_complete(q, "gpt-4")
+        # ans = self.openai_complete(q, "gpt-4")
         if ans == "FAILED" or ans == "TIMEOUT":
             return None
         correct_d = {
@@ -43,8 +43,8 @@ class Genbot(Chatbot):
             query=d["user_query"],
             answer=d["corrected_response"],
         )
-        # ans = self.gpt_4_complete(q, "gpt-4")
-        ans = self.openai_complete(q, "gpt-4")
+        ans = self.gpt_4_complete(q, "gpt-4")
+        # ans = self.openai_complete(q, "gpt-4")
         if ans == "FAILED" or ans == "TIMEOUT":
             return None
         if "NO" in ans:
@@ -63,6 +63,8 @@ class Genbot(Chatbot):
 
     def generate_data(self, data, hallu_prompt, correct_prompt):
         for i in tqdm(range(len(data)), ncols=100):
+            if i % self.frequency == 0:
+                self.save()
             filter_d = data[i]
             while filter_d["round"] < 5 and filter_d["round"] != -1:
                 correct_d = self.correct(filter_d, correct_prompt)

@@ -125,7 +125,7 @@ class Chatbot(Bot):
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
         self.max_retry = 50  # max retry times
-        self.frequency = 1  # save frequency
+        self.frequency = 10  # save frequency
 
     def load_data(self, part=0):
         """
@@ -182,7 +182,7 @@ class Chatbot(Bot):
         data = json.loads(response.text)
         return data["data"]["tenant_access_token"]
 
-    @func_set_timeout(10)
+    @func_set_timeout(20)
     def chatgpt_hi_request(
         self,
         message,
