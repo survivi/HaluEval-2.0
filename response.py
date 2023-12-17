@@ -285,7 +285,7 @@ class Chatbot(Bot):
                     )
                 elif chat_model == "gpt-4":
                     response = openai.ChatCompletion.create(
-                        model="gpt-4-1106-preview",
+                        model="gpt-4",
                         messages=[{"role": "user", "content": query}],
                         # temperature=kwargs["temperature"],
                         # top_p=kwargs["top_p"],

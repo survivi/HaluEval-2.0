@@ -47,7 +47,12 @@
 #     python metric.py --model $model --data-dir "./task/quantization/quantization_judge/$dir"
 # done
 
-DirList=("llama-2-7b-chat-hf" "llama-2-13b-chat-hf")
-for dir in ${DirList[*]}; do
-    python metric.py --model $dir --data-dir "./task/prompt_task/prompt_judge/origin/$dir"
+# DirList=("llama-2-7b-chat-hf" "llama-2-13b-chat-hf")
+# for dir in ${DirList[*]}; do
+#     python metric.py --model $dir --data-dir "./task/prompt_task/prompt_judge/origin/$dir"
+# done
+
+ModelList=("yulan-chat-2-13b-fp16")
+for model in ${ModelList[*]}; do
+    python metric.py --model $model --data-dir "./task/main/judge/$model"
 done
