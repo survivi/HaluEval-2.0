@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ModelList=("chatgpt" "llama-2-7b-chat-hf")
+ModelList=("llama-2-7b-chat-hf")
 DirList=("base" "character_info" "domain_info" "generate_demo" "pos_behind" "search_demo" "wrong_demo")
 for model in ${ModelList[*]}; do
     for dir in ${DirList[*]}; do
