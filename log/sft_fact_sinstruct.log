@@ -540,3 +540,44 @@ Process ID: [2339267] | Left:
     Science: 0
     Education: 0
     Open-Domain: 0
+Process ID: [2410644] | Arguments:
+    all_files: True
+    file: Bio-Medical
+    model: llama-7b
+    temperature: 1.0
+    top_p: 1.0
+    early_stopping: False
+    do_sample: False
+    num_beams: 1
+    top_k: 50
+    data_dir: ./sft2/sinstruct
+    save_dir: ./fact/sinstruct
+    assist_model: gpt-4
+    prompt_path: ./prompt/generate_fact_ins.txt
+Process ID: [2410644] | Loading data from ./sft2/sinstruct/Bio-Medical.json | Total 200
+Process ID: [2410644] | Loading exist data from ./fact/sinstruct/Bio-Medical.json | Total 200
+Process ID: [2410644] | Model: llama-7b | File: Bio-Medical | Saving 200 items to ./fact/sinstruct/Bio-Medical.json
+Process ID: [2410644] | Exit
+Process ID: [2410644] | Loading data from ./sft2/sinstruct/Finance.json | Total 200
+Process ID: [2410644] | Loading exist data from ./fact/sinstruct/Finance.json | Total 200
+Process ID: [2410644] | Model: llama-7b | File: Finance | Saving 200 items to ./fact/sinstruct/Finance.json
+Process ID: [2410644] | Exit
+Process ID: [2410644] | Loading data from ./sft2/sinstruct/Science.json | Total 200
+Process ID: [2410644] | Loading exist data from ./fact/sinstruct/Science.json | Total 200
+Process ID: [2410644] | Model: llama-7b | File: Science | Saving 200 items to ./fact/sinstruct/Science.json
+Process ID: [2410644] | Exit
+Process ID: [2410644] | Loading data from ./sft2/sinstruct/Education.json | Total 200
+Process ID: [2410644] | Loading exist data from ./fact/sinstruct/Education.json | Total 200
+Process ID: [2410644] | Model: llama-7b | File: Education | Saving 200 items to ./fact/sinstruct/Education.json
+Process ID: [2410644] | Exit
+Process ID: [2410644] | Loading data from ./sft2/sinstruct/Open-Domain.json | Total 200
+Process ID: [2410644] | Loading exist data from ./fact/sinstruct/Open-Domain.json | Total 200
+Process ID: [2410644] | Model: llama-7b | File: Open-Domain | Saving 200 items to ./fact/sinstruct/Open-Domain.json
+Process ID: [2410644] | Exit
+
+Process ID: [2410644] | Left:
+    Bio-Medical: 0
+    Finance: 0
+    Science: 0
+    Education: 0
+    Open-Domain: 0

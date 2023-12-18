@@ -140,6 +140,11 @@ if __name__ == "__main__":
     total_human_id = []
     total_gpt_id = []
     total_response_hallu = []
+    PRINT_HALLU_ID = True
+    PRINT_QUERY_SCORE = False
+    SHOW_DIFF = False
+    PRINT_NUM = False
+    PRINT_METRIC = False
     for file in file_list:
         print("current file: ", file)
         query_scores_1, response_hallu_1, fact_hallu_1, ids_1 = read_docx(
@@ -158,137 +163,124 @@ if __name__ == "__main__":
         response_hallu = (
             response_hallu_1 + response_hallu_2 + response_hallu_3 + response_hallu_4
         )
-        fact_hallu = fact_hallu_1 + fact_hallu_2 + fact_hallu_3 + fact_hallu_4
+        fact_hallu_raw = fact_hallu_1 + fact_hallu_2 + fact_hallu_3 + fact_hallu_4
         ids = ids_1 + ids_2 + ids_3 + ids_4
         data = read_json(json_path.format(file), part=0)
         gpt_id = [
-            [
-                # 1 if "true" in jud or "unknown" in jud else 0
-                1 if "true" in jud else 0
-                for jud in d[f"{model}_judge"]
-            ]
-            for d in data
+            [1 if "true" in jud else 0 for jud in d[f"{model}_judge"]] for d in data
         ]
         # check length and value
-        assert len(fact_hallu) == len(gpt_id)
-        for i in range(len(fact_hallu)):
-            fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu]
+        assert len(fact_hallu_raw) == len(gpt_id)
+        fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu_raw]
 
-        readable = [i[0] for i in query_scores]
-        formal = [i[1] for i in query_scores]
-        concrete = [i[2] for i in query_scores]
-        # score: list of [(false_unknown, sum), false_unknown / sum, hallu_flag]
-        readable_dist = defaultdict(lambda: [])
-        formal_dist = defaultdict(lambda: [])
-        concrete_dist = defaultdict(lambda: [])
-        for i in range(len(gpt_id)):
-            false_unknown = gpt_id[i].count(0)
-            sum_ = len(gpt_id[i])
-            flag = 1 if false_unknown else 0
-            readable_dist[readable[i]].append(
-                (false_unknown, sum_, false_unknown / sum_, flag)
-            )
-            formal_dist[formal[i]].append(
-                (false_unknown, sum_, false_unknown / sum_, flag)
-            )
-            concrete_dist[concrete[i]].append(
-                (false_unknown, sum_, false_unknown / sum_, flag)
-            )
-        print("Readability:")
-        for i in range(1, 6):
-            print(f"{i}: ", end="")
-            micro = (
-                sum([j[2] for j in readable_dist[i]]) / len(readable_dist[i])
-                if len(readable_dist[i])
-                else -0.01
-            )
-            micro = round(micro * 100, 2)
-            macro = (
-                sum([j[3] for j in readable_dist[i]]) / len(readable_dist[i])
-                if len(readable_dist[i])
-                else -0.01
-            )
-            macro = round(macro * 100, 2)
-            print(f"Num: {len(readable_dist[i])}, Macro: {macro}, Micro: {micro}")
-        print("Formality:")
-        for i in range(1, 6):
-            print(f"{i}: ", end="")
-            micro = (
-                sum([j[2] for j in formal_dist[i]]) / len(formal_dist[i])
-                if len(formal_dist[i])
-                else -0.01
-            )
-            micro = round(micro * 100, 2)
-            macro = (
-                sum([j[3] for j in formal_dist[i]]) / len(formal_dist[i])
-                if len(formal_dist[i])
-                else -0.01
-            )
-            macro = round(macro * 100, 2)
-            print(f"Num: {len(formal_dist[i])}, Macro: {macro}, Micro: {micro}")
-        print("Concreteness:")
-        for i in range(1, 6):
-            print(f"{i}: ", end="")
-            micro = (
-                sum([j[2] for j in concrete_dist[i]]) / len(concrete_dist[i])
-                if len(concrete_dist[i])
-                else -0.01
-            )
-            micro = round(micro * 100, 2)
-            macro = (
-                sum([j[3] for j in concrete_dist[i]]) / len(concrete_dist[i])
-                if len(concrete_dist[i])
-                else -0.01
-            )
-            macro = round(macro * 100, 2)
-            print(f"Num: {len(concrete_dist[i])}, Macro: {macro}, Micro: {micro}")
-        print("================================")
+        if PRINT_HALLU_ID:
+            fact_hallu_flatten = [i for l in fact_hallu_raw for i in l]
+            count = [fact_hallu_flatten.count(i) for i in range(1, 9)]
+            for idx, c in enumerate(count):
+                print(f"{idx + 1}: {c}")
 
-        # index = []
-        # for id, h, g, flag in zip(ids, fact_hallu, gpt_id, response_hallu):
-        #     if flag == 2:
-        #         continue
-        #     assert len(h) == len(g)
+        if PRINT_QUERY_SCORE:
+            # query score
+            readable = [i[0] for i in query_scores]
+            formal = [i[1] for i in query_scores]
+            concrete = [i[2] for i in query_scores]
+            # score: list of [(false_unknown, sum), false_unknown / sum, hallu_flag]
+            readable_dist = defaultdict(lambda: [])
+            formal_dist = defaultdict(lambda: [])
+            concrete_dist = defaultdict(lambda: [])
+            for i in range(len(gpt_id)):
+                false_unknown = gpt_id[i].count(0)
+                sum_ = len(gpt_id[i])
+                flag = 1 if false_unknown else 0
+                readable_dist[readable[i]].append(
+                    (false_unknown, sum_, false_unknown / sum_, flag)
+                )
+                formal_dist[formal[i]].append(
+                    (false_unknown, sum_, false_unknown / sum_, flag)
+                )
+                concrete_dist[concrete[i]].append(
+                    (false_unknown, sum_, false_unknown / sum_, flag)
+                )
+            print("Readability:")
+            for i in range(1, 6):
+                print(f"{i}: ", end="")
+                micro = (
+                    sum([j[2] for j in readable_dist[i]]) / len(readable_dist[i])
+                    if len(readable_dist[i])
+                    else -0.01
+                )
+                micro = round(micro * 100, 2)
+                macro = (
+                    sum([j[3] for j in readable_dist[i]]) / len(readable_dist[i])
+                    if len(readable_dist[i])
+                    else -0.01
+                )
+                macro = round(macro * 100, 2)
+                print(f"Num: {len(readable_dist[i])}, Macro: {macro}, Micro: {micro}")
+            print("Formality:")
+            for i in range(1, 6):
+                print(f"{i}: ", end="")
+                micro = (
+                    sum([j[2] for j in formal_dist[i]]) / len(formal_dist[i])
+                    if len(formal_dist[i])
+                    else -0.01
+                )
+                micro = round(micro * 100, 2)
+                macro = (
+                    sum([j[3] for j in formal_dist[i]]) / len(formal_dist[i])
+                    if len(formal_dist[i])
+                    else -0.01
+                )
+                macro = round(macro * 100, 2)
+                print(f"Num: {len(formal_dist[i])}, Macro: {macro}, Micro: {micro}")
+            print("Concreteness:")
+            for i in range(1, 6):
+                print(f"{i}: ", end="")
+                micro = (
+                    sum([j[2] for j in concrete_dist[i]]) / len(concrete_dist[i])
+                    if len(concrete_dist[i])
+                    else -0.01
+                )
+                micro = round(micro * 100, 2)
+                macro = (
+                    sum([j[3] for j in concrete_dist[i]]) / len(concrete_dist[i])
+                    if len(concrete_dist[i])
+                    else -0.01
+                )
+                macro = round(macro * 100, 2)
+                print(f"Num: {len(concrete_dist[i])}, Macro: {macro}, Micro: {micro}")
+            print("================================")
 
-        #     print(id + "-> ", end="")
-        #     for i in range(len(h)):
-        #         if h[i] != g[i]:
-        #             print(str(i + 1) + ", ", end="")
-        #     print("\n")
+        if SHOW_DIFF:
+            for id, h, g, flag in zip(ids, fact_hallu, gpt_id, response_hallu):
+                if flag == 2:
+                    continue
+                assert len(h) == len(g)
+                print(id + "-> ", end="")
+                for i in range(len(h)):
+                    if h[i] != g[i]:
+                        print(str(i + 1) + ", ", end="")
+                print("\n")
 
-        #     intersection = sum([1 if i == j else 0 for i, j in zip(h, g)])
-        #     length = len(h)
-        #     if intersection / length <= 0.6 and len(h) >= 3:
-        #     if intersection / length <= 0.6 and len(h) >= 1:
-        #     if intersection / length <= 0.8 and len(h) >= 4:
-        #     if intersection / length <= 0.6 and len(h) >= 3:
-        #     if intersection / length <= 0.8 and len(h) >= 2:
-        #         print(id)
-        #         index.append(ids.index(id))
-        #         print("human: ", h)
-        #         print("gpt: ", g)
+        if PRINT_NUM:
+            # calculate number of 1 and 0
+            print("number of 1 and 0")
+            print("# 1: ")
+            print("human: ", sum([i.count(1) for i in fact_hallu]))
+            print("gpt: ", sum([i.count(1) for i in gpt_id]))
+            print("# 0: ")
+            print("human: ", sum([i.count(0) for i in fact_hallu]))
+            print("gpt: ", sum([i.count(0) for i in gpt_id]))
 
-        # print(len(index))
+        if PRINT_METRIC:
+            # show_id(fact_hallu, gpt_id)
+            print_metrics(fact_hallu, gpt_id, response_hallu)
+            total_human_id.extend(fact_hallu)
+            total_gpt_id.extend(gpt_id)
+            total_response_hallu.extend(response_hallu)
+            print("================================")
 
-        # for i in index:
-        #     fact_hallu[i] = gpt_id[i]
-
-        # # calculate number of 1 and 0
-        # print("number of 1 and 0")
-        # print("# 1: ")
-        # print("human: ", sum([i.count(1) for i in fact_hallu]))
-        # print("gpt: ", sum([i.count(1) for i in gpt_id]))
-        # print("# 0: ")
-        # print("human: ", sum([i.count(0) for i in fact_hallu]))
-        # print("gpt: ", sum([i.count(0) for i in gpt_id]))
-
-        # show_id(fact_hallu, gpt_id)
-
-    #     print_metrics(fact_hallu, gpt_id, response_hallu)
-    #     total_human_id.extend(fact_hallu)
-    #     total_gpt_id.extend(gpt_id)
-    #     total_response_hallu.extend(response_hallu)
-    #     print("================================")
-    # print("done!")
-    # print("total")
-    # print_metrics(total_human_id, total_gpt_id, total_response_hallu)
+    if PRINT_METRIC:
+        print("done!")
+        print("total")
+        print_metrics(total_human_id, total_gpt_id, total_response_hallu)

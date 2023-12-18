@@ -63,7 +63,7 @@
 #     python metric.py --model $model --data-dir "./chatgpt_top-p/judge/$dir"
 # done
 
-DirList=("response-1" "response-50" "response-100")
+DirList=("response-1" "response-10" "response-50" "response-100")
 ModelList=("chatgpt" "llama-2-7b-chat-hf")
 for model in ${ModelList[*]}; do
     for dir in ${DirList[*]}; do
