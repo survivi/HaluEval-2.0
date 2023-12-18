@@ -103,7 +103,7 @@ if __name__ == "__main__":
     model = args.model
     total_count = []
     metrics = []
-    PRINT_METRICS = 0
+    PRINT_METRICS = 1
     for file in file_list:
         print("Current file: ", file)
         data = load_pure_data(data_dir, file)

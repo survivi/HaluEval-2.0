@@ -57,8 +57,16 @@
 #     python metric.py --model $model --data-dir "./task/main/judge/$model"
 # done
 
-DirList=("chatgpt_top-p_2" "chatgpt_top-p_4" "chatgpt_top-p_6" "chatgpt_top-p_8" "chatgpt_top-p_10")
-for dir in ${DirList[*]}; do
-    model=${dir%%_*}
-    python metric.py --model $model --data-dir "./chatgpt_top-p/judge/$dir"
+# DirList=("chatgpt_top-p_2" "chatgpt_top-p_4" "chatgpt_top-p_6" "chatgpt_top-p_8" "chatgpt_top-p_10")
+# for dir in ${DirList[*]}; do
+#     model=${dir%%_*}
+#     python metric.py --model $model --data-dir "./chatgpt_top-p/judge/$dir"
+# done
+
+DirList=("response-1" "response-50" "response-100")
+ModelList=("chatgpt" "llama-2-7b-chat-hf")
+for model in ${ModelList[*]}; do
+    for dir in ${DirList[*]}; do
+        python metric.py --model $model --data-dir "./ir/ir_response_judge/$dir/$model"
+    done
 done
