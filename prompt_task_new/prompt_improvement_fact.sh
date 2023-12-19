@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export OPENAI_API_KEY="sk-uQgp6DoH8VpwMphgC44e7f04DdA24f37B5A6C2B899A9F040"
+export OPENAI_API_KEY="sk-sfZjeU96BRSkTorJ5083FaD2Eb804c3fB7C623AcCf2dEbF3"
 export OPENAI_API_BASE="https://api.chatgpt-3.vip/v1"
 echo "OPENAI_API_KEY is set to: $OPENAI_API_KEY"
 echo "OPENAI_API_BASE is set to: $OPENAI_API_BASE"
