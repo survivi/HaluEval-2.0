@@ -58,7 +58,6 @@ class Bot(object):
             "falcon-40b": "",
             "galactica-30b": "",
             "gpt-neox-20b": "",
-            "alphacode-41b": "",
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
             # "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
