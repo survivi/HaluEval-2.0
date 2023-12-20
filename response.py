@@ -354,7 +354,12 @@ class Chatbot(Bot):
                 "In this task, a user will pose a question, and the assistant MUST give a detailed answer to the user's question.\n\n"
                 + f"USER: {query}\nASSISTANT:"
             )
-        elif chat_model.startswith("llama") and "chat" not in chat_model:
+        elif (
+            (chat_model.startswith("llama") and "chat" not in chat_model)
+            or chat_model.startswith("falcon")
+            or chat_model.startswith("galactica")
+            or chat_model.startswith("gpt-neox")
+        ):
             query = (
                 "Question: Give two methods to reduce stress\n"
                 + "Answer: 1. Exercise regularly - Exercise can help reduce stress by releasing endorphins in the brain, which can elevate mood and reduce the perception of pain. It can also help to get rid of built-up tension in the body and improve overall physical health, which in turn can reduce stress levels.\n\n2. Practice meditation or mindfulness - Meditation and mindfulness practices can help reduce stress by promoting relaxation and reducing negative thoughts and emotions. These practices can help individuals become more aware of their thoughts and feelings and learn to manage them better, leading to a calmer and more peaceful state of mind. They can also help to increase overall resilience and improve coping skills when faced with stressful situations.\n\n"
