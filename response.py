@@ -55,9 +55,9 @@ class Bot(object):
             "llama-7b": "/media/public/models/huggingface/llama-7b/",
             "yulan-chat-2-13b-fp16": "/media/public/models/huggingface/YuLan-Chat-2-13b-fp16",
             "llama-2-70b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-70b-chat-hf/",
-            "falcon-40b": "",
-            "galactica-30b": "",
-            "gpt-neox-20b": "",
+            "falcon-40b": "/media/public/models/huggingface/falcon-40b",
+            "galactica-30b": "/media/public/models/huggingface/galactica-30b",
+            "gpt-neox-20b": "/media/public/models/huggingface/gpt-neox-20b",
             # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
             # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
             # "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
@@ -83,7 +83,6 @@ class Bot(object):
             model_path = self.model2path[self.model]  # local model path
             self.tokenizer = AutoTokenizer.from_pretrained(
                 model_path,
-                trust_remote_code=True,
                 use_fast=True,
                 legacy=legacy,
             )
@@ -92,7 +91,6 @@ class Bot(object):
                 self.llm = AutoModelForCausalLM.from_pretrained(
                     model_path,
                     low_cpu_mem_usage=True,
-                    trust_remote_code=True,
                     device_map="auto",
                     load_in_4bit=True,
                     bnb_4bit_compute_dtype=torch.bfloat16,
@@ -102,7 +100,6 @@ class Bot(object):
                 self.llm = AutoModelForCausalLM.from_pretrained(
                     model_path,
                     low_cpu_mem_usage=True,
-                    trust_remote_code=True,
                     device_map="auto",
                     load_in_8bit=True,
                 )
@@ -110,9 +107,7 @@ class Bot(object):
                 self.llm = AutoModelForCausalLM.from_pretrained(
                     model_path,
                     low_cpu_mem_usage=True,
-                    trust_remote_code=True,
                     device_map="auto",
-                    torch_dtype=torch.float16,
                 )
 
 
@@ -127,7 +122,7 @@ class Chatbot(Bot):
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
-        self.max_retry = 5  # max retry times
+        self.max_retry = 8  # max retry times
         self.frequency = 2  # save frequency
 
     def load_data(self, part=0):
