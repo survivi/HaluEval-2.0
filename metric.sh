@@ -71,7 +71,7 @@
 #     done
 # done
 
-ModelList=("llama-2-70b-chat-hf")
+ModelList=("vicuna-7b" "vicuna-13b")
 for model in ${ModelList[*]}; do
-    python metric.py --model $model --data-dir "./judge"
+    python metric.py --model $model --data-dir "./origin/$model"
 done

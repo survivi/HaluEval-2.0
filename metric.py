@@ -103,7 +103,7 @@ if __name__ == "__main__":
     model = args.model
     total_count = []
     metrics = []
-    PRINT_METRICS = 1
+    PRINT_METRICS = 0
     for file in file_list:
         print("Current file: ", file)
         data = load_pure_data(data_dir, file)
@@ -130,10 +130,10 @@ if __name__ == "__main__":
         print(" & ".join(metrics))
 
     # tasks = [
-    #     # "prompt_format",
-    #     # "prompt_improvement",
-    #     # "self_reflexion",
-    #     # "origin",
+    #     "prompt_format",
+    #     "prompt_improvement",
+    #     "self_reflexion",
+    #     "origin",
     # ]
     # file_list = [
     #     "Bio-Medical",
@@ -163,15 +163,10 @@ if __name__ == "__main__":
     #         model_list = ["chatgpt", "llama-2-7b-chat-hf"]
     #     elif task == "self_reflexion":
     #         dir_list = [
-    #             "7b",
-    #             "13b",
-    #             "70b",
+    #             "llama-2-7b-chat-hf",
+    #             "llama-2-13b-chat-hf",
+    #             "llama-2-70b-chat-hf",
     #         ]
-    #         dir2model = {
-    #             "7b": "llama-2-7b-chat-hf",
-    #             "13b": "llama-2-13b-chat-hf",
-    #             "70b": "llama-2-70b-chat-hf",
-    #         }
     #     elif task == "origin":
     #         dir_list = [
     #             "chatgpt",
@@ -183,15 +178,13 @@ if __name__ == "__main__":
     #         raise ValueError(f"Invalid task: {task}")
     #     save_info = []
     #     for dir in dir_list:
-    #         if task == "self_reflexion":
-    #             model_list = [dir2model[dir]]
-    #         elif task == "origin":
+    #         if task == "self_reflexion" or task == "origin":
     #             model_list = [dir]
     #         for model in model_list:
     #             if task == "self_reflexion" or task == "origin":
-    #                 data_dir = f"./task/prompt_task/prompt_judge/{task}/{dir}"
+    #                 data_dir = f"./prompt_task_new/prompt_judge/{task}/{dir}"
     #             else:
-    #                 data_dir = f"./task/prompt_task/prompt_judge/{task}/{dir}/{model}"
+    #                 data_dir = f"./prompt_task_new/prompt_judge/{task}/{dir}/{model}"
     #             for file in file_list:
     #                 print("Current file: ", file)
     #                 data = load_pure_data(data_dir, file)
