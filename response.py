@@ -58,9 +58,6 @@ class Bot(object):
             "falcon-40b": "/media/public/models/huggingface/falcon-40b",
             "galactica-30b": "/media/public/models/huggingface/galactica-30b",
             "gpt-neox-20b": "/media/public/models/huggingface/gpt-neox-20b",
-            # "llama-2-7b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-hf/",
-            # "llama-2-13b-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-hf/",
-            # "bloom-7b1": "/media/public/models/huggingface/bigscience/bloom-7b1/",
         }  # local model path
         self.tokenizer = None  # tokenizer
         self.llm = None  # model to generate response
@@ -446,7 +443,14 @@ class Parser(object):
         self.parser.add_argument(
             "--file",
             default="Bio-Medical",
-            choices=["Bio-Medical", "Finance", "Science", "Education", "Open-Domain"],
+            choices=[
+                "Bio-Medical",
+                "Finance",
+                "Science",
+                "Education",
+                "Open-Domain",
+                "Wiki_Entity",
+            ],
             help="dataset to use if not using all datasets",
         )
         self.parser.add_argument(
@@ -481,9 +485,6 @@ class Parser(object):
                 "baichuan2-7b-intermediate-01980",
                 "baichuan2-7b-intermediate-02200",
                 "baichuan2-7b-intermediate-02420",
-                # "llama-2-7b-hf",
-                # "llama-2-13b-hf",
-                # "bloom-7b1",
             ],
             help="chat model to use",
         )
