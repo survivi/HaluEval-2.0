@@ -57,36 +57,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model",
         default="chatgpt",
-        choices=[
-            "chatgpt",
-            "text-davinci-002",
-            "text-davinci-003",
-            "llama-2-7b-chat-hf",
-            "llama-2-13b-chat-hf",
-            "alpaca-7b",
-            "vicuna-7b",
-            "vicuna-13b",
-            "llama-7b",
-            "claude-1",
-            "claude-2",
-            "llama-2-70b-chat-hf",
-            "yulan-chat-2-13b-fp16",
-            "falcon-40b",
-            "galactica-30b",
-            "gpt-neox-20b",
-            "alphacode-41b",
-            "baichuan2-7b-intermediate-00220",
-            "baichuan2-7b-intermediate-00440",
-            "baichuan2-7b-intermediate-00660",
-            "baichuan2-7b-intermediate-00880",
-            "baichuan2-7b-intermediate-01100",
-            "baichuan2-7b-intermediate-01320",
-            "baichuan2-7b-intermediate-01540",
-            "baichuan2-7b-intermediate-01760",
-            "baichuan2-7b-intermediate-01980",
-            "baichuan2-7b-intermediate-02200",
-            "baichuan2-7b-intermediate-02420",
-        ],
         help="chat model to use",
     )
     args = parser.parse_known_args()[0]
@@ -132,9 +102,9 @@ if __name__ == "__main__":
     if TO_EXCEL:
         tasks = [
             "prompt_format",
-            # "prompt_improvement",
-            # "self_reflexion",
-            # "origin",
+            "prompt_improvement",
+            "self_reflexion",
+            "origin",
         ]
         file_list = [
             "Bio-Medical",
