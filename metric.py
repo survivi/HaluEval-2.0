@@ -101,103 +101,109 @@ if __name__ == "__main__":
         print(f"  {arg}: {getattr(args, arg)}")
     data_dir = args.data_dir
     model = args.model
+
     total_count = []
     metrics = []
-    PRINT_METRICS = 0
-    for file in file_list:
-        print("Current file: ", file)
-        data = load_pure_data(data_dir, file)
-        count = []
-        for i in range(len(data)):
-            judge_list = data[i][model + "_judge"]
-            info = get_info(judge_list)
-            count.append(info)
-        total_count.extend(count)
-        # calculate file average
-        macro, micro = cal_matrics(count)
-        if PRINT_METRICS:
+    PRINT_METRICS = True
+    if PRINT_METRICS:
+        for file in file_list:
+            print("Current file: ", file)
+            data = load_pure_data(data_dir, file)
+            count = []
+            for i in range(len(data)):
+                judge_list = data[i][model + "_judge"]
+                info = get_info(judge_list)
+                count.append(info)
+            total_count.extend(count)
+            # calculate file average
+            macro, micro = cal_matrics(count)
             print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
             print("========================================")
-        else:
             metrics.append(macro)
             metrics.append(micro)
-    if PRINT_METRICS:
         # calculate total average
-        print("Total average:")
-        macro, micro = cal_matrics(total_count)
-        print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
-    else:
-        print(" & ".join(metrics))
+        # print("Total average:")
+        # macro, micro = cal_matrics(total_count)
+        # print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
+        # print(" & ".join(metrics))
 
-    # tasks = [
-    #     "prompt_format",
-    #     "prompt_improvement",
-    #     "self_reflexion",
-    #     "origin",
-    # ]
-    # file_list = [
-    #     "Bio-Medical",
-    #     "Finance",
-    #     "Science",
-    #     "Education",
-    #     "Open-Domain",
-    # ]
-    # for task in tasks:
-    #     if task == "prompt_format":
-    #         dir_list = [
-    #             "base",
-    #             "character_info",
-    #             "domain_info",
-    #             "generate_demo",
-    #             "pos_behind",
-    #             "search_demo",
-    #             "wrong_demo",
-    #         ]
-    #         model_list = ["chatgpt", "llama-2-7b-chat-hf"]
-    #     elif task == "prompt_improvement":
-    #         dir_list = [
-    #             "0-shot-cot",
-    #             "few-shot-cot",
-    #             "refine-q",
-    #         ]
-    #         model_list = ["chatgpt", "llama-2-7b-chat-hf"]
-    #     elif task == "self_reflexion":
-    #         dir_list = [
-    #             "llama-2-7b-chat-hf",
-    #             "llama-2-13b-chat-hf",
-    #             "llama-2-70b-chat-hf",
-    #         ]
-    #     elif task == "origin":
-    #         dir_list = [
-    #             "chatgpt",
-    #             "llama-2-7b-chat-hf",
-    #             "llama-2-13b-chat-hf",
-    #             "llama-2-70b-chat-hf",
-    #         ]
-    #     else:
-    #         raise ValueError(f"Invalid task: {task}")
-    #     save_info = []
-    #     for dir in dir_list:
-    #         if task == "self_reflexion" or task == "origin":
-    #             model_list = [dir]
-    #         for model in model_list:
-    #             if task == "self_reflexion" or task == "origin":
-    #                 data_dir = f"./prompt_task_new/prompt_judge/{task}/{dir}"
-    #             else:
-    #                 data_dir = f"./prompt_task_new/prompt_judge/{task}/{dir}/{model}"
-    #             for file in file_list:
-    #                 print("Current file: ", file)
-    #                 data = load_pure_data(data_dir, file)
-    #                 count = []
-    #                 for i in range(len(data)):
-    #                     judge_list = data[i][model + "_judge"]
-    #                     info = get_info(judge_list)
-    #                     count.append(info)
-    #                 # calculate file average
-    #                 macro, micro = cal_matrics(count)
-    #                 save_info.append((dir, model, file, macro, micro))
-    #     # write to excel
-    #     df = pd.DataFrame(save_info, columns=[task, "model", "file", "macro", "micro"])
-    #     df.to_excel(f"{task}.xlsx", index=False)
+    TO_EXCEL = False
+    if TO_EXCEL:
+        tasks = [
+            "prompt_format",
+            # "prompt_improvement",
+            # "self_reflexion",
+            # "origin",
+        ]
+        file_list = [
+            "Bio-Medical",
+            "Finance",
+            "Science",
+            "Education",
+            "Open-Domain",
+        ]
+        for task in tasks:
+            if task == "prompt_format":
+                dir_list = [
+                    "base",
+                    "character_info",
+                    "domain_info",
+                    "generate_demo",
+                    "pos_behind",
+                    "search_demo",
+                    "wrong_demo",
+                ]
+                model_list = ["chatgpt", "llama-2-7b-chat-hf"]
+            elif task == "prompt_improvement":
+                dir_list = [
+                    "0-shot-cot",
+                    "few-shot-cot",
+                    "human_detailed",
+                    "model_detailed",
+                    "refine-q",
+                ]
+                model_list = ["chatgpt", "llama-2-7b-chat-hf"]
+            elif task == "self_reflexion":
+                dir_list = [
+                    "llama-2-7b-chat-hf",
+                    "llama-2-13b-chat-hf",
+                    "llama-2-70b-chat-hf",
+                ]
+            elif task == "origin":
+                dir_list = [
+                    "chatgpt",
+                    "llama-2-7b-chat-hf",
+                    "llama-2-13b-chat-hf",
+                    "llama-2-70b-chat-hf",
+                ]
+            else:
+                raise ValueError(f"Invalid task: {task}")
+            save_info = []
+            for dir in dir_list:
+                if task == "self_reflexion" or task == "origin":
+                    model_list = [dir]
+                for model in model_list:
+                    if task == "self_reflexion" or task == "origin":
+                        data_dir = f"./task/prompt_task/prompt_judge/{task}/{dir}"
+                    else:
+                        data_dir = (
+                            f"./task/prompt_task/prompt_judge/{task}/{dir}/{model}"
+                        )
+                    for file in file_list:
+                        print("Current file: ", file)
+                        data = load_pure_data(data_dir, file)
+                        count = []
+                        for i in range(len(data)):
+                            judge_list = data[i][model + "_judge"]
+                            info = get_info(judge_list)
+                            count.append(info)
+                        # calculate file average
+                        macro, micro = cal_matrics(count)
+                        save_info.append((dir, model, file, macro, micro))
+            # write to excel
+            df = pd.DataFrame(
+                save_info, columns=[task, "model", "file", "macro", "micro"]
+            )
+            df.to_excel(f"{task}.xlsx", index=False)
 
     print("\n\n")
