@@ -92,11 +92,11 @@ if __name__ == "__main__":
             print("========================================")
             metrics.append(macro)
             metrics.append(micro)
+        print(" & ".join(metrics))
         # calculate total average
         # print("Total average:")
         # macro, micro = cal_matrics(total_count)
         # print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
-        # print(" & ".join(metrics))
 
     TO_EXCEL = False
     if TO_EXCEL:
