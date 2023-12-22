@@ -27,7 +27,7 @@
 # ModelList=("chatgpt" "llama-2-7b-chat-hf" "llama-2-13b-chat-hf" "vicuna-7b" "vicuna-13b")
 # for model in ${ModelList[*]}; do
 #     for dir in ${DirList[*]}; do
-#         python metric.py --model $model --data-dir "./ir/ir_response_judge/$dir/$model"
+#         python metric.py --model $model --data-dir "./task/ir/ir_judge/$dir/$model"
 #     done
 # done
 
@@ -35,8 +35,13 @@
 # ModelList=("chatgpt" "llama-2-7b-chat-hf")
 # for model in ${ModelList[*]}; do
 #     for dir in ${DirList[*]}; do
-#         python metric.py --model $model --data-dir "./ir/ir_response_judge/$dir/$model"
+#         python metric.py --model $model --data-dir "./task/ir/ir_judge/$dir/$model"
 #     done
+# done
+
+# DirList=("vicuna-7b" " vicuna-13b")
+# for dir in ${DirList[*]}; do
+#     python metric.py --model $dir --data-dir "./task/ir/ir_judge/origin/$dir"
 # done
 
 
