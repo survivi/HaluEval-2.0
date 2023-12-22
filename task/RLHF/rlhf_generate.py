@@ -25,10 +25,10 @@ class Genbot(Chatbot):
             answer=d["corrected_response"],
             hallucination=d["hallucination"],
         )
-        ans = self.gpt_4_complete(q, "gpt-4")
-        if ans is None:
-            return None
-        # ans = self.openai_complete(q, "gpt-4")
+        # ans = self.gpt_4_complete(q, "gpt-4")
+        # if ans is None:
+        #     return None
+        ans = self.openai_complete(q, "gpt-4")
         if ans == "FAILED" or ans == "TIMEOUT":
             return None
         correct_d = {
@@ -45,10 +45,10 @@ class Genbot(Chatbot):
             query=d["user_query"],
             answer=d["corrected_response"],
         )
-        ans = self.gpt_4_complete(q, "gpt-4")
-        if ans is None:
-            return None
-        # ans = self.openai_complete(q, "gpt-4")
+        # ans = self.gpt_4_complete(q, "gpt-4")
+        # if ans is None:
+        #     return None
+        ans = self.openai_complete(q, "gpt-4")
         if ans == "FAILED" or ans == "TIMEOUT":
             return None
         if "NO" in ans:

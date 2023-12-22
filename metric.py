@@ -26,9 +26,7 @@ def cal_matrics(count):
     macro = sum([i[2] for i in count]) / len(count)
     micro = micro * 100
     macro = macro * 100
-    micro = round(micro, 2)
-    macro = round(macro, 2)
-    return f"{macro:.2f}", f"{micro:.2f}"
+    return macro, micro
 
 
 def get_info(judge_list):
@@ -48,11 +46,21 @@ def get_info(judge_list):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Metric Calculation")
     file_list = [
-        "Bio-Medical",
-        "Finance",
-        "Science",
-        "Education",
-        "Open-Domain",
+        # "Bio-Medical",
+        # "Finance",
+        # "Science",
+        # "Education",
+        # "Open-Domain",
+        "Wiki_Entity_1",
+        "Wiki_Entity_2",
+        "Wiki_Entity_3",
+        "Wiki_Entity_4",
+        "Wiki_Entity_5",
+        "Wiki_Entity_6",
+        "Wiki_Entity_7",
+        "Wiki_Entity_8",
+        "Wiki_Entity_9",
+        "Wiki_Entity_10",
     ]
     parser.add_argument(
         "--model",
@@ -88,15 +96,19 @@ if __name__ == "__main__":
             total_count.extend(count)
             # calculate file average
             macro, micro = cal_matrics(count)
-            print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
+            avg = (macro + micro) / 2
+            macro = round(macro, 2)
+            micro = round(micro, 2)
+            avg = round(avg, 2)
+            print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}, Avg: {avg:.2f}")
             print("========================================")
             metrics.append(macro)
             metrics.append(micro)
-        print(" & ".join(metrics))
+        # print(" & ".join(metrics))
         # calculate total average
-        # print("Total average:")
-        # macro, micro = cal_matrics(total_count)
-        # print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
+        print("Total average:")
+        macro, micro = cal_matrics(total_count)
+        print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
 
     TO_EXCEL = False
     if TO_EXCEL:

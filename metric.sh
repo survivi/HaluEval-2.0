@@ -105,3 +105,7 @@
 
 
 # # wiki_entity
+ModelList=("chatgpt" "llama-2-7b-chat-hf")
+for model in ${ModelList[*]}; do
+    python metric.py --model $model --data-dir "./task/wiki_entity/wiki_entity_judge/$model"
+done
