@@ -74,9 +74,6 @@ if __name__ == "__main__":
         with Filterbot(data_path, save_path, args.model, file) as bot:
             data = bot.load_data(part=0)
             data = bot.load_exist_data(data)
-
-            print([i["id"] for i in data])
-
             bot.filter(data, hallu_prompt)
             left.append((file, bot.file_length - len(bot.save_data)))
     # list each file with unfinished items
