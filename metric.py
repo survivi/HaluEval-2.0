@@ -100,7 +100,7 @@ if __name__ == "__main__":
             macro = round(macro, 2)
             micro = round(micro, 2)
             avg = round(avg, 2)
-            print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}, Avg: {avg:.2f}")
+            print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}, Avg: {avg}")
             print("========================================")
             metrics.append(macro)
             metrics.append(micro)
