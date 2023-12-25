@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# # advanced_decoding
+
+DirList=("fns_response" "gns_response")
+for dir in ${DirList[*]}; do
+    python metric.py --model llama-2-7b-chat-hf --data-dir "./task/advanced_decoding/advanced_decoding_judge/$dir"
+done
+
 # # decoding_strategy
 
 # DirList=("chatgpt_greedy" "chatgpt_top-p" "llama-2-7b-chat-hf_beam" "llama-2-7b-chat-hf_top-k" "llama-2-7b-chat-hf_top-p" "llama-2-7b-chat-hf_greedy")
