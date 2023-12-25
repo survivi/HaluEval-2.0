@@ -59,6 +59,10 @@
 # for model in ${ModelList[*]}; do
 #     python metric.py --model $model --data-dir "./task/pretrain/baichuan_judge/$model"
 # done
+# ModelList=("falcon-40b" "galactica-30b" "gpt-neox-20b")
+# for model in ${ModelList[*]}; do
+#     python metric.py --model $model --data-dir "./task/pretrain/pretrain_judge/$model"
+# done
 
 
 # # prompt_task

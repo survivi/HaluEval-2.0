@@ -46,21 +46,21 @@ def get_info(judge_list):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Metric Calculation")
     file_list = [
-        # "Bio-Medical",
-        # "Finance",
-        # "Science",
-        # "Education",
-        # "Open-Domain",
-        "Wiki_Entity_1",
-        "Wiki_Entity_2",
-        "Wiki_Entity_3",
-        "Wiki_Entity_4",
-        "Wiki_Entity_5",
-        "Wiki_Entity_6",
-        "Wiki_Entity_7",
-        "Wiki_Entity_8",
-        "Wiki_Entity_9",
-        "Wiki_Entity_10",
+        "Bio-Medical",
+        "Finance",
+        "Science",
+        "Education",
+        "Open-Domain",
+        # "Wiki_Entity_1",
+        # "Wiki_Entity_2",
+        # "Wiki_Entity_3",
+        # "Wiki_Entity_4",
+        # "Wiki_Entity_5",
+        # "Wiki_Entity_6",
+        # "Wiki_Entity_7",
+        # "Wiki_Entity_8",
+        # "Wiki_Entity_9",
+        # "Wiki_Entity_10",
     ]
     parser.add_argument(
         "--model",
@@ -104,10 +104,13 @@ if __name__ == "__main__":
             print("========================================")
             metrics.append(macro)
             metrics.append(micro)
-        # print(" & ".join(metrics))
+        metrics = [str(i) for i in metrics]
+        print(" & ".join(metrics))
         # calculate total average
         print("Total average:")
         macro, micro = cal_matrics(total_count)
+        macro = round(macro, 2)
+        micro = round(micro, 2)
         print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
 
     TO_EXCEL = False
