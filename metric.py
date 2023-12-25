@@ -96,10 +96,9 @@ if __name__ == "__main__":
             total_count.extend(count)
             # calculate file average
             macro, micro = cal_matrics(count)
-            avg = (macro + micro) / 2
+            avg = round((macro + micro) / 2, 2)
             macro = round(macro, 2)
             micro = round(micro, 2)
-            avg = round(avg, 2)
             print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}, Avg: {avg}")
             print("========================================")
             metrics.append(macro)

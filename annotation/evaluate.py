@@ -140,8 +140,8 @@ if __name__ == "__main__":
     total_human_id = []
     total_gpt_id = []
     total_response_hallu = []
-    PRINT_HALLU_ID = True
-    PRINT_QUERY_SCORE = False
+    PRINT_HALLU_ID = False
+    PRINT_QUERY_SCORE = True
     SHOW_DIFF = False
     PRINT_NUM = False
     PRINT_METRIC = False
@@ -169,6 +169,9 @@ if __name__ == "__main__":
         gpt_id = [
             [1 if "true" in jud else 0 for jud in d[f"{model}_judge"]] for d in data
         ]
+        # gpt_id = [
+        #     [0 if "false" in jud else 1 for jud in d[f"{model}_judge"]] for d in data
+        # ]
         # check length and value
         assert len(fact_hallu_raw) == len(gpt_id)
         fact_hallu = [[1 if i == 1 else 0 for i in l] for l in fact_hallu_raw]
@@ -188,6 +191,7 @@ if __name__ == "__main__":
             readable_dist = defaultdict(lambda: [])
             formal_dist = defaultdict(lambda: [])
             concrete_dist = defaultdict(lambda: [])
+            assert len(query_scores) == len(gpt_id)
             for i in range(len(gpt_id)):
                 false_unknown = gpt_id[i].count(0)
                 sum_ = len(gpt_id[i])
@@ -209,14 +213,19 @@ if __name__ == "__main__":
                     if len(readable_dist[i])
                     else -0.01
                 )
-                micro = round(micro * 100, 2)
                 macro = (
                     sum([j[3] for j in readable_dist[i]]) / len(readable_dist[i])
                     if len(readable_dist[i])
                     else -0.01
                 )
-                macro = round(macro * 100, 2)
-                print(f"Num: {len(readable_dist[i])}, Macro: {macro}, Micro: {micro}")
+                micro = micro * 100
+                macro = macro * 100
+                avg = round((macro + micro) / 2, 2)
+                macro = round(macro, 2)
+                micro = round(micro, 2)
+                print(
+                    f"Num: {len(readable_dist[i])}, Macro: {macro}, Micro: {micro}, Avg: {avg}"
+                )
             print("Formality:")
             for i in range(1, 6):
                 print(f"{i}: ", end="")
@@ -225,14 +234,19 @@ if __name__ == "__main__":
                     if len(formal_dist[i])
                     else -0.01
                 )
-                micro = round(micro * 100, 2)
                 macro = (
                     sum([j[3] for j in formal_dist[i]]) / len(formal_dist[i])
                     if len(formal_dist[i])
                     else -0.01
                 )
-                macro = round(macro * 100, 2)
-                print(f"Num: {len(formal_dist[i])}, Macro: {macro}, Micro: {micro}")
+                micro = micro * 100
+                macro = macro * 100
+                avg = round((macro + micro) / 2, 2)
+                macro = round(macro, 2)
+                micro = round(micro, 2)
+                print(
+                    f"Num: {len(formal_dist[i])}, Macro: {macro}, Micro: {micro}, Avg: {avg}"
+                )
             print("Concreteness:")
             for i in range(1, 6):
                 print(f"{i}: ", end="")
@@ -241,14 +255,19 @@ if __name__ == "__main__":
                     if len(concrete_dist[i])
                     else -0.01
                 )
-                micro = round(micro * 100, 2)
                 macro = (
                     sum([j[3] for j in concrete_dist[i]]) / len(concrete_dist[i])
                     if len(concrete_dist[i])
                     else -0.01
                 )
-                macro = round(macro * 100, 2)
-                print(f"Num: {len(concrete_dist[i])}, Macro: {macro}, Micro: {micro}")
+                micro = micro * 100
+                macro = macro * 100
+                avg = round((macro + micro) / 2, 2)
+                macro = round(macro, 2)
+                micro = round(micro, 2)
+                print(
+                    f"Num: {len(concrete_dist[i])}, Macro: {macro}, Micro: {micro}, Avg: {avg}"
+                )
             print("================================")
 
         if SHOW_DIFF:
