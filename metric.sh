@@ -2,7 +2,7 @@
 
 # # advanced_decoding
 
-# DirList=("fns_response" "gns_response")
+# DirList=("gns_response" "fns_response")
 # for dir in ${DirList[*]}; do
 #     python metric.py --model llama-2-7b-chat-hf --data-dir "./task/advanced_decoding/advanced_decoding_judge/$dir"
 # done
@@ -117,7 +117,7 @@
 
 
 # # wiki_entity
-ModelList=("chatgpt" "llama-2-7b-chat-hf")
-for model in ${ModelList[*]}; do
-    python metric.py --model $model --data-dir "./task/wiki_entity/wiki_entity_judge/$model"
-done
+# ModelList=("chatgpt" "llama-2-7b-chat-hf")
+# for model in ${ModelList[*]}; do
+#     python metric.py --model $model --data-dir "./task/wiki_entity/wiki_entity_judge/$model"
+# done

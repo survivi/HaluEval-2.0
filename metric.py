@@ -33,10 +33,9 @@ def get_info(judge_list):
     """
     Get info from judge list.
     """
-    true = judge_list.count("true")
-    false_unknown = len(judge_list) - true
-    info = [(false_unknown, len(judge_list)), false_unknown / len(judge_list)]
-    if false_unknown:
+    false = len([i for i in judge_list if "false" in i])
+    info = [(false, len(judge_list)), false / len(judge_list)]
+    if false:
         info.append(1)
     else:
         info.append(0)
@@ -51,17 +50,8 @@ if __name__ == "__main__":
         "Science",
         "Education",
         "Open-Domain",
-        # "Wiki_Entity_1",
-        # "Wiki_Entity_2",
-        # "Wiki_Entity_3",
-        # "Wiki_Entity_4",
-        # "Wiki_Entity_5",
-        # "Wiki_Entity_6",
-        # "Wiki_Entity_7",
-        # "Wiki_Entity_8",
-        # "Wiki_Entity_9",
-        # "Wiki_Entity_10",
     ]
+    # file_list = [f"Wiki_Entity_{i}" for i in range(1, 11)]
     parser.add_argument(
         "--model",
         default="chatgpt",
@@ -83,7 +73,8 @@ if __name__ == "__main__":
 
     total_count = []
     metrics = []
-    PRINT_METRICS = True
+    PRINT_METRICS = 1
+    PRINT_SIGNAL = 1
     if PRINT_METRICS:
         for file in file_list:
             print("Current file: ", file)
@@ -99,26 +90,29 @@ if __name__ == "__main__":
             avg = round((macro + micro) / 2, 2)
             macro = round(macro, 2)
             micro = round(micro, 2)
-            print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}, Avg: {avg}")
-            print("========================================")
+            if PRINT_SIGNAL:
+                print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}, Avg: {avg}")
+                print("========================================")
             metrics.append(macro)
             metrics.append(micro)
-        metrics = [str(i) for i in metrics]
-        print(" & ".join(metrics))
+        if not PRINT_SIGNAL:
+            metrics = [f"{i:.2f}" for i in metrics]
+            print(" & ".join(metrics))
         # calculate total average
-        print("Total average:")
-        macro, micro = cal_matrics(total_count)
-        macro = round(macro, 2)
-        micro = round(micro, 2)
-        print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
+        if PRINT_SIGNAL:
+            print("Total average:")
+            macro, micro = cal_matrics(total_count)
+            macro = round(macro, 2)
+            micro = round(micro, 2)
+            print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
 
-    TO_EXCEL = False
+    TO_EXCEL = 0
     if TO_EXCEL:
         tasks = [
-            "prompt_format",
-            "prompt_improvement",
+            # "prompt_format",
+            # "prompt_improvement",
             "self_reflexion",
-            "origin",
+            # "origin",
         ]
         file_list = [
             "Bio-Medical",
@@ -184,10 +178,13 @@ if __name__ == "__main__":
                             count.append(info)
                         # calculate file average
                         macro, micro = cal_matrics(count)
-                        save_info.append((dir, model, file, macro, micro))
+                        avg = round((macro + micro) / 2, 2)
+                        macro = round(macro, 2)
+                        micro = round(micro, 2)
+                        save_info.append((dir, model, file, macro, micro, avg))
             # write to excel
             df = pd.DataFrame(
-                save_info, columns=[task, "model", "file", "macro", "micro"]
+                save_info, columns=[task, "model", "file", "macro", "micro", "average"]
             )
             df.to_excel(f"{task}.xlsx", index=False)
 

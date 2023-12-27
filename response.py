@@ -205,7 +205,7 @@ class Chatbot(Bot):
             {
                 "model": model,
                 "messages": messages,
-                # "temperature": temperature,
+                "temperature": 0.0,
                 # "top_p": top_p,
             }
         )
@@ -282,8 +282,7 @@ class Chatbot(Bot):
                     response = openai.ChatCompletion.create(
                         model="gpt-4-1106-preview",
                         messages=[{"role": "user", "content": query}],
-                        # temperature=kwargs["temperature"],
-                        # top_p=kwargs["top_p"],
+                        temperature=0,
                     )
                 break
             except func_timeout.exceptions.FunctionTimedOut:
