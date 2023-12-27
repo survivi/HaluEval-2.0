@@ -10,11 +10,7 @@
       "The song also reached number 12 on the UK Singles Chart."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Alison Moyet's hit single \"In Private\" peaked at number 14 on the UK Singles Chart, not the Billboard Hot 100 chart.\n2. UNKNOWN\n3. FALSE [correction]: \"In Private\" reached number 14 on the UK Singles Chart, not number 12.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "unknown",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "unknown", "false"]
   },
   {
     "id": 1,
@@ -28,12 +24,7 @@
       "Chris Heaton-Harris began representing Daventry in the UK House of Commons in 2015."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Chris Heaton-Harris was first elected as the Member of Parliament for Daventry in 2010.\n3. TRUE\n4. FALSE [correction]: Chris Heaton-Harris began representing Daventry in the UK House of Commons in 2010.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false"]
   },
   {
     "id": 2,
@@ -48,13 +39,7 @@
       "Both Chuck E. Cheese's and Jet's Pizza were founded in 1978."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Jet's Pizza was founded in 1978 in Sterling Heights, Michigan by Eugene and John Jetts.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 43,
@@ -69,13 +54,7 @@
       "Munich is known for its medieval architecture and world-famous beer festivals."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Munich is a city in Germany where Bavarian, a dialect of German, is spoken. \n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 105,
@@ -90,13 +69,7 @@
       "She passed away on February 27, 2019, at the age of 70."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: No verifiable information available on the death of Doris Fisher Sutton; this statement cannot be confirmed.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 115,
@@ -111,13 +84,7 @@
       "All three models mentioned (Nokia 220 4G, Nokia 105, Nokia 210) have a built-in FM radio."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Nokia 3410 phone was announced in 2002.\n2. TRUE\n3. FALSE [correction]: Nokia 105 was announced in 2019 but does not support 4G connectivity.\n4. FALSE [correction]: Nokia 210 was announced in 2019 and does not support 4G connectivity.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "true"]
   },
   {
     "id": 122,
@@ -132,13 +99,7 @@
       "Nathan Leone is the lead vocalist and guitarist for the rock band The Devil Wears Prada."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Nathan Leone is the lead vocalist for the rock band Madina Lake, not The Devil Wears Prada.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 213,
@@ -153,13 +114,7 @@
       "The collision resulted in the deaths of all 300 people on board both aircraft."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The Iran Air Tupolev Tu-154 was operating flight IR655 from Tehran's Mehrabad Airport to Dubai International Airport with 290 passengers and crew members.\n3. FALSE [correction]: There was no Caspian Air MD-82 involved in the collision, it was a Soviet Air Defense Forces Mig-29.\n4. TRUE\n5. FALSE [correction]: The collision resulted in the deaths of all 290 people on board the Iran Air flight. The Mig-29 pilot ejected and survived.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "false"]
   },
   {
     "id": 248,
@@ -214,11 +169,7 @@
       "The Olympic Games do not feature musical performances as a competitive event."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: \"Bad Things\" is an American rock band, not specifically electronic rock.\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true"]
   },
   {
     "id": 320,
@@ -233,13 +184,7 @@
       "Top Gun features characters like Maverick, Goose, and Iceman."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 333,
@@ -262,13 +207,7 @@
       "Roseanne Barr won a Golden Globe Award for Best Actress in a Television Series - Musical or Comedy for her role in \"Roseanne.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Matt Williams was the creator and producer for \"Roseanne.\"\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 376,
@@ -281,11 +220,7 @@
       "Nassau County is a fictional location."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. FALSE [correction]: Nassau County is a real location in the state of New York, USA.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "false"]
   },
   {
     "id": 380,
@@ -300,13 +235,7 @@
       "Le Villi has three acts and an epilogue."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Oberon is an opera composed by Carl Maria von Weber in 1826.\n2. FALSE [correction]: Oberon is based on a German poem, not a play by Shakespeare.\n3. FALSE [correction]: Oberon has 3 acts, not 10.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true", "true"]
   },
   {
     "id": 389,
@@ -329,13 +258,7 @@
       "Both Bella and Parenting were published by Condé Nast."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: Bella magazine was not founded by Nina Garcia, it was founded by Fiona McIntosh.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Parenting magazine was published by Meredith Corporation, not Condé Nast. Bella magazine's ownership is unknown.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "false",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "false", "true", "true", "unknown"]
   },
   {
     "id": 405,
@@ -350,13 +273,7 @@
       "\"The Russians Are Coming! The Russians Are Coming!\" features a story about Russian sailors accidentally landing on a New England island."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: John Larch did not receive an Academy Award nomination for his role in \"The Russians Are Coming! The Russians Are Coming!\" It was Alan Arkin who received a nomination for Best Actor in a Leading Role.\n2. TRUE\n3. FALSE [correction]: \"The Russians Are Coming! The Russians Are Coming!\" was directed by Norman Jewison, not Norman Fell.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 430,
@@ -371,13 +288,7 @@
       "Shalamar had hit songs such as \"Uptown Festival\" and \"There It Is.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: David Coverdale was a member of the band Deep Purple from 1973 to 1976.\n4. FALSE [correction]: Kenny Greene was a member of the R&B group Intro, not Shalamar.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 441,
@@ -392,13 +303,7 @@
       "Ted Turner struggled with alcoholism and had tumultuous relationships."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "unknown"]
   },
   {
     "id": 443,
@@ -413,13 +318,7 @@
       "This was Taylor Swift's second Album of the Year Grammy Award, with her first being for \"Fearless\" in 2010."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Colbie Caillat is the singer of \"I'd Like To.\"\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 502,
@@ -433,12 +332,7 @@
       "The Golden Horseshoe Saloon features live entertainment such as musical performances and comedy acts."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The saloon was not inspired by \"Dumbo,\" but rather by the stage musical \"Golden Horseshoe Revue.\"\n3. FALSE [correction]: \"Dumbo\" was set in a traveling circus, not specifically in New York City.\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true"]
   },
   {
     "id": 536,
@@ -453,13 +347,7 @@
       "Ayub Bachchu passed away on January 21, 2015, due to complications from a heart attack."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Ayub Bachchu passed away on October 18, 2018, due to complications from a heart attack.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 551,
@@ -474,13 +362,7 @@
       "Richard Morris Hunt was a pioneer of the American Renaissance movement in architecture."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Richard Morris Hunt did not design the New York Public Library, it was designed by Carrère and Hastings. He did design the pedestal of the Statue of Liberty and the entrance façade of the Metropolitan Museum of Art.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "false", "true"]
   },
   {
     "id": 585,
@@ -511,13 +393,7 @@
       "He co-founded the record label Reach Records."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 728,
@@ -553,13 +429,7 @@
       "80 South Street has a total of 76 storeys and stands at a height of 807 feet."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: 56 Leonard Street has a total of 57 storeys.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: 80 South Street was never built, and the proposed design had a total of 113 storeys and a height of 1,123 feet.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "false"]
   },
   {
     "id": 732,
@@ -574,13 +444,7 @@
       "The Detroit Tigers won several division titles and made playoff appearances from 1961 to 1981."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The Detroit Tigers have been playing at Comerica Park since 2000.\n3. TRUE\n4. FALSE [correction]: While Al Kaline and Willie Horton are Hall of Famers, Miguel Cabrera is not yet inducted as he is still an active player.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "unknown"]
   },
   {
     "id": 740,
@@ -616,13 +480,7 @@
       "Morris was sentenced to three years of probation and a $10,000 fine for his actions."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 777,
@@ -637,13 +495,7 @@
       "The COS advocated for social and economic reforms like the establishment of a minimum wage and the provision of affordable housing."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Charity Organization Society (COS) was founded in 1869 by Helen Bosanquet and Octavia Hill, not Sir John Lubbock.\n2. TRUE\n3. TRUE\n4. UNKNOWN (It is not specified whether Sir John Lubbock himself was concerned about poverty and hardship faced by workers, as he is not the founder of COS)\n5. UNKNOWN (It is not clear from the given statement whether the COS advocated specifically for a minimum wage and affordable housing)",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 796,
@@ -658,13 +510,7 @@
       "The Swiss Alps and rolling hills are part of the natural beauty of the Canton of Bern region."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Canton of Bern does not share a border with Basel-Landschaft.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 828,
@@ -679,13 +525,7 @@
       "\"La Dolce Vita\" is known for its scene in the Trevi Fountain."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 833,
@@ -700,13 +540,7 @@
       "Kevin Brady played a significant role in developing and passing the Tax Cuts and Jobs Act in 2017."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The chairman of the House Ways and Means Committee does not necessarily represent the 14th congressional district of Texas; the position is not tied to a specific district.\n2. TRUE\n3. FALSE [correction]: Kevin Brady has represented the 8th district of Texas since 1997, not the 14th.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 843,
@@ -721,13 +555,7 @@
       "Sophie Turner has appeared in \"Game of Thrones,\" \"X-Men: Apocalypse,\" and \"Dark Phoenix\" after her debut."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Sophie Turner made her film debut in \"Another Me\" in 2013, not \"The Darjeeling Limited.\"\n2. FALSE [correction]: There is no character named Suzy in \"The Darjeeling Limited.\" The character Suzy is played by Kara Hayward in Wes Anderson's film \"Moonrise Kingdom.\"\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 855,
@@ -763,13 +591,7 @@
       "The Crown Victoria nameplate was first used by Ford in the 1940s for a series of luxury sedans produced from 1946 to 1951."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The naming convention of Victoria was first used by Ford Motor Company in 1932.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The Ford Victoria Skyliner was introduced in 1954, not 1952.\n5. FALSE [correction]: The Crown Victoria nameplate was first used by Ford in the 1950s for a series of luxury sedans produced from 1955 to 1957.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "false"]
   },
   {
     "id": 894,
@@ -784,13 +606,7 @@
       "Elizabeth Welch played the role of the gypsy girl, Gypsy Melody, in The Bohemian Girl."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Ivor Novello did not star in The Bohemian Girl. It is an opera composed by Michael William Balfe, not an operetta starring Novello.\n3. FALSE [correction]: The Bohemian Girl premiered in 1843, not 1936.\n4. FALSE [correction]: Ivor Novello could not have played the role of Arminio in The Bohemian Girl as the opera premiered before his birth.\n5. FALSE [correction]: Elizabeth Welch did not play a role in The Bohemian Girl. The character referred to as \"Gypsy Melody\" does not exist in the opera, and the opera predates Welch's career.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "false"]
   },
   {
     "id": 910,
@@ -803,11 +619,7 @@
       "Smile Dental Group has multiple dental clinics and offices in Nashville and its surrounding suburbs."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "true"]
   },
   {
     "id": 961,
@@ -822,13 +634,7 @@
       "Adele's album \"21\" has been certified diamond in the United States, indicating sales of over 10 million units."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The studio where the album \"21\" was recorded is not named \"21\". The name of the studio was not specified in the statement.\n3. FALSE [correction]: Adele and Paul Epworth co-wrote and produced the song \"Rolling in the Deep\" on the album \"21\", but the album itself had multiple producers.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 969,
@@ -843,13 +649,7 @@
       "Audra McDonald was born before Ben Moore."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Audra McDonald was born on July 3, 1970, in Berlin, Germany.\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: Ben Moore is primarily known as an art song composer and has not written music for several Broadway shows.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "false", "true"]
   },
   {
     "id": 993,
@@ -864,13 +664,7 @@
       "Nancy Sorel has appeared in the television series \"Dallas\" and \"Falcon Crest.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Nancy Sorel has not appeared in the television series \"Dallas\" or \"Falcon Crest.\"",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1003,
@@ -885,13 +679,7 @@
       "Dr. Osler proposed to map the human body to understand its organs and systems."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Genetic Medicine Institute at the University of Utah is not named after Dr. William Osler; it is named after Mario R. Capecchi.\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Dr. Osler did not propose to map the human body; this was proposed by the Human Genome Project. Dr. Osler was known for his contributions to medical education and for being one of the founding professors at Johns Hopkins Hospital.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "false"]
   },
   {
     "id": 1010,
@@ -906,13 +694,7 @@
       "\"The Serfsons\" was chosen because it was more lighthearted and family-friendly."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"Treehouse of Horror XXIX\" was not intended to be the season premiere of \"The Simpsons.\"\n2. FALSE [correction]: Al Jean, not Matt Selman and Nathaniel Metcalfe, was the showrunner for \"Treehouse of Horror XXIX.\"\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "unknown"]
   },
   {
     "id": 1029,
@@ -927,13 +709,7 @@
       "Quentin Blake was knighted by Queen Elizabeth II in 2013 for his services to children's literature."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1031,
@@ -956,13 +732,7 @@
       "500 Fifth Avenue was the tallest building in New York City at the time of its completion."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Latting Observatory was completed in 1853 and was 315 feet tall.\n2. TRUE\n3. FALSE [correction]: The Metropolitan Life Insurance Company Tower surpassed the Latting Observatory in height when it was completed in 1909.\n4. FALSE [correction]: 500 Fifth Avenue is 709 feet tall.\n5. FALSE [correction]: The Woolworth Building was the tallest building in New York City at the time of its completion in 1913.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "false"]
   },
   {
     "id": 1051,
@@ -977,13 +747,7 @@
       "The British military widely used the Lee-Enfield rifle during World War I and World War II."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Rieder Automatic Rifle and the Lee-Enfield Rifle were not both based off the Mauser rifle design. The Lee-Enfield was based on the earlier Lee-Metford design.\n2. TRUE\n3. FALSE [correction]: The Rieder Automatic Rifle was developed in the early 20th century by the Romanian arms designer, Manuel Rieder.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 1059,
@@ -1019,13 +783,7 @@
       "Some scenes in \"Slumdog Millionaire\" were filmed in the United Kingdom, including London and Scotland."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"Slumdog Millionaire\" starred Dev Patel and was filmed in various locations in India.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 1131,
@@ -1038,11 +796,7 @@
       "The NASA Jet Propulsion Laboratory (JPL) is located in Pasadena, California."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Advanced Multi-Mission Operations System (AMMOS) is developed by the Multi-Mission Ground Systems and Services Program which is a division of the Interplanetary Network Directorate (IND) at JPL.\n2. TRUE\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true"]
   },
   {
     "id": 1178,
@@ -1078,13 +832,7 @@
       "Bud Spencer passed away on June 27, 2016, at the age of 86."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Bud Spencer did not win the gold medal in boxing; he was an actor and a swimmer, known for participating in the Olympics as a swimmer but did not win a medal in boxing.\n3. FALSE [correction]: Bud Spencer did not defeat Joe Abruzzo in the semifinals of the 1960 Olympics, as he did not compete in boxing.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 1254,
@@ -1099,13 +847,7 @@
       "Ecolab Inc. acquired Nalco Chemical Company in 1999."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Ecolab Inc. acquired Nalco Holding Company in 2011.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1276,
@@ -1128,13 +870,7 @@
       "Bag gloves are designed for hitting heavy bags, are larger and heavier, and made of durable material for extra protection."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: MMA gloves are smaller and lighter, designed to allow for grappling techniques as well as striking.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "false", "true"]
   },
   {
     "id": 1350,
@@ -1149,13 +885,7 @@
       "\"Poppin' Bottles\" features T.I. and Skylar Grey and was released in 2012 on Trunk Muzik 0-60: The Mixtape."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"Bring Em Out\" features T.I. but does not feature Lil' Flip or Pastor Troy. The song was released in 2004 as a lead single from T.I.'s album Urban Legend, not Trunk Muzik 0-60.\n2. FALSE [correction]: \"Top Back\" features T.I. but does not feature Young Dro. It was released in 2006 on T.I.'s album King, not Trunk Muzik 3: The Leak.\n3. FALSE [correction]: \"What You Know\" features T.I. but not Jazze Pha. It was released in 2006 on T.I.'s album King, not Trunk Muzik 2: The Mixtape.\n4. FALSE [correction]: \"Dope Boy Magic\" does not feature T.I. and Young Thug and there is no such album called Trunk Muzik 17: The Leak. This statement appears to be entirely incorrect.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "true"]
   },
   {
     "id": 1358,
@@ -1170,13 +900,7 @@
       "Tim Allen voiced the character Buzz Lightyear in \"Toy Story.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Joss Whedon, Andrew Stanton, Joel Cohen, and Alec Sokolow were the screenwriters for the 1995 film \"Toy Story.\"\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 1362,
@@ -1191,13 +915,7 @@
       "Nuestro was published more frequently than Sing Out!."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1377,
@@ -1254,13 +972,7 @@
       "Arsenal experienced a 3-1 loss to Manchester United at Old Trafford during the 1996-1997 season."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: In the 1996-1997 season, Arsenal finished in third place in the Premier League.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 1421,
@@ -1283,13 +995,7 @@
       "Sam Bradford has played for the St. Louis Rams, Philadelphia Eagles, and the Arizona Cardinals."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Sam Bradford has played for the St. Louis Rams, Philadelphia Eagles, Minnesota Vikings, and the Arizona Cardinals.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1450,
@@ -1304,13 +1010,7 @@
       "Tinker Hatfield also designed the Air Jordan 3, the Air Yeezy 1, and the Nike Dunk."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Tinker Hatfield designed the Air Jordan 3 and Nike Dunk, but the Air Yeezy 1 was designed by Kanye West in collaboration with Nike.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1456,
@@ -1346,13 +1046,7 @@
       "Frederick King Keller was born before Jacques Tourneur."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Frederick King Keller was born after Jacques Tourneur.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "true", "true", "false"]
   },
   {
     "id": 1480,
@@ -1366,12 +1060,7 @@
       "Straight No Chaser was founded as a student group at Indiana University."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The album \"Someday at Christmas\" by Josh Groban was released in 2007.\n2. FALSE [correction]: Straight No Chaser collaborated with Kristen Bell on the track \"Text Me Merry Christmas.\"\n3. TRUE\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true"]
   },
   {
     "id": 1482,
@@ -1386,13 +1075,7 @@
       "Mia Farrow has been recognized with numerous awards and nominations for her work in film and television."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Mia Farrow made her film debut at the age of 19 in \"Guns at Batasi\" (1964).\n3. TRUE\n4. FALSE [correction]: Mia Farrow did not receive a Golden Globe nomination for her performance in \"Prince Valiant\".\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 1501,
@@ -1407,13 +1090,7 @@
       "Jimbo Fisher was the offensive coordinator at Louisiana State University from 2000 to 2006, where he helped lead the Tigers to a BCS national championship in 2003."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 1540,
@@ -1425,10 +1102,7 @@
       "The bronze medallion bore the words \"For Valor and Devotion\"."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown"]
   },
   {
     "id": 1660,
@@ -1443,13 +1117,7 @@
       "The \"Palenque Tablet\" dates back to the 7th century AD and mentions Nemattanew."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. FALSE [correction]: Nemattanew was not a Mayan figure; he was a Powhatan leader in what is now Virginia during the early 17th century.\n4. FALSE [correction]: Nemattanew was not a Mayan noble or diplomat. He was a Powhatan leader known for his resistance against English settlers.\n5. FALSE [correction]: The \"Palenque Tablet\" does not mention Nemattanew, as he was not part of the Maya civilization.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "false", "false", "false"]
   },
   {
     "id": 1661,
@@ -1464,13 +1132,7 @@
       "The lyrics of \"I Don't Like Mondays\" were inspired by a school shooting that occurred in San Diego in 1979."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1674,
@@ -1506,13 +1168,7 @@
       "Bedhead's third EP, \"The Things That You Say,\" was released in 1995."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Bedhead released four EPs during their active years.\n3. TRUE\n4. FALSE [correction]: Bedhead's second EP, \"4songCDEP19:10,\" was released in 1994.\n5. FALSE [correction]: Bedhead's third EP, \"The Dark Ages,\" was released in 1996.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "false"]
   },
   {
     "id": 1699,
@@ -1569,13 +1225,7 @@
       "\"Salvation\" is track number 5 on The Devil Wears Prada's debut album \"Dear Love: A Beautiful Discord\" and was released as a single in 2005."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The band The Devil Wears Prada was formed in 2005 in Dayton, Ohio.\n3. TRUE\n4. FALSE [correction]: The Devil Wears Prada has released seven full-length albums as of 2018, not six.\n5. FALSE [correction]: \"Salvation\" is not track number 5 on The Devil Wears Prada's debut album \"Dear Love: A Beautiful Discord\" and it was not released as a single in 2005. Track number 5 is actually \"The Gauntlet of Solitude\".",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "false"]
   },
   {
     "id": 1728,
@@ -1590,13 +1240,7 @@
       "Maihuenia is more common in the southern regions of South America than Plumeria."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 1788,
@@ -1611,13 +1255,7 @@
       "The stage directions describe Polonius as a \"fat, flabby\" man."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Sam Shepard plays the role of The Ghost in the 2000 film adaptation of William Shakespeare's Hamlet.\n2. FALSE [correction]: Polonius is a loyal advisor to King Claudius in the play Hamlet, but some interpretations suggest he may not always be trustworthy.\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "unknown"]
   },
   {
     "id": 1797,
@@ -1632,13 +1270,7 @@
       "The Cummings School of Nursing and Health Sciences is a UMass Dartmouth campus located in Fall River, Massachusetts."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: University of Louisiana at Lafayette has only one main campus.\n3. FALSE [correction]: UMass Dartmouth's main campus is located in North Dartmouth, Massachusetts, not the heart of Dartmouth.\n4. FALSE [correction]: The Charlton College of Business is not a separate campus, but a college within the UMass Dartmouth main campus.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "true"]
   },
   {
     "id": 1813,
@@ -1674,13 +1306,7 @@
       "Their second fight took place on June 12, 1999, at the Staples Center in Los Angeles, California."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Hamed and Barrera's fight took place on April 7, 2001, at the MGM Grand Garden Arena in Las Vegas, Nevada.\n5. FALSE [correction]: Hamed and Barrera only fought once.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "false", "false"]
   },
   {
     "id": 1838,
@@ -1695,13 +1321,7 @@
       "After her reign as Miss USA, Nicole Scherzinger had a successful career in music and acting."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Nicole Scherzinger did not win the Miss Kentucky County Fair 2004 title; she was pursuing a music career during that time.\n2. FALSE [correction]: Nicole Scherzinger did not win the Miss USA title in 2004; she was a member of the Pussycat Dolls during this period.\n3. FALSE [correction]: Nicole Scherzinger is not known for winning the Miss Utah USA title and is not of Asian descent; she is of Filipino and Ukrainian-Hawaiian descent.\n4. FALSE [correction]: Nicole Scherzinger did not represent the United States at the Miss Universe pageant in 2004; she was focused on her music career with the Pussycat Dolls.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "true"]
   },
   {
     "id": 1839,
@@ -1716,13 +1336,7 @@
       "Garajonay National Park is known for its subtropical forests and rich cultural heritage."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Timanfaya National Park is located in Lanzarote, and Garajonay National Park is located in La Gomera, both in the Canary Islands, Spain.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 1841,
@@ -1737,13 +1351,7 @@
       "James Hill later became the Governor of Gibraltar and Malta, serving from 1820 to 1830."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Sir James Hill did not become the Governor of Gibraltar and Malta; that position was held by others during the mentioned period.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "false"]
   },
   {
     "id": 1875,
@@ -1758,13 +1366,7 @@
       "Allianz SE is headquartered in Munich, Germany."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: Siemens AG is headquartered in Munich and Berlin, Germany.\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "false",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "false", "true", "unknown", "true"]
   },
   {
     "id": 1924,
@@ -1779,13 +1381,7 @@
       "Gerhard Thiele has a longer full name than Hans Schlegel."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Gerhard Thiele's full name is just Gerhard Thiele.\n3. FALSE [correction]: Gerhard Thiele's full name consists of 14 characters.\n4. FALSE [correction]: Hans Schlegel's full name consists of 17 characters.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "true"]
   },
   {
     "id": 1943,
@@ -1800,13 +1396,7 @@
       "The Eighteenth Street Lounge Music record label is known for releasing various electronic music genres, including house, techno, and trance."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Eighteenth Street Lounge Music record label was founded by Thievery Corporation's Eric Hilton, an American heir.\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The Eighteenth Street Lounge Music record label is known for releasing various electronic music genres, but it is particularly known for downtempo and lounge music, not specifically house, techno, and trance.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "false"]
   },
   {
     "id": 2016,
@@ -1821,13 +1411,7 @@
       "Malcolmia species are found in habitats such as coastal areas, grasslands, and forests."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Petteria is a genus of plants with four recognized species.\n2. TRUE\n3. FALSE [correction]: Petteria ramentacea is found in the Mediterranean region, not in Central and South America.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 2020,
@@ -1842,13 +1426,7 @@
       "A doughnut, as a topological space, has a hole."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"Last child\" is not a concept from algebraic topology, but \"hole\" is.\n2. FALSE [correction]: There is no concept of \"last child\" in algebraic topology related to convergence of filtrations.\n3. TRUE\n4. FALSE [correction]: A circle, as a topological space, does have a hole in the center.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "true"]
   },
   {
     "id": 2046,
@@ -1863,13 +1441,7 @@
       "The Beatles' album \"Anthology 3\" reached the top of the charts in several countries."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Beatles did not issue a compilation album featuring the track \"Get Back\" on the 30th anniversary of their break-up specifically. The track \"Get Back\" is on the album \"Let It Be\" which was released in 1970.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2058,
@@ -1884,13 +1456,7 @@
       "Nancy Marchand appeared in \"The Philco Television Playhouse\" and had a long career in television and film."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2062,
@@ -1905,13 +1471,7 @@
       "The district's headquarters is located in the city of Unalaska."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Adak Island, not Unalaska, is the westernmost and largest island in the Near Islands group of Aleutian Islands.\n2. FALSE [correction]: The island of Unalaska is not in the Near Islands group; it is part of the Fox Islands group.\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "unknown", "true"]
   },
   {
     "id": 2082,
@@ -1974,11 +1534,7 @@
       "The Yarra River flows through the heart of Melbourne."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: La Trobe Street runs perpendicular to the Yarra River.\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "false", "true"]
   },
   {
     "id": 2133,
@@ -1993,13 +1549,7 @@
       "Guangyuan's population is almost 1.3 times larger than Langzhong's population."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: As of 2020, the population of Langzhong was approximately 840,000.\n3. FALSE [correction]: As of 2020, the population of Guangyuan was approximately 2.48 million.\n4. TRUE\n5. FALSE [correction]: Guangyuan's population is almost 3 times larger than Langzhong's population.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "false"]
   },
   {
     "id": 2157,
@@ -2022,13 +1572,7 @@
       "The Alexandria Canal is located in Virginia and connects the Potomac River with the Alexandria Waterfront."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. FALSE [correction]: The Schuylkill Canal connects the Schuylkill River to the Port Richmond section of Philadelphia, not directly with the Delaware River.\n4. FALSE [correction]: The Schuylkill Canal is approximately 108 miles (174 km) long.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "false", "false", "true"]
   },
   {
     "id": 2183,
@@ -2043,13 +1587,7 @@
       "Ruth Bergmann encouraged Brigitte Klump to pursue her passion for acting and provided guidance and support throughout her career."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Clara Rilke-Westhoff was Rilke's widow, not Ruth Bergmann.\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "unknown"]
   },
   {
     "id": 2204,
@@ -2064,13 +1602,7 @@
       "Jonathan Safran Foer is a novelist and an environmental activist."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Future of Food is a book written by Paul Roberts and was published in 2004.\n2. FALSE [correction]: Eating Animals is a book written by Jonathan Safran Foer and was published in 2009.\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "unknown", "true", "true"]
   },
   {
     "id": 2208,
@@ -2085,13 +1617,7 @@
       "Indigenous peoples have used Berlandiera lyrata for centuries for its medicinal properties."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Berlandiera lyrata, known as \"chocolate flower\" or \"lyreleaf greeneyes,\" is not commonly used to make tea but is known for its sweet chocolate-like fragrance.\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "unknown"]
   },
   {
     "id": 2215,
@@ -2106,13 +1632,7 @@
       "The company was known for high-quality illustrations and engaging storytelling in their retellings."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2222,
@@ -2146,11 +1666,7 @@
       "Kele Okereke played guitar and keyboards for Bloc Party."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Kele Okereke was the lead vocalist and rhythm guitarist for Bloc Party, but he did not play keyboards in the band.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false"]
   },
   {
     "id": 2303,
@@ -2165,13 +1681,7 @@
       "Southwest Airlines introduced no-frills fares and open seating under Kelleher's leadership."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Herb Kelleher co-founded Southwest Airlines, which was never named Air West. Air West was a different airline.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2335,
@@ -2184,11 +1694,7 @@
       "Ganzhou is a prefecture-level city in the Jiangxi Province of China."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true"]
   },
   {
     "id": 2338,
@@ -2203,13 +1709,7 @@
       "Jane Gardam won the Orange Prize in 2008 for \"The Echo Room\"."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Susan Hill did not win the Whitbread Novel of the Year Award in 1983 for \"The Woman in Black\"; she was a finalist.\n3. TRUE\n4. FALSE [correction]: Jane Gardam won the Whitbread Children's Book of the Year Award in 1978, not the Whitbread Book of the Year Award.\n5. FALSE [correction]: Jane Gardam was not awarded the Orange Prize in 2008 for \"The Echo Room\"; the novel \"The Road Home\" by Rose Tremain won that year.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "false"]
   },
   {
     "id": 2353,
@@ -2224,13 +1724,7 @@
       "\"The Giver\" grossed over $160 million worldwide."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Phillip Noyce directed the 2014 film featuring Brenton Thwaites as Jonas.\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: \"The Giver\" grossed just over $66 million worldwide.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "false"]
   },
   {
     "id": 2356,
@@ -2245,13 +1739,7 @@
       "The band's music was a blend of glam rock, punk, and new wave styles."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The birth name of the lead vocalist for the band that released \"New Rose\" in 1976 was Dave Vanian, born David Lett.\n2. FALSE [correction]: \"New Rose\" was released by the English rock band, The Damned, in 1976.\n3. TRUE\n4. FALSE [correction]: Members of the band included Dave Vanian on lead vocals, Brian James on guitar, Captain Sensible on bass, and Rat Scabies on drums.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "true"]
   },
   {
     "id": 2406,
@@ -2287,13 +1775,7 @@
       "Yolande and John's marriage resulted in only one of their children, Henry, surviving to adulthood."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Yolande of Brienne did not marry King John of England; she married his son, King Henry III.\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "unknown",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "unknown", "true", "true", "unknown"]
   },
   {
     "id": 2435,
@@ -2335,11 +1817,7 @@
       "Billie Joe Armstrong is older than Philip Labonte by approximately 4 years."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Billie Joe Armstrong is older than Philip Labonte by approximately 3 years.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false"]
   },
   {
     "id": 2523,
@@ -2375,13 +1853,7 @@
       "\"Have It All\" features a guitar solo from lead guitarist Chris Shiflett."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: \"Have It All\" was released on September 15, 2003.\n3. TRUE\n4. FALSE [correction]: The song \"Have It All\" did not reach the top 10 on the Billboard Hot 100 chart; it peaked at number 39.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "false", "true", "false", "true"]
   },
   {
     "id": 2551,
@@ -2396,13 +1868,7 @@
       "David M. Stern served as a co-creator and executive producer on Shaping Up."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Shaping Up premiered on ABC on February 20, 1984.\n3. FALSE [correction]: Shaping Up was canceled in May 1984.\n4. FALSE [correction]: Shaping Up aired only 5 episodes.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "true"]
   },
   {
     "id": 2568,
@@ -2416,12 +1882,7 @@
       "\"School is Cool\" has a funky bass line and jazz-inspired horn section."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "unknown"]
   },
   {
     "id": 2612,
@@ -2443,12 +1904,7 @@
       "Loïc Baa is a midfielder."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Manchester United Football Club was founded in 1878.\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "unknown", "unknown", "unknown"]
   },
   {
     "id": 2641,
@@ -2484,13 +1940,7 @@
       "The Adventures of Tintin is based on a Belgian comic book series by Hergé."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: John Williams did not write the music for Take Flight; he composed the music for the film \"The Adventures of Tintin.\"\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2673,
@@ -2505,13 +1955,7 @@
       "Park Seo-joon has gained recognition for his roles in \"What's Wrong with Secretary Kim\" and \"Itaewon Class.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Park Seo-joon was born on December 16, 1988. Furthermore, there is no known project called \"Monster Butler\" associated with him.\n2. TRUE\n3. FALSE [correction]: There is no evidence of Park Seo-joon playing a role in a project called \"Monster Butler,\" and he is not known for a character named Kim Yoo-shin.\n4. FALSE [correction]: Park Seo-joon began his career in the entertainment industry as an actor, not as a member of the K-pop group Block B.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "true"]
   },
   {
     "id": 2715,
@@ -2526,13 +1970,7 @@
       "Eric D. Howell directed the movie \"Invincible.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: \"The Strongest Man in the World\" was released on February 6, 1975.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Ericson Core directed the movie \"Invincible.\"",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "false"]
   },
   {
     "id": 2778,
@@ -2547,13 +1985,7 @@
       "Monopoly games can last for hours, while The Mad Magazine Game can be played in under an hour."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The Mad Magazine Game is a board game based on Mad Magazine where players lose money purposefully.\n3. TRUE\n4. FALSE [correction]: The Mad Magazine Game is best played with 2-4 players.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 2795,
@@ -2568,13 +2000,7 @@
       "Manu Ginóbili played for the San Antonio Spurs for his entire 16-year NBA career and retired in 2018."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Juan Pablo Vaulet does not currently play for the Brooklyn Nets of the NBA, he plays for Basket Zaragoza in Spain.\n3. FALSE [correction]: Juan Pablo Vaulet was drafted in the second round of the 2015 NBA draft.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 2798,
@@ -2588,12 +2014,7 @@
       "The distance between Lupin Mine and McIntyre Mines is approximately 95 kilometers (59 miles)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Lupin Mine is located in Nunavut, Canada, not the Transvaal region of South Africa.\n2. FALSE [correction]: Lupin Mine's average latitude is approximately 65.73°N, as it is in Canada and not South Africa.\n3. UNKNOWN\n4. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "unknown", "unknown"]
   },
   {
     "id": 2809,
@@ -2605,10 +2026,7 @@
       "MidAmerica St. Louis Airport (BLV) is located approximately 11 miles from the city center of St. Louis, Missouri."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: MidAmerica St. Louis Airport (BLV) is located approximately 25 miles from the city center of St. Louis, Missouri.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false"]
   },
   {
     "id": 2833,
@@ -2622,12 +2040,7 @@
       "A martini glass is a slender, stemmed glass with a long, narrow shape."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: A margarita glass is typically salt-rimmed with a wide bowl and a broad, flared top.\n3. UNKNOWN\n4. FALSE [correction]: A martini glass is a slender, stemmed glass with a wide, shallow bowl and a cone-shaped design.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "unknown",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "unknown", "false"]
   },
   {
     "id": 2837,
@@ -2642,13 +2055,7 @@
       "Epacris is a genus of about 50 species of flowering plants endemic to Australia."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Banksia is a genus with over 170 species, including Banksia benthamiana and Banksia robur, endemic to Australia.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2863,
@@ -2684,13 +2091,7 @@
       "The design and construction of the Joseph and Elizabeth Wallendorf House may also be influenced by other architectural styles like Colonial Revival or Prairie School."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "true", "unknown"]
   },
   {
     "id": 2906,
@@ -2705,13 +2106,7 @@
       "The series ran for two seasons, concluding on November 27, 2018."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The pilot episode was directed by James Franco and Michelle MacLaren.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The series ran for three seasons, concluding on October 28, 2019.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "false"]
   },
   {
     "id": 2914,
@@ -2726,13 +2121,7 @@
       "Nuance Communications specializes in speech recognition and natural language processing technologies."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: ScanSoft acquired ViaVoice from IBM in 2003, they did not merge.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2959,
@@ -2747,13 +2136,7 @@
       "The 2015 America East Men's Lacrosse Tournament took place from May 2-3, 2015."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Six teams participated in the America East Men's Lacrosse Tournament in 2015.\n3. FALSE [correction]: The participating teams in 2015 were Albany Great Danes, Binghamton Bearcats, Stony Brook Seawolves, and UMBC Retrievers. UMass Minutemen are not part of America East Conference for Men's Lacrosse.\n4. TRUE\n5. FALSE [correction]: The 2015 America East Men's Lacrosse Tournament took place from April 30 to May 2, 2015.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "false"]
   },
   {
     "id": 2961,
@@ -2768,13 +2151,7 @@
       "The population of Huiyang District is over 1.2 million people."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Yingkou District was established in 1988 as one of the administrative divisions of Huizhou, but not necessarily one of the five districts at that time.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3010,
@@ -2789,13 +2166,7 @@
       "The show jumping events at the 2006 Doha Asian Games took place from December 11 to December 15, 2006."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The equestrian events at the 2006 Doha Asian Games were held at the Qatar Equestrian Federation and not the Al Shaqab Equestrian Club in the Qatar Racing and Equestrian Club.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3038,
@@ -2810,13 +2181,7 @@
       "Sajjad Anoushiravani has been the head coach of Iran's national weightlifting team since 2004."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Sajjad Anoushiravani first competed in weightlifting at the 2004 Summer Olympics in Athens.\n3. FALSE [correction]: It was Shahin Nassirinia who finished 10th in the men's 56 kg category at the 1996 Olympics, not Anoushiravani.\n4. FALSE [correction]: Sajjad Anoushiravani first competed in the Olympics in 2004, not in 2000.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "unknown"]
   },
   {
     "id": 3048,
@@ -2831,13 +2196,7 @@
       "Sevilla won their second consecutive Europa League title with the 2016 victory."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The 2016 UEFA Europa League Final was not decided by penalty kicks from a Romanian football defender.\n2. TRUE\n3. FALSE [correction]: Romanian defender Vlad Chiricheș did not score the winning penalty kick for Sevilla; the match did not go to penalty kicks.\n4. FALSE [correction]: Vlad Chiricheș did not score Sevilla's second goal in regular time during the final; he was not part of the Sevilla team.\n5. FALSE [correction]: Sevilla won their third consecutive Europa League title with the 2016 victory.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "false"]
   },
   {
     "id": 3054,
@@ -2852,13 +2211,7 @@
       "Neither Anna Der-Vartanian nor Richard Bakalyan have a known military background."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Anna Der-Vartanian was not a British actress; she was the first female Master Chief Petty Officer in the United States Navy.\n2. FALSE [correction]: There is no record of Anna Der-Vartanian appearing in \"Doctor Who\" or \"The Paradise.\"\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Anna Der-Vartanian had a known military background as the first female Master Chief Petty Officer in the United States Navy. There is no known military background for Richard Bakalyan.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "false"]
   },
   {
     "id": 3068,
@@ -2878,10 +2231,7 @@
       "Kelly Hansen was born on November 18, 1989."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown"]
   },
   {
     "id": 3075,
@@ -2896,13 +2246,7 @@
       "Joan of Arc led the French army to victories during the Hundred Years' War before being captured and executed by the English."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The copy of the Joan of Arc statue in Portland, Oregon, was dedicated to the veterans of World War I.\n2. FALSE [correction]: The statue was erected in Portland's Laurelhurst Park in 1924.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 3147,
@@ -2917,13 +2261,7 @@
       "John Adams was influenced by jazz and rock music, which can be heard in Ensemble Pieces' use of syncopated rhythms and emphasis on individual expression and collaboration."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: John Adams was influenced by minimalism and his music often features a complex orchestration and rhythmic structure, rather than an emphasis on syncopation and individual expression typically found in jazz and rock music.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3171,
@@ -2938,13 +2276,7 @@
       "The female star of \"The Waiting Room\" did not appear in \"The Virgin Queen\"."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"The Waiting Room\" is a film released in 2012.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Anne-Marie Duff played the young Elizabeth in \"The Virgin Queen\".\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "unknown"]
   },
   {
     "id": 3207,
@@ -2980,13 +2312,7 @@
       "\"The Bourne Identity,\" released in 2002, starred Matt Damon as Jason Bourne."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"Walk the Line\" is a 2005 biographical film that starred Joaquin Phoenix as Johnny Cash.\n2. TRUE\n3. FALSE [correction]: \"October Sky\" is a biopic about NASA engineer Homer Hickam but did not star Joaquin Phoenix; it starred Jake Gyllenhaal.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 3221,
@@ -3001,13 +2327,7 @@
       "The driving distance from both Tallahassee International Airport and Quincy Regional Airport to their respective city centers is approximately 10-15 minutes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Quincy Regional Airport is located in Quincy, Illinois, not Quincy, Florida.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3233,
@@ -3030,13 +2350,7 @@
       "The play \"Othello\" addresses the theme of interracial love."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: \"Othello\" is set in Cyprus during the early modern period, not the medieval period.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "false", "true", "true", "true"]
   },
   {
     "id": 3271,
@@ -3051,13 +2365,7 @@
       "\"My Fair Lady\" was directed by George Cukor."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"My Fair Lady\" is a musical film produced in 1964.\n2. FALSE [correction]: Gladys Cooper played the role of Mrs. Higgins in the film \"My Fair Lady.\"\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 3318,
@@ -3093,13 +2401,7 @@
       "Reputable health organizations such as the CDC and WHO recommend children receive vaccinations according to recommended schedules."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "unknown", "true", "true"]
   },
   {
     "id": 3357,
@@ -3111,10 +2413,7 @@
       "Buenos Aires, Córdoba, Mendoza, and Patagonia are provinces in Argentina."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Argentina has a total of 23 provinces and the autonomous city of Buenos Aires.\n2. FALSE [correction]: Patagonia is not a province, it is a region that includes several provinces in Argentina.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false"]
   },
   {
     "id": 3458,
@@ -3128,12 +2427,7 @@
       "He was the head coach of the Swedish national team and led them to a silver medal at the 2014 Winter Olympics in Sochi, Russia."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: Per Backman's tenure with HIFK Helsinki lasted for one season, from 2015-2016.\n3. TRUE\n4. FALSE [correction]: It was Par Marts who was the head coach of the Swedish national team and led them to a silver medal at the 2014 Winter Olympics in Sochi, Russia.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "false", "true", "false"]
   },
   {
     "id": 3464,
@@ -3148,13 +2442,7 @@
       "Carl Maria von Weber's compositions often featured the clarinet prominently."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "true", "true", "true"]
   },
   {
     "id": 3509,
@@ -3168,12 +2456,7 @@
       "The \"Charlie Rose\" show has been on the air since 1991."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Charlie Rose hosted the talk show \"Charlie Rose\" on PBS, but Mark Thompson is not a co-host.\n3. TRUE\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true"]
   },
   {
     "id": 3533,
@@ -3188,13 +2471,7 @@
       "Elijah Connor was eliminated from The Four: Battle for Stardom competition."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Four: Battle for Stardom is not a spin-off of The Voice; it is a separate singing competition series.\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 3562,
@@ -3209,13 +2486,7 @@
       "\"Empire\" has been screened at the BFI London Film Festival and the Sundance Film Festival."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The film \"Empire\" was directed by Andy Warhol.\n2. FALSE [correction]: \"Empire\" did not win the Golden Lion for Best Short Film at the 2019 Venice Film Festival, it was released in 1964 and not eligible for the award.\n3. FALSE [correction]: \"Empire\" is an American film.\n4. FALSE [correction]: The film \"Empire\" does not tell the story of a man rebuilding his life after being released from prison; it is a silent, black-and-white film that shows eight hours of continuous slow-motion footage of the Empire State Building.\n5. FALSE [correction]: There is no evidence to suggest that \"Empire\" has been screened at the BFI London Film Festival or the Sundance Film Festival.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "false"]
   },
   {
     "id": 3590,
@@ -3250,12 +2521,7 @@
       "The Serbian Tricolour Hound was recognized as a separate breed in the 1980s."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true"]
   },
   {
     "id": 3685,
@@ -3270,13 +2536,7 @@
       "The Nanavati-Mehta Commission was eventually dissolved and replaced with a new commission."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The Nanavati-Mehta Commission was established to investigate the circumstances of corruption in the administration of the state of Gujarat, not the Indian Navy.\n3. UNKNOWN\n4. FALSE [correction]: There is no public record or evidence to suggest that Justice Mehta recused himself from the Nanavati-Mehta Commission proceedings at the request of Prime Minister Morarji Desai.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "unknown",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "unknown", "false", "true"]
   },
   {
     "id": 3698,
@@ -3291,13 +2551,7 @@
       "The mural is located in the lobby of the Atlanta City Hall."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The mural features 18 jazz musicians.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3703,
@@ -3333,13 +2587,7 @@
       "\"Freaky Friday\" (2003) involves a mother and daughter switching bodies after a magical fortune cookie incident."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The original film that 2004's tenth highest grossing film is based on is \"Freaky Friday\" (1976).\n2. FALSE [correction]: It was Mark Harmon who played the role of \"Ryan\" in the 2003 film \"Freaky Friday\", there is no character named \"Danny.\"\n3. FALSE [correction]: Jamie Johnston is not known to have a role in the 2003 film \"Freaky Friday\"; Jamie Johnston is a Canadian actor, but Mark Harmon, an American actor, played the role of \"Ryan\".\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true", "true"]
   },
   {
     "id": 3748,
@@ -3354,13 +2602,7 @@
       "The Division of Mayo at the University of Adelaide was established in 1984."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Sir William Mayo did not study medicine at the University of Adelaide, he studied at the University of London's St. George's Hospital Medical School.\n3. FALSE [correction]: Sir William Mayo could not have graduated with a Bachelor of Medicine and Surgery (MBBS) degree in 1887 from the University of Adelaide as he did not study there.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "unknown", "true"]
   },
   {
     "id": 3774,
@@ -3374,12 +2616,7 @@
       "Lindsay Davenport did not win the first title at Forest Hills in 1988."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Pat Cash won the first title at Wimbledon in 1987, not Forest Hills.\n2. FALSE [correction]: Pat Cash defeated Ivan Lendl in the men's singles final at Wimbledon in 1987, not Forest Hills in 1988.\n3. FALSE [correction]: Jorge Lozano is a real-life former professional tennis player with achievements including reaching the Wimbledon doubles final in 1989.\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true"]
   },
   {
     "id": 3776,
@@ -3394,13 +2631,7 @@
       "Gary Gibbs was the head coach of the University of Oklahoma Sooners in 1991."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The University of Oklahoma Sooners competed in the Big Eight Conference in 1991.\n2. TRUE\n3. FALSE [correction]: The University of Oklahoma did not leave the Southwest Conference to join the Big 12; it was already a part of the Big Eight Conference, which along with four teams from the Southwest Conference, formed the Big 12 in 1996.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "unknown", "true"]
   },
   {
     "id": 3805,
@@ -3415,13 +2646,7 @@
       "Whole Foods Market, Trader Joe's, and Sprouts Farmers Market are retailers that carry Cactus Cooler."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 3830,
@@ -3486,13 +2711,7 @@
       "The county seat of Orange County is the town of Chelsea."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3865,
@@ -3507,13 +2726,7 @@
       "\"E. Abbey\" was used as a pseudonym for Abbey's skiing writings."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The author of The Ski Bum is Romain Gary.\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "unknown",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "unknown", "true", "true", "unknown"]
   },
   {
     "id": 3872,
@@ -3528,13 +2741,7 @@
       "Lucky, voiced by Martin Scorsese, is a recurring character in \"King of the Hill.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Martin Scorsese is an Italian-American director and filmmaker, not an actor.\n2. FALSE [correction]: Martin Scorsese did not direct a documentary called \"Homeless in America\" in 1989.\n3. FALSE [correction]: Martin Scorsese did not direct a sitcom called \"King of the Hill\"; he is a film director, not a television sitcom director.\n4. FALSE [correction]: Martin Scorsese did not play the voice of the character Lucky in \"King of the Hill.\"\n5. FALSE [correction]: Since Martin Scorsese did not voice Lucky, the character cannot be considered as being voiced by him.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "false"]
   },
   {
     "id": 3878,
@@ -3549,13 +2756,7 @@
       "This victory marked England's third Women's Six Nations title, and their first since 2012."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: There is no championship final in the Women's Six Nations as it is a round-robin tournament.\n4. UNKNOWN\n5. FALSE [correction]: England has won more than three Women's Six Nations titles, and they also won the tournament in 2015, making it not their first title since 2012.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "false"]
   },
   {
     "id": 3905,
@@ -3570,13 +2771,7 @@
       "Tim Tebow played for the New York Jets in 2012."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Tim Tebow was drafted in 2010 by an NFL team.\n3. FALSE [correction]: Tim Tebow was drafted by the Denver Broncos in the first round, 25th overall, of the 2010 NFL Draft.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 3922,
@@ -3591,13 +2786,7 @@
       "The game follows the story of the Spider-Man 2 movie."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"Spider-Man 2: The Game\" was released on June 28, 2004.\n2. FALSE [correction]: The game was developed by Treyarch.\n3. FALSE [correction]: \"Spider-Man 2: The Game\" was published by Activision.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true", "true"]
   },
   {
     "id": 3935,
@@ -3611,12 +2800,7 @@
       "The song \"I Kissed a Girl\" peaked at number 2 on the Billboard Hot 100 chart."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The first U.S. \"Now!\" album, NOW That's What I Call Music!, was released in 1998.\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: The song \"I Kissed a Girl\" peaked at number 1 on the Billboard Hot 100 chart.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "false"]
   },
   {
     "id": 3946,
@@ -3631,13 +2815,7 @@
       "Wappinschaw's cover of \"Tom Dooley\" includes their own unique twist."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: \"Tom Dooley\" was not written by Kingston Trio, it's a traditional American folk song that the Kingston Trio popularized with their 1958 recording.\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "false",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "false", "true", "true", "unknown"]
   },
   {
     "id": 4002,
@@ -3652,13 +2830,7 @@
       "\"Fire with Fire\" is an action-packed film."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Josh Duhamel stars in the film \"Fire with Fire\".\n2. TRUE\n3. FALSE [correction]: In the film, Josh Duhamel plays the lead role of Jeremy Coleman.\n4. FALSE [correction]: Bruce Willis' character in the film is Mike Cella.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "true"]
   },
   {
     "id": 4005,
@@ -3694,13 +2866,7 @@
       "Gratian wrote the \"Decretum,\" and Bartolus de Saxoferrato wrote a commentary on the \"Diritti Municipali\" during the 12th century."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Gratian wrote the \"Decretum\" in the 12th century, but Bartolus de Saxoferrato wrote his commentary on the \"Diritti Municipali\" in the 14th century.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 4058,
@@ -3715,13 +2881,7 @@
       "The Southeastern Railway Museum is open year-round, except for major holidays, and is located at 3990 Peachtree Industrial Boulevard, Duluth, GA 30096."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. FALSE [correction]: The Southeastern Railway Museum is located at 3595 Buford Highway, Duluth, GA 30096.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "false"]
   },
   {
     "id": 4063,
@@ -3757,13 +2917,7 @@
       "The sign is a popular spot for photographs and selfies among oil field enthusiasts and travelers."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The Cat Creek Oil Field Sign is located in the state of Montana, not Texas.\n3. FALSE [correction]: The Cat Creek Oil Field is not located in the Permian Basin of West Texas, but in Montana.\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "unknown"]
   },
   {
     "id": 4109,
@@ -3778,13 +2932,7 @@
       "The Oklahoma Sooners play their home games at the Lloyd Noble Center in Norman, Oklahoma."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Valerie Goodwin-Colbert never served as the head coach of the Oklahoma Sooners; the women's basketball team during that time was coached by Sherri Coale.\n3. FALSE [correction]: The Oklahoma Sooners won six Big 12 Conference championships under coach Sherri Coale, not Valerie Goodwin-Colbert.\n4. FALSE [correction]: The Oklahoma Sooners made 11 NCAA Tournament appearances under coach Sherri Coale, not Valerie Goodwin-Colbert.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "true"]
   },
   {
     "id": 4110,
@@ -3799,13 +2947,7 @@
       "Buena Vista Distribution is now known as Walt Disney Studios Motion Pictures."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Walt Disney Studios Motion Pictures distributed the 2011 animated film \"Winnie the Pooh\".\n2. FALSE [correction]: \"Winnie the Pooh: Blood and Honey\" is not an alternate name for the 2011 film; it is an unrelated horror adaptation.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 4135,
@@ -3820,13 +2962,7 @@
       "\"The Taming of the Shrew\" film, starring Richard Burton and Elizabeth Taylor, was released in 1967."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Elizabeth Taylor's middle name is Rosemond.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 4238,
@@ -3841,13 +2977,7 @@
       "The Omni Parker House Hotel is still operational today and continues to be a popular destination for visitors to Boston."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Wyatt Earp was a famous lawman and gambler, not known as the \"King of the Wild Frontier.\" That title is associated with Davy Crockett.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "true"]
   },
   {
     "id": 4247,
@@ -3904,13 +3034,7 @@
       "Superboy's real name is Kon-El and he is a hybrid of human and Kryptonian DNA."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Superboy's real name is Clark Kent / Kal-El, and he is Kryptonian, not a hybrid of human and Kryptonian DNA. However, there is a character named Kon-El, also known as Conner Kent, who is a clone with both Kryptonian and human DNA, introduced much later in the comics.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 4363,
@@ -3925,12 +3049,6 @@
       "The Defense Intelligence Agency (DIA) and Bureau of Intelligence and Research (INR) were part of the US intelligence community in 1985."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The National Geospatial-Intelligence Agency (NGA) was established in 1996, so it was not a member of the US intelligence community in 1985.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   }
 ]

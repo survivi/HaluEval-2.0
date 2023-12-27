@@ -12,13 +12,7 @@
       "Pemphigus-like acrokeratosis is a term used when the condition resembles pemphigus, a group of autoimmune skin disorders."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Malignant acrokeratosis is not a correctly used term, ther is no malignant potential in the disease itself, but it may point to an underlying malignant disease. \n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 47,
@@ -33,13 +27,7 @@
       "In terms of treatment, both Weaver syndrome and Sotos syndrome may require therapies, interventions and potentially medications to manage symptoms, but the specific treatment will depend on individual needs."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Weaver syndrome is not known as 22q11.2 deletion syndrome. The cause of Weaver syndrome is most often a mutation in the EZH2 gene.\n3. TRUE\n4. FALSE [correction]: Sotos syndrome is more common than Weaver syndrome. Also, curability or time of diagnosis could vary greatly depending on many factors.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 81,
@@ -138,13 +126,7 @@
       "Experimental treatments for TBE, including antiviral medications such as brincidofovir and BCX4430, and immunotherapy with T-cells, are currently being studied."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: There are no specific antiviral treatments available for TBE. Supportive care is primarily provided.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 151,
@@ -203,13 +185,7 @@
       "Interleukin-2 receptor is a tetrameric protein found on the surface of T cells that binds to the cytokine interleukin-2 and can undergo a dimer-to-tetramer transition."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Myoglobin is a monomeric protein found in muscle cells that stores oxygen and releases it as needed, thus doesn't experience a dimer-to-tetramer transition.\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "unknown"]
   },
   {
     "id": 210,
@@ -224,13 +200,7 @@
       "Proteins such as tropomyosin, myosin-binding subunit C, and protein kinase C have also been found to interact with PLN."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: PLN binds to and regulates the activity of the calcium pump, SERCA, not troponin.\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "unknown", "unknown", "true"]
   },
   {
     "id": 218,
@@ -287,13 +257,7 @@
       "The HOXD genes are expressed in a specific order during embryonic development."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The HOXD cluster contains 9 genes: HOXD1, HOXD3, HOXD4, HOXD8, HOXD9, HOXD10, HOXD11, HOXD12, and HOXD13.\n3. FALSE [correction]: These genes are located on chromosome 2q31-2q32.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 268,
@@ -337,13 +301,7 @@
       "Different isoforms of the ASPH gene are produced through alternative splicing of the ASPH mRNA."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: ABH is a key enzyme in the biosynthesis of proteins containing hydroxyaspartate residues.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "true"]
   },
   {
     "id": 330,
@@ -358,13 +316,7 @@
       "Empagliflozin has been federally approved to reduce the risk of cardiovascular death in adults with type 2 diabetes who have established cardiovascular disease."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 350,
@@ -406,13 +358,7 @@
       "These linker histones and related proteins in yeast play important roles in the organization and regulation of yeast chromatin."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Linker histones are a type of histone protein, not non-histone protein, that is involved in the organization and stability of chromatin.\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 418,
@@ -427,13 +373,7 @@
       "Lycopene is thought to reduce cholesterol levels by inhibiting the activity of an enzyme called HMG-CoA reductase, which is involved in the production of cholesterol in the liver."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 472,
@@ -448,13 +388,7 @@
       "Hsp110 interacts with the mRNA-binding protein KSRP."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Hsp70 helps to fold and stabilize other proteins, but it does not interact with mRNAs. \n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "unknown", "unknown"]
   },
   {
     "id": 481,
@@ -469,13 +403,7 @@
       "Dysregulation of deiodinase activity has been implicated in various muscle-related disorders, such as muscle wasting."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 534,
@@ -513,13 +441,7 @@
       "Both aurora B kinase and polycomb ring1B have been implicated in cancer development and progression, with each being overexpressed in certain types of cancer."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 597,
@@ -534,13 +456,7 @@
       "The AG-GT/GC motif is the most common acceptor splice site in vertebrates."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: GT-AG is the most common donor splice site motif in vertebrates.\n4. TRUE\n5. FALSE [correction]: The AG-G motif is the most common acceptor splice site in vertebrates.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 629,
@@ -597,13 +513,7 @@
       "Dysregulation of chromomethylation has been implicated in various diseases, including cancer and neurological disorders."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Chromomethylases are not present in animal genomes. They are mainly found in plants.\n2. FALSE [correction]: Chromomethylases are enzymes that add a methyl group to specific sites on DNA, not histone proteins.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 650,
@@ -664,13 +574,7 @@
       "PDB-TM is a database that provides information about the thermodynamic properties of protein-ligand interactions, particularly for membrane proteins."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The Membrane Protein Structural Database does not exist.\n4. TRUE\n5. FALSE [correction]: PDB-TM is a database that provides information about the transmembrane proteins and their orientation.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 745,
@@ -685,13 +589,7 @@
       "Any impairment in renal function can affect rivaroxaban's metabolism and elimination."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Rivaroxaban is not hydrolyzed into its active metabolite by the enzyme carboxylesterase (CES) in the liver and kidneys.\n3. FALSE [correction]: Rivaroxaban is not metabolized by cytochrome P450 enzymes.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 763,
@@ -773,13 +671,7 @@
       "Fe3O4 nanoparticles can be functionalized with ligands that selectively bind to phosphorylated peptides, allowing for their enrichment."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 901,
@@ -878,13 +770,7 @@
       "Despite possible improvements, the basic Smith-Waterman algorithm still has a quadratic time complexity."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Techniques such as dynamic programming do not reduce the time complexity of the Smith-Waterman algorithm. They are intrinsic to its design, and the algorithm still has a O(n^2) time complexity.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 1004,
@@ -920,13 +806,7 @@
       "Proteins such as NF-E2 p45 subunit of importin β1 (NFE2L2), Retinoblastoma protein 1 (RB1), and Histone deacetylase 1 (HDAC1) interact with GATA-1."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: GATA-1 interacts with the Erythroid Kruppel-like factor (EKLF), not Erythroid-specific transcription factor 2 (ETF2).\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "false", "true"]
   },
   {
     "id": 1072,
@@ -941,13 +821,7 @@
       "The interaction between TAF10 and GATA1 regulates the gene expression involved in erythropoiesis, and it ensures the proper development and function of red blood cells."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 1082,
@@ -962,13 +836,7 @@
       "The Pain Management Decision Support System (PMDSS) is a type of CDSS that provides healthcare providers with evidence-based recommendations for diagnosis, treatment, and management of chronic pain."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 1149,
@@ -983,13 +851,7 @@
       "Angiogenin's function in promoting angiogenesis is reliant on its subcellular localization, including its interactions with the cytoskeleton and regulation of gene expression in the nucleus."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "true", "true"]
   },
   {
     "id": 1161,
@@ -1046,13 +908,7 @@
       "PAM250 is a computational tool that predicts the presence of transmembrane helices in proteins based on a combination of sequence and structural information."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: PHD (Profile based protein secondary structure prediction) is a computational tool used for predicting the secondary structure of proteins, not specifically transmembrane helices.\n3. UNKNOWN\n4. FALSE [correction]: SMART (Simple Modular Architecture Research Tool) is a web resource for the identification and annotation of protein domains. It does not specifically predict the presence of transmembrane helices.\n5. FALSE [correction]: PAM250 is a scoring matrix used in sequence alignment for protein sequences, not specifically for predicting the presence of transmembrane helices.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "unknown",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "unknown", "false", "false"]
   },
   {
     "id": 1251,
@@ -1088,13 +944,7 @@
       "Shapiro syndrome can cause jaundice, enlarged spleen, and increase the risk of infections."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Shapiro syndrome is not known as hereditary spherocytosis. They are distinct medical conditions.\n2. FALSE [correction]: Shapiro syndrome is not a genetic disorder that affects the shape and function of red blood cells. It is a rare neurological disorder characterized by repeated episodes of excessive sweating and rapid drop in body temperature.\n3. FALSE [correction]: A characteristic feature of Shapiro syndrome is not the presence of spherocytic red blood cells. It is characterized by sudden and rapid drop in body temperature along with excessive sweating.\n4. FALSE [correction]: People with Shapiro syndrome don't necessarily have anemia, they typically experience hyperhidrosis and hypothermia. \n5. FALSE [correction]: Shapiro syndrome does not cause jaundice, enlarged spleen, and does not increase the risk of infections. These conditions are associated with other medical conditions like hereditary spherocytosis, not Shapiro syndrome.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "false"]
   },
   {
     "id": 1320,
@@ -1176,13 +1026,7 @@
       "Certain medical conditions, like liver or kidney disease, could potentially increase the risk of developing erucism."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 1413,
@@ -1197,13 +1041,7 @@
       "Hydrochlorothiazide can be used to treat diabetes, obesity, and erythroprotoporphyria."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: While Hydrochlorothiazide can be used to treat heart failure and kidney disease as a part of managing edema, it isn't used to treat hyperlipidemia.\n5. FALSE [correction]: Hydrochlorothiazide is not used to treat diabetes, obesity or erythropoietic protoporphyria.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 1447,
@@ -1218,13 +1056,7 @@
       "Silicon-based materials can cause allergic reactions or other complications in some individuals."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1454,
@@ -1302,13 +1134,7 @@
       "The C-terminal region of cystatin C also plays a role in the regulation of protein degradation by binding to and inhibiting the activity of proteases."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 1574,
@@ -1344,13 +1170,7 @@
       "Set7 is also involved in the deposition of other histone marks, including H3K27me3 and H3K9me3."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Set7 is a histone methyltransferase enzyme that deposits histone H3 lysine 4 monomethylation (H3K4me1) marks on histone proteins, not trimethylation (H3K4me3).\n2. FALSE [correction]: H3K4me3 is an active chromatin mark associated with the transcriptional activation of gene expression, not the silencing.\n3. FALSE [correction]: Set7 is the primary enzyme responsible for depositing H3K4me1 marks, not H3K4me3.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true", "true"]
   },
   {
     "id": 1620,
@@ -1365,13 +1185,7 @@
       "The presence of these disulfide bridges is crucial for the functioning of Hepcidin, as they help to stabilize the protein and facilitate its interactions with other molecules."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "true", "true"]
   },
   {
     "id": 1643,
@@ -1407,13 +1221,7 @@
       "Another study found that UCEs were depleted in 60% of CNVs in a dataset of over 3,000 samples from the Cancer Genome Atlas (TCGA)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Ultraconserved elements (UCEs) are highly conserved regions of the genome that are identical across multiple species, but not necessarily all species.\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "unknown"]
   },
   {
     "id": 1665,
@@ -1428,13 +1236,7 @@
       "Haspin kinase plays a role in the regulation of the G2/M checkpoint in the cell cycle."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1696,
@@ -1474,13 +1276,7 @@
       "Creatine kinase (CK) and lactate dehydrogenase (LDH) are commonly used as markers of muscle damage and disease activity in DMD patients."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1763,
@@ -1495,13 +1291,7 @@
       "Data from both the METASTAR (Metastatic Cancer Genomics) and TCGA (The Cancer Genome Atlas) projects are contained within the DeepBlue epigenomic data server."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The Genotype-Tissue Expression (GTEx) project data is not part of DeepBlue's data collection.\n4. TRUE\n5. FALSE [correction]: Data from the TCGA (The Cancer Genome Atlas) project is contained within the DeepBlue epigenomic data server, but METASTAR (Metastatic Cancer Genomics) project data is not.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 1792,
@@ -1558,13 +1348,7 @@
       "PhyloBayes is a software aid for inferring phylogenetic trees from molecular data and can be used to identify conserved regions in a genome."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. FALSE [correction]: PhyloBayes is a software aid for inferring phylogenetic trees from molecular data but it does not directly identify conserved regions in a genome.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "true", "false"]
   },
   {
     "id": 1860,
@@ -1579,13 +1363,7 @@
       "Pulmonary arterial hypertension, a condition characterized by high blood pressure in the lungs, has been linked to mutations in the PIEZO2 gene."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Currently, no substantial scientific evidence suggests that mutations in the PIEZO2 gene are a cause of familial dilated cardiomyopathy.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 1867,
@@ -1621,13 +1399,7 @@
       "In non-damaged gallbladders, Noggin is expressed in the stromal cells of the gallbladder and the liver."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: Noggin is a negative regulator of the BMP signaling pathway.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "false", "unknown"]
   },
   {
     "id": 1937,
@@ -1642,13 +1414,7 @@
       "The precise composition and organization of these subunits are important for the enzyme's activity and localization in cells."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: NADPH oxidase 5 (NOX5) is not a multisubunit enzyme, and does not require several subunits for its proper function. It is directly activated by calcium.\n2. TRUE\n3. FALSE [correction]: The core subunits of NOX5 do not include P22phox, P45phox, and P67phox. These are core subunits of other NOX enzymes, but NOX5 does not have these subunits.\n4. FALSE [correction]: The subunits mentioned aren't needed for NOX5's proper function. As a homodimer, it doesn't need other subunits.\n5. FALSE [correction]: The precise composition and organization of subunits are not relevant to NOX5 as it functions as a homodimer and does not rely on subunits. However, its calcium-binding EF-hands domain is crucial for its activation.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "false"]
   },
   {
     "id": 1944,
@@ -1663,13 +1429,7 @@
       "Dysregulation of the furin-hepcidin axis has been implicated in various iron-related disorders, such as hemochromatosis, anemia, and iron deficiency."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 1956,
@@ -1726,13 +1486,7 @@
       "R/Bioconductor package for SNP enrichment analysis includes functions for performing enrichment analysis of SNPs in gene sets, visualizing the results, and conducting multiple testing correction."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: SNPs3D is a web-based tool used for characterizing the functional effects of single nucleotide polymorphism in genes.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 2015,
@@ -1747,13 +1501,7 @@
       "BMP (bone morphogenetic protein) signaling pathway is involved in the specification of radial glial cells to ependymal cells."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2065,
@@ -1768,13 +1516,7 @@
       "The diagnosis of triple negative glioma is based on clinical, imaging, and pathological findings."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "unknown", "true", "true"]
   },
   {
     "id": 2069,
@@ -1810,13 +1552,7 @@
       "GATA-1A is expressed in naive T cells and early T cell precursors, GATA-1B is expressed in more mature T cells, and GATA-1C is expressed in T cells that have undergone T cell receptor activation."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: GATA-1 is a transcription factor involved in erythroid and megakaryocytic development and differentiation.\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 2076,
@@ -1831,13 +1567,7 @@
       "MIRA-seq can be used to study various types of cells and tissues, including primary cells and tissues, cell lines, and patient samples."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2108,
@@ -1852,13 +1582,7 @@
       "It is generally used as a short-term treatment to help manage acute gout attacks and prevent future flares."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: ARCALYST is not a cure for gout but it can be used long-term to prevent gout attack flares.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2170,
@@ -1873,13 +1597,7 @@
       "Chromosome 14 is also commonly involved in Robertsonian translocations, and the breakpoint can occur in either the long arm (q-arm) or the short arm (p-arm)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2237,
@@ -1917,13 +1635,7 @@
       "NEMO also contains other functional domains, including an N-terminal transcription activation domain and a C-terminal proline-rich domain."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: NEMO, also known as NF-kappa-B essential modulator, is a protein that plays a role in regulating cell survival and apoptosis, not nuclear factor erythroid 2-related factor 2 (NFE2L2).\n2. FALSE [correction]: NEMO does not contain a CCHC zinc finger domain. It contains two coiled-coil domains and a zinc finger domain.\n3. FALSE [correction]: This statement is incorrect as NEMO does not contain a CCHC zinc finger domain.\n4. FALSE [correction]: With this, NEMO does not contain a CCHC zinc finger domain, it cannot bind a zinc ion. The zinc finger it contains, however, does bind zinc ions and plays a role in DNA recognition.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "true"]
   },
   {
     "id": 2247,
@@ -1959,13 +1671,7 @@
       "Studies have shown that the centromere-proximal regions of the chromosome are among the first to be replicated in the cell cycle."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2268,
@@ -2003,11 +1709,7 @@
       "GRG genes are found in other animals, including humans."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "true"]
   },
   {
     "id": 2304,
@@ -2022,13 +1724,7 @@
       "Understanding the mechanisms of RNA cleavage is important for understanding the regulation of gene expression and for the development of new antiviral and anticancer therapies."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The C-terminal domain (CTD) of the largest subunit of RNAPII does not carry RNA cleavage activity, but it is heavily involved in the process of transcription and RNA processing.\n3. FALSE [correction]: The CTD of RNAPII is not cleaved by any enzymes. However, it can be modified, usually through phosphorylation, during different stages of transcription.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "unknown", "true"]
   },
   {
     "id": 2321,
@@ -2043,13 +1739,7 @@
       "These genes are involved in the Wnt signaling pathway, which is important for the development of the brain, eyes, and kidneys."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Ohdo syndrome, also known as blepharophimosis syndrome, is a rare condition that affects the development of the face, hands, and intellectual ability, not the eyes, brain, and kidneys.\n2. FALSE [correction]: Ohdo syndrome is not caused by mutations in TCF4, TCF2, EYA1, SIX5, and SIX6. The disorder is associated with mutations in the MED12 gene.\n3. FALSE [correction]: The TCF4 gene is not recognized as a cause of Ohdo syndrome. Ohdo syndrome is usually associated with mutations in the MED12 gene.\n4. FALSE [correction]: The EYA1 gene is not associated with Ohdo syndrome. The MED12 gene, located on the X chromosome, is most often associated with Ohdo syndrome.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "unknown"]
   },
   {
     "id": 2331,
@@ -2085,13 +1775,7 @@
       "The swirl sign is believed to be created due to the movement of blood within the brain tissue."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 2392,
@@ -2127,13 +1811,7 @@
       "The most common mutation associated with HRA is the V30M mutation, found in about 70% of all cases."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 2407,
@@ -2169,13 +1847,7 @@
       "The Y chromosome in mice is degenerate and has lost many of the genes and functional elements found on the X chromosomes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "true", "true"]
   },
   {
     "id": 2417,
@@ -2232,13 +1904,7 @@
       "The objectives of the 959 Nematode Genomes initiative include generating high-quality genome assemblies, identifying new drug targets, understanding nematode biology, and studying the evolution of animal genomes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2557,
@@ -2274,13 +1940,7 @@
       "Glasses or contact lenses, medicated eye drops, and surgical procedures, such as corneal transplantation, are potential options to manage symptoms and slow the progression of the condition."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Achenbach's syndrome, also known as paroxysmal hand hematoma, is a condition that causes spontaneous bruising in the hand.\n2. TRUE\n3. FALSE [correction]: The line cannot be seen as Achenbach's syndrome is related to spontaneous bruising in the hand, and is not related to any eye condition.\n4. FALSE [correction]: Achenbach's syndrome can cause symptoms like sudden pain, swelling, and bruising on the hand.\n5. FALSE [correction]: Treatment for Achenbach's syndrome typically involves pain relief and observation, as this condition usually resolves on its own.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "false"]
   },
   {
     "id": 2581,
@@ -2337,13 +1997,7 @@
       "The gas vesicles in Methanococcus jannaschii are typically around 60-80 nm in diameter."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: According to research, E. coli does not have gas vesicles.\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "unknown", "unknown", "true"]
   },
   {
     "id": 2589,
@@ -2406,13 +2060,7 @@
       "Switching MULTOVLs use a switching regulator to generate the output voltages."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 2660,
@@ -2427,13 +2075,7 @@
       "Research is still needed to confirm the long-term reliability of GDF15 as a biomarker for metformin treatment and to establish optimal cutoff values."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 2664,
@@ -2473,13 +2115,7 @@
       "The TALE-iD method can be used in a wide range of organisms, including plants, animals, and microbes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "true", "true", "true"]
   },
   {
     "id": 2747,
@@ -2536,13 +2172,7 @@
       "The Esrrb-chromatin remodeling complex includes Esrrb and various chromatin remodeling factors, such as SWI/SNF (switch/sucrose non-fermentable) and CHD (chromodomain-helicase-DNA-binding) proteins."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Estrogen-related receptor β (Esrrb) is a nuclear receptor that, despite its name, doesn’t bind to estrogens. Instead, it is an orphan receptor with endogenous ligands that are still being researched. \n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2842,
@@ -2557,13 +2187,7 @@
       "ZCCHC17 has been implicated in various cellular processes, including cell proliferation, differentiation, and stress response."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: ZCCHC17 functions as a negative regulator of gene expression, but rather than promoting degradation, it prevents degradation of target mRNAs.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2861,
@@ -2601,13 +2225,7 @@
       "Gepotidacin is currently being developed as a potential treatment for a variety of bacterial infections, including skin and skin structure infections, pneumonia, and urinary tract infections."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2943,
@@ -2643,13 +2261,7 @@
       "Certain DNA-binding molecules, such as the polyamine analogue PJ-34, can activate STING."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 2964,
@@ -2729,13 +2341,7 @@
       "The Human Genome Mutation Database (HGMD) is a comprehensive database of human genetic mutations which includes somatic mutations in normal cells."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The Cancer Genome Atlas (TCGA) is a collaborative effort between the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) that collects data on somatic mutations in cancerous tissues.\n3. TRUE\n4. UNKNOWN\n5. FALSE [correction]: The Human Genome Mutation Database (HGMD) is a comprehensive database of human germline mutations, these occur in the DNA of all cells in the body except the reproductive cells.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "unknown",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "unknown", "false"]
   },
   {
     "id": 3037,
@@ -2771,13 +2377,7 @@
       "Microfluidic PCR, a sensitive and specific amplification technique, is used in the SHERLOCKv2 platform."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 3078,
@@ -2792,13 +2392,7 @@
       "The bartender algorithm redistributes tasks among other servers to avoid overloading any one server."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The bartender algorithm has no connection to scheduling tasks on a server. It refers to a problem in game theory, concerning maximizing tips for a bartender by serving the customers who are willing to tip the most first.\n2. FALSE [correction]: Since the bartender algorithm mentioned does not concern assigning server tasks, this statement is incorrect. Initialization of server sets with capacities is not a part of the bartender problem.\n3. FALSE [correction]: The bartender algorithm doesn't involve handling tasks with sizes or amounts of work. It deals with the order in which to serve customers to maximize tips, not scheduling computational tasks.\n4. FALSE [correction]: The bartender algorithm doesn't sort tasks by size as it doesn't deal with the 'tasks' in the context of computer system scheduling.\n5. FALSE [correction]: The bartender algorithm does not involve redistributing tasks among servers. It's a game theory problem about customer service order.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "false"]
   },
   {
     "id": 3100,
@@ -2836,13 +2430,7 @@
       "The Venomous Animal Toxins (VAT) database contains information on the toxins produced by venomous animals, including spiders, and their potential applications in medicine and biotechnology."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3111,
@@ -2899,13 +2487,7 @@
       "There are estimated to be around 50-100 pseudokinases in the human kinome."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3139,
@@ -3004,13 +2586,7 @@
       "Another study found that GRHL2 over-expression in mouse mammary epithelial cells led to EMT and the formation of mammary tumors."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3254,
@@ -3067,13 +2643,7 @@
       "The Fluzone intradermal quadrivalent vaccine is approved for use in individuals aged 18 years and older and is recommended to be administered annually."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The Fluzone intradermal quadrivalent vaccine is approved for use in individuals aged 18 through 64 years and is recommended to be administered annually.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "true", "true", "false"]
   },
   {
     "id": 3345,
@@ -3111,13 +2681,7 @@
       "Palforzia is not a cure for peanut allergy and does not guarantee complete protection against allergic reactions."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3365,
@@ -3195,13 +2759,7 @@
       "The U.S. Food and Drug Administration has granted xaliproden \"breakthrough therapy\" designation, though it's not yet approved for the treatment of ALS."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Xaliproden was once studied for its potential to slow the progression of ALS, but it was found to be ineffective and the studies were discontinued.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: There is no ongoing phase 3 trial called \"ENABLE-ALS\" to evaluate the safety and efficacy of xaliproden in ALS patients. Studies on xaliproden were discontinued after it was found to be ineffective.\n5. FALSE [correction]: The U.S. Food and Drug Administration has not granted xaliproden \"breakthrough therapy\" designation as it was found to be ineffective in slowing the progression of ALS.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "false"]
   },
   {
     "id": 3410,
@@ -3216,13 +2774,7 @@
       "The A3S gene is inserted between the genes encoding the enzymes, \"OsCYP71B1\" and \"OsCYP71B2\" which are involved in the biosynthesis of cyclic compounds in rice."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Without specific information about the location of the A3S gene insertion, it cannot be determined which chromosome it is inserted on.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 3430,
@@ -3321,13 +2873,7 @@
       "A study published in the journal OncoImmunology in 2020 found that high LY6K expression was associated with increased immune infiltration and poorer prognosis in NSCLC patients."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3473,
@@ -3449,13 +2995,7 @@
       "Not all individuals with ZSWIM6 mutations will develop these disorders."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3626,
@@ -3470,13 +3010,7 @@
       "Meniscal tears can be classified using the Koos Classification system."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Koos Classification is used to classify intracranial arteriovenous malformations.\n2. FALSE [correction]: The Koos Classification system cannot be used to classify rotator cuff tears as it is for arteriovenous malformations.\n3. FALSE [correction]: The Koos Classification system does not include a category for osteoarthritis. It is used for arteriovenous malformations.\n4. FALSE [correction]: Tears to the labrum cannot be classified using the Koos Classification system as it is for arteriovenous malformations.\n5. FALSE [correction]: Meniscal tears cannot be classified using the Koos Classification system as it is for arteriovenous malformations.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "false"]
   },
   {
     "id": 3628,
@@ -3491,13 +3025,7 @@
       "AZD8601 has been observed to modulate the immune response in preclinical models."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: AZD8601 is not a small molecule inhibitor of the enzyme bromodomain-containing protein 4 (BRD4). It is an mRNA-based drug.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3640,
@@ -3537,13 +3065,7 @@
       "The PDZ domain in SATB1 is involved in signaling pathways, chromatin remodeling, and transcriptional regulation through interactions with molecules and proteins such as G-protein coupled receptors, tyrosine kinases, serine/threonine kinases, p53, c-Myc and chromatin-modifying enzymes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The PDZ domain is not a functional motif in SATB1; it is a different protein domain that can be found in various proteins. SATB1 contains a cut domain and a homeodomain but not a PDZ domain.\n3. FALSE [correction]: Since SATB1 does not contain a PDZ domain, it cannot be involved in protein-protein interactions through this domain.\n4. FALSE [correction]: Given that SATB1 does not have a PDZ domain, it does not play a role in cell adhesion and migration through interactions with proteins like cadherins and integrins via this domain.\n5. FALSE [correction]: As SATB1 lacks a PDZ domain, it is not involved in signaling pathways, chromatin remodeling, and transcriptional regulation through interactions with these specific molecules and proteins via this domain.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "false"]
   },
   {
     "id": 3678,
@@ -3558,13 +3080,7 @@
       "The goal of the BLISS technique is to provide a structured and supportive framework to manage emotions and behaviors adaptively."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The DBT (Dialectical Behavior Therapy) technique was developed by Dr. Marsha Linehan.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The acronym BLISS does not stand for brief, limited, interval, structured, and supportive. It seems to be a made-up statement as there is no such known technique with that acronym in the context of therapies developed by Dr. Marsha Linehan.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "true"]
   },
   {
     "id": 3679,
@@ -3579,13 +3095,7 @@
       "LY-303870, a highly selective NK3R antagonist, has been researched for the potential treatment of migraine and other pain disorders."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Azasetron (formerly known as Serotone) has been investigated for the treatment of various conditions including nausea, vomiting, and schizophrenia, not migraine, pain, and inflammatory disorders.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "true"]
   },
   {
     "id": 3691,
@@ -3642,13 +3152,7 @@
       "Since its approval in 1991, the Merck OCV has been used in numerous cholera vaccination campaigns around the world."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The first cholera vaccine approved in the United States was not developed by Merck & Co., it was Vaxchora, developed by PaxVax.\n2. FALSE [correction]: Vaxchora, the oral cholera vaccine approved by the US FDA, was approved in 2016, not 1991.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Since the Merck OCV did not receive approval in 1991, it could not have been used in numerous vaccination campaigns around the world following that date. The corrected statement should refer to Vaxchora being used in vaccination campaigns since its approval in 2016.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "false"]
   },
   {
     "id": 3737,
@@ -3663,13 +3167,7 @@
       "Hyper-IgM syndrome, X-linked immunodeficiency with magnesium defect, T cell immunodeficiency, T-B+, NK+ syndrome and Complement component 2 deficiency are also monogenic causes of CVID in Europeans."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The most common monogenic cause of common variable immunodeficiency (CVID) in Europeans is not X-linked agammaglobulinemia (XLA), but rather other genetic defects.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: XLA does not account for a significant percentage of CVID cases as they are separate conditions.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "true"]
   },
   {
     "id": 3743,
@@ -3684,13 +3182,7 @@
       "The IFIT1 gene has also been implicated in other autoimmune diseases, such as rheumatoid arthritis and multiple sclerosis."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The IFIT1 gene encodes for a protein called interferon-induced protein with tetratricopeptide repeats 1 (IFIT1) which is involved in the immune response to viral infections.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3752,
@@ -3705,13 +3197,7 @@
       "The Liverpool Elbow Score can help identify patients who are at high risk for poor outcomes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3763,
@@ -3768,13 +3254,7 @@
       "Histone demethylases (HDMs) remove methyl groups from histone proteins."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Enzymes that remove histone modifications are called histone demethylases or histone deacetylases.\n3. FALSE [correction]: Histone acetyltransferases (HATs) add acetyl groups primarily to lysine residues on histone proteins.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 3806,
@@ -3789,13 +3269,7 @@
       "Children and young adults are more sensitive to the effects of radiation and may be at a higher risk of developing brain tumors."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3809,
@@ -3810,13 +3284,7 @@
       "Otx2 has been implicated in the regulation of other cellular processes, including cell fate determination and the maintenance of tissue-specific stem cells."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3815,
@@ -3831,13 +3299,7 @@
       "The exact number of DHSs in the murine beta globin locus region may vary depending on the specific cell type and experimental conditions used."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 3822,
@@ -3852,13 +3314,7 @@
       "Influenza A (H1N1) 2009 Monovalent Vaccine, manufactured by various companies, is approved for use in individuals aged 6 months and older, and contains only one strain of the influenza virus."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Fluvir is an antiviral medication used to treat influenza, not a vaccine, and it's manufactured by various companies.\n3. TRUE\n4. FALSE [correction]: Fluoxetine is an antidepressant medication, not an influenza vaccine. It is manufactured by Eli Lilly and Company, not AstraZeneca.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 3832,
@@ -3873,13 +3329,7 @@
       "The negative-sense RNA genome of paramyxoviruses plays a role in the regulation of gene expression."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The paramyxovirus genome is non-segmented and consists of negative-sense RNA.\n2. TRUE\n3. FALSE [correction]: The paramyxovirus genome is non-segmented, consisting of a single strand of RNA.\n4. FALSE [correction]: The paramyxovirus genome is non-segmented, so the statement about segmentation increasing flexibility and diversity is not applicable.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "true"]
   },
   {
     "id": 3869,
@@ -3915,13 +3365,7 @@
       "HISAT2 is an aligner that uses a combination of probabilistic and heuristic methods to align RNA-seq reads to the genome and includes tools for the identification of ncRNA promoters."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: RNA-seq Toolkit is a software package that analyses RNA-seq data, but it does not specifically include the identification of ncRNA promoters.\n3. TRUE\n4. FALSE [correction]: DeepTools is a collection of tools used for analyzing deep-sequencing data, but it does not specifically include the identification of ncRNA promoters.\n5. FALSE [correction]: HISAT2 is an aligner that aligns RNA-seq reads to the genome, but it does not include tools for the identification of ncRNA promoters.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "false"]
   },
   {
     "id": 3918,
@@ -3936,13 +3380,7 @@
       "The SWIM tool identified that the MGMT, CDKN2A, and PML genes are commonly down-regulated in glioblastoma."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: TP53 gene is commonly mutated, not necessarily down-regulated, in glioblastoma.\n3. TRUE\n4. FALSE [correction]: The EGFR gene is often found to be up-regulated or amplified in glioblastoma.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "unknown"]
   },
   {
     "id": 3926,
@@ -3957,13 +3395,7 @@
       "'HISAT2' is an R package that includes a feature for identifying TADs and other chromatin domains."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: 'HiCExplorer' is a software tool, not an R package, that includes functions for exploring and analyzing Hi-C data, including TADs.\n4. FALSE [correction]: 'ChromHMM' uses a hidden Markov model to identify chromatin states, not specifically TADs, from various types of chromatin data.\n5. FALSE [correction]: 'HISAT2' is a software tool for aligning sequencing reads to a reference genome, not for identifying TADs or other chromatin domains.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "false"]
   },
   {
     "id": 3927,
@@ -3978,13 +3410,7 @@
       "Other bioconductor tools developed for accessing bacterial regulatory networks include Bacterial Regulatory Sequence Analysis (BRSAT) and Bacterial Genome Analysis (BGA)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Regulatory Sequence Analysis Tools (RSAT) is not a bioconductor tool; it is a separate software suite developed for accessing and analyzing regulatory sequences in genomes, not just bacterial regulatory networks.\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "unknown"]
   },
   {
     "id": 3933,
@@ -3999,13 +3425,7 @@
       "The shikimate pathway can produce other compounds, such as the antibiotic chloramphenicol, the fungicide vinclozolin, and the herbicide 2,4-D."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The shikimate pathway does not produce naphthalene; naphthalene is a hydrocarbon not synthesized by this pathway.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 3936,
@@ -4020,13 +3440,7 @@
       "Cabergoline is not a cure for Nelson's syndrome and may not be effective in all cases."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Cabergoline is sometimes used for the treatment of Cushing's disease, not Nelson's syndrome.\n2. TRUE\n3. FALSE [correction]: Nelson's syndrome is characterized by the overproduction of ACTH (adrenocorticotropic hormone), not growth hormone and prolactin.\n4. FALSE [correction]: Cabergoline works by binding to dopamine receptors in the pituitary gland, inhibiting the secretion of prolactin; it does not inhibit the secretion of growth hormone.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "true"]
   },
   {
     "id": 3939,
@@ -4037,9 +3451,7 @@
       "There is no medical condition known as \"Liebenberg syndrome.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Liebenberg syndrome is a medical condition that affects the development of the arms and hands.",
-    "llama-2-13b-chat-hf_judge": [
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false"]
   },
   {
     "id": 3977,
@@ -4054,13 +3466,7 @@
       "GS-99739 and HG-10-102-01 are orally bioavailable MPS1 kinase inhibitors that have shown activity against a range of cancer cell lines, including those with KRAS mutations. They are both currently being evaluated in Phase 1 clinical trials for the treatment of solid tumors."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: S63845 is not an MPS1 kinase inhibitor, it is an MCL1 inhibitor. BMS-986177 is an MPS1 inhibitor but there is no information available on its current phase of clinical trials.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 4031,
@@ -4075,13 +3481,7 @@
       "Golimumab is not currently approved by the US Food and Drug Administration for the treatment of diabetes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 4055,
@@ -4096,13 +3496,7 @@
       "Progeria is a rare genetic disorder affecting approximately 1 in 4 million children worldwide, characterized by accelerated aging and premature death due to age-related diseases."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Progeria, or Hutchinson-Gilford Progeria Syndrome (HGPS), is caused by an autosomal dominant gene.\n2. TRUE\n3. FALSE [correction]: If a child has only one copy of the mutated gene, they can still develop progeria as it is autosomal dominant, not recessive.\n4. FALSE [correction]: Since progeria is autosomal dominant, carriers have a 50% chance of passing the mutated gene to their children.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "true"]
   },
   {
     "id": 4082,
@@ -4117,13 +3511,7 @@
       "The 12q24 region has been particularly associated with triple-negative breast cancer (TNBC)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The 12q24 region has been particularly associated with prostate cancer and type 2 diabetes, not specifically with triple-negative breast cancer (TNBC).",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 4096,
@@ -4138,13 +3526,7 @@
       "Certain Bone morphogenetic proteins (BMPs), Wnts, and Ephrins can bind to Robo receptors and regulate their activity."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The Robo receptors are activated by the ligand Slit, not Robo-steroids, BMPs, Wnts, Ephrins, or Netrin.\n3. TRUE\n4. FALSE [correction]: Robo-steroids are not a class of hormones, and estrogen, testosterone, and aldosterone do not bind to Robo receptors.\n5. FALSE [correction]: BMPs, Wnts, and Ephrins do not bind to Robo receptors; they have their own respective signaling pathways and receptors.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "false"]
   },
   {
     "id": 4112,
@@ -4159,13 +3541,7 @@
       "TFII-I regulates the expression of genes involved in platelet function, such as the gene encoding the platelet-derived growth factor receptor (PDGFR)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 4145,
@@ -4180,13 +3556,7 @@
       "The metabolism of atenolol can be influenced by a variety of factors, including genetic polymorphisms, drug interactions, and liver function."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The active metabolite of atenolol is not formed by CYP2D6, as atenolol does not have any active metabolites. It is excreted unchanged in the urine.\n3. FALSE [correction]: The activity of CYP2D6 does not significantly affect the efficacy and side effects of atenolol since it is not metabolized by this enzyme.\n4. FALSE [correction]: Atenolol is not metabolized by CYP3A4 or CYP2C9, as it is not extensively metabolized and is excreted largely unchanged in the urine.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "true"]
   },
   {
     "id": 4158,
@@ -4201,13 +3571,7 @@
       "The ExpansionHunter 1.16.0 version was released on August 29, 2020."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The correct name of the game is Minecraft, not ExpansionHunter. Also, version 1.16.4 of Minecraft was not released on December 22, 2020.\n2. FALSE [correction]: There is no version of Minecraft called ExpansionHunter 1.16.3, and the information about its release date and features is incorrect.\n3. FALSE [correction]: There is no version of Minecraft called ExpansionHunter 1.16.2, and the information about its release date and features is incorrect.\n4. FALSE [correction]: There is no version of Minecraft called ExpansionHunter 1.16.1, and the information about its release date and features is incorrect.\n5. FALSE [correction]: There is no version of Minecraft called ExpansionHunter 1.16.0, and the information about its release date is incorrect.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "false"]
   },
   {
     "id": 4164,

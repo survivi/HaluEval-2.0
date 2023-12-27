@@ -12,13 +12,7 @@
       "The Roman numeral system has been influential in the development of other numbering systems, such as the Hindu-Arabic system."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Roman numeral system is not a place value system. It uses letters to represent numbers, but their position does not influence the value they represent.\n2. FALSE [correction]: The Roman numeral system does not have a symbol for zero.\n3. TRUE\n4. FALSE [correction]: The Roman numeral system is not considered more compact, especially for larger numbers, due to the absence of place value and the need to represent some numbers with many symbols (e.g., the number 1988 is written as MDCCCCLXXXVIII).\n5. FALSE [correction]: The Roman numeral system has been influential in other ways, but the Hindu-Arabic system, which does use place value and includes zero, was developed independently.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "false"]
   },
   {
     "id": 68,
@@ -31,11 +25,7 @@
       "To pluralize \"bread\" in old English, the suffix \"-s\" was added."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: In old English, the plural of \"lamb\" was \"lamb\" or \"lambru\" without the suffix \"-en.\"\n2. TRUE\n3. FALSE [correction]: In old English, \"bread\" was an uncountable noun and did not have a plural form with the suffix \"-s.\"",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false"]
   },
   {
     "id": 81,
@@ -50,13 +40,7 @@
       "An estimate suggests that around 470 million basketballs would fit inside the Empire State Building."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Empire State Building has a height of 1,454 feet including its antenna, but its roof height is 1,250 feet, and it does not have a base diameter but a base area of about 2 acres.\n2. FALSE [correction]: It's unclear how the volume of the Empire State Building was calculated as this would depend on its internal structure and design. The volume cannot be simply deduced from its height and \"base diameter\". \n3. TRUE\n4. FALSE [correction]: The volume of a basketball is approximately 433 cubic inches.\n5. FALSE [correction]: Without the correct volume of the Empire State Building and the correct volume of a standard basketball, it's impossible to determine the accuracy of this statement.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "false"]
   },
   {
     "id": 86,
@@ -71,13 +55,7 @@
       "Cataracts are a treatable condition, with surgery often being the most effective way to restore vision."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: This accounts for about 51% of all blindness globally, based on data from the 2010 Global Burden of Disease Study.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 149,
@@ -92,13 +70,7 @@
       "It would take approximately 44.4 minutes to drive 26 miles at 35 miles per hour."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. FALSE [correction]: 0.74 hours is not the time it would take to drive 26 miles at 35 miles per hour. The correct time would be 26 miles divided by 35 miles per hour, which equals approximately 0.74 hours or 44.4 minutes.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "false", "true", "true"]
   },
   {
     "id": 154,
@@ -113,13 +85,7 @@
       "The speed of each skateboarder can be calculated using the formula rate = distance/time."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE\n4. FALSE [correction]: The overall distance covered by both skateboarders in 2 hours is 140 miles because they are moving in opposite directions.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "true", "false", "true"]
   },
   {
     "id": 163,
@@ -134,13 +100,7 @@
       "The lanthanide elements have a relatively low ionization energy, whereas the actinide elements have a higher ionization energy."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The lanthanide and actinide series are located at the bottom of the periodic table, separated from the main body of the table, but not specifically in the bottom left and right corners.\n2. TRUE\n3. FALSE [correction]: The lanthanide elements do not have a stable electron configuration due to a full outer energy level; instead, they have partially filled 4f orbitals.\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "unknown"]
   },
   {
     "id": 178,
@@ -155,13 +115,7 @@
       "Visual aids can help to encode information in a more meaningful and durable way, reduce cognitive load, and improve the efficiency of the learning process, as per the studies mentioned."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 195,
@@ -176,13 +130,7 @@
       "Traveling to new places and experiencing new cultures can slow down the perception of time."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Physical exercise can actually make time seem to go by faster because it requires focus and can be a form of flow state.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 255,
@@ -197,13 +145,7 @@
       "The approximate percentage of carbon dioxide in the Earth's atmosphere is 0.04%."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 314,
@@ -218,13 +160,7 @@
       "Many species of sparrows, finches, swallows, orioles, thrushes, shrikes, and starlings are known to migrate."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The American goldfinch is not a warbler species.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "false", "true"]
   },
   {
     "id": 327,
@@ -239,13 +175,7 @@
       "Stainless steel, copper, or another metal that is more malleable and has better ductility are suitable for making spoons."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The alloy that contains bismuth and is not suitable for making spoons is called \"bismuth telluride.\"\n2. UNKNOWN\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "unknown",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "unknown", "unknown", "true", "true"]
   },
   {
     "id": 337,
@@ -260,13 +190,7 @@
       "Boron-based compounds offer high energy density, low molecular weight, and good thermal stability, making them attractive candidates for use in advanced rocket propulsion systems."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: One of the most promising boron-based rocket fuels is a compound called boron-10, not boron-based polyurethane (BPU).\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "unknown", "true", "true"]
   },
   {
     "id": 343,
@@ -281,13 +205,7 @@
       "Bromine has a relatively large number of radioactive isotopes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Bromine has a total of 33 known isotopes.\n3. TRUE\n4. FALSE [correction]: Bromine has two stable isotopes, 79Br and 81Br.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 373,
@@ -302,13 +220,7 @@
       "Californium-251 has a magic number of 126 protons and 134 neutrons."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Californium-251 (Cf-251) has a half-life of approximately 900 years.\n4. TRUE\n5. FALSE [correction]: Californium-251 has a magic number of 98 protons and 153 neutrons.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 423,
@@ -323,13 +235,7 @@
       "The smallest possible solution for these room connection constraints would be constructing a floor plan with six rooms."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Adding Room 10 to the layout would not result in a construction where each room is still connected to three other rooms, as Room 10 would need to be connected to three other rooms, not just one.\n5. FALSE [correction]: The smallest possible solution for these room connection constraints would be constructing a floor plan with four rooms, in which three rooms are connected to three other rooms, and one room is connected to only one other room.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "false", "false"]
   },
   {
     "id": 425,
@@ -352,13 +258,7 @@
       "The Ford-Fulkerson algorithm is used to compute the minimum cost flow."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The Ford-Fulkerson algorithm is used to compute the maximum flow in a flow network, not necessarily the minimum cost flow.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "false"]
   },
   {
     "id": 429,
@@ -373,13 +273,7 @@
       "The process described in the answer requires a total of two weighs to identify the counterfeit coin."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: If the three coins have different weights, the counterfeit coin is already identified as the one with the different weight, and no further weighing is needed.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 433,
@@ -394,13 +288,7 @@
       "With 4 or more coins, you can determine the relative weight of the counterfeit coin, but not its identity."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The \"7-coin problem\" is a classical problem in the field of mathematical puzzles and recreational mathematics. \n4. FALSE [correction]: With just 1 coin, you can't determine anything, but with 2 coins compared to each other, you can determine if one is counterfeit, assuming you have a known genuine coin to compare against.\n5. FALSE [correction]: With 4 or more coins, depending on the weighing method, it is possible to both identify the counterfeit coin and determine its relative weight.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "false"]
   },
   {
     "id": 435,
@@ -415,13 +303,7 @@
       "For each way of splitting up the coins, a series of 3 weighings can be performed to identify the potential counterfeit coin."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Another way to split the coins is into 3 groups of 4 coins each.\n4. FALSE [correction]: The coins cannot be split into 4 groups of 3 coins each as that would only total 12 coins, not allowing for a comparison group.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 455,
@@ -455,11 +337,7 @@
       "According to the explanation, the probability that the frog on the left is female, given that the frog on the right is male, is 0.5 or 50%."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown"]
   },
   {
     "id": 487,
@@ -474,13 +352,7 @@
       "Using the permutation formula and considering the given items as musicians, the total number of distinct 6-box loops is 720."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 502,
@@ -516,13 +388,7 @@
       "Crocodiles have been around for millions of years and use their powerful tails and sharp claws to raft across rivers."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Wildebeests, zebras, giraffes, hippos, and crocodiles don't raft across rivers. Wildebeests and zebras may cross rivers during migrations, but giraffes, hippos, and crocodiles do not raft.\n2. FALSE [correction]: Zebras don't raft; they may cross rivers by swimming or wading during migrations but don't use rafts.\n3. FALSE [correction]: Giraffes don't typically swim or raft across rivers; they may cross shallow bodies of water by wading.\n4. TRUE\n5. FALSE [correction]: Crocodiles don't raft; they are strong swimmers that navigate rivers without the need for rafts.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true", "false"]
   },
   {
     "id": 504,
@@ -558,13 +424,7 @@
       "Only one wildebeest can cross the river at a time using the raft."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 518,
@@ -600,13 +460,7 @@
       "When the room has a rectangular shape, with n greater than m and no obstacles, it is possible to travel from the northwest to the southeast corner without re-entering."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Whether the room is square or not does not necessarily determine whether one can go directly from the northwest to the southeast corner without re-entering. It depends on the presence of a clear path or obstacles.\n2. FALSE [correction]: It is not impossible to go directly from the northwest corner to the southeast corner without re-entering the room if n = m; as long as there is a clear path, it can be done.\n3. TRUE\n4. FALSE [correction]: Even if the room has obstacles, it may still be possible to go directly from the northwest corner to the southeast corner without re-entering if there is a clear path around the obstacles.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "true"]
   },
   {
     "id": 622,
@@ -621,13 +475,7 @@
       "It would take approximately 333,333,330 years for a Von Neumann machine to replicate throughout the galaxy, assuming replication once every 10 years."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: A Von Neumann machine traveling at 10% the speed of light would have a speed of approximately 2.99792458 x 10^7 meters per second.\n5. FALSE [correction]: It would take approximately 33,333,333 years for a Von Neumann machine to replicate throughout the galaxy, assuming replication once every 10 years.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 659,
@@ -642,13 +490,7 @@
       "The GIAR robot possesses a computer system that uses sensors and algorithms to monitor its movements and adjust its adhesion properties in real time."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 661,
@@ -663,13 +505,7 @@
       "Curium has a relatively long half-life compared to other radioactive elements."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. FALSE [correction]: Curium has a relatively short half-life compared to other radioactive elements, such as uranium and thorium.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "true", "false"]
   },
   {
     "id": 802,
@@ -684,13 +520,7 @@
       "Sally Ride became the first American woman in space on June 19, 1983, when the Space Shuttle Challenger launched into orbit."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Sally Ride never took a position as a professor of physics at the University of California, San Diego before joining NASA. She was selected as an astronaut candidate by NASA in January 1978 while still a graduate student at Stanford.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 804,
@@ -726,13 +556,7 @@
       "XRF spectroscopy is widely used in the field of materials science and engineering to analyze the elemental composition of materials, including metals, alloys, ceramics, and to detect and quantify trace amounts of impurities in these materials."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The analytical technique that uses the element dysprosium together with cadmium and sulfur is not specifically X-ray fluorescence (XRF) spectroscopy. Dysprosium can be used as a secondary target in XRF, but the primary use of XRF does not specifically require dysprosium.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 812,
@@ -747,13 +571,7 @@
       "The New York City Medical Examiner's Office is responsible for investigating all deaths that occur within the five boroughs of New York City."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: New York City appointed its first trained medical examiner in 1918.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The first trained medical examiner appointed in New York City was Dr. Charles Norris.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "true"]
   },
   {
     "id": 818,
@@ -768,13 +586,7 @@
       "Knowing the outcome of one measurement can be used to predict the outcome of another perfectly correlated measurement, even without knowing the outcome of the second measurement in advance."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Two measurements whose results are perfectly correlated do not necessarily concern two differently colored coins in two locations; this is just one hypothetical example to illustrate the concept.\n2. TRUE\n3. FALSE [correction]: If the identity and location of each coin are unknown, it is not possible to say that the measurements made on one coin are perfectly correlated with the measurements made on the other coin.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 832,
@@ -789,13 +601,7 @@
       "Du Fay's results challenged the contemporary belief that all substances could be electrified."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Charles du Fay was a French physicist who conducted a series of experiments in the early 1700s to study the properties of electricity.\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 835,
@@ -810,13 +616,7 @@
       "Not all eel species undergo the transformation known as catadromy."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 846,
@@ -831,13 +631,7 @@
       "Title IX does not allow schools to use financial constraints as a reason to discriminate against one gender."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "true", "true"]
   },
   {
     "id": 857,
@@ -852,13 +646,7 @@
       "Europium can emit blue light, which is produced by transitions between the 5d and 5p shells, characterized by a wavelength of around 450-490 nanometers."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Transitions between the 5d and 6p shells in europium typically produce blue or green light, not orange.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 859,
@@ -873,13 +661,7 @@
       "The other lanthanides do not exhibit this stable, low oxidation state because their 4f shells are not filled. They tend to exhibit higher oxidation states, such as +3 or +4."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Other lanthanides can also exhibit the +2 oxidation state, but it is less common and less stable than in europium and samarium. The +3 oxidation state is the most common and stable for most of the lanthanides.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 872,
@@ -894,13 +676,7 @@
       "The bridge construction could have altered the water quality in the area where the salamanders lived."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "true", "true", "true"]
   },
   {
     "id": 878,
@@ -915,13 +691,7 @@
       "Lead exposure resulted in the highest levels of metal accumulation in the liver and kidneys according to the study."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "unknown"]
   },
   {
     "id": 900,
@@ -935,12 +705,7 @@
       "Ronald McNair was 35 years old at the time of his death."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true"]
   },
   {
     "id": 901,
@@ -955,13 +720,7 @@
       "The character of Captain Jean-Luc Picard appears in \"The Inner Light\" episode of \"Star Trek: The Next Generation.\""
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The television show that the McNair brothers watched together that depicted a future where people of all kinds could work together is called \"Star Trek.\"\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "true", "true"]
   },
   {
     "id": 959,
@@ -976,13 +735,7 @@
       "Andy Dufresne's character was convicted of murdering his wife and her lover, but it is revealed later in the film that he was framed by the real killer."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Elmo Blatch is not characterized as the head of the prison's gang, known as the Sisters. He is actually revealed as the real killer of Andy Dufresne's wife and her lover.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 1024,
@@ -1039,13 +792,7 @@
       "Today, gyotaku is practiced by artists all over the world."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: A notable artist known for his innovative use of embellishments in gyotaku is Bokuyo Tachibana (1886-1963).\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "true"]
   },
   {
     "id": 1047,
@@ -1060,13 +807,7 @@
       "Tape or a rubber band can be used to secure the balloon to the table to prevent it from floating away or falling off."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The task described does not specify the content of the balloon; it could be helium or any other gas or air.\n2. FALSE [correction]: A sturdy table is not required to support the weight of a balloon as balloons are generally lightweight.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 1100,
@@ -1081,13 +822,7 @@
       "The Roman Empire and the Islamic Caliphate, unlike the Mongol Empire, had well-developed legal codes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The Mongol Empire was indeed known for its conquest and military might, but it also had a sophisticated legal and administrative system known as the Yassa.\n4. FALSE [correction]: The Mongol Empire did have a written legal code called the Yassa, which was a comprehensive law code created by Genghis Khan.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 1119,
@@ -1102,13 +837,7 @@
       "The October Revolution led to the establishment of the Soviet Union."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: It was Germany, not Finland, that helped Lenin return from exile during the July Days.\n2. TRUE\n3. FALSE [correction]: It was not the Finnish Social Democratic Party that offered Lenin assistance; it was the German government that facilitated his return to Russia.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 1168,
@@ -1123,13 +852,7 @@
       "Long-term use of high-dose aspirin can increase the risk of bleeding in the brain and other serious side effects."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1284,
@@ -1144,13 +867,7 @@
       "The standard time system proposed by the American Railroad Union is still in use across the United States and has been adopted by many other countries around the world."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The American Railroad Union did not institute standard time, it was the railroads in general that coordinated to establish standard time.\n2. FALSE [correction]: The American Railway Union was not formed in 1877, it was formed in 1893.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 1297,
@@ -1165,13 +882,7 @@
       "The grouping of photoreceptors plays a role in object recognition in hawkmoths."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1343,
@@ -1186,13 +897,7 @@
       "Cubic spatulae would be more versatile than spherical spatulae."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 1374,
@@ -1207,13 +912,7 @@
       "The uncolored zone does not contain any dye molecules waiting to be activated."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1406,
@@ -1228,13 +927,7 @@
       "The other 111 Justices in U.S. history have been men."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: As of 2023, there have been 116 Supreme Court Justices in the United States.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: As of 2023, Ruth Bader Ginsburg has passed away, Sonia Sotomayor, Elena Kagan, and Ketanji Brown Jackson were serving on the court.\n5. FALSE [correction]: The other Justices in U.S. history have not all been men; there have been 5 female Justices in U.S. history, including Sandra Day O'Connor and Amy Coney Barrett.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "false"]
   },
   {
     "id": 1430,
@@ -1249,13 +942,7 @@
       "Oil and vinegar are immiscible liquids, which means they do not mix together and will always separate from each other."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Filtration, centrifugation, and chromatography are physical methods that can be used to separate sand and salt.\n4. FALSE [correction]: A mixture of sugar and water is a homogeneous solution that can be separated by chemical methods such as distillation.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 1455,
@@ -1312,13 +999,7 @@
       "Pierre Bouguer and James Bradley made more accurate measurements of the distance to the sun using improved telescopes and instruments in the 18th century."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. FALSE [correction]: Galileo Galilei did not make the first recorded attempt to measure the distance to the sun using a telescope in 1610. This attempt was made by Giovanni Cassini in 1672.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "false", "unknown", "true"]
   },
   {
     "id": 1531,
@@ -1333,13 +1014,7 @@
       "The action of winding up a clock will allow the clock to keep time."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1533,
@@ -1354,13 +1029,7 @@
       "Therefore, it would take approximately 187.5 joules to raise the metal weights in a grandfather clock 0.75 meters."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The formula J = F x d is used to calculate work done, not specifically joules required to raise an object. Joules are a unit of work or energy, but the formula can be used in various contexts.\n2. UNKNOWN (without the context of the problem or scenario, it's unclear if 250 newtons is the correct force)\n3. UNKNOWN (without the context of the problem or scenario, it's unclear if 0.75 meters is the correct distance)\n4. TRUE (assuming the values for F and d are correct, the math is correct: 250 N x 0.75 m = 187.5 joules)\n5. TRUE (assuming the values for F and d are correct and the formula is being applied in the correct context)",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "unknown",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "unknown", "unknown", "true", "true"]
   },
   {
     "id": 1534,
@@ -1374,12 +1043,7 @@
       "The actual number of grandfather clocks that can be powered may vary depending on the specific models and their power consumption."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: A grandfather clock is typically powered by mechanical energy, not electricity, so it does not use watts of power in the same way a lightbulb does.\n3. FALSE [correction]: Since a grandfather clock is not powered by electricity in watts, this comparison is not accurate.\n4. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "unknown"]
   },
   {
     "id": 1550,
@@ -1394,13 +1058,7 @@
       "Topical administration delivers the drug directly to the skin or mucous membranes, bypassing the liver."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Intramuscular injections do not bypass the liver. The drug still goes through the liver after being absorbed into the bloodstream.\n3. FALSE [correction]: Subcutaneous injections do not bypass the liver. The drug is absorbed into the bloodstream through the skin and then processed by the liver.\n4. TRUE\n5. FALSE [correction]: Topical administration does not necessarily bypass the liver. Drugs applied to the skin or mucous membranes may still be absorbed into the bloodstream and processed by the liver.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "false"]
   },
   {
     "id": 1558,
@@ -1415,13 +1073,7 @@
       "In atomic clocks, the cesium atoms are excited to a higher energy level and then allowed to decay back to their ground state, emitting a photon."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The time it takes for the cesium atoms to complete one vibration cycle is used to measure time in GPS atomic clocks, not the decay back to their ground state.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 1599,
@@ -1435,12 +1087,7 @@
       "If you start with a piece of paper that is 1 cm thick, and you make 3 folds, the thickness of the paper would be 4 cm."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The thickness of the paper after x folds can be represented as 2^x, not 2x.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: If you start with a piece of paper that is 1 cm thick, and you make 3 folds, the thickness of the paper would be 2^3 = 8 cm, not 4 cm.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false"]
   },
   {
     "id": 1601,
@@ -1455,13 +1102,7 @@
       "The total thickness of a paper folded ten times would be approximately 20 mm."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: If we fold a paper ten times, it would be approximately 102.4 mm thick (assuming the paper doubles in thickness with each fold).\n4. FALSE [correction]: As we fold the paper, the layers will not overlap but will stack on top of each other, increasing the thickness.\n5. FALSE [correction]: The total thickness of a paper folded ten times would be approximately 102.4 mm, not 20 mm.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "false"]
   },
   {
     "id": 1603,
@@ -1474,11 +1115,7 @@
       "It would take approximately 341.5 folds of a standard 8.5 x 11-inch piece of paper to reach the height of the Empire State Building."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: It is physically impossible to fold a standard piece of paper in half more than 7 to 8 times, and the number of folds needed to reach the height of the Empire State Building would be exponentially higher than 341.5 folds.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false"]
   },
   {
     "id": 1615,
@@ -1492,12 +1129,7 @@
       "The fifth number within a fifth group of twelve is 31."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The third number within a third group of twelve is 26.\n2. TRUE\n3. FALSE [correction]: To find the fifth number within a fifth group of twelve, the number 4 is added to the fourth number of the fifth group.\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true"]
   },
   {
     "id": 1660,
@@ -1512,13 +1144,7 @@
       "After hatching, the squid go through a series of developmental stages, including a planktonic larval stage, before eventually settling on the ocean floor and growing into adults."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Black-eyed squid is also known as Histioteuthis heteropsis.\n2. TRUE\n3. FALSE [correction]: Female black-eyed squids do not guard their eggs after laying them.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 1761,
@@ -1533,13 +1159,7 @@
       "In roots, phytochromes are located in the root hair cells."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Phytochromes are not embedded in the thylakoid membranes of chloroplasts; they are located in the cytoplasm and nucleus of plant cells.\n4. UNKNOWN\n5. FALSE [correction]: Phytochromes are not located specifically in the root hair cells; they are found throughout the root tissue in various cells.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "false"]
   },
   {
     "id": 1858,
@@ -1554,13 +1174,7 @@
       "None of the Bridges of Königsberg remained immediately after World War II."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1860,
@@ -1575,13 +1189,7 @@
       "Differential geometry has applications in physics, engineering, and computer science."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The \"geometry of position\" is currently known as topology.\n2. TRUE\n3. FALSE [correction]: The term \"geometry of position\" was coined by August Ferdinand Möbius in the 19th century.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 1862,
@@ -1595,12 +1203,7 @@
       "The capacity assigned to each edge in the graph is 1."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "true", "unknown"]
   },
   {
     "id": 1964,
@@ -1615,13 +1218,7 @@
       "Counterfeit detection pens can produce a yellow or orange color when applied to fake currency."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Counterfeit detection pens usually contain iodine.\n2. FALSE [correction]: There is no common use of lead dioxide in counterfeit detection pens.\n3. TRUE\n4. FALSE [correction]: Counterfeit detection pens typically produce a dark mark (usually black or brown) when applied to fake currency.\n5. FALSE [correction]: Counterfeit detection pens typically produce no color change or a light yellow mark when applied to genuine currency.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "false"]
   },
   {
     "id": 1989,
@@ -1635,12 +1232,7 @@
       "Lithium niobate (LN) is a crystalline material used as a piezoelectric material."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true"]
   },
   {
     "id": 2002,
@@ -1653,11 +1245,7 @@
       "Lesser asked \"What is the main message you want to convey?\" to structure the conversation."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "unknown"]
   },
   {
     "id": 2025,
@@ -1701,13 +1289,7 @@
       "Exposure to lead can cause developmental delays, learning disabilities, and organ damage."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2123,
@@ -1722,13 +1304,7 @@
       "In the ideal gas law, T represents the temperature of the gas in Kelvin."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2143,
@@ -1743,13 +1319,7 @@
       "Edmond Becquerel also contributed to the understanding of light-induced changes in silver compounds and developed a theory of photochemical reactions."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Johann Wilhelm Ritter discovered the phenomenon of light-induced changes in the appearance of certain silver compounds.\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "unknown", "true"]
   },
   {
     "id": 2144,
@@ -1764,13 +1334,7 @@
       "The Photographic Society of America (PSA) was established in the 1930s as a professional organization for photographers."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The Public Works of Art Project (PWAP) commissioned artists to create works of art for public buildings and spaces, but it did not focus specifically on photographs.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2147,
@@ -1805,12 +1369,7 @@
       "Gestures and body language were an important part of stagecraft in Shakespeare's time."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "unknown", "true"]
   },
   {
     "id": 2226,
@@ -1825,13 +1384,7 @@
       "Studies of individuals with brain damage or lesions have provided support for object-based vision."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The scientist credited with proposing the idea of object-based vision is David Marr.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2234,
@@ -1846,13 +1399,7 @@
       "Cantor's theory of infinite sequences has been used to develop secure encryption methods like the Diffie-Hellman key exchange and the RSA algorithm."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Cantor's work on set theory has influenced the development of the mathematical foundations of computer science, but it is not directly used for developing sorting and searching algorithms.\n4. FALSE [correction]: The phrase \"Cantorian paradise\" refers to Cantor's work on transfinite numbers and the concept of infinity, not specifically to computer science.\n5. FALSE [correction]: Cantor's theory of infinite sequences has had an impact on the field of mathematics, but it is not directly used to develop encryption methods like the Diffie-Hellman key exchange or the RSA algorithm. These methods are based on concepts from number theory and abstract algebra.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "false"]
   },
   {
     "id": 2298,
@@ -1867,13 +1414,7 @@
       "Prizes dispensed by claw machines in the early days included small toys or trinkets such as stuffed animals, keychains, or figurines."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Claw machines were invented much earlier, with early versions appearing in the late 19th century and becoming popular in the early 20th century.\n2. FALSE [correction]: The first known patent for a claw machine was filed in 1893 by William Bartlett, an American inventor, not a Japanese company called Kpek.\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "unknown", "true", "true"]
   },
   {
     "id": 2330,
@@ -1887,12 +1428,7 @@
       "The outermost shell of a lawrencium atom has 7 electrons."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The electron configuration of lawrencium is [Rn] 5f14 7s2 7p1.\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true"]
   },
   {
     "id": 2345,
@@ -1914,12 +1450,7 @@
       "James Irwin, John Young, and Russell Schweickart each individually spent 120 hours in space."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 2434,
@@ -1934,13 +1465,7 @@
       "Transpiration is the process of water molecules moving from plant tissue into the air through stomata, creating a concentration gradient."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Concentration gradients are found in many systems on earth and throughout the universe, but not necessarily all systems.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2435,
@@ -1955,13 +1480,7 @@
       "A higher concentration of ions at one end of a medium can create a higher electric potential at that end, resulting in voltage."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: An electric potential difference created by a concentration gradient is called an electrochemical potential or membrane potential, not voltage.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2472,
@@ -1976,13 +1495,7 @@
       "Meitnerium is not found naturally on Earth and has only been produced in very small quantities."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Another method to produce meitnerium is by fusing iron (26) and bismuth (83) atoms at high temperatures and pressures.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2483,
@@ -2025,12 +1538,7 @@
       "The chlorine atoms in Mo2Cl84- are bonded to the molybdenum atoms through ionic bonds."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The two molybdenum atoms in Mo2Cl84- are bonded through a quadruple bond, not a metallic bond.\n3. FALSE [correction]: In a metallic bond, atoms do not share specific electrons in the valence shell, rather, electrons flow freely among a lattice of metal atoms.\n4. FALSE [correction]: The chlorine atoms in Mo2Cl84- are bonded to the molybdenum atoms through covalent bonds, not ionic bonds.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false"]
   },
   {
     "id": 2531,
@@ -2043,11 +1551,7 @@
       "An ornithologist is a person who studies or speaks about birds."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The word \"ornithologist\" comes from the Greek words \"ornis\" meaning \"bird\" and \"logos\" meaning \"word\" or \"speech\".\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true"]
   },
   {
     "id": 2546,
@@ -2062,13 +1566,7 @@
       "Symmetry can be practiced by drawing a line down the center of an even shape and replicating the shape on the other side."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Odd shapes do not necessarily have one side that is different; an odd shape could refer to a shape with an odd number of sides.\n3. TRUE\n4. FALSE [correction]: A triangle is not considered an odd shape because one side is shorter; it could be an odd shape if it has three sides which is an odd number.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 2608,
@@ -2079,9 +1577,7 @@
       "An atom of neodymium has 6 electrons orbiting around its nucleus."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: An atom of neodymium has 60 electrons orbiting around its nucleus.",
-    "llama-2-13b-chat-hf_judge": [
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false"]
   },
   {
     "id": 2655,
@@ -2103,12 +1599,7 @@
       "Iron filings can be attracted to a magnet and form a pattern that demonstrates the interaction of magnetic fields with magnetic materials."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true"]
   },
   {
     "id": 2696,
@@ -2123,13 +1614,7 @@
       "Einstein proposed the photoelectric effect, which explained the behavior of electrons emitted from a metal surface when exposed to light."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2700,
@@ -2144,13 +1629,7 @@
       "Yellow-eyed Penguin is listed as Endangered by the IUCN."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Snares Penguin is listed as Vulnerable by the IUCN.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2722,
@@ -2180,12 +1659,7 @@
       "The approximate area of the circle created in the video is 91.7 cm^2."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The approximate area of the circle created in the video is 86.59 cm^2 (using the given radius and formula: Area = π * (5.25 cm)^2).",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "false"]
   },
   {
     "id": 2726,
@@ -2198,11 +1672,7 @@
       "After translation, the new coordinates of point p are (8,3)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "true"]
   },
   {
     "id": 2728,
@@ -2216,12 +1686,7 @@
       "Using the midpoint formula, the coordinates of point B are determined to be (6,4)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE\n4. FALSE [correction]: Using the midpoint formula and assuming that the coordinates of point A are correct, the coordinates of point B are determined to be (9,10) since the midpoint coordinates are the averages of the coordinates of points A and B.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "true", "false"]
   },
   {
     "id": 2763,
@@ -2236,13 +1701,7 @@
       "A population pyramid does not provide information about urbanization trends within a population."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: A population pyramid can provide insights into migration patterns, as changes in the age and sex structure of a population may reflect migration trends.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 2770,
@@ -2257,13 +1716,7 @@
       "The term \"potash\" has been used for centuries to describe nutrient-rich ash from burned garden waste."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The term \"potash\" is derived from the Dutch word \"potaschen\".\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2771,
@@ -2278,13 +1731,7 @@
       "An orange contains approximately 137 milligrams of potassium."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: An apple contains approximately 195 milligrams of potassium.\n5. FALSE [correction]: An orange contains approximately 237 milligrams of potassium.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "false", "false"]
   },
   {
     "id": 2816,
@@ -2299,13 +1746,7 @@
       "The second version should be tested with users and iterated upon based on their feedback."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2878,
@@ -2320,13 +1761,7 @@
       "After pruning, Feynman used \"reductionism\" to further reduce the number of combinations."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The typical length of a protein can widely vary, with some consisting of fewer than 100 amino acids and others much more, even several thousand.\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "unknown"]
   },
   {
     "id": 2879,
@@ -2341,13 +1776,7 @@
       "Samarium can be used in the production of high-strength magnets and in the development of advanced ceramics and composites."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Samarium is a paramagnetic material at room temperature and becomes ferromagnetic only at cryogenic temperatures.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "true"]
   },
   {
     "id": 2885,
@@ -2362,13 +1791,7 @@
       "Both scandium and boron have a high ionization energy."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Scandium and boron do not exhibit similar chemical properties. \n2. FALSE [correction]: Mendeleev did not place scandium and boron close together based on their chemical similarities; scandium was actually not discovered during Mendeleev’s time.\n3. TRUE\n4. FALSE [correction]: Only scandium belongs to the \"d-block\" or \"transition metals\" group in the periodic table; boron belongs to the \"p-block\".\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "true"]
   },
   {
     "id": 2900,
@@ -2404,13 +1827,7 @@
       "The phrase \"Give someone the cold shoulder\" is not found in Shakespeare's works."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The phrase \"Give someone the cold shoulder\" is believed to have originated from Sir Walter Scott's work, not Shakespeare's.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2991,
@@ -2433,13 +1850,7 @@
       "Adding sugar is not a reliable way to make food look more appealing."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Adding sugar can extend the shelf life of food by acting as a preservative.\n2. FALSE [correction]: Sugar can contribute to improving the texture of food, making it softer or giving it a more desirable consistency.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Adding sugar can make food look more appealing by enhancing its color and giving it a glossy appearance.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "false"]
   },
   {
     "id": 3026,
@@ -2454,13 +1865,7 @@
       "The nucleosynthesis of stars through the s-process is responsible for the creation of many heavy elements, including tantalum."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. FALSE [correction]: The most abundant isotope of tantalum in nature is tantalum-181 (Ta-181).\n4. FALSE [correction]: Tantalum-181 (Ta-181) makes up about 99.9% of all naturally occurring tantalum.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "false", "false", "true"]
   },
   {
     "id": 3033,
@@ -2475,13 +1880,7 @@
       "Technetium-98 (Tc-98) has a half-life of 18,000 years."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Technetium-99 (Tc-99) has a half-life of approximately 211,100 years.\n4. TRUE\n5. FALSE [correction]: Technetium-98 (Tc-98) has a half-life of 4.2 million years.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 3058,
@@ -2504,13 +1903,7 @@
       "Over 120,000 Japanese Americans were imprisoned in internment camps by the US government during World War II."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Harry Akune served as an interrogator in the Military Intelligence Service, not as a second lieutenant in the 442nd Infantry Regiment.\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 3064,
@@ -2533,13 +1926,7 @@
       "A neutron has a mass of approximately 1.67493403 × 10^-27 kilograms and a size of approximately 1.20 × 10^-18 meters in diameter."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The size of an electron is not well-defined as it is considered a point particle with no measurable size.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3137,
@@ -2554,13 +1941,7 @@
       "Fireflies produce light through chemiluminescence, which does not require oxygen."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Fireflies produce light through chemiluminescence, which does require oxygen.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3177,
@@ -2575,13 +1956,7 @@
       "Many scientists and researchers today are working to develop alternative methods that do not involve the use of live animals."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Phineas Gage incident was not an experiment, but an accidental brain injury case study from which psychological insights were drawn.\n2. FALSE [correction]: The case did not involve a live rodent; Phineas Gage was a human being who survived a severe brain injury.\n3. FALSE [correction]: The incident involved an iron rod being driven through Gage's skull, not a deliberate drilling into the skull to study the brain.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true", "true"]
   },
   {
     "id": 3210,
@@ -2596,13 +1971,7 @@
       "Diderot did not criticize the arts or literature in the Encyclopedia."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Denis Diderot did criticize the Catholic Church and religion in general in the Encyclopedia.\n3. FALSE [correction]: Denis Diderot did criticize the monarchy and the French government in the Encyclopedia.\n4. FALSE [correction]: Denis Diderot did criticize the scientific establishment and traditional authority figures in the Encyclopedia.\n5. FALSE [correction]: Denis Diderot did criticize the arts and literature in the Encyclopedia.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "false"]
   },
   {
     "id": 3261,
@@ -2617,13 +1986,7 @@
       "Water-based inks were introduced in the 19th century as an alternative to oil-based inks for the printing process."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3287,
@@ -2638,13 +2001,7 @@
       "Tunisia has produced the remains of a Spinosaurus-like dinosaur."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3366,
@@ -2659,13 +2016,7 @@
       "Some particles, like the top quark, interact with the Higgs field similarly to how a tax collector might interact with a tax collection agency."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 3369,
@@ -2680,13 +2031,7 @@
       "Congress established the First Bank of the United States in 1791."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3380,
@@ -2700,12 +2045,7 @@
       "The International Date Line runs through the middle of the Pacific Ocean."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: There are 24 time zones on land.\n2. FALSE [correction]: The earliest and latest time zones are 27 hours apart.\n3. FALSE [correction]: Any given calendar date exists at some point on the globe for 48 hours.\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true"]
   },
   {
     "id": 3389,
@@ -2720,13 +2060,7 @@
       "The invitation process can take several weeks to several months."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Hermitage Museum in St. Petersburg, Russia does not require written permission to enter; it is open to the public with the purchase of a ticket.\n2. TRUE\n3. FALSE [correction]: Foreign visitors do not need to apply for an \"invitation\" to visit the Hermitage Museum; they can purchase a ticket.\n4. FALSE [correction]: Visitors do not need to submit any invitation application in advance as tickets can be purchased on-site or online.\n5. FALSE [correction]: There is no invitation process for visiting the Hermitage Museum; tickets can be purchased without a lengthy waiting period.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "false"]
   },
   {
     "id": 3411,
@@ -2741,13 +2075,7 @@
       "Tea cultivation and consumption became widespread in Japan during the Muromachi period."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Buddhist monk Eisai brought tea seeds and tea-making techniques to Japan.\n3. FALSE [correction]: The first tea garden in Japan was established by Eisai in the city of Uji, near Kyoto.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 3414,
@@ -2762,13 +2090,7 @@
       "Pascal's mercury barometer demonstrated the concept that pressure is proportional to height."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The mercury barometer designed by Pascal did not have a weight attached to the end of the tube; it consisted of a glass tube filled with mercury and open to the air at one end.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3436,
@@ -2783,13 +2105,7 @@
       "The ISS can accommodate a maximum of six crew members."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The International Space Station (ISS) is approximately 109 meters (357 feet) long.\n2. FALSE [correction]: The ISS has a diameter of around 73 meters (240 feet).\n3. FALSE [correction]: The ISS has a total mass of around 420,000 kilograms (925,000 pounds).\n4. FALSE [correction]: The ISS has a total volume of around 915 cubic meters (32,333 cubic feet).\n5. FALSE [correction]: The ISS can accommodate a maximum of ten crew members.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "false"]
   },
   {
     "id": 3448,
@@ -2804,13 +2120,7 @@
       "The Trailblazers faced challenges such as treacherous terrain, inclement weather, and encounters with wild animals."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "true", "true", "true"]
   },
   {
     "id": 3451,
@@ -2846,13 +2156,7 @@
       "If the number of guests is uncountable, such as the real numbers, there will be no way to pair each guest with a unique room due to the finite number of rooms."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3462,
@@ -2867,13 +2171,7 @@
       "The technique \"molecular symmetry analysis\" is used to determine the number of rotational degrees of freedom for a non-linear molecule."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The number of rotational degrees of freedom for a linear molecule is 2.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3464,
@@ -2888,13 +2186,7 @@
       "Glass is a good conductor of electricity with a high dielectric constant, which means it absorbs microwave radiation and converts it into heat more quickly."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Glass is a poor conductor of electricity with a high dielectric constant, which means it does not absorb microwave radiation and converts it into heat as quickly as other materials.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3472,
@@ -2924,12 +2216,7 @@
       "To represent 995 in base 10, the expression is 995 = 9 x 10^2 + 9 x 10^1 + 5 x 10^0."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true"]
   },
   {
     "id": 3509,
@@ -2944,13 +2231,7 @@
       "The Grand Convention lasted from May to September of 1787."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3519,
@@ -2994,13 +2275,7 @@
       "The rock layers on both sides of the fault initially corresponded in color."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 3573,
@@ -3015,13 +2290,7 @@
       "Dragon is the fifth animal in the Chinese zodiac."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3574,
@@ -3034,11 +2303,7 @@
       "Elephants are not part of the Chinese zodiac."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true"]
   },
   {
     "id": 3575,
@@ -3053,13 +2318,7 @@
       "There are 94 different combinations of animals, elements, and yin/yang energies in the Chinese zodiac."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: There are 60 different combinations of animals, elements, and yin/yang energies in the Chinese zodiac (12 animals, 5 elements, 2 yin/yang energies).",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3608,
@@ -3074,13 +2333,7 @@
       "Ten of the thirteen original states cast votes for president in 1789."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The total number of electoral votes in the 1789 presidential election was 69.\n3. TRUE\n4. FALSE [correction]: Rhode Island did not participate in the 1789 election.\n5. FALSE [correction]: Only 10 of the 13 original states participated, as New York, North Carolina, and Rhode Island did not cast votes.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "false"]
   },
   {
     "id": 3639,
@@ -3094,12 +2347,7 @@
       "The total utility of purchasing three bars of chocolate is 24 units."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. TRUE \n[Explanation]: Assuming the provided utility values for the first three bars of chocolate are correct and based on the principle of diminishing marginal utility, the total utility of purchasing three bars would indeed be the sum of the individual utilities, which is 10 + 8 + 6 = 24 units.",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "unknown", "true"]
   },
   {
     "id": 3642,
@@ -3114,13 +2362,7 @@
       "The \"water and diamonds\" paradox is a fundamental part of Austrian School economics."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3693,
@@ -3135,13 +2377,7 @@
       "Emily Dickinson wrote 25 poems in 1868."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: With a total of 1,800 poems and the majority composed between 1855 and 1868, which is a span of 13 years, the average would be higher than 30 poems per year. The actual average would be approximately 138 poems per year.\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "unknown"]
   },
   {
     "id": 3753,
@@ -3156,13 +2392,7 @@
       "Repetition is used throughout the poem, with phrases like \"the road not taken\" repeated."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. FALSE [correction]: The rhyme scheme of \"The Road Not Taken\" is ABAAB, with the first, third, and fourth lines rhyming and the second and fifth lines rhyming.\n5. FALSE [correction]: The phrase \"the road not taken\" is only repeated at the end of the poem, not throughout.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "true", "false", "false"]
   },
   {
     "id": 3779,
@@ -3177,13 +2407,7 @@
       "Fermented dairy drinks in South East Asia are often made from locally-sourced ingredients, such as coconut milk or buffalo milk."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 3818,
@@ -3219,13 +2443,7 @@
       "The analemma for a planet with no axial tilt and a circular orbit would be a straight line perpendicular to the equator, with the Sun always directly overhead at noon local time."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The length of the day would still vary due to the rotation of the Earth around its own axis, resulting in day and night cycles. However, the length of day and night would be the same throughout the year.\n5. FALSE [correction]: The analemma for a planet with no axial tilt and a circular orbit would be a single point, as the Sun's position in the sky would not change throughout the year.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 3933,
@@ -3240,13 +2458,7 @@
       "The first recorded use of a treadmill was in 1787 in Birmingham, England."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The first patent for a treadmill in the United States was granted on June 23, 1821.\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. FALSE [correction]: The first recorded use of a treadmill was in 1817 at Brixton Prison in London, England.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "unknown",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "unknown", "false"]
   },
   {
     "id": 4001,
@@ -3261,13 +2473,7 @@
       "Plato did not write about Sparta as a major theme or focus in his works."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Plato wrote about Sparta in his dialogue \"The Republic\" where he mentions the Spartan system as an example of a well-ordered society.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 4068,
@@ -3282,13 +2488,7 @@
       "Other physical separation processes for enriching uranium include centrifugation and laser separation."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 4070,
@@ -3303,13 +2503,7 @@
       "The United Nations projects that two-thirds of the global population will live in urban areas by 2050."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: In 1920, approximately 10% of the global population lived in urban areas.\n2. TRUE\n3. FALSE [correction]: If the urban population was 10% of the global population in 1920, the number would be around 180 million people, not 270 million.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 4081,
@@ -3324,13 +2518,7 @@
       "Vanadium(II) chloride is pale yellow, vanadium(III) chloride is deep purple, vanadium(IV) oxide is yellow, and vanadium(V) oxide is bright red."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Vanadium can exhibit an oxidation state of +4 in compounds like vanadium(IV) oxide (VO2); vanadium(IV) chloride (VCl4) does not exist.\n4. TRUE\n5. FALSE [correction]: Vanadium(II) chloride is violet, vanadium(III) chloride is green, vanadium(IV) oxide is blue, and vanadium(V) oxide is orange.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 4136,
@@ -3345,13 +2533,7 @@
       "Joshua Bell's performance included a mix of Bach, Gershwin, and pop songs."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Joshua Bell performed for an audience of passing commuters, not a specific count of 1,000 people, on January 12, 2007, not 2013, at the L'Enfant Plaza Metro Station, not the Metro Station.\n2. TRUE\n3. FALSE [correction]: The concert was held at the L'Enfant Plaza Metro Station, not the Union Station.\n4. FALSE [correction]: There were no tickets for the performance as it was a social experiment conducted by the Washington Post.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "unknown"]
   },
   {
     "id": 4239,
@@ -3364,11 +2546,7 @@
       "Jupiter is the largest planet in our solar system."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true"]
   },
   {
     "id": 4241,
@@ -3404,13 +2582,7 @@
       "One 12 oz can of cola contains around 140-150 calories."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: One slice of white bread contains around 66-77 calories.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 4358,
@@ -3425,13 +2597,7 @@
       "24.7% of individuals with an annual income of $20,000 or less experienced major depressive disorder in the past year."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: In 2019, an estimated 7.8% of adults in the United States suffered from major depressive disorder in the past year.\n2. FALSE [correction]: Approximately 1 in 13 adults in the U.S. experienced a major depressive episode in the past year.\n3. TRUE\n4. FALSE [correction]: 17.0% of individuals aged 18-25 experienced major depressive disorder in the past year.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "true"]
   },
   {
     "id": 4406,
@@ -3446,13 +2612,7 @@
       "\"Op Art\" was a style that used optical illusions to create movement and depth."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 4409,
@@ -3467,13 +2627,7 @@
       "A shift towards a more meat-based diet occurred in the 18th century."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The steam engine was developed in the 18th century, but the railroad was not introduced until the 19th century.\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "unknown"]
   },
   {
     "id": 4420,
@@ -3496,13 +2650,7 @@
       "He designed the interior of the USS United States, a luxury ocean liner launched in 1952."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Raymond Loewy did not design the iconic Coca-Cola bottle, that was designed by the Root Glass Company. However, he did redesign the Coca-Cola logo and contributed to bottle design later on. He did design the Lucky Strike cigarette package and the Pennsylvania Railroad's GG1 locomotive.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 4514,
@@ -3517,13 +2665,7 @@
       "The Ebola virus is primarily transmitted through direct contact with infected bodily fluids, such as blood, sweat, and saliva."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 4681,
@@ -3538,13 +2680,7 @@
       "Humboldt's work in biogeography involved studying the relationships between living organisms and their environments."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Initially, Humboldt studied economics at the University of Frankfurt before changing his field of study.\n3. TRUE\n4. FALSE [correction]: Alexander von Humboldt embarked on a five-year scientific expedition to South America in 1799.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 4730,
@@ -3580,13 +2716,7 @@
       "Perspective transformation stretches the curve in one direction and compresses it in the other."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Shrink-wrap transformation does not generate a new curve of constant width.\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Perspective transformation changes the apparent relative size and position of parts of the curve according to a specific viewpoint, not necessarily stretching and compressing in opposite directions.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "unknown",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "unknown", "true", "true", "false"]
   },
   {
     "id": 4791,
@@ -3601,13 +2731,7 @@
       "Various artists and animators have created diverse interpretations of Felix's design over the years."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: By the 1920s, Felix's design with a black body, white eyes, and signature wide grin became iconic.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 4792,
@@ -3622,13 +2746,7 @@
       "Droopy was created by Tex Avery for MGM in the 1940s."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Popeye was created by E.C. Segar for King Features Syndicate in 1929.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 4797,
@@ -3643,13 +2761,7 @@
       "Voter turnout rates can vary significantly depending on the country, political system, and other factors."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: Cambodia did not have the lowest voter turnout rate at 2.3%; other countries have had lower turnout rates in their elections.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "unknown",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "unknown", "false", "true"]
   },
   {
     "id": 4804,
@@ -3664,13 +2776,7 @@
       "Lifestyle choices such as smoking, excessive alcohol consumption, and lack of exercise can contribute to aging."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 4808,
@@ -3685,13 +2791,7 @@
       "Arctic glass sponges' growth rates were found to be just a few millimeters per year."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Arctic glass sponges have been estimated to live for around 10,000 years.\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "true", "true"]
   },
   {
     "id": 4878,
@@ -3706,13 +2806,7 @@
       "Some people in rural and remote areas of Australia may have limited access to healthcare services."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 4926,
@@ -3734,12 +2828,7 @@
       "Hydrogen atoms are bonded to the oxygen atoms at the corners of the squares in the ice crystal structure."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Each ice crystal has six hexagonal faces arranged in a repeating pattern.\n3. FALSE [correction]: The faces of an ice crystal are made up of a hexagonal grid of oxygen atoms.\n4. FALSE [correction]: Hydrogen atoms are bonded to the oxygen atoms, but not necessarily at the corners of the hexagons in the ice crystal structure. They are arranged in a way that each oxygen atom is bonded to two hydrogen atoms in a bent molecular shape, forming a network of interconnected water molecules.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false"]
   },
   {
     "id": 4942,
@@ -3754,13 +2843,7 @@
       "The 2D model does not capture the three-dimensional nature of the molecule."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: In the hexagonal crystal structure of ice, each oxygen atom is surrounded by four other oxygen atoms at the corners of a tetrahedron, with two hydrogen atoms covalently bonded and two hydrogen atoms hydrogen-bonded to these oxygen atoms.\n2. FALSE [correction]: In the hexagonal crystal structure of ice, each hydrogen atom is covalently bonded to one oxygen atom and hydrogen-bonded to another oxygen atom, not surrounded by two oxygen atoms.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 5034,
@@ -3775,13 +2858,7 @@
       "The silent \"p\" in \"psalm\" has been present since the word's origin in Greek."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The word \"bass\" does not contain a silent letter \"a.\" The \"ss\" is pronounced as a single \"s\" sound, but the \"a\" is vocalized.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 5045,
@@ -3796,13 +2873,7 @@
       "People with autism spectrum disorder are less likely to exhibit contagious yawning."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The social contagion theory describes contagious yawning as a 'social or learned' behavior, not a 'reflex' action.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 5066,
@@ -3817,13 +2888,7 @@
       "A juvenile great white shark named \"Jessie\" lived for 26 years at the National Aquarium in Baltimore, Maryland."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The record for the longest great white shark survival in captivity is not held by \"Deep Blue\" and is much shorter than 18 years.\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: If statement 1 is false, then Deep Blue would not have lived for 18 years and 4 months in captivity.\n5. FALSE [correction]: There is no record of a great white shark named \"Jessie\" living for 26 years in captivity; the longest a great white shark has been kept in captivity is 198 days.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "false", "false"]
   },
   {
     "id": 5083,
@@ -3838,13 +2903,7 @@
       "The 2010 film \"Scott Pilgrim vs. the World\" reimagines the character of Macbeth as a video game villain."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Orson Welles directed a film adaptation of \"Macbeth\" in 1948, but it was not specifically a film noir version.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: There is no known musical titled \"Macbeth: A Musical Tragedy\" featuring music by Lee Holdridge and lyrics by Tim Rice. \n5. FALSE [correction]: \"Scott Pilgrim vs. the World\" does not reimagine the character of Macbeth as a video game villain; it is a separate story unrelated to \"Macbeth.\"",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "false"]
   },
   {
     "id": 5118,
@@ -3859,13 +2918,7 @@
       "The modern metric system, adopted by the French government in 1791, is based on the system proposed by the Académie des Sciences."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The earliest advocate for a uniform measuring system was Charlemagne.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The Académie des Sciences was led by Jean-Baptiste Colbert, not Pierre Fermat.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "true"]
   },
   {
     "id": 5135,
@@ -3887,12 +2940,7 @@
       "The calculation assumes that the TV has a constant aspect ratio throughout the screen."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: A standard 50-inch TV is measured diagonally, not by height. The height would be less than 50 inches.\n3. UNKNOWN\n4. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "false", "unknown", "true"]
   },
   {
     "id": 5173,

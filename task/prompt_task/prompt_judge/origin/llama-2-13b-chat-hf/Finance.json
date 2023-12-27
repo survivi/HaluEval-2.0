@@ -12,13 +12,7 @@
       "If a wife's business is considered a passive activity, she may only be able to deduct the loss against passive income, such as rental income or investment income."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: In the United States, a wife's business losses can be used to offset both her own income and her husband's income on a joint tax return.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 63,
@@ -33,13 +27,7 @@
       "Accepting gold as payment could be beneficial in some situations, such as selling high-ticket items or luxury goods."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Gold is a widely accepted form of currency.\n2. FALSE [correction]: Gold is easily divisible into smaller units.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 66,
@@ -54,13 +42,7 @@
       "The tax year in which the moving expenses were incurred isn't always the year of the actual move."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: To calculate the taxable amount, the moving expenses amount is subtracted from the reimbursement amount, not the other way around.\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "unknown"]
   },
   {
     "id": 117,
@@ -75,13 +57,7 @@
       "If you do not take the 50% SE deduction, the full amount of business expenses can be deducted from your self-employment income."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: If you take the 50% SE deduction, you can still deduct all of your business expenses; the 50% SE deduction refers to deducting half of the self-employment tax as a business expense, not limiting the deduction of business expenses.\n4. FALSE [correction]: If you opt for the 50% SE deduction and have $100,000 in business expenses, you can deduct the full $100,000 as a business expense in addition to the 50% SE deduction.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 141,
@@ -96,13 +72,7 @@
       "Some bonds may be privately placed and not publicly traded."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 145,
@@ -117,13 +87,7 @@
       "The holding period is calculated by subtracting the date the stock was purchased from the date the dividend was paid."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The cost basis of the stock is the amount paid for the stock, plus any commissions or fees, plus any reinvested dividends.\n5. FALSE [correction]: The holding period is calculated by subtracting the date the stock was purchased from the date the stock was sold.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 158,
@@ -138,13 +102,7 @@
       "To resolve the issue, one may need to review accounting records, adjust the distribution, infuse additional capital, or seek professional advice."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 191,
@@ -159,13 +117,7 @@
       "It may be possible to deduct lawyer fees as a business expense on a tax return if they were paid as part of a settlement or legal dispute."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: A Form 1099-NEC is issued to report payment of $600 or more, not less.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 224,
@@ -180,13 +132,7 @@
       "The specific tax implications of shared income will depend on the nature of the income and the tax laws of the jurisdiction in which the income is earned."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Shared income is not the correct term; the various types of income listed can be categorized as personal income, with specific types like passive income, portfolio income, etc.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 265,
@@ -201,13 +147,7 @@
       "If you have received income from multiple sources, you may need to complete additional schedules or forms to report that income."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: As of the 2020 tax year, \"other income\" or \"miscellaneous income\" is typically reported on Schedule 1 (Form 1040), Line 8.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 268,
@@ -222,13 +162,7 @@
       "Financial institutions are required to retain records related to financial transactions for at least five years after the transaction is completed."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Employers in the United States are required to retain Form I-9, which is an employment eligibility verification form, for at least three years after the date of hire or one year after the employee's termination date, whichever is later.\n3. TRUE\n4. FALSE [correction]: Real estate agents and brokers are generally required to retain records related to real estate transactions for a minimum of three years, but some states may have longer retention requirements.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 270,
@@ -243,13 +177,7 @@
       "After submitting the HST Credit claim form, one can expect a refund cheque if the claim is approved."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE\n4. FALSE [correction]: The HST credit is a fixed amount, not a percentage of eligible expenses.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "unknown",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "unknown", "true", "false", "true"]
   },
   {
     "id": 279,
@@ -264,13 +192,7 @@
       "Expenses related to bank accounts that may be tax deductible in the UK include interest paid on loans or mortgages."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: In the UK, some bank charges can be considered an expense and may be tax deductible if they are incurred wholly and exclusively for the purposes of the business.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 293,
@@ -285,13 +207,7 @@
       "With a self-directed IRA, you are responsible for selecting and managing your investments, leading to an increased investment risk."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Self-directed IRAs typically have the same contribution limits as traditional IRAs.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 346,
@@ -306,13 +222,7 @@
       "U.S. citizens or resident aliens with a home office based outside the United States may still be able to deduct certain business expenses related to their home office."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The Home Office Deduction is available to taxpayers who have a qualified home office, regardless of the location.\n3. TRUE\n4. FALSE [correction]: Taxpayers can claim both the Home Office Deduction and the Foreign Earned Income Exclusion if they meet the qualifications for each.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "false", "true"]
   },
   {
     "id": 351,
@@ -327,13 +237,7 @@
       "The IRS requires quarterly estimated tax payments if you expect to owe $1,000 or more in taxes for the year."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 355,
@@ -348,13 +252,7 @@
       "The cash bonus or tip is reported on line 21 on Form 1040."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The cash bonus or tip is reported on line 7 of Form 1040 (for tax years prior to 2018) or on Schedule 1 (Form 1040), line 8 (for tax years 2018 and after).",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 364,
@@ -369,13 +267,7 @@
       "The \"qualified\" buyer requirements are also aimed at preventing the dilution of the company's ownership structure and at ensuring compliance with securities laws."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The company may require recipients of stock options or rights to meet certain vesting or employment conditions before they can exercise these, not necessarily \"qualified\" buyer requirements.\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "unknown"]
   },
   {
     "id": 406,
@@ -390,13 +282,7 @@
       "Catch-up contributions enable individuals over the age of 50 to contribute more to their 401(k) plan."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The maximum contribution limit for a 401(k) plan in 2022 is $20,500.\n2. TRUE\n3. FALSE [correction]: To defer $17,500 to a 401(k) plan, someone earning a salary of $180,000 would need to allocate approximately 9.72% of their salary.\n4. FALSE [correction]: To defer $17,500 to a 401(k) plan, someone over 50 earning a salary of $200,000 would need to allocate approximately 8.75% of their salary without considering the catch-up contributions. With the catch-up contributions, they could contribute up to $27,000 in total, requiring a lower percentage allocation of their salary. \n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "true"]
   },
   {
     "id": 414,
@@ -411,13 +297,7 @@
       "Self-employed individuals can alternatively calculate their deduction for mileage expenses using the actual expenses incurred."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: For the year 2022, the standard mileage rate set by the IRS is 58.5 cents per mile for the first half of the year and 62.5 cents per mile for the second half of the year.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 416,
@@ -432,13 +312,7 @@
       "If the individual's income tax filing status is \"Married Filing Separately,\" their spouse can also contribute to their own Roth IRA."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: For the 2022 tax year, if you are a single filer and your modified adjusted gross income is less than $129,000, you can contribute fully up to $6,000 to a Roth IRA. The limit starts to phase out as your income goes up, and those who earn $144,000 or more cannot contribute at all.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 419,
@@ -453,13 +327,7 @@
       "A net loss for an S Corp can be carried forward to future years and used to offset future income."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE \n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 426,
@@ -474,13 +342,7 @@
       "There are certain limitations and restrictions on the NOL carryback refund, including potential limits based on your income level."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: A net operating loss (NOL) generally does not affect the Social Security and Medicare taxes withheld from paychecks, as these are separate from income taxes.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 434,
@@ -495,13 +357,7 @@
       "Housing expenses may be deducted as Per Diem while traveling away from home, subject to specific IRS rules."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Per Diem deductions generally do not include family travel unless it's for a specific business purpose and meets IRS requirements.\n3. FALSE [correction]: Per Diem rates for meals vary by location and are set by the General Services Administration (GSA), not a fixed amount such as $51.\n4. FALSE [correction]: Family travel expenses are not typically deductible as Per Diem; only the employee's business-related expenses are eligible.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "true"]
   },
   {
     "id": 477,
@@ -516,13 +372,7 @@
       "You don't have to worry about ongoing expenses such as mortgage payments or property taxes if you own a rental property outright."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Even if you own a rental property outright, you still have to worry about ongoing expenses such as property taxes and maintenance costs.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 488,
@@ -537,13 +387,7 @@
       "Chip-enabled cards or mobile payment apps that use biometric authentication offer enhanced security features for credit cards."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 489,
@@ -558,13 +402,7 @@
       "A company might use a return of capital to reward shareholders, reduce tax liability, or improve financial flexibility."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Share Consolidation may lead to a concentration of ownership and loss of fractional shares for shareholders, not dilution of ownership.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 504,
@@ -579,13 +417,7 @@
       "Market volatility can make trading all day particularly challenging."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 505,
@@ -600,13 +432,7 @@
       "If a company revises its estimates of accounts receivable and recognizes a larger or smaller amount as revenue, this may not be reflected in the cash flow statement."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Writing off accounts receivable as uncollectible will reduce the accounts receivable balance on the balance sheet and will also be reflected as a non-cash adjustment in the cash flow statement.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 507,
@@ -621,13 +447,7 @@
       "A low or negative P/E ratio may indicate a lack of profitability if a company is not generating enough revenue to cover its costs."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Rapid earnings growth may lead to a high P/E ratio because the rate of increase in the company's earnings may surpass the rate of increase in its stock price.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 573,
@@ -669,13 +489,7 @@
       "Some employers may have their own 401(k) contribution limits that are lower than the IRS limits."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: For the 2022 tax year, the annual limit on elective deferrals to a 401(k) plan is $20,500.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 619,
@@ -690,13 +504,7 @@
       "Filing for an extension gives an additional six months to file the tax return, until October 15th for individual taxpayers and until January 15th for business taxpayers."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Residents of Washington State do not need to file for a tax extension with the Washington State Department of Revenue because there is no state income tax in Washington.\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: The deadline to file for a federal tax extension is April 15th for individual taxpayers, but business taxpayers have different deadlines depending on their fiscal year. For federal taxes, the extension deadline is typically the same as the original filing deadline.\n5. FALSE [correction]: Filing for a federal tax extension gives an additional six months to file the tax return, until October 15th for individual taxpayers. For business taxpayers, the extension deadline also varies depending on their fiscal year end, but it is generally six months after the original due date.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "unknown",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "unknown", "false", "false"]
   },
   {
     "id": 629,
@@ -711,13 +519,7 @@
       "If unable to bring a parent or adult, a minor could consider purchasing supplies online from a reputable retailer or look into local animal shelters or rescue organizations."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 647,
@@ -732,13 +534,7 @@
       "Some currency series, such as the Euro, have a lifespan of around 10 to 15 years, while others, such as the US dollar, can have a lifespan of around 20 to 30 years."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The Euro has been in circulation since 2002 and has not yet reached a lifespan of 20 years, while the US dollar series can vary in longevity with some series lasting beyond 30 years.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 730,
@@ -753,13 +549,7 @@
       "Homeowners who meet these requirements may be eligible for a homestead exemption of up to $7,500 of the property's appraised value in Tennessee."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The owner must have lived in the property as their primary residence for at least 2 years prior to applying for the exemption.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "unknown", "true"]
   },
   {
     "id": 732,
@@ -774,13 +564,7 @@
       "Credit card companies may offer additional insurance coverage for rental cars, such as liability, theft, collision, and personal accident insurance."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 736,
@@ -795,13 +579,7 @@
       "If used for qualified education expenses, stipends may make you eligible for a tax credit."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "true", "true"]
   },
   {
     "id": 742,
@@ -816,13 +594,7 @@
       "Tax laws and regulations are subject to change, prompting the need for consultation with a tax professional or the IRS."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Self-employed individuals or those with a home office cannot deduct commuting expenses to and from their home office as this is considered a personal expense and not a business expense by the IRS.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "false", "true"]
   },
   {
     "id": 756,
@@ -837,13 +609,7 @@
       "The taxable income of an individual is calculated by adding up all sources of income, including employment income, investment income, and other sources."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The rate for the dividend tax credit varies by province and is not a fixed percentage; also, there is no specific threshold like \"the first $50,000\" for its application.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 767,
@@ -858,13 +624,7 @@
       "Withdrawal fees and inactivity fees may apply to PayPal Premier accounts."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: PayPal Premier was a type of account for casual sellers and no longer exists as the company has since updated its offerings.\n2. TRUE (Based on past information, but the current fee structure may vary.)\n3. TRUE (Based on past information, but the current fee structure and policies may vary.)\n4. TRUE (Based on past information, but the current fee structure and policies may vary.)\n5. TRUE (Based on past information, but the current fee structure and policies may vary.)",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 769,
@@ -879,13 +639,7 @@
       "Some states may have specific laws and regulations regarding payroll tax withholding that may affect the process of voluntary withholding."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Employees cannot choose to pay their own taxes through voluntary withholding. Employers are legally required to withhold taxes from their employees' paychecks.\n3. FALSE [correction]: Form W-4 is used by employees to determine the amount of federal income tax to withhold from their pay, not to opt out of withholding altogether.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 789,
@@ -900,13 +654,7 @@
       "The calculation does not take into account any specific economic or financial factors that may have affected the purchasing power of money over the past 15 years."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Using the formula A = P * (1 + r)^n, the today's price of 15,000 Euros given 15 years ago, assuming an average inflation rate of 1.75% per year, is approximately 23,580.74 Euros.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 798,
@@ -921,13 +669,7 @@
       "Form 1040NR can be used to report income from U.S. sources and to claim deductions and credits, such as the foreign earned income exclusion and the foreign tax credit."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 805,
@@ -942,13 +684,7 @@
       "If the income of a minor from YouTube is more than $6,300, the minor will be considered a \"non-dependent\"."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE [correction]: The parent or legal guardian of a minor with YouTube earnings may need to file a tax return on the minor's behalf, but the specific form used can vary depending on individual circumstances.\n4. FALSE [correction]: The threshold for being considered a dependent for tax purposes can vary and is not specifically tied to earning less than $6,300 from YouTube.\n5. FALSE [correction]: Being considered a \"non-dependent\" for tax purposes depends on various factors, not just earning more than $6,300 from YouTube.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 852,
@@ -963,13 +699,7 @@
       "The PMI premium is calculated based on the LTV ratio and the homebuyer's credit score, and it usually ranges between 0.3% to 1.5% of the original loan amount per year."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 870,
@@ -984,13 +714,7 @@
       "OpenTax is an open-source tax preparation software that is available for Linux. This software supports most tax forms and offers guidance and support and the ability to import data from previous years' tax returns."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: GnuCash is a free, open-source personal finance software that can be used to track income and expenses but it does not support tax forms or preparation of tax returns.\n2. FALSE [correction]: TurboTax is not available for Linux; it's available for Windows and MacOS.\n3. FALSE [correction]: TaxAct is not available for Linux; it's available for Windows.\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true", "unknown"]
   },
   {
     "id": 888,
@@ -1005,13 +729,7 @@
       "Wells Fargo is one of the largest and most profitable banks in the United States, with value investor Warren Buffett investing in the company following the 2008 financial crisis."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Warren Buffett purchased a significant stake in The Coca-Cola Company in the late 1980s when it was already a strong and profitable brand.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 904,
@@ -1026,13 +744,7 @@
       "Credit cards may offer rewards and benefits such as purchase protection, extended warranties, and travel insurance."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 906,
@@ -1047,13 +759,7 @@
       "In 2019, Vivendi launched Vivendi Village, a division focused on managing cultural and entertainment projects, including the Vivendi Village festival."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Vivendi was originally founded in 1853 as Compagnie Générale des Eaux.\n2. FALSE [correction]: The original Vivendi (previously Compagnie Générale des Eaux) had various business activities including water, waste management, construction, and property. It did not initially focus primarily on publishing, music, and video distribution.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Vivendi Village was not launched in 2019; it has been a part of Vivendi since 2013 and encompasses various cultural and entertainment activities, but it does not specifically include a festival named \"Vivendi Village festival.\"",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "false"]
   },
   {
     "id": 925,
@@ -1068,13 +774,7 @@
       "Professional gamblers may be able to deduct their gambling expenses as a business expense with accurate records of their gambling activities and expenses."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Gambling losses can only be deducted up to the amount of gambling winnings reported on a tax return, but the deduction for gambling losses is not subject to the 2% limit for miscellaneous deductions.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 937,
@@ -1089,13 +789,7 @@
       "Online currency exchanges such as TransferWise and OFX provide foreign exchange rate data on their websites."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Central banks, like the Federal Reserve and the Bank of England, do not always provide real-time exchange rate data on their websites. They may provide official exchange rates which can be updated daily or periodically, but not necessarily in real-time.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 966,
@@ -1110,13 +804,7 @@
       "Specific trades deemed acceptable by a brokerage firm may be placed during the blocked period."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 980,
@@ -1131,13 +819,7 @@
       "CashNetUSA is an online lender that allows users to pay bills and schedule recurring payments."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: BillPay is an online bill payment service offered by Wells Fargo, but it may not be free as it could depend on the type of account and services used.\n3. FALSE [correction]: Chase Online Bill Pay is an online bill payment service offered by Chase Bank, but it may not be free as terms and fees can vary based on the user's account and services.\n4. FALSE [correction]: Bank of America Bill Pay is an online bill payment service provided by Bank of America, but it may not be free for all users as fees can depend on the account type and services subscribed to.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "true"]
   },
   {
     "id": 1017,
@@ -1152,13 +834,7 @@
       "Monzo and Starling Bank are UK-based banks that offer digital-only international accounts which can be opened online."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: TransferWise, now known as Wise, is a UK-based fintech company that offers multi-currency accounts that can be opened online, but they are not classified as bank accounts.\n5. FALSE [correction]: Monzo and Starling Bank are UK-based banks that offer digital-only accounts, but they primarily service UK residents and do not specifically offer international accounts that can be opened online by non-UK residents.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 1028,
@@ -1173,13 +849,7 @@
       "It's important to keep tax documents for the specified time frames because they may be requested by the IRS during an audit or for verification."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1094,
@@ -1194,13 +864,7 @@
       "Goodwill is not depreciated, as it is considered an indefinite-lived asset."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1096,
@@ -1215,13 +879,7 @@
       "On eBay, sellers can opt to use offline payments like bank transfer, cash, or check."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1105,
@@ -1236,13 +894,7 @@
       "If you meet these requirements, you can deduct the cost of your share of the premiums for your self-employed business on Schedule C, line 29."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: If you meet these requirements, you can deduct the cost of your share of the premiums for your self-employed health insurance on Form 1040, not Schedule C. The deduction is taken on Schedule 1 (Form 1040), line 16.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1108,
@@ -1257,13 +909,7 @@
       "The terms \"ABA number,\" \"ABN number,\" and \"routing number\" have become interchangeable over time."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The term \"ABN number\" does not refer to routing numbers assigned by the American National Bankers Association; there is no such organization by that name. It should be ABA number.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 1136,
@@ -1278,13 +924,7 @@
       "In accounting for non-monetary taxable benefits, the benefit is recorded as a debit to assets and the associated tax liability is recorded as a credit to expenses."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: In accounting for non-monetary taxable benefits, the benefit is recorded as a debit to expenses and the associated tax liability is recorded as a credit to liabilities.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1152,
@@ -1299,13 +939,7 @@
       "The procedure for a broken black box includes checking the insurance policy, contacting the insurance company, gathering evidence, and seeking legal advice."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: It is typically the responsibility of the insurance company to maintain and replace the black box as needed.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 1161,
@@ -1320,13 +954,7 @@
       "The amount of income that is retained and contributed to equity is known as \"retained earnings\"."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Paying off liabilities does not increase equity; it reduces liabilities and keeps equity unchanged.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 1222,
@@ -1341,13 +969,7 @@
       "The IRS considers parking arrangements provided by an employer to its employees as \"qualified transportation fringe benefits\"."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: To qualify for reimbursement through a transit FSA, the parking lot must be located within a reasonable distance from your workplace, not necessarily your residence.\n3. FALSE [correction]: Qualified parking expenses are defined by the IRS as \"parking fees paid to or for the benefit of an employee for parking on or near the business premises of the employer or on or near a location from which the employee commutes to work.\"\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 1230,
@@ -1362,13 +984,7 @@
       "Randomness in the context of trading means that the outcome of a trade is not influenced by any information or analysis, but is simply the result of chance."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Success in trading can vary and may be influenced by many factors, but it's not necessarily expected to be worse than random chances.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 1252,
@@ -1383,13 +999,7 @@
       "The self-employment tax rate is typically 15.3% of net earnings from self-employment, while the FICA tax rate for an employee is typically 6.2% for Social Security tax and 1.45% for Medicare tax."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1301,
@@ -1404,13 +1014,7 @@
       "Car dealerships are regulated by state and federal laws, and there may be specific requirements and procedures they must follow when it comes to providing contracts and balance information to customers."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1312,
@@ -1425,13 +1029,7 @@
       "Student loans typically have high interest rates and strict repayment terms."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Student loan interest rates and repayment terms can vary widely, and some federal student loans have relatively low-interest rates and flexible repayment options.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1343,
@@ -1446,13 +1044,7 @@
       "For business wire transfers, banks and financial institutions might offer higher limits and lower fees."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: PayPal has a maximum sending limit that varies depending on the user's account level, and TransferWise, now known as Wise, has a maximum sending limit that can vary depending on the currency being used and the recipient's location.\n4. FALSE [correction]: Western Union's maximum sending limit varies depending on several factors, including the destination country and the method of transfer. MoneyGram's maximum sending limit also varies and may depend on the location and method of delivery.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 1385,
@@ -1467,13 +1059,7 @@
       "While BIC and SWIFT codes serve similar purposes, they are not the same; BIC codes are used for both domestic and international transactions, while SWIFT codes are primarily used for international transactions."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: SWIFT codes are either eight or eleven characters long.\n5. FALSE [correction]: BIC and SWIFT codes are actually the same and can be used interchangeably for both domestic and international transactions.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 1398,
@@ -1488,13 +1074,7 @@
       "The CRA uses the date of purchase to the date of sale to determine the length of time an individual held the stock."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The highest tax bracket in Canada does not have a set long-term capital gain tax rate of 26.8%; instead, capital gains are included in taxable income and taxed at the individual's marginal tax rate, and only 50% of the gain is taxable.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 1404,
@@ -1509,13 +1089,7 @@
       "It is recommended to seek legal advice if a person is unsure about their rights and responsibilities in a company takeover."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1409,
@@ -1530,13 +1104,7 @@
       "The initial price pop in an IPO is often driven by a combination of factors such as strong demand, limited supply, and market maker activity."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The initial trading price of Facebook's stock was $38 per share.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 1498,
@@ -1551,13 +1119,7 @@
       "The LTV ratio is calculated as the portion of the loan amount divided by the total property value."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: If the borrower only pays 60% of the loan amount, the Loan To Value (LTV) ratio would not necessarily be 60%, as LTV is calculated by dividing the loan amount by the value of the property, not by what portion of the loan has been paid.\n2. FALSE [correction]: If the borrower only pays 60% of the loan amount, the remaining 40% of the loan amount would still be owed by the borrower, not considered \"not paid\" unless there is a default and forgiveness of the debt.\n3. TRUE\n4. UNKNOWN: The statement is confusing as \"takes\" could imply the borrower accepts 60% of the full available loan amount or \"takes\" could mean the borrower is paying off 60%. Without additional context, the status of the remaining 40% cannot be determined.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "unknown", "true"]
   },
   {
     "id": 1506,
@@ -1572,13 +1134,7 @@
       "The 1 and 2 euro cent coins are also used in countries that use the euro as their official currency, such as Monaco, San Marino, and Vatican City."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The 1 euro cent coin has a diameter of 16.25 mm and a weight of 2.30 grams.\n3. FALSE [correction]: The 2 euro cent coin was introduced in 2002 alongside the other euro coins.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 1515,
@@ -1593,13 +1149,7 @@
       "A retention account set up with an accountant or tax preparer allows freelancers to set aside a portion of earnings to cover taxes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Payment processing services like PayPal do not withhold taxes from each transaction; freelancers are responsible for tracking and paying their own taxes.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 1519,
@@ -1614,13 +1164,7 @@
       "Individuals who are eligible for Medicare but fail to enroll during their IEP may be subject to the late enrollment penalty, even if they are not yet receiving Social Security benefits."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1586,
@@ -1635,13 +1179,7 @@
       "The gain is determined by the difference between the sale price and the carrying value of the equipment."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: When a business sells an asset, the money received from the sale is recorded in the cash (or bank) account, which is also an asset account.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 1591,
@@ -1656,13 +1194,7 @@
       "Homeownership can have significant tax implications for unmarried couples."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Lenders may require both partners to have a good credit score and sufficient income to qualify for a mortgage, but they can also approve a mortgage with only one person on the application.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 1649,
@@ -1677,13 +1209,7 @@
       "A credit builder card is a type of VISA card that is designed for people who are building or rebuilding their credit and is usually linked to a bank account."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: A credit builder card is a type of VISA card that is designed for people who are building or rebuilding their credit and may not necessarily be linked to a bank account. It could be secured by a cash deposit instead.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1655,
@@ -1698,13 +1224,7 @@
       "Credit card companies may also close your account if they detect fraudulent activity or if they need to comply with legal or regulatory requirements."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1748,
@@ -1719,13 +1239,7 @@
       "A general advice is that housing expenses, including mortgage payment, property taxes, and insurance, should not exceed 28% of your gross income."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1761,
@@ -1740,13 +1254,7 @@
       "To ensure that employees receive the maximum match, employers often require contributions to 401(k) plans to be spread evenly throughout the year, a practice known as pro-rata matching."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: While some employers may require contributions to be spread evenly throughout the year for pro-rata matching, this is not a universal practice for ensuring maximum match. Employers have different policies, and some may allow for a lump-sum contribution to receive the full match.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1767,
@@ -1761,13 +1269,7 @@
       "If an employer sets a lower contribution limit than the IRS limit, an employee may still be able to contribute up to the IRS limit by making additional contributions outside of the employer's plan."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: For the 2022 tax year, the IRS limit for 401(k) contributions is $20,500.\n4. FALSE [correction]: Employers can set their own contribution limits for their 401(k) plans but cannot exceed the IRS maximum limit, they can, however, impose lower limits.\n5. FALSE [correction]: If an employer sets a lower contribution limit than the IRS limit, an employee cannot exceed that limit within the employer's plan. Additional contributions beyond the employer's limit would have to be made to an IRA or another retirement account, not the employer's 401(k) plan.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "false"]
   },
   {
     "id": 1774,
@@ -1782,13 +1284,7 @@
       "A higher dollar can make travel more expensive for Canadians, as their currency will have less value in foreign countries."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: A high dollar can lead to lower import costs, which can decrease consumer prices and increase the purchasing power of Canadians.\n4. FALSE [correction]: A high dollar can lead to higher investment returns for investors who hold assets denominated in Canadian dollars due to the increased value of these assets.\n5. FALSE [correction]: A higher dollar can make travel less expensive for Canadians, as their currency will have more value in foreign countries.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "false"]
   },
   {
     "id": 1791,
@@ -1803,13 +1299,7 @@
       "The total amount of gold mined throughout history is estimated to be around 193,000 tonnes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The amount of gold in the world is finite, but it is still possible to create more gold through mining.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 1796,
@@ -1824,13 +1314,7 @@
       "Volvo is considered a mid-cap company, meaning it is not as large as some other publicly traded companies."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Volvo is a private company owned by Zhejiang Geely Holding Group, and it is not listed on the Nasdaq Stockholm exchange and the OMX Nordic exchange.\n2. FALSE [correction]: Since Volvo is not a publicly traded company, it does not have ticker symbols VOLV.B and VOLV.A.\n3. TRUE\n4. FALSE [correction]: As a private company, Volvo is not required to release financial information and report to shareholders in the same way as a public company.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "unknown"]
   },
   {
     "id": 1822,
@@ -1845,13 +1329,7 @@
       "The BA Avios Visa card has an annual fee of £160 and charges interest rates of 18.9% APR on purchases."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The BA Avios Visa credit card is offered by Chase in partnership with British Airways, not Barclays.\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 1851,
@@ -1866,13 +1344,7 @@
       "Utility stocks are considered stable and reliable investments, as they tend to be less volatile than other types of stocks and offer a consistent stream of income."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"Cake and underwear\" is not a common term used to refer to investments. The correct term is \"boring\" stocks.\n2. UNKNOWN\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "unknown",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "unknown", "true", "unknown", "true"]
   },
   {
     "id": 1858,
@@ -1887,13 +1359,7 @@
       "Adopting the U.S. dollar as an official currency would require significant changes to Canada's financial and economic systems."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1941,
@@ -1908,13 +1374,7 @@
       "A falling dollar can increase costs for developers and builders due to an increase in the cost of materials and labor, and can also lead to increased inflation."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: A falling dollar does not directly lead to lower interest rates; interest rates are set by the Federal Reserve and are influenced by various factors, including inflation and economic growth.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 1967,
@@ -1929,13 +1389,7 @@
       "Prior to 1968, the Bahamas used the British West Indies dollar as its currency, which was also divided into 100 cents."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Bahamas uses \"cents\" as fractional monetary units of the Bahamian dollar.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2027,
@@ -1950,13 +1404,7 @@
       "The risk-free rate of return is the rate of return that an investor can earn from an investment that is completely risk-free, such as a U.S. Treasury bond."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2031,
@@ -1971,13 +1419,7 @@
       "The prices of the largest and most heavily traded stocks on the NASDAQ exchange have a greater influence on the index's overall performance."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2061,
@@ -1992,13 +1434,7 @@
       "GnuCash is released under the GNU General Public License (GPL), which allows users to use, modify, and distribute the software."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2080,
@@ -2034,13 +1470,7 @@
       "Yahoo Finance displays a company's market capitalization in the \"Market Cap\" column."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The \"/\" symbol in a ticker symbol is not used to indicate a stock's market capitalization; it is generally used to separate the stock's symbol from its exchange, or in some cases, to represent preferred shares.\n3. FALSE [correction]: The \"^\" symbol in a ticker symbol is not used to indicate a stock's performance relative to a benchmark index; it generally represents an index itself.\n4. FALSE [correction]: Yahoo Finance may use the \"^\" symbol to represent indices, not to show a stock's performance relative to a benchmark index.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "false", "true"]
   },
   {
     "id": 2123,
@@ -2080,13 +1510,7 @@
       "This strategic move by Ford can help the company increase its market share."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 2134,
@@ -2101,13 +1525,7 @@
       "StockCharts is a web-based platform that offers logarithmic charts for individual stocks, ETFs, and mutual funds."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2143,
@@ -2122,13 +1540,7 @@
       "Borrowing against an IRA is generally not a recommended financial strategy."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2145,
@@ -2143,13 +1555,7 @@
       "The DJIA is calculated using a price-weighted methodology, which means that companies with higher stock prices have a greater influence on the index."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2147,
@@ -2164,13 +1570,7 @@
       "In the given example, the resulting calculation shows that you would need to invest $100,000 today to generate a monthly income of $1,000 for the next 20 years, assuming a 5% rate of return."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The correct formula for calculating the lump sum required to generate a desired monthly income is Lump Sum = (Desired Monthly Income) / (Expected Rate of Return / 12) / (1 - (1 + Expected Rate of Return / 12)^(-Number of Months)).\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN without the exact calculation provided.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "unknown"]
   },
   {
     "id": 2148,
@@ -2185,13 +1585,7 @@
       "ExxonMobil may have significant tax liabilities and these are listed as a liability on their balance sheet."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 2169,
@@ -2206,13 +1600,7 @@
       "The repayment terms for a 401(k) loan must be adhered to in order to avoid defaulting on the loan."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2234,
@@ -2227,13 +1615,7 @@
       "Roth IRA or traditional IRA accounts offer tax benefits that can help savings grow faster."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2264,
@@ -2248,13 +1630,7 @@
       "Shorting a call option is considered a high-risk strategy."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The loss when shorting a call option is potentially unlimited as there is no limit to how high the underlying asset's market price can go above the strike price.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2277,
@@ -2269,13 +1645,7 @@
       "Adding PMI to the principal balance can increase the total cost of the mortgage over the long term due to paying interest on the PMI premium over the life of the loan."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2279,
@@ -2290,13 +1660,7 @@
       "One must have a qualified residence to be able to deduct PMI."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Private Mortgage Insurance (PMI) is not considered a form of mortgage interest; it is an additional fee for borrowers who put less than 20% down on a home purchase. It may be tax deductible in certain circumstances.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2285,
@@ -2311,13 +1675,7 @@
       "Calculating the savings from the standard deduction requires knowing your tax filing status and income."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The formula for calculating your mortgage interest deduction is not as simple and straightforward as stated. The actual calculation involves multiplying the interest paid during the year by the taxpayer's marginal tax rate.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2303,
@@ -2332,13 +1690,7 @@
       "The formula to calculate YTM is: YTM = (Face Value / Market Price) ^ (1 / Years to Maturity) - 1."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The formula for YTM is more complex and involves solving for the discount rate that equalizes the present value of all future cash flows (coupon payments and principal repayment) to the current market price of the bond.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2309,
@@ -2353,13 +1705,7 @@
       "The interest charge for the billing cycle is calculated by multiplying the average daily balance by the daily interest rate."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The interest charge for the billing cycle is calculated by multiplying the average daily balance by the daily interest rate and then multiplying that by the number of days in the billing cycle.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2314,
@@ -2374,13 +1720,7 @@
       "Parents can request a free credit report for their child from each of the three major credit bureaus (Experian, TransUnion, and Equifax) once a year through AnnualCreditReport.com."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Opening a savings account for the child does not establish a credit history as it is not a form of credit.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Parents can request a free credit report for themselves but not for their children through AnnualCreditReport.com unless they suspect their child's information has been used fraudulently.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "false"]
   },
   {
     "id": 2321,
@@ -2395,13 +1735,7 @@
       "The timing of the transfer may also be a factor the IRS considers in its assessment."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2322,
@@ -2439,13 +1773,7 @@
       "A straddle is considered a high-risk strategy that requires a significant investment."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: The strategy involves buying a call option and a put option with the same strike price and expiration date for the SAME underlying asset.\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "unknown"]
   },
   {
     "id": 2324,
@@ -2460,13 +1788,7 @@
       "The development of SIPs was influenced by a range of factors, including advances in financial practices and technologies."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The concept of SIPs has been around for longer than the early 2000s, but it's unclear which investment firms first popularized them.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2332,
@@ -2481,13 +1803,7 @@
       "The annual return can be calculated by multiplying the quarterly returns by four."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The beginning price would be the closing price on the first day of the current quarter, not the last day of the previous quarter.\n5. FALSE [correction]: The annual return cannot be accurately calculated by simply multiplying the quarterly returns by four, as this does not account for compounding. The correct approach is to compound the quarterly returns over the four quarters.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 2343,
@@ -2502,13 +1818,7 @@
       "Specialized websites, such as Dividend.com, Dividend Aristocrats, and Dividend.org, track dividend history."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2357,
@@ -2523,13 +1833,7 @@
       "StockTwits is a social media platform for investors and traders to share information and insights on various investment instruments."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2371,
@@ -2544,13 +1848,7 @@
       "The Banque de France offers a \"Carte de Crédit\" service that provides information on an individual's credit history and financial status."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The Banque de France does not offer a \"Carte de Crédit\" service; it provides a service called \"FICP\" (Fichier des Incidents de remboursement des Crédits aux Particuliers) which is a register of personal credit repayment incidents.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2372,
@@ -2565,13 +1863,7 @@
       "The exact repayment amount depends on the credit received and the terms of the original loan."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The First-Time Homebuyers tax credit was available for individuals who purchased a primary residence for the first time between April 8, 2008, and before May 1, 2010.\n2. FALSE [correction]: The credit was worth up to $7,500 for first-time homebuyers who closed on a home between April 8, 2008, and June 30, 2009, and up to $8,000 for those who closed on a home after January 1, 2009, and before May 1, 2010.\n3. TRUE\n4. FALSE [correction]: The repayment of the First-Time Homebuyers tax credit typically will NOT be included in the monthly mortgage payments. The repayment is usually added to the annual federal tax return as additional tax owed.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "true"]
   },
   {
     "id": 2383,
@@ -2586,13 +1878,7 @@
       "Some credit card issuers offer grace periods or special features that can help users avoid interest charges on amounts exceeding their credit limit."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Credit card issuers typically do not charge interest on amounts exceeding your credit limit; instead, they may charge fees for exceeding the limit or decline the transaction.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2390,
@@ -2607,13 +1893,7 @@
       "In NYC, there is a \"universal communication fee\" of $0.10 per transaction that is imposed on all telecommunications services, including repair and maintenance services for cell phones."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The \"universal communication fee\" is not imposed on repair and maintenance services for cell phones. It is a fee that is generally applied to telecommunications services, such as phone and internet services.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2400,
@@ -2628,13 +1908,7 @@
       "It's possible to claim a tax credit of up to $2,500 for the purchase of a car for a dependent's benefit, given the car is used more than 50% of the time for the dependent's benefit."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The IRS does not consider the use of a car as a tax deduction for dependents based strictly on vehicle usage for a dependent's benefit.\n2. FALSE [correction]: To qualify for a tax deduction related to a dependent, various factors come into play such as the dependent's relationship to the taxpayer, whether they are a qualifying child or relative, and other criteria, not just car usage and income limits.\n3. TRUE\n4. FALSE [correction]: Schedule A, Line 23, for \"Interest on qualified education loans\" is unrelated to car usage for a dependent's benefit. A car deduction would generally be reported elsewhere.\n5. FALSE [correction]: Tax credits for the purchase of a car, such as the Electric Vehicle Tax Credit, do not depend on the percentage of time the car is used for a dependent's benefit.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "false", "false"]
   },
   {
     "id": 2411,
@@ -2649,13 +1923,7 @@
       "Vanguard, a mutual fund provider, offers intraday prices for its funds on its website."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Intraday prices for mutual funds are typically not available because mutual funds are priced once at the end of each trading day.\n2. FALSE [correction]: Yahoo Finance does not provide intraday prices for mutual funds as mutual funds are not traded intraday.\n3. FALSE [correction]: Google Finance does not offer intraday prices for mutual funds as mutual funds are not traded intraday.\n4. FALSE [correction]: Morningstar does not provide intraday prices for mutual funds because mutual funds are priced once at the end of each trading day.\n5. FALSE [correction]: Vanguard does not offer intraday prices for its mutual funds on its website as mutual funds are priced once at the end of each trading day.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "false", "false"]
   },
   {
     "id": 2422,
@@ -2670,13 +1938,7 @@
       "The top-performing actively managed funds in any given year are often not the top performers in subsequent years."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2464,
@@ -2691,13 +1953,7 @@
       "Protected-equity loans may have higher fees than equity loans due to the additional protection provided to the borrower."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 2494,
@@ -2712,13 +1968,7 @@
       "Up to $10,000 can be withdrawn from a Roth 401(k) for a first-time home purchase without paying the 10% early withdrawal penalty, provided certain conditions are met."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: There are no income limits on who can contribute to a Roth 401(k), but there are income limits for determining eligibility for tax-free withdrawals for a first-time home purchase.\n4. FALSE [correction]: The account must have been held for at least five years, but the age requirement does not apply to withdrawals for a first-time home purchase.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 2505,
@@ -2733,13 +1983,7 @@
       "There are risks associated with taking out a mortgage, such as interest rate increases and the potential loss of the home if mortgage payments can't be made."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2559,
@@ -2754,13 +1998,7 @@
       "The percentage return on the investment can be determined by dividing the profit by the cost basis and multiplying by 100."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2566,
@@ -2798,13 +2036,7 @@
       "\"Essentials of Investments\" is typically used as a textbook for introductory investments courses."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2616,
@@ -2819,13 +2051,7 @@
       "Institutional investors can contribute to market bubbles by driving up prices and creating excessive speculation."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2654,
@@ -2840,13 +2066,7 @@
       "The US Constitution prohibits states from defaulting on their debts to maintain the integrity of the US bond market and protect the rights of bondholders."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The US Constitution does not grant the federal government the authority to regulate the issuance of debt by states.\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The US Constitution does not explicitly prohibit states from defaulting on their debts, but legal and political mechanisms make it less likely to occur.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "false"]
   },
   {
     "id": 2712,
@@ -2861,13 +2081,7 @@
       "The specific terms of a repurchase agreement can vary depending on the parties involved and the securities being sold."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: In a repurchase agreement, the seller typically does not receive periodic payments; instead, the repurchase price includes the principal amount and any accrued interest.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 2731,
@@ -2882,13 +2096,7 @@
       "In 2015, the Children's Fitness Tax Credit was increased, providing a maximum amount of $1,000 per child, up from $500."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The Canada Universal Child Care Benefit (UCCB) was replaced by the Canada Child Benefit (CCB) as of July 20, 2016.\n2. TRUE\n3. FALSE [correction]: The maximum benefit of the CCB for children under the age of 6 is $6,400 per year and for children aged 6 to 17, it's $5,400 per year.\n4. FALSE [correction]: The UCCB provided a benefit of $160 per month for children under 6 and $60 per month for children aged 6 to 17.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "false", "true"]
   },
   {
     "id": 2747,
@@ -2924,13 +2132,7 @@
       "A credit score can affect the interest rate that one qualifies for when refinancing a loan."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2761,
@@ -2945,13 +2147,7 @@
       "One of the benefits of a bull put spread is limited risk – the most one can lose is the premium received from selling the short put option."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: In a bull put spread, the short put has a higher strike price than the long put.\n4. TRUE\n5. FALSE [correction]: One of the benefits of a bull put spread is limited risk – the most one can lose is the difference between the strike prices minus the premium received from selling the short put option.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 2787,
@@ -2966,13 +2162,7 @@
       "Some credit card companies may have strict policies that prevent the possibility of offering a 0% transaction fee."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2799,
@@ -2987,13 +2177,7 @@
       "The \"paradox of skill\" concept, introduced by economist Michael J. Barclay, suggests that more skilled investors are more likely to underperform the market due to overconfidence and risk-taking."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The \"paradox of skill\" concept was introduced by Michael Mauboussin, not Michael J. Barclay. It suggests that as skill level increases among market participants, luck becomes a more important factor in investment outcomes.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "true", "true", "false"]
   },
   {
     "id": 2806,
@@ -3008,13 +2192,7 @@
       "If a home sale contract does not include a right to terminate, the parties involved are legally bound to complete the sale, unless a valid legal reason to end the contract is present."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2819,
@@ -3029,13 +2207,7 @@
       "As the expiration date of an AAPL option approaches, the time value decreases, making the option less valuable."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2820,
@@ -3050,13 +2222,7 @@
       "The Butterfly Trade Strategy can be used to limit potential losses even if the mid-strike price has already passed."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The Butterfly Trade Strategy is typically not used if the underlying asset's price has already passed the mid-strike price, as it is designed for a neutral or non-volatile market outlook.\n4. FALSE [correction]: The Butterfly Trade Strategy is not used to protect against a potential drop in the underlying asset's price; it is used to profit from a stable price or limited price movement.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 2866,
@@ -3071,13 +2237,7 @@
       "The average annual 1-year return for total stock market index funds is 14.5% (as of 02/28/2023)."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "unknown",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "unknown", "true", "true", "unknown"]
   },
   {
     "id": 2875,
@@ -3092,13 +2252,7 @@
       "The process of getting a refund from the SSA may take several weeks or even months."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: To recover overpayment, necessary documents such as pay stubs showing the excess Social Security taxes withheld, W-2 forms from both employers, and proof of income from both employers are required. Form SSA-1040 is used to request a refund, not SSA-5232.\n3. FALSE [correction]: Form SSA-1040, not SSA-5232, is filed to request a refund of excess Social Security taxes.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "true"]
   },
   {
     "id": 2899,
@@ -3113,13 +2267,7 @@
       "PayPal may charge a fee for automatic payments."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: PayPal does not charge a fee for automatic payments, but the linked bank may charge for electronic funds transfers.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2917,
@@ -3134,13 +2282,7 @@
       "Cross-holding can also have a dilutive effect on market capitalization and create conflicts of interest."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2919,
@@ -3155,13 +2297,7 @@
       "An option's time value is the difference between the option's strike price and the current price of the stock."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: An option's time value is the portion of the option's price that is not determined by the intrinsic value (the difference between the option's strike price and the current price of the underlying asset) but rather by the amount of time until expiration.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2956,
@@ -3176,13 +2312,7 @@
       "The income and resource limits that determine SNAP eligibility may vary by state and household size."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2966,
@@ -3197,13 +2327,7 @@
       "According to the Environmental Protection Agency (EPA), disposable diapers account for over 3 million tons of waste per year in the United States."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: While cloth diapers drastically reduce waste compared to disposable diapers, they still generate waste in the form of water and energy used to wash and sanitize them.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "false", "true"]
   },
   {
     "id": 2982,
@@ -3218,13 +2342,7 @@
       "Some ESPPs have a clawback provision that can result in a negative compensation income."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: If the company's stock price does not increase while holding shares purchased through an ESPP, the compensation income would typically be zero, not negative.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2986,
@@ -3239,13 +2357,7 @@
       "The Securities Transaction Tax (STT) may apply to stock market earnings in India."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Short-term capital gains are gains made on the sale of assets held for one year or less.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 2990,
@@ -3260,13 +2372,7 @@
       "Even when the NYSE is closed, investors can still trade securities on other exchanges or over-the-counter markets."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The New York Stock Exchange (NYSE) has closed on a weekday in the past for reasons such as national mourning, weather events, and technical issues, but not specifically for filing paperwork.\n2. FALSE [correction]: On October 19, 1987, known as \"Black Monday,\" the NYSE experienced a significant market crash, not October 24.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 3002,
@@ -3281,13 +2387,7 @@
       "Any other forms of compensation related to the stock, such as dividends or interest, may also be subject to taxation."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3006,
@@ -3302,13 +2402,7 @@
       "The offering price of an IPO is set by the underwriters based on the company's financial performance and other factors."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3007,
@@ -3323,13 +2417,7 @@
       "The spread fee and the commission fee can lead a trader to lose more than the difference in the stock prices."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Robinhood does not charge fees for buying and selling stocks.\n2. FALSE [correction]: Robinhood does not charge a commission fee for each trade a user makes.\n3. FALSE [correction]: Since Robinhood does not charge a commission fee, the statement about it being a flat rate is also false.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "false", "true", "true"]
   },
   {
     "id": 3016,
@@ -3344,13 +2432,7 @@
       "Not all companies offer DRIPs, and it's important to check for any associated fees or commissions."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3104,
@@ -3365,13 +2447,7 @@
       "The assumed par value is $1,000."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The formula to calculate the dividend is (Dividend Rate / interest Rate) x 100\n2. TRUE\n3. FALSE [correction]: The yield is converted from a decimal to a percentage by multiplying it by 100.\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "unknown", "true"]
   },
   {
     "id": 3107,
@@ -3386,13 +2462,7 @@
       "A tax-loss harvesting strategy may allow allocation of pre-tax money to a specific stock by offsetting gains from other investments with the decline in value of certain investments."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: A brokerage account is typically funded with post-tax dollars, not pre-tax dollars.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Tax-loss harvesting is a strategy used to offset capital gains taxes with losses, not to allocate pre-tax money to a specific stock.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "false"]
   },
   {
     "id": 3114,
@@ -3407,13 +2477,7 @@
       "If a person has both capital gains and capital losses in the same tax year, they need to calculate a \"net capital gain\" by subtracting capital losses from capital gains."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Discounted capital gains are capital gains that are taxed at a lower rate due to meeting certain criteria such as holding the investment for over a year.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3120,
@@ -3428,13 +2492,7 @@
       "The adjusted divisor is then used to calculate the DJIA for future periods."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: When a dividend payment is made, the price of the relevant stock is adjusted downward by the amount of the dividend, but the divisor is adjusted upward to maintain the continuity of the index.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 3141,
@@ -3449,13 +2507,7 @@
       "A protective put can be used as a hedge to offset potential losses in a covered call strategy."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The strike price of the call option should ideally be set at a level that is unlikely to be in the money at expiration to increase the chances of the option expiring worthless and the seller keeping the premium received.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3147,
@@ -3470,13 +2522,7 @@
       "Holding onto ESPP shares exposes the holder to the risk of a dropping stock price or deteriorating company performance."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: ESPP shares may not always provide immediate liquidity as there may be holding periods or other restrictions before they can be sold.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3191,
@@ -3491,13 +2537,7 @@
       "Selling in-the-money calls or puts is another strategy where time value is not considered."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Buying in-the-money calls or puts is one investment strategy where time value is still considered, as it impacts the premium paid for the option.\n5. FALSE [correction]: Selling in-the-money calls or puts is a strategy where time value is considered, as it affects the premium received for selling the option.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 3209,
@@ -3512,13 +2552,7 @@
       "The closing price is another type of price relevant to the S&P 500 index and it is used to determine the index's performance for the day and to calculate the index's returns over time."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3216,
@@ -3533,13 +2567,7 @@
       "Some penny stocks may be traded on the OTC (over-the-counter) market."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: While Robinhood and eToro are trading platforms that may offer penny stocks, they are not peer-to-peer marketplaces.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 3220,
@@ -3554,13 +2582,7 @@
       "If Form 1099-B is not received by March 15th, the recipient should contact the broker or barter exchange to inquire about the status of the form."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The IRS requires that Form 1099-B be provided to recipients by February 15th each year for the previous tax year, however, if February 15 falls on a legal holiday, a Saturday or a Sunday, the deadline is the next business day.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3224,
@@ -3596,13 +2618,7 @@
       "If a sale is considered a wash sale, the basis of the new security purchased will be adjusted to the amount paid for it, plus any commissions or fees."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The wash sale rule does apply to the sale of a security that is part of a tax-deferred retirement account, such as a 401(k) or an IRA.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 3233,
@@ -3617,13 +2633,7 @@
       "Receiving a distribution in the form of cash in lieu of dividend may impact your Required Minimum Distributions (RMDs), as it will be considered a distribution for the purpose of determining your RMDs."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 3234,
@@ -3638,13 +2648,7 @@
       "Increasing the number of authorized shares can increase the liquidity of a company's stock."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Increasing the number of authorized shares does not directly increase the liquidity of a company's stock. Liquidity is influenced by other factors such as trading volume, market demand, and the availability of buyers and sellers.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3247,
@@ -3659,13 +2663,7 @@
       "The net investment income tax (NIIT) or the alternative minimum tax (AMT) may be applicable to capital gains."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: To calculate AGI, capital gains and other taxable income are reported on Form 1040, but the line number may vary depending on the tax year in question.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3253,
@@ -3680,13 +2678,7 @@
       "Other traders can see stop market and stop limit orders on the order book and potentially trade against them."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The correct term is \"stop-limit orders,\" not \"stop market/limit orders.\"\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Stop limit orders are visible on the open market, but stop market orders and regular limit orders are not.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "false", "true"]
   },
   {
     "id": 3261,
@@ -3701,13 +2693,7 @@
       "Past performance is not indicative of future results in the oil market."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 3263,
@@ -3722,13 +2708,7 @@
       "Options have time value, which decreases as the expiration date approaches, making the option less valuable."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Options can have various expiration dates, not just typically the third Friday of the month.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3264,
@@ -3743,13 +2723,7 @@
       "Any fractional shares that result from the conversion of odd lots in a reverse split are typically sold by the company's transfer agent."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: When a company undergoes a reverse split, the ownership structure of the company does not change, but the price of the stock is typically affected.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3280,
@@ -3764,13 +2738,7 @@
       "The Dow divisor is used to adjust the DJIA for changes in the number of its components."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: To calculate the Dow divisor, the sum of the prices of all 30 stocks in the DJIA is used, not the total market value.\n4. FALSE [correction]: The divisor is not calculated by dividing the total market value by the average price; it is adjusted based on stock splits, spin-offs, or similar structural changes to maintain a consistent index value.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 3285,
@@ -3785,13 +2753,7 @@
       "Not hedging a position can increase the potential for losses if the underlying security or market moves in an unfavorable direction."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3288,
@@ -3806,13 +2768,7 @@
       "If there are not enough buyers willing to pay the ask price, but there are more buyers than sellers, the stock may trade at a price between the bid and ask prices."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: When you place a buy order to purchase a security, you are offering to pay the ask price, not the bid price.\n2. TRUE\n3. FALSE [correction]: When a bid price is higher than an ask price, it typically indicates that buyers are willing to pay more than the current asking price, but it does not necessarily mean there are more buyers than sellers.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "true"]
   },
   {
     "id": 3302,
@@ -3827,13 +2783,7 @@
       "If you participate in a dividend reinvestment plan (DRIP), you may be able to defer taxes on the dividends you receive."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: If you participate in a dividend reinvestment plan (DRIP), you still owe taxes on the dividends you receive, even if you reinvest them.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3311,
@@ -3848,13 +2798,7 @@
       "The phrase \"will not be quoted ex\" can affect a shareholder's eligibility to receive dividend payments."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: \"Will be quoted ex\" means the dividend will not be paid to shareholders who sell their shares before the record date.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3313,
@@ -3869,13 +2813,7 @@
       "For gift amounts exceeding ₹50,000 (approximately $700 USD) in a financial year, the recipient in India needs to declare the gift in their income tax return and supply supporting documentation."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. UNKNOWN\n2. TRUE\n3. FALSE [correction]: The tax rate applied to such gifts in India can vary and is not fixed at 20%. The rate can be determined based on the applicable tax slab rates for the individual recipient.\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "unknown",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["unknown", "true", "false", "true", "true"]
   },
   {
     "id": 3340,
@@ -3890,13 +2828,7 @@
       "The strength of the U.S. dollar in 2015 made it more expensive for foreign buyers to purchase natural gas, contributing to lower prices."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 3351,
@@ -3911,13 +2843,7 @@
       "The declaration date is the date on which the company announces the dividend, and it is typically set by the company's board."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3372,
@@ -3932,13 +2858,7 @@
       "Investment banks are regulated by government agencies, such as the Securities and Exchange Commission (SEC) in the United States."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Investment banks such as Goldman Sachs, JPMorgan Chase, and Morgan Stanley engage in various financial activities but do not provide ratings for financial instruments. Ratings are typically provided by credit rating agencies like Standard & Poor's, Moody's, and Fitch.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3375,
@@ -3953,13 +2873,7 @@
       "Some fund-of-funds may have performance fees, which are paid to the investment manager if the fund outperforms a benchmark index."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3394,
@@ -3974,13 +2888,7 @@
       "FDIC coverage applies to deposit accounts held at banks and it offers some protection against fraud."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3416,
@@ -3995,13 +2903,7 @@
       "If a corporation is in a state of receivership or bankruptcy, the court may appoint the board of directors, rather than the stockholders."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3422,
@@ -4016,13 +2918,7 @@
       "It is possible to use nice numbers to generate prime numbers."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: Nice numbers, also known as \"friendly numbers\" or \"amicable numbers,\" are pairs of numbers where the sum of their proper divisors equals the other number in the pair.\n2. FALSE [correction]: Simplification of fractions is not typically achieved by using nice numbers, but rather by finding common factors in the numerator and denominator.\n3. UNKNOWN\n4. TRUE\n5. FALSE [correction]: Nice numbers themselves do not directly generate prime numbers, but they may be involved in methods or patterns that include prime numbers.",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "false",
-      "unknown",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "false", "unknown", "true", "false"]
   },
   {
     "id": 3439,
@@ -4037,13 +2933,7 @@
       "Selling an ISA requires reporting the sale to Her Majesty's Revenue & Customs (HMRC) and paying any due taxes."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: Capital Gain Tax (CGT) does not apply when ISA shares are sold at a higher price than bought as they are tax-free.\n3. FALSE [correction]: If an ISA sell-off is reinvested in another ISA or investment, any interest or dividends remain tax-free.\n4. TRUE\n5. FALSE [correction]: Selling an ISA does not require reporting the sale to Her Majesty's Revenue & Customs (HMRC) nor paying any taxes as ISAs are tax-free.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "false", "true", "false"]
   },
   {
     "id": 3543,
@@ -4058,13 +2948,7 @@
       "The W-8BEN form can be updated with the correct TIN by contacting the withholding agent."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: A W-8BEN form can be replaced by a W-9 form if the payee's status changes and they become a US person for tax purposes.\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 3556,
@@ -4079,13 +2963,7 @@
       "A 100% stock dividend can be a tax-efficient way to distribute profits, depending on the tax laws in the company's jurisdiction."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: When a company declares a 100% stock dividend, it is not distributing 100% of its profits, but rather issuing additional shares equivalent to the current number of shares outstanding.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3564,
@@ -4100,13 +2978,7 @@
       "Expensive stocks may have lower liquidity than inexpensive stocks, which could make it more difficult to sell them quickly and at a fair price."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: The cost per share does not necessarily determine the total cost of the investment. The total cost is calculated by multiplying the cost per share by the number of shares purchased, regardless of the share price.\n2. TRUE\n3. FALSE [correction]: The volatility of a stock is not necessarily determined by its price. Volatility can be influenced by various factors such as market conditions, company performance, and investor sentiment.\n4. TRUE\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "false",
-      "true",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "false", "true", "unknown"]
   },
   {
     "id": 3589,
@@ -4121,13 +2993,7 @@
       "A company might be required to have two listings on the exchange in order to comply with regulatory requirements."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: A company might choose to have two listings on the exchange to comply with regulatory requirements, but it is not always a requirement.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3601,
@@ -4142,13 +3008,7 @@
       "Not all companies split their stock, and this is especially common among technology and biotechnology companies."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: As of September 2021, Amazon.com Inc. has not undergone a 5-for-1 stock split.\n5. UNKNOWN",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 3607,
@@ -4163,13 +3023,7 @@
       "The ask and bid prices of a stock constantly change based on market conditions causing the prices at which a stock can be sold to fluctuate throughout the day."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. FALSE [correction]: \"Sell on ask\" refers to selling a stock at the current ask price which is the lowest price a seller is willing to accept for the stock at a specific time.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-2-13b-chat-hf_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-2-13b-chat-hf_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3632,
@@ -4184,13 +3038,7 @@
       "A forward split, where the company divides each existing share into a larger number of shares, is another method a company can use to issue new shares without diluting the value held by existing shareholders."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. FALSE [correction]: A \"share buyback\" or \"share repurchase\" program is when a company buys back its own shares from existing shareholders, reducing the number of shares outstanding and increasing the value of the remaining shares. It does not involve issuing new shares.\n3. TRUE\n4. TRUE\n5. FALSE [correction]: A forward split increases the number of shares outstanding and typically reduces the price per share, but it does not change the value held by existing shareholders as their total ownership remains the same, just divided into more shares. It is not a method to issue new shares without dilution.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "false", "true", "true", "false"]
   },
   {
     "id": 3633,
@@ -4205,12 +3053,6 @@
       "The exercise price of a restricted stock award is not the same as the fair market value of the company's stock at the time of grant."
     ],
     "llama-2-13b-chat-hf_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Restricted stock awards do not have an exercise price because they are not options; they are grants of stock that typically vest over time.\n4. TRUE\n5. FALSE [correction]: Restricted stock awards do not have an exercise price; they are granted at no cost to the employee, although they may be subject to vesting and other conditions.",
-    "llama-2-13b-chat-hf_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "llama-2-13b-chat-hf_judge": ["true", "true", "false", "true", "false"]
   }
 ]
