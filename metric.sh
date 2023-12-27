@@ -83,10 +83,10 @@
 #     python metric.py --model llama-2-7b-chat-hf --data-dir "./task/prompt_task/prompt_judge/prompt_format/$dir/llama-2-7b-chat-hf"
 # done
 
-DirList=("chatgpt" "llama-2-7b-chat-hf" "llama-2-13b-chat-hf" "llama-2-70b-chat-hf")
-for dir in ${DirList[*]}; do
-    python metric.py --model $dir --data-dir "./task/prompt_task/prompt_judge/origin/$dir"
-done
+# DirList=("chatgpt" "llama-2-7b-chat-hf" "llama-2-13b-chat-hf" "llama-2-70b-chat-hf")
+# for dir in ${DirList[*]}; do
+#     python metric.py --model $dir --data-dir "./task/prompt_task/prompt_judge/origin/$dir"
+# done
 
 
 # # quantization
