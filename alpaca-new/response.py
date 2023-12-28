@@ -428,8 +428,8 @@ class Parser(object):
         self.parser = argparse.ArgumentParser(description=description)
         self.file_list = [
             "Bio-Medical",
-            "Finance",
-            "Science",
+            # "Finance",
+            # "Science",
             "Education",
             "Open-Domain",
         ]
