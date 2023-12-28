@@ -244,6 +244,8 @@ class Chatbot(Bot):
                 if coun > self.max_retry:
                     res = "FAILED"
                     break
+        if res is None:
+            res = "FAILED"
         return res
 
     @func_set_timeout(20)
@@ -426,8 +428,8 @@ class Parser(object):
         self.parser = argparse.ArgumentParser(description=description)
         self.file_list = [
             "Bio-Medical",
-            # "Finance",
-            # "Science",
+            "Finance",
+            "Science",
             "Education",
             "Open-Domain",
         ]

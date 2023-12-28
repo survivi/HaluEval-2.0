@@ -244,6 +244,8 @@ class Chatbot(Bot):
                 if coun > self.max_retry:
                     res = "FAILED"
                     break
+        if res is None:
+            res = "FAILED"
         return res
 
     @func_set_timeout(20)
