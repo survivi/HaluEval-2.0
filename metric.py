@@ -74,7 +74,7 @@ if __name__ == "__main__":
     total_count = []
     metrics = []
     PRINT_METRICS = 1
-    PRINT_SIGNAL = 0
+    PRINT_SIGNAL = 1
     if PRINT_METRICS:
         for file in file_list:
             print("Current file: ", file)
