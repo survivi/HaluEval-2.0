@@ -10,11 +10,11 @@
 
 # # decoding_strategy
 
-# DirList=("chatgpt_greedy" "chatgpt_top-p" "llama-2-7b-chat-hf_beam" "llama-2-7b-chat-hf_top-k" "llama-2-7b-chat-hf_top-p" "llama-2-7b-chat-hf_greedy" "llama-2-13b-chat-hf_greedy" "llama-2-70b-chat-hf_greedy")
-# for dir in ${DirList[*]}; do
-#     model=${dir%%_*}
-#     python metric.py --model $model --data-dir "./task/decoding-strategy/decoding-strategy_judge/$dir"
-# done
+DirList=("chatgpt_greedy" "chatgpt_top-p" "llama-2-7b-chat-hf_beam" "llama-2-7b-chat-hf_top-k" "llama-2-7b-chat-hf_top-p" "llama-2-7b-chat-hf_greedy" "llama-2-13b-chat-hf_greedy" "llama-2-70b-chat-hf_greedy")
+for dir in ${DirList[*]}; do
+    model=${dir%%_*}
+    python metric.py --model $model --data-dir "./task/decoding-strategy/decoding-strategy_judge/$dir"
+done
 
 # DirList=("llama-2-7b-chat-hf_top-p_2" "llama-2-7b-chat-hf_top-p_4" "llama-2-7b-chat-hf_top-p_6" "llama-2-7b-chat-hf_top-p_8" "llama-2-7b-chat-hf_top-p_10")
 # for dir in ${DirList[*]}; do
