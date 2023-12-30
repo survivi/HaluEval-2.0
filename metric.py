@@ -75,6 +75,7 @@ if __name__ == "__main__":
     metrics = []
     PRINT_METRICS = 1
     PRINT_SIGNAL = 0
+    PRINT_TOTAL = 0
     if PRINT_METRICS:
         for file in file_list:
             print("Current file: ", file)
@@ -91,7 +92,8 @@ if __name__ == "__main__":
             macro = round(macro, 2)
             micro = round(micro, 2)
             if PRINT_SIGNAL:
-                print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}, Avg: {avg}")
+                # print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}, Avg: {avg}")
+                print(f"Metrics(%) -> Macro: {macro}, Micro: {micro}")
                 print("========================================")
             metrics.append(macro)
             metrics.append(micro)
@@ -99,7 +101,7 @@ if __name__ == "__main__":
             metrics = [f"{i:.2f}" for i in metrics]
             print(" & ".join(metrics))
         # calculate total average
-        if PRINT_SIGNAL:
+        if PRINT_TOTAL:
             print("Total average:")
             macro, micro = cal_matrics(total_count)
             macro = round(macro, 2)

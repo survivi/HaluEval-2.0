@@ -280,7 +280,7 @@ class Chatbot(Bot):
                         temperature=kwargs["temperature"],
                         top_p=kwargs["top_p"],
                     )
-                elif chat_model == "gpt-4":
+                elif chat_model == "gpt-4":  # greedy search
                     response = openai.ChatCompletion.create(
                         model="gpt-4-1106-preview",
                         messages=[{"role": "user", "content": query}],
