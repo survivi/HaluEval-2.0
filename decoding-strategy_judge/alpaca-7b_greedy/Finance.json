@@ -2868,5 +2868,240 @@
       "true",
       "false"
     ]
+  },
+  {
+    "id": 3340,
+    "user_query": "In 2015, why has the price of natural gas been plummeting?",
+    "alpaca-7b_response": "The price of natural gas has been plummeting in 2015 due to an abundance of supply and weak demand. There has been a surplus of natural gas due to a rise in production and a decrease in consumption. Additionally, mild weather has also led to lower demand for natural gas for heating purposes. These factors have caused the price of natural gas to drop to its lowest levels in more than a decade.",
+    "alpaca-7b_fact_raw": "1. The price of natural gas plummeted in 2015.\n2. An abundance of supply contributed to the decrease in natural gas prices in 2015.\n3. Weak demand was a factor in the lowering of natural gas prices in 2015.\n4. There was a rise in natural gas production in 2015.\n5. Mild weather led to lower demand for natural gas for heating purposes in 2015.",
+    "alpaca-7b_fact": [
+      "The price of natural gas plummeted in 2015.",
+      "An abundance of supply contributed to the decrease in natural gas prices in 2015.",
+      "Weak demand was a factor in the lowering of natural gas prices in 2015.",
+      "There was a rise in natural gas production in 2015.",
+      "Mild weather led to lower demand for natural gas for heating purposes in 2015."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with known trends and factors that can affect natural gas prices, such as supply and demand dynamics, production rates, and weather conditions. However, without specific data or a detailed report, it is not possible to verify the exact accuracy of these statements. They are generally true based on common knowledge of market dynamics.",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3351,
+    "user_query": "Why sometimes payable date is BEFORE the ex-dividend date?",
+    "alpaca-7b_response": "Sometimes the payable date is before the ex-dividend date because the company has not yet paid the dividend when the ex-dividend date passes. For example, if a company declares a dividend on January 15th, the ex-dividend date would be the last trading day of January. If the company takes some time to actually pay the dividend, the payable date would be after the ex-dividend date.",
+    "alpaca-7b_fact_raw": "NO FACTS",
+    "alpaca-7b_fact": [],
+    "alpaca-7b_judge": []
+  },
+  {
+    "id": 3372,
+    "user_query": "Why should I trust investment banks' ratings?",
+    "alpaca-7b_response": "Investment banks' ratings are based on objective criteria and a thorough analysis of the security or financial instrument being rated. They are also subject to regular internal review and external audit to ensure accuracy and impartiality. In addition, investment banks often disclose their rating methodologies so that investors can understand exactly how the ratings are determined. This transparency helps to build trust in the ratings.",
+    "alpaca-7b_fact_raw": "1. Investment banks' ratings are based on objective criteria.\n2. Investment banks conduct a thorough analysis of the security or financial instrument being rated.\n3. Investment banks' ratings are subject to regular internal review.\n4. Investment banks' ratings are subject to external audit.\n5. Investment banks often disclose their rating methodologies.",
+    "alpaca-7b_fact": [
+      "Investment banks' ratings are based on objective criteria.",
+      "Investment banks conduct a thorough analysis of the security or financial instrument being rated.",
+      "Investment banks' ratings are subject to regular internal review.",
+      "Investment banks' ratings are subject to external audit.",
+      "Investment banks often disclose their rating methodologies."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Credit rating agencies, not investment banks, issue ratings based on objective criteria.\n2. TRUE: Credit rating agencies, which are often confused with investment banks, conduct a thorough analysis of the security or financial instrument being rated.\n3. TRUE: Credit rating agencies' ratings are subject to regular internal review.\n4. FALSE [correction]: Credit rating agencies' ratings are not typically subject to external audit, but they are regulated and monitored by external bodies such as the Securities and Exchange Commission (SEC) in the United States.\n5. TRUE: Credit rating agencies often disclose their rating methodologies to maintain transparency and comply with regulatory requirements.",
+    "alpaca-7b_judge": [
+      "false",
+      "true",
+      "true",
+      "false",
+      "true"
+    ]
+  },
+  {
+    "id": 3375,
+    "user_query": "Does the expense ratio of a fund-of-funds include the expense ratios of its holdings?",
+    "alpaca-7b_response": "No, the expense ratio of a fund-of-funds does not include the expense ratios of its holdings. The expense ratio of a fund-of-funds is the fee charged by the fund-of-funds to cover its operating expenses, and is typically higher than the expense ratios of the individual funds it holds.",
+    "alpaca-7b_fact_raw": "1. The expense ratio of a fund-of-funds does not include the expense ratios of its holdings.\n2. The expense ratio of a fund-of-funds is the fee charged to cover its operating expenses.\n3. The expense ratio of a fund-of-funds is typically higher than the expense ratios of the individual funds it holds.",
+    "alpaca-7b_fact": [
+      "The expense ratio of a fund-of-funds does not include the expense ratios of its holdings.",
+      "The expense ratio of a fund-of-funds is the fee charged to cover its operating expenses.",
+      "The expense ratio of a fund-of-funds is typically higher than the expense ratios of the individual funds it holds."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The expense ratio of a fund-of-funds typically includes the expense ratios of its underlying holdings in addition to its own operating expenses.\n2. TRUE\n3. TRUE",
+    "alpaca-7b_judge": [
+      "false",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3394,
+    "user_query": "Is SIPC coverage on cash as strong as FDIC?",
+    "alpaca-7b_response": "No, SIPC coverage on cash is not as strong as FDIC coverage. SIPC (Securities Investor Protection Corporation) provides coverage of up to $500,000 for cash accounts, while the FDIC (Federal Deposit Insurance Corporation) provides coverage of up to $250,000 for bank deposit accounts.",
+    "alpaca-7b_fact_raw": "1. SIPC provides coverage of up to $500,000 for cash accounts.\n2. FDIC provides coverage of up to $250,000 for bank deposit accounts.",
+    "alpaca-7b_fact": [
+      "SIPC provides coverage of up to $500,000 for cash accounts.",
+      "FDIC provides coverage of up to $250,000 for bank deposit accounts."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: SIPC provides coverage of up to $500,000 for securities, including a $250,000 limit for cash, in a customer's brokerage account.\n2. TRUE",
+    "alpaca-7b_judge": [
+      "false",
+      "true"
+    ]
+  },
+  {
+    "id": 3416,
+    "user_query": "Can stockholders choose NOT to elect a board of directors?",
+    "alpaca-7b_response": "No, stockholders cannot choose not to elect a board of directors. The board of directors is elected by the shareholders and is responsible for representing their interests.",
+    "alpaca-7b_fact_raw": "1. Stockholders cannot choose not to elect a board of directors.\n2. The board of directors is elected by the shareholders.\n3. The board of directors is responsible for representing the interests of the shareholders.",
+    "alpaca-7b_fact": [
+      "Stockholders cannot choose not to elect a board of directors.",
+      "The board of directors is elected by the shareholders.",
+      "The board of directors is responsible for representing the interests of the shareholders."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Stockholders can choose to elect a board of directors; it is their right to vote on the election of directors during a company's annual general meeting or a special meeting called for that purpose.\n2. TRUE\n3. TRUE",
+    "alpaca-7b_judge": [
+      "false",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3422,
+    "user_query": "Is there a way to take advantage of nice numbers?",
+    "alpaca-7b_response": "Yes, there are ways to take advantage of nice numbers. For example, when working with fractions, it is often helpful to choose numbers that have a common denominator in order to simplify the fractions. Additionally, when adding or subtracting numbers, it is often beneficial to choose numbers that are close to each other on the number line in order to make the calculations easier.",
+    "alpaca-7b_fact_raw": "NO FACTS",
+    "alpaca-7b_fact": [],
+    "alpaca-7b_judge": []
+  },
+  {
+    "id": 3439,
+    "user_query": "What are the tax implications on selling the Share ISA portfolio?",
+    "alpaca-7b_response": "The tax implications of selling a Share ISA portfolio will depend on the individual's circumstances. Any profits made from the sale of the portfolio will be subject to capital gains tax, which is currently charged at 10% in the UK. In addition, any dividend income received during the period the portfolio was held will also be subject to income tax, which is currently charged at 7.5% in the UK.",
+    "alpaca-7b_fact_raw": "1. Profits made from the sale of a Share ISA portfolio are subject to capital gains tax in the UK.\n2. Capital gains tax in the UK is currently charged at 10%.\n3. Dividend income received from a Share ISA portfolio is subject to income tax in the UK.\n4. Income tax on dividend income in the UK is currently charged at 7.5%.",
+    "alpaca-7b_fact": [
+      "Profits made from the sale of a Share ISA portfolio are subject to capital gains tax in the UK.",
+      "Capital gains tax in the UK is currently charged at 10%.",
+      "Dividend income received from a Share ISA portfolio is subject to income tax in the UK.",
+      "Income tax on dividend income in the UK is currently charged at 7.5%."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Profits made from the sale of a Share ISA (Individual Savings Account) portfolio are not subject to capital gains tax in the UK.\n2. FALSE [correction]: Capital gains tax in the UK is not a flat rate; it is charged at 10% for basic rate taxpayers and 20% for higher rate taxpayers on assets other than residential property. For residential property, the rates are 18% for basic rate taxpayers and 28% for higher rate taxpayers.\n3. FALSE [correction]: Dividend income received from a Share ISA portfolio is not subject to income tax in the UK.\n4. FALSE [correction]: Income tax on dividend income outside of an ISA in the UK is currently charged at 7.5% for basic rate taxpayers, 32.5% for higher rate taxpayers, and 38.1% for additional rate taxpayers. However, there is also a dividend allowance which means the first £2,000 of dividend income is tax-free.",
+    "alpaca-7b_judge": [
+      "false",
+      "false",
+      "false",
+      "false"
+    ]
+  },
+  {
+    "id": 3543,
+    "user_query": "Can I resubmit W8-BEN with W9 form?",
+    "alpaca-7b_response": "No, you cannot resubmit the W8-BEN form with the W9 form. The W8-BEN form is used to provide information to the IRS to determine the beneficial owner's tax status, while the W9 form is used to provide taxpayer information to the payee. The W9 form is not accepted in place of the W8-BEN form.",
+    "alpaca-7b_fact_raw": "1. The W8-BEN form is used to provide information to the IRS to determine the beneficial owner's tax status.\n2. The W9 form is used to provide taxpayer information to the payee.\n3. The W9 form is not accepted in place of the W8-BEN form.",
+    "alpaca-7b_fact": [
+      "The W8-BEN form is used to provide information to the IRS to determine the beneficial owner's tax status.",
+      "The W9 form is used to provide taxpayer information to the payee.",
+      "The W9 form is not accepted in place of the W8-BEN form."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3556,
+    "user_query": "What does “100% stock dividend” mean?",
+    "alpaca-7b_response": "A 100% stock dividend is a dividend that is paid entirely in additional shares of the same stock, rather than in cash. This means that the shareholder receives additional shares equal to the value of the dividend, without receiving any cash.",
+    "alpaca-7b_fact_raw": "1. A 100% stock dividend is paid in additional shares of the same stock.\n2. No cash is distributed to the shareholder in a 100% stock dividend.\n3. The shareholder receives additional shares equal to the value of the dividend in a 100% stock dividend.",
+    "alpaca-7b_fact": [
+      "A 100% stock dividend is paid in additional shares of the same stock.",
+      "No cash is distributed to the shareholder in a 100% stock dividend.",
+      "The shareholder receives additional shares equal to the value of the dividend in a 100% stock dividend."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The shareholder receives additional shares equal to the number of shares they already own, not the value of the dividend, in a 100% stock dividend.",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "id": 3564,
+    "user_query": "Is there a difference between buying few shares of an expensive stock vs many shares of an inexpensive one?",
+    "alpaca-7b_response": "Yes, there is a difference between buying few shares of an expensive stock and many shares of an inexpensive one. The difference is that when you buy few shares of an expensive stock, the cost per share is higher, while when you buy many shares of an inexpensive stock, the cost per share is lower. Therefore, it is better to buy few shares of an expensive stock, as the cost per share will be lower than if you buy many shares of an inexpensive stock.",
+    "alpaca-7b_fact_raw": "NO FACTS",
+    "alpaca-7b_fact": [],
+    "alpaca-7b_judge": []
+  },
+  {
+    "id": 3589,
+    "user_query": "Why would a company have 2 listings on the same exchange?",
+    "alpaca-7b_response": "Companies may have multiple listings on the same exchange for a variety of reasons. For example, a company may have multiple business units or subsidiaries that each require a separate listing. Additionally, a company may list different classes of stock on the same exchange in order to access a variety of investors. Companies may also choose to list on multiple exchanges in order to gain greater visibility or access a larger investor base.",
+    "alpaca-7b_fact_raw": "NO FACTS",
+    "alpaca-7b_fact": [],
+    "alpaca-7b_judge": []
+  },
+  {
+    "id": 3601,
+    "user_query": "Why have I never seen a stock split?",
+    "alpaca-7b_response": "A stock split is when a company divides its existing shares into multiple shares, to boost the liquidity of the shares. This allows investors to purchase fewer shares, while still maintaining their ownership stake in the company. Not all companies choose to do a stock split, as it can dilute the value of existing shares.",
+    "alpaca-7b_fact_raw": "1. A stock split is a process where a company divides its existing shares into multiple shares.\n2. The purpose of a stock split is to boost the liquidity of the shares.\n3. A stock split allows investors to purchase fewer shares while maintaining their ownership stake in the company.\n4. Not all companies choose to do a stock split.\n5. A stock split can dilute the value of existing shares.",
+    "alpaca-7b_fact": [
+      "A stock split is a process where a company divides its existing shares into multiple shares.",
+      "The purpose of a stock split is to boost the liquidity of the shares.",
+      "A stock split allows investors to purchase fewer shares while maintaining their ownership stake in the company.",
+      "Not all companies choose to do a stock split.",
+      "A stock split can dilute the value of existing shares."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: A stock split allows investors to purchase more shares while maintaining their ownership stake in the company.\n4. TRUE\n5. FALSE [correction]: A stock split does not dilute the value of existing shares; it increases the number of shares while proportionally reducing the price per share, so the overall value of one's investment remains the same.",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "false",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "id": 3607,
+    "user_query": "What does it mean “sell on ask” , “sell on bid” in stocks?",
+    "alpaca-7b_response": "Selling on ask means that the stock is sold at the current market price, also known as the ask price. Selling on bid means that the stock is sold at the current market price, also known as the bid price.",
+    "alpaca-7b_fact_raw": "1. Selling on ask means that the stock is sold at the ask price.\n2. Selling on bid means that the stock is sold at the bid price.",
+    "alpaca-7b_fact": [
+      "Selling on ask means that the stock is sold at the ask price.",
+      "Selling on bid means that the stock is sold at the bid price."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true"
+    ]
+  },
+  {
+    "id": 3632,
+    "user_query": "How does a public company issue new shares without diluting the value held by existing shareholders?",
+    "alpaca-7b_response": "A public company can issue new shares without diluting the value held by existing shareholders by using a process called \"fractional share\" issuance. Fractional share issuance allows the company to issue new shares in a manner that does not increase the total number of shares outstanding. Instead, the company allocates a portion of an existing share to a fractional share, allowing the company to issue more shares without increasing the total number of shares outstanding.",
+    "alpaca-7b_fact_raw": "NO FACTS",
+    "alpaca-7b_fact": [],
+    "alpaca-7b_judge": []
+  },
+  {
+    "id": 3633,
+    "user_query": "What is an exercise price in regards to restricted stock awards?",
+    "alpaca-7b_response": "The exercise price of a restricted stock award is the price at which the stock may be purchased by the recipient upon exercise of the award. It is typically the current market value of the stock on the grant date.",
+    "alpaca-7b_fact_raw": "1. The exercise price is the price at which stock may be purchased by the recipient of a restricted stock award.\n2. The exercise price is typically set at the current market value of the stock on the grant date.",
+    "alpaca-7b_fact": [
+      "The exercise price is the price at which stock may be purchased by the recipient of a restricted stock award.",
+      "The exercise price is typically set at the current market value of the stock on the grant date."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: The exercise price is the price at which an option can be exercised by the option holder to buy or sell the underlying security, not a restricted stock award.\n2. TRUE",
+    "alpaca-7b_judge": [
+      "false",
+      "true"
+    ]
   }
 ]
