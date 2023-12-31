@@ -53,10 +53,13 @@
 #     done
 # done
 
-# DirList=("vicuna-7b" " vicuna-13b")
-# for dir in ${DirList[*]}; do
-#     python metric.py --model $dir --data-dir "./task/ir/ir_judge/origin/$dir"
-# done
+DirList=("response_10docs_top10")
+ModelList=("chatgpt")
+for model in ${ModelList[*]}; do
+    for dir in ${DirList[*]}; do
+        python metric.py --model $model --data-dir "./run/ir/ir_judge/$dir/$model"
+    done
+done
 
 
 # # main
