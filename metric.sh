@@ -66,6 +66,11 @@
 #     python metric.py --model $model --data-dir "./task/main/judge/$model"
 # done
 
+ModelList=("alpaca-7b")
+for model in ${ModelList[*]}; do
+    python metric.py --model $model --data-dir "./aaa/judge/$model"
+done
+
 
 # # pretrain
 

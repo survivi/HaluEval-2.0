@@ -15666,6 +15666,25 @@
     ]
   },
   {
+    "id": 3293,
+    "user_query": "why should we continue to discover asteroids ?",
+    "alpaca-7b_response": "Discovering asteroids is important because it helps us to better understand the solar system and our place in it. By discovering new asteroids, we can gain insight into the composition and structure of the asteroid belt, as well as the orbits of asteroids and their potential to impact Earth. Additionally, discovering new asteroids can help us to develop better methods of detection and tracking, which can be used to identify potentially hazardous asteroids and take steps to prevent an impact.",
+    "alpaca-7b_fact_raw": "1. Discovering asteroids helps to understand the composition and structure of the asteroid belt.\n2. Discovering asteroids provides insight into the orbits of asteroids.\n3. Discovering asteroids can help identify potentially hazardous asteroids.\n4. Discovering asteroids aids in developing better methods of detection and tracking of asteroids.",
+    "alpaca-7b_fact": [
+      "Discovering asteroids helps to understand the composition and structure of the asteroid belt.",
+      "Discovering asteroids provides insight into the orbits of asteroids.",
+      "Discovering asteroids can help identify potentially hazardous asteroids.",
+      "Discovering asteroids aids in developing better methods of detection and tracking of asteroids."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "alpaca-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
+  },
+  {
     "id": 3296,
     "user_query": "at the time this narration was recorded , how many near-earth asteroids had been discovered ?",
     "alpaca-7b_response": "At the time this narration was recorded, over 19,000 near-Earth asteroids had been discovered.",

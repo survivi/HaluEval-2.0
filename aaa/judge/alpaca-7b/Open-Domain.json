@@ -12186,6 +12186,19 @@
     "alpaca-7b_judge": []
   },
   {
+    "id": 1746,
+    "user_query": "What is the county seat of the county in which you can find Godfrey Road, FL?",
+    "alpaca-7b_response": "The county seat of the county in which Godfrey Road, FL can be found is Ocala, Florida.",
+    "alpaca-7b_fact_raw": "1. Ocala, Florida is the county seat of the county where Godfrey Road, FL is located.",
+    "alpaca-7b_fact": [
+      "Ocala, Florida is the county seat of the county where Godfrey Road, FL is located."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Ocala, Florida is the county seat of Marion County, while Godfrey Road is located in Miami-Dade County, whose county seat is Miami.",
+    "alpaca-7b_judge": [
+      "false"
+    ]
+  },
+  {
     "id": 1748,
     "user_query": "Falkins is a mountain range located in between Switzerland and doubly landlocked German-speaking microstate in what region of Europe?",
     "alpaca-7b_response": "The Falkins mountain range is located in the Alps mountain range, which is located in between Switzerland and the German-speaking microstate of Liechtenstein.",
@@ -32693,6 +32706,21 @@
     ]
   },
   {
+    "id": 4618,
+    "user_query": "Which is a lesbian publication, Design News or Curve?",
+    "alpaca-7b_response": "Design News is a lesbian publication. Curve is a lesbian publication.",
+    "alpaca-7b_fact_raw": "1. Design News is a lesbian publication.\n2. Curve is a lesbian publication.",
+    "alpaca-7b_fact": [
+      "Design News is a lesbian publication.",
+      "Curve is a lesbian publication."
+    ],
+    "alpaca-7b_judge_raw": "1. FALSE [correction]: Design News is not a lesbian publication; it is a source for engineering news.\n2. TRUE",
+    "alpaca-7b_judge": [
+      "false",
+      "true"
+    ]
+  },
+  {
     "id": 4622,
     "user_query": "How many words are typical to a short story of the same general length as the Screwfly Solution?",
     "alpaca-7b_response": "A typical short story of the same general length as the Screwfly Solution is around 7,500 words.",
@@ -40317,6 +40345,21 @@
     "alpaca-7b_fact_raw": "NO FACTS",
     "alpaca-7b_fact": [],
     "alpaca-7b_judge": []
+  },
+  {
+    "id": 5715,
+    "user_query": "What number season was it for the franchise the Seahawks defeated in the Wild Card Round in 2016?",
+    "alpaca-7b_response": "The Seahawks defeated the Vikings in the Wild Card Round of the 2016 playoffs. It was the Vikings' 11th season in the NFL.",
+    "alpaca-7b_fact_raw": "1. The Seahawks defeated the Vikings in the Wild Card Round of the 2016 playoffs.\n2. It was the Vikings' 11th season in the NFL.",
+    "alpaca-7b_fact": [
+      "The Seahawks defeated the Vikings in the Wild Card Round of the 2016 playoffs.",
+      "It was the Vikings' 11th season in the NFL."
+    ],
+    "alpaca-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The Minnesota Vikings were established in 1961, making the 2016 playoffs far beyond their 11th season in the NFL.",
+    "alpaca-7b_judge": [
+      "true",
+      "false"
+    ]
   },
   {
     "id": 5717,
