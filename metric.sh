@@ -28,7 +28,7 @@
 #     python metric.py --model $model --data-dir "./task/decoding-strategy/decoding-strategy_judge/$dir"
 # done
 
-# DirList=("llama-2-13b-chat-hf_greedy" "llama-2-70b-chat-hf_greedy" "vicuna-7b_greedy" "vicuna-13b_greedy")
+# DirList=("llama-2-13b-chat-hf_greedy" "llama-2-70b-chat-hf_greedy" "vicuna-7b_greedy" "vicuna-13b_greedy" "alpaca-7b_greedy")
 # for dir in ${DirList[*]}; do
 #     model=${dir%%_*}
 #     python metric.py --model $model --data-dir "./task/decoding-strategy/decoding-strategy_judge/$dir"
@@ -65,11 +65,6 @@
 # for model in ${ModelList[*]}; do
 #     python metric.py --model $model --data-dir "./task/main/judge/$model"
 # done
-
-ModelList=("alpaca-7b")
-for model in ${ModelList[*]}; do
-    python metric.py --model $model --data-dir "./aaa/judge/$model"
-done
 
 
 # # pretrain
