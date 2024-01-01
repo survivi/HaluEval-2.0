@@ -12,13 +12,7 @@
       "Treatment of Bazex syndrome focuses on addressing the underlying malignancy and managing the skin manifestations."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 47,
@@ -33,13 +27,7 @@
       "Genetic testing is typically required to differentiate between Weaver syndrome and Sotos syndrome."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 81,
@@ -54,13 +42,7 @@
       "JASPAR 2020 is the most recent release mentioned, including 2,747 profiles and introducing a new JASPAR Genome Browser."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: JASPAR 2020 is not the most recent release mentioned, as there have been subsequent releases such as JASPAR 2022 which includes 3,010 profiles and continues to update the database with new features and profiles.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 99,
@@ -75,13 +57,7 @@
       "The KP4 protein assists in the nuclear export of viral components necessary for the viral life cycle."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: There is no widely recognized KP4 protein that functions as a nuclear import receptor for viruses. KP4 is known as a fungal toxin from Ustilago maydis. If referring to a specific protein that functions as a nuclear import receptor, it might be importin-β or another protein in the importin family, but not KP4.\n2. FALSE [correction]: Since KP4 is not a nuclear import receptor, it does not facilitate the transport of viral proteins or viral ribonucleoprotein complexes into the nucleus of infected host cells. This function would be attributed to importin proteins or other nuclear transport receptors.\n3. FALSE [correction]: KP4 does not recognize and bind to specific nuclear localization signals on viral cargo proteins or vRNPs, as it is not involved in nuclear import. This statement would apply to nuclear import receptors like importins.\n4. UNKNOWN: Without specific context or a known function of a protein named KP4 in viral assembly, it is not possible to confirm or deny this statement. However, if KP4 is indeed a fungal toxin, then this statement would be false as it would not be involved in viral particle assembly.\n5. UNKNOWN: Similar to statement 4, without specific context or a known function of a protein named KP4 in nuclear export, it is not possible to confirm or deny this statement. If KP4 is a fungal toxin, it would not assist in the nuclear export of viral components. Nuclear export in the context of viruses is typically associated with proteins like exportins.",
-    "chatgpt_judge": [
-      "false",
-      "false",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["false", "false", "false", "unknown", "unknown"]
   },
   {
     "id": 124,
@@ -96,13 +72,7 @@
       "DITPA is designed to selectively activate cardiac thyroid hormone receptors, minimizing effects on other tissues."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 144,
@@ -117,13 +87,7 @@
       "It offers a visual monitoring and reporting system for tracking the progress of jobs and monitoring system performance."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nWithout specific information about the COUGER tool, it is not possible to verify the accuracy of these statements. The National Center for Supercomputing Applications (NCSA) at the University of Illinois at Urbana-Champaign does develop various tools for HPC and scientific computing, but without additional context or information about COUGER, the truthfulness of these statements cannot be determined.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 145,
@@ -138,13 +102,7 @@
       "The vaccines for Tick-borne Encephalitis are typically administered in a series of doses with booster shots recommended every few years."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 151,
@@ -159,13 +117,7 @@
       "The JASPAR database is regularly updated with new experimental data to improve the accuracy and coverage of its DNA shape annotations."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: JASPAR's DNA shape annotations are not derived from experimental techniques like DNAse I footprinting and in vitro selection assays. These techniques are used to determine transcription factor binding sites. DNA shape annotations are typically derived from computational predictions based on the DNA sequence.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 174,
@@ -180,13 +132,7 @@
       "Weaver-like syndrome may include additional features such as camptodactyly, soft skin with easy bruising, and developmental delay."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Weaver-like syndrome is not caused by mutations in the EZH2 gene. It is a separate condition that shares some similarities with Weaver syndrome but is genetically distinct.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 193,
@@ -201,13 +147,7 @@
       "NF-κB dimers can interact with each other to form a tetrameric complex upon binding to DNA."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Hemoglobin does not undergo a dimer-to-tetramer transition; it exists as a tetramer composed of two alpha and two beta subunits.\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: NF-κB dimers do not interact with each other to form a tetrameric complex upon binding to DNA; they typically function as dimeric complexes.",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "false"]
   },
   {
     "id": 210,
@@ -222,13 +162,7 @@
       "Bcl-2 prevents apoptosis by inhibiting the release of cytochrome c from the mitochondria."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Bcl-2 (B-cell lymphoma 2) is an anti-apoptotic protein, but it is not known to interact with phospholamban (PLN).\n2. TRUE\n3. TRUE\n4. FALSE [correction]: There is no established evidence that Bcl-2 binds to PLN and modulates its function, influencing calcium handling in cardiac muscle cells.\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "false", "true"]
   },
   {
     "id": 218,
@@ -243,13 +177,7 @@
       "A meta-analysis published in the Journal of the American Geriatrics Society in 2010 reviewed 12 randomized controlled trials involving over 26,000 participants and concluded that vitamin D supplementation significantly reduced the risk of falls by 22% in older adults."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: The RECORD trial included over 5,000 community-dwelling individuals aged 70 years or older.\n3. TRUE\n4. FALSE [correction]: The \"Prevention of Falls Network Europe\" (ProFaNE) trial was not a systematic review and meta-analysis; it was a project that aimed to improve the quality of life of older people by preventing falls.\n5. TRUE",
-    "chatgpt_judge": [
-      "unknown",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "false", "true", "false", "true"]
   },
   {
     "id": 222,
@@ -264,13 +192,7 @@
       "A study published in Nature Communications in 2017 showed that Jarid2 interacts with the transcription factor RORγt and forms a complex that binds to the promoter region of the miR-155 gene, enhancing its transcription and leading to increased Th17 cell differentiation and IL-17 production."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE - Jarid2 is known to be involved in chromatin remodeling and can influence the differentiation and function of various cell types, including immune cells. However, without specific literature references, the exact role of Jarid2 in Th17 cells cannot be confirmed as true or false, but it is plausible.\n3. TRUE - miR-155 is indeed associated with the regulation of immune responses and has been reported to be involved in Th17 cell differentiation.\n4. UNKNOWN - Without access to the specific study from the Journal of Immunology in 2015, the details provided cannot be verified as true or false.\n5. UNKNOWN - Similarly, without access to the specific study from Nature Communications in 2017, the details provided cannot be verified as true or false.",
-    "chatgpt_judge": [
-      "true",
-      "unknown",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "unknown", "true", "unknown", "unknown"]
   },
   {
     "id": 224,
@@ -285,13 +207,7 @@
       "Mutations in the hoxD cluster can lead to developmental abnormalities such as limb malformations or skeletal defects."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The human HOXD cluster contains a total of nine genes that are conventionally recognized, but there are actually 11 genes in the cluster: HOXD1, HOXD3, HOXD4, HOXD8, HOXD9, HOXD10, HOXD11, HOXD12, HOXD13, as well as two additional genes, HOXD2 and HOXD6.\n2. FALSE [correction]: The HOXD cluster is located on chromosome 2 in mice, but in humans, it is located on chromosome 2q31.\n3. TRUE\n4. FALSE [correction]: The genes in the HOXD cluster also include HOXD2 and HOXD6, which were not listed in the statement.\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "false", "true", "false", "true"]
   },
   {
     "id": 268,
@@ -306,13 +222,7 @@
       "The consensus motif S/T-X-X-X-pS/pT involves a phosphorylated serine or threonine residue at the fifth position."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The consensus motif recognized by CK1 enzymes is S/T-X-X-S/T, not S/T-X-X-X-S/T.\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 305,
@@ -327,13 +237,7 @@
       "Truncated isoforms of ASPH, such as ASPH-T1, ASPH-T2, and ASPH-T3, are generated through alternative splicing and lack specific domains of the full-length protein."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with the general knowledge about the ASPH gene and its protein products. ASPH gene encodes the aspartyl/asparaginyl beta-hydroxylase, which is a type II transmembrane protein found in the ER and Golgi apparatus. The full-length protein has the described domains, and soluble forms can be generated by proteolytic cleavage. Alternative splicing can lead to truncated isoforms that lack certain domains. Without specific contradictory information, these statements are assumed to be true.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 330,
@@ -348,13 +252,7 @@
       "Potential side effects of empagliflozin include urinary tract infections, genital yeast infections, increased urination, low blood pressure, and an increased risk of diabetic ketoacidosis."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Empagliflozin was approved by the U.S. Food and Drug Administration (FDA) for use in the United States on August 1, 2014, is incorrect. The correct approval date is August 1, 2014.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 350,
@@ -369,13 +267,7 @@
       "Lon1 is primarily localized in the mitochondria of Arabidopsis, and its loss can lead to mitochondrial dysfunction."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with the known functions of Lon proteases, such as Lon1, in cellular protein quality control, particularly within the mitochondria. Lon proteases are known to degrade damaged or misfolded proteins, and their absence can lead to various cellular dysfunctions, including those mentioned in the statements.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 409,
@@ -390,13 +282,7 @@
       "Hho1 is involved in DNA repair, replication, and recombination in yeast."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nLinker histones, such as Hho1 in yeast, are known to be structurally similar to the H1 histone found in higher eukaryotes. They bind to the linker DNA between nucleosomes and influence the accessibility of DNA to transcription factors and other regulatory proteins. They are also involved in processes such as DNA repair, replication, and recombination.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 418,
@@ -411,13 +297,7 @@
       "Tomatoes contain bioactive compounds such as lycopene, beta-carotene, and dietary fibers, which are suggested to contribute to potential cholesterol-lowering effects."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN (The specific details of the study, such as the year, journal, and findings, cannot be verified without access to the actual study or additional information.)\n2. UNKNOWN (Similar to statement 1, the specific details of the study cannot be verified without access to the actual study or additional information.)\n3. UNKNOWN (Without access to the actual study or additional information, the results of the study cannot be verified.)\n4. UNKNOWN (The conclusion of the review cannot be verified without access to the actual review or additional information.)\n5. TRUE (Tomatoes are known to contain bioactive compounds such as lycopene, beta-carotene, and dietary fibers, which have been suggested to contribute to potential health benefits, including cholesterol-lowering effects.)",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "true"]
   },
   {
     "id": 472,
@@ -432,13 +312,7 @@
       "Hsp110 has been shown to interact with the exosome complex, which is responsible for mRNA degradation in the cytoplasm."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nThe statements about Hsp70 and Hsp110 are specific claims about the functions and interactions of these proteins. While the first two statements are consistent with known functions of heat shock proteins and their involvement in RNA binding and regulation, the last three statements require specific biochemical knowledge or literature to confirm. Without access to the relevant scientific research or data, the veracity of statements 3, 4, and 5 cannot be determined.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "unknown", "unknown", "unknown"]
   },
   {
     "id": 481,
@@ -453,13 +327,7 @@
       "The activity of D2 is regulated by thyroid-stimulating hormone (TSH), which stimulates its expression."
     ],
     "chatgpt_judge_raw": "1. TRUE: Type 2 deiodinase (D2) and type 3 deiodinase (D3) are indeed present in skeletal muscle, where they play a role in local thyroid hormone metabolism.\n2. TRUE: D2 is responsible for converting the inactive thyroid hormone thyroxine (T4) into the active form triiodothyronine (T3).\n3. FALSE [correction]: D2 is primarily located in the endoplasmic reticulum of cells, not the plasma membrane.\n4. TRUE: D3 does convert T4 into reverse T3 (rT3) and T3 into 3,3'-diiodothyronine (3,3'-T2), both of which are inactive forms of thyroid hormones.\n5. FALSE [correction]: The activity of D2 is not directly regulated by thyroid-stimulating hormone (TSH). TSH primarily stimulates the thyroid gland to produce T4 and T3. D2 activity is regulated by different factors, including the amount of T4 available and various physiological conditions.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 534,
@@ -474,13 +342,7 @@
       "Caspase-12 is primarily expressed in the endoplasmic reticulum (ER) and is thought to play a role in protecting cells from ER stress-induced apoptosis."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Caspase-12 is primarily expressed in the endoplasmic reticulum (ER) and is thought to play a role in dampening the inflammatory response, not in protecting cells from ER stress-induced apoptosis. It is often considered an anti-inflammatory caspase that can negatively regulate the inflammasome.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 579,
@@ -495,13 +357,7 @@
       "Aurora B kinase phosphorylates Ring1B, leading to its dissociation from chromatin and affecting gene expression."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 597,
@@ -516,13 +372,7 @@
       "Another non-canonical acceptor splice site sequence motif in vertebrates is AC-AG."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The canonical donor splice site sequence is typically defined as \"GT\" (guanine-adenine).\n4. FALSE [correction]: The most common non-canonical acceptor splice site sequence motif in vertebrates is not AG-G. The canonical acceptor splice site sequence is \"AG\" (adenine-guanine), and non-canonical acceptor splice sites are rare and vary in sequence.\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "false", "unknown"]
   },
   {
     "id": 629,
@@ -537,13 +387,7 @@
       "The acetylation of S6K1 by p300 enhances its kinase activity and promotes the phosphorylation of downstream targets such as RPS6 and eIF4B."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Acetylation of S6K1 typically inhibits its activity rather than enhancing it.\n4. TRUE\n5. FALSE [correction]: The acetylation of S6K1 by p300 typically inhibits its kinase activity rather than enhancing it, which would lead to a decrease in the phosphorylation of downstream targets such as RPS6 and eIF4B.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 632,
@@ -558,13 +402,7 @@
       "EA6 is inherited in an autosomal dominant pattern, meaning only one copy of the mutated gene is needed to potentially develop the disorder."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 646,
@@ -579,13 +417,7 @@
       "A chromomethylase-like gene, named CMT-3, has been identified in the nematode Caenorhabditis elegans."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: A chromomethylase gene, named Am-CMT3, was identified in the Arabidopsis thaliana genome, not in the honeybee (Apis mellifera) genome.\n4. TRUE\n5. FALSE [correction]: To the best of my knowledge, no chromomethylase-like gene named CMT-3 has been identified in the nematode Caenorhabditis elegans.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 650,
@@ -600,13 +432,7 @@
       "ChIPseeker is a package in Bioconductor for analyzing ChIP-seq data, including the identification and annotation of TFBS."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 721,
@@ -621,13 +447,7 @@
       "The clinical trial \"Effects of a Mediterranean Diet on Sarcopenia in Older Adults\" (NCT04249817) is investigating the effects of a Mediterranean diet on muscle mass, strength, and physical performance in older adults."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nPlease note that the responses are based on the assumption that the clinical trial titles accurately reflect the content and objectives of the studies as registered on a clinical trial database such as ClinicalTrials.gov. Without access to the full details of each trial, the responses are based solely on the information provided in the statements.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 722,
@@ -642,13 +462,7 @@
       "The MPDB is regularly updated with new structures and information."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The database of molecular recognition features in membrane proteins is called the Membrane Protein Data Bank (MPDB), but the correct name for the database that contains experimentally determined structures of membrane proteins is the Protein Data Bank (PDB).\n2. TRUE\n3. UNKNOWN\n4. TRUE, assuming the statement refers to the Protein Data Bank (PDB), which annotates and validates structures for accuracy and reliability.\n5. TRUE, assuming the statement refers to the Protein Data Bank (PDB), which is regularly updated with new structures and information.",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "unknown", "true", "true"]
   },
   {
     "id": 745,
@@ -663,13 +477,7 @@
       "Rivaroxaban is contraindicated in patients with severe renal impairment (creatinine clearance < 15 mL/min)."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 763,
@@ -684,13 +492,7 @@
       "TRalpha2 regulates genes involved in cardiac development and differentiation, including those encoding transcription factors and structural proteins."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with the known functions of thyroid hormone receptors like TRalpha2 in the context of cardiac development and function. TRalpha2 is known to be involved in the regulation of gene expression for various aspects of heart physiology, including glucose metabolism, contractile function, and response to hypertrophic stimuli, as well as the development and differentiation of cardiac cells. However, without specific scientific references, these statements are assumed to be true based on general knowledge of the role of thyroid hormone receptors in the heart.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 786,
@@ -705,13 +507,7 @@
       "AskMEDLINE is a question answering system developed by the National Library of Medicine (NLM) that retrieves relevant citations from the MEDLINE database."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 794,
@@ -726,13 +522,7 @@
       "The expression of MYB113 is influenced by environmental and developmental cues such as light, temperature, and hormone signaling pathways."
     ],
     "chatgpt_judge_raw": "1. TRUE: The MYB transcription factor family is known to be involved in the regulation of various plant pathways, including the activation of the betalain biosynthesis pathway.\n2. UNKNOWN: Without specific scientific literature or research data, it is difficult to confirm whether MYB113 is the key regulator of the betalain pathway. There are many MYB transcription factors, and their roles can be species-specific.\n3. TRUE: Betalains are indeed pigments that give certain plants their red, purple, and yellow colors. They are found in plants of the order Caryophyllales, such as beets and amaranth.\n4. UNKNOWN: While MYB transcription factors typically bind to MYB-binding sites in the promoter regions of target genes, without specific evidence, it is not possible to confirm that MYB113 binds to these sites in genes involved in betalain biosynthesis.\n5. TRUE: The expression of MYB transcription factors is generally influenced by environmental and developmental cues, including light, temperature, and hormone signaling pathways. This is a common regulatory mechanism for transcription factors in plants.",
-    "chatgpt_judge": [
-      "true",
-      "unknown",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "unknown", "true", "unknown", "true"]
   },
   {
     "id": 883,
@@ -747,13 +537,7 @@
       "Titanium Dioxide Microspheres (TiO2) are used in phosphopeptide enrichment and offer a large surface area for enhanced binding capacity."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Sequential Elution from IMAC (SIMAC) is a technique that combines IMAC and strong cation exchange (SCX) chromatography for improved phosphopeptide enrichment, not MOAC.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 901,
@@ -768,13 +552,7 @@
       "The Palmini classification includes categories such as focal cortical dysplasia, hippocampal sclerosis, and malformations of cortical development."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The Palmini classification is used to categorize and classify types of focal cortical dysplasia, not epilepsy in general.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 905,
@@ -789,13 +567,7 @@
       "Studies have detected viral genetic material or viral antigens in the thyroid tissue of patients with subacute thyroiditis."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 963,
@@ -810,13 +582,7 @@
       "Phosphorylation of eIF2α by activated EIF2AK2 suppresses autophagy by downregulating key autophagy-related genes."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Phosphorylation of eIF2α by activated EIF2AK2 does not suppress autophagy; rather, it can lead to the activation of autophagy as part of the integrated stress response.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 973,
@@ -831,13 +597,7 @@
       "The software facilitates pathway and functional enrichment analysis to identify biological pathways and processes associated with specific phenotypes or diseases."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN: Without specific information about a genomic analysis software named \"Theatre,\" it is not possible to confirm or deny the accuracy of this statement. \"Theatre\" is not a widely recognized software tool in genomic analysis, so this might be a reference to a less well-known or hypothetical tool, or it could be a typographical error for a different software name.\n2. UNKNOWN: As the existence and features of the \"Theatre\" software tool are not confirmed, the details about its capabilities, such as variant calling and annotation, cannot be verified.\n3. UNKNOWN: Similar to the previous statements, without confirmation of the software's existence and features, the claim about providing functional annotation of genetic variants cannot be verified.\n4. UNKNOWN: Again, without specific information about the \"Theatre\" software tool, it is not possible to confirm whether it enables gene expression analysis through RNA sequencing data.\n5. UNKNOWN: The capability of facilitating pathway and functional enrichment analysis is also unknown due to the lack of information about the \"Theatre\" software tool.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 997,
@@ -852,13 +612,7 @@
       "The time complexity of the Smith-Waterman algorithm arises because each cell in the matrix requires constant time to calculate its alignment score."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Each cell in the dynamic programming matrix represents the maximum score of aligning the subsequences up to that point, not just a pair of characters.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 1004,
@@ -873,13 +627,7 @@
       "Mutations in the FLVCR1 gene have been associated with hereditary lymphedema type IIA and posterior column ataxia with retinitis pigmentosa."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The SLC49 family consists of four members: FLVCR1, FLVCR2, MFSD7A, and MFSD7B.\n4. TRUE\n5. FALSE [correction]: Mutations in the FLVCR1 gene have been associated with posterior column ataxia with retinitis pigmentosa, but not with hereditary lymphedema type IIA. Hereditary lymphedema type IIA is associated with mutations in the FOXC2 gene.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 1047,
@@ -894,13 +642,7 @@
       "MED1 (Mediator complex subunit 1) is a component of the Mediator complex and interacts with GATA-1, as identified by biotinylation tagging."
     ],
     "chatgpt_judge_raw": "1. TRUE: FOG-1 (Friend of GATA-1) is known to interact with GATA-1, and the biotinylation tagging approach is a plausible method that could be used to discover such protein-protein interactions.\n2. TRUE: TAL1 (T-cell acute lymphocytic leukemia protein 1) is known to form complexes with GATA-1, and biotinylation tagging could be a method used to reveal such interactions.\n3. TRUE: LDB1 (LIM domain-binding protein 1) is known to interact with GATA-1, and biotinylation tagging is a method that could be used to confirm such interactions.\n4. TRUE: CBP/p300 (CREB-binding protein/EP300) are known to interact with various transcription factors, including GATA-1, and biotinylation tagging could be a method used to identify such interactions.\n5. TRUE: MED1 (Mediator complex subunit 1) is indeed a component of the Mediator complex, which is known to interact with various transcription factors, including GATA-1. Biotinylation tagging could be a method used to identify this interaction.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1072,
@@ -915,13 +657,7 @@
       "TAF10 can also act as a corepressor to inhibit the transcriptional activity of GATA1."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: TAF10, as a component of the TFIID complex, generally functions as a coactivator in the transcription process. It does not typically act as a corepressor to inhibit transcriptional activity. Corepressors are usually different molecules that interact with transcription factors to repress gene expression.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1082,
@@ -936,13 +672,7 @@
       "Clinical Pathways and Treatment Algorithms provide standardized steps and interventions for managing specific chronic pain conditions to ensure consistent and evidence-based care."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nAll the statements provided are generally accurate descriptions of various types of systems and tools used in healthcare to support chronic pain management.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1149,
@@ -957,13 +687,7 @@
       "The subcellular localization of angiogenin can be influenced by factors such as cellular stress, signaling pathways, and post-translational modifications."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nAngiogenin is a protein with multiple functions and localizations within the cell, including the nucleus and cytoplasm, and it can also be secreted to function extracellularly. Its subcellular localization can indeed be influenced by various factors.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1161,
@@ -978,13 +702,7 @@
       "Ranolazine can inhibit the activation of extracellular signal-regulated kinase (ERK) in cardiac cells."
     ],
     "chatgpt_judge_raw": "1. TRUE: Ranolazine is indeed used for the treatment of chronic angina, which is characterized by chest pain due to reduced blood flow to the heart.\n2. TRUE: Ranolazine modulates the late phase of the inward sodium channel in cardiac cells, which can help to reduce the sodium-dependent calcium overload that contributes to angina.\n3. UNKNOWN: The effect of ranolazine on protein kinase C (PKC) in the heart is not well-established in the literature available up to my knowledge cutoff date. Therefore, without specific evidence, the statement's accuracy cannot be determined.\n4. TRUE: Ranolazine has been shown to activate AMP-activated protein kinase (AMPK) in cardiac cells, which is thought to be one of the mechanisms by which it exerts its cardioprotective effects.\n5. UNKNOWN: The effect of ranolazine on the activation of extracellular signal-regulated kinase (ERK) in cardiac cells is not clearly established in the literature available up to my knowledge cutoff date. Therefore, without specific evidence, the statement's accuracy cannot be determined.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "unknown", "true", "unknown"]
   },
   {
     "id": 1225,
@@ -999,13 +717,7 @@
       "In Escherichia coli, the LexA protein can repress the expression of Vsr endonuclease, but it is cleaved when DNA damage occurs, leading to the derepression of Vsr and other DNA repair genes."
     ],
     "chatgpt_judge_raw": "1. TRUE: The regulation of enzymes involved in DNA repair, such as Vsr endonuclease, can indeed be influenced by the growth phase of bacteria, as different phases may require different levels of DNA repair activity.\n2. TRUE: It is plausible that during the exponential growth phase, when bacteria are rapidly dividing, the expression of DNA repair enzymes like Vsr endonuclease could be upregulated to maintain genomic integrity.\n3. TRUE: The exponential growth phase in bacteria is indeed characterized by high metabolic activity and rapid cell division, as the cells are growing in an environment with ample nutrients.\n4. TRUE: During the stationary phase, when resources become limited and bacterial growth rates slow down, the expression of certain enzymes, including Vsr endonuclease, may be downregulated or maintained at basal levels to conserve energy and resources.\n5. TRUE: In Escherichia coli, the LexA protein is known to repress the expression of several DNA repair genes, including those encoding endonucleases. When DNA damage occurs, LexA is cleaved in a process known as the SOS response, leading to the derepression of these genes and the initiation of DNA repair mechanisms.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1233,
@@ -1020,13 +732,7 @@
       "BOMP is designed to predict beta-barrel outer membrane proteins in Gram-negative bacteria using sequence-based and machine learning approaches."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: TMHMM is a tool used for predicting transmembrane helices in proteins using a hidden Markov model, but it does not predict beta-barrel transmembrane proteins.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 1251,
@@ -1041,13 +747,7 @@
       "Treatment options for chronic subdural hematomas as per the Galassi classification can range from conservative management to surgical intervention."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The Galassi classification is used to categorize and describe different types of arachnoid cysts, not chronic subdural hematomas.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The Galassi classification includes three types, not four. Type I is a small cyst with a slit-like appearance, Type II is larger with some displacement of adjacent brain structures, and Type III is large with significant displacement of adjacent brain structures.\n5. TRUE (although the statement is true that treatment options can range from conservative management to surgical intervention, it should be noted that the Galassi classification is for arachnoid cysts, not chronic subdural hematomas, so the treatment would be for arachnoid cysts).",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "false", "true"]
   },
   {
     "id": 1304,
@@ -1062,13 +762,7 @@
       "Many individuals with Shapiro syndrome experience gastrointestinal problems, including difficulty swallowing and gastroesophageal reflux disease."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Shapiro syndrome is characterized by the triad of recurrent episodes of spontaneous hypothermia, hyperhidrosis, and agenesis of the corpus callosum, not orthostatic hypotension.\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nShapiro syndrome is a rare neurological disorder, and while the primary characteristics are well-defined, the full spectrum of symptoms can vary and may include other neurological issues. However, without specific information on the typical presentation of symptoms beyond the core triad, it is difficult to confirm the accuracy of statements 2 through 5.",
-    "chatgpt_judge": [
-      "false",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["false", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 1320,
@@ -1083,13 +777,7 @@
       "Individuals with Adams-Oliver syndrome typically exhibit aplasia cutis congenita (ACC) and terminal transverse limb defects (TTLD)."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Mutations within the ARHGAP31 gene (not BRAG1) have been associated with Adams-Oliver syndrome (AOS).\n2. TRUE\n3. FALSE [correction]: Adams-Oliver syndrome was first described by Adams and Oliver in 1945.\n4. UNKNOWN (The prevalence can vary, and without a specific source, it's difficult to confirm the accuracy of this statement.)\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "false", "unknown", "true"]
   },
   {
     "id": 1362,
@@ -1104,13 +792,7 @@
       "I-1 is involved in the regulation of cardiac muscle contraction by inhibiting PP1-mediated dephosphorylation of phospholamban."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThese statements are consistent with the general understanding of the role of Inhibitor-1 (I-1) in regulating protein phosphatase 1 (PP1) and its involvement in cardiac muscle contraction through the regulation of phospholamban phosphorylation status.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1374,
@@ -1125,13 +807,7 @@
       "DinB is responsible for error-prone DNA synthesis in the stress-induced mutagenesis pathway of Bacillus subtilis."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Error-prone DNA polymerases such as DNA polymerase IV (Pol IV) and DNA polymerase V (Pol V) are induced in Escherichia coli, not Bacillus subtilis, during periods of stress or nutrient limitation.\n2. FALSE [correction]: The SOS response pathway is well-characterized in Escherichia coli, not Bacillus subtilis. In E. coli, it can induce the expression of error-prone polymerases and inhibit some DNA repair pathways, promoting mutagenesis.\n3. TRUE: Recombination events and horizontal gene transfer can contribute to adaptive mutagenesis in bacteria, including Bacillus subtilis, during periods of stress.\n4. FALSE [correction]: The stress-induced mutagenesis pathway involving the activation of the Y-family DNA polymerase, DinB, by the stress-responsive transcription factor, RpoS, is described in Escherichia coli, not Bacillus subtilis.\n5. FALSE [correction]: In Escherichia coli, DinB (DNA polymerase IV) is responsible for error-prone DNA synthesis in the stress-induced mutagenesis pathway. This statement incorrectly attributes the pathway to Bacillus subtilis.",
-    "chatgpt_judge": [
-      "false",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "chatgpt_judge": ["false", "false", "true", "false", "false"]
   },
   {
     "id": 1399,
@@ -1146,13 +822,7 @@
       "Gastroparesis, characterized by delayed stomach emptying, can lead to the buildup of gas and cause erucism."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Erucism is not the act of expelling gas from the stomach through the mouth; that is eructation or belching. Erucism refers to the irritation caused by contact with the hairs or bristles of certain caterpillars and moths.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 1413,
@@ -1167,13 +837,7 @@
       "Hydrochlorothiazide has been shown to increase calcium reabsorption in the kidneys, which can help reduce the risk of osteoporosis."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Hydrochlorothiazide can lead to increased calcium retention in the kidneys, but it is not typically used to reduce the risk of osteoporosis. Instead, it may increase the risk of osteoporosis due to potential imbalances in calcium metabolism over the long term.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1447,
@@ -1188,13 +852,7 @@
       "Silicon-based materials are used in the manufacturing of pelvic floor implants and slings to treat stress urinary incontinence."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Silicone-based materials, not silicon-based materials, are used in the manufacturing of pelvic floor implants and slings to treat stress urinary incontinence. Silicon is a chemical element, while silicone is a polymer made from silicon, oxygen, carbon, and hydrogen, known for its flexibility and water resistance.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1454,
@@ -1209,13 +867,7 @@
       "Another study published in the Journal of Neurosurgery in 2011 found a slightly higher incidence of aneurysm rupture during the full moon phase."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN (without access to the specific study, the claim cannot be verified)\n4. UNKNOWN (without access to the specific study, the claim cannot be verified)\n5. UNKNOWN (without access to the specific study, the claim cannot be verified)",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "unknown", "unknown", "unknown"]
   },
   {
     "id": 1477,
@@ -1230,13 +882,7 @@
       "HuR has been shown to stabilize the mRNA of certain splicing factors, such as SRSF1, by binding to their 3' UTRs and preventing their degradation."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: HuR protein, also known as human antigen R, is involved in regulating the stability and translation of mRNA, not the splicing process.\n2. TRUE\n3. FALSE [correction]: HuR protein is known for its role in stabilizing and regulating the translation of mRNA by binding to AU-rich elements (AREs) in the 3' untranslated regions (UTRs), not for affecting the selection of splice sites in pre-mRNA.\n4. UNKNOWN: While HuR is known to interact with various proteins involved in mRNA metabolism, the specific interaction with serine/arginine-rich (SR) proteins and its effect on their activity in the context of alternative splicing is not well-defined without additional context.\n5. TRUE: HuR has been shown to stabilize the mRNA of certain genes, including splicing factors, by binding to their 3' UTRs and preventing their degradation, although the specific example of SRSF1 would need to be verified with current literature.",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "false", "unknown", "true"]
   },
   {
     "id": 1492,
@@ -1251,13 +897,7 @@
       "ProTα-CTP may have anti-cancer properties and has been shown to inhibit the growth and proliferation of cancer cells in various types of cancer."
     ],
     "chatgpt_judge_raw": "1. TRUE - Prothymosin alpha (ProTα) and its derived peptides, including the C-terminal peptide (ProTα-CTP), have been reported to have immunomodulatory properties that can stimulate the production of cytokines such as interleukin-2 (IL-2) and interferon-gamma (IFN-γ).\n\n2. TRUE - ProTα-CTP is known to have anti-inflammatory properties and can inhibit the production of pro-inflammatory cytokines like tumor necrosis factor-alpha (TNF-α) and interleukin-6 (IL-6), which is consistent with its immunomodulatory role.\n\n3. TRUE - ProTα and its peptides, including ProTα-CTP, have been reported to exhibit antimicrobial activity against a range of pathogens, including bacteria, viruses, and fungi, due to their ability to modulate immune responses and possibly through direct antimicrobial effects.\n\n4. TRUE - ProTα-CTP has been implicated in the wound healing process, as it can promote the migration and proliferation of skin cells, which are essential steps in wound repair. It is also known to stimulate the production of growth factors such as transforming growth factor-beta (TGF-β), which further supports the wound healing process.\n\n5. TRUE - ProTα-CTP may indeed have anti-cancer properties, as some studies have suggested that it can inhibit the growth and proliferation of cancer cells in various types of cancer. However, the exact mechanisms and the extent of its anti-cancer effects are still under investigation and may vary depending on the type of cancer.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1516,
@@ -1272,13 +912,7 @@
       "A disulfide bond between Cys-3 and Cys-77 in cystatin C stabilizes the fibrillar structure, and its disruption inhibits fibril formation."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: A disulfide bond between Cys-26 and Cys-31 in cystatin C stabilizes the native fold, and its disruption can lead to increased fibril formation.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1574,
@@ -1293,13 +927,7 @@
       "Amifostine has been shown to activate various signaling pathways, including the PI3K/Akt pathway, which can directly regulate HIF-1α expression."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1588,
@@ -1314,13 +942,7 @@
       "Set7 has been reported to methylate non-histone proteins, including the tumor suppressor protein p53."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: Set7 specifically catalyzes the methylation of lysine 4 on histone H3 (H3K4), but it is known for monomethylation rather than methylation in general, which can include mono-, di-, or trimethylation.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 1620,
@@ -1335,13 +957,7 @@
       "Hepcidin has a total of two disulfide bridges."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Hepcidin contains a total of eight cysteine residues.\n4. TRUE\n5. FALSE [correction]: Hepcidin has a total of four disulfide bridges.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 1643,
@@ -1356,13 +972,7 @@
       "A study has suggested that DNAJC11 may be present in the endoplasmic reticulum (ER)."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: DNAJC11 is not specifically found in the mitochondrial matrix; it is associated with the outer mitochondrial membrane.\n4. FALSE [correction]: DNAJC11 has not been observed in the intermembrane space of mitochondria; it is associated with the outer mitochondrial membrane.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "false", "true"]
   },
   {
     "id": 1655,
@@ -1377,13 +987,7 @@
       "UCEs are more likely to be located in genomic regions with high gene density and low segmental duplication content."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nUltraconserved elements (UCEs) are indeed regions of the genome that are highly conserved across different species, often indicating that they have important biological functions. Copy number variants (CNVs) are structural variations in the genome that can involve the duplication or deletion of segments of DNA. The studies mentioned in statements 3 and 4 are consistent with the scientific literature, as UCEs are generally found to be depleted among CNVs, suggesting that there is strong selective pressure to maintain these elements without changes. Lastly, UCEs are often found in regions of the genome with high gene density and are less likely to be found in regions with high segmental duplication content, which is consistent with the idea that these elements are functionally important and conserved due to selective pressures.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1665,
@@ -1398,13 +1002,7 @@
       "The phosphorylation of histone H3 at threonine 3 creates a binding site for the inner centromere protein (INCENP), which is part of the chromosomal passenger complex (CPC)."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nEach of these statements is consistent with current scientific understanding of haspin kinase and its role during mitosis. Haspin kinase phosphorylates histone H3 at threonine 3 (H3T3ph), which is important for chromosome behavior and proper mitotic progression. The phosphorylation event creates a binding site for the chromosomal passenger complex (CPC), of which INCENP is a crucial component, and this interaction is important for correct chromosome alignment and segregation.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1696,
@@ -1419,13 +1017,7 @@
       "Mature viroid RNA molecules are circularized by the host RNA ligase enzyme."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Mature viroid RNA molecules are typically circularized by their own RNA ligase-like activity, not by the host RNA ligase enzyme.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1723,
@@ -1440,13 +1032,7 @@
       "There is currently no consensus on whether fibronectin can be considered a reliable biomarker for Duchenne muscular dystrophy."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "unknown", "unknown", "true"]
   },
   {
     "id": 1763,
@@ -1461,13 +1047,7 @@
       "The Cistrome Project data, which includes transcription factor binding sites and chromatin states, is part of the DeepBlue server's dataset."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN\n\nThe DeepBlue epigenomic data server is known to include data from various large-scale epigenomic projects such as ENCODE, the Roadmap Epigenomics project, and the BLUEPRINT project. However, without specific information about the inclusion of the Cistrome Project data in the DeepBlue server's dataset, the truth of statement 5 cannot be determined.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 1792,
@@ -1482,13 +1062,7 @@
       "CUA provides statistical tests to assess the significance of observed codon usage patterns in the analyzed sequences."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN\n\nThe statements about the Codon Usage Analyzer (CUA) tool are specific to bioinformatics, and without the specific context or reference to a particular CUA tool, it's difficult to verify the claims about the use of self-organizing maps (SOMs) or the provision of statistical tests. Codon usage analysis tools do often calculate the frequency of each synonymous codon and may use various methods for analysis, but without more information, the details about SOMs and statistical tests cannot be confirmed.",
-    "chatgpt_judge": [
-      "unknown",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 1793,
@@ -1503,13 +1077,7 @@
       "MINDY-1 operates based on a set of production rules and incorporates a learning mechanism to adapt over time."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: MINDY-1 stands for \"Mnemonic Induction Neural Dynamics.\"\n2. FALSE [correction]: MINDY-1 was developed by researchers at the University of California, Berkeley, not by John R. Anderson and colleagues at Carnegie Mellon University.\n3. UNKNOWN: Without additional context, it is unclear whether MINDY-1 is based on the ACT-R cognitive architecture. ACT-R is a specific cognitive architecture, and MINDY-1 could be based on different principles.\n4. TRUE: MINDY-1 is designed to simulate neural dynamics related to memory processes, which would include how information is encoded, stored, and retrieved, as well as attention allocation.\n5. UNKNOWN: Without more information, it is not possible to confirm whether MINDY-1 operates based on a set of production rules or incorporates a learning mechanism to adapt over time. These details would depend on the specific design and implementation of the MINDY-1 model.",
-    "chatgpt_judge": [
-      "false",
-      "false",
-      "unknown",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["false", "false", "unknown", "true", "unknown"]
   },
   {
     "id": 1810,
@@ -1524,13 +1092,7 @@
       "Other software packages for the analysis of conserved genomic loci include MAFFT, T-Coffee, and Muscle."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Clustal Omega is a software package used for multiple sequence alignment, not specifically for the analysis of conserved genomic loci.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 1860,
@@ -1543,11 +1105,7 @@
       "Distal Hereditary Motor Neuropathy Type 5 is a rare inherited peripheral neuropathy caused by mutations in the PIEZO2 gene."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: Marden-Walker Syndrome is a rare genetic disorder, but it is not typically associated with mutations in the PIEZO2 gene. It is characterized by multiple joint contractures (arthrogryposis), a mask-like face with a small mouth, and other abnormalities. The genetic cause is not well-defined and may be heterogeneous.\n3. FALSE [correction]: Distal Hereditary Motor Neuropathy Type 5 (also known as Spinal Muscular Atrophy with Pyramidal Features, or SPG11) is a rare inherited peripheral neuropathy, but it is not caused by mutations in the PIEZO2 gene. It is commonly associated with mutations in the GARS, REEP1, BSCL2, or SPG11 genes, among others.",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "false", "false"]
   },
   {
     "id": 1867,
@@ -1562,13 +1120,7 @@
       "ERAP1 has a preference for peptides with hydrophobic or basic residues at the N-terminus, while ERAP2 prefers peptides with acidic residues."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 1890,
@@ -1583,13 +1135,7 @@
       "Noggin binds to BMPs to inhibit BMP signaling, which is important for maintaining the balance of BMP activity in the gallbladder."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n4. TRUE\n5. FALSE [correction]: Noggin binds to BMPs to inhibit BMP signaling, which is important in various developmental processes, but there is no specific evidence provided here that this function is directly related to maintaining the balance of BMP activity in the gallbladder. Noggin's role is more broadly associated with embryonic development and the regulation of bone and neural tissue formation.",
-    "chatgpt_judge": [
-      "true",
-      "unknown",
-      "unknown",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "unknown", "unknown", "true", "false"]
   },
   {
     "id": 1937,
@@ -1604,13 +1150,7 @@
       "The small GTPase protein, Rac, is required for the full activation of NOX5."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The small GTPase protein, Rac, is not required for the activation of NOX5, unlike other NADPH oxidases.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1944,
@@ -1625,13 +1165,7 @@
       "Furin cleaves the inactive precursor of hepcidin, prohepcidin, to activate it and allow it to regulate iron levels in the body."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Furin does not cleave prohepcidin to activate it. Hepcidin is synthesized as an active peptide hormone without the need for cleavage by furin.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 1956,
@@ -1646,13 +1180,7 @@
       "The expression of the GAL gene cluster is induced in the presence of galactose."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. TRUE\n3. FALSE [correction]: The GAL gene cluster is located on chromosome II but spans approximately 17 kilobases, not 20.\n4. FALSE [correction]: The GAL gene cluster contains five genes involved in galactose metabolism: GAL1, GAL2, GAL7, GAL10, and GAL80. GAL3 and GAL4 are involved in the regulation of the cluster, and MEL1, which encodes for alpha-galactosidase, is not typically listed as part of the GAL gene cluster.\n5. TRUE",
-    "chatgpt_judge": [
-      "unknown",
-      "true",
-      "false",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "true", "false", "false", "true"]
   },
   {
     "id": 1967,
@@ -1667,13 +1195,7 @@
       "LIMT lncRNA has been shown to interact with RNA-binding proteins to modulate alternative splicing events."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with the roles that long non-coding RNAs (lncRNAs) like LIMT can play in cancer biology. LncRNAs can act as tumor suppressors, influence metastasis, function as molecular sponges for microRNAs, recruit chromatin-modifying complexes, and interact with RNA-binding proteins to affect splicing. However, without specific references to scientific literature, the exact roles of LIMT lncRNA in these processes cannot be verified, but the statements are plausible based on the known functions of lncRNAs in cancer.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 1984,
@@ -1688,13 +1210,7 @@
       "The `ggplot2` and `EnrichmentBrowser` packages can be used to visualize the results of SNP enrichment analysis in R."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The \"SNPlocs.Hsapiens.dbSNP144.GRCh37\" package is used for providing locations of SNPs on the GRCh37 genome assembly, not specifically for performing SNP enrichment analysis.\n2. TRUE\n3. UNKNOWN: The function `mapSNPsToGRanges()` is not a standard or well-documented function in the \"SNPlocs.Hsapiens.dbSNP144.GRCh37\" package, so without additional context, it's unclear whether this function exists or what its exact functionality is.\n4. TRUE: The `findOverlaps()` function from the `GenomicRanges` package is indeed used to find overlaps between different sets of genomic ranges, which can include SNP regions and other genomic regions of interest.\n5. TRUE: The `ggplot2` package can be used for general data visualization in R, including visualizing results of analyses, and the `EnrichmentBrowser` package can be used for visualization and analysis of enrichment results, which could include SNP enrichment analysis.",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "unknown", "true", "true"]
   },
   {
     "id": 2015,
@@ -1709,13 +1225,7 @@
       "The Polycomb group protein Ezh2 is involved in maintaining the radial glial phenotype and preventing premature differentiation into ependymal cells."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Sonic hedgehog (Shh) signaling is not primarily known for specifying radial glial cells into ependymal cells. Shh signaling plays a crucial role in the patterning of the neural tube and the development of various cell types within the central nervous system, but its direct role in the specification of radial glial cells into ependymal cells is not well-established.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2065,
@@ -1730,13 +1240,7 @@
       "Triple negative gliomas often exhibit mutations in genes such as TP53, EGFR, PTEN, and IDH1/2."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Triple negative gliomas are not defined by the absence of estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER2/neu). This definition is for triple-negative breast cancer. Gliomas are typically characterized by their cell type, grade, and molecular profile, but not typically by hormone receptor status.\n2. TRUE: Gliomas are often classified as high-grade tumors, with grade III and grade IV (glioblastoma) being the most malignant according to the WHO classification system.\n3. TRUE: High-grade gliomas, including those that could be informally referred to as \"triple negative\" due to a lack of specific molecular markers, generally have a poorer prognosis, higher rate of recurrence, increased resistance to treatment, and shorter overall survival compared to lower-grade glioma subtypes.\n4. UNKNOWN: The statement about the age range and gender predominance for \"triple negative gliomas\" is difficult to assess because \"triple negative glioma\" is not a standard classification for gliomas. However, glioblastomas, which are high-grade gliomas, are more commonly diagnosed in older adults, not typically between the ages of 20 and 50, and have a slight male predominance.\n5. TRUE: Gliomas, particularly high-grade gliomas like glioblastoma, often exhibit mutations in genes such as TP53, EGFR, PTEN, and IDH1/2. These mutations are part of the molecular profiling used to classify and understand gliomas.",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "unknown", "true"]
   },
   {
     "id": 2069,
@@ -1751,13 +1255,7 @@
       "Alterations in the TOPAZ1 gene or its protein product have been associated with several human diseases, including cancer."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: TOP2A is a gene that encodes a protein called Topoisomerase II alpha (TOP2A), not TOPAZ1.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2075,
@@ -1772,13 +1270,7 @@
       "Cytokines and growth factors such as erythropoietin (EPO) and thrombopoietin (TPO) are involved in the regulation of GATA1 expression."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 2076,
@@ -1793,13 +1285,7 @@
       "The MIRA-seq process includes library preparation, reverse transcription into cDNA, PCR amplification, and high-throughput sequencing using platforms such as Illumina or Ion Torrent."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2108,
@@ -1814,13 +1300,7 @@
       "ARCALYST is indicated for the treatment of Neonatal-Onset Multisystem Inflammatory Disease (NOMID) or Chronic Infantile Neurologic, Cutaneous, Articular (CINCA) Syndrome in adults and children aged 3 months and older."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: ARCALYST is indicated for the treatment of Neonatal-Onset Multisystem Inflammatory Disease (NOMID) or Chronic Infantile Neurologic, Cutaneous, Articular (CINCA) Syndrome in adults and children, but the age specification for its use in children with these conditions may vary and should be verified with the most current medical guidelines or prescribing information.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2170,
@@ -1835,13 +1315,7 @@
       "Unbalanced Robertsonian translocations can lead to genetic disorders such as Down syndrome."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2237,
@@ -1856,13 +1330,7 @@
       "Machine learning algorithms or statistical methods, such as a support vector machine (SVM) classifier, can be applied to classify tumors using the \"medulloblastoma\" package."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nThe statements provided are specific to the functionality and contents of the \"medulloblastoma\" package in R. Without access to the documentation or a description of this package, it is not possible to verify the accuracy of these statements. The R programming language does have packages for various types of bioinformatics and medical research, so these statements could be plausible, but without specific knowledge about this package, their truth cannot be determined.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 2246,
@@ -1877,13 +1345,7 @@
       "The zinc finger-like domain in NEMO is involved in protein-protein interactions, not DNA binding."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2247,
@@ -1898,13 +1360,7 @@
       "TFIIS can interact with the SWI/SNF chromatin remodeling complex, which is involved in altering nucleosome positioning."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN\n\nThe first four statements are accurate descriptions of TFIIS and its role in transcription elongation, the process of nucleosome positioning, and the effects of RNA polymerase II elongation rates on nucleosome dynamics. However, the fifth statement about TFIIS interacting with the SWI/SNF chromatin remodeling complex is not a widely established fact and would require specific scientific evidence to confirm, hence the response is \"UNKNOWN\" without additional context.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 2262,
@@ -1919,13 +1375,7 @@
       "The firing time of replication origins is regulated by a replication timing program that dictates when different regions of the genome replicate during the S phase of the cell cycle."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2268,
@@ -1940,13 +1390,7 @@
       "G-quadruplex-binding proteins interact with GA-sequences and play roles in DNA repair, telomere maintenance, and regulation of gene expression."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Mammalian G-rich sequences, not GA-sequences, can form secondary structures called G-quadruplexes through Hoogsteen hydrogen bonding.\n2. FALSE [correction]: Telomeres consist of repetitive TTAGGG sequences in vertebrates, not GA-rich sequences.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 2291,
@@ -1961,13 +1405,7 @@
       "The number of Groucho-related genes in the mouse genome may vary depending on the genome assembly version and the specific annotation criteria used."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE - As of my last update, all four Groucho-related genes (Grg1, Grg2, Grg3, and Grg4) are indeed present in the mouse genome according to the Ensembl database. However, it should be noted that databases are updated regularly, so it's always good to check the latest version for the most current information.\n5. TRUE - The number of identified genes in any genome can vary depending on the genome assembly version and the specific annotation criteria used. Different versions of genome assemblies may have different annotations due to improvements in sequencing technologies, gene prediction algorithms, and new biological insights.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2304,
@@ -1982,13 +1420,7 @@
       "Rpb11 is involved in the recruitment of the cleavage and polyadenylation specificity factor (CPSF) for RNA cleavage and processing."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The Rpb1 subunit of RNA polymerase II, not Rpb11, is responsible for RNA cleavage activity.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The Rpb11 subunit is not part of the active site of RNA polymerase II; it is involved in the assembly and stability of the polymerase complex.\n5. FALSE [correction]: Rpb11 is not directly involved in the recruitment of the cleavage and polyadenylation specificity factor (CPSF) for RNA cleavage and processing; this function is associated with other subunits of RNA polymerase II.",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "false", "false"]
   },
   {
     "id": 2321,
@@ -2003,13 +1435,7 @@
       "Mutations in the SETD5 gene have been found in individuals with Ohdo syndrome and are associated with intellectual disability and neurological features."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Mutations in the MED12 gene are associated with other syndromic forms of intellectual disability, such as Opitz-Kaveggia syndrome (also known as FG syndrome) and Lujan-Fryns syndrome, not typically with Ohdo syndrome.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 2331,
@@ -2024,13 +1450,7 @@
       "PsychENCODE offers tools for constructing and analyzing gene co-expression networks."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with the typical features of a bioinformatics package designed for the analysis of psychiatric disease genes, such as PsychENCODE. The package is expected to integrate multi-omics data, include tools for differential expression analysis, provide functions for gene set enrichment analysis, and offer tools for constructing and analyzing gene co-expression networks. Without specific details to contradict these statements, they are assumed to be true based on the general description of such a package.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2360,
@@ -2045,13 +1465,7 @@
       "Hematoma expansion can lead to increased pressure and compression of surrounding brain tissue, which is associated with worse outcomes and increased mortality rates."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: On CT scans, the swirl sign appears as a hypodense or mixed density area within the hematoma, indicating active bleeding.\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2392,
@@ -2066,13 +1480,7 @@
       "The mitogen-activated protein kinase (MAPK) signaling pathway is involved in the activation of ROF1 in response to drought stress."
     ],
     "chatgpt_judge_raw": "1. TRUE: Arabidopsis ROF1 (Responsive to Dehydration 21) is indeed a gene that is induced in response to dehydration stress.\n2. TRUE: The plant hormone abscisic acid (ABA) is known to be involved in the response to water deficit and can induce the expression of genes like ROF1.\n3. TRUE: Reactive oxygen species (ROS) are often generated during environmental stresses, including dehydration, and can play a role in signaling pathways that activate stress-responsive genes such as ROF1.\n4. UNKNOWN: Without specific literature to confirm or deny the statement about DREB2A and DREB2B binding to the ROF1 promoter, the truth of this statement cannot be determined.\n5. UNKNOWN: The involvement of the mitogen-activated protein kinase (MAPK) signaling pathway in the activation of ROF1 in response to drought stress is plausible, as MAPK pathways are involved in various stress responses in plants. However, without specific evidence, the truth of this statement cannot be confirmed.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 2398,
@@ -2087,13 +1495,7 @@
       "The Val30Met mutation is particularly prevalent in individuals of Portuguese, Swedish, and Japanese descent."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Transthyretin (TTR) is not the most common protein associated with hereditary renal amyloidosis; it is more commonly associated with hereditary transthyretin amyloidosis (ATTR), which often affects the nervous system and the heart.\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The Val30Met mutation is the most common mutation in the TTR gene associated with hereditary transthyretin amyloidosis (ATTR), not specifically hereditary renal amyloidosis.\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "false", "true"]
   },
   {
     "id": 2407,
@@ -2108,13 +1510,7 @@
       "Distler et al. conducted a study in 2018 that compared the proteomic profiles of young and aged mice, identifying age-related changes in the mouse hippocampus."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2409,
@@ -2129,13 +1525,7 @@
       "The mouse genome consists of 19 pairs of autosomes and one pair of sex chromosomes, with the X chromosome being metacentric and the Y chromosome being acrocentric."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The mouse genome consists of 19 pairs of autosomes and one pair of sex chromosomes, with both the X and Y chromosomes being acrocentric.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2417,
@@ -2150,13 +1540,7 @@
       "In a Phase II trial, PEGPH20 combined with standard chemotherapy showed improved progression-free survival and overall response rates in patients with high levels of HA."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: PEGPH20 is not an siRNA-based drug; it is an enzyme that targets and degrades hyaluronan (HA) in the tumor microenvironment.\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "unknown"]
   },
   {
     "id": 2419,
@@ -2171,13 +1555,7 @@
       "The HPG pore is used in various applications, including desalination, wastewater treatment, and water purification for industrial or domestic use."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The HPG pore stands for \"hourglass pore geometry\" or \"high-performance gel\" depending on the context, but not \"hydrophilic pore gradient pore.\"\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2472,
@@ -2192,13 +1570,7 @@
       "The genomic data generated by the 959 Nematode Genomes initiative is made publicly available for researchers worldwide."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with the typical goals and methods of large-scale genomic initiatives, such as the 959 Nematode Genomes initiative, which would aim to sequence a large number of species within a phylum (Nematoda) to understand their biology, evolution, and diversity. Advanced technologies like next-generation sequencing would be used for such a project, and the data is often made publicly available to benefit the scientific community. However, without specific details on the 959 Nematode Genomes initiative, the responses are based on general practices of similar genomic projects.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2557,
@@ -2213,13 +1585,7 @@
       "NIPTeR can be integrated with other popular bioinformatics tools and packages in R."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 2560,
@@ -2234,13 +1600,7 @@
       "Diagnosis of Achenbach's syndrome is based on clinical presentation and exclusion of other potential causes of finger bruising."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: Achenbach's syndrome was first described by Dr. Curt Achenbach in 1958.\n3. TRUE\n4. FALSE [correction]: Achenbach's syndrome is not typically associated with underlying vascular disorders; its cause is often unknown.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "unknown", "true"]
   },
   {
     "id": 2581,
@@ -2255,13 +1615,7 @@
       "There are several variations and alternative algorithms available for repeat expansion detection, tailored to specific requirements and DNA sequence characteristics."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The Repeat Expansion Detection Algorithm (REDA) does not necessarily compare the target DNA sequence to a reference genome or a database of known repeat sequences. It typically involves PCR or other methods to detect the presence and size of repeat expansions directly.\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "unknown", "true"]
   },
   {
     "id": 2582,
@@ -2276,13 +1630,7 @@
       "Neuroligin-3 has been found to enhance the proliferation of glioma cells and promote cell invasion, angiogenesis, and immune evasion."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nEach of these statements is consistent with current scientific understanding. Neuroligin-3 is indeed associated with synaptic function in the central nervous system, gliomas do originate from glial cells, GBM is a highly malignant form of glioma, and there is research suggesting that neuroligin-3 expression is upregulated in gliomas and may contribute to various aspects of glioma pathology, including proliferation, invasion, angiogenesis, and immune evasion.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2586,
@@ -2297,13 +1645,7 @@
       "GvpC acts as a capping protein at the ends of the gas vesicle."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: GvpC does not act as a capping protein at the ends of the gas vesicle; rather, it strengthens the structure by binding to the exterior surface of the gas vesicle wall.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2589,
@@ -2318,13 +1660,7 @@
       "BRDT (Bromodomain testis-specific protein) is predominantly expressed in the testis and plays a crucial role in spermatogenesis."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nBET proteins, including BRD2, BRD3, BRD4, and BRDT, are indeed characterized by having two bromodomains and are known to play roles in various cellular processes as described. BRDT is specifically expressed in the testis and is important for spermatogenesis.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2610,
@@ -2339,13 +1675,7 @@
       "The performance of DeepLoc is evaluated using metrics such as accuracy, precision, recall, and F1 score."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2634,
@@ -2360,13 +1690,7 @@
       "The MULTOVL algorithm involves learning separate representations for each view and then combining them into a unified representation for tasks such as classification, clustering, or regression."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The MULTOVL algorithm involves learning a shared representation that is both discriminative for each view and consistent across views, rather than learning separate representations for each view and then combining them.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 2660,
@@ -2381,13 +1705,7 @@
       "Research published in the journal Diabetes in 2019 found that metformin treatment led to a significant increase in GDF15 levels compared to placebo treatment."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nBased on the information provided, all statements appear to be consistent with general scientific knowledge about GDF15 and metformin. However, without access to the specific studies mentioned, I cannot verify the exact findings of the research articles from Diabetes Care in 2017 and the journal Diabetes in 2019. Assuming the statements accurately reflect the content of these studies, they are true.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2664,
@@ -2402,13 +1720,7 @@
       "The occurrence of recursive splicing is influenced by various factors, including the presence of specific splicing regulatory elements and the activity of splicing factors."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Short introns are typically spliced out in a single event and are less likely to undergo recursive splicing. It is the longer introns that are more favorable for recursive splicing due to their complex secondary structures that may require multiple steps to resolve.\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2679,
@@ -2423,13 +1735,7 @@
       "The TALE-iD method has applications in gene therapy, biotechnology, and agriculture."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: TALE-iD employs transcription activator-like effectors (TALEs) rather than Cas9. The method mentioned that uses dCas9 is CRISPRi/dCas9, not TALE-iD.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 2747,
@@ -2444,13 +1750,7 @@
       "CL-IPS is designed to be extensible and customizable, with support for parallel processing and integration with other Lisp libraries."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nWithout specific information about the Common Lisp Image Processing System (CL-IPS), it is not possible to verify the accuracy of these statements. They could be true if such a framework exists and has these features, but without additional context or sources, the truthfulness of these statements cannot be determined.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 2759,
@@ -2465,13 +1765,7 @@
       "Approximately 5,800 genes in S. cerevisiae are the result of the ancient whole genome duplication, accounting for around 47% of the total genes in the organism."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Candida glabrata has 13 chromosomes.\n5. FALSE [correction]: While it is true that a significant portion of the S. cerevisiae genome consists of genes that are the result of the ancient whole genome duplication, the exact number and percentage can vary based on different studies and the current state of knowledge. Therefore, without a specific reference, the exact number of genes and the percentage cannot be confirmed as true or false. It's best to consider this statement as UNKNOWN.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 2763,
@@ -2486,13 +1780,7 @@
       "In skeletal muscle, Esrrb forms a complex with PGC-1α to activate genes involved in mitochondrial biogenesis and oxidative metabolism."
     ],
     "chatgpt_judge_raw": "1. TRUE: Estrogen-related receptor β (Esrrb) is known to bind to specific DNA sequences, which can be referred to as estrogen-related response elements (ERREs).\n2. TRUE: Esrrb is indeed involved in the maintenance of pluripotency in embryonic stem cells (ESCs).\n3. TRUE: The pluripotency regulatory complex in ESCs includes transcription factors such as Esrrb, Oct4, Sox2, and Nanog.\n4. TRUE: Esrrb is expressed in various adult tissues, including its role in regulating energy metabolism and mitochondrial function.\n5. TRUE: In skeletal muscle, Esrrb can interact with PGC-1α to activate genes involved in mitochondrial biogenesis and oxidative metabolism.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 2842,
@@ -2507,13 +1795,7 @@
       "ZCCHC17 is involved in RNA modification, mRNA metabolism, embryonic development, and potentially in tumorigenesis."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: ZCCHC17 is not known to act as an RNA methyltransferase. It is known to be involved in pre-mRNA splicing and other RNA-related processes.\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "unknown", "unknown", "true"]
   },
   {
     "id": 2861,
@@ -2528,13 +1810,7 @@
       "Tpr is a protein that forms a filamentous structure within the nuclear pore basket and is involved in the organization of the nuclear pore complex."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: The NPC is composed of approximately 30 different types of proteins known as nucleoporins (Nups), but the total number of individual Nup molecules in the complex is much higher, with estimates of around 1000 Nup molecules per pore.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 2919,
@@ -2549,13 +1825,7 @@
       "Gepotidacin has shown efficacy against various bacterial infections, including urinary tract infections, skin and soft tissue infections, and respiratory tract infections."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: Gepotidacin belongs to a class of antibiotics called triazaacenaphthylene bacterial topoisomerase inhibitors, not AZD compounds.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 2943,
@@ -2570,13 +1840,7 @@
       "Canvas SPW integrates with external tools and services such as Google Drive, Microsoft Office 365, and Turnitin."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Canvas is an online learning management system developed by Instructure. \"SPW\" does not appear to be a recognized part of the Canvas LMS name.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2960,
@@ -2591,13 +1855,7 @@
       "ML RR-S2 CDA is a synthetic CDN with potent antitumor activity in preclinical studies."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: 2'3'-cGAMP is a naturally occurring CDN used in research to study the STING pathway.\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 2964,
@@ -2612,13 +1870,7 @@
       "SLIC-CAGE can be applied to a variety of materials, including metals, alloys, ceramics, and composites."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe acronym SLIC-CAGE is not widely recognized or standard, so without specific context, it's difficult to confirm its meaning. However, the descriptions of the technique and its applications in statements 2 through 5 are consistent with the principles of laser processing techniques used to modify material grain structures.",
-    "chatgpt_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 2978,
@@ -2633,13 +1885,7 @@
       "LEM-3 was responsible for the ascent from the lunar surface back to lunar orbit to rendezvous with the Command Module."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The correct term is LM-3, or Lunar Module-3, not LEM-3. The term \"LEM\" was used early in the program but was later changed to \"LM\" for Lunar Module.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 2992,
@@ -2654,13 +1900,7 @@
       "tmVar Release 7.0 was released in 2019 and included new algorithms to extract variant information from full-text articles."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: tmVar Release 2.0 was released in 2018 and included a web interface for online access.\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nThe corrections and responses are based on the information available up to my knowledge cutoff date in early 2023. The release dates and features of tmVar versions beyond my knowledge cutoff date or those not well-documented in accessible sources would be unknown.",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "false", "unknown", "unknown", "unknown"]
   },
   {
     "id": 3018,
@@ -2675,13 +1915,7 @@
       "The 1000 Genomes Project is a large-scale effort to catalog genetic variations in the general population and includes some information on somatic mutations in normal tissues."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The 1000 Genomes Project is a large-scale effort to catalog genetic variations in the general population, but it focuses on germline (inherited) variations rather than somatic mutations in normal tissues.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3037,
@@ -2696,13 +1930,7 @@
       "Java-ML is a machine learning library in Java that includes graph kernel algorithms as part of its graph package."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. FALSE [correction]: Weka is a machine learning library in Java, but it does not provide graph kernel algorithms through a specific graph package. It focuses on general machine learning algorithms.\n5. FALSE [correction]: Java-ML is a machine learning library in Java, but it does not include graph kernel algorithms as part of its offerings. It provides a collection of machine learning algorithms.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "false",
-      "false"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "false", "false"]
   },
   {
     "id": 3045,
@@ -2717,13 +1945,7 @@
       "The SHERLOCKv2 platform was developed by the Broad Institute of MIT and Harvard."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nSHERLOCKv2 is an updated version of the original SHERLOCK (Specific High-sensitivity Enzymatic Reporter unLOCKing) technology, which is a CRISPR-based diagnostic tool. It does utilize a more efficient CRISPR-Cas13a enzyme for greater sensitivity, allows for multiplexed detection of nucleic acids, incorporates a quenching system to improve specificity, includes a lateral flow readout for visual detection, and was developed by researchers at the Broad Institute of MIT and Harvard.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3078,
@@ -2738,13 +1960,7 @@
       "The bartender algorithm includes a step for serving drinks, which represents the output or result of the algorithm."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided seem to describe a metaphorical algorithm based on the duties of a bartender, which can be used to explain various concepts in computer science and problem-solving. Each step mentioned corresponds to typical stages in an algorithm: initialization, input handling, processing, and output. However, it should be noted that the \"bartender algorithm\" is not a formal algorithm in computer science; it is an analogy or a teaching tool.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3100,
@@ -2759,13 +1975,7 @@
       "Pedigree Maker is a web-based pedigree editor that can be used for various animals, including dogs, horses, and birds."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Kintraks is not exclusively web-based; it is a software application that can be used for managing animal pedigrees, including pets and livestock.\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "unknown",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "true", "true", "false", "unknown"]
   },
   {
     "id": 3107,
@@ -2780,13 +1990,7 @@
       "ConoServer, while primarily focused on cone snail toxins, also includes information about spider venom toxins."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: ConoServer is a database dedicated to cone snail toxins and does not include information about spider venom toxins.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3111,
@@ -2801,13 +2005,7 @@
       "A systematic review and meta-analysis by Xie et al. (2017) concluded that there is insufficient evidence to support the use of axitinib as a standard treatment for pancreatic cancer."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nThe statements regarding the specific trials by Kindler et al. (2011) and O'Reilly et al. (2010), as well as the systematic review by Xie et al. (2017), cannot be verified without access to the actual studies or reviews. Therefore, the truthfulness of these statements remains unknown without additional context or sources.",
-    "chatgpt_judge": [
-      "true",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 3113,
@@ -2822,13 +2020,7 @@
       "MLP also interacts with ZASP/Cypher, a protein associated with Z-discs in muscle cells, to regulate the turnover of Actin filaments."
     ],
     "chatgpt_judge_raw": "1. TRUE: Muscle LIM Protein (MLP) is known to be involved in the regulation of the cytoskeletal architecture of muscle cells, which includes F-actin dynamics.\n2. FALSE [correction]: MLP does not directly bind to Actin filaments to stabilize them and promote their polymerization. Instead, MLP is thought to play a role in the mechanical stretch sensor system of muscle cells and may influence actin dynamics indirectly.\n3. TRUE: MLP has been shown to interact with α-Actinin, which is a protein that crosslinks Actin filaments in muscle cells.\n4. TRUE: The interaction between MLP and α-Actinin is important for the organization and stabilization of the F-actin network within sarcomeres, which are the basic units of muscle contraction.\n5. TRUE: MLP is known to interact with ZASP/Cypher, which is associated with Z-discs in muscle cells. This interaction is important for the structural integrity of muscle cells and the regulation of Actin filament dynamics.",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3125,
@@ -2843,13 +2035,7 @@
       "The IRAK family, including IRAK1, IRAK2, IRAK3 (IRAK-M), and IRAK4, are pseudokinases involved in TLR and IL-1R signaling pathways."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The JAK family, which includes JAK1, JAK2, JAK3, and TYK2, consists of protein kinases, not pseudokinases, involved in cytokine signaling pathways.\n4. TRUE\n5. FALSE [correction]: The IRAK family, including IRAK1, IRAK2, IRAK3 (IRAK-M), and IRAK4, contains kinases involved in TLR and IL-1R signaling pathways. However, only IRAK3 (IRAK-M) is considered a pseudokinase.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "false"]
   },
   {
     "id": 3139,
@@ -2864,13 +2050,7 @@
       "ETC-642 has shown potential effects in preclinical studies, such as reducing atherosclerotic plaque formation and improving lipid profiles."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE\n\nNote: The statements about CNB-001, COG112, and ETC-642 are specific and would require access to up-to-date scientific literature or databases to verify their current status in research and clinical trials. The responses are based on the assumption that the provided statements are accurate reflections of the current knowledge as of the knowledge cutoff date. However, without specific references or additional context, the status of ETC-642's clinical trials is unknown.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "unknown", "true", "true"]
   },
   {
     "id": 3140,
@@ -2885,13 +2065,7 @@
       "Genetic polymorphisms in the SAMHD1 gene have been associated with altered SAMHD1 expression or activity in different populations."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 3205,
@@ -2906,13 +2080,7 @@
       "A study published in the Journal of Cellular Physiology in 2019 showed that RUNX2 expression was upregulated during astrocyte differentiation induced by transforming growth factor-beta (TGF-β)."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. UNKNOWN (without access to the specific study, the claim cannot be verified)\n3. UNKNOWN (without access to the specific study, the claim cannot be verified)\n4. UNKNOWN (without access to the specific study, the claim cannot be verified)\n5. UNKNOWN (without access to the specific study, the claim cannot be verified)\n\nThe first statement is a well-established fact in the field of bone biology. However, for statements 2 through 5, without the ability to review the specific studies mentioned, it is not possible to verify the accuracy of the claims made about RUNX2 expression in various contexts. Therefore, the truthfulness of these statements remains unknown based on the information provided.",
-    "chatgpt_judge": [
-      "true",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 3209,
@@ -2927,13 +2095,7 @@
       "Additional procedures such as ligament reconstruction or tendon transfers may be performed after the excision to stabilize the joint."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The Cobb-Stainsby excision arthroplasty is a surgical procedure typically performed on the toe, not the hand or wrist region.\n2. FALSE [correction]: It is commonly used to treat conditions affecting the metatarsophalangeal (MTP) joint of the toe, not the metacarpophalangeal (MCP) joint of the hand.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "false", "true", "true", "true"]
   },
   {
     "id": 3243,
@@ -2948,13 +2110,7 @@
       "In the developing mouse embryo, GRHL2 is essential for maintaining epithelial integrity and preventing EMT during neural tube closure."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: GRHL2 over-expression has been associated with the suppression of EMT and metastasis in certain cancer types, such as breast cancer and ovarian cancer.\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3254,
@@ -2969,13 +2125,7 @@
       "T-UCR uc.63 is upregulated in lung cancer tissues and its increased expression is associated with tumor size, lymph node metastasis, and poor overall survival."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nThe statements provided are specific to the expression levels of certain Transcribed Ultra-Conserved Regions (T-UCRs) in lung cancer tissues and their associations with various clinical outcomes. Without access to the specific scientific studies or data that these statements are based on, it is not possible to determine the truthfulness of these claims. These statements would require validation through peer-reviewed research in the field of molecular oncology and cancer genomics.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 3268,
@@ -2990,13 +2140,7 @@
       "A study found that GPR151 expression was significantly reduced in the substantia nigra of Parkinson's disease patients."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "true",
-      "unknown",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "unknown", "true", "true", "unknown"]
   },
   {
     "id": 3285,
@@ -3011,13 +2155,7 @@
       "For the 2021-2022 flu season, the vaccine also includes a B/Phuket/3073/2013-like (B/Yamagata lineage) virus."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The Fluzone Intradermal Quadrivalent vaccine contains inactivated (killed) viruses, not attenuated (live but weakened) viruses.\n4. UNKNOWN (without access to the specific composition for the 2021-2022 flu season, it is not possible to confirm the strains included in the vaccine)\n5. UNKNOWN (similarly, without access to the specific composition for the 2021-2022 flu season, it is not possible to confirm the strains included in the vaccine)",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "unknown", "unknown"]
   },
   {
     "id": 3345,
@@ -3032,13 +2170,7 @@
       "A study conducted on a Korean population identified an SNP called rs3397, located in the promoter region of the TNFR2 gene, which was associated with SLE susceptibility."
     ],
     "chatgpt_judge_raw": "1. TRUE: The TNFR2 gene, known as tumor necrosis factor receptor superfamily member 1B (TNFRSF1B), has indeed been implicated in the development and progression of Systemic Lupus Erythematosus (SLE).\n2. TRUE: The SNP rs1061622 is located in the 3' untranslated region (UTR) of the TNFR2 gene and has been associated with SLE susceptibility in various studies.\n3. TRUE: Studies have found an increased risk of developing SLE in individuals carrying the rs1061622 variant of the TNFR2 gene in different populations, including the Chinese Han population.\n4. TRUE: There have been studies reporting a significant association between the rs1061622 SNP in the TNFR2 gene and SLE susceptibility in various populations, including Mexican.\n5. UNKNOWN: Without specific reference to the study on the Korean population and the SNP rs3397, it is not possible to confirm the accuracy of this statement.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 3353,
@@ -3053,13 +2185,7 @@
       "The U.S. Food and Drug Administration (FDA) is a regulatory authority that would need to approve any potential vaccine or immunotherapy treatment for peanut allergy before it becomes available to the public."
     ],
     "chatgpt_judge_raw": "1. TRUE (As of my knowledge cutoff in early 2023, there was no approved vaccine for peanut allergy.)\n2. TRUE (Oral immunotherapy for peanut allergy does involve gradually increasing exposure to peanut protein under medical supervision.)\n3. TRUE (As of my knowledge cutoff in early 2023, sublingual immunotherapy for peanut allergy was not yet approved by regulatory authorities.)\n4. TRUE (Vaccines targeting specific components of peanuts to modify the immune response are indeed in the early stages of development.)\n5. TRUE (The U.S. Food and Drug Administration (FDA) is the regulatory authority that approves vaccines and treatments, including those for peanut allergy, before they are made available to the public.)",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3365,
@@ -3074,13 +2200,7 @@
       "Sons inherit their X chromosome from their mother, while daughters inherit one X chromosome from each parent."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 3397,
@@ -3095,13 +2215,7 @@
       "The PCR-amplified DNA fragments in the MPE-seq method are subjected to high-throughput sequencing using platforms such as Illumina or Ion Torrent."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN: Without specific context or reference to a known DNA sequencing method called \"methidiumpropyl-EDTA sequencing (MPE-seq),\" it is not possible to determine the truth of this statement.\n2. UNKNOWN: Methidiumpropyl-EDTA (MPE) is not a commonly referenced compound in DNA sequencing, and without additional context, it is unclear whether it specifically targets and cleaves DNA at guanine residues.\n3. UNKNOWN: As the MPE-seq method is not a standard or widely recognized DNA sequencing technique, the details of the method, including whether it involves a step where DNA fragments with ligated adaptors are treated with methidiumpropyl-EDTA, cannot be confirmed.\n4. UNKNOWN: Without further context or scientific literature to support the claim, it is not possible to confirm whether DNA cleavage induced by MPE occurs specifically at guanine residues.\n5. UNKNOWN: Since the MPE-seq method is not established or recognized in the field of DNA sequencing, it is not possible to confirm whether PCR-amplified DNA fragments in this method would be subjected to high-throughput sequencing using platforms such as Illumina or Ion Torrent.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 3400,
@@ -3116,13 +2230,7 @@
       "Web technologies such as HTML, CSS, and JavaScript are used for GWAR's user interface and visualization."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nWithout additional context or information about what GWAR is and how it is implemented, it is not possible to determine the truthfulness of these statements.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 3406,
@@ -3137,13 +2245,7 @@
       "The evidence does not strongly support the use of xaliproden as a definitive treatment for ALS."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: Xaliproden is known to act on serotonin receptors, not specifically on the nerve growth factor receptor, TrkA.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3410,
@@ -3158,13 +2260,7 @@
       "The A3S chromosome has been selected for transgene insertion to ensure stable inheritance and expression of traits in the LiPS-A3S line."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN: Without specific context or additional information about the LiPS-A3S line, it is not possible to verify the accuracy of this statement.\n2. UNKNOWN: The statement is plausible as specialized chromosomes can be engineered for transgene insertion, but without specific information about the A3S chromosome, the truth of this statement cannot be determined.\n3. TRUE: Chromosomes are indeed structures within the nucleus of cells that carry genetic information in the form of DNA.\n4. TRUE: Gene targeting, gene editing (including CRISPR-Cas9), and viral vectors are all established methods for introducing transgenes into chromosomes.\n5. UNKNOWN: This statement could be true if the A3S chromosome has been demonstrated to have such properties, but without specific information about the LiPS-A3S line and the reasons for selecting the A3S chromosome, the truth of this statement cannot be determined.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "true", "true", "unknown"]
   },
   {
     "id": 3430,
@@ -3179,13 +2275,7 @@
       "DeepSynergy has demonstrated superior performance in predicting drug synergy compared to traditional machine learning methods."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: DeepSynergy uses a fully connected neural network architecture, not a convolutional neural network (CNN) architecture.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3433,
@@ -3200,13 +2290,7 @@
       "The platform includes features for addressing population stratification in GWAS, such as principal component analysis (PCA)."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: DNAnexus offers a cloud-based genomics platform, but it is not specifically called the \"Comparative Genomics platform.\" The platform is designed for a variety of genomic analysis tasks, including but not limited to comparing Genome-Wide Association Studies (GWAS).\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3434,
@@ -3221,13 +2305,7 @@
       "CMB305 has also shown potential in the treatment of other types of sarcomas, such as synovial sarcoma and myxoid/round cell liposarcoma."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 3461,
@@ -3242,13 +2320,7 @@
       "The Holy Spirit is described as the presence of God within believers and is referred to as the Comforter or Advocate."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The term \"Saint's Triad\" is not commonly used; the correct term is the Holy Trinity in Christianity.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3470,
@@ -3263,13 +2335,7 @@
       "Other studies have reported no significant association between LY6K expression and patient outcomes in NSCLC."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: LY6K overexpression is generally associated with a poorer prognosis in NSCLC patients, including shorter overall survival and disease-free survival.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 3473,
@@ -3284,13 +2350,7 @@
       "Aurora B kinase substrates are dephosphorylated by phosphatases, including PP1 and PP2A, during cytokinesis."
     ],
     "chatgpt_judge_raw": "1. TRUE: Myosin II is indeed regulated by phosphorylation and dephosphorylation during cytokinesis, and phosphatases such as PP1 and PP2A are involved in this process.\n2. FALSE [correction]: Ect2 is not dephosphorylated during cytokinesis; rather, it is phosphorylated, which allows it to activate RhoA.\n3. TRUE: Anillin is a protein that is regulated by phosphorylation, and its dephosphorylation by phosphatases during cytokinesis is important for its recruitment to the contractile ring.\n4. UNKNOWN: The statement about septins being dephosphorylated by phosphatases during cytokinesis for proper localization and formation of the contractile ring is not clearly established and may vary depending on the specific septin and context.\n5. TRUE: Aurora B kinase is an important regulator during cytokinesis, and its substrates can be dephosphorylated by phosphatases, including PP1 and PP2A, which is a critical step for the progression and completion of cytokinesis.",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "unknown", "true"]
   },
   {
     "id": 3508,
@@ -3305,13 +2365,7 @@
       "Xanamem has not yet received regulatory approval for commercial use."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN (Without specific results from a Phase 2 clinical trial, it's not possible to confirm the statement's accuracy.)\n5. TRUE (If Xanamem is still under development and being researched, it implies that it has not yet received regulatory approval for commercial use.)",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 3520,
@@ -3326,13 +2380,7 @@
       "Disruption of the Hof1-Cyk3 interaction leads to defects in cytokinesis, such as delayed or incomplete ring constriction and improper septum formation."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with the known roles of Hof1 and Cyk3 in the process of cytokinesis in yeast. Hof1 is indeed a protein that localizes to the contractile ring and is involved in its assembly and stability. Cyk3 is a protein that interacts with Hof1 and is recruited to the contractile ring. Their interaction is important for the proper localization of Cyk3 and for the timely constriction of the ring. Disruption of this interaction can lead to defects in cytokinesis, which is critical for cell division.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3598,
@@ -3347,13 +2395,7 @@
       "The study in Oncology Reports also associated high expression of uc.338 with lymph node metastasis and poor overall survival in gastric cancer patients."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nWithout access to the specific studies mentioned, I cannot verify the exact findings. However, the statements are consistent with the types of findings that might be reported in scientific literature regarding the role of long non-coding RNAs (such as T-UCRs) in cancer research. If the studies exist and the statements accurately reflect their findings, then the responses would be true. If any of the details are incorrect, then those statements would be false, but without the specific studies or additional context, I cannot provide corrections.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3607,
@@ -3368,13 +2410,7 @@
       "Specific autoantibodies, such as anti-double-stranded DNA (anti-dsDNA) and anti-Smith (anti-Sm) antibodies, are considered in the LSI."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nThe Lupus Severity Index (LSI) is not a widely recognized or standardized tool in the medical literature for assessing systemic lupus erythematosus (SLE) as of my knowledge cutoff date in 2023. The statements provided may refer to a specific tool or index that is not well-known or may be hypothetical. Commonly used indices for assessing SLE include the Systemic Lupus Erythematosus Disease Activity Index (SLEDAI) and the British Isles Lupus Assessment Group (BILAG) index. Without more context or specific information about the LSI, it is not possible to determine the accuracy of these statements.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 3615,
@@ -3389,13 +2425,7 @@
       "Seizures in individuals with IDEEH usually begin in infancy or early childhood."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: The ZSWIM6 gene is located on chromosome 5.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3626,
@@ -3410,13 +2440,7 @@
       "The Koos Classification is used in clinical research and practice to monitor the progression of knee osteoarthritis."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The correct term is the KOOS (Knee injury and Osteoarthritis Outcome Score) Classification, not \"Koos Classification.\"\n2. TRUE\n3. TRUE: The KOOS includes a subscale called \"Pain\" that evaluates the intensity, frequency, and duration of knee pain.\n4. TRUE: The KOOS includes a subscale called \"Symptoms\" that focuses on knee joint symptoms such as stiffness, swelling, and clicking or locking.\n5. TRUE: The KOOS is used in clinical research and practice to monitor the progression of knee osteoarthritis and to evaluate the outcomes of treatment.",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3628,
@@ -3431,13 +2455,7 @@
       "Clinical trials have reported a favorable safety and tolerability profile for AZD8601."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: AZD8601 uses a plasmid vector to deliver the gene encoding for human vascular endothelial growth factor A (VEGF-A) into target tissues, not VEGF-D.\n3. TRUE\n4. TRUE\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "unknown"]
   },
   {
     "id": 3640,
@@ -3452,13 +2470,7 @@
       "Memory compaction is a technique used to mitigate the impact of SAHFs and memory fragmentation by rearranging memory blocks to create larger contiguous free blocks."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "true", "true", "true", "true"]
   },
   {
     "id": 3672,
@@ -3473,13 +2485,7 @@
       "SATB1's PDZ domain is involved in recruiting the nucleosome remodeling and deacetylase (NuRD) complex to specific genomic loci."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 3678,
@@ -3494,13 +2500,7 @@
       "The BLISS technique aims to help individuals develop a comprehensive approach to stress management and well-being by integrating mindfulness, positive psychology, and self-care."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The BLISS technique stands for Biopsychosocial Lifestyle Integration for Stress Suppression.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3679,
@@ -3515,13 +2515,7 @@
       "Clinical trials have shown positive results for Fezolinetant in reducing pain associated with endometriosis."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Fezolinetant is a selective NK3R antagonist being developed for the treatment of menopausal hot flashes, not for reproductive disorders like endometriosis-associated pain and uterine fibroids.\n4. TRUE\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "unknown"]
   },
   {
     "id": 3691,
@@ -3536,13 +2530,7 @@
       "The purpose of studying AZD2820 is to understand its effects on appetite regulation and potential weight loss."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. TRUE\n\nWithout specific information on AZD2820 and its development history, I cannot confirm the accuracy of statements 1 and 2. However, based on the context provided, statements 3, 4, and 5 are consistent with the typical process and goals for profiling a drug that acts as an inverse agonist at the ghrelin receptor, which is involved in appetite regulation.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "true", "true", "true"]
   },
   {
     "id": 3693,
@@ -3557,13 +2545,7 @@
       "Vaxchora is administered orally as a single-dose, which is beneficial for mass vaccination campaigns in resource-limited settings."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "unknown",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "unknown", "unknown", "true", "true"]
   },
   {
     "id": 3716,
@@ -3578,13 +2560,7 @@
       "Vaxchora provides protection against cholera caused by the O1 serogroup of Vibrio cholerae."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3737,
@@ -3599,13 +2575,7 @@
       "The impaired TACI function results in defective B cell maturation and differentiation, leading to reduced antibody production and the development of CVID."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The TNFRSF13B gene mutation is estimated to be responsible for a smaller percentage of CVID cases in Europeans, approximately 8-10%.\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3743,
@@ -3620,13 +2590,7 @@
       "Targeting the IFN signaling pathway, including IFIT1, is considered a potential therapeutic strategy for SLE."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe statements provided are consistent with current scientific understanding of the role of the IFIT1 gene and type I interferons in the pathogenesis of Systemic Lupus Erythematosus (SLE). The IFIT1 gene is indeed involved in the interferon signaling pathway, which is known to be dysregulated in SLE. Type I interferons are overproduced in SLE and contribute to the disease's pathogenesis. IFIT1 is upregulated by type I interferons and does encode a protein involved in the innate immune response against viral infections. Increased expression of IFIT1 has been associated with disease activity and severity in SLE patients. Lastly, targeting the IFN signaling pathway, including IFIT1, is considered a potential therapeutic strategy for SLE, and research into such treatments is ongoing.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3752,
@@ -3641,13 +2605,7 @@
       "The Liverpool Elbow Score can be used in research to evaluate the long-term outcomes of elbow surgery and the effectiveness of new surgical techniques or implants."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 3763,
@@ -3662,13 +2620,7 @@
       "The 100,000 Genomes Project aimed to facilitate the development of targeted therapies and personalized treatment approaches for sarcoma patients."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The 100,000 Genomes Project was launched in 2013 by Genomics England.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "true", "true", "true", "true"]
   },
   {
     "id": 3777,
@@ -3683,13 +2635,7 @@
       "Secondary structure prediction algorithms such as PSIPRED or JPred can predict the likelihood of certain secondary structure elements in proteins."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "true"]
   },
   {
     "id": 3789,
@@ -3704,13 +2650,7 @@
       "Histone ADP-Ribosylases remove ADP-ribose groups from histones."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Histone ADP-Ribosylases add ADP-ribose groups to histones; they do not remove them.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3806,
@@ -3725,13 +2665,7 @@
       "Magnetic resonance imaging (MRI) does not use ionizing radiation and is often preferred for routine brain imaging."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: The radiation exposure from a head CT scan can vary, but on average, it is higher than 2 mSv. A typical head CT scan can expose a patient to about 2 mSv to 4 mSv of radiation.\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "true", "true"]
   },
   {
     "id": 3809,
@@ -3746,13 +2680,7 @@
       "Otx2, along with other transcription factors like Oct4, Sox2, and Klf4, can be used to reprogram somatic cells into induced pluripotent stem cells (iPSCs)."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Otx2 is not primarily associated with the maintenance of embryonic pluripotency. It is more commonly associated with brain and eye development.\n2. TRUE\n3. FALSE [correction]: Otx2 is not known for maintaining the pluripotent state of embryonic stem cells; it is involved in the development of the brain and sensory organs.\n4. UNKNOWN: The specific role of Otx2 in the differentiation of embryonic stem cells into specific lineages is not clearly stated, and it may vary depending on the context and additional factors.\n5. FALSE [correction]: The transcription factors commonly associated with the reprogramming of somatic cells into induced pluripotent stem cells (iPSCs) are Oct4, Sox2, Klf4, and c-Myc. Otx2 is not typically listed among these factors.",
-    "chatgpt_judge": [
-      "false",
-      "true",
-      "false",
-      "unknown",
-      "false"
-    ]
+    "chatgpt_judge": ["false", "true", "false", "unknown", "false"]
   },
   {
     "id": 3815,
@@ -3767,13 +2695,7 @@
       "Another study by Vernimmen et al. (2009) identified 12 DHS in the murine beta globin locus region."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN\n\nThe first three statements are accurate descriptions of DNaseI hypersensitive sites and the murine beta globin locus. However, without access to the specific studies by Drissen et al. (2004) and Vernimmen et al. (2009), the exact number of DNaseI hypersensitive sites they identified cannot be verified here.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 3822,
@@ -3788,13 +2710,7 @@
       "Fluad is a trivalent influenza vaccine with an adjuvant called MF59, manufactured by Seqirus, and is targeted at enhancing the immune response in older adults."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Influvac is a trivalent or quadrivalent influenza vaccine, but it is manufactured by Abbott, not Mylan.\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "false",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "false", "true", "true"]
   },
   {
     "id": 3832,
@@ -3809,13 +2725,7 @@
       "Genetic reassortment, which involves the exchange of genome segments, has been observed in several Paramyxoviruses."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The genome of Paramyxoviruses is single-stranded and non-segmented.\n5. FALSE [correction]: Genetic reassortment, which involves the exchange of genome segments, is not typical in Paramyxoviruses because their genomes are non-segmented. Reassortment is more characteristic of segmented viruses.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "false"]
   },
   {
     "id": 3869,
@@ -3830,13 +2740,7 @@
       "Roflumilast Cream is typically applied once daily to the affected areas of the skin."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN\n\nThe truthfulness of statements 1, 4, and 5 would depend on the specific product information and clinical trial results for Roflumilast Cream, which are not provided in the context. As of my knowledge cutoff date in early 2023, Roflumilast is known as a PDE-4 inhibitor, but without specific data or sources, the use for atopic dermatitis, the outcomes of clinical trials, and the recommended application frequency for Roflumilast Cream cannot be confirmed.",
-    "chatgpt_judge": [
-      "unknown",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 3885,
@@ -3851,13 +2755,7 @@
       "JASPAR is a database that provides transcription factor binding site profiles and can be used to identify potential transcription factor binding sites within ncRNA promoter regions."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN: Without specific information about the Promoter 2.0 Prediction Server and its capabilities, it is not possible to verify the accuracy of this statement.\n2. UNKNOWN: The functionality of PromoterInspector is not specified in common knowledge, and without additional information, the accuracy of this statement cannot be determined.\n3. TRUE: PromoterScan is indeed a tool that uses a position weight matrix approach to identify potential promoter regions in DNA sequences.\n4. TRUE: CpGProD is a bioinformatics tool designed to predict CpG island promoters, which are often associated with gene promoters in mammalian genomes, based on sequence features and CpG density.\n5. TRUE: JASPAR is a well-known database that provides profiles of transcription factor binding sites, which can be used to predict such sites in various genomic regions, including those within ncRNA promoter regions.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "true", "true", "true"]
   },
   {
     "id": 3918,
@@ -3872,13 +2770,7 @@
       "Mutations in the IDH1 and IDH2 genes are commonly found in glioblastoma."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Mutations in the IDH1 and IDH2 genes are more commonly found in lower-grade gliomas and secondary glioblastomas, but primary glioblastomas typically do not have these mutations.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3926,
@@ -3893,13 +2785,7 @@
       "HiCcompare is an R package that enables the comparison of Hi-C datasets to identify differential interactions and TADs, including statistical tests and visualization tools."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: HiCExplorer is a Python package designed for analyzing and visualizing Hi-C data to study Topologically Associating Domains (TADs).\n2. FALSE [correction]: TADbit is a Python library, not an R package, that provides functions for TAD detection, boundary refinement, annotation, and visualization in the context of 3D genomic data analysis.\n3. UNKNOWN: There is no widely recognized R package named \"chromoR\" specifically for TAD detection and analysis. This statement cannot be verified without additional context.\n4. UNKNOWN: The statement refers to a \"TAD R package,\" but it is unclear which specific package this refers to, as there could be multiple R packages for TAD detection and analysis. Without a specific package name, the truth of this statement cannot be determined.\n5. TRUE: HiCcompare is indeed an R package that enables the comparison of Hi-C datasets to identify differential interactions and TADs, including statistical tests and visualization tools.",
-    "chatgpt_judge": [
-      "false",
-      "false",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "false", "unknown", "unknown", "true"]
   },
   {
     "id": 3927,
@@ -3914,13 +2800,7 @@
       "\"Bionetdata\" supports network visualization and functional enrichment analysis for bacterial regulatory networks."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: The \"bionetdata\" package is not specifically described as a tool for accessing bacterial regulatory networks. It is a Bioconductor data package that contains several datasets for systems biology, including some related to regulatory networks.\n2. UNKNOWN: Without specific information about the \"bionetdata\" package's interface, it is difficult to confirm whether it provides a user-friendly interface for accessing and manipulating data related to bacterial regulatory networks.\n3. FALSE [correction]: The \"bionetdata\" package is primarily a data package and does not include functions for preprocessing and normalizing gene expression data, identifying transcription factor binding sites, or constructing regulatory networks. These tasks are typically performed by other packages or software.\n4. FALSE [correction]: As a data package, \"bionetdata\" does not perform network inference algorithms. Network inference is usually done using separate tools or packages designed for that purpose.\n5. FALSE [correction]: \"Bionetdata\" is a data package and does not support network visualization or functional enrichment analysis. These functionalities are provided by other packages in the Bioconductor project or other bioinformatics tools.",
-    "chatgpt_judge": [
-      "false",
-      "unknown",
-      "false",
-      "false",
-      "false"
-    ]
+    "chatgpt_judge": ["false", "unknown", "false", "false", "false"]
   },
   {
     "id": 3933,
@@ -3935,13 +2815,7 @@
       "Chorismate, an intermediate in the shikimate pathway, is a precursor for the synthesis of folate (vitamin B9), ubiquinone (coenzyme Q), and menaquinone (vitamin K2)."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: Chorismate is a precursor for the synthesis of many compounds, but not for folate (vitamin B9). Folate is synthesized by bacteria, plants, and fungi through a different pathway. Chorismate is indeed a precursor for the synthesis of ubiquinone (coenzyme Q) and menaquinone (vitamin K2).",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "false"]
   },
   {
     "id": 3936,
@@ -3956,13 +2830,7 @@
       "Studies have shown that cabergoline can reduce the size of the tumor and decrease ACTH levels in patients with Nelson's syndrome."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Cabergoline works by stimulating dopamine receptors in the brain, which inhibits the release of prolactin from the pituitary gland, not ACTH.\n5. UNKNOWN",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "unknown"]
   },
   {
     "id": 3939,
@@ -3977,13 +2845,7 @@
       "Treatment for Liebenberg syndrome may involve orthopedic interventions, physical therapy, and occupational therapy."
     ],
     "chatgpt_judge_raw": "1. FALSE [correction]: Liebenberg syndrome is characterized by the progressive transformation of the elbow joints into fibrous bands, not by the absence or underdevelopment of certain bones in the hands and feet.\n2. UNKNOWN: Without additional context or historical medical records, it is not possible to verify whether Dr. William Liebenberg first described the condition in 1967 or if the syndrome is indeed named after him.\n3. FALSE [correction]: Individuals with Liebenberg syndrome do not typically have shortened fingers and toes, known as brachymetacarpia and brachymetatarsia. Instead, they may have elbow joint issues and other upper limb anomalies.\n4. TRUE: Some cases of Liebenberg syndrome have been associated with mutations in the HOXD13 gene.\n5. TRUE: Treatment for Liebenberg syndrome may involve orthopedic interventions, physical therapy, and occupational therapy to manage symptoms and improve function.",
-    "chatgpt_judge": [
-      "false",
-      "unknown",
-      "false",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["false", "unknown", "false", "true", "true"]
   },
   {
     "id": 3977,
@@ -3998,13 +2860,7 @@
       "MPI-0479605 is an orally bioavailable MPS1 inhibitor that has shown potent anti-tumor activity in preclinical studies."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nWithout specific data or publications to contradict these statements, they are assumed to be true based on the context provided. MPS1 inhibitors are a class of compounds that are often studied for their potential anti-tumor activity in preclinical studies. Each of the compounds listed is described as an orally bioavailable MPS1 inhibitor with promising results in preclinical studies, which is a plausible description for such compounds in the drug development process. However, without specific references, the accuracy of these statements cannot be independently verified, and they are taken at face value.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   },
   {
     "id": 4031,
@@ -4019,13 +2875,7 @@
       "Studies on TNF inhibitors have shown mixed results regarding their effect on the risk of developing diabetes in patients with autoimmune diseases."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "unknown",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "unknown", "true", "true"]
   },
   {
     "id": 4055,
@@ -4040,13 +2890,7 @@
       "Progeria is caused by a specific mutation known as the LMNA c.1824C>T mutation."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Autosomal recessive restrictive dermopathy (RRD) is caused by mutations in the ZMPSTE24 gene, not the LMNA gene, and is inherited in an autosomal recessive pattern.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 4082,
@@ -4061,13 +2905,7 @@
       "Variants at 12q24 have been linked to an increased risk of prostate cancer."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. UNKNOWN\n\nThe statements about genetic variants at 12q14 and 12q24 being associated with asthma, allergic diseases, and type 2 diabetes are consistent with findings in genetic research. However, without specific context or a reference to a study linking 12q24 variants to prostate cancer, the truth of statement 5 cannot be determined.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "unknown"]
   },
   {
     "id": 4096,
@@ -4082,13 +2920,7 @@
       "The Robo receptor can interact with heparan sulfate proteoglycans (HSPGs) to modulate Slit signaling."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The Robo receptor does not form a complex with the Netrin receptor DCC to mediate guidance responses to Netrin-1. Instead, Robo receptors interact with Slits, while DCC receptors interact with Netrin-1.\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "false",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "false", "true"]
   },
   {
     "id": 4112,
@@ -4103,13 +2935,7 @@
       "TFII-I has been shown to regulate the expression of other key transcription factors involved in megakaryopoiesis, such as RUNX1 and FLI1."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nWithout access to the specific study by Machlus et al. (2016) or Li et al. (2019), I cannot verify the accuracy of these statements. They are specific claims that require access to the relevant scientific literature to confirm or refute.",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "unknown"]
   },
   {
     "id": 4145,
@@ -4124,13 +2950,7 @@
       "Genetic polymorphisms can affect the extent of atenolol metabolism by CYP2D6 among individuals."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. FALSE [correction]: Atenolol is a hydrophilic compound, not lipophilic.\n3. TRUE\n4. FALSE [correction]: Atenolol is not significantly metabolized by the liver and therefore CYP2D6 does not play a major role in its metabolism.\n5. FALSE [correction]: Since atenolol is not significantly metabolized by CYP2D6, genetic polymorphisms in CYP2D6 would not affect the extent of atenolol metabolism.",
-    "chatgpt_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "chatgpt_judge": ["true", "false", "true", "false", "false"]
   },
   {
     "id": 4158,
@@ -4145,13 +2965,7 @@
       "ExpansionHunter is used for detecting and analyzing repeat expansions associated with genetic disorders such as Huntington's disease, Fragile X syndrome, and myotonic dystrophy."
     ],
     "chatgpt_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
-    "chatgpt_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "true"
-    ]
+    "chatgpt_judge": ["unknown", "unknown", "unknown", "unknown", "true"]
   },
   {
     "id": 4164,
@@ -4166,13 +2980,7 @@
       "Research has shown that Adamts18 can interact with insulin-like growth factor 1 (IGF-1) binding proteins."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN\n\nThe first three statements are consistent with general knowledge about the ADAMTS (A Disintegrin And Metalloproteinase with Thrombospondin Motifs) family of proteins, which are involved in extracellular matrix remodeling and are expressed in various tissues. However, without specific references to the study mentioned in statement 4 and the research in statement 5, it is not possible to verify the accuracy of these claims. Therefore, the response to statements 4 and 5 is UNKNOWN.",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "unknown", "unknown"]
   },
   {
     "id": 4208,
@@ -4187,12 +2995,6 @@
       "Thiazovivin enhances the reprogramming efficiency of induced pluripotent stem cells (iPSCs) and improves the efficiency of somatic cell nuclear transfer (SCNT)."
     ],
     "chatgpt_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "chatgpt_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "chatgpt_judge": ["true", "true", "true", "true", "true"]
   }
 ]
