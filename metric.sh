@@ -53,13 +53,13 @@
 #     done
 # done
 
-DirList=("response_10docs_top10")
-ModelList=("chatgpt")
-for model in ${ModelList[*]}; do
-    for dir in ${DirList[*]}; do
-        python metric.py --model $model --data-dir "./run/ir/ir_judge/$dir/$model"
-    done
-done
+# DirList=("response_1docs_top1" "response_2docs_top2" "response_5docs_top5" "response_10docs_top10")
+# ModelList=("chatgpt")
+# for model in ${ModelList[*]}; do
+#     for dir in ${DirList[*]}; do
+#         python metric.py --model $model --data-dir "./run/ir/ir_judge/$dir/$model"
+#     done
+# done
 
 
 # # main
@@ -107,6 +107,11 @@ done
 
 
 # # RLHF
+
+ModelList=("alpaca-7b" "vicuna-7b")
+for model in ${ModelList[*]}; do
+    python metric.py --model $model --data-dir "./run/rlhf/judge/$model"
+done
 
 
 # # SFT

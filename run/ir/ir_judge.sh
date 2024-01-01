@@ -1,14 +1,14 @@
 #!/bin/bash
 
-export OPENAI_API_KEY="sk-PrhJRQa8hh3QWoGcB9Ff11524e4b47A9B23169DaFd23D4D2"
+export OPENAI_API_KEY="sk-vo6dWBfoLsXQW7bh213190177a8b4e489f83Ea18F63a7aF6"
 export OPENAI_API_BASE="https://api.chatgpt-3.vip/v1"
 echo "OPENAI_API_KEY is set to: $OPENAI_API_KEY"
 echo "OPENAI_API_BASE is set to: $OPENAI_API_BASE"
 
-DirList=("response_10docs_top10")
+DirList=("response_1docs_top1" "response_2docs_top2" "response_5docs_top5" "response_10docs_top10")
 ModelList=("chatgpt")
 for dir in ${DirList[*]}; do
     for model in ${ModelList[*]}; do
-        nohup python -u judge.py --all-files --model $model --data-dir ./fact/$dir/$model --save-dir ./ir_judge/$dir/$model >> ./judge_$dir\_$model.log 2>&1 &
+        nohup python -u judge.py --all-files --model $model --data-dir ./fact/$dir/$model --save-dir ./ir_judge/$dir/$model > ./judge_$dir\_$model.log 2>&1 &
     done
 done

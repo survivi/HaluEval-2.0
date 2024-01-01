@@ -119,8 +119,8 @@ class Chatbot(Bot):
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
-        self.max_retry = 8  # max retry times
-        self.frequency = 2  # save frequency
+        self.max_retry = 3  # max retry times
+        self.frequency = 3  # save frequency
 
     def load_data(self, part=0):
         """
@@ -280,7 +280,7 @@ class Chatbot(Bot):
                         temperature=kwargs["temperature"],
                         top_p=kwargs["top_p"],
                     )
-                elif chat_model == "gpt-4":
+                elif chat_model == "gpt-4":  # greedy search
                     response = openai.ChatCompletion.create(
                         model="gpt-4-1106-preview",
                         messages=[{"role": "user", "content": query}],

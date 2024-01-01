@@ -120,7 +120,7 @@ class Chatbot(Bot):
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
         self.max_retry = 3  # max retry times
-        self.frequency = 2  # save frequency
+        self.frequency = 3  # save frequency
 
     def load_data(self, part=0):
         """
