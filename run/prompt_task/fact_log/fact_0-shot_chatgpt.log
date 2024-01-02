@@ -1,68 +1,0 @@
-Process ID: [4090662] | Arguments:
-    all_files: True
-    file: Bio-Medical
-    model: chatgpt
-    temperature: 1.0
-    top_p: 1.0
-    early_stopping: False
-    do_sample: False
-    num_beams: 1
-    top_k: 50
-    data_dir: ./prompt_response_pure/chatgpt/0-shot
-    save_dir: ./fact/chatgpt/0-shot/
-    assist_model: gpt-4
-    prompt_path: ./prompt/generate_fact_ins.txt
-Process ID: [4090662] | Loading data from ./prompt_response_pure/chatgpt/0-shot/Bio-Medical.json | Total 200
-Process ID: [4090662] | Loading exist data from ./fact/chatgpt/0-shot/Bio-Medical.json | Total 200
-Process ID: [4090662] | Model: chatgpt | File: Bio-Medical | Saving 200 items to ./fact/chatgpt/0-shot/Bio-Medical.json
-Process ID: [4090662] | Exit
-Process ID: [4090662] | Loading data from ./prompt_response_pure/chatgpt/0-shot/Finance.json | Total 200
-Process ID: [4090662] | Loading exist data from ./fact/chatgpt/0-shot/Finance.json | Total 200
-Process ID: [4090662] | Model: chatgpt | File: Finance | Saving 200 items to ./fact/chatgpt/0-shot/Finance.json
-Process ID: [4090662] | Exit
-Process ID: [4090662] | Loading data from ./prompt_response_pure/chatgpt/0-shot/Science.json | Total 200
-Process ID: [4090662] | Loading exist data from ./fact/chatgpt/0-shot/Science.json | Total 200
-Process ID: [4090662] | Model: chatgpt | File: Science | Saving 200 items to ./fact/chatgpt/0-shot/Science.json
-Process ID: [4090662] | Exit
-Process ID: [4090662] | Loading data from ./prompt_response_pure/chatgpt/0-shot/Education.json | Total 200
-Process ID: [4090662] | Loading exist data from ./fact/chatgpt/0-shot/Education.json | Total 200
-Process ID: [4090662] | Model: chatgpt | File: Education | Saving 200 items to ./fact/chatgpt/0-shot/Education.json
-Process ID: [4090662] | Exit
-Process ID: [4090662] | Loading data from ./prompt_response_pure/chatgpt/0-shot/Open-Domain.json | Total 200
-Process ID: [4090662] | Loading exist data from ./fact/chatgpt/0-shot/Open-Domain.json | Total 122
-  0%|                                                                        | 0/78 [00:00<?, ?it/s]  1%|▊                                                               | 1/78 [00:01<02:04,  1.62s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 123 items to ./fact/chatgpt/0-shot/Open-Domain.json
-  3%|█▋                                                              | 2/78 [00:06<04:35,  3.63s/it]  4%|██▍                                                             | 3/78 [00:08<03:18,  2.64s/it]  5%|███▎                                                            | 4/78 [00:09<02:45,  2.23s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 126 items to ./fact/chatgpt/0-shot/Open-Domain.json
-  6%|████                                                            | 5/78 [00:13<03:22,  2.78s/it]  8%|████▉                                                           | 6/78 [00:14<02:37,  2.18s/it]  9%|█████▋                                                          | 7/78 [00:15<02:07,  1.80s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 129 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 10%|██████▌                                                         | 8/78 [00:16<01:42,  1.46s/it] 12%|███████▍                                                        | 9/78 [00:21<02:53,  2.51s/it] 13%|████████                                                       | 10/78 [00:26<04:01,  3.56s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 132 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 14%|████████▉                                                      | 11/78 [00:34<05:13,  4.68s/it] 15%|█████████▋                                                     | 12/78 [00:42<06:23,  5.82s/it] 17%|██████████▌                                                    | 13/78 [00:50<06:53,  6.36s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 135 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 18%|███████████▎                                                   | 14/78 [00:56<06:46,  6.36s/it] 19%|████████████                                                   | 15/78 [01:00<06:00,  5.72s/it] 21%|████████████▉                                                  | 16/78 [01:01<04:29,  4.35s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 138 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 22%|█████████████▋                                                 | 17/78 [01:09<05:29,  5.40s/it] 23%|██████████████▌                                                | 18/78 [01:13<04:46,  4.77s/it] 24%|███████████████▎                                               | 19/78 [01:13<03:31,  3.58s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 141 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 26%|████████████████▏                                              | 20/78 [01:14<02:38,  2.74s/it] 27%|████████████████▉                                              | 21/78 [01:15<02:06,  2.22s/it] 28%|█████████████████▊                                             | 22/78 [01:17<01:53,  2.02s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 144 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 29%|██████████████████▌                                            | 23/78 [01:18<01:29,  1.63s/it] 31%|███████████████████▍                                           | 24/78 [01:21<02:05,  2.33s/it] 32%|████████████████████▏                                          | 25/78 [01:26<02:34,  2.91s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 147 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 33%|█████████████████████                                          | 26/78 [01:27<01:58,  2.27s/it] 35%|█████████████████████▊                                         | 27/78 [01:34<03:09,  3.72s/it] 36%|██████████████████████▌                                        | 28/78 [01:38<03:14,  3.90s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 150 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 37%|███████████████████████▍                                       | 29/78 [01:39<02:31,  3.10s/it] 38%|████████████████████████▏                                      | 30/78 [01:40<01:55,  2.40s/it] 40%|█████████████████████████                                      | 31/78 [01:45<02:34,  3.29s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 153 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 41%|█████████████████████████▊                                     | 32/78 [01:50<02:49,  3.68s/it] 42%|██████████████████████████▋                                    | 33/78 [01:57<03:31,  4.69s/it] 44%|███████████████████████████▍                                   | 34/78 [02:02<03:30,  4.77s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 156 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 45%|████████████████████████████▎                                  | 35/78 [02:03<02:36,  3.64s/it] 46%|█████████████████████████████                                  | 36/78 [02:04<02:00,  2.88s/it] 47%|█████████████████████████████▉                                 | 37/78 [02:05<01:33,  2.28s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 159 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 49%|██████████████████████████████▋                                | 38/78 [02:06<01:14,  1.87s/it] 50%|███████████████████████████████▌                               | 39/78 [02:07<01:01,  1.57s/it] 51%|████████████████████████████████▎                              | 40/78 [02:13<01:52,  2.95s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 162 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 53%|█████████████████████████████████                              | 41/78 [02:16<01:49,  2.96s/it] 54%|█████████████████████████████████▉                             | 42/78 [02:17<01:23,  2.31s/it] 55%|██████████████████████████████████▋                            | 43/78 [02:17<01:05,  1.88s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 165 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 56%|███████████████████████████████████▌                           | 44/78 [02:22<01:31,  2.68s/it] 58%|████████████████████████████████████▎                          | 45/78 [02:29<02:09,  3.93s/it] 59%|█████████████████████████████████████▏                         | 46/78 [02:41<03:20,  6.26s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 168 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 60%|█████████████████████████████████████▉                         | 47/78 [02:44<02:46,  5.37s/it] 62%|██████████████████████████████████████▊                        | 48/78 [02:47<02:20,  4.68s/it] 63%|███████████████████████████████████████▌                       | 49/78 [02:48<01:41,  3.50s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 171 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 64%|████████████████████████████████████████▍                      | 50/78 [02:52<01:42,  3.68s/it] 65%|█████████████████████████████████████████▏                     | 51/78 [02:53<01:15,  2.81s/it] 67%|██████████████████████████████████████████                     | 52/78 [02:57<01:25,  3.29s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 174 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 68%|██████████████████████████████████████████▊                    | 53/78 [03:01<01:27,  3.48s/it] 69%|███████████████████████████████████████████▌                   | 54/78 [03:07<01:40,  4.18s/it] 71%|████████████████████████████████████████████▍                  | 55/78 [03:08<01:13,  3.20s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 177 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 72%|█████████████████████████████████████████████▏                 | 56/78 [03:09<00:56,  2.55s/it] 73%|██████████████████████████████████████████████                 | 57/78 [03:10<00:44,  2.13s/it] 74%|██████████████████████████████████████████████▊                | 58/78 [03:15<01:01,  3.10s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 180 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 76%|███████████████████████████████████████████████▋               | 59/78 [03:19<01:03,  3.34s/it] 77%|████████████████████████████████████████████████▍              | 60/78 [03:20<00:47,  2.63s/it] 78%|█████████████████████████████████████████████████▎             | 61/78 [03:24<00:49,  2.94s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 183 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 79%|██████████████████████████████████████████████████             | 62/78 [03:30<01:01,  3.84s/it] 81%|██████████████████████████████████████████████████▉            | 63/78 [03:34<00:59,  3.97s/it] 82%|███████████████████████████████████████████████████▋           | 64/78 [03:39<00:59,  4.23s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 186 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 83%|████████████████████████████████████████████████████▌          | 65/78 [03:44<00:57,  4.42s/it] 85%|█████████████████████████████████████████████████████▎         | 66/78 [03:48<00:54,  4.51s/it] 86%|██████████████████████████████████████████████████████         | 67/78 [03:54<00:51,  4.71s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 189 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 87%|██████████████████████████████████████████████████████▉        | 68/78 [03:54<00:35,  3.52s/it] 88%|███████████████████████████████████████████████████████▋       | 69/78 [03:59<00:34,  3.88s/it] 90%|████████████████████████████████████████████████████████▌      | 70/78 [04:00<00:23,  2.97s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 192 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 91%|█████████████████████████████████████████████████████████▎     | 71/78 [04:01<00:16,  2.29s/it] 92%|██████████████████████████████████████████████████████████▏    | 72/78 [04:06<00:18,  3.14s/it] 94%|██████████████████████████████████████████████████████████▉    | 73/78 [04:08<00:14,  2.94s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 195 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 95%|███████████████████████████████████████████████████████████▊   | 74/78 [04:09<00:09,  2.31s/it] 96%|████████████████████████████████████████████████████████████▌  | 75/78 [04:10<00:05,  1.92s/it] 97%|█████████████████████████████████████████████████████████████▍ | 76/78 [04:11<00:03,  1.57s/it]Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 198 items to ./fact/chatgpt/0-shot/Open-Domain.json
- 99%|██████████████████████████████████████████████████████████████▏| 77/78 [04:16<00:02,  2.53s/it]100%|███████████████████████████████████████████████████████████████| 78/78 [04:29<00:00,  5.69s/it]100%|███████████████████████████████████████████████████████████████| 78/78 [04:29<00:00,  3.45s/it]
-Process ID: [4090662] | Model: chatgpt | File: Open-Domain | Saving 200 items to ./fact/chatgpt/0-shot/Open-Domain.json
-Process ID: [4090662] | Exit
-
-Process ID: [4090662] | Left:
-    Bio-Medical: 0
-    Finance: 0
-    Science: 0
-    Education: 0
-    Open-Domain: 0

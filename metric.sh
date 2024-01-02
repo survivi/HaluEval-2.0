@@ -96,9 +96,13 @@
 #     python metric.py --model $model --data-dir "./task/prompt_task/prompt_judge/self_reflexion/$model"
 # done
 
+# DirList=("0-shot" "base" "character_info" "domain_info" "few-shot" "in-context_demo" "mannual_desc" "refine_q" "retrieved_demo" "reverse_pos" "synthetic_demo" "synthetic_desc" "wrong_demo")
+# for dir in ${DirList[*]}; do
+#     python metric.py --model chatgpt --data-dir "./run/prompt_task/prompt_judge/chatgpt/$dir"
+# done
 DirList=("0-shot" "base" "character_info" "domain_info" "few-shot" "in-context_demo" "mannual_desc" "refine_q" "retrieved_demo" "reverse_pos" "synthetic_demo" "synthetic_desc" "wrong_demo")
 for dir in ${DirList[*]}; do
-    python metric.py --model chatgpt --data-dir "./run/prompt_task/prompt_judge/chatgpt/$dir"
+    python metric.py --model llama-2-7b-chat-hf --data-dir "./run/prompt_task/prompt_judge/llama-2-7b-chat-hf/$dir"
 done
 
 
