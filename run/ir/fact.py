@@ -42,8 +42,8 @@ class Factbot(Chatbot):
             return
 
         if self.assist_model == "gpt-4":
-            # complete_func = self.gpt_4_complete
-            complete_func = self.openai_complete
+            complete_func = self.gpt_4_complete
+            # complete_func = self.openai_complete
         else:
             complete_func = self.openai_complete
 
