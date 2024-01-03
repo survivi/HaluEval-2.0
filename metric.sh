@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# # settings
+
+# export OPENAI_API_KEY="sk-"
+# export OPENAI_API_BASE="https://api.openai.com/v1"
+# echo "OPENAI_API_KEY is set to: $OPENAI_API_KEY"
+# echo "OPENAI_API_BASE is set to: $OPENAI_API_BASE"
+
 # # advanced_decoding
 
 # DirList=("gns_response" "fns_response")
@@ -37,24 +44,15 @@
 
 # # ir
 
-# DirList=("response-1")
-# ModelList=("chatgpt" "llama-2-7b-chat-hf" "llama-2-13b-chat-hf" "vicuna-7b" "vicuna-13b")
-# for model in ${ModelList[*]}; do
-#     for dir in ${DirList[*]}; do
-#         python metric.py --model $model --data-dir "./task/ir/ir_judge/$dir/$model"
-#     done
-# done
-
-# DirList=("response-10" "response-50" "response-100")
+# DirList=("response_1docs_top1" "response_5docs_top5" "response_10docs_top10" "response_1docs_top2" "response_1docs_top5" "response_1docs_top10")
 # ModelList=("chatgpt" "llama-2-7b-chat-hf")
 # for model in ${ModelList[*]}; do
 #     for dir in ${DirList[*]}; do
-#         python metric.py --model $model --data-dir "./task/ir/ir_judge/$dir/$model"
+#         python metric.py --model $model --data-dir "./run/ir/ir_judge/$dir/$model"
 #     done
 # done
-
-# DirList=("response_1docs_top1" "response_2docs_top2" "response_5docs_top5" "response_10docs_top10")
-# ModelList=("chatgpt")
+# DirList=("response_2docs_top2")
+# ModelList=("chatgpt" "llama-2-7b-chat-hf" "llama-2-13b-chat-hf" "vicuna-7b" "vicuna-13b")
 # for model in ${ModelList[*]}; do
 #     for dir in ${DirList[*]}; do
 #         python metric.py --model $model --data-dir "./run/ir/ir_judge/$dir/$model"
@@ -100,10 +98,10 @@
 # for dir in ${DirList[*]}; do
 #     python metric.py --model chatgpt --data-dir "./run/prompt_task/prompt_judge/chatgpt/$dir"
 # done
-DirList=("0-shot" "base" "character_info" "domain_info" "few-shot" "in-context_demo" "mannual_desc" "refine_q" "retrieved_demo" "reverse_pos" "synthetic_demo" "synthetic_desc" "wrong_demo")
-for dir in ${DirList[*]}; do
-    python metric.py --model llama-2-7b-chat-hf --data-dir "./run/prompt_task/prompt_judge/llama-2-7b-chat-hf/$dir"
-done
+# DirList=("0-shot" "base" "character_info" "domain_info" "few-shot" "in-context_demo" "mannual_desc" "refine_q" "retrieved_demo" "reverse_pos" "synthetic_demo" "synthetic_desc" "wrong_demo")
+# for dir in ${DirList[*]}; do
+#     python metric.py --model llama-2-7b-chat-hf --data-dir "./run/prompt_task/prompt_judge/llama-2-7b-chat-hf/$dir"
+# done
 
 
 # # quantization
