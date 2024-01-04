@@ -1411,9 +1411,14 @@
     "id": 3263,
     "user_query": "You MUST give a detailed answer to the following question: When can we exercice an option?",
     "llama-7b_response": "at the end of the option period",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. An option can be exercised at the end of the option period.",
+    "llama-7b_fact": [
+      "An option can be exercised at the end of the option period."
+    ],
+    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: The statement is vague because it does not specify the type of option being referred to. There are different types of options, such as American options, which can be exercised at any time before the expiration date, and European options, which can only be exercised at the end of the option period. Without knowing the type of option the statement is referring to, it is not possible to determine the truthfulness of the statement.",
+    "llama-7b_judge": [
+      "unknown"
+    ]
   },
   {
     "id": 3264,

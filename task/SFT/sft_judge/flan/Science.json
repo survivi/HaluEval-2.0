@@ -147,14 +147,9 @@
     "id": 146,
     "user_query": "You MUST give a detailed answer to the following question: Do you agree with the claim that \"Chenodeoxycholic acid treatment increases brown adipose tissue activity.\"? Provide factual statements about the claim.",
     "llama-7b_response": "chenodeoxycholic acid is a bile acid",
-    "llama-7b_fact_raw": "1. Chenodeoxycholic acid is a bile acid.",
-    "llama-7b_fact": [
-      "Chenodeoxycholic acid is a bile acid."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 147,
@@ -200,11 +195,11 @@
     "id": 174,
     "user_query": "You MUST give a detailed answer to the following question: How truthful is the statement that \"DMS3 protein enables Pol V transcription in vivo.\"? Present a series of factual points about the statement.",
     "llama-7b_response": "DMS3 protein is required for Pol V transcription in vivo",
-    "llama-7b_fact_raw": "1. DMS3 protein is necessary for Pol V transcription in a living organism.",
+    "llama-7b_fact_raw": "1. DMS3 protein is required for Pol V transcription in vivo.",
     "llama-7b_fact": [
-      "DMS3 protein is necessary for Pol V transcription in a living organism."
+      "DMS3 protein is required for Pol V transcription in vivo."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\nExplanation: The statement about DMS3 protein being necessary for Pol V transcription in a living organism is too specific and requires detailed knowledge about molecular biology and the function of the DMS3 protein within the context of RNA Polymerase V (Pol V). This kind of information is typically found in scientific literature and research articles. Without the specific context or additional scientific evidence provided, it's not possible to determine the truthfulness of this statement.",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nWithout specific context or a reference to a scientific study or source that discusses the role of DMS3 protein in Pol V transcription, it is not possible to determine the accuracy of this statement. DMS3 is a component of the DDR complex which is involved in RNA-directed DNA methylation in plants, but without additional information, the exact role of DMS3 in Pol V transcription cannot be confirmed.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -315,7 +310,7 @@
       "N-terminal pyroglutamate is formed by glutamine cyclase.",
       "N-terminal pyroglutamate competes with NTAQ1 for N-terminal glutamine substrates."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: N-terminal pyroglutamate is formed by the enzyme glutaminyl cyclase, which catalyzes the cyclization of N-terminal glutamine residues into pyroglutamate (pGlu).\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: N-terminal pyroglutamate is formed by the enzyme glutaminyl cyclase, which catalyzes the conversion of N-terminal glutamine residues in peptides to pyroglutamate.\n2. UNKNOWN",
     "llama-7b_judge": [
       "false",
       "unknown"
@@ -325,29 +320,17 @@
     "id": 256,
     "user_query": "You MUST give a detailed answer to the following question: Do you agree with the claim that \"Foxk2 regulates autophagy genes in muscle cells and fibroblast cells.\"? Provide factual statements about the claim.",
     "llama-7b_response": "Foxk2 is expressed in muscle cells and fibroblast cells.",
-    "llama-7b_fact_raw": "1. Foxk2 is expressed in muscle cells.\n2. Foxk2 is expressed in fibroblast cells.",
-    "llama-7b_fact": [
-      "Foxk2 is expressed in muscle cells.",
-      "Foxk2 is expressed in fibroblast cells."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n\nFoxk2, or forkhead box K2, is a gene that can be associated with various cell types, including muscle cells and fibroblast cells. It plays a role in the regulation of gene expression, cell growth, and differentiation in these cell types.",
-    "llama-7b_judge": [
-      "true",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 261,
     "user_query": "You MUST give a detailed answer to the following question: Do you agree with the claim that \"GATA3 regulates self-renewal capacity in bone marrow hematopoietic stem cells.\"? Provide factual statements about the claim.",
     "llama-7b_response": "GATA3 is expressed in bone marrow hematopoietic stem cell",
-    "llama-7b_fact_raw": "1. GATA3 is expressed in bone marrow hematopoietic stem cells.",
-    "llama-7b_fact": [
-      "GATA3 is expressed in bone marrow hematopoietic stem cells."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: GATA3 is typically not expressed in bone marrow hematopoietic stem cells; it is expressed in various other tissues, including Th2 lymphocytes, breast epithelium, and some regions of the central nervous system.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 268,
@@ -369,13 +352,13 @@
     "id": 279,
     "user_query": "You MUST give a detailed answer to the following question: How truthful is the statement that \"Gpr124 suppresses BBB breakdown in mouse models of ischemic stroke.\"? Present a series of factual points about the statement.",
     "llama-7b_response": "Gpr124 was found to be expressed in the brain.\nGpr124 was found to be expressed in the blood brain barrier.\nGpr124 was found to suppress BBB breakdown in mouse models of ischemic stroke.",
-    "llama-7b_fact_raw": "1. Gpr124 is expressed in the brain.\n2. Gpr124 is expressed in the blood-brain barrier (BBB).\n3. Gpr124 suppresses BBB breakdown in mouse models of ischemic stroke.",
+    "llama-7b_fact_raw": "1. Gpr124 is expressed in the brain.\n2. Gpr124 is expressed in the blood-brain barrier (BBB).\n3. Gpr124 has been found to suppress BBB breakdown in mouse models of ischemic stroke.",
     "llama-7b_fact": [
       "Gpr124 is expressed in the brain.",
       "Gpr124 is expressed in the blood-brain barrier (BBB).",
-      "Gpr124 suppresses BBB breakdown in mouse models of ischemic stroke."
+      "Gpr124 has been found to suppress BBB breakdown in mouse models of ischemic stroke."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Gpr124 does not suppress BBB breakdown; rather, it is involved in the development and maintenance of the blood-brain barrier, and its absence or dysfunction can lead to BBB breakdown or permeability issues.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Gpr124 has been found to promote BBB integrity and its loss of function can lead to BBB breakdown in mouse models of ischemic stroke.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -543,7 +526,7 @@
       "FGF21 is a protein.",
       "Lack of FGF21 in mice leads to atherosclerotic plaque formation."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: While FGF21 may be linked to various metabolic processes, there is no conclusive evidence that directly associates the lack of FGF21 in mice with atherosclerotic plaque formation. More research would be needed to establish such a cause-and-effect relationship.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Lack of FGF21 in mice has been associated with various metabolic effects, but there is no direct and widely accepted evidence that its absence leads to atherosclerotic plaque formation. Instead, FGF21 has been shown to have beneficial effects on metabolism and may actually protect against atherosclerosis.",
     "llama-7b_judge": [
       "true",
       "false"
@@ -880,14 +863,9 @@
     "id": 652,
     "user_query": "You MUST give a detailed answer to the following question: What is the validity of the assertion that \"TMEM27 is a marker for beta cells.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "TMEM27 is expressed in beta cell",
-    "llama-7b_fact_raw": "1. TMEM27 is expressed in beta cells.",
-    "llama-7b_fact": [
-      "TMEM27 is expressed in beta cells."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 653,
@@ -909,9 +887,16 @@
     "id": 664,
     "user_query": "You MUST give a detailed answer to the following question: How truthful is the statement that \"The DESMOND program demonstrates no significant impact on biochemical outcomes.\"? Present a series of factual points about the statement.",
     "llama-7b_response": "The DESMOND program is a diabetes education program.\nThe DESMOND program demonstrated no significant impact on biochemical outcomes.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. The DESMOND program is a diabetes education program.\n2. The statement claims that the DESMOND program demonstrated no significant impact on biochemical outcomes.",
+    "llama-7b_fact": [
+      "The DESMOND program is a diabetes education program.",
+      "The statement claims that the DESMOND program demonstrated no significant impact on biochemical outcomes."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN",
+    "llama-7b_judge": [
+      "true",
+      "unknown"
+    ]
   },
   {
     "id": 665,
@@ -933,7 +918,7 @@
     "id": 689,
     "user_query": "You MUST give a detailed answer to the following question: How truthful is the statement that \"The artifactual C-terminal helix swapping in the StART domain is observed in the Ups1-Mdm35 heterodimer of the StARkin superfamily.\"? Present a series of factual points about the statement.",
     "llama-7b_response": "The StART domain is found in the Ups1-Mdm35 heterodimer of the StARkin superfamily.\nThe StART domain is found in the Ups1-Mdm35 heterodimer of the StARkin superfamily.\nThe StART domain is found in the Ups1-Mdm35 heterodimer of the StARkin superfamily.",
-    "llama-7b_fact_raw": "NO FACTS\n\nThe response provided is repetitive and does not present a series of factual points that can be independently verified with respect to the truthfulness of the statement regarding the \"artifactual C-terminal helix swapping in the StART domain.\" It simply restates the location of the StART domain.",
+    "llama-7b_fact_raw": "NO FACTS",
     "llama-7b_fact": [],
     "llama-7b_judge": []
   },
@@ -1077,14 +1062,9 @@
     "id": 822,
     "user_query": "You MUST give a detailed answer to the following question: What is the validity of the assertion that \"Alirocumab treatment increases apo(a) fractional clearance rate.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "Alirocumab is a drug used to treat hypercholesterolemia",
-    "llama-7b_fact_raw": "1. Alirocumab is a drug used to treat hypercholesterolemia.",
-    "llama-7b_fact": [
-      "Alirocumab is a drug used to treat hypercholesterolemia."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 824,
@@ -1167,7 +1147,7 @@
       "G-CSF is a growth factor.",
       "G-CSF prevents MDSCs from infiltrating tumors."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: G-CSF can actually promote the infiltration of MDSCs (myeloid-derived suppressor cells) into tumors, where they can help the tumor environment evade immune responses.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: G-CSF can actually promote the expansion and recruitment of myeloid-derived suppressor cells (MDSCs) to tumors, which can suppress the immune response against the tumor.",
     "llama-7b_judge": [
       "true",
       "false"
@@ -1361,9 +1341,14 @@
     "id": 1100,
     "user_query": "You MUST give a detailed answer to the following question: Consider the following statement: \"Valproic acid (VPA) treatment allows reprogramming by the microRNA cluster miR302/367.\" Is it right? Present fact-based arguments about the statement.",
     "llama-7b_response": "VPA is used to treat epilepsy",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Valproic acid (VPA) is used to treat epilepsy.",
+    "llama-7b_fact": [
+      "Valproic acid (VPA) is used to treat epilepsy."
+    ],
+    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 1108,
@@ -1377,14 +1362,9 @@
     "id": 1112,
     "user_query": "You MUST give a detailed answer to the following question: What is the validity of the assertion that \"5% of perinatal mortality is due to low birth weight.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "low birth weight is a risk factor for perinatal mortality",
-    "llama-7b_fact_raw": "1. Low birth weight is recognized as a risk factor for perinatal mortality.",
-    "llama-7b_fact": [
-      "Low birth weight is recognized as a risk factor for perinatal mortality."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1136,
@@ -1438,14 +1418,9 @@
     "id": 1173,
     "user_query": "You MUST give a detailed answer to the following question: Can you clarify whether the claim \"Commelina yellow mottle virus' (ComYMV) genome consists of 7489 baise pairs.\" is accurate or not? Build factual arguments about the claim.",
     "llama-7b_response": "The genome of Commelina yellow mottle virus (ComYMV) consists of 7489 baise pairs.",
-    "llama-7b_fact_raw": "1. Commelina yellow mottle virus (ComYMV) has a genome consisting of 7489 base pairs.",
-    "llama-7b_fact": [
-      "Commelina yellow mottle virus (ComYMV) has a genome consisting of 7489 base pairs."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1178,
@@ -1507,7 +1482,7 @@
     "id": 1201,
     "user_query": "You MUST give a detailed answer to the following question: Do you agree with the claim that \"Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation\"? Provide factual statements about the claim.",
     "llama-7b_response": "Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation",
-    "llama-7b_fact_raw": "NO FACTS\n\nThe answer does not contain additional explanations, evidence, or context that could be verified as true or false; it merely restates the claim presented in the original query.",
+    "llama-7b_fact_raw": "NO FACTS",
     "llama-7b_fact": [],
     "llama-7b_judge": []
   },
@@ -1515,21 +1490,21 @@
     "id": 1227,
     "user_query": "You MUST give a detailed answer to the following question: What is the validity of the assertion that \"IRG1 has antiviral effects against neurotropic viruses.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "1. IRG1 has been shown to inhibit the replication of poliovirus in vitro\n2. IRG1 has been shown to inhibit the replication of vesicular stomatitis virus in vitro\n3. IRG1 has been shown to inhibit the replication of rabies virus in vitro\n4. IRG1 has been shown to inhibit the replication of herpes simplex virus type 1 in vitro\n5. IRG1 has been shown to inhibit the replication of herpes simplex virus type 2 in vitro\n6. IRG1 has been shown to inhibit the replication of herpes simplex virus type 3 in vitro\n7. IRG1 has been shown to inhibit the replication of human cytomegalovirus in vitro\n8. IRG1 has been shown to inhibit the replication of human herpesvirus 6 in vitro\n9. IRG1 has been shown to inhibit the replication of human herpesvirus 7 in vitro\n10. IRG1 has been shown to inhibit the replication of human T-lymphotropic virus type 1 in vitro\n11. IRG1 has been shown to inhibit the replication of human T-lymphotropic virus type 2 in vitro\n12. IRG1 has been shown to inhibit the replication of human T-lymphotropic virus type 3 in vitro\n13. IRG1 has been shown to inhibit the replication of human T-lymphotropic virus type 4 in vitro\n14. IRG1 has been shown to inhibit the replication of human T-lymphotropic virus type 5 in vitro\n15. IRG1 has been shown to inhibit the replication of human T-lymphotropic virus type 6 in vitro\n16. IRG1 has been shown to inhibit the replication of human T-lymphotropic virus type 7 in vitro\n17. IRG1 has been shown to inhibit the replication of human T-lymphotropic virus type 8 in vitro\n18. IRG1 ha",
-    "llama-7b_fact_raw": "1. IRG1 has been shown to inhibit the replication of poliovirus in vitro.\n2. IRG1 has been shown to inhibit the replication of vesicular stomatitis virus in vitro.\n3. IRG1 has been shown to inhibit the replication of rabies virus in vitro.\n4. IRG1 has been shown to inhibit the replication of herpes simplex virus type 1 in vitro.\n5. IRG1 has been shown to inhibit the replication of herpes simplex virus type 2 in vitro.",
+    "llama-7b_fact_raw": "1. IRG1 has been shown to inhibit the replication of poliovirus in vitro.\n2. IRG1 has been shown to inhibit the replication of vesicular stomatitis virus in vitro.\n3. IRG1 has been shown to inhibit the replication of rabies virus in vitro.\n4. IRG1 has been shown to inhibit the replication of herpes simplex virus type 1 in vitro.\n5. IRG1 has been shown to inhibit the replication of human cytomegalovirus in vitro.",
     "llama-7b_fact": [
       "IRG1 has been shown to inhibit the replication of poliovirus in vitro.",
       "IRG1 has been shown to inhibit the replication of vesicular stomatitis virus in vitro.",
       "IRG1 has been shown to inhibit the replication of rabies virus in vitro.",
       "IRG1 has been shown to inhibit the replication of herpes simplex virus type 1 in vitro.",
-      "IRG1 has been shown to inhibit the replication of herpes simplex virus type 2 in vitro."
+      "IRG1 has been shown to inhibit the replication of human cytomegalovirus in vitro."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nExplanation: The statements provided are specific scientific claims that would require referencing the latest scientific research to verify their accuracy. Without the appropriate context or information from research studies, it's not possible to determine the truthfulness of these statements.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nPlease note that while these statements are marked as true, the specific antiviral activities of IRG1 (immune-responsive gene 1) can vary depending on the study and the experimental conditions. The statements are based on the assumption that there is scientific evidence supporting the inhibition of these viruses by IRG1 in vitro. However, without specific references to the studies or publications that have demonstrated these effects, it is not possible to verify the accuracy of each statement. Therefore, while the responses are given as true based on the context provided, they should be taken with caution and subject to verification against current scientific literature.",
     "llama-7b_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
     ]
   },
   {
@@ -1560,14 +1535,9 @@
     "id": 1250,
     "user_query": "You MUST give a detailed answer to the following question: Consider the following statement: \"Ivermectin is used to treat lymphatic filariasis.\" Is it right? Present fact-based arguments about the statement.",
     "llama-7b_response": "ivermectin is used to treat lymphatic filariasi",
-    "llama-7b_fact_raw": "1. Ivermectin is used to treat lymphatic filariasis.",
-    "llama-7b_fact": [
-      "Ivermectin is used to treat lymphatic filariasis."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1253,
@@ -1589,7 +1559,7 @@
     "id": 1258,
     "user_query": "You MUST give a detailed answer to the following question: Can you clarify whether the claim \"Localization of PIN1 in the Arabidopsis embryo does not require VPS9a\" is accurate or not? Build factual arguments about the claim.",
     "llama-7b_response": "Localization of PIN1 in the Arabidopsis embryo does not require VPS9a",
-    "llama-7b_fact_raw": "NO FACTS\n\nThe response provided does not include any factual arguments or additional information that can be verified independently; it simply restates the query without offering evidence or details that would support the accuracy of the claim.",
+    "llama-7b_fact_raw": "NO FACTS",
     "llama-7b_fact": [],
     "llama-7b_judge": []
   },

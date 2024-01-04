@@ -11,14 +11,9 @@
     "id": 1,
     "user_query": "You MUST give a detailed answer to the following question: What year did the British politician born in 1967 began to represent the Daventry in the UK House of Commons?",
     "llama-7b_response": "1997",
-    "llama-7b_fact_raw": "1. The British politician born in 1967 began representing Daventry in the UK House of Commons in the year 1997.",
-    "llama-7b_fact": [
-      "The British politician born in 1967 began representing Daventry in the UK House of Commons in the year 1997."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context providing the name of the British politician or further details, it's not possible to verify the accuracy of the statement regarding their birth year, constituency, or the year they began representing Daventry in the UK House of Commons.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2,
@@ -37,10 +32,10 @@
       "Munich is located in Germany.",
       "The Bavarian language is spoken in Germany."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The Bavarian dialect, part of the Upper German group of dialects, is spoken in the state of Bavaria in Germany. The official language of Germany is German.",
     "llama-7b_judge": [
       "true",
-      "true"
+      "false"
     ]
   },
   {
@@ -87,9 +82,9 @@
     "id": 282,
     "user_query": "You MUST give a detailed answer to the following question: María Sol Branz sailed in the games of which Olympiad?",
     "llama-7b_response": "london 2012",
-    "llama-7b_fact_raw": "1. María Sol Branz participated in the Olympic Games held in London in 2012.",
+    "llama-7b_fact_raw": "1. María Sol Branz participated in the London 2012 Olympic Games.",
     "llama-7b_fact": [
-      "María Sol Branz participated in the Olympic Games held in London in 2012."
+      "María Sol Branz participated in the London 2012 Olympic Games."
     ],
     "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
@@ -124,44 +119,25 @@
     "id": 368,
     "user_query": "You MUST give a detailed answer to the following question: Michael Gandolfi wrote for which show starring Roseanne Barr?",
     "llama-7b_response": "roseanne",
-    "llama-7b_fact_raw": "1. Michael Gandolfi wrote for the show \"Roseanne\".\n2. Roseanne Barr starred in the show \"Roseanne\".",
-    "llama-7b_fact": [
-      "Michael Gandolfi wrote for the show \"Roseanne\".",
-      "Roseanne Barr starred in the show \"Roseanne\"."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Michael Gandolfi is a composer and is not known for writing for the show \"Roseanne\". The show was created by Matt Williams and its famous writers include Roseanne Barr, amongst others.\n2. TRUE",
-    "llama-7b_judge": [
-      "false",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 376,
     "user_query": "You MUST give a detailed answer to the following question: In what Nassau County did Nicholas Brandy build him and his wives estate.",
     "llama-7b_response": "oyster bay",
-    "llama-7b_fact_raw": "1. Nicholas Brandy built his and his wives' estate in Nassau County.\n2. The specific location of the estate in Nassau County is Oyster Bay.",
-    "llama-7b_fact": [
-      "Nicholas Brandy built his and his wives' estate in Nassau County.",
-      "The specific location of the estate in Nassau County is Oyster Bay."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nWithout additional context or specific details, it is not possible to verify the accuracy of these statements. The name Nicholas Brandy is not widely recognized in historical or current context. It is also not clear which estate is being referred to or if the person had multiple wives and an estate in Nassau County, particularly in Oyster Bay.",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 380,
     "user_query": "You MUST give a detailed answer to the following question: Which has more acts, Oberon or Le Villi?",
     "llama-7b_response": "Oberon",
-    "llama-7b_fact_raw": "1. Oberon has more acts than Le Villi.",
-    "llama-7b_fact": [
-      "Oberon has more acts than Le Villi."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Without additional context about what \"Oberon\" and \"Le Villi\" refer to specifically, it is not possible to determine the truthfulness of the statement. \"Oberon\" might refer to Carl Maria von Weber's opera, which indeed has more acts than \"Le Villi,\" which is an opera by Giacomo Puccini that originally consisted of one act. If this is the correct context, the statement would be TRUE, as Weber's \"Oberon\" typically has three acts. However, without confirmation of the context, the statement's accuracy remains unknown.]",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 389,
@@ -175,14 +151,9 @@
     "id": 397,
     "user_query": "You MUST give a detailed answer to the following question: Which magazine was American owned, Bella or Parenting?",
     "llama-7b_response": "Bella",
-    "llama-7b_fact_raw": "1. Bella magazine was American owned.",
-    "llama-7b_fact": [
-      "Bella magazine was American owned."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\n[Without additional context or information about \"Bella magazine\" and its ownership, it is difficult to determine the truthfulness of this statement.]",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 405,
@@ -212,14 +183,9 @@
     "id": 443,
     "user_query": "You MUST give a detailed answer to the following question: In what year did the singer of \"I'd Like To\" win a Grammy Award for Album of the Year?",
     "llama-7b_response": "1964",
-    "llama-7b_fact_raw": "1. The singer of \"I'd Like To\" won a Grammy Award for Album of the Year in 1964.",
-    "llama-7b_fact": [
-      "The singer of \"I'd Like To\" won a Grammy Award for Album of the Year in 1964."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\n[Explanation]: Without additional context or information such as the name of the singer or the album title related to the song \"I’d Like To,\" it is not possible to verify the accuracy of the statement regarding the Grammy Award for Album of the Year in 1964.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 502,
@@ -233,14 +199,9 @@
     "id": 536,
     "user_query": "You MUST give a detailed answer to the following question: The singer of Tomake Chai was a member od the parliament of India beginning in what year?",
     "llama-7b_response": "1998",
-    "llama-7b_fact_raw": "1. The singer of \"Tomake Chai\" became a member of the parliament of India in 1998.",
-    "llama-7b_fact": [
-      "The singer of \"Tomake Chai\" became a member of the parliament of India in 1998."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The singer of \"Tomake Chai,\" Bappi Lahiri, did not become a member of the parliament in India in 1998. The singer and composer became a member of the Bharatiya Janata Party (BJP) in 2014, but there's no record of him becoming a member of the parliament.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 551,
@@ -302,11 +263,11 @@
     "id": 740,
     "user_query": "You MUST give a detailed answer to the following question: How many kilometers long is the cyclist/pedestrian path that accesses the Melbourne Zoo?",
     "llama-7b_response": "The cyclist/pedestrian path that accesses the Melbourne Zoo is approximately 1.5 kilometers long.",
-    "llama-7b_fact_raw": "1. The cyclist/pedestrian path accessing the Melbourne Zoo is approximately 1.5 kilometers in length.",
+    "llama-7b_fact_raw": "1. The cyclist/pedestrian path that accesses the Melbourne Zoo is approximately 1.5 kilometers long.",
     "llama-7b_fact": [
-      "The cyclist/pedestrian path accessing the Melbourne Zoo is approximately 1.5 kilometers in length."
+      "The cyclist/pedestrian path that accesses the Melbourne Zoo is approximately 1.5 kilometers long."
     ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional information or context about the specific cyclist/pedestrian path being referenced, it's not possible to verify the accuracy of the statement regarding its length.",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific information about the length of the cyclist/pedestrian path that accesses the Melbourne Zoo, it is not possible to determine the accuracy of this statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -315,12 +276,12 @@
     "id": 744,
     "user_query": "You MUST give a detailed answer to the following question: What law was broken resulting in the first US felony conviction of an American computer scientist born in 1965 for the distribution of a computer worm?",
     "llama-7b_response": "Computer Fraud and Abuse Act",
-    "llama-7b_fact_raw": "1. An American computer scientist born in 1965 was the first person to be convicted of a felony for distributing a computer worm.\n2. The law broken that led to this felony conviction was the Computer Fraud and Abuse Act.",
+    "llama-7b_fact_raw": "1. An American computer scientist born in 1965 was convicted of a felony for the distribution of a computer worm.\n2. The law broken that led to the conviction was the Computer Fraud and Abuse Act.",
     "llama-7b_fact": [
-      "An American computer scientist born in 1965 was the first person to be convicted of a felony for distributing a computer worm.",
-      "The law broken that led to this felony conviction was the Computer Fraud and Abuse Act."
+      "An American computer scientist born in 1965 was convicted of a felony for the distribution of a computer worm.",
+      "The law broken that led to the conviction was the Computer Fraud and Abuse Act."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. TRUE: Robert Tappan Morris, an American computer scientist born in 1965, was convicted of a felony for the distribution of the Morris Worm in 1988.\n2. TRUE: The law broken that led to the conviction of Robert Tappan Morris was indeed the Computer Fraud and Abuse Act.",
     "llama-7b_judge": [
       "true",
       "true"
@@ -346,11 +307,11 @@
     "id": 828,
     "user_query": "You MUST give a detailed answer to the following question: The Italian romance drama Mahesh Bhatt compared \"Jism 2\" to came out in what year?",
     "llama-7b_response": "2012",
-    "llama-7b_fact_raw": "1. The Italian romance drama \"Jism 2\" that Mahesh Bhatt compared came out in 2012.",
+    "llama-7b_fact_raw": "1. The Italian romance drama that Mahesh Bhatt compared \"Jism 2\" to was released in the year 2012.",
     "llama-7b_fact": [
-      "The Italian romance drama \"Jism 2\" that Mahesh Bhatt compared came out in 2012."
+      "The Italian romance drama that Mahesh Bhatt compared \"Jism 2\" to was released in the year 2012."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or information about which specific Italian romance drama Mahesh Bhatt compared \"Jism 2\" to, it is not possible to determine the truthfulness of the statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -399,14 +360,9 @@
     "id": 910,
     "user_query": "You MUST give a detailed answer to the following question: On what street does the parent corporation of Smile have its headquarters?",
     "llama-7b_response": "broadway",
-    "llama-7b_fact_raw": "1. The parent corporation of Smile has its headquarters on Broadway.",
-    "llama-7b_fact": [
-      "The parent corporation of Smile has its headquarters on Broadway."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\n(The provided statement is too vague, as there is no additional context confirming which \"Smile\" is being referenced or the name of its parent corporation. Without specific details such as the full name of the company or further context, it is impossible to determine the accuracy of the statement.)",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 961,
@@ -436,30 +392,21 @@
     "id": 1003,
     "user_query": "You MUST give a detailed answer to the following question: Joshua T. Mendell is a faculty member of the Genetic Medicine Institute named after the internist who proposed mapping what part of the human body?",
     "llama-7b_response": "Dr. Victor A. McKusick",
-    "llama-7b_fact_raw": "1. Joshua T. Mendell is a faculty member of the Genetic Medicine Institute.\n2. The Genetic Medicine Institute is named after Dr. Victor A. McKusick.\n3. Dr. Victor A. McKusick proposed mapping a part of the human body.",
-    "llama-7b_fact": [
-      "Joshua T. Mendell is a faculty member of the Genetic Medicine Institute.",
-      "The Genetic Medicine Institute is named after Dr. Victor A. McKusick.",
-      "Dr. Victor A. McKusick proposed mapping a part of the human body."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE: The McKusick-Nathans Institute of Genetic Medicine at Johns Hopkins University is named after Dr. Victor A. McKusick, a pioneer in the field.\n3. TRUE: Dr. Victor A. McKusick proposed mapping the human genome, which is effectively a map of a part of the human body at the genetic level.",
-    "llama-7b_judge": [
-      "unknown",
-      "true",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1010,
     "user_query": "You MUST give a detailed answer to the following question: The episode  from the TV series \"The Simpsons,\"  that was intended to be the season premiere had which show runner?",
     "llama-7b_response": "David Mirkin",
-    "llama-7b_fact_raw": "1. David Mirkin was the showrunner for the intended season premiere episode of the TV series \"The Simpsons.\"",
+    "llama-7b_fact_raw": "1. David Mirkin was the showrunner for the season premiere episode of \"The Simpsons\" in question.",
     "llama-7b_fact": [
-      "David Mirkin was the showrunner for the intended season premiere episode of the TV series \"The Simpsons.\""
+      "David Mirkin was the showrunner for the season premiere episode of \"The Simpsons\" in question."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "UNKNOWN\n\n[Explanation]: Without additional context about which season or episode of \"The Simpsons\" is being referred to, it is impossible to determine the truthfulness of the statement regarding David Mirkin's role as showrunner for that specific episode.",
     "llama-7b_judge": [
-      "true"
+      "unknown"
     ]
   },
   {
@@ -570,14 +517,9 @@
     "id": 1358,
     "user_query": "You MUST give a detailed answer to the following question: Greg Taylor was the screenwriter for what 1995 film?",
     "llama-7b_response": "dead man",
-    "llama-7b_fact_raw": "1. Greg Taylor was the screenwriter for the 1995 film \"Dead Man.\"",
-    "llama-7b_fact": [
-      "Greg Taylor was the screenwriter for the 1995 film \"Dead Man.\""
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Jim Jarmusch was the screenwriter and director of the 1995 film \"Dead Man.\"",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1362,
@@ -599,14 +541,9 @@
     "id": 1385,
     "user_query": "You MUST give a detailed answer to the following question: The Republican who introduced Global Food Security Act of 2016 was nominated by what president to become a representative to the United Nations General Assembly?",
     "llama-7b_response": "donald trump",
-    "llama-7b_fact_raw": "1. The Republican who introduced the Global Food Security Act of 2016 was later nominated by President Donald Trump to become a representative to the United Nations General Assembly.",
-    "llama-7b_fact": [
-      "The Republican who introduced the Global Food Security Act of 2016 was later nominated by President Donald Trump to become a representative to the United Nations General Assembly."
-    ],
-    "llama-7b_judge_raw": "1. TRUE: The Republican who introduced the Global Food Security Act of 2016, Senator Johnny Isakson, was indeed nominated by President Donald Trump to become a representative to the United Nations General Assembly in 2017.",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1400,
@@ -836,14 +773,9 @@
     "id": 2016,
     "user_query": "You MUST give a detailed answer to the following question: Which genus has only one specy in it, Petteria or Malcolmia?",
     "llama-7b_response": "Malcolmia",
-    "llama-7b_fact_raw": "1. Malcolmia is a genus with only one species in it.",
-    "llama-7b_fact": [
-      "Malcolmia is a genus with only one species in it."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Malcolmia is a genus that contains multiple species, not just one.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2020,
@@ -881,18 +813,9 @@
     "id": 2082,
     "user_query": "You MUST give a detailed answer to the following question: On which subject did Amelia Sarah Levetus give a lecture at the University of Vienna in the late 19th century that concerns origins and history of cooperatives that began with the application of cooperative principles to business organization?",
     "llama-7b_response": "economic",
-    "llama-7b_fact_raw": "1. Amelia Sarah Levetus gave a lecture at the University of Vienna in the late 19th century.\n2. The subject of Amelia Sarah Levetus's lecture was concerned with the origins and history of cooperatives.\n3. The lecture by Amelia Sarah Levetus at the University of Vienna included the application of cooperative principles to business organization.",
-    "llama-7b_fact": [
-      "Amelia Sarah Levetus gave a lecture at the University of Vienna in the late 19th century.",
-      "The subject of Amelia Sarah Levetus's lecture was concerned with the origins and history of cooperatives.",
-      "The lecture by Amelia Sarah Levetus at the University of Vienna included the application of cooperative principles to business organization."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n\nWithout specific historical context or source material regarding the lectures given by Amelia Sarah Levetus, it's not possible to confirm the veracity of these statements. The content of her lectures and whether these topics were indeed covered at the University of Vienna in the late 19th century require more detailed historical information.",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2083,
@@ -914,9 +837,9 @@
     "id": 2130,
     "user_query": "You MUST give a detailed answer to the following question: Forum Theater is located on the corner of which street that runs parallel to the Yarra River?",
     "llama-7b_response": "flinders street",
-    "llama-7b_fact_raw": "1. Forum Theater is located on a street that runs parallel to the Yarra River.\n2. The street that runs parallel to the Yarra River and on which the Forum Theater is located is Flinders Street.",
+    "llama-7b_fact_raw": "1. Forum Theater is located on the corner of a street that runs parallel to the Yarra River.\n2. The street that runs parallel to the Yarra River and on which the Forum Theater is located is Flinders Street.",
     "llama-7b_fact": [
-      "Forum Theater is located on a street that runs parallel to the Yarra River.",
+      "Forum Theater is located on the corner of a street that runs parallel to the Yarra River.",
       "The street that runs parallel to the Yarra River and on which the Forum Theater is located is Flinders Street."
     ],
     "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE",
@@ -945,14 +868,9 @@
     "id": 2165,
     "user_query": "You MUST give a detailed answer to the following question: Worker: Which is the southernmost canal, the Alexandria Canal or the Schuylkill Canal?",
     "llama-7b_response": "Alexandria Canal",
-    "llama-7b_fact_raw": "1. The Alexandria Canal is farther south than the Schuylkill Canal.",
-    "llama-7b_fact": [
-      "The Alexandria Canal is farther south than the Schuylkill Canal."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The Schuylkill Canal is farther south than the Alexandria Canal. The Schuylkill Canal is in Pennsylvania, USA, while the Alexandria Canal was part of the canal system around the Potomac River near Alexandria, Virginia, USA, which is to the north of Pennsylvania.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2183,
@@ -994,7 +912,7 @@
     "llama-7b_fact": [
       "The Flint Estate is a historic summer estate located in Carroll County, New Hampshire."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\nExplanation: Without further context or additional information provided about the Flint Estate, it is not possible to determine the accuracy of this statement.",
+    "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1011,16 +929,9 @@
     "id": 2303,
     "user_query": "You MUST give a detailed answer to the following question: WHO WAS THE ECCENTRIC AMERICAN BUSINESS MAN THAT WAS THE FOUNDER OF THE AIRLINE ORIGINALLY NAMED AIR WEST",
     "llama-7b_response": "Herb Kelleher",
-    "llama-7b_fact_raw": "1. Herb Kelleher was an American businessman.\n2. Herb Kelleher was the founder of the airline originally named Air West.",
-    "llama-7b_fact": [
-      "Herb Kelleher was an American businessman.",
-      "Herb Kelleher was the founder of the airline originally named Air West."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Herb Kelleher was the co-founder of the airline originally named Southwest Airlines.",
-    "llama-7b_judge": [
-      "true",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2335,
@@ -1058,14 +969,9 @@
     "id": 2406,
     "user_query": "You MUST give a detailed answer to the following question: On what continent can one find Synaphe infumatalis?",
     "llama-7b_response": "australia",
-    "llama-7b_fact_raw": "1. Synaphe infumatalis can be found on the continent of Australia.",
-    "llama-7b_fact": [
-      "Synaphe infumatalis can be found on the continent of Australia."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Synaphe infumatalis is a species of moth found in Europe, particularly in France. It is not found in Australia.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2434,
@@ -1079,16 +985,9 @@
     "id": 2435,
     "user_query": "You MUST give a detailed answer to the following question: What was introduced to the Pacific Games in 1979 that the Vanuatu national cricket team participated in?",
     "llama-7b_response": "cricket",
-    "llama-7b_fact_raw": "1. Cricket was introduced to the Pacific Games in 1979.\n2. The Vanuatu national cricket team participated in the Pacific Games when cricket was introduced.",
-    "llama-7b_fact": [
-      "Cricket was introduced to the Pacific Games in 1979.",
-      "The Vanuatu national cricket team participated in the Pacific Games when cricket was introduced."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Cricket was introduced to the Pacific Games in 1979 as an exhibition sport but did not become part of the official program until 2003.\n2. UNKNOWN",
-    "llama-7b_judge": [
-      "false",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2477,
@@ -1150,16 +1049,9 @@
     "id": 2629,
     "user_query": "You MUST give a detailed answer to the following question: Loïc Baa has made an appearance for which team that was founded in 1893?",
     "llama-7b_response": "bayern munich",
-    "llama-7b_fact_raw": "1. Loïc Baa has made an appearance for Bayern Munich.\n2. Bayern Munich was founded in 1893.",
-    "llama-7b_fact": [
-      "Loïc Baa has made an appearance for Bayern Munich.",
-      "Bayern Munich was founded in 1893."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: Bayern Munich was founded in 1900.",
-    "llama-7b_judge": [
-      "unknown",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2641,
@@ -1189,14 +1081,12 @@
     "id": 2715,
     "user_query": "You MUST give a detailed answer to the following question: Invincible and The Strongest Man in the World are both American movies with one being staged during the 1970s and the other being made in the 1970s. Which movie was made in the 1970s?",
     "llama-7b_response": "Invincible",
-    "llama-7b_fact_raw": "1. Invincible is an American movie made in the 1970s.\n2. The Strongest Man in the World is an American movie set in the 1970s, but not necessarily made in that decade.",
+    "llama-7b_fact_raw": "1. Invincible is an American movie made in the 1970s.",
     "llama-7b_fact": [
-      "Invincible is an American movie made in the 1970s.",
-      "The Strongest Man in the World is an American movie set in the 1970s, but not necessarily made in that decade."
+      "Invincible is an American movie made in the 1970s."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN (There are multiple movies titled 'Invincible' and without a specific year or additional details, it's unclear which one is being referred to or when it was made.)\n2. FALSE [correction]: \"The Strongest Man in the World\" is an American movie made in 1975. Without additional context, it's uncertain if it's set in the 1970s, but the production date is accurate.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: \"Invincible\" could refer to multiple films, but if the statement is referring to the sports drama about Vince Papale, that movie titled \"Invincible\" was released in 2006. If it's referring to a different movie, more context is needed for a proper correction.",
     "llama-7b_judge": [
-      "unknown",
       "false"
     ]
   },
@@ -1212,16 +1102,9 @@
     "id": 2795,
     "user_query": "You MUST give a detailed answer to the following question: Which Argentine professional basketball player currently plays for the San Antonio Spurs, Juan Pablo Vaulet or Manu Ginóbili?",
     "llama-7b_response": "Juan Pablo Vaulet",
-    "llama-7b_fact_raw": "1. Juan Pablo Vaulet is an Argentine professional basketball player.\n2. Juan Pablo Vaulet plays for the San Antonio Spurs.",
-    "llama-7b_fact": [
-      "Juan Pablo Vaulet is an Argentine professional basketball player.",
-      "Juan Pablo Vaulet plays for the San Antonio Spurs."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: As of my knowledge cutoff date in early 2023, Juan Pablo Vaulet does not play for the San Antonio Spurs. He has played for several international teams and leagues, but any current team affiliation would need to be confirmed with up-to-date sources since team rosters change frequently.",
-    "llama-7b_judge": [
-      "true",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2798,
@@ -1243,15 +1126,15 @@
     "id": 2833,
     "user_query": "You MUST give a detailed answer to the following question: Are both the Bananarita and the Matador served in a martini glass?",
     "llama-7b_response": "Yes, both the Bananarita and the Matador are typically served in a martini glass. A martini glass is a stemmed glass that is typically used for cocktails that are served in a chilled state, such as martinis, cosmopolitans, and other similar drinks. The martini glass has a stem that allows the drinker to hold the glass by the base, rather than the bowl, which helps to keep the drink cold and prevents the drink from warming up too quickly. The martini glass also has a narrow bowl that helps to concentrate the aroma and flavor of the drink, making it an ideal vessel for cocktails that are meant to be sipped and savored.",
-    "llama-7b_fact_raw": "1. The Bananarita is typically served in a martini glass.\n2. The Matador is also typically served in a martini glass.\n3. A martini glass is used for cocktails that are served chilled.\n4. The stem of a martini glass allows the drinker to hold the glass by the base.\n5. The narrow bowl of a martini glass helps to concentrate the aroma and flavor of the drink.",
+    "llama-7b_fact_raw": "1. The Bananarita is typically served in a martini glass.\n2. The Matador is typically served in a martini glass.\n3. A martini glass is used for cocktails that are served chilled.\n4. The stem of a martini glass allows the drinker to hold the glass by the base.\n5. The narrow bowl of a martini glass helps to concentrate the aroma and flavor of the drink.",
     "llama-7b_fact": [
       "The Bananarita is typically served in a martini glass.",
-      "The Matador is also typically served in a martini glass.",
+      "The Matador is typically served in a martini glass.",
       "A martini glass is used for cocktails that are served chilled.",
       "The stem of a martini glass allows the drinker to hold the glass by the base.",
       "The narrow bowl of a martini glass helps to concentrate the aroma and flavor of the drink."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The Bananarita is typically served in a margarita glass, which has a broader rim and can accommodate a salt or sugar rim.\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The Bananarita is typically served in a margarita glass, not a martini glass.\n2. UNKNOWN\n3. TRUE\n4. TRUE\n5. TRUE",
     "llama-7b_judge": [
       "false",
       "unknown",
@@ -1386,14 +1269,14 @@
     "id": 3147,
     "user_query": "You MUST give a detailed answer to the following question: Ensemble Pieces, which was a classical work done in part by John Adams, had strong roots in what style of music?",
     "llama-7b_response": "minimalism",
-    "llama-7b_fact_raw": "1. The classical work \"Ensemble Pieces\" was done in part by John Adams.\n2. \"Ensemble Pieces\" had strong roots in minimalism style of music.",
+    "llama-7b_fact_raw": "1. \"Ensemble Pieces\" is a classical work done in part by John Adams.\n2. \"Ensemble Pieces\" has strong roots in minimalism style of music.",
     "llama-7b_fact": [
-      "The classical work \"Ensemble Pieces\" was done in part by John Adams.",
-      "\"Ensemble Pieces\" had strong roots in minimalism style of music."
+      "\"Ensemble Pieces\" is a classical work done in part by John Adams.",
+      "\"Ensemble Pieces\" has strong roots in minimalism style of music."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The classical work \"Ensemble Pieces\" does not seem to be associated with John Adams. John Adams is a contemporary American composer known for works such as \"Harmonielehre\" and \"Short Ride in a Fast Machine,\" but \"Ensemble Pieces\" is not recognized as one of his compositions. Moreover, without additional context, it's unclear which specific work titled \"Ensemble Pieces\" is referred to here.\n\n2. UNKNOWN\n\nGiven that the statement regarding the work \"Ensemble Pieces\" being associated with John Adams is incorrect, it is difficult to confirm whether the said work has strong roots in minimalism without knowing the exact piece and its composer. John Adams himself is known for compositions that are influenced by minimalism, but without clarity on what \"Ensemble Pieces\" refers to, we cannot accurately determine the truth of the second statement.",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nWithout additional context or information about the work \"Ensemble Pieces,\" it is not possible to determine the accuracy of these statements. John Adams is a contemporary American composer known for his minimalist works, but without specific knowledge of a work titled \"Ensemble Pieces,\" the truth of these statements cannot be ascertained.",
     "llama-7b_judge": [
-      "false",
+      "unknown",
       "unknown"
     ]
   },
@@ -1457,14 +1340,9 @@
     "id": 3318,
     "user_query": "You MUST give a detailed answer to the following question: How many episodes were in the crime miniseries spoofed by The Best Movie?",
     "llama-7b_response": "10",
-    "llama-7b_fact_raw": "1. The crime miniseries spoofed by \"The Best Movie\" had 10 episodes.",
-    "llama-7b_fact": [
-      "The crime miniseries spoofed by \"The Best Movie\" had 10 episodes."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3343,
@@ -1534,14 +1412,9 @@
     "id": 3641,
     "user_query": "You MUST give a detailed answer to the following question: Which breed, the Rough Collie or the Serbian Tricolour Hound, was first considered as a separate breed?",
     "llama-7b_response": "rough collie",
-    "llama-7b_fact_raw": "1. The Rough Collie was considered as a separate breed before the Serbian Tricolour Hound.",
-    "llama-7b_fact": [
-      "The Rough Collie was considered as a separate breed before the Serbian Tricolour Hound."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: Without specific recognized dates of breed separation or development, it is challenging to state with certainty which breed was considered separate first. Breed histories can vary by country and organization. Furthermore, the question requires specific knowledge about the historical recognition and establishment of dog breeds, which can be nuanced.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3685,
@@ -1555,9 +1428,18 @@
     "id": 3698,
     "user_query": "You MUST give a detailed answer to the following question: The Jazz of the City Atlanta is a portrait of over 100 jazz musicians surrounding what American politician who served as the 58th mayor of Atlanta?",
     "llama-7b_response": "maynard jackson",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. \"The Jazz of the City Atlanta\" is a portrait that features over 100 jazz musicians.\n2. The portrait surrounds Maynard Jackson.\n3. Maynard Jackson served as the 58th mayor of Atlanta.",
+    "llama-7b_fact": [
+      "\"The Jazz of the City Atlanta\" is a portrait that features over 100 jazz musicians.",
+      "The portrait surrounds Maynard Jackson.",
+      "Maynard Jackson served as the 58th mayor of Atlanta."
+    ],
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. FALSE [correction]: Maynard Jackson served as the 56th and 60th mayor of Atlanta, not the 58th.",
+    "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "false"
+    ]
   },
   {
     "id": 3703,
@@ -1579,7 +1461,7 @@
     "id": 3748,
     "user_query": "You MUST give a detailed answer to the following question: What did the the person of which the Division of Mayo was named after, study at the University of Adelaide?",
     "llama-7b_response": "william mayo",
-    "llama-7b_fact_raw": "NO FACTS\n\nThe response \"william mayo\" does not provide any factual information regarding the studies of the person after whom the Division of Mayo was named at the University of Adelaide.",
+    "llama-7b_fact_raw": "NO FACTS",
     "llama-7b_fact": [],
     "llama-7b_judge": []
   },
@@ -1603,9 +1485,9 @@
     "id": 3805,
     "user_query": "You MUST give a detailed answer to the following question: WHere are both Stewart's Fountain Classics and Cactus Cooler sold?",
     "llama-7b_response": "Stewart's Fountain Classics and Cactus Cooler are both sold in the United States.",
-    "llama-7b_fact_raw": "1. Stewart's Fountain Classics is sold in the United States.\n2. Cactus Cooler is sold in the United States.",
+    "llama-7b_fact_raw": "1. Stewart's Fountain Classics are sold in the United States.\n2. Cactus Cooler is sold in the United States.",
     "llama-7b_fact": [
-      "Stewart's Fountain Classics is sold in the United States.",
+      "Stewart's Fountain Classics are sold in the United States.",
       "Cactus Cooler is sold in the United States."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
@@ -1642,14 +1524,9 @@
     "id": 3853,
     "user_query": "You MUST give a detailed answer to the following question: The Bradford Farm Historic District is located in what county?",
     "llama-7b_response": "aratoga",
-    "llama-7b_fact_raw": "1. The Bradford Farm Historic District is located in Saratoga County.",
-    "llama-7b_fact": [
-      "The Bradford Farm Historic District is located in Saratoga County."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nNote: Without additional context around what \"Bradford Farm Historic District\" refers to, or where it is specifically located, it's not possible to determine the veracity of the statement. If \"Bradford Farm Historic District\" refers to a specific registered historic district, its location would need to be confirmed through records or a reliable source.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3865,
@@ -1671,14 +1548,9 @@
     "id": 3878,
     "user_query": "You MUST give a detailed answer to the following question: Who won the women's rugby championship sponsored by the RBS in 2016?",
     "llama-7b_response": "ireland",
-    "llama-7b_fact_raw": "1. Ireland won the women's rugby championship sponsored by the RBS in 2016.",
-    "llama-7b_fact": [
-      "Ireland won the women's rugby championship sponsored by the RBS in 2016."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: England won the women's rugby championship sponsored by the RBS (Six Nations Championship) in 2016. Ireland won in 2013 and 2015.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3905,
@@ -1780,14 +1652,9 @@
     "id": 4135,
     "user_query": "You MUST give a detailed answer to the following question: What is the middle name of the actress that co-starred with Richard Burton in the 1967 film \"The Taming of the Shrew\"?",
     "llama-7b_response": "kathleen",
-    "llama-7b_fact_raw": "1. The actress that co-starred with Richard Burton in the 1967 film \"The Taming of the Shrew\" has the middle name Kathleen.",
-    "llama-7b_fact": [
-      "The actress that co-starred with Richard Burton in the 1967 film \"The Taming of the Shrew\" has the middle name Kathleen."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n\nThe actress who co-starred with Richard Burton in the 1967 film \"The Taming of the Shrew\" is Elizabeth Taylor, whose full name is Elizabeth Rosemond Taylor. Thus, the statement is true if the actress referred to is Elizabeth Taylor.",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 4238,
@@ -1801,16 +1668,9 @@
     "id": 4247,
     "user_query": "You MUST give a detailed answer to the following question: Anthony Watts was the managing director of the publication released by which association?",
     "llama-7b_response": "royal meteorological society",
-    "llama-7b_fact_raw": "1. Anthony Watts was the managing director of a publication.\n2. The publication managed by Anthony Watts was released by the Royal Meteorological Society.",
-    "llama-7b_fact": [
-      "Anthony Watts was the managing director of a publication.",
-      "The publication managed by Anthony Watts was released by the Royal Meteorological Society."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nWithout specific details regarding the publication or Anthony Watts' career, the veracity of these statements cannot be determined.",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 4333,

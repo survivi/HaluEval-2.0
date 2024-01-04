@@ -75,9 +75,9 @@
     "id": 255,
     "user_query": "You MUST give a detailed answer to the following question: what is the approximate percentage of argon in the atmosphere ?",
     "llama-7b_response": "0.93%",
-    "llama-7b_fact_raw": "1. Argon makes up approximately 0.93% of the Earth's atmosphere.",
+    "llama-7b_fact_raw": "1. Argon constitutes approximately 0.93% of the Earth's atmosphere.",
     "llama-7b_fact": [
-      "Argon makes up approximately 0.93% of the Earth's atmosphere."
+      "Argon constitutes approximately 0.93% of the Earth's atmosphere."
     ],
     "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
@@ -296,9 +296,14 @@
     "id": 812,
     "user_query": "You MUST give a detailed answer to the following question: in what year did new york city appoint its first trained medical examiner ?",
     "llama-7b_response": "1942",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. New York City appointed its first trained medical examiner in 1942.",
+    "llama-7b_fact": [
+      "New York City appointed its first trained medical examiner in 1942."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: New York City appointed its first trained medical examiner, Charles Norris, in 1918.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 818,
@@ -312,16 +317,9 @@
     "id": 832,
     "user_query": "You MUST give a detailed answer to the following question: which two substances did charles du fay find he was unable to turn into electrics ?",
     "llama-7b_response": "water and graphite",
-    "llama-7b_fact_raw": "1. Charles du Fay found that he was unable to turn water into an electric substance.\n2. Charles du Fay found that he was unable to turn graphite into an electric substance.",
-    "llama-7b_fact": [
-      "Charles du Fay found that he was unable to turn water into an electric substance.",
-      "Charles du Fay found that he was unable to turn graphite into an electric substance."
-    ],
-    "llama-7b_judge_raw": "1. TRUE (Although the statement could be clearer, it is generally true that water in its pure form is not an electrical conductor. Charles du Fay was an early researcher of electrical phenomena, so the spirit of the statement stands, even though turning water into an electric substance isn't a phrase typically used in scientific contexts.)\n2. FALSE [correction]: Charles du Fay discovered that graphite is a form of carbon that can conduct electricity.",
-    "llama-7b_judge": [
-      "true",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 835,
@@ -351,9 +349,14 @@
     "id": 859,
     "user_query": "You MUST give a detailed answer to the following question: thanks to its chemistry , europium is easier to isolate than the other lanthanides , so investigators know a little more about it . which is the stable , low oxidation state that europium shares with samarium , but not the other lanthanides ?",
     "llama-7b_response": "+2",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Europium has a stable low oxidation state of +2.",
+    "llama-7b_fact": [
+      "Europium has a stable low oxidation state of +2."
+    ],
+    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 872,
@@ -399,22 +402,9 @@
     "id": 1024,
     "user_query": "You MUST give a detailed answer to the following question: you drive 200 miles in 3 hours before stopping for 30 minutes for lunch and gas . after lunch you travel 150 miles in an hour and a half . what was your average speed for the trip ?",
     "llama-7b_response": "50 mph",
-    "llama-7b_fact_raw": "1. The total distance driven before stopping for lunch was 200 miles.\n2. The duration of driving before the lunch stop was 3 hours.\n3. The stop for lunch and gas lasted 30 minutes.\n4. The distance driven after lunch was 150 miles.\n5. The duration of driving after lunch was 1.5 hours.",
-    "llama-7b_fact": [
-      "The total distance driven before stopping for lunch was 200 miles.",
-      "The duration of driving before the lunch stop was 3 hours.",
-      "The stop for lunch and gas lasted 30 minutes.",
-      "The distance driven after lunch was 150 miles.",
-      "The duration of driving after lunch was 1.5 hours."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nWithout additional context, it is impossible to determine the truth of these statements related to driving distances, times, and durations.",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1026,
@@ -444,14 +434,9 @@
     "id": 1100,
     "user_query": "You MUST give a detailed answer to the following question: which was not a feature of the mongol empire ?",
     "llama-7b_response": "a written language",
-    "llama-7b_fact_raw": "1. The Mongol Empire did not have a written language of its own.",
-    "llama-7b_fact": [
-      "The Mongol Empire did not have a written language of its own."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The Mongol Empire used the traditional Mongolian script, which was adopted in the 13th century from the Uighur alphabet.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1119,
@@ -469,7 +454,7 @@
     "llama-7b_fact": [
       "A landmark clinical trial showed that aspirin lowers the risk of heart attacks by 20%."
     ],
-    "llama-7b_judge_raw": "UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific details about the clinical trial mentioned, such as the name of the study, the year it was conducted, or the journal it was published in, it is not possible to verify the accuracy of the statement that aspirin lowers the risk of heart attacks by 20%. There have been various studies on the effects of aspirin on heart attack risk, with differing results, so without more context, the truth of this statement cannot be determined.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -510,11 +495,11 @@
     "id": 1406,
     "user_query": "You MUST give a detailed answer to the following question: which of the following is false when it comes to the 112 united states supreme court justices that have served today ?",
     "llama-7b_response": "no justice has ever been impeached",
-    "llama-7b_fact_raw": "1. There have been 112 United States Supreme Court Justices that have served.",
+    "llama-7b_fact_raw": "1. No justice of the United States Supreme Court has ever been impeached.",
     "llama-7b_fact": [
-      "There have been 112 United States Supreme Court Justices that have served."
+      "No justice of the United States Supreme Court has ever been impeached."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: As of my knowledge cutoff in 2023, there have been 115 Justices on the United States Supreme Court.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: A justice of the United States Supreme Court, Samuel Chase, was impeached in 1804, but he was acquitted by the Senate and thus not removed from office.",
     "llama-7b_judge": [
       "false"
     ]
@@ -568,13 +553,19 @@
     "id": 1533,
     "user_query": "You MUST give a detailed answer to the following question: if you were to raise the metal weights in a grandfather clock 0.75 meters , and they weighed 250 newtons , how may joules would it take ?",
     "llama-7b_response": "250",
-    "llama-7b_fact_raw": "1. Raising the metal weights in a grandfather clock by 0.75 meters with a force of 250 newtons requires 187.5 joules of energy.",
+    "llama-7b_fact_raw": "1. Raising the metal weights in a grandfather clock 0.75 meters requires energy.\n2. The metal weights mentioned have a force due to gravity of 250 newtons.\n3. The amount of energy required to raise the weights 0.75 meters is measured in joules.\n4. The energy required to raise the weights 0.75 meters is 250 joules.",
     "llama-7b_fact": [
-      "Raising the metal weights in a grandfather clock by 0.75 meters with a force of 250 newtons requires 187.5 joules of energy."
+      "Raising the metal weights in a grandfather clock 0.75 meters requires energy.",
+      "The metal weights mentioned have a force due to gravity of 250 newtons.",
+      "The amount of energy required to raise the weights 0.75 meters is measured in joules.",
+      "The energy required to raise the weights 0.75 meters is 250 joules."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN (The force due to gravity on the metal weights depends on their mass, which is not provided.)\n3. TRUE\n4. FALSE [correction]: The energy required to raise the weights 0.75 meters is calculated by the work done against gravity, which is force times distance (W = F * d). Without knowing the actual force due to gravity on the weights (which depends on their mass), we cannot confirm the energy is 250 joules. If the force were indeed 250 newtons, the energy required would be \\( 250 \\text{ N} \\times 0.75 \\text{ m} = 187.5 \\text{ joules} \\).",
     "llama-7b_judge": [
-      "true"
+      "true",
+      "unknown",
+      "true",
+      "false"
     ]
   },
   {
@@ -726,7 +717,7 @@
     "llama-7b_fact": [
       "Nitrogen is not a prominent element in the human body."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Nitrogen is a prominent element in the human body, as it is a key component of amino acids which make up proteins, and nucleic acids which make up DNA and RNA.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Nitrogen is a prominent element in the human body, as it is a key component of amino acids, which are the building blocks of proteins, and nucleic acids, which make up DNA and RNA.",
     "llama-7b_judge": [
       "false"
     ]
@@ -751,22 +742,24 @@
     "id": 2144,
     "user_query": "You MUST give a detailed answer to the following question: what did the government make available to the pubilc that made it `` a snap '' to have your picture taken ?",
     "llama-7b_response": "Kodak Instamatic",
-    "llama-7b_fact_raw": "1. The government made the Kodak Instamatic available to the public for taking pictures.",
-    "llama-7b_fact": [
-      "The government made the Kodak Instamatic available to the public for taking pictures."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: It was the Eastman Kodak Company, a private corporation, that made the Kodak Instamatic camera available to the public for taking pictures, not the government.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2147,
     "user_query": "You MUST give a detailed answer to the following question: it 's estimated that 330 billion photographs are taken each year . if there are 6.9 billion people in the world , how many photos on average is that per person ? how many photos do you estimate you take each year ?",
     "llama-7b_response": "330 billion photographs are taken each year . if there are 6.9 billion people in the world , how many photos on average is that per person ?",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. An estimated 330 billion photographs are taken each year.\n2. The world population is estimated to be 6.9 billion people.",
+    "llama-7b_fact": [
+      "An estimated 330 billion photographs are taken each year.",
+      "The world population is estimated to be 6.9 billion people."
+    ],
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: As of my knowledge cutoff in 2023, the world population is estimated to be over 7.9 billion people.",
+    "llama-7b_judge": [
+      "unknown",
+      "false"
+    ]
   },
   {
     "id": 2188,
@@ -820,14 +813,9 @@
     "id": 2354,
     "user_query": "You MUST give a detailed answer to the following question: from 1974 to 1978 , carr and his teammates shared the world record for individual time in space . how many hours did they log ?",
     "llama-7b_response": "870",
-    "llama-7b_fact_raw": "1. Carr and his teammates logged 870 hours in space from 1974 to 1978.",
-    "llama-7b_fact": [
-      "Carr and his teammates logged 870 hours in space from 1974 to 1978."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific information about who \"Carr\" refers to and who his teammates are, it is not possible to verify the accuracy of the statement regarding the number of hours logged in space from 1974 to 1978. Additional context is needed to determine the truthfulness of this statement.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2434,
@@ -905,14 +893,9 @@
     "id": 2655,
     "user_query": "You MUST give a detailed answer to the following question: what is one reason the video gives as a reason why those who are in charge of shaping high school physics curricula do not include any topics that were discovered/developed after 1865 ?",
     "llama-7b_response": "it would be too difficult to teach",
-    "llama-7b_fact_raw": "1. One reason given for not including any physics topics discovered or developed after 1865 in high school curricula is that it would be too difficult to teach.",
-    "llama-7b_fact": [
-      "One reason given for not including any physics topics discovered or developed after 1865 in high school curricula is that it would be too difficult to teach."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2672,
@@ -966,11 +949,11 @@
     "id": 2726,
     "user_query": "You MUST give a detailed answer to the following question: p has coordinates ( 3,3 ) and is translated by 5 units in the x direction . what are the coordinates of p after translation ?",
     "llama-7b_response": "( 8,3 )",
-    "llama-7b_fact_raw": "1. The point p initially has coordinates (3,3).\n2. The point p is translated by 5 units in the x direction.\n3. After translation, the point p has new coordinates of (8,3).",
+    "llama-7b_fact_raw": "1. The original coordinates of point P are (3,3).\n2. Point P is translated by 5 units in the x direction.\n3. The coordinates of point P after translation are (8,3).",
     "llama-7b_fact": [
-      "The point p initially has coordinates (3,3).",
-      "The point p is translated by 5 units in the x direction.",
-      "After translation, the point p has new coordinates of (8,3)."
+      "The original coordinates of point P are (3,3).",
+      "Point P is translated by 5 units in the x direction.",
+      "The coordinates of point P after translation are (8,3)."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
     "llama-7b_judge": [
@@ -1059,7 +1042,7 @@
     "llama-7b_fact": [
       "The phrase \"to be or not to be\" was not invented by Shakespeare."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The phrase \"to be or not to be\" was indeed invented by William Shakespeare and appears in his play \"Hamlet.\"",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The phrase \"to be or not to be\" was indeed invented by William Shakespeare and is from his play \"Hamlet.\"",
     "llama-7b_judge": [
       "false"
     ]
@@ -1076,13 +1059,13 @@
     "id": 2999,
     "user_query": "You MUST give a detailed answer to the following question: which is not a reason that the food industry uses to add sugar to food ?",
     "llama-7b_response": "to improve nutrition",
-    "llama-7b_fact_raw": "1. Improving nutrition is not a reason that the food industry uses to add sugar to food.",
+    "llama-7b_fact_raw": "1. The food industry does not use sugar to improve nutrition.",
     "llama-7b_fact": [
-      "Improving nutrition is not a reason that the food industry uses to add sugar to food."
+      "The food industry does not use sugar to improve nutrition."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Improving nutrition can be a reason that the food industry uses to add sugar to food, as sugar can be used to enhance the flavor, texture, or color of food, which in turn may be perceived as an improvement in the product's overall appeal, including its nutritional appeal in terms of taste. However, adding sugar primarily improves the taste rather than the nutritional value.",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "false"
+      "true"
     ]
   },
   {
@@ -1158,14 +1141,9 @@
     "id": 3210,
     "user_query": "You MUST give a detailed answer to the following question: what did diderot not criticize in the encyclopedia ?",
     "llama-7b_response": "God",
-    "llama-7b_fact_raw": "1. Diderot did not criticize God in the encyclopedia.",
-    "llama-7b_fact": [
-      "Diderot did not criticize God in the encyclopedia."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Denis Diderot, as one of the key figures behind the creation of the Encyclopédie, allowed for the inclusion of critical and progressive philosophical ideas that often questioned the established religious institutions and could be perceived as critical of traditional notions of God.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3261,
@@ -1195,9 +1173,20 @@
     "id": 3369,
     "user_query": "You MUST give a detailed answer to the following question: how did jefferson ’ s role as president ( versus being secretary of state in 1790 when the national bank was proposed ) alter his view on the exercise of federal power ?",
     "llama-7b_response": "Jefferson was not in favor of a national bank while he was Secretary of State in 1790. As President, he was in favor of a national bank.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Jefferson was Secretary of State in 1790.\n2. Jefferson was not in favor of a national bank while he was Secretary of State in 1790.\n3. Jefferson's view on the exercise of federal power altered when he became President.\n4. As President, Jefferson was in favor of a national bank.",
+    "llama-7b_fact": [
+      "Jefferson was Secretary of State in 1790.",
+      "Jefferson was not in favor of a national bank while he was Secretary of State in 1790.",
+      "Jefferson's view on the exercise of federal power altered when he became President.",
+      "As President, Jefferson was in favor of a national bank."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: As President, Jefferson did not favor a national bank, but he did not dismantle the existing one and allowed it to continue operating.",
+    "llama-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "false"
+    ]
   },
   {
     "id": 3380,
@@ -1219,9 +1208,14 @@
     "id": 3411,
     "user_query": "You MUST give a detailed answer to the following question: in what chinese dynasty was the tea plant first transported to japan ?",
     "llama-7b_response": "the Tang dynasty",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. The tea plant was first transported to Japan during the Tang dynasty.",
+    "llama-7b_fact": [
+      "The tea plant was first transported to Japan during the Tang dynasty."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: The tea plant was first brought to Japan from China during the early Heian period (794-1185), which is after the Tang dynasty (618-907).",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 3414,
@@ -1251,22 +1245,22 @@
     "id": 3451,
     "user_query": "You MUST give a detailed answer to the following question: when did hilbert propose his grand hotel ?",
     "llama-7b_response": "1925",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Hilbert proposed his grand hotel in 1925.",
+    "llama-7b_fact": [
+      "Hilbert proposed his grand hotel in 1925."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: The concept of Hilbert's Grand Hotel, which is a thought experiment about infinity, was introduced by German mathematician David Hilbert in a 1924 lecture.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 3454,
     "user_query": "You MUST give a detailed answer to the following question: why can ’ t the manager find rooms for everyone if the number of guests is not “ countably ” infinite ?",
     "llama-7b_response": "There are only a finite number of rooms.",
-    "llama-7b_fact_raw": "1. The manager has only a finite number of rooms available.",
-    "llama-7b_fact": [
-      "The manager has only a finite number of rooms available."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: Without additional context, it is not possible to confirm or refute the statement about the manager's finite number of rooms. Typically, any physical establishment would have a finite number of rooms, but since the statement lacks specificity (which manager? what establishment?), it is not possible to give a true or false answer.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3462,
@@ -1464,9 +1458,20 @@
     "id": 4081,
     "user_query": "You MUST give a detailed answer to the following question: vanadium is the first metal in the periodic table with several oxidation states . these oxidation states allow different vanadium compounds to have a variety of beautiful colors . what are the oxidation states of vanadium ?",
     "llama-7b_response": "+2, +3, +4, +5",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Vanadium has an oxidation state of +2.\n2. Vanadium has an oxidation state of +3.\n3. Vanadium has an oxidation state of +4.\n4. Vanadium has an oxidation state of +5.",
+    "llama-7b_fact": [
+      "Vanadium has an oxidation state of +2.",
+      "Vanadium has an oxidation state of +3.",
+      "Vanadium has an oxidation state of +4.",
+      "Vanadium has an oxidation state of +5."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n\nVanadium is a transition metal known to exhibit multiple oxidation states, including +2, +3, +4, and +5.",
+    "llama-7b_judge": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 4136,
@@ -1488,20 +1493,20 @@
     "id": 4241,
     "user_query": "You MUST give a detailed answer to the following question: the fundamental counting principle can be extended to count the ways to form different combinations of groupings . for example , if there are 4 dessert choices , 3 entrée choices and 2 appetizer choices , the number of dessert-entrée-appetizer combinations is 4x3x2 = 24. a restaurant advertises 120 dessert-entrée-appetizer combinations . if they have 5 entrée options and 3 appetizer options , how many dessert options do they have ?",
     "llama-7b_response": "5",
-    "llama-7b_fact_raw": "1. The fundamental counting principle states that if there are a certain number of ways of doing something and another independent number of ways of doing another thing, then the total number of ways of performing both actions is the product of the two separate numbers of ways.\n2. The restaurant advertises 120 different dessert-entrée-appetizer combinations.\n3. The restaurant offers 5 different entrée options.\n4. The restaurant has 3 different appetizer options.\n5. According to the fundamental counting principle, the restaurant must offer 8 different dessert options to achieve 120 dessert-entrée-appetizer combinations. (This statement corrects the erroneous answer supplied as \"5\". The correct calculation is 120 / (5 entrées * 3 appetizers) = 8 desserts.)",
+    "llama-7b_fact_raw": "1. The fundamental counting principle can be used to determine the number of different combinations of groupings by multiplying the number of choices for each category.\n2. If a restaurant has 4 dessert choices, 3 entrée choices, and 2 appetizer choices, there are 24 possible dessert-entrée-appetizer combinations.\n3. The restaurant advertises 120 different dessert-entrée-appetizer combinations.\n4. The restaurant offers 5 entrée options.\n5. The restaurant provides 3 appetizer options.",
     "llama-7b_fact": [
-      "The fundamental counting principle states that if there are a certain number of ways of doing something and another independent number of ways of doing another thing, then the total number of ways of performing both actions is the product of the two separate numbers of ways.",
+      "The fundamental counting principle can be used to determine the number of different combinations of groupings by multiplying the number of choices for each category.",
+      "If a restaurant has 4 dessert choices, 3 entrée choices, and 2 appetizer choices, there are 24 possible dessert-entrée-appetizer combinations.",
       "The restaurant advertises 120 different dessert-entrée-appetizer combinations.",
-      "The restaurant offers 5 different entrée options.",
-      "The restaurant has 3 different appetizer options.",
-      "According to the fundamental counting principle, the restaurant must offer 8 different dessert options to achieve 120 dessert-entrée-appetizer combinations. (This statement corrects the erroneous answer supplied as \"5\". The correct calculation is 120 / (5 entrées * 3 appetizers) = 8 desserts.)"
+      "The restaurant offers 5 entrée options.",
+      "The restaurant provides 3 appetizer options."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: If a restaurant has 4 dessert choices, 3 entrée choices, and 2 appetizer choices, there are 4 x 3 x 2 = 24 possible dessert-entrée-appetizer combinations, not 120.\n4. FALSE [correction]: The restaurant offers 3 entrée options, not 5, as stated in the second statement.\n5. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
-      "true",
-      "true",
+      "false",
+      "false",
       "true"
     ]
   },
@@ -1521,7 +1526,7 @@
     "llama-7b_fact": [
       "9.5% of the United States population suffers from depression."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n(The prevalence of depression in the United States population can change over time and may be influenced by various factors such as time of survey, the criteria used for diagnosis, and reporting methods. Moreover, without a specific source or a timestamp, it's difficult to confirm the accuracy of the percentage stated.)",
+    "llama-7b_judge_raw": "UNKNOWN\n\nThe statement about the percentage of the United States population suffering from depression is difficult to verify without a specific source or timeframe. Prevalence rates of depression can vary based on the criteria used for diagnosis, the time period in question, and the source of the data. Additionally, rates of depression can change over time due to various factors, including social, economic, and health-related issues. Therefore, without specific context or a reliable source, the accuracy of this statement cannot be determined.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1562,9 +1567,14 @@
     "id": 4514,
     "user_query": "You MUST give a detailed answer to the following question: what animals are thought to be the natural carriers of the ebola virus ?",
     "llama-7b_response": "fruit bat",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Fruit bats are thought to be the natural carriers of the Ebola virus.",
+    "llama-7b_fact": [
+      "Fruit bats are thought to be the natural carriers of the Ebola virus."
+    ],
+    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 4681,
@@ -1610,14 +1620,9 @@
     "id": 4797,
     "user_query": "You MUST give a detailed answer to the following question: out of 172 nations , what does america rank for voter turnout ?",
     "llama-7b_response": "26th",
-    "llama-7b_fact_raw": "1. America ranks 26th out of 172 nations for voter turnout.",
-    "llama-7b_fact": [
-      "America ranks 26th out of 172 nations for voter turnout."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\n(The statement may have been true at the time of the source's publication, but without current and specific data, the accuracy of the ranking cannot be determined.)",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 4804,
@@ -1635,7 +1640,7 @@
     "llama-7b_fact": [
       "Arctic glass sponges have been estimated to live for about 4,000 years."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Arctic glass sponges have been estimated to live for about 10,000 years. However, some estimates for certain glass sponge species, like those found in the Antarctic, suggest they can live for over 15,000 years. There is no widely recognized estimate of 4,000 years for the lifespan of Arctic glass sponges specifically.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Arctic glass sponges have been estimated to live for about 10,000 years, but the longest confirmed lifespan for a glass sponge is over 2,000 years.",
     "llama-7b_judge": [
       "false"
     ]

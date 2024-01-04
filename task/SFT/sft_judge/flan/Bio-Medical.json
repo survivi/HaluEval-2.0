@@ -107,14 +107,9 @@
     "id": 224,
     "user_query": "You MUST give a detailed answer to the following question: How many genes does the human hoxD cluster contain?",
     "llama-7b_response": "11",
-    "llama-7b_fact_raw": "1. The human hoxD cluster contains 11 genes.",
-    "llama-7b_fact": [
-      "The human hoxD cluster contains 11 genes."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The human HOXD cluster contains 9 genes (HOXD1 through HOXD13, inclusive, with the exclusion of HOXD7, 8, 9 and 11 which are absent).",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 268,
@@ -136,11 +131,11 @@
     "id": 330,
     "user_query": "You MUST give a detailed answer to the following question: When was empagliflozin FDA approved?",
     "llama-7b_response": "may 2014",
-    "llama-7b_fact_raw": "1. Empagliflozin was approved by the FDA in May 2014.",
+    "llama-7b_fact_raw": "1. Empagliflozin was FDA approved in May 2014.",
     "llama-7b_fact": [
-      "Empagliflozin was approved by the FDA in May 2014."
+      "Empagliflozin was FDA approved in May 2014."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Empagliflozin was approved by the FDA on August 1, 2014.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Empagliflozin was FDA approved in August 2014.",
     "llama-7b_judge": [
       "false"
     ]
@@ -181,14 +176,9 @@
     "id": 481,
     "user_query": "You MUST give a detailed answer to the following question: Which deiodinases are present in skeletal  muscle?",
     "llama-7b_response": "type i",
-    "llama-7b_fact_raw": "1. Type I deiodinase is present in skeletal muscle.",
-    "llama-7b_fact": [
-      "Type I deiodinase is present in skeletal muscle."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 534,
@@ -298,14 +288,9 @@
     "id": 883,
     "user_query": "You MUST give a detailed answer to the following question: Global quantitative phosphoproteomic analyses are emerging. List the preferred technologies for the enrichment for phosphorylated peptides?",
     "llama-7b_response": "immobilized metal affinity chromatography",
-    "llama-7b_fact_raw": "1. Immobilized metal affinity chromatography is a preferred technology for the enrichment of phosphorylated peptides in global quantitative phosphoproteomic analyses.",
-    "llama-7b_fact": [
-      "Immobilized metal affinity chromatography is a preferred technology for the enrichment of phosphorylated peptides in global quantitative phosphoproteomic analyses."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n\nImmobilized metal affinity chromatography (IMAC) is indeed a commonly used technology for the enrichment of phosphorylated peptides in proteomics, especially for phosphoproteomic analyses where the goal is to study protein phosphorylation on a global scale.",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 901,
@@ -343,14 +328,9 @@
     "id": 997,
     "user_query": "You MUST give a detailed answer to the following question: Which  is the execution time (complexity) of the Smith-Waterman algorithm for the alignment of two sequences",
     "llama-7b_response": "O(N^2M)",
-    "llama-7b_fact_raw": "1. The Smith-Waterman algorithm has an execution time complexity of O(N^2M) for the alignment of two sequences.",
-    "llama-7b_fact": [
-      "The Smith-Waterman algorithm has an execution time complexity of O(N^2M) for the alignment of two sequences."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The Smith-Waterman algorithm has an execution time complexity of O(NM) for the alignment of two sequences, where N and M are the lengths of the two sequences.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1004,
@@ -545,14 +525,9 @@
     "id": 1643,
     "user_query": "You MUST give a detailed answer to the following question: What is the localization of the protein encoded by the gene DNAJC11?",
     "llama-7b_response": "mitochondrion",
-    "llama-7b_fact_raw": "1. The protein encoded by the gene DNAJC11 is localized to the mitochondrion.",
-    "llama-7b_fact": [
-      "The protein encoded by the gene DNAJC11 is localized to the mitochondrion."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1655,
@@ -590,9 +565,9 @@
     "id": 1763,
     "user_query": "You MUST give a detailed answer to the following question: Data from which major epigenome projects are contained in the DeepBlue epigenomic data server?",
     "llama-7b_response": "ENCODE",
-    "llama-7b_fact_raw": "1. Data from the ENCODE (Encyclopedia of DNA Elements) project is contained in the DeepBlue epigenomic data server.",
+    "llama-7b_fact_raw": "1. The DeepBlue epigenomic data server contains data from the ENCODE project.",
     "llama-7b_fact": [
-      "Data from the ENCODE (Encyclopedia of DNA Elements) project is contained in the DeepBlue epigenomic data server."
+      "The DeepBlue epigenomic data server contains data from the ENCODE project."
     ],
     "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
@@ -907,21 +882,26 @@
     "id": 2582,
     "user_query": "You MUST give a detailed answer to the following question: Which brain tumors does neuroligin-3 promote?",
     "llama-7b_response": "glioblastoma",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Neuroligin-3 promotes glioblastoma.",
+    "llama-7b_fact": [
+      "Neuroligin-3 promotes glioblastoma."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n\nResearch has shown that Neuroligin-3 can promote the growth of glioblastoma, which is an aggressive type of brain cancer. Studies have found that Neuroligin-3, which is normally involved in synapse formation, can be released by neurons and then promote the proliferation of glioblastoma cells.",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 2586,
     "user_query": "You MUST give a detailed answer to the following question: What is the approximate size of gas vesicles?",
     "llama-7b_response": "0.2 to 0.3 µm",
-    "llama-7b_fact_raw": "1. Gas vesicles are approximately 0.2 to 0.3 micrometers in size.",
+    "llama-7b_fact_raw": "1. Gas vesicles are approximately 0.2 to 0.3 µm in size.",
     "llama-7b_fact": [
-      "Gas vesicles are approximately 0.2 to 0.3 micrometers in size."
+      "Gas vesicles are approximately 0.2 to 0.3 µm in size."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
-      "true"
+      "unknown"
     ]
   },
   {
@@ -1200,11 +1180,11 @@
     "id": 3345,
     "user_query": "You MUST give a detailed answer to the following question: Which part of the TNFR2 gene is genetically associated with Systemic Lupus Erythematosus?",
     "llama-7b_response": "promoter",
-    "llama-7b_fact_raw": "1. The promoter region of the TNFR2 gene is genetically associated with Systemic Lupus Erythematosus.",
+    "llama-7b_fact_raw": "1. The promoter part of the TNFR2 gene is genetically associated with Systemic Lupus Erythematosus.",
     "llama-7b_fact": [
-      "The promoter region of the TNFR2 gene is genetically associated with Systemic Lupus Erythematosus."
+      "The promoter part of the TNFR2 gene is genetically associated with Systemic Lupus Erythematosus."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: The statement regarding the association between the promoter region of the TNFR2 gene and Systemic Lupus Erythematosus (SLE) is specific and requires access to up-to-date genetic research data to verify. As of my knowledge cutoff date in 2023, without current or specific research references, the truth of this statement cannot be confirmed or denied. Published research studies would need to be consulted to determine the accuracy of this genetic association.",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: Without specific scientific evidence or a reference to a study that confirms the genetic association between the promoter part of the TNFR2 gene and Systemic Lupus Erythematosus, it is not possible to determine the truthfulness of this statement. Genetic associations can be complex and require empirical evidence to substantiate.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1221,9 +1201,14 @@
     "id": 3365,
     "user_query": "You MUST give a detailed answer to the following question: What is particular about the mouse Fxy gene's chromosomal position?",
     "llama-7b_response": "it is located on the X chromosome",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. The Fxy gene is located on the X chromosome.",
+    "llama-7b_fact": [
+      "The Fxy gene is located on the X chromosome."
+    ],
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific scientific context or a reference to a known gene, it's impossible to verify the location of a gene named \"Fxy\" on the X chromosome. The statement is too vague to determine its accuracy.",
+    "llama-7b_judge": [
+      "unknown"
+    ]
   },
   {
     "id": 3397,
@@ -1410,14 +1395,9 @@
     "id": 3693,
     "user_query": "You MUST give a detailed answer to the following question: What is the protective efficacy of vaxchora against moderate to severe cholera?",
     "llama-7b_response": "71%",
-    "llama-7b_fact_raw": "1. The protective efficacy of Vaxchora against moderate to severe cholera is 71%.",
-    "llama-7b_fact": [
-      "The protective efficacy of Vaxchora against moderate to severe cholera is 71%."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nGiven that the statement references a specific efficacy rate for Vaxchora against moderate to severe cholera (which is a vaccine for cholera), the information would need to be verified against a reliable and up-to-date medical source or clinical study data. Since the data could change or may differ across studies and over time, and no source has been provided within the context, the truthfulness of the statement cannot be determined without additional information.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3716,
@@ -1455,15 +1435,17 @@
     "id": 3763,
     "user_query": "You MUST give a detailed answer to the following question: Describe efforts on Sarcoma from the 100,000 Genomes Project",
     "llama-7b_response": "The 100,000 Genomes Project aims to sequence 100,000 whole genomes from NHS patients with cancer and rare diseases.",
-    "llama-7b_fact_raw": "1. The 100,000 Genomes Project's goal is to sequence 100,000 whole genomes.\n2. The genomes being sequenced are from NHS patients.\n3. The project focuses on patients with cancer and rare diseases.\n4. Sarcoma is one of the conditions being investigated under the project's cancer focus.",
+    "llama-7b_fact_raw": "1. The 100,000 Genomes Project is focused on sequencing whole genomes.\n2. The project aims to sequence 100,000 whole genomes.\n3. The genomes being sequenced are from NHS patients.\n4. The project includes patients with cancer and rare diseases.\n5. Sarcoma is one of the conditions being studied under the 100,000 Genomes Project.",
     "llama-7b_fact": [
-      "The 100,000 Genomes Project's goal is to sequence 100,000 whole genomes.",
+      "The 100,000 Genomes Project is focused on sequencing whole genomes.",
+      "The project aims to sequence 100,000 whole genomes.",
       "The genomes being sequenced are from NHS patients.",
-      "The project focuses on patients with cancer and rare diseases.",
-      "Sarcoma is one of the conditions being investigated under the project's cancer focus."
+      "The project includes patients with cancer and rare diseases.",
+      "Sarcoma is one of the conditions being studied under the 100,000 Genomes Project."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE (Sarcoma is a type of cancer, and since the project focuses on patients with cancer, it is likely that sarcoma is one of the conditions being investigated.)",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nThe 100,000 Genomes Project is indeed focused on sequencing whole genomes, with the aim of sequencing 100,000 whole genomes from NHS patients, particularly those with cancer and rare diseases. Sarcoma, being a rare type of cancer, is one of the conditions that would be studied under this project.",
     "llama-7b_judge": [
+      "true",
       "true",
       "true",
       "true",
@@ -1498,14 +1480,9 @@
     "id": 3809,
     "user_query": "You MUST give a detailed answer to the following question: Which type of pluripotency is Otx2 associated with?",
     "llama-7b_response": "epiblast",
-    "llama-7b_fact_raw": "1. Otx2 is associated with epiblast pluripotency.",
-    "llama-7b_fact": [
-      "Otx2 is associated with epiblast pluripotency."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3815,
@@ -1551,14 +1528,9 @@
     "id": 3918,
     "user_query": "You MUST give a detailed answer to the following question: List example genes that SWIM tool has identified and which are down-regulated in glioblastoma",
     "llama-7b_response": "EGFR",
-    "llama-7b_fact_raw": "1. EGFR is an example of a gene identified by the SWIM tool as being down-regulated in glioblastoma.",
-    "llama-7b_fact": [
-      "EGFR is an example of a gene identified by the SWIM tool as being down-regulated in glioblastoma."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: EGFR is commonly known to be up-regulated or overexpressed in glioblastoma, not down-regulated. The SWIM tool may identify various genes and their regulatory patterns, but EGFR is typically associated with increased activity in this type of cancer.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3926,

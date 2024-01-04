@@ -43,9 +43,9 @@
     "id": 145,
     "user_query": "After a stock dividend, how do you calculate holding periods for capital gains taxes?",
     "llama-7b_response": "After a stock dividend, the holding period for capital gains taxes is the same as before the dividend.",
-    "llama-7b_fact_raw": "1. The holding period for capital gains taxes remains unchanged after a stock dividend.",
+    "llama-7b_fact_raw": "1. The holding period for capital gains taxes after a stock dividend remains the same as before the dividend.",
     "llama-7b_fact": [
-      "The holding period for capital gains taxes remains unchanged after a stock dividend."
+      "The holding period for capital gains taxes after a stock dividend remains the same as before the dividend."
     ],
     "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
@@ -88,39 +88,26 @@
     "id": 268,
     "user_query": "Record retention requirements for individuals in the U.S.?",
     "llama-7b_response": "Record retention requirements for individuals in the U.S. vary depending on the type of information being retained and the purpose for which it is being retained. Generally, employers must retain employment-related records for at least three years after an employee's last day. Tax records must be retained for at least seven years. Health care providers must retain medical records for at least six years.",
-    "llama-7b_fact_raw": "1. Employers must retain employment-related records for at least three years after an employee's last day.\n2. Tax records must be retained for at least seven years.\n3. Health care providers must retain medical records for at least six years.",
+    "llama-7b_fact_raw": "1. Employers in the U.S. must retain employment-related records for at least three years after an employee's last day.\n2. Tax records in the U.S. must be retained for at least seven years.\n3. Health care providers in the U.S. must retain medical records for at least six years.",
     "llama-7b_fact": [
-      "Employers must retain employment-related records for at least three years after an employee's last day.",
-      "Tax records must be retained for at least seven years.",
-      "Health care providers must retain medical records for at least six years."
+      "Employers in the U.S. must retain employment-related records for at least three years after an employee's last day.",
+      "Tax records in the U.S. must be retained for at least seven years.",
+      "Health care providers in the U.S. must retain medical records for at least six years."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE\n3. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Tax records in the U.S. must generally be retained for at least three years, according to the Internal Revenue Service (IRS). However, some records should be kept longer, up to seven years, if they pertain to certain situations such as unreported income that is more than 25% of the gross income shown on your return.\n3. FALSE [correction]: Health care providers in the U.S. must comply with the Health Insurance Portability and Accountability Act (HIPAA), which generally requires medical records to be retained for six years from the date of its creation or the date when it last was in effect, whichever is later. However, state laws may have different requirements, and some may require retaining medical records for a longer period.",
     "llama-7b_judge": [
-      "unknown",
       "true",
-      "unknown"
+      "false",
+      "false"
     ]
   },
   {
     "id": 270,
     "user_query": "How do I claim HST compensation on my personal Ontario income taxes?",
     "llama-7b_response": "Question: How do I claim HST compensation on my personal Ontario income taxes?\nAnswer: You can claim the HST compensation on your personal Ontario income taxes by filling out the following forms:\n- Form 104, Ontario Individual Income Tax Return\n- Form 104E, Ontario Individual Income Tax Return for Eligible Persons\n- Form 104E, Ontario Individual Income Tax Return for Seniors\n- Form 104E, Ontario Individual Income Tax Return for Persons with Disabilities\n- Form 104E, Ontario Individual Income Tax Return for Blind Persons\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Spouses\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Dependents\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Dependents' Spouses\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Dependents' Dependents\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Dependents' Dependents' Spouses\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Dependents' Dependents' Dependents\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Dependents' Dependents' Dependents\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Dependents' Dependents' Dependents' Spouses\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the Year and Their Dependents' Dependents' Dependents' Spouses\n- Form 104E, Ontario Individual Income Tax Return for Persons Who Died During the",
-    "llama-7b_fact_raw": "1. HST compensation can be claimed on personal Ontario income taxes.\n2. Form 104, Ontario Individual Income Tax Return, is used to claim HST compensation.\n3. There are specific Form 104E variations for eligible persons, seniors, persons with disabilities, and blind persons.\n4. A Form 104E variation exists for individuals who died during the year and their spouses.\n5. There are Form 104E variations for dependents and their spouses, up to multiple levels of dependency.",
-    "llama-7b_fact": [
-      "HST compensation can be claimed on personal Ontario income taxes.",
-      "Form 104, Ontario Individual Income Tax Return, is used to claim HST compensation.",
-      "There are specific Form 104E variations for eligible persons, seniors, persons with disabilities, and blind persons.",
-      "A Form 104E variation exists for individuals who died during the year and their spouses.",
-      "There are Form 104E variations for dependents and their spouses, up to multiple levels of dependency."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Form ON-BEN, Application for the Ontario Trillium Benefit and the Ontario Senior Homeowners' Property Tax Grant, is used to claim HST compensation.\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-7b_judge": [
-      "true",
-      "false",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 279,
@@ -130,7 +117,7 @@
     "llama-7b_fact": [
       "UK bank charges are not considered as income for taxation purposes."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n\n(Note: While this statement is generally true, as bank charges are typically not considered income and therefore not subject to income tax, tax laws can be complex and subject to change. It's always best to consult with a tax professional or the relevant tax authority for the most current information.)",
     "llama-7b_judge": [
       "true"
     ]
@@ -139,21 +126,21 @@
     "id": 293,
     "user_query": "What are the advantages/disadvantages of a self-directed IRA?",
     "llama-7b_response": "Advantages of a self-directed IRA:\n- You can invest in anything that is legal and not prohibited by the IRS.\n- You are not limited to stocks, bonds, and mutual funds.\n- You can invest in real estate, gold, silver, oil, gas, etc.\nDisadvantages of a self-directed IRA:\n- You have to do all the research yourself.\n- You have to pay all the expenses yourself.\n- You have to manage the investment yourself.",
-    "llama-7b_fact_raw": "1. In a self-directed IRA, you can invest in any asset that is legal and not prohibited by the IRS.\n2. Self-directed IRAs are not limited to stocks, bonds, and mutual funds.\n3. Self-directed IRAs allow investments in real estate, gold, silver, oil, and gas.\n4. With a self-directed IRA, individuals must conduct all investment research independently.\n5. In a self-directed IRA, individuals must pay all expenses and manage the investment themselves.",
+    "llama-7b_fact_raw": "1. A self-directed IRA allows investment in any asset that is legal and not prohibited by the IRS.\n2. A self-directed IRA is not limited to traditional investments like stocks, bonds, and mutual funds.\n3. A self-directed IRA can be used to invest in real estate, gold, silver, oil, and gas.\n4. With a self-directed IRA, the individual is responsible for conducting all the research.\n5. The individual must pay all the expenses associated with a self-directed IRA.",
     "llama-7b_fact": [
-      "In a self-directed IRA, you can invest in any asset that is legal and not prohibited by the IRS.",
-      "Self-directed IRAs are not limited to stocks, bonds, and mutual funds.",
-      "Self-directed IRAs allow investments in real estate, gold, silver, oil, and gas.",
-      "With a self-directed IRA, individuals must conduct all investment research independently.",
-      "In a self-directed IRA, individuals must pay all expenses and manage the investment themselves."
+      "A self-directed IRA allows investment in any asset that is legal and not prohibited by the IRS.",
+      "A self-directed IRA is not limited to traditional investments like stocks, bonds, and mutual funds.",
+      "A self-directed IRA can be used to invest in real estate, gold, silver, oil, and gas.",
+      "With a self-directed IRA, the individual is responsible for conducting all the research.",
+      "The individual must pay all the expenses associated with a self-directed IRA."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: While individuals must conduct their own research, they can also seek advice from financial advisors or other professionals.\n5. FALSE [correction]: Individuals can hire a custodian or administrator to help manage the investment and pay expenses on their behalf.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
       "true",
-      "false",
-      "false"
+      "true",
+      "true"
     ]
   },
   {
@@ -164,7 +151,7 @@
     "llama-7b_fact": [
       "The home office deduction can be taken for a home office located outside the United States."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The home office deduction can only be taken for a home office located within the United States.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The home office deduction is typically only available for a home office located within the United States and used regularly and exclusively for business purposes.",
     "llama-7b_judge": [
       "false"
     ]
@@ -173,10 +160,10 @@
     "id": 351,
     "user_query": "How do I pay my estimated income tax?",
     "llama-7b_response": "You can pay your estimated income tax by check or money order. You can also pay online using a credit or debit card.",
-    "llama-7b_fact_raw": "1. Estimated income tax can be paid by check or money order.\n2. Online payment of estimated income tax can be made using a credit or debit card.",
+    "llama-7b_fact_raw": "1. Estimated income tax can be paid by check or money order.\n2. Estimated income tax can be paid online using a credit or debit card.",
     "llama-7b_fact": [
       "Estimated income tax can be paid by check or money order.",
-      "Online payment of estimated income tax can be made using a credit or debit card."
+      "Estimated income tax can be paid online using a credit or debit card."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
@@ -188,10 +175,10 @@
     "id": 355,
     "user_query": "How do I report this cash bonus/tip on income tax return?",
     "llama-7b_response": "Question: How do I report this cash bonus/tip on income tax return?\nAnswer: You need to report the bonus/tip as income on your tax return. You can use Form 1040, U.S. Individual Income Tax Return, to do this.",
-    "llama-7b_fact_raw": "1. Cash bonuses/tips should be reported as income on a tax return.\n2. Form 1040, U.S. Individual Income Tax Return, can be used to report the bonus/tip.",
+    "llama-7b_fact_raw": "1. A cash bonus or tip needs to be reported as income on a tax return.\n2. Form 1040 is used for reporting individual income tax in the United States.",
     "llama-7b_fact": [
-      "Cash bonuses/tips should be reported as income on a tax return.",
-      "Form 1040, U.S. Individual Income Tax Return, can be used to report the bonus/tip."
+      "A cash bonus or tip needs to be reported as income on a tax return.",
+      "Form 1040 is used for reporting individual income tax in the United States."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
@@ -203,15 +190,13 @@
     "id": 364,
     "user_query": "Reason for “qualified” buyer requirements to exercise stock options/rights spun off from parent company?",
     "llama-7b_response": "Qualified buyers are required to exercise stock options/rights spun off from parent company in order to prevent the dilution of the value of the shares.",
-    "llama-7b_fact_raw": "1. Qualified buyers are required for exercising stock options/rights spun off from a parent company.\n2. The requirement is to prevent the dilution of the value of shares.",
+    "llama-7b_fact_raw": "1. Qualified buyers are required to exercise stock options/rights spun off from a parent company to prevent share value dilution.",
     "llama-7b_fact": [
-      "Qualified buyers are required for exercising stock options/rights spun off from a parent company.",
-      "The requirement is to prevent the dilution of the value of shares."
+      "Qualified buyers are required to exercise stock options/rights spun off from a parent company to prevent share value dilution."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Qualified buyers are not required to exercise stock options/rights spun off from a parent company to prevent share value dilution. It is typically up to the individual investor to decide whether to exercise their options/rights. However, companies may implement specific strategies such as offering rights to existing shareholders to purchase additional shares at a discount (rights offering) to mitigate dilution.",
     "llama-7b_judge": [
-      "true",
-      "true"
+      "false"
     ]
   },
   {
@@ -242,14 +227,9 @@
     "id": 419,
     "user_query": "Dec 31 accounting for S Corp - what to do with loss?",
     "llama-7b_response": "The loss should be carried forward to the next year.",
-    "llama-7b_fact_raw": "1. The loss from an S Corp on December 31 should be carried forward to the following year.",
-    "llama-7b_fact": [
-      "The loss from an S Corp on December 31 should be carried forward to the following year."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The loss from an S Corp on December 31 can be passed through to the shareholders and reported on their individual tax returns in the same year, not necessarily carried forward to the following year.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 426,
@@ -287,15 +267,15 @@
     "id": 489,
     "user_query": "As a shareholder, what are the pros and cons of a Share Consolidation and Return of Capital?",
     "llama-7b_response": "Pros:\n- Consolidation will reduce the number of shares outstanding, which will increase the earnings per share.\n- Consolidation will reduce the volatility of the stock price.\nCons:\n- Consolidation will reduce the amount of dividends paid to shareholders.\n- Consolidation will reduce the liquidity of the stock.",
-    "llama-7b_fact_raw": "1. Share consolidation will reduce the number of shares outstanding.\n2. Share consolidation will increase the earnings per share.\n3. Share consolidation will reduce the volatility of the stock price.\n4. Share consolidation will reduce the amount of dividends paid to shareholders.\n5. Share consolidation will reduce the liquidity of the stock.",
+    "llama-7b_fact_raw": "1. Share consolidation reduces the number of shares outstanding.\n2. Share consolidation increases the earnings per share.\n3. Share consolidation reduces the volatility of the stock price.\n4. Share consolidation reduces the amount of dividends paid to shareholders.\n5. Share consolidation reduces the liquidity of the stock.",
     "llama-7b_fact": [
-      "Share consolidation will reduce the number of shares outstanding.",
-      "Share consolidation will increase the earnings per share.",
-      "Share consolidation will reduce the volatility of the stock price.",
-      "Share consolidation will reduce the amount of dividends paid to shareholders.",
-      "Share consolidation will reduce the liquidity of the stock."
+      "Share consolidation reduces the number of shares outstanding.",
+      "Share consolidation increases the earnings per share.",
+      "Share consolidation reduces the volatility of the stock price.",
+      "Share consolidation reduces the amount of dividends paid to shareholders.",
+      "Share consolidation reduces the liquidity of the stock."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. FALSE [correction]: Share consolidation does not necessarily reduce the amount of dividends paid to shareholders; dividend policies can vary.\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE - Assuming that the earnings remain constant, consolidating shares will increase the earnings per share since there are fewer shares among which to distribute the earnings.\n3. UNKNOWN - Share consolidation may reduce volatility due to a potentially higher stock price and reduced liquidity, but this is not a guaranteed outcome and can be influenced by many other factors.\n4. FALSE [correction]: Share consolidation does not inherently reduce the amount of dividends paid to shareholders. The total dividend payout may remain the same, but it would be distributed over fewer shares, potentially resulting in a higher dividend per share.\n5. TRUE - Share consolidation reduces the number of shares available for trading, which can decrease the liquidity of the stock.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -316,17 +296,26 @@
     "id": 505,
     "user_query": "Why doesn't change in accounts receivable on balance sheet match cash flow statement?",
     "llama-7b_response": "Accounts receivable is a liability on the balance sheet. It represents the amount of money that a company is owed by its customers. The cash flow statement shows the net change in accounts receivable for the period, which is the total amount of money received from customers minus the total amount of money paid to customers.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Accounts receivable represents the amount of money that a company is owed by its customers.\n2. The cash flow statement shows the net change in accounts receivable for the period.\n3. The net change in accounts receivable is calculated as the total amount of money received from customers minus the total amount of money paid to customers.",
+    "llama-7b_fact": [
+      "Accounts receivable represents the amount of money that a company is owed by its customers.",
+      "The cash flow statement shows the net change in accounts receivable for the period.",
+      "The net change in accounts receivable is calculated as the total amount of money received from customers minus the total amount of money paid to customers."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The cash flow statement shows the net change in cash for the period, not specifically the net change in accounts receivable. However, changes in accounts receivable can affect the cash flow from operating activities.\n3. FALSE [correction]: The net change in accounts receivable is calculated as the beginning accounts receivable plus credit sales during the period minus cash collected from customers. Accounts receivable typically do not involve money paid to customers, as it represents money owed to the company by its customers.",
+    "llama-7b_judge": [
+      "true",
+      "false",
+      "false"
+    ]
   },
   {
     "id": 507,
     "user_query": "When does a low PE ratio not indicate a good stock?",
     "llama-7b_response": "A low PE ratio does not necessarily indicate a good stock. For example, if the company has no earnings, then the PE ratio is meaningless.",
-    "llama-7b_fact_raw": "1. A low PE ratio does not always indicate a good stock.\n2. If a company has no earnings, the PE ratio is meaningless.",
+    "llama-7b_fact_raw": "1. A low PE ratio does not necessarily indicate a good stock.\n2. If a company has no earnings, the PE ratio is meaningless.",
     "llama-7b_fact": [
-      "A low PE ratio does not always indicate a good stock.",
+      "A low PE ratio does not necessarily indicate a good stock.",
       "If a company has no earnings, the PE ratio is meaningless."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
@@ -371,31 +360,28 @@
     "id": 647,
     "user_query": "What is the lifespan of a series of currency?",
     "llama-7b_response": "The lifespan of a series of currency depends on the country's economy. For example, the US dollar has been in circulation for more than 200 years and it is still the most popular currency in the world. However, other currencies such as the British pound and the French franc have been abandoned by their respective countries.",
-    "llama-7b_fact_raw": "1. The US dollar has been in circulation for more than 200 years.\n2. The US dollar is still the most popular currency in the world.\n3. The British pound and the French franc have been abandoned by their respective countries.",
+    "llama-7b_fact_raw": "1. The US dollar has been in circulation for more than 200 years.\n2. The US dollar is still the most popular currency in the world.\n3. The British pound has been abandoned by its country.\n4. The French franc has been abandoned by its country.",
     "llama-7b_fact": [
       "The US dollar has been in circulation for more than 200 years.",
       "The US dollar is still the most popular currency in the world.",
-      "The British pound and the French franc have been abandoned by their respective countries."
+      "The British pound has been abandoned by its country.",
+      "The French franc has been abandoned by its country."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The British pound is still in use, but the French franc has been replaced by the euro.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The British pound is still in use and is the official currency of the United Kingdom.\n4. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
-      "false"
+      "false",
+      "true"
     ]
   },
   {
     "id": 730,
     "user_query": "Does Tennessee have anything like a principal residence exemption?",
     "llama-7b_response": "Yes, Tennessee has a principal residence exemption.",
-    "llama-7b_fact_raw": "1. Tennessee has a principal residence exemption.",
-    "llama-7b_fact": [
-      "Tennessee has a principal residence exemption."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 732,
@@ -409,32 +395,37 @@
     "id": 736,
     "user_query": "Form 1040 - where to place my stipend?",
     "llama-7b_response": "You should place your stipend in the \"Other\" section of Form 1040.",
-    "llama-7b_fact_raw": "1. Stipends should be placed in the \"Other\" section of Form 1040.",
+    "llama-7b_fact_raw": "1. Form 1040 has an \"Other\" section where financial information can be reported.",
     "llama-7b_fact": [
-      "Stipends should be placed in the \"Other\" section of Form 1040."
+      "Form 1040 has an \"Other\" section where financial information can be reported."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Stipends should be reported on Form 1040 as income, typically on line 7 as wages, salaries, tips, etc. or on Schedule 1, line 8 as other income, depending on the nature of the stipend.",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "false"
+      "true"
     ]
   },
   {
     "id": 742,
     "user_query": "Does the IRS reprieve those who have to commute for work?",
     "llama-7b_response": "The IRS does not reprieve those who have to commute for work.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. The IRS does not offer reprieve for commuting expenses.",
+    "llama-7b_fact": [
+      "The IRS does not offer reprieve for commuting expenses."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: The IRS does offer reprieve for commuting expenses under certain conditions, such as when a person is self-employed and the commute is between their home and a temporary work location. However, regular commuting expenses between home and a regular place of work are generally not deductible.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 756,
     "user_query": "The Canadian dividend tax credit: Why is it that someone can earn a lot in dividends but pay no/little tax?",
     "llama-7b_response": "The Canadian dividend tax credit is a tax credit that can be claimed by Canadian residents who receive dividends from Canadian companies. The credit reduces the amount of tax that needs to be paid on dividend income.",
-    "llama-7b_fact_raw": "1. The Canadian dividend tax credit can be claimed by Canadian residents.\n2. The credit applies to dividends received from Canadian companies.\n3. The Canadian dividend tax credit reduces the tax payable on dividend income.",
+    "llama-7b_fact_raw": "1. The Canadian dividend tax credit is available to Canadian residents.\n2. The credit applies to dividends received from Canadian companies.\n3. The Canadian dividend tax credit reduces the amount of tax paid on dividend income.",
     "llama-7b_fact": [
-      "The Canadian dividend tax credit can be claimed by Canadian residents.",
+      "The Canadian dividend tax credit is available to Canadian residents.",
       "The credit applies to dividends received from Canadian companies.",
-      "The Canadian dividend tax credit reduces the tax payable on dividend income."
+      "The Canadian dividend tax credit reduces the amount of tax paid on dividend income."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
     "llama-7b_judge": [
@@ -447,22 +438,24 @@
     "id": 767,
     "user_query": "Are there extra fees for a PayPal Premier account?",
     "llama-7b_response": "There are no extra fees for a PayPal Premier account.",
-    "llama-7b_fact_raw": "1. A PayPal Premier account does not have extra fees.",
-    "llama-7b_fact": [
-      "A PayPal Premier account does not have extra fees."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: A PayPal Premier account may have extra fees compared to a Personal account, such as higher transaction fees for receiving payments.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 769,
     "user_query": "Does an employee have the right to pay the federal and state taxes themselves instead of having employer doing it?",
     "llama-7b_response": "Yes, an employee has the right to pay the federal and state taxes themselves instead of having employer doing it.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. An employee has the right to pay the federal taxes themselves.\n2. An employee has the right to pay the state taxes themselves.",
+    "llama-7b_fact": [
+      "An employee has the right to pay the federal taxes themselves.",
+      "An employee has the right to pay the state taxes themselves."
+    ],
+    "llama-7b_judge_raw": "1. TRUE: An employee has the right to pay the federal taxes themselves, typically through estimated tax payments if not withheld by the employer.\n2. TRUE: Similarly, an employee has the right to pay the state taxes themselves, which can also be done through estimated tax payments if not withheld by the employer.",
+    "llama-7b_judge": [
+      "true",
+      "true"
+    ]
   },
   {
     "id": 789,
@@ -492,19 +485,15 @@
     "id": 852,
     "user_query": "How does a lender compute equity requirement for PMI?",
     "llama-7b_response": "The lender will compute the equity requirement for PMI by subtracting the amount of the loan from the value of the property. If the result is negative, then the borrower must pay PMI. For example, if the value of the property is $200,000 and the loan amount is $180,000, then the equity requirement is $20,000.",
-    "llama-7b_fact_raw": "1. The equity requirement for PMI is computed by subtracting the loan amount from the property value.\n2. If the computed equity is negative, the borrower must pay PMI.\n3. In the given example, the property value is $200,000.\n4. In the given example, the loan amount is $180,000.\n5. In the given example, the equity requirement is $20,000.",
+    "llama-7b_fact_raw": "1. The equity requirement for PMI is computed by subtracting the loan amount from the value of the property.\n2. If the result of subtracting the loan amount from the property value is negative, the borrower must pay PMI.\n3. An example given is a property value of $200,000 with a loan amount of $180,000, resulting in an equity requirement of $20,000.",
     "llama-7b_fact": [
-      "The equity requirement for PMI is computed by subtracting the loan amount from the property value.",
-      "If the computed equity is negative, the borrower must pay PMI.",
-      "In the given example, the property value is $200,000.",
-      "In the given example, the loan amount is $180,000.",
-      "In the given example, the equity requirement is $20,000."
+      "The equity requirement for PMI is computed by subtracting the loan amount from the value of the property.",
+      "If the result of subtracting the loan amount from the property value is negative, the borrower must pay PMI.",
+      "An example given is a property value of $200,000 with a loan amount of $180,000, resulting in an equity requirement of $20,000."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The equity requirement for PMI is computed by subtracting the loan amount from the property value and then dividing by the property value to get a percentage.\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The equity requirement for PMI is computed by subtracting the loan amount from the value of the property and then dividing by the property value to determine the loan-to-value ratio (LTV). PMI is typically required if the LTV is above 80%.\n2. TRUE\n3. TRUE",
     "llama-7b_judge": [
       "false",
-      "true",
-      "true",
       "true",
       "true"
     ]
@@ -528,11 +517,11 @@
       "Warren Buffett bought shares of American Express in 1994 for $7.5 billion.",
       "Warren Buffett sold his shares of American Express in 2006 for $90 billion."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. FALSE [correction]: Warren Buffett bought shares of American Express in 1964.\n4. FALSE [correction]: Warren Buffett did not sell his shares of American Express in 2006; Berkshire Hathaway still owns a significant portion of American Express.",
+    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n4. FALSE [correction]: There is no public record of Warren Buffett selling his shares of American Express in 2006 for $90 billion. As of my knowledge cutoff in 2023, Buffett's company Berkshire Hathaway still holds a significant stake in American Express.",
     "llama-7b_judge": [
       "true",
       "unknown",
-      "false",
+      "unknown",
       "false"
     ]
   },
@@ -567,7 +556,7 @@
     "llama-7b_fact": [
       "Gambling losses can be deducted from taxes."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. TRUE [with clarification]: Gambling losses can be deducted from taxes to the extent of gambling winnings as an itemized deduction, but only if you itemize your deductions on your tax return and keep a record of your winnings and losses.",
     "llama-7b_judge": [
       "true"
     ]
@@ -576,13 +565,13 @@
     "id": 937,
     "user_query": "Where do web sites get foreign exchange currency rate / quote information?",
     "llama-7b_response": "Web sites get foreign exchange currency rate / quote information from the following sources:\n- The Wall Street Journal\n- Bloomberg\n- Reuters\n- Yahoo Finance\n- Google Finance",
-    "llama-7b_fact_raw": "1. The Wall Street Journal is a source of foreign exchange currency rate / quote information.\n2. Bloomberg provides foreign exchange currency rate / quote information.\n3. Reuters is a source for foreign exchange currency rate / quote information.\n4. Yahoo Finance offers foreign exchange currency rate / quote information.\n5. Google Finance supplies foreign exchange currency rate / quote information.",
+    "llama-7b_fact_raw": "1. The Wall Street Journal is a source for foreign exchange currency rate information.\n2. Bloomberg provides foreign exchange currency rate information.\n3. Reuters is a source for foreign exchange currency rate / quote information.\n4. Yahoo Finance offers foreign exchange currency rate information.\n5. Google Finance provides foreign exchange currency rate / quote information.",
     "llama-7b_fact": [
-      "The Wall Street Journal is a source of foreign exchange currency rate / quote information.",
-      "Bloomberg provides foreign exchange currency rate / quote information.",
+      "The Wall Street Journal is a source for foreign exchange currency rate information.",
+      "Bloomberg provides foreign exchange currency rate information.",
       "Reuters is a source for foreign exchange currency rate / quote information.",
-      "Yahoo Finance offers foreign exchange currency rate / quote information.",
-      "Google Finance supplies foreign exchange currency rate / quote information."
+      "Yahoo Finance offers foreign exchange currency rate information.",
+      "Google Finance provides foreign exchange currency rate / quote information."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
     "llama-7b_judge": [
@@ -597,30 +586,23 @@
     "id": 966,
     "user_query": "My account's been labeled as “day trader” and I got a big margin call. What should I do? What trades can I place in the blocked period?",
     "llama-7b_response": "You should not place any trades during the blocked period.",
-    "llama-7b_fact_raw": "1. An account labeled as \"day trader\" may have a blocked period for trading. \n2. No trades should be placed during the blocked period for a \"day trader\" account.",
-    "llama-7b_fact": [
-      "An account labeled as \"day trader\" may have a blocked period for trading.",
-      "No trades should be placed during the blocked period for a \"day trader\" account."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
-    "llama-7b_judge": [
-      "true",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 980,
     "user_query": "Alternatives to Intuit's PayTrust service for online bill viewing and bill payment?",
     "llama-7b_response": "There are many alternatives to Intuit's PayTrust service for online bill viewing and bill payment. For example, you can use Microsoft Money to view and pay your bills online. You can also use Yahoo! Finance to view and pay your bills online.",
-    "llama-7b_fact_raw": "1. Microsoft Money can be used for online bill viewing and bill payment.\n2. Yahoo! Finance can be used for online bill viewing and bill payment.",
+    "llama-7b_fact_raw": "1. Microsoft Money is an alternative service for online bill viewing and bill payment.\n2. Yahoo! Finance is an alternative service for online bill viewing and bill payment.",
     "llama-7b_fact": [
-      "Microsoft Money can be used for online bill viewing and bill payment.",
-      "Yahoo! Finance can be used for online bill viewing and bill payment."
+      "Microsoft Money is an alternative service for online bill viewing and bill payment.",
+      "Yahoo! Finance is an alternative service for online bill viewing and bill payment."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Microsoft Money was a personal finance management software program by Microsoft, not a service for online bill viewing and bill payment. It has been discontinued and is no longer available.\n2. FALSE [correction]: Yahoo! Finance provides financial news, data, and commentary, including stock quotes, press releases, financial reports, and original content. It does not offer services for online bill viewing and bill payment.",
     "llama-7b_judge": [
-      "true",
-      "true"
+      "false",
+      "false"
     ]
   },
   {
@@ -650,13 +632,13 @@
     "id": 1094,
     "user_query": "What is the basis of an asset that is never depreciated?",
     "llama-7b_response": "The basis of an asset that is never depreciated is the cost of the asset.",
-    "llama-7b_fact_raw": "1. The basis of an asset that is never depreciated is determined by the cost of the asset.",
+    "llama-7b_fact_raw": "1. The basis of an asset that is never depreciated is the cost of the asset.",
     "llama-7b_fact": [
-      "The basis of an asset that is never depreciated is determined by the cost of the asset."
+      "The basis of an asset that is never depreciated is the cost of the asset."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The basis of an asset typically starts as the cost of the asset, but it can be adjusted for various reasons such as improvements, damages, or changes in market value. Depreciation is not the only factor that can affect the basis of an asset.",
     "llama-7b_judge": [
-      "true"
+      "false"
     ]
   },
   {
@@ -671,16 +653,9 @@
     "id": 1105,
     "user_query": "Health insurance deduction on schedule C if also full time employee with w2?",
     "llama-7b_response": "Yes, you can deduct health insurance if you are also a full time employee with a W2.",
-    "llama-7b_fact_raw": "1. Health insurance can be deducted on Schedule C.\n2. This deduction is possible even if one is a full-time employee with a W2.",
-    "llama-7b_fact": [
-      "Health insurance can be deducted on Schedule C.",
-      "This deduction is possible even if one is a full-time employee with a W2."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Health insurance can be deducted on Schedule C for self-employed individuals, not for employees with a W2.\n2. FALSE [correction]: If one is a full-time employee with a W2, they are typically not eligible to deduct health insurance on Schedule C as it is for self-employed individuals. However, they may be able to deduct health insurance premiums as an itemized deduction on Schedule A if they meet certain criteria.",
-    "llama-7b_judge": [
-      "false",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1108,
@@ -763,9 +738,14 @@
     "id": 1343,
     "user_query": "What is a maximum amount that I can wire transfer out of US?",
     "llama-7b_response": "The maximum amount that you can wire transfer out of the United States is $10,000.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. The maximum amount that can be wire transferred out of the United States is $10,000.",
+    "llama-7b_fact": [
+      "The maximum amount that can be wire transferred out of the United States is $10,000."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: There is no legal maximum limit to the amount of money that can be wire transferred out of the United States, but transactions of $10,000 or more must be reported to the government.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 1385,
@@ -779,14 +759,9 @@
     "id": 1398,
     "user_query": "How many days do I have to hold a stock before it is considered a capital gain by the CRA?",
     "llama-7b_response": "You have to hold the stock for at least 30 days before it is considered a capital gain by the CRA.",
-    "llama-7b_fact_raw": "1. The stock must be held for at least 30 days to be considered a capital gain by the CRA.",
-    "llama-7b_fact": [
-      "The stock must be held for at least 30 days to be considered a capital gain by the CRA."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The stock must be held for at least one year to be considered a long-term capital gain by the CRA (Canada Revenue Agency).",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1404,
@@ -808,22 +783,22 @@
     "id": 1498,
     "user_query": "What if 40% of the remaining 60% Loan To Value (ratio) is not paid, or the borrower wants to take only 60% of the loan?",
     "llama-7b_response": "The borrower can take only 60% of the loan.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. The borrower has the option to take only 60% of the loan.",
+    "llama-7b_fact": [
+      "The borrower has the option to take only 60% of the loan."
+    ],
+    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge": [
+      "unknown"
+    ]
   },
   {
     "id": 1506,
     "user_query": "Why do the 1 and 2 euro cent coins exist and why are they used?",
     "llama-7b_response": "The 1 and 2 euro cent coins exist because they are used to make change for small purchases.",
-    "llama-7b_fact_raw": "1. The 1 and 2 euro cent coins are used to make change for small purchases.",
-    "llama-7b_fact": [
-      "The 1 and 2 euro cent coins are used to make change for small purchases."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1515,
@@ -865,7 +840,7 @@
     "llama-7b_fact": [
       "All VISA cards are connected with bank accounts."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Not all VISA cards are connected to bank accounts. There are prepaid VISA cards that are not linked to a bank account.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Not all VISA cards are directly connected to bank accounts. Some VISA cards, like prepaid VISA gift cards, may not be connected to a bank account.",
     "llama-7b_judge": [
       "false"
     ]
@@ -906,33 +881,30 @@
     "id": 1774,
     "user_query": "What is the effect of a high dollar on the Canadian economy, investors, and consumers?",
     "llama-7b_response": "The effect of a high dollar on the Canadian economy, investors, and consumers is positive. The high dollar means that Canadian goods are more expensive in other countries, which makes them less competitive. However, it also means that foreign goods are cheaper in Canada, which makes them more competitive. This leads to an increase in demand for Canadian goods and a decrease in demand for foreign goods. This leads to an increase in employment in Canada and a decrease in employment in other countries.",
-    "llama-7b_fact_raw": "1. A high dollar means Canadian goods are more expensive in other countries.\n2. A high dollar makes foreign goods cheaper in Canada.\n3. An increase in demand for Canadian goods can lead to an increase in employment in Canada.\n4. A decrease in demand for foreign goods may lead to a decrease in employment in other countries.",
+    "llama-7b_fact_raw": "1. A high dollar makes Canadian goods more expensive in other countries.\n2. A high dollar makes foreign goods cheaper in Canada.\n3. An increase in the value of the dollar can lead to an increase in demand for Canadian goods.\n4. An increase in the value of the dollar can lead to a decrease in demand for foreign goods in Canada.\n5. A high dollar can lead to an increase in employment in Canada.",
     "llama-7b_fact": [
-      "A high dollar means Canadian goods are more expensive in other countries.",
+      "A high dollar makes Canadian goods more expensive in other countries.",
       "A high dollar makes foreign goods cheaper in Canada.",
-      "An increase in demand for Canadian goods can lead to an increase in employment in Canada.",
-      "A decrease in demand for foreign goods may lead to a decrease in employment in other countries."
+      "An increase in the value of the dollar can lead to an increase in demand for Canadian goods.",
+      "An increase in the value of the dollar can lead to a decrease in demand for foreign goods in Canada.",
+      "A high dollar can lead to an increase in employment in Canada."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: An increase in the value of the dollar can lead to a decrease in demand for Canadian goods, as they become more expensive for buyers using other currencies.\n4. FALSE [correction]: An increase in the value of the dollar can lead to an increase in demand for foreign goods in Canada, as they become cheaper for Canadian consumers.\n5. UNKNOWN",
     "llama-7b_judge": [
       "true",
       "true",
-      "true",
-      "true"
+      "false",
+      "false",
+      "unknown"
     ]
   },
   {
     "id": 1791,
     "user_query": "How fast does the available amount of gold in the world increase due to mining?",
     "llama-7b_response": "The available amount of gold in the world increases by about 8% per year due to mining.",
-    "llama-7b_fact_raw": "1. The available amount of gold in the world increases by about 8% per year due to mining.",
-    "llama-7b_fact": [
-      "The available amount of gold in the world increases by about 8% per year due to mining."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The available amount of gold in the world increases by about 1-2% per year due to mining.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1796,
@@ -942,7 +914,7 @@
     "llama-7b_fact": [
       "Volvo is a public company."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Volvo is a private company owned by the Chinese multinational automotive company Geely Holding Group.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Volvo is not a public company; it is owned by the Chinese multinational automotive company Geely Holding Group.",
     "llama-7b_judge": [
       "false"
     ]
@@ -967,9 +939,14 @@
     "id": 1858,
     "user_query": "When will Canada convert to the U.S. Dollar as an official currency?",
     "llama-7b_response": "Canada will not convert to the U.S. Dollar as an official currency.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Canada will not adopt the U.S. Dollar as its official currency.",
+    "llama-7b_fact": [
+      "Canada will not adopt the U.S. Dollar as its official currency."
+    ],
+    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge": [
+      "unknown"
+    ]
   },
   {
     "id": 1941,
@@ -991,16 +968,9 @@
     "id": 2027,
     "user_query": "What is the risk-neutral probability?",
     "llama-7b_response": "The risk-neutral probability is the probability that an investor would be indifferent between investing in a risky asset and investing in a risk-free asset.",
-    "llama-7b_fact_raw": "1. Risk-neutral probability is a concept used in investing.\n2. Risk-neutral probability involves an investor being indifferent between a risky and a risk-free asset.",
-    "llama-7b_fact": [
-      "Risk-neutral probability is a concept used in investing.",
-      "Risk-neutral probability involves an investor being indifferent between a risky and a risk-free asset."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
-    "llama-7b_judge": [
-      "true",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2031,
@@ -1011,7 +981,7 @@
       "Google Finance uses real-time data for the NASDAQ Composite.",
       "Yahoo! Finance uses delayed data for the NASDAQ Composite."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Yahoo! Finance also uses real-time data for the NASDAQ Composite.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Yahoo! Finance also provides real-time data for the NASDAQ Composite.",
     "llama-7b_judge": [
       "true",
       "false"
@@ -1021,30 +991,29 @@
     "id": 2061,
     "user_query": "What is the best cross-platform GPL personal finance tool available?",
     "llama-7b_response": "The best cross-platform GPL personal finance tool available is [Personal Finance Tool]. It is available for Windows, Mac OS X and Linux.",
-    "llama-7b_fact_raw": "1. [Personal Finance Tool] is a cross-platform personal finance tool.\n2. [Personal Finance Tool] is available for Windows, Mac OS X, and Linux.",
-    "llama-7b_fact": [
-      "[Personal Finance Tool] is a cross-platform personal finance tool.",
-      "[Personal Finance Tool] is available for Windows, Mac OS X, and Linux."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2080,
     "user_query": "What happened to Home Depot's Stock in 1988?",
     "llama-7b_response": "In 1988, Home Depot's stock price was $17.50. In 1989, it rose to $25.00. In 1990, it rose to $35.00. In 1991, it rose to $45.00. In 1992, it rose to $55.00. In 1993, it rose to $65.00. In 1994, it rose to $75.00. In 1995, it rose to $85.00. In 1996, it rose to $95.00. In 1997, it rose to $105.00. In 1998, it rose to $115.00. In 1999, it rose to $125.00. In 2000, it rose to $135.00. In 2001, it rose to $145.00. In 2002, it rose to $155.00. In 2003, it rose to $165.00. In 2004, it rose to $175.00. In 2005, it rose to $185.00. In 2006, it rose to $195.00. In 2007, it rose to $205.00. In 2008, it rose to $215.00. In 2009, it rose to $225.00. In 2010, it rose to $235.00. In 2011, it rose to $245.00. In 2012, it rose to $255.00. In 2013, it rose to $265.00. In 2014, it rose to $275.00. In 2015, it rose to $285.00. In 2016, it rose to $2",
-    "llama-7b_fact_raw": "1. Home Depot's stock price was $17.50 in 1988.\n2. The stock price of Home Depot rose each year from 1988 to 2016.",
+    "llama-7b_fact_raw": "1. Home Depot's stock price was $17.50 in 1988.\n2. The stock price of Home Depot rose to $25.00 in 1989.\n3. Home Depot's stock price increased to $35.00 in 1990.\n4. In 1991, Home Depot's stock price rose to $45.00.\n5. Home Depot's stock price reached $55.00 in 1992.",
     "llama-7b_fact": [
       "Home Depot's stock price was $17.50 in 1988.",
-      "The stock price of Home Depot rose each year from 1988 to 2016."
+      "The stock price of Home Depot rose to $25.00 in 1989.",
+      "Home Depot's stock price increased to $35.00 in 1990.",
+      "In 1991, Home Depot's stock price rose to $45.00.",
+      "Home Depot's stock price reached $55.00 in 1992."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: The stock price of Home Depot did not consistently rise every year from 1988 to 2016, as there were years of decline within that time period.",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nWithout specific historical stock price data for Home Depot for the years 1988 through 1992, it is not possible to verify the accuracy of these statements. Stock prices can fluctuate greatly over time and are subject to many variables, so precise historical data is required to confirm these claims.",
     "llama-7b_judge": [
       "unknown",
-      "false"
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
     ]
   },
   {
@@ -1059,12 +1028,14 @@
     "id": 2123,
     "user_query": "Why does financial investor bother to buy derivatives and then hedge the position?",
     "llama-7b_response": "Derivatives are used to hedge risk. For example, a company might buy an option on its stock in order to protect itself against a sudden drop in the price of its shares.",
-    "llama-7b_fact_raw": "1. Derivatives are used to hedge risk.",
+    "llama-7b_fact_raw": "1. Derivatives are used to hedge risk.\n2. A company might buy an option on its stock to protect against a sudden drop in the price of its shares.",
     "llama-7b_fact": [
-      "Derivatives are used to hedge risk."
+      "Derivatives are used to hedge risk.",
+      "A company might buy an option on its stock to protect against a sudden drop in the price of its shares."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
+      "true",
       "true"
     ]
   },
@@ -1072,14 +1043,12 @@
     "id": 2125,
     "user_query": "What's the point of Ford loosening financing requirements?",
     "llama-7b_response": "The point of Ford loosening financing requirements is to increase sales.",
-    "llama-7b_fact_raw": "1. Ford is loosening financing requirements.\n2. The purpose of loosening financing requirements is to increase sales.",
+    "llama-7b_fact_raw": "1. Ford has loosened financing requirements.",
     "llama-7b_fact": [
-      "Ford is loosening financing requirements.",
-      "The purpose of loosening financing requirements is to increase sales."
+      "Ford has loosened financing requirements."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or a specific source confirming the statement about Ford's financing requirements, it is not possible to determine the accuracy of the statement.",
     "llama-7b_judge": [
-      "unknown",
       "unknown"
     ]
   },
@@ -1087,16 +1056,9 @@
     "id": 2134,
     "user_query": "Which online services offer logarithmic charts for equities such as index funds and ETFs?",
     "llama-7b_response": "- Yahoo Finance\n- Google Finance",
-    "llama-7b_fact_raw": "1. Yahoo Finance offers logarithmic charts for equities such as index funds and ETFs.\n2. Google Finance offers logarithmic charts for equities such as index funds and ETFs.",
-    "llama-7b_fact": [
-      "Yahoo Finance offers logarithmic charts for equities such as index funds and ETFs.",
-      "Google Finance offers logarithmic charts for equities such as index funds and ETFs."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: As of my knowledge cutoff in September 2021, Google Finance does not offer logarithmic charts; however, this may have changed since then.",
-    "llama-7b_judge": [
-      "true",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2143,
@@ -1131,21 +1093,21 @@
       "ExxonMobil's balance sheet shows more liabilities than assets.",
       "The company has a large amount of debt."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN: Without the current financial data for ExxonMobil, it is not possible to determine the accuracy of this statement.\n2. UNKNOWN: The statement is vague and relative. While ExxonMobil may have a large amount of debt, it is not possible to confirm the accuracy of this statement without specific financial data or context regarding what constitutes a \"large amount\" of debt for the company.",
     "llama-7b_judge": [
       "unknown",
-      "true"
+      "unknown"
     ]
   },
   {
     "id": 2169,
     "user_query": "What is a 401(k) Loan Provision?",
     "llama-7b_response": "A 401(k) loan provision is a clause in a 401(k) plan that allows participants to borrow money from their own retirement plan. The loan must be repaid to the plan with interest, usually over a period of five years.",
-    "llama-7b_fact_raw": "1. A 401(k) loan provision is a clause that permits participants to borrow from their own retirement plan.\n2. The borrowed money must be repaid to the plan along with interest.\n3. The repayment period for a 401(k) loan is typically five years.",
+    "llama-7b_fact_raw": "1. A 401(k) loan provision allows participants to borrow money from their own retirement plan.\n2. The loan taken from a 401(k) plan must be repaid with interest.\n3. The typical repayment period for a 401(k) loan is usually over a period of five years.",
     "llama-7b_fact": [
-      "A 401(k) loan provision is a clause that permits participants to borrow from their own retirement plan.",
-      "The borrowed money must be repaid to the plan along with interest.",
-      "The repayment period for a 401(k) loan is typically five years."
+      "A 401(k) loan provision allows participants to borrow money from their own retirement plan.",
+      "The loan taken from a 401(k) plan must be repaid with interest.",
+      "The typical repayment period for a 401(k) loan is usually over a period of five years."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
     "llama-7b_judge": [
@@ -1198,12 +1160,12 @@
     "id": 2303,
     "user_query": "Thorough Description of Yield to Maturity?",
     "llama-7b_response": "Yield to maturity (YTM) is the rate of return that an investor would receive if they held a bond until it matured. It is calculated by taking the face value of the bond and dividing it by the price at which the bond was purchased.",
-    "llama-7b_fact_raw": "1. Yield to maturity is the rate of return received if a bond is held until it matures.\n2. Yield to maturity is calculated by dividing the face value of the bond by the purchase price of the bond.",
+    "llama-7b_fact_raw": "1. Yield to maturity (YTM) is the rate of return an investor would receive if they held a bond until it matured.\n2. Yield to maturity is calculated by taking the face value of the bond and dividing it by the price at which the bond was purchased.",
     "llama-7b_fact": [
-      "Yield to maturity is the rate of return received if a bond is held until it matures.",
-      "Yield to maturity is calculated by dividing the face value of the bond by the purchase price of the bond."
+      "Yield to maturity (YTM) is the rate of return an investor would receive if they held a bond until it matured.",
+      "Yield to maturity is calculated by taking the face value of the bond and dividing it by the price at which the bond was purchased."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Yield to maturity is calculated by taking into consideration the bond's current market price, its face value, its coupon interest rate, and the time to maturity. It also assumes that all coupon and principal payments will be made on schedule.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Yield to maturity is calculated by taking into account the present value of all future cash flows from the bond (including both interest payments and the repayment of the face value at maturity) and equating them to the current market price of the bond, not simply by dividing the face value by the purchase price.",
     "llama-7b_judge": [
       "true",
       "false"
@@ -1213,41 +1175,17 @@
     "id": 2309,
     "user_query": "How to understand the caculation of interest for credit cards?",
     "llama-7b_response": "The calculation of interest for credit cards is very simple. You can use the following formula to calculate the interest on your credit card balance:\nInterest = (Balance * Rate / 100) * (1 + Rate) ^ (Time / 12)",
-    "llama-7b_fact_raw": "1. Interest calculation for credit cards involves a formula.\n2. The formula includes variables for balance, rate, and time.\n3. The interest is calculated by multiplying the balance by the rate, divided by 100.\n4. The result is then multiplied by the quantity of 1 plus the rate, raised to the power of time divided by 12.",
-    "llama-7b_fact": [
-      "Interest calculation for credit cards involves a formula.",
-      "The formula includes variables for balance, rate, and time.",
-      "The interest is calculated by multiplying the balance by the rate, divided by 100.",
-      "The result is then multiplied by the quantity of 1 plus the rate, raised to the power of time divided by 12."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The interest is not calculated by multiplying the result by the quantity of 1 plus the rate raised to the power of time divided by 12. Instead, the interest for a period is calculated by multiplying the balance by the rate and then dividing by the number of periods per year (which is often 12 for monthly compounding).",
-    "llama-7b_judge": [
-      "true",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2314,
     "user_query": "What actions should I be taking to establish good credit scores for my children?",
     "llama-7b_response": "You should be taking the following actions to establish good credit scores for your children:\n1. Make sure they have a credit card and use it responsibly.\n2. Teach them how to budget and save money.\n3. Encourage them to get a part-time job.\n4. Help them understand the importance of paying bills on time.\n5. Monitor their credit reports regularly.",
-    "llama-7b_fact_raw": "1. Having a credit card and using it responsibly can impact credit scores.\n2. Budgeting and saving money can influence financial habits related to credit scores.\n3. Getting a part-time job can affect a person's ability to manage financial responsibilities.\n4. Paying bills on time is important for maintaining good credit scores.\n5. Monitoring credit reports regularly can help in managing and establishing good credit scores.",
-    "llama-7b_fact": [
-      "Having a credit card and using it responsibly can impact credit scores.",
-      "Budgeting and saving money can influence financial habits related to credit scores.",
-      "Getting a part-time job can affect a person's ability to manage financial responsibilities.",
-      "Paying bills on time is important for maintaining good credit scores.",
-      "Monitoring credit reports regularly can help in managing and establishing good credit scores."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
-    "llama-7b_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2321,
@@ -1269,15 +1207,17 @@
     "id": 2323,
     "user_query": "What is a straddle?",
     "llama-7b_response": "A straddle is a type of options strategy in which the investor buys both a call option and a put option on the same asset, with the same strike price and expiration date. The investor hopes that the price of the asset will remain between the strike price of the options, so that the investor can profit from the spread between the two options.",
-    "llama-7b_fact_raw": "1. A straddle is an options strategy.\n2. In a straddle, the investor buys both a call option and a put option on the same asset.\n3. The call option and put option in a straddle have the same strike price and expiration date.\n4. The investor in a straddle strategy hopes that the asset price will remain between the strike price of the options.",
+    "llama-7b_fact_raw": "1. A straddle is an options strategy.\n2. In a straddle, the investor buys both a call option and a put option.\n3. The call and put options in a straddle have the same strike price.\n4. The call and put options in a straddle have the same expiration date.\n5. The investor in a straddle strategy hopes that the price of the asset will remain between the strike price of the options.",
     "llama-7b_fact": [
       "A straddle is an options strategy.",
-      "In a straddle, the investor buys both a call option and a put option on the same asset.",
-      "The call option and put option in a straddle have the same strike price and expiration date.",
-      "The investor in a straddle strategy hopes that the asset price will remain between the strike price of the options."
+      "In a straddle, the investor buys both a call option and a put option.",
+      "The call and put options in a straddle have the same strike price.",
+      "The call and put options in a straddle have the same expiration date.",
+      "The investor in a straddle strategy hopes that the price of the asset will remain between the strike price of the options."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The investor in a straddle strategy hopes that the asset price will move significantly, either up or down, from the strike price of the options.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. FALSE [correction]: The investor in a straddle strategy hopes that the price of the asset will move significantly, either up or down, away from the strike price of the options.",
     "llama-7b_judge": [
+      "true",
       "true",
       "true",
       "true",
@@ -1288,15 +1228,13 @@
     "id": 2324,
     "user_query": "What is Systematic about Systematic Investment Plan (SIP) and who invented it?",
     "llama-7b_response": "Systematic Investment Plan (SIP) is a method of investing in mutual funds wherein a fixed amount is invested at regular intervals. It was invented by John Bogle, the founder of Vanguard Group.",
-    "llama-7b_fact_raw": "1. Systematic Investment Plan (SIP) is a method of investing in mutual funds.\n2. In SIP, a fixed amount is invested at regular intervals.\n3. John Bogle, the founder of Vanguard Group, invented Systematic Investment Plan (SIP).",
+    "llama-7b_fact_raw": "1. A Systematic Investment Plan (SIP) involves investing a fixed amount at regular intervals in mutual funds.\n2. John Bogle, the founder of Vanguard Group, invented the Systematic Investment Plan (SIP).",
     "llama-7b_fact": [
-      "Systematic Investment Plan (SIP) is a method of investing in mutual funds.",
-      "In SIP, a fixed amount is invested at regular intervals.",
-      "John Bogle, the founder of Vanguard Group, invented Systematic Investment Plan (SIP)."
+      "A Systematic Investment Plan (SIP) involves investing a fixed amount at regular intervals in mutual funds.",
+      "John Bogle, the founder of Vanguard Group, invented the Systematic Investment Plan (SIP)."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: John Bogle, the founder of Vanguard Group, did not invent Systematic Investment Plan (SIP). The concept of SIP is not attributed to any single individual and has been a part of mutual fund investment practices for a long time.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: John Bogle, the founder of Vanguard Group, is credited with creating the first index fund for individual investors, not the Systematic Investment Plan (SIP). The concept of SIPs is a common investment strategy offered by mutual funds and is not attributed to a single inventor.",
     "llama-7b_judge": [
-      "true",
       "true",
       "false"
     ]
@@ -1353,24 +1291,19 @@
     "id": 2390,
     "user_query": "In NYC is there sales tax on services like computer / cell phone repair?",
     "llama-7b_response": "No, there is no sales tax on services in NYC.",
-    "llama-7b_fact_raw": "1. Services such as computer and cell phone repair are not subject to sales tax in NYC.",
-    "llama-7b_fact": [
-      "Services such as computer and cell phone repair are not subject to sales tax in NYC."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Services such as computer and cell phone repair are subject to sales tax in NYC.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2400,
     "user_query": "How do auto-loan payments factor into taxes for cars that are solely used by dependent(s)?",
     "llama-7b_response": "Auto-loan payments are not factored into taxes for cars that are solely used by dependent(s).",
-    "llama-7b_fact_raw": "1. Auto-loan payments are not considered in taxes for cars exclusively used by dependents.",
+    "llama-7b_fact_raw": "1. Auto-loan payments are not factored into taxes for cars that are solely used by dependents.",
     "llama-7b_fact": [
-      "Auto-loan payments are not considered in taxes for cars exclusively used by dependents."
+      "Auto-loan payments are not factored into taxes for cars that are solely used by dependents."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nExplanation: The statement about auto-loan payments not being factored into taxes for cars used solely by dependents is vague without additional context. Tax laws vary by jurisdiction and can be complex. In some places, the interest on auto loans might be deductible under certain circumstances, while in others, it might not be. Additionally, whether a car is used by a dependent or not may not be relevant to the tax treatment of auto-loan payments. More specific information about the jurisdiction and the relevant tax laws would be needed to determine the truthfulness of this statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1384,10 +1317,10 @@
       "Yahoo Finance provides intraday prices for mutual funds.",
       "Google Finance provides intraday prices for mutual funds."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Yahoo Finance does not provide intraday prices for mutual funds as mutual funds are typically priced once per day after market close.\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Yahoo Finance does not provide intraday prices for mutual funds because mutual funds are priced once at the end of each trading day based on their net asset value.\n2. FALSE [correction]: Google Finance, like Yahoo Finance, does not provide intraday prices for mutual funds for the same reason; mutual funds are only priced once at the end of the trading day.",
     "llama-7b_judge": [
       "false",
-      "unknown"
+      "false"
     ]
   },
   {
@@ -1407,7 +1340,7 @@
       "In a protected-equity loan, the lender cannot take possession of the equity until the loan is repaid.",
       "In an equity loan, the lender can take possession of the equity if the loan is not repaid."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: In a protected-equity loan, the lender can take possession of the equity even before the loan is repaid if certain conditions are met, such as default.\n2. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: In a protected-equity loan, the borrower is protected against the loss of the equity in the event of a decline in the value of the investment, but the lender can still take possession of the equity if the loan is not repaid.\n2. TRUE",
     "llama-7b_judge": [
       "false",
       "true"
@@ -1417,9 +1350,14 @@
     "id": 2494,
     "user_query": "First time home buyer: Can you withdraw funds from a Roth 401k for a first time home purchase?",
     "llama-7b_response": "Yes, you can withdraw funds from a Roth 401k for a first time home purchase.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Funds can be withdrawn from a Roth 401k for a first time home purchase.",
+    "llama-7b_fact": [
+      "Funds can be withdrawn from a Roth 401k for a first time home purchase."
+    ],
+    "llama-7b_judge_raw": "1. TRUE (with conditions) [correction]: Funds can be withdrawn from a Roth 401(k) for a first-time home purchase without penalties on contributions, but earnings may be subject to taxes and penalties if the account is less than five years old and the withdrawal does not meet the qualified distribution criteria.",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 2505,
@@ -1433,9 +1371,9 @@
     "id": 2559,
     "user_query": "How do you calculate return on investment for a share of stock?",
     "llama-7b_response": "The return on investment (ROI) for a share of stock is calculated by dividing the difference between the price of the stock and the price paid for the stock by the price paid for the stock.",
-    "llama-7b_fact_raw": "1. Return on investment (ROI) for a share of stock is calculated by dividing the difference between the current price and the purchase price by the purchase price.",
+    "llama-7b_fact_raw": "1. Return on investment (ROI) for a share of stock is calculated by dividing the difference between the selling price and the purchase price by the purchase price.",
     "llama-7b_fact": [
-      "Return on investment (ROI) for a share of stock is calculated by dividing the difference between the current price and the purchase price by the purchase price."
+      "Return on investment (ROI) for a share of stock is calculated by dividing the difference between the selling price and the purchase price by the purchase price."
     ],
     "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
@@ -1482,7 +1420,7 @@
     "llama-7b_fact": [
       "The seller receives the periodic payments when an equity is sold on a repurchase agreement."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The buyer receives the periodic payments when an equity is sold on a repurchase agreement.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The buyer receives the periodic payments when an equity is sold on a repurchase agreement, as the seller agrees to repurchase the security at a later date for a higher price.",
     "llama-7b_judge": [
       "false"
     ]
@@ -1491,14 +1429,14 @@
     "id": 2731,
     "user_query": "How are Canada Universal Child Care Benefit (UCCB) & related tax measures changing in 2015?",
     "llama-7b_response": "The Canada Child Tax Benefit (CCTB) is a tax-free monthly payment made to eligible families to help them with the cost of raising children under the age of 18. In 2015, the CCTB will be increased by $25 per month for each child under the age of 6, and by $10 per month for each child aged 6 through 17.",
-    "llama-7b_fact_raw": "1. The Canada Child Tax Benefit (CCTB) is a monthly payment made to eligible families.\n2. The CCTB helps with the cost of raising children under the age of 18.\n3. In 2015, the CCTB will increase by $25 per month for each child under the age of 6.\n4. In 2015, the CCTB will increase by $10 per month for each child aged 6 through 17.",
+    "llama-7b_fact_raw": "1. The Canada Child Tax Benefit (CCTB) is a tax-free monthly payment made to eligible families.\n2. The CCTB helps families with the cost of raising children under the age of 18.\n3. In 2015, the CCTB was increased by $25 per month for each child under the age of 6.\n4. In 2015, the CCTB was increased by $10 per month for each child aged 6 through 17.",
     "llama-7b_fact": [
-      "The Canada Child Tax Benefit (CCTB) is a monthly payment made to eligible families.",
-      "The CCTB helps with the cost of raising children under the age of 18.",
-      "In 2015, the CCTB will increase by $25 per month for each child under the age of 6.",
-      "In 2015, the CCTB will increase by $10 per month for each child aged 6 through 17."
+      "The Canada Child Tax Benefit (CCTB) is a tax-free monthly payment made to eligible families.",
+      "The CCTB helps families with the cost of raising children under the age of 18.",
+      "In 2015, the CCTB was increased by $25 per month for each child under the age of 6.",
+      "In 2015, the CCTB was increased by $10 per month for each child aged 6 through 17."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: As of 2021, the information regarding CCTB increases for 2015 is outdated. The Canada Child Tax Benefit has been replaced by the Canada Child Benefit (CCB) in 2016.\n4. FALSE [correction]: As of 2021, the information regarding CCTB increases for 2015 is outdated. The Canada Child Tax Benefit has been replaced by the Canada Child Benefit (CCB) in 2016.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: In 2015, the Canada Child Tax Benefit (CCTB) was not increased by $25 per month for each child under the age of 6. Instead, the Universal Child Care Benefit (UCCB) was enhanced to provide an additional $60 per month for children under the age of 6, increasing the benefit to $160 per month for each child.\n4. FALSE [correction]: In 2015, the CCTB was not increased by $10 per month for each child aged 6 through 17. The Universal Child Care Benefit (UCCB) was expanded to provide a benefit of $60 per month for children aged 6 through 17. Prior to this change, the UCCB did not provide benefits for children in this age group.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -1531,7 +1469,7 @@
       "A bull put spread involves buying a put option.",
       "A bull put spread involves selling another put option with a lower strike price."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: A bull put spread involves selling a put option.\n2. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: A bull put spread involves selling a put option, not buying.\n2. TRUE",
     "llama-7b_judge": [
       "false",
       "true"
@@ -1581,11 +1519,11 @@
     "id": 2866,
     "user_query": "What's the average rate of return for some of the most mainstream index funds?",
     "llama-7b_response": "The average rate of return for some of the most mainstream index funds is around 10% per year.",
-    "llama-7b_fact_raw": "1. The average rate of return for mainstream index funds is around 10% per year.",
+    "llama-7b_fact_raw": "1. The average rate of return for some mainstream index funds is around 10% per year.",
     "llama-7b_fact": [
-      "The average rate of return for mainstream index funds is around 10% per year."
+      "The average rate of return for some mainstream index funds is around 10% per year."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. TRUE (with clarification): While the average rate of return for some mainstream index funds, such as those tracking the S&P 500, is often cited around 10% per year before inflation, this is a historical average and not a guaranteed rate. Actual returns can vary significantly from year to year.",
     "llama-7b_judge": [
       "true"
     ]
@@ -1602,9 +1540,14 @@
     "id": 2899,
     "user_query": "Can PayPal transfer money automatically from my bank account if I link it in PayPal?",
     "llama-7b_response": "Yes, PayPal can transfer money automatically from your bank account if you link it in PayPal.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. PayPal can transfer money automatically from a linked bank account.",
+    "llama-7b_fact": [
+      "PayPal can transfer money automatically from a linked bank account."
+    ],
+    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 2917,
@@ -1650,16 +1593,9 @@
     "id": 2986,
     "user_query": "What are the tax implications of earnings from the stock market (BSE)?",
     "llama-7b_response": "The tax implications of earnings from the stock market (BSE) depend on the type of account you have. If you have a regular brokerage account, then all your profits will be taxed as short-term capital gains. If you have a marginal account, then your profits will be taxed as long-term capital gains.",
-    "llama-7b_fact_raw": "1. Profits from a regular brokerage account are taxed as short-term capital gains.\n2. Profits from a marginal account are taxed as long-term capital gains.",
-    "llama-7b_fact": [
-      "Profits from a regular brokerage account are taxed as short-term capital gains.",
-      "Profits from a marginal account are taxed as long-term capital gains."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Profits from a regular brokerage account can be taxed as either short-term or long-term capital gains, depending on the holding period of the investment.\n2. FALSE [correction]: Profits from a margin account can also be taxed as either short-term or long-term capital gains, depending on the holding period of the investment. Marginal accounts refer to accounts that use borrowed money, and do not in themselves determine the tax treatment of profits.",
-    "llama-7b_judge": [
-      "false",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2990,
@@ -1669,7 +1605,7 @@
     "llama-7b_fact": [
       "The New York Stock Exchange has never closed on a weekday for the purpose of filing paperwork."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The New York Stock Exchange has closed on weekdays for various reasons, including paperwork filing, national days of mourning, and other extraordinary events.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The New York Stock Exchange has closed on weekdays for various reasons, including paperwork, such as after the 1929 stock market crash to sort out the backlog of paperwork.",
     "llama-7b_judge": [
       "false"
     ]
@@ -1686,14 +1622,9 @@
     "id": 3006,
     "user_query": "I don't live in America. How can I buy IPO stock of newly listed companies in the United States?",
     "llama-7b_response": "You can buy IPO stock of newly listed companies in the United States through a broker.",
-    "llama-7b_fact_raw": "1. IPO stock of newly listed companies in the United States can be purchased through a broker.",
-    "llama-7b_fact": [
-      "IPO stock of newly listed companies in the United States can be purchased through a broker."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3007,
@@ -1739,35 +1670,26 @@
     "id": 3120,
     "user_query": "How does the Dow Jones Industrial Average (DJIA) divisor change to account for dividends?",
     "llama-7b_response": "The Dow Jones Industrial Average (DJIA) divisor changes to account for dividends by subtracting the amount of the dividend from the current price of the stock. For example, if a stock has a dividend of $0.50 per share, then the divisor will be reduced by $0.50. The new divisor will be the old divisor minus the amount of the dividend.",
-    "llama-7b_fact_raw": "1. The DJIA divisor changes by subtracting the amount of the dividend from the current stock price.\n2. If a stock has a dividend of $0.50 per share, the divisor will be reduced by $0.50.\n3. The new DJIA divisor is calculated by subtracting the dividend amount from the old divisor.",
-    "llama-7b_fact": [
-      "The DJIA divisor changes by subtracting the amount of the dividend from the current stock price.",
-      "If a stock has a dividend of $0.50 per share, the divisor will be reduced by $0.50.",
-      "The new DJIA divisor is calculated by subtracting the dividend amount from the old divisor."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The DJIA divisor changes when there is a stock split or a change in the component stocks, not by subtracting the dividend amount.\n2. FALSE [correction]: The divisor would not be reduced based on the dividend per share; dividends are accounted for in the price of the stock. \n3. FALSE [correction]: The new DJIA divisor is calculated based on the overall value of the index before and after a stock split or change in component stocks, not by subtracting the dividend amount.",
-    "llama-7b_judge": [
-      "false",
-      "false",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3141,
     "user_query": "What are some ways to mitigate the risks of covered calls?",
     "llama-7b_response": "There are several ways to mitigate the risks of covered calls. First, you can use a limit order to ensure that your order will be executed at the desired price. Second, you can use a stop-loss order to limit your losses in case the market moves against your position. Third, you can use a trailing stop-loss order to automatically adjust your stop-loss order as the market moves against your position. Finally, you can use a limit order combined with a stop-loss order to further reduce your risk.",
-    "llama-7b_fact_raw": "1. Using a limit order can ensure that a covered call order is executed at a desired price.\n2. Implementing a stop-loss order can help limit potential losses if the market moves against a position.\n3. Utilizing a trailing stop-loss order allows for automatic adjustment of the stop-loss in response to market movements.\n4. Combining a limit order with a stop-loss order can further mitigate the risks associated with covered calls.",
+    "llama-7b_fact_raw": "1. A limit order can be used to ensure that an order will be executed at a desired price when mitigating the risks of covered calls.\n2. A stop-loss order can be used to limit losses if the market moves against a position in covered calls.\n3. A trailing stop-loss order can be used to automatically adjust the stop-loss order as the market moves against a position in covered calls.\n4. Combining a limit order with a stop-loss order can further reduce risk in covered call strategies.",
     "llama-7b_fact": [
-      "Using a limit order can ensure that a covered call order is executed at a desired price.",
-      "Implementing a stop-loss order can help limit potential losses if the market moves against a position.",
-      "Utilizing a trailing stop-loss order allows for automatic adjustment of the stop-loss in response to market movements.",
-      "Combining a limit order with a stop-loss order can further mitigate the risks associated with covered calls."
+      "A limit order can be used to ensure that an order will be executed at a desired price when mitigating the risks of covered calls.",
+      "A stop-loss order can be used to limit losses if the market moves against a position in covered calls.",
+      "A trailing stop-loss order can be used to automatically adjust the stop-loss order as the market moves against a position in covered calls.",
+      "Combining a limit order with a stop-loss order can further reduce risk in covered call strategies."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: A trailing stop-loss order is used to automatically adjust the stop-loss order as the market moves in favor of a position, not against it.\n4. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
-      "true",
+      "false",
       "true"
     ]
   },
@@ -1791,14 +1713,9 @@
     "id": 3209,
     "user_query": "Does a bid and ask price exist for indices like the S&P500?",
     "llama-7b_response": "No, there is no bid and ask price for indices like the S&P500.",
-    "llama-7b_fact_raw": "1. Indices like the S&P500 do not have a bid and ask price.",
-    "llama-7b_fact": [
-      "Indices like the S&P500 do not have a bid and ask price."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Indices like the S&P 500 do have a bid and ask price, which represent the highest price a buyer is willing to pay (bid) and the lowest price a seller is willing to accept (ask) for the index.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3216,
@@ -1820,14 +1737,9 @@
     "id": 3224,
     "user_query": "Are there any ETFs that follow the “Dogs of the Dow” allocation?",
     "llama-7b_response": "There are no ETFs that follow the “Dogs of the Dow” allocation.",
-    "llama-7b_fact_raw": "1. There are no ETFs that follow the \"Dogs of the Dow\" allocation.",
-    "llama-7b_fact": [
-      "There are no ETFs that follow the \"Dogs of the Dow\" allocation."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: There are ETFs that follow the \"Dogs of the Dow\" allocation.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3228,
@@ -1936,13 +1848,15 @@
     "id": 3302,
     "user_query": "What are the tax implications of dividends that I receive from stocks (equity) that I hold?",
     "llama-7b_response": "The tax implications of dividends that you receive from stocks (equity) that you hold depend on whether the company is domiciled in your country or not. If the company is domiciled in your country, then you will be subject to tax on the dividends received. If the company is not domiciled in your country, then you will not be subject to tax on the dividends received.",
-    "llama-7b_fact_raw": "1. If a company is domiciled in your country, you will be subject to tax on dividends received from the stocks you hold in that company.\n2. If a company is not domiciled in your country, you will not be subject to tax on dividends received from the stocks you hold in that company.",
+    "llama-7b_fact_raw": "1. Tax implications for dividends depend on whether the company is domiciled in the recipient's country or not.\n2. If the company is domiciled in the recipient's country, the recipient will be subject to tax on the dividends received.\n3. If the company is not domiciled in the recipient's country, the recipient will not be subject to tax on the dividends received.",
     "llama-7b_fact": [
-      "If a company is domiciled in your country, you will be subject to tax on dividends received from the stocks you hold in that company.",
-      "If a company is not domiciled in your country, you will not be subject to tax on dividends received from the stocks you hold in that company."
+      "Tax implications for dividends depend on whether the company is domiciled in the recipient's country or not.",
+      "If the company is domiciled in the recipient's country, the recipient will be subject to tax on the dividends received.",
+      "If the company is not domiciled in the recipient's country, the recipient will not be subject to tax on the dividends received."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Depending on your country's tax laws, you may still be subject to tax on dividends received from foreign companies.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: If the company is not domiciled in the recipient's country, the recipient may still be subject to tax on the dividends received, depending on the tax laws of the recipient's country and any applicable tax treaties.",
     "llama-7b_judge": [
+      "true",
       "true",
       "false"
     ]
@@ -1951,13 +1865,13 @@
     "id": 3311,
     "user_query": "What does a Dividend “will not be quoted ex” mean?",
     "llama-7b_response": "A dividend “will not be quoted ex” means that the dividend will not be included in the stock price.",
-    "llama-7b_fact_raw": "1. A dividend \"will not be quoted ex\" indicates exclusion from the stock price.",
+    "llama-7b_fact_raw": "1. A dividend \"will not be quoted ex\" indicates that the dividend is not factored into the stock price.",
     "llama-7b_fact": [
-      "A dividend \"will not be quoted ex\" indicates exclusion from the stock price."
+      "A dividend \"will not be quoted ex\" indicates that the dividend is not factored into the stock price."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: A dividend \"will be quoted ex\" indicates that the dividend is not factored into the stock price.",
     "llama-7b_judge": [
-      "true"
+      "false"
     ]
   },
   {
@@ -2017,9 +1931,14 @@
     "id": 3416,
     "user_query": "Can stockholders choose NOT to elect a board of directors?",
     "llama-7b_response": "No, stockholders cannot choose not to elect a board of directors.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Stockholders must elect a board of directors.",
+    "llama-7b_fact": [
+      "Stockholders must elect a board of directors."
+    ],
+    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 3422,
@@ -2033,21 +1952,21 @@
     "id": 3439,
     "user_query": "What are the tax implications on selling the Share ISA portfolio?",
     "llama-7b_response": "The tax implications on selling the Share ISA portfolio are as follows:\n- Capital Gains Tax (CGT) is payable on any profits made from the sale of shares. The CGT rate is 10%, which means that if you make £100 in profits, you will have to pay £110 in tax.\n- Dividend Tax is payable on any dividends received from the shares. The current rate of Dividend Tax is 7.5%, which means that if you receive £100 in dividends, you will have to pay £7.50 in tax.\n- Income Tax is payable on any income received from the shares. The current rate of Income Tax is 20%, which means that if you receive £100 in income, you will have to pay £20 in tax.",
-    "llama-7b_fact_raw": "1. Capital Gains Tax is payable on profits made from selling shares within the Share ISA portfolio.\n2. The current rate of Capital Gains Tax is 10%.\n3. Dividend Tax is payable on dividends received from shares within the Share ISA portfolio.\n4. The current rate of Dividend Tax is 7.5%.\n5. Income Tax is payable on income received from shares within the Share ISA portfolio, at a current rate of 20%.",
+    "llama-7b_fact_raw": "1. Capital Gains Tax (CGT) is payable on profits made from the sale of shares.\n2. The Capital Gains Tax rate mentioned is 10%.\n3. Dividend Tax is payable on dividends received from shares.\n4. The current rate of Dividend Tax mentioned is 7.5%.\n5. Income Tax is payable on any income received from the shares, with a current rate mentioned as 20%.",
     "llama-7b_fact": [
-      "Capital Gains Tax is payable on profits made from selling shares within the Share ISA portfolio.",
-      "The current rate of Capital Gains Tax is 10%.",
-      "Dividend Tax is payable on dividends received from shares within the Share ISA portfolio.",
-      "The current rate of Dividend Tax is 7.5%.",
-      "Income Tax is payable on income received from shares within the Share ISA portfolio, at a current rate of 20%."
+      "Capital Gains Tax (CGT) is payable on profits made from the sale of shares.",
+      "The Capital Gains Tax rate mentioned is 10%.",
+      "Dividend Tax is payable on dividends received from shares.",
+      "The current rate of Dividend Tax mentioned is 7.5%.",
+      "Income Tax is payable on any income received from the shares, with a current rate mentioned as 20%."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Capital Gains Tax is not payable on profits made from selling shares within the Share ISA portfolio.\n2. FALSE [correction]: The current rate of Capital Gains Tax can vary depending on the individual's income tax band, and it can be 10% or 20% for individuals (excluding residential property and carried interest which are taxed at 18% and 28% respectively).\n3. FALSE [correction]: Dividend Tax is not payable on dividends received from shares within the Share ISA portfolio.\n4. UNKNOWN\n5. FALSE [correction]: Income Tax is not payable on income received from shares within the Share ISA portfolio.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The Capital Gains Tax rate varies depending on the individual's income tax band and whether the asset is residential property or other assets. In the UK, for example, the rates for individuals are 10% and 20% for assets other than residential property, and 18% and 28% for residential property, depending on the tax band. In the US, the rates can be 0%, 15%, or 20% for long-term capital gains, depending on the taxpayer's income.\n3. TRUE\n4. FALSE [correction]: The Dividend Tax rate varies depending on the individual's income tax band. In the UK, as of the last update before the knowledge cutoff in 2023, the rates are 7.5% for basic rate taxpayers, 32.5% for higher rate taxpayers, and 38.1% for additional rate taxpayers. In the US, qualified dividends are taxed at the capital gains rates of 0%, 15%, or 20%.\n5. TRUE [correction needed if specifying a country]: Income Tax is indeed payable on income received from shares, but the rate mentioned (20%) may not be accurate for all jurisdictions. For example, in the UK, the basic rate of Income Tax is 20%, but in the US, tax rates are progressive and can range from 10% to 37% for the tax year 2022. Without specific context, it's not possible to confirm the accuracy of the 20% rate mentioned.",
     "llama-7b_judge": [
+      "true",
       "false",
+      "true",
       "false",
-      "false",
-      "unknown",
-      "false"
+      "true"
     ]
   },
   {
@@ -2062,14 +1981,9 @@
     "id": 3556,
     "user_query": "What does “100% stock dividend” mean?",
     "llama-7b_response": "100% stock dividend means that the company will pay out all of its profits in the form of additional shares.",
-    "llama-7b_fact_raw": "1. A 100% stock dividend implies the company will distribute all profits as additional shares.",
-    "llama-7b_fact": [
-      "A 100% stock dividend implies the company will distribute all profits as additional shares."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3564,
@@ -2083,12 +1997,12 @@
     "id": 3589,
     "user_query": "Why would a company have 2 listings on the same exchange?",
     "llama-7b_response": "A company may have multiple listings on the same exchange if it has different classes of stock. For example, Apple Inc. has two listings on the NYSE, one for its common stock and another for its preferred stock.",
-    "llama-7b_fact_raw": "1. A company can have multiple listings on the same exchange if it has different classes of stock.\n2. Apple Inc. has two listings on the NYSE, one for its common stock and another for its preferred stock.",
+    "llama-7b_fact_raw": "1. A company can have multiple listings on the same exchange if it has different classes of stock.\n2. Apple Inc. has two listings on the NYSE.",
     "llama-7b_fact": [
       "A company can have multiple listings on the same exchange if it has different classes of stock.",
-      "Apple Inc. has two listings on the NYSE, one for its common stock and another for its preferred stock."
+      "Apple Inc. has two listings on the NYSE."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Apple Inc. does not have two listings on the NYSE for different classes of stock; it only has one listing for its common stock.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Apple Inc. does not have two listings on the NYSE; it is listed on the NASDAQ under the ticker symbol AAPL.",
     "llama-7b_judge": [
       "true",
       "false"
@@ -2106,38 +2020,31 @@
     "id": 3607,
     "user_query": "What does it mean “sell on ask” , “sell on bid” in stocks?",
     "llama-7b_response": "Sell on ask means that you sell your stock at the price that is asked by the buyer. Sell on bid means that you sell your stock at the price that is offered by the buyer.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. \"Sell on ask\" refers to selling stock at the price asked by the buyer.\n2. \"Sell on bid\" refers to selling stock at the price offered by the buyer.",
+    "llama-7b_fact": [
+      "\"Sell on ask\" refers to selling stock at the price asked by the buyer.",
+      "\"Sell on bid\" refers to selling stock at the price offered by the buyer."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: \"Sell on ask\" refers to selling stock at the price asked by the seller, not the buyer.\n2. TRUE",
+    "llama-7b_judge": [
+      "false",
+      "true"
+    ]
   },
   {
     "id": 3632,
     "user_query": "How does a public company issue new shares without diluting the value held by existing shareholders?",
     "llama-7b_response": "A public company can issue new shares by selling them to investors. The company will receive money from the sale of the shares, and the existing shareholders will own a smaller percentage of the company.",
-    "llama-7b_fact_raw": "1. A public company can issue new shares by selling them to investors.\n2. Selling new shares provides the company with additional funds.\n3. After new shares are issued, existing shareholders own a smaller percentage of the company.",
-    "llama-7b_fact": [
-      "A public company can issue new shares by selling them to investors.",
-      "Selling new shares provides the company with additional funds.",
-      "After new shares are issued, existing shareholders own a smaller percentage of the company."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
-    "llama-7b_judge": [
-      "true",
-      "true",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3633,
     "user_query": "What is an exercise price in regards to restricted stock awards?",
     "llama-7b_response": "An exercise price in regards to restricted stock awards is the price at which the stock can be bought or sold.",
-    "llama-7b_fact_raw": "1. The exercise price is the price at which restricted stock awards can be bought or sold.",
-    "llama-7b_fact": [
-      "The exercise price is the price at which restricted stock awards can be bought or sold."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The exercise price is the price at which an option can be exercised, not restricted stock awards. Restricted stock awards do not have an exercise price as they are typically granted to employees without a cost to purchase.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   }
 ]

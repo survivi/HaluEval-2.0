@@ -19,13 +19,15 @@
     "id": 81,
     "user_query": "List the releases of JASPAR database",
     "llama-7b_response": "The JASPAR database was first released in 2008. Since then, it has been updated several times. The latest version is 1.0, which was released in 2018.",
-    "llama-7b_fact_raw": "1. The JASPAR database was first released in 2008.\n2. The latest version of the JASPAR database, 1.0, was released in 2018.",
+    "llama-7b_fact_raw": "1. The JASPAR database was first released in 2008.\n2. The latest version of the JASPAR database is 1.0.\n3. The version 1.0 of the JASPAR database was released in 2018.",
     "llama-7b_fact": [
       "The JASPAR database was first released in 2008.",
-      "The latest version of the JASPAR database, 1.0, was released in 2018."
+      "The latest version of the JASPAR database is 1.0.",
+      "The version 1.0 of the JASPAR database was released in 2018."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The JASPAR database was first released in 2004.\n2. FALSE [correction]: The latest version of the JASPAR database is not 1.0, and the release year mentioned is incorrect. The latest version, JASPAR 2020, was released in 2020.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The JASPAR database was first released in 2004.\n2. FALSE [correction]: The latest version of the JASPAR database is not 1.0; JASPAR has had several updates since its initial release, and the version numbers are higher than 1.0.\n3. FALSE [correction]: Since the JASPAR database was first released in 2004 and has had several updates, version 1.0 would not have been released in 2018. The exact version released in 2018 would depend on the update cycle of the database, but it would be higher than 1.0.",
     "llama-7b_judge": [
+      "false",
       "false",
       "false"
     ]
@@ -34,12 +36,12 @@
     "id": 99,
     "user_query": "What is the function of the viral KP4 protein?",
     "llama-7b_response": "The viral KP4 protein is a transcriptional activator.",
-    "llama-7b_fact_raw": "1. The KP4 protein is a viral protein.\n2. The function of the KP4 protein is to act as a transcriptional activator.",
+    "llama-7b_fact_raw": "1. The KP4 protein is a viral protein.\n2. The function of the KP4 protein is as a transcriptional activator.",
     "llama-7b_fact": [
       "The KP4 protein is a viral protein.",
-      "The function of the KP4 protein is to act as a transcriptional activator."
+      "The function of the KP4 protein is as a transcriptional activator."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The function of the KP4 protein is to protect plants from fungal pathogens by inhibiting fungal growth.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The KP4 protein is a fungal toxin from Ustilago maydis that inhibits plant defense mechanisms and fungal competitors. It is not known to function as a transcriptional activator.",
     "llama-7b_judge": [
       "true",
       "false"
@@ -57,11 +59,11 @@
     "id": 144,
     "user_query": "What is the COUGER tool?",
     "llama-7b_response": "The COUGER tool is a tool used to extract information from a database.",
-    "llama-7b_fact_raw": "1. The COUGER tool is used for information extraction from a database.",
+    "llama-7b_fact_raw": "1. The COUGER tool is used to extract information from a database.",
     "llama-7b_fact": [
-      "The COUGER tool is used for information extraction from a database."
+      "The COUGER tool is used to extract information from a database."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: The statement is vague because \"COUGER\" is not a widely recognized acronym or tool for database information extraction. Without additional context or clarification on what \"COUGER\" refers to, it is not possible to determine the truthfulness of the statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -70,9 +72,14 @@
     "id": 145,
     "user_query": "Are there drugs for Tick-borne Encephalitis?",
     "llama-7b_response": "There are no drugs for Tick-borne Encephalitis.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. There are no drugs for Tick-borne Encephalitis.",
+    "llama-7b_fact": [
+      "There are no drugs for Tick-borne Encephalitis."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: There are vaccines available for Tick-borne Encephalitis, but there are no specific antiviral treatments once the disease is contracted. Symptomatic treatment is provided.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 151,
@@ -111,9 +118,9 @@
     "id": 210,
     "user_query": "Which protein has been found to interact with phospholamban (PLN) and is also an anti-apoptotic protein?",
     "llama-7b_response": "The protein that has been found to interact with phospholamban (PLN) and is also an anti-apoptotic protein is Bcl-2.",
-    "llama-7b_fact_raw": "1. Bcl-2 interacts with phospholamban (PLN).\n2. Bcl-2 is an anti-apoptotic protein.",
+    "llama-7b_fact_raw": "1. Bcl-2 is a protein that interacts with phospholamban (PLN).\n2. Bcl-2 is an anti-apoptotic protein.",
     "llama-7b_fact": [
-      "Bcl-2 interacts with phospholamban (PLN).",
+      "Bcl-2 is a protein that interacts with phospholamban (PLN).",
       "Bcl-2 is an anti-apoptotic protein."
     ],
     "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE",
@@ -126,9 +133,9 @@
     "id": 218,
     "user_query": "Has vitamin D has been shown to reduce incidence of falls in older people in clinical trials?",
     "llama-7b_response": "Vitamin D has been shown to reduce incidence of falls in older people in clinical trials.",
-    "llama-7b_fact_raw": "1. Vitamin D reduces the incidence of falls in older people, according to clinical trials.",
+    "llama-7b_fact_raw": "1. Vitamin D has been shown to reduce the incidence of falls in older people in clinical trials.",
     "llama-7b_fact": [
-      "Vitamin D reduces the incidence of falls in older people, according to clinical trials."
+      "Vitamin D has been shown to reduce the incidence of falls in older people in clinical trials."
     ],
     "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
@@ -151,7 +158,7 @@
     "llama-7b_fact": [
       "The human hoxD cluster contains 5 genes."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The human hoxD cluster contains 9 genes.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The human HOXD cluster contains 9 genes.",
     "llama-7b_judge": [
       "false"
     ]
@@ -160,9 +167,16 @@
     "id": 268,
     "user_query": "List phosphorylation consensus motifs for Casein Kinase 1 (CK1)?",
     "llama-7b_response": "Phosphorylation consensus motifs for Casein Kinase 1 (CK1) are as follows:\n- Casein Kinase 1 (CK1) phosphorylates Ser/Thr residues.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Casein Kinase 1 (CK1) phosphorylates Serine (Ser) residues.\n2. Casein Kinase 1 (CK1) phosphorylates Threonine (Thr) residues.",
+    "llama-7b_fact": [
+      "Casein Kinase 1 (CK1) phosphorylates Serine (Ser) residues.",
+      "Casein Kinase 1 (CK1) phosphorylates Threonine (Thr) residues."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge": [
+      "true",
+      "true"
+    ]
   },
   {
     "id": 305,
@@ -201,7 +215,7 @@
     "llama-7b_fact": [
       "There is no linker histone in the yeast genome."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Yeast does have linker histones, specifically Hho1p is the linker histone in the yeast Saccharomyces cerevisiae.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Yeast does have linker histones, but they are not as abundant or as well-conserved as those in higher eukaryotes. The most studied linker histone in yeast is Hho1p.",
     "llama-7b_judge": [
       "false"
     ]
@@ -295,30 +309,35 @@
     "id": 721,
     "user_query": "List clinical trials for prevention of sarcopenia",
     "llama-7b_response": "There are currently no clinical trials for prevention of sarcopenia.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. There are currently no clinical trials for the prevention of sarcopenia.",
+    "llama-7b_fact": [
+      "There are currently no clinical trials for the prevention of sarcopenia."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: There are clinical trials for the prevention and treatment of sarcopenia. As of my knowledge cutoff in 2023, various clinical trials have been conducted or are ongoing to explore different interventions for sarcopenia, including exercise, nutritional supplementation, and pharmaceuticals.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 722,
     "user_query": "Which is the database of molecular recognition features in membrane proteins?",
     "llama-7b_response": "The database of molecular recognition features in membrane proteins is PDB.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. PDB is a database of molecular recognition features in membrane proteins.",
+    "llama-7b_fact": [
+      "PDB is a database of molecular recognition features in membrane proteins."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: PDB stands for Protein Data Bank, and it is a database of three-dimensional structural data of large biological molecules, such as proteins and nucleic acids, not exclusively membrane proteins or molecular recognition features.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 745,
     "user_query": "Is rivaroxaban metabolized in kidneys?",
     "llama-7b_response": "Yes, rivaroxaban is metabolized in kidneys.",
-    "llama-7b_fact_raw": "1. Rivaroxaban is metabolized in kidneys.",
-    "llama-7b_fact": [
-      "Rivaroxaban is metabolized in kidneys."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Rivaroxaban is primarily metabolized in the liver.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 763,
@@ -332,21 +351,21 @@
     "id": 786,
     "user_query": "List available biomedical question answering systems.",
     "llama-7b_response": "There are several biomedical question answering systems available. For example, the Clinical Question Answering System (CQAS) is an AI-based system that can answer questions about diseases, treatments, and drugs. It is trained on a large dataset of clinical text and can provide detailed answers to questions. Another example is the Biomedical Text Analysis and Retrieval System (BioTARS), which is an AI-based system that can answer questions about diseases, treatments, and drugs. It is trained on a large dataset of biomedical text and can provide detailed answers to questions.",
-    "llama-7b_fact_raw": "1. The Clinical Question Answering System (CQAS) is a biomedical question answering system.\n2. CQAS is an AI-based system that answers questions about diseases, treatments, and drugs.\n3. CQAS is trained on a large dataset of clinical text.\n4. The Biomedical Text Analysis and Retrieval System (BioTARS) is a biomedical question answering system.\n5. BioTARS is trained on a large dataset of biomedical text.",
+    "llama-7b_fact_raw": "1. The Clinical Question Answering System (CQAS) is a biomedical question answering system.\n2. CQAS can answer questions about diseases, treatments, and drugs.\n3. CQAS is trained on a large dataset of clinical text.\n4. The Biomedical Text Analysis and Retrieval System (BioTARS) is a biomedical question answering system.\n5. BioTARS is trained on a large dataset of biomedical text.",
     "llama-7b_fact": [
       "The Clinical Question Answering System (CQAS) is a biomedical question answering system.",
-      "CQAS is an AI-based system that answers questions about diseases, treatments, and drugs.",
+      "CQAS can answer questions about diseases, treatments, and drugs.",
       "CQAS is trained on a large dataset of clinical text.",
       "The Biomedical Text Analysis and Retrieval System (BioTARS) is a biomedical question answering system.",
       "BioTARS is trained on a large dataset of biomedical text."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The Biomedical Text Analysis and Retrieval System (BioTARS) is a biomedical text analysis and retrieval system, not a question answering system.\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
     "llama-7b_judge": [
       "true",
       "true",
       "true",
-      "false",
-      "true"
+      "unknown",
+      "unknown"
     ]
   },
   {
@@ -357,7 +376,7 @@
     "llama-7b_fact": [
       "The transcription factor Nrf2 activates the betalain pathway."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nThe statement provided is very specific and relates to molecular biology. Without the proper context or a reliable source, it's not possible to determine the accuracy of the claim that the transcription factor Nrf2 activates the betalain pathway. Betalains are a class of red and yellow indole-derived pigments found in plants of the Caryophyllales, and Nrf2 is a transcription factor known to regulate the expression of antioxidant proteins that protect against oxidative damage triggered by injury and inflammation. However, the direct relationship between Nrf2 and the betalain pathway would require specific scientific evidence to confirm.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -382,9 +401,14 @@
     "id": 905,
     "user_query": "Are viruses involved in the etiology of human subacute thyroiditis?",
     "llama-7b_response": "Viruses are not involved in the etiology of human subacute thyroiditis.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Viruses are not involved in the etiology of human subacute thyroiditis.",
+    "llama-7b_fact": [
+      "Viruses are not involved in the etiology of human subacute thyroiditis."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: Viruses are believed to be involved in the etiology of some cases of human subacute thyroiditis, also known as subacute granulomatous thyroiditis or De Quervain's thyroiditis.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 963,
@@ -398,31 +422,31 @@
     "id": 973,
     "user_query": "Describe what is the usage of the Theatre software tool for genomic analysis.",
     "llama-7b_response": "The Theatre software tool is used for genomic analysis. It allows users to visualize and analyze large datasets of genomic information. The software can be used to identify patterns in the data, find correlations between different regions of the genome, and discover new genes.",
-    "llama-7b_fact_raw": "1. The Theatre software tool is used for genomic analysis.\n2. It enables users to visualize large datasets of genomic information.\n3. The software allows users to identify patterns in genomic data.\n4. Users can find correlations between different regions of the genome using the Theatre software tool.\n5. The software can be utilized to discover new genes.",
+    "llama-7b_fact_raw": "1. The Theatre software tool is used for genomic analysis.\n2. It enables users to visualize large datasets of genomic information.\n3. The software can be used to identify patterns in genomic data.\n4. Users can find correlations between different regions of the genome using Theatre.\n5. The software can be utilized to discover new genes.",
     "llama-7b_fact": [
       "The Theatre software tool is used for genomic analysis.",
       "It enables users to visualize large datasets of genomic information.",
-      "The software allows users to identify patterns in genomic data.",
-      "Users can find correlations between different regions of the genome using the Theatre software tool.",
+      "The software can be used to identify patterns in genomic data.",
+      "Users can find correlations between different regions of the genome using Theatre.",
       "The software can be utilized to discover new genes."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nWithout specific information about a software tool named \"Theatre\" and its capabilities, it is not possible to determine the truthfulness of these statements. The statements seem plausible for a genomic analysis tool, but without confirmation that a tool named \"Theatre\" exists and has these capabilities, the truthfulness of each statement cannot be verified.",
     "llama-7b_judge": [
       "unknown",
-      "true",
-      "true",
-      "true",
-      "true"
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
     ]
   },
   {
     "id": 997,
     "user_query": "Which  is the execution time (complexity) of the Smith-Waterman algorithm for the alignment of two sequences",
     "llama-7b_response": "The Smith-Waterman algorithm has a time complexity of O(m*n), where m and n are the lengths of the two sequences.",
-    "llama-7b_fact_raw": "1. The Smith-Waterman algorithm has a time complexity of O(m*n).\n2. Time complexity is calculated based on the lengths of the two sequences being aligned.",
+    "llama-7b_fact_raw": "1. The Smith-Waterman algorithm has a time complexity of O(m*n).\n2. The time complexity of the Smith-Waterman algorithm depends on the lengths of the two sequences being aligned.",
     "llama-7b_fact": [
       "The Smith-Waterman algorithm has a time complexity of O(m*n).",
-      "Time complexity is calculated based on the lengths of the two sequences being aligned."
+      "The time complexity of the Smith-Waterman algorithm depends on the lengths of the two sequences being aligned."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
@@ -450,11 +474,11 @@
     "id": 1072,
     "user_query": "What is the outcome of TAF10 interacting with the GATA1 transcription factor?",
     "llama-7b_response": "The outcome of TAF10 interacting with the GATA1 transcription factor is the activation of gene expression.",
-    "llama-7b_fact_raw": "1. TAF10 interaction with the GATA1 transcription factor activates gene expression.",
+    "llama-7b_fact_raw": "1. TAF10 interaction with the GATA1 transcription factor results in the activation of gene expression.",
     "llama-7b_fact": [
-      "TAF10 interaction with the GATA1 transcription factor activates gene expression."
+      "TAF10 interaction with the GATA1 transcription factor results in the activation of gene expression."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nThe statement about TAF10 interaction with the GATA1 transcription factor resulting in the activation of gene expression is very specific and would require access to scientific literature or specific knowledge in molecular biology to confirm. Without the context of the passage or additional information, it's not possible to determine the truthfulness of this statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -471,14 +495,12 @@
     "id": 1149,
     "user_query": "Which is the subcellular localization of the protein angiogenin?",
     "llama-7b_response": "The protein angiogenin is found in the nucleus.",
-    "llama-7b_fact_raw": "1. Angiogenin is a protein.\n2. Angiogenin is located in the nucleus of a cell.",
+    "llama-7b_fact_raw": "1. Angiogenin is localized in the nucleus of the cell.",
     "llama-7b_fact": [
-      "Angiogenin is a protein.",
-      "Angiogenin is located in the nucleus of a cell."
+      "Angiogenin is localized in the nucleus of the cell."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n\nAngiogenin is indeed known to localize in the nucleus of the cell, where it can play a role in the process of angiogenesis by stimulating the production of rRNA and activating cell proliferation. However, it should be noted that angiogenin can also be found in other parts of the cell and is not exclusively localized to the nucleus.",
     "llama-7b_judge": [
-      "true",
       "true"
     ]
   },
@@ -486,20 +508,20 @@
     "id": 1161,
     "user_query": "How does ranolazine affect kinase signaling activation in the heart?",
     "llama-7b_response": "Ranolazine is a novel antianginal agent that blocks the late phase of the cardiac action potential and slows conduction in the heart. It does so by inhibiting the voltage-gated potassium channel Kv1.5. This leads to a decrease in the amount of calcium released from the sarcoplasmic reticulum, which in turn reduces the amount of protein kinase activation.",
-    "llama-7b_fact_raw": "1. Ranolazine blocks the late phase of the cardiac action potential.\n2. Ranolazine slows conduction in the heart.\n3. Ranolazine inhibits the voltage-gated potassium channel Kv1.5.\n4. Inhibition of Kv1.5 leads to a decrease in the amount of calcium released from the sarcoplasmic reticulum.\n5. Reduced calcium release from the sarcoplasmic reticulum decreases protein kinase activation.",
+    "llama-7b_fact_raw": "1. Ranolazine blocks the late phase of the cardiac action potential.\n2. Ranolazine slows conduction in the heart.\n3. Ranolazine inhibits the voltage-gated potassium channel Kv1.5.\n4. Inhibition of Kv1.5 by ranolazine leads to a decrease in the amount of calcium released from the sarcoplasmic reticulum.\n5. The reduction in calcium release from the sarcoplasmic reticulum leads to a decrease in protein kinase activation.",
     "llama-7b_fact": [
       "Ranolazine blocks the late phase of the cardiac action potential.",
       "Ranolazine slows conduction in the heart.",
       "Ranolazine inhibits the voltage-gated potassium channel Kv1.5.",
-      "Inhibition of Kv1.5 leads to a decrease in the amount of calcium released from the sarcoplasmic reticulum.",
-      "Reduced calcium release from the sarcoplasmic reticulum decreases protein kinase activation."
+      "Inhibition of Kv1.5 by ranolazine leads to a decrease in the amount of calcium released from the sarcoplasmic reticulum.",
+      "The reduction in calcium release from the sarcoplasmic reticulum leads to a decrease in protein kinase activation."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Ranolazine inhibits the voltage-gated sodium channel NaV1.5. \n4. TRUE\n5. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Ranolazine does not slow conduction in the heart; it primarily affects the late sodium current without significantly affecting heart rate or conduction.\n3. FALSE [correction]: Ranolazine inhibits the late sodium current (INa), not the voltage-gated potassium channel Kv1.5.\n4. FALSE [correction]: Inhibition of the late sodium current by ranolazine leads to a decrease in intracellular sodium, which indirectly reduces calcium overload by improving the function of the sodium-calcium exchanger, not by directly affecting the amount of calcium released from the sarcoplasmic reticulum.\n5. UNKNOWN",
     "llama-7b_judge": [
       "true",
-      "true",
       "false",
-      "true",
+      "false",
+      "false",
       "unknown"
     ]
   },
@@ -507,32 +529,27 @@
     "id": 1225,
     "user_query": "Is the regulation of Vsr endonuclease independent of the growth phase of bacteria?",
     "llama-7b_response": "Yes, the regulation of Vsr endonuclease is independent of the growth phase of bacteria.",
-    "llama-7b_fact_raw": "1. The regulation of Vsr endonuclease is independent of the growth phase of bacteria.",
-    "llama-7b_fact": [
-      "The regulation of Vsr endonuclease is independent of the growth phase of bacteria."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1233,
     "user_query": "What are the computational tools for the prediction of beta-barrel transmembrane proteins?",
     "llama-7b_response": "The computational tools for the prediction of beta-barrel transmembrane proteins are as follows:\n- TMHMM (Kosugi et al., 2002)\n- beta-Barrel (Lupas et al., 1991)\n- PSIPRED (Sali and Blundell, 1993)\n- Beta-Barrel Predictor (Lupas et al., 2005)",
-    "llama-7b_fact_raw": "1. TMHMM is a computational tool for predicting beta-barrel transmembrane proteins.\n2. beta-Barrel is a computational tool created by Lupas et al. in 1991.\n3. PSIPRED is a computational tool developed by Sali and Blundell in 1993.\n4. Beta-Barrel Predictor is a computational tool created by Lupas et al. in 2005.",
+    "llama-7b_fact_raw": "1. TMHMM is a computational tool for the prediction of beta-barrel transmembrane proteins, referenced by Kosugi et al. in 2002.\n2. beta-Barrel is a computational tool for the prediction of beta-barrel transmembrane proteins, referenced by Lupas et al. in 1991.\n3. PSIPRED is a computational tool for the prediction of beta-barrel transmembrane proteins, referenced by Sali and Blundell in 1993.\n4. Beta-Barrel Predictor is a computational tool for the prediction of beta-barrel transmembrane proteins, referenced by Lupas et al. in 2005.",
     "llama-7b_fact": [
-      "TMHMM is a computational tool for predicting beta-barrel transmembrane proteins.",
-      "beta-Barrel is a computational tool created by Lupas et al. in 1991.",
-      "PSIPRED is a computational tool developed by Sali and Blundell in 1993.",
-      "Beta-Barrel Predictor is a computational tool created by Lupas et al. in 2005."
+      "TMHMM is a computational tool for the prediction of beta-barrel transmembrane proteins, referenced by Kosugi et al. in 2002.",
+      "beta-Barrel is a computational tool for the prediction of beta-barrel transmembrane proteins, referenced by Lupas et al. in 1991.",
+      "PSIPRED is a computational tool for the prediction of beta-barrel transmembrane proteins, referenced by Sali and Blundell in 1993.",
+      "Beta-Barrel Predictor is a computational tool for the prediction of beta-barrel transmembrane proteins, referenced by Lupas et al. in 2005."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: TMHMM is a computational tool for predicting alpha-helical transmembrane proteins.\n2. FALSE [correction]: Lupas et al. created the COILS computational tool for predicting coiled-coil regions of proteins in 1991.\n3. FALSE [correction]: PSIPRED is a computational tool developed by David Jones in 1999 for protein structure prediction.\n4. FALSE [correction]: Beta-Barrel Predictor is not a specific computational tool; Lupas et al. developed the TMBETA-NET computational tool for predicting beta-barrel transmembrane proteins in 2004.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: TMHMM is a computational tool for the prediction of alpha-helical transmembrane proteins, not beta-barrel transmembrane proteins.\n2. UNKNOWN: The statement is vague because \"beta-Barrel\" is not a recognized name of a specific computational tool. Additionally, Lupas et al. in 1991 did work related to coiled-coil structures, not specifically on a tool named \"beta-Barrel\" for predicting beta-barrel transmembrane proteins.\n3. FALSE [correction]: PSIPRED is a computational tool for the prediction of secondary structures of proteins, including alpha-helices and beta-strands, but it is not specifically for the prediction of beta-barrel transmembrane proteins. It was referenced by Jones in 1999, not Sali and Blundell in 1993.\n4. UNKNOWN: The statement is vague because \"Beta-Barrel Predictor\" is not a well-known specific computational tool, and there is no clear reference to a tool with this exact name being referenced by Lupas et al. in 2005. Lupas has done significant work on beta-barrel proteins, but without more information, the accuracy of this statement cannot be determined.",
     "llama-7b_judge": [
       "false",
+      "unknown",
       "false",
-      "false",
-      "false"
+      "unknown"
     ]
   },
   {
@@ -547,30 +564,30 @@
     "id": 1304,
     "user_query": "List common features of Shapiro syndrome",
     "llama-7b_response": "Shapiro syndrome is a rare genetic disorder that affects the body's ability to process protein, carbohydrates, and fats. It is characterized by short stature, intellectual disability, distinctive facial features, and an increased risk of developing certain medical conditions such as diabetes, obesity, and heart disease. Other features may include delayed puberty, hearing loss, and behavioral problems.",
-    "llama-7b_fact_raw": "1. Shapiro syndrome is a rare genetic disorder.\n2. It affects the body's ability to process protein, carbohydrates, and fats.\n3. Common features of Shapiro syndrome include short stature and intellectual disability.\n4. Those with Shapiro syndrome have distinctive facial features.\n5. Shapiro syndrome is associated with an increased risk of diabetes, obesity, and heart disease.",
+    "llama-7b_fact_raw": "1. Shapiro syndrome is a rare genetic disorder.\n2. It affects the body's ability to process protein, carbohydrates, and fats.\n3. Common features of Shapiro syndrome include short stature and intellectual disability.\n4. Individuals with Shapiro syndrome have an increased risk of developing diabetes, obesity, and heart disease.\n5. Other features of Shapiro syndrome may include delayed puberty and hearing loss.",
     "llama-7b_fact": [
       "Shapiro syndrome is a rare genetic disorder.",
       "It affects the body's ability to process protein, carbohydrates, and fats.",
       "Common features of Shapiro syndrome include short stature and intellectual disability.",
-      "Those with Shapiro syndrome have distinctive facial features.",
-      "Shapiro syndrome is associated with an increased risk of diabetes, obesity, and heart disease."
+      "Individuals with Shapiro syndrome have an increased risk of developing diabetes, obesity, and heart disease.",
+      "Other features of Shapiro syndrome may include delayed puberty and hearing loss."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Shapiro syndrome is not related to the body's ability to process protein, carbohydrates, and fats; it is characterized by spontaneous periodic hypothermia and hyperhidrosis.\n3. FALSE [correction]: Common features of Shapiro syndrome do not typically include short stature and intellectual disability; they include agenesis of the corpus callosum, which can lead to developmental delays and other neurological symptoms.\n4. UNKNOWN\n5. FALSE [correction]: Shapiro syndrome is not associated with an increased risk of diabetes, obesity, and heart disease.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Shapiro syndrome is characterized by the triad of recurrent spontaneous hypothermia, hyperhidrosis, and agenesis of the corpus callosum; it does not specifically affect the body's ability to process protein, carbohydrates, and fats.\n3. FALSE [correction]: Common features of Shapiro syndrome do not typically include short stature and intellectual disability; instead, they are recurrent hypothermia and hyperhidrosis, often with agenesis of the corpus callosum.\n4. FALSE [correction]: There is no direct association of Shapiro syndrome with an increased risk of developing diabetes, obesity, and heart disease as part of its typical clinical presentation.\n5. UNKNOWN",
     "llama-7b_judge": [
       "true",
       "false",
       "false",
-      "unknown",
-      "false"
+      "false",
+      "unknown"
     ]
   },
   {
     "id": 1320,
     "user_query": "Which disease is linked to mutations within BRAG1?",
     "llama-7b_response": "BRAG1 is linked to cancer.",
-    "llama-7b_fact_raw": "1. BRAG1 mutations are linked to cancer.",
+    "llama-7b_fact_raw": "1. Mutations within BRAG1 are linked to cancer.",
     "llama-7b_fact": [
-      "BRAG1 mutations are linked to cancer."
+      "Mutations within BRAG1 are linked to cancer."
     ],
     "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
@@ -593,9 +610,9 @@
     "llama-7b_fact": [
       "Stationary-phase mutagenesis in Bacillus subtilis is mediated by the SOS response."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Stationary-phase mutagenesis in Bacillus subtilis is not mediated by the SOS response, which is a regulatory network in Escherichia coli and some other bacteria. Bacillus subtilis has a different system for DNA repair and mutagenesis during the stationary phase.",
     "llama-7b_judge": [
-      "true"
+      "false"
     ]
   },
   {
@@ -627,21 +644,21 @@
     "llama-7b_fact": [
       "Silicon has been used in the treatment of incontinence."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or information, it is not possible to determine the accuracy of the statement regarding the use of silicon in the treatment of incontinence. Silicon could refer to a variety of products or treatments, and its application in medical treatments can be diverse. More specific information would be needed to assess the truthfulness of this statement.",
     "llama-7b_judge": [
-      "true"
+      "unknown"
     ]
   },
   {
     "id": 1454,
     "user_query": "What is the association between moon cycle and rupture risk of intracranial aneurysms?",
     "llama-7b_response": "The association between moon cycle and rupture risk of intracranial aneurysms is not well understood. Some studies have shown that the risk of rupture increases during the waxing phase of the moon cycle, while others have shown no correlation.",
-    "llama-7b_fact_raw": "1. Some studies indicate an increased risk of rupture of intracranial aneurysms during the waxing phase of the moon cycle.\n2. Other studies have shown no correlation between the moon cycle and rupture risk of intracranial aneurysms.",
+    "llama-7b_fact_raw": "1. Some studies have shown an increased risk of intracranial aneurysm rupture during the waxing phase of the moon cycle.\n2. Other studies have shown no correlation between the moon cycle and the risk of intracranial aneurysm rupture.",
     "llama-7b_fact": [
-      "Some studies indicate an increased risk of rupture of intracranial aneurysms during the waxing phase of the moon cycle.",
-      "Other studies have shown no correlation between the moon cycle and rupture risk of intracranial aneurysms."
+      "Some studies have shown an increased risk of intracranial aneurysm rupture during the waxing phase of the moon cycle.",
+      "Other studies have shown no correlation between the moon cycle and the risk of intracranial aneurysm rupture."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nThe statements pertain to specific scientific findings, and without access to the actual studies or a broader consensus in the scientific community, it is not possible to definitively classify these statements as true or false. The relationship between the moon cycle and medical conditions can be a topic of research, but the veracity of these statements would require specific study references to confirm.",
     "llama-7b_judge": [
       "unknown",
       "unknown"
@@ -655,7 +672,7 @@
     "llama-7b_fact": [
       "HuR protein regulates the splicing process."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: HuR protein regulates mRNA stability and translation, not splicing.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: HuR protein is primarily known for its role in regulating mRNA stability and translation, not splicing.",
     "llama-7b_judge": [
       "false"
     ]
@@ -664,13 +681,19 @@
     "id": 1492,
     "user_query": "Describe the known functions for the prothymosin alpha c-terminal peptide?",
     "llama-7b_response": "The known functions for the prothymosin alpha c-terminal peptide are:\n- It is a ligand for the receptor tyrosine kinase PDGFR.\n- It is a substrate for the protein kinase PDGFR.\n- It is a ligand for the receptor tyrosine kinase FGFR1.\n- It is a substrate for the protein kinase FGFR1.\n- It is a ligand for the receptor tyrosine kinase KDR.\n- It is a substrate for the protein kinase KDR.\n- It is a ligand for the receptor tyrosine kinase TIE2.\n- It is a substrate for the protein kinase TIE2.\n- It is a ligand for the receptor tyrosine kinase RET.\n- It is a substrate for the protein kinase RET.\n- It is a ligand for the receptor tyrosine kinase AXL.\n- It is a substrate for the protein kinase AXL.\n- It is a ligand for the receptor tyrosine kinase MET.\n- It is a substrate for the protein kinase MET.\n- It is a ligand for the receptor tyrosine kinase IGF1R.\n- It is a substrate for the protein kinase IGF1R.\n- It is a ligand for the receptor tyrosine kinase FGFR2.\n- It is a substrate for the protein kinase FGFR2.\n- It is a ligand for the receptor tyrosine kinase FGFR3.\n- It is a substrate for the protein kinase FGFR3.\n- It is a ligand for the receptor tyrosine kinase FGFR4.\n- It is a substrate for the protein kinase FGFR4.\n- It is a ligand for the receptor tyrosine kinase FGFR5.\n- It is a substrate for the protein kinase FGFR5.\n- It is a ligand for the receptor tyrosine kinase FGFR6.\n- It is a substrate for the protein kinase FGFR6.\n- It is a ligand for the receptor tyrosine",
-    "llama-7b_fact_raw": "1. Prothymosin alpha c-terminal peptide is a ligand for several receptor tyrosine kinases including PDGFR, FGFR1, KDR, TIE2, RET, AXL, MET, IGF1R, FGFR2, FGFR3, FGFR4, FGFR5, and FGFR6.\n2. It is a substrate for the same protein kinases it acts as a ligand for, including PDGFR, FGFR1, KDR, TIE2, RET, AXL, MET, IGF1R, FGFR2, FGFR3, FGFR4, FGFR5, and FGFR6.",
+    "llama-7b_fact_raw": "1. Prothymosin alpha c-terminal peptide is a ligand for the receptor tyrosine kinase PDGFR.\n2. Prothymosin alpha c-terminal peptide is a substrate for the protein kinase PDGFR.\n3. Prothymosin alpha c-terminal peptide is a ligand for the receptor tyrosine kinase FGFR1.\n4. Prothymosin alpha c-terminal peptide is a substrate for the protein kinase FGFR1.\n5. Prothymosin alpha c-terminal peptide is a ligand for the receptor tyrosine kinase KDR.",
     "llama-7b_fact": [
-      "Prothymosin alpha c-terminal peptide is a ligand for several receptor tyrosine kinases including PDGFR, FGFR1, KDR, TIE2, RET, AXL, MET, IGF1R, FGFR2, FGFR3, FGFR4, FGFR5, and FGFR6.",
-      "It is a substrate for the same protein kinases it acts as a ligand for, including PDGFR, FGFR1, KDR, TIE2, RET, AXL, MET, IGF1R, FGFR2, FGFR3, FGFR4, FGFR5, and FGFR6."
+      "Prothymosin alpha c-terminal peptide is a ligand for the receptor tyrosine kinase PDGFR.",
+      "Prothymosin alpha c-terminal peptide is a substrate for the protein kinase PDGFR.",
+      "Prothymosin alpha c-terminal peptide is a ligand for the receptor tyrosine kinase FGFR1.",
+      "Prothymosin alpha c-terminal peptide is a substrate for the protein kinase FGFR1.",
+      "Prothymosin alpha c-terminal peptide is a ligand for the receptor tyrosine kinase KDR."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nThe statements provided are very specific and pertain to molecular biology, specifically interactions between a peptide and various receptor tyrosine kinases. Without specific scientific evidence or data from reputable sources, it is not possible to determine the truthfulness of these statements. These interactions would need to be verified through scientific research, such as experimental studies or peer-reviewed publications.",
     "llama-7b_judge": [
+      "unknown",
+      "unknown",
+      "unknown",
       "unknown",
       "unknown"
     ]
@@ -687,11 +710,11 @@
     "id": 1574,
     "user_query": "Does the concentration of protein HIF-1α increase after the administration of the cytoprotective prodrug\"amifostine\" (ethyol) ?",
     "llama-7b_response": "Yes, the concentration of protein HIF-1α increases after the administration of the cytoprotective prodrug\"amifostine\" (ethyol).",
-    "llama-7b_fact_raw": "1. The concentration of protein HIF-1α increases after the administration of amifostine.",
+    "llama-7b_fact_raw": "1. The concentration of protein HIF-1α increases after the administration of the cytoprotective prodrug amifostine (ethyol).",
     "llama-7b_fact": [
-      "The concentration of protein HIF-1α increases after the administration of amifostine."
+      "The concentration of protein HIF-1α increases after the administration of the cytoprotective prodrug amifostine (ethyol)."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nThe statement regarding the concentration of protein HIF-1α (hypoxia-inducible factor 1-alpha) increasing after the administration of the cytoprotective prodrug amifostine (ethyol) is specific to pharmacology and cellular biology. Without the specific context or scientific study to reference, it is not possible to determine the truthfulness of this statement. It would require specialized knowledge or access to relevant scientific literature to verify.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -700,22 +723,9 @@
     "id": 1588,
     "user_query": "Which histone marks are deposited by Set7?",
     "llama-7b_response": "Set7 deposits the following histone marks: H3K79me2, H3K78me2, H3K77me2, H3K76me2, H3K75me2, H3K74me2, H3K73me2, H3K72me2, H3K71me2, H3K70me2, H3K69me2, H3K68me2, H3K67me2, H3K66me2, H3K65me2, H3K64me2, H3K63me2, H3K62me2, H3K61me2, H3K60me2, H3K59me2, H3K58me2, H3K57me2, H3K56me2, H3K55me2, H3K54me2, H3K53me2, H3K52me2, H3K51me2, H3K50me2, H3K49me2, H3K48me2, H3K47me2, H3K46me2, H3K45me2, H3K44me2, H3K43me2, H3K42me2, H3K41me2, H3K40me2, H3K39me2, H3K38me2, H3K37me2, H3K36me2, H3K35me2, H3K34me2, H3K33me2, H3K32me2, H3K31me2, H3K30me2, H3K29me2, H3K28me2, H3K27me2, H3K26me2, H3K25me2, H3K24me2, H3K23me2, H3K22me2, H3K21me2, H3K20me2, H3K19me2, H3K18me2, H3K17me",
-    "llama-7b_fact_raw": "1. Set7 deposits histone marks.\n2. One of the histone marks deposited by Set7 is H3K79me2.\n3. Another histone mark deposited by Set7 is H3K4me2.\n4. Set7 also deposits the histone mark H3K27me2.\n5. The histone mark H3K9me2 is also deposited by Set7.",
-    "llama-7b_fact": [
-      "Set7 deposits histone marks.",
-      "One of the histone marks deposited by Set7 is H3K79me2.",
-      "Another histone mark deposited by Set7 is H3K4me2.",
-      "Set7 also deposits the histone mark H3K27me2.",
-      "The histone mark H3K9me2 is also deposited by Set7."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: One of the histone marks deposited by Set7 is H3K4me1.\n3. TRUE\n4. FALSE [correction]: Set7 does not deposit the histone mark H3K27me2.\n5. FALSE [correction]: The histone mark H3K9me2 is not deposited by Set7.",
-    "llama-7b_judge": [
-      "true",
-      "false",
-      "true",
-      "false",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1620,
@@ -725,23 +735,21 @@
     "llama-7b_fact": [
       "Hepcidin has 2 disulfide bridges."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Hepcidin has 4 disulfide bridges.",
     "llama-7b_judge": [
-      "unknown"
+      "false"
     ]
   },
   {
     "id": 1643,
     "user_query": "What is the localization of the protein encoded by the gene DNAJC11?",
     "llama-7b_response": "The protein encoded by the gene DNAJC11 is localized in the endoplasmic reticulum.",
-    "llama-7b_fact_raw": "1. The gene DNAJC11 encodes a protein.\n2. The protein encoded by DNAJC11 is localized in the endoplasmic reticulum.",
+    "llama-7b_fact_raw": "1. The protein encoded by the gene DNAJC11 is localized in the endoplasmic reticulum.",
     "llama-7b_fact": [
-      "The gene DNAJC11 encodes a protein.",
-      "The protein encoded by DNAJC11 is localized in the endoplasmic reticulum."
+      "The protein encoded by the gene DNAJC11 is localized in the endoplasmic reticulum."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "true",
       "true"
     ]
   },
@@ -757,12 +765,14 @@
     "id": 1665,
     "user_query": "Which is the substrate of the haspin kinase during mitosis?",
     "llama-7b_response": "The substrate of the haspin kinase during mitosis is histone H3.",
-    "llama-7b_fact_raw": "1. Histone H3 is the substrate of the haspin kinase during mitosis.",
+    "llama-7b_fact_raw": "1. Haspin kinase has a substrate during mitosis.\n2. Histone H3 is the substrate of haspin kinase during mitosis.",
     "llama-7b_fact": [
-      "Histone H3 is the substrate of the haspin kinase during mitosis."
+      "Haspin kinase has a substrate during mitosis.",
+      "Histone H3 is the substrate of haspin kinase during mitosis."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
+      "true",
       "true"
     ]
   },
@@ -770,17 +780,19 @@
     "id": 1696,
     "user_query": "What is the mechanism of viroid replication?",
     "llama-7b_response": "Viroids are non-enveloped, single-stranded, positive-sense RNA viruses that replicate in the cytoplasm of their hosts. The mechanism of viroid replication is not well understood, but it appears to involve the formation of a replication complex consisting of the viroid RNA molecule and several host proteins.",
-    "llama-7b_fact_raw": "1. Viroids are non-enveloped, single-stranded, positive-sense RNA viruses.\n2. Viroids replicate in the cytoplasm of their hosts.\n3. The mechanism of viroid replication involves the formation of a replication complex.\n4. The replication complex consists of the viroid RNA molecule and several host proteins.",
+    "llama-7b_fact_raw": "1. Viroids are non-enveloped.\n2. Viroids consist of single-stranded, positive-sense RNA.\n3. Viroid replication occurs in the cytoplasm of their hosts.\n4. The replication of viroids involves the formation of a replication complex.\n5. The replication complex for viroids includes the viroid RNA molecule and several host proteins.",
     "llama-7b_fact": [
-      "Viroids are non-enveloped, single-stranded, positive-sense RNA viruses.",
-      "Viroids replicate in the cytoplasm of their hosts.",
-      "The mechanism of viroid replication involves the formation of a replication complex.",
-      "The replication complex consists of the viroid RNA molecule and several host proteins."
+      "Viroids are non-enveloped.",
+      "Viroids consist of single-stranded, positive-sense RNA.",
+      "Viroid replication occurs in the cytoplasm of their hosts.",
+      "The replication of viroids involves the formation of a replication complex.",
+      "The replication complex for viroids includes the viroid RNA molecule and several host proteins."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Viroids are not viruses; they are infectious agents that consist only of a short strand of circular RNA without a protein coat.\n2. TRUE\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Viroid replication typically occurs in the nucleus or chloroplast of their host cells, not in the cytoplasm.\n4. TRUE\n5. TRUE",
     "llama-7b_judge": [
-      "false",
       "true",
+      "true",
+      "false",
       "true",
       "true"
     ]
@@ -802,12 +814,12 @@
     "id": 1763,
     "user_query": "Data from which major epigenome projects are contained in the DeepBlue epigenomic data server?",
     "llama-7b_response": "The DeepBlue epigenomic data server contains data from the following major epigenome projects: \n- ENCODE (ENCyclopedia Of DNA Elements) \n- Roadmap Epigenomics \n- FANTOM5 \n- Epigenomics of Common Human Disease",
-    "llama-7b_fact_raw": "1. The DeepBlue epigenomic data server includes data from ENCODE.\n2. Data from the Roadmap Epigenomics project is contained in the DeepBlue epigenomic data server.\n3. The DeepBlue epigenomic data server contains data from FANTOM5.\n4. The Epigenomics of Common Human Disease project contributes data to the DeepBlue epigenomic data server.",
+    "llama-7b_fact_raw": "1. The DeepBlue epigenomic data server contains data from the ENCODE project.\n2. The DeepBlue epigenomic data server includes data from the Roadmap Epigenomics project.\n3. Data from the FANTOM5 project is contained in the DeepBlue epigenomic data server.\n4. The DeepBlue epigenomic data server has data from the Epigenomics of Common Human Disease project.",
     "llama-7b_fact": [
-      "The DeepBlue epigenomic data server includes data from ENCODE.",
-      "Data from the Roadmap Epigenomics project is contained in the DeepBlue epigenomic data server.",
-      "The DeepBlue epigenomic data server contains data from FANTOM5.",
-      "The Epigenomics of Common Human Disease project contributes data to the DeepBlue epigenomic data server."
+      "The DeepBlue epigenomic data server contains data from the ENCODE project.",
+      "The DeepBlue epigenomic data server includes data from the Roadmap Epigenomics project.",
+      "Data from the FANTOM5 project is contained in the DeepBlue epigenomic data server.",
+      "The DeepBlue epigenomic data server has data from the Epigenomics of Common Human Disease project."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN",
     "llama-7b_judge": [
@@ -821,9 +833,14 @@
     "id": 1792,
     "user_query": "Which tool employs self organizing maps for analyzing synonymous codon usage?",
     "llama-7b_response": "SOM",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. SOM (Self-Organizing Maps) is a tool used for analyzing synonymous codon usage.",
+    "llama-7b_fact": [
+      "SOM (Self-Organizing Maps) is a tool used for analyzing synonymous codon usage."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: SOM (Self-Organizing Maps) is a type of artificial neural network used for clustering and visualizing high-dimensional data, not specifically for analyzing synonymous codon usage. However, it can be applied to various types of data analysis, including bioinformatics, which may involve the analysis of codon usage patterns.",
+    "llama-7b_judge": [
+      "false"
+    ]
   },
   {
     "id": 1793,
@@ -863,7 +880,7 @@
       "Alport syndrome is associated with the PIEZO2 gene.",
       "Ehlers-Danlos syndrome is associated with the PIEZO2 gene."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Hereditary hemorrhagic telangiectasia (HHT) is associated with mutations in genes such as ENG, ACVRL1, and SMAD4.\n2. FALSE [correction]: Alport syndrome is associated with mutations in genes such as COL4A3, COL4A4, and COL4A5.\n3. FALSE [correction]: Ehlers-Danlos syndrome is associated with mutations in genes such as COL5A1, COL5A2, and COL3A1.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Hereditary hemorrhagic telangiectasia (HHT) is associated with mutations in genes such as ENG, ACVRL1, and SMAD4, not the PIEZO2 gene.\n2. FALSE [correction]: Alport syndrome is associated with mutations in genes like COL4A5, COL4A3, and COL4A4, not the PIEZO2 gene.\n3. FALSE [correction]: Ehlers-Danlos syndrome is associated with mutations in several genes related to collagen synthesis, such as COL5A1, COL5A2, and COL3A1, among others, not the PIEZO2 gene.",
     "llama-7b_judge": [
       "false",
       "false",
@@ -878,7 +895,7 @@
     "llama-7b_fact": [
       "ERAP1-ERAP2 dimerization is involved in the processing of exogenous retroviruses."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nThe statement about ERAP1-ERAP2 dimerization being involved in the processing of exogenous retroviruses is very specific and would require knowledge of the particular scientific research or literature that discusses this topic. Without the specific context or access to the relevant scientific studies, it is not possible to determine the truthfulness of this statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -887,63 +904,42 @@
     "id": 1890,
     "user_query": "What is the function of R-spondin 1 and noggin in non-damaged gallbladders?",
     "llama-7b_response": "R-spondin 1 and noggin are both members of the TGF-beta superfamily. They have been shown to interact with each other and form a complex that inhibits BMP signaling.",
-    "llama-7b_fact_raw": "1. R-spondin 1 is a member of the TGF-beta superfamily.\n2. Noggin is a member of the TGF-beta superfamily.\n3. R-spondin 1 and noggin have been shown to interact with each other.\n4. R-spondin 1 and noggin form a complex that inhibits BMP signaling.",
+    "llama-7b_fact_raw": "1. R-spondin 1 and noggin are members of the TGF-beta superfamily.\n2. R-spondin 1 and noggin interact with each other.\n3. R-spondin 1 and noggin form a complex that inhibits BMP signaling.",
     "llama-7b_fact": [
-      "R-spondin 1 is a member of the TGF-beta superfamily.",
-      "Noggin is a member of the TGF-beta superfamily.",
-      "R-spondin 1 and noggin have been shown to interact with each other.",
+      "R-spondin 1 and noggin are members of the TGF-beta superfamily.",
+      "R-spondin 1 and noggin interact with each other.",
       "R-spondin 1 and noggin form a complex that inhibits BMP signaling."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Noggin is not a member of the TGF-beta superfamily; it is a BMP antagonist.\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: R-spondin 1 is a member of the R-spondin family, which is not part of the TGF-beta superfamily. Noggin is a BMP antagonist and is considered part of the TGF-beta superfamily.\n2. UNKNOWN: Without specific context or additional information, it is unclear whether R-spondin 1 and noggin directly interact with each other.\n3. FALSE [correction]: Noggin is known to inhibit BMP signaling by binding to BMPs, but there is no widely recognized interaction where R-spondin 1 forms a complex with noggin to inhibit BMP signaling. R-spondin proteins typically function by interacting with LGR receptors and potentiating Wnt signaling.",
     "llama-7b_judge": [
-      "true",
       "false",
-      "true",
-      "true"
+      "unknown",
+      "false"
     ]
   },
   {
     "id": 1937,
     "user_query": "Does NADPH oxidase 5 require any subunit for function?",
     "llama-7b_response": "No, NADPH oxidase 5 does not require any subunit for function.",
-    "llama-7b_fact_raw": "1. NADPH oxidase 5 does not require any subunit for function.",
-    "llama-7b_fact": [
-      "NADPH oxidase 5 does not require any subunit for function."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1944,
     "user_query": "What is the connection between furin and hepcidin?",
     "llama-7b_response": "Furin is a protein that binds to hepcidin and prevents it from binding to its receptor.",
-    "llama-7b_fact_raw": "1. Furin is a protein.\n2. Furin binds to hepcidin.\n3. Furin prevents hepcidin from binding to its receptor.",
-    "llama-7b_fact": [
-      "Furin is a protein.",
-      "Furin binds to hepcidin.",
-      "Furin prevents hepcidin from binding to its receptor."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN",
-    "llama-7b_judge": [
-      "true",
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1956,
     "user_query": "Which is the largest metabolic gene cluster in yeast?",
     "llama-7b_response": "The largest metabolic gene cluster in yeast is the TCA cycle.",
-    "llama-7b_fact_raw": "1. The largest metabolic gene cluster in yeast is the TCA cycle.",
-    "llama-7b_fact": [
-      "The largest metabolic gene cluster in yeast is the TCA cycle."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The largest metabolic gene cluster in yeast is typically the ergosterol biosynthesis pathway.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1967,
@@ -953,7 +949,7 @@
     "llama-7b_fact": [
       "LIMT lncRNA regulates the expression of its target genes."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nThe statement is too vague without specific context or a reference to a particular study or scientific finding. LIMT (LncRNA Inhibiting Metastasis) is a type of long non-coding RNA, and while some lncRNAs are known to regulate gene expression, without specific information about LIMT lncRNA's function or the results of a particular study, it's not possible to determine the truth of this statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -962,26 +958,21 @@
     "id": 1984,
     "user_query": "Which R / bioconductor package is used for performing SNP enrichment analysis?",
     "llama-7b_response": "The package used for performing SNP enrichment analysis is called \"enrichr\".",
-    "llama-7b_fact_raw": "1. The package \"enrichr\" is used for performing SNP enrichment analysis.",
-    "llama-7b_fact": [
-      "The package \"enrichr\" is used for performing SNP enrichment analysis."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The package \"enrichr\" is used for gene-set enrichment analysis.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2015,
     "user_query": "Which are the key players on radial glial specification to ependymal cells?",
     "llama-7b_response": "The key players on radial glial specification to ependymal cells are Sonic hedgehog (Shh), Indian hedgehog (Ihh), and Notch.",
-    "llama-7b_fact_raw": "1. Sonic hedgehog (Shh) is a key player in the specification of radial glial to ependymal cells.\n2. Indian hedgehog (Ihh) is also a key player in the specification of radial glial to ependymal cells.\n3. Notch is a key player in the specification of radial glial to ependymal cells.",
+    "llama-7b_fact_raw": "1. Sonic hedgehog (Shh) is a key player in radial glial specification to ependymal cells.\n2. Indian hedgehog (Ihh) is involved in the specification of radial glia to ependymal cells.\n3. Notch signaling plays a role in the differentiation of radial glia into ependymal cells.",
     "llama-7b_fact": [
-      "Sonic hedgehog (Shh) is a key player in the specification of radial glial to ependymal cells.",
-      "Indian hedgehog (Ihh) is also a key player in the specification of radial glial to ependymal cells.",
-      "Notch is a key player in the specification of radial glial to ependymal cells."
+      "Sonic hedgehog (Shh) is a key player in radial glial specification to ependymal cells.",
+      "Indian hedgehog (Ihh) is involved in the specification of radial glia to ependymal cells.",
+      "Notch signaling plays a role in the differentiation of radial glia into ependymal cells."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Indian hedgehog (Ihh) is not specifically known for its role in the specification of radial glial to ependymal cells.\n3. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Indian hedgehog (Ihh) is not primarily known for the specification of radial glia to ependymal cells. It is involved in other developmental processes such as endochondral ossification.\n3. TRUE",
     "llama-7b_judge": [
       "true",
       "false",
@@ -992,17 +983,17 @@
     "id": 2065,
     "user_query": "How are triple negative gliomas characterized?",
     "llama-7b_response": "Triple negative gliomas are characterized by the absence of estrogen and progesterone receptors, as well as human epidermal growth factor receptor 2 (HER2).",
-    "llama-7b_fact_raw": "1. Triple negative gliomas lack estrogen receptors.\n2. Triple negative gliomas lack progesterone receptors.\n3. Triple negative gliomas lack human epidermal growth factor receptor 2 (HER2).",
+    "llama-7b_fact_raw": "1. Triple negative gliomas lack estrogen receptors.\n2. Triple negative gliomas lack progesterone receptors.\n3. Triple negative gliomas do not have human epidermal growth factor receptor 2 (HER2).",
     "llama-7b_fact": [
       "Triple negative gliomas lack estrogen receptors.",
       "Triple negative gliomas lack progesterone receptors.",
-      "Triple negative gliomas lack human epidermal growth factor receptor 2 (HER2)."
+      "Triple negative gliomas do not have human epidermal growth factor receptor 2 (HER2)."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The term \"triple negative\" is typically used in the context of breast cancer, not gliomas. Triple negative breast cancers lack estrogen receptors, progesterone receptors, and do not have excess HER2 protein.\n2. FALSE [correction]: Same as above, the term \"triple negative\" refers to breast cancer. Gliomas are a type of brain tumor and are not classified by these receptors.\n3. FALSE [correction]: Again, the term \"triple negative\" is associated with breast cancer. Gliomas are not typically characterized by the presence or absence of HER2, as this is a marker used for breast cancer subtyping.",
     "llama-7b_judge": [
-      "true",
-      "true",
-      "true"
+      "false",
+      "false",
+      "false"
     ]
   },
   {
@@ -1013,31 +1004,31 @@
     "llama-7b_fact": [
       "TOPAZ1 is a cryptographic algorithm."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
-      "true"
+      "unknown"
     ]
   },
   {
     "id": 2075,
     "user_query": "Which gene controls the expression of GATA-1 isoforms?",
     "llama-7b_response": "The gene that controls the expression of GATA-1 isoforms is GATA-1.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. The GATA-1 gene controls the expression of GATA-1 isoforms.",
+    "llama-7b_fact": [
+      "The GATA-1 gene controls the expression of GATA-1 isoforms."
+    ],
+    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 2076,
     "user_query": "What is MIRA-seq?",
     "llama-7b_response": "MIRA-seq is a method for sequencing RNA molecules.",
-    "llama-7b_fact_raw": "1. MIRA-seq is a method used for sequencing RNA molecules.",
-    "llama-7b_fact": [
-      "MIRA-seq is a method used for sequencing RNA molecules."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: MIRA-seq is a method used for sequencing DNA methylation.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2108,
@@ -1047,7 +1038,7 @@
     "llama-7b_fact": [
       "ARCALYST is used to treat rheumatoid arthritis."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: ARCALYST is used to treat Cryopyrin-Associated Periodic Syndromes (CAPS), not rheumatoid arthritis.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: ARCALYST (rilonacept) is not primarily used to treat rheumatoid arthritis; it is approved for the treatment of Cryopyrin-Associated Periodic Syndromes (CAPS), including Familial Cold Autoinflammatory Syndrome and Muckle-Wells Syndrome, and also for the treatment of recurrent pericarditis. It may be used off-label for other conditions, but rheumatoid arthritis is not the main indication for its use.",
     "llama-7b_judge": [
       "false"
     ]
@@ -1056,15 +1047,17 @@
     "id": 2170,
     "user_query": "List the human acrocentric chromosomes that are involved in Robertsonian translocation.",
     "llama-7b_response": "The human acrocentric chromosomes involved in Robertsonian translocation are 13, 14, 21, 22, and 23.",
-    "llama-7b_fact_raw": "1. Chromosome 13 is an acrocentric chromosome involved in Robertsonian translocation.\n2. Chromosome 14 is an acrocentric chromosome involved in Robertsonian translocation.\n3. Chromosome 21 is an acrocentric chromosome involved in Robertsonian translocation.\n4. Chromosome 22 is an acrocentric chromosome involved in Robertsonian translocation.",
+    "llama-7b_fact_raw": "1. Human acrocentric chromosomes involved in Robertsonian translocation include chromosome 13.\n2. Human acrocentric chromosomes involved in Robertsonian translocation include chromosome 14.\n3. Human acrocentric chromosomes involved in Robertsonian translocation include chromosome 21.\n4. Human acrocentric chromosomes involved in Robertsonian translocation include chromosome 22.\n5. There is an error in the provided information; humans do not have a chromosome 23 that is involved in Robertsonian translocation. Chromosome 23 is not recognized as an acrocentric chromosome in humans. Humans have 22 pairs of autosomes and a pair of sex chromosomes, which are labeled X and Y.",
     "llama-7b_fact": [
-      "Chromosome 13 is an acrocentric chromosome involved in Robertsonian translocation.",
-      "Chromosome 14 is an acrocentric chromosome involved in Robertsonian translocation.",
-      "Chromosome 21 is an acrocentric chromosome involved in Robertsonian translocation.",
-      "Chromosome 22 is an acrocentric chromosome involved in Robertsonian translocation."
+      "Human acrocentric chromosomes involved in Robertsonian translocation include chromosome 13.",
+      "Human acrocentric chromosomes involved in Robertsonian translocation include chromosome 14.",
+      "Human acrocentric chromosomes involved in Robertsonian translocation include chromosome 21.",
+      "Human acrocentric chromosomes involved in Robertsonian translocation include chromosome 22.",
+      "There is an error in the provided information; humans do not have a chromosome 23 that is involved in Robertsonian translocation. Chromosome 23 is not recognized as an acrocentric chromosome in humans. Humans have 22 pairs of autosomes and a pair of sex chromosomes, which are labeled X and Y."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
     "llama-7b_judge": [
+      "true",
       "true",
       "true",
       "true",
@@ -1075,14 +1068,9 @@
     "id": 2237,
     "user_query": "Which R package could be used for the identification of pediatric brain tumors?",
     "llama-7b_response": "The R package \"survival\" could be used for the identification of pediatric brain tumors.",
-    "llama-7b_fact_raw": "1. The R package \"survival\" can be used for the identification of pediatric brain tumors.",
-    "llama-7b_fact": [
-      "The R package \"survival\" can be used for the identification of pediatric brain tumors."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The R package \"survival\" is used for survival analysis, which can include analyzing time-to-event data for various types of cancers, but it does not specifically identify pediatric brain tumors.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2246,
@@ -1112,14 +1100,9 @@
     "id": 2268,
     "user_query": "Which are the properties of mammalian GA-sequences?",
     "llama-7b_response": "Mammalian GA-sequences are always of length 4.",
-    "llama-7b_fact_raw": "1. Mammalian GA-sequences have a length of 4.",
-    "llama-7b_fact": [
-      "Mammalian GA-sequences have a length of 4."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Mammalian GA-sequences typically have a length of 2, consisting of Guanine (G) followed by Adenine (A).",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2291,
@@ -1129,7 +1112,7 @@
     "llama-7b_fact": [
       "The mouse genome contains 3 Groucho-related genes (GRGs)."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific scientific context or a reference to a reliable source, the number of Groucho-related genes (GRGs) in the mouse genome cannot be confirmed as true or false. This information would require verification from a genetic database or scientific literature.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1138,14 +1121,12 @@
     "id": 2304,
     "user_query": "Which RNA polymerase II subunit carries RNA cleavage activity?",
     "llama-7b_response": "RNA cleavage activity is carried out by the large subunit of RNA polymerase II.",
-    "llama-7b_fact_raw": "1. RNA polymerase II has a large subunit.\n2. The large subunit of RNA polymerase II carries RNA cleavage activity.",
+    "llama-7b_fact_raw": "1. The large subunit of RNA polymerase II carries RNA cleavage activity.",
     "llama-7b_fact": [
-      "RNA polymerase II has a large subunit.",
       "The large subunit of RNA polymerase II carries RNA cleavage activity."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The large subunit of RNA polymerase II does not carry RNA cleavage activity; this function is associated with additional proteins in the cleavage and polyadenylation complex.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The large subunit of RNA polymerase II does not carry RNA cleavage activity. RNA cleavage activity is associated with specific protein factors like the cleavage and polyadenylation specificity factor (CPSF) that are involved in the processing of pre-mRNA, not with the RNA polymerase II enzyme itself. RNA polymerase II is primarily responsible for the synthesis of messenger RNA (mRNA) from a DNA template.",
     "llama-7b_judge": [
-      "true",
       "false"
     ]
   },
@@ -1153,14 +1134,9 @@
     "id": 2321,
     "user_query": "What is the genetic basis of Ohdo syndrome?",
     "llama-7b_response": "The genetic basis of Ohdo syndrome is a mutation in the gene that encodes the protein p53.",
-    "llama-7b_fact_raw": "1. Ohdo syndrome is caused by a mutation in the gene that encodes the protein p53.",
-    "llama-7b_fact": [
-      "Ohdo syndrome is caused by a mutation in the gene that encodes the protein p53."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Ohdo syndrome is caused by mutations in several genes, including MED12 and KAT6B, not the gene that encodes the protein p53.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2331,
@@ -1174,11 +1150,11 @@
     "id": 2360,
     "user_query": "Describe swirl sign in intracerebral hemorrhage.",
     "llama-7b_response": "Swirl sign is a term used to describe the appearance of intracerebral hemorrhage (ICH) on computed tomography (CT) scans. It refers to the pattern of blood in the brain that resembles a swirl or spiral.",
-    "llama-7b_fact_raw": "1. Swirl sign is a term related to intracerebral hemorrhage (ICH).\n2. Swirl sign is observed on computed tomography (CT) scans.\n3. The pattern of blood resembling a swirl or spiral on a CT scan is referred to as swirl sign.",
+    "llama-7b_fact_raw": "1. Swirl sign is associated with intracerebral hemorrhage (ICH).\n2. Swirl sign is identified on computed tomography (CT) scans.\n3. The pattern of blood in the brain that resembles a swirl or spiral is referred to as swirl sign.",
     "llama-7b_fact": [
-      "Swirl sign is a term related to intracerebral hemorrhage (ICH).",
-      "Swirl sign is observed on computed tomography (CT) scans.",
-      "The pattern of blood resembling a swirl or spiral on a CT scan is referred to as swirl sign."
+      "Swirl sign is associated with intracerebral hemorrhage (ICH).",
+      "Swirl sign is identified on computed tomography (CT) scans.",
+      "The pattern of blood in the brain that resembles a swirl or spiral is referred to as swirl sign."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
     "llama-7b_judge": [
@@ -1203,7 +1179,7 @@
     "llama-7b_fact": [
       "Transthyretin is the most common cause of hereditary renal amyloidosis."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Transthyretin is the most common cause of hereditary ATTR amyloidosis (which affects the nervous system and the heart), not hereditary renal amyloidosis.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Transthyretin is the most common cause of hereditary ATTR (transthyretin amyloidosis), which primarily affects the nervous system and the heart, not specifically the kidneys. Hereditary renal amyloidosis is more commonly associated with mutations in the genes encoding fibrinogen A alpha-chain, apolipoprotein AI, lysozyme, or leukocyte chemotactic factor 2 (LECT2).",
     "llama-7b_judge": [
       "false"
     ]
@@ -1241,16 +1217,9 @@
     "id": 2419,
     "user_query": "What is the HPG pore?",
     "llama-7b_response": "The HPG pore is a small hole in the cell membrane that allows water to pass through.",
-    "llama-7b_fact_raw": "1. The HPG pore is a small hole in the cell membrane.\n2. The HPG pore allows water to pass through.",
-    "llama-7b_fact": [
-      "The HPG pore is a small hole in the cell membrane.",
-      "The HPG pore allows water to pass through."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2472,
@@ -1269,11 +1238,11 @@
     "id": 2557,
     "user_query": "Which R package has been developed for analyzing Non-invasive prenatal testing (NIPT) data?",
     "llama-7b_response": "The R package \"NIPT\" has been developed for analyzing Non-invasive prenatal testing (NIPT) data.",
-    "llama-7b_fact_raw": "1. The R package \"NIPT\" is designed for analyzing Non-invasive prenatal testing (NIPT) data.",
+    "llama-7b_fact_raw": "1. The R package \"NIPT\" is developed for analyzing Non-invasive prenatal testing data.",
     "llama-7b_fact": [
-      "The R package \"NIPT\" is designed for analyzing Non-invasive prenatal testing (NIPT) data."
+      "The R package \"NIPT\" is developed for analyzing Non-invasive prenatal testing data."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nWithout additional context or information about the R package \"NIPT,\" it is not possible to confirm the purpose of the package. The statement could be true if such a package exists and is indeed developed for analyzing Non-invasive prenatal testing data. However, without verification from a reliable source or documentation, the truth of the statement cannot be determined.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1282,21 +1251,21 @@
     "id": 2560,
     "user_query": "Describe Achenbach’s syndrome.",
     "llama-7b_response": "Achenbach's syndrome is a rare neurological disorder that affects the autonomic nervous system. It is characterized by orthostatic intolerance, which is an inability to maintain an upright posture when standing or sitting for extended periods of time. Symptoms may also include lightheadedness, dizziness, fatigue, headache, nausea, and vomiting. Achenbach's syndrome is believed to be caused by a malfunction of the autonomic nervous system, which is responsible for controlling involuntary body functions such as heart rate, blood pressure, and digestion.",
-    "llama-7b_fact_raw": "1. Achenbach's syndrome is a rare neurological disorder.\n2. It affects the autonomic nervous system.\n3. Orthostatic intolerance is a characteristic of Achenbach's syndrome.\n4. Symptoms of the syndrome may include lightheadedness, dizziness, fatigue, headache, nausea, and vomiting.\n5. Achenbach's syndrome is thought to be caused by a malfunction of the autonomic nervous system.",
+    "llama-7b_fact_raw": "1. Achenbach's syndrome is a rare neurological disorder.\n2. It affects the autonomic nervous system.\n3. The syndrome is characterized by orthostatic intolerance, which is an inability to maintain an upright posture for extended periods.\n4. Symptoms of Achenbach's syndrome may include lightheadedness, dizziness, fatigue, headache, nausea, and vomiting.\n5. The cause of Achenbach's syndrome is believed to be a malfunction of the autonomic nervous system.",
     "llama-7b_fact": [
       "Achenbach's syndrome is a rare neurological disorder.",
       "It affects the autonomic nervous system.",
-      "Orthostatic intolerance is a characteristic of Achenbach's syndrome.",
-      "Symptoms of the syndrome may include lightheadedness, dizziness, fatigue, headache, nausea, and vomiting.",
-      "Achenbach's syndrome is thought to be caused by a malfunction of the autonomic nervous system."
+      "The syndrome is characterized by orthostatic intolerance, which is an inability to maintain an upright posture for extended periods.",
+      "Symptoms of Achenbach's syndrome may include lightheadedness, dizziness, fatigue, headache, nausea, and vomiting.",
+      "The cause of Achenbach's syndrome is believed to be a malfunction of the autonomic nervous system."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Achenbach's syndrome is a rare condition that affects the blood vessels in the fingers, not a neurological disorder.\n2. FALSE [correction]: It affects the blood vessels, not the autonomic nervous system.\n3. FALSE [correction]: Orthostatic intolerance is not a characteristic of Achenbach's syndrome; it is associated with conditions affecting the autonomic nervous system.\n4. UNKNOWN\n5. FALSE [correction]: Achenbach's syndrome is thought to be caused by spontaneous bleeding under the skin, not a malfunction of the autonomic nervous system.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Achenbach's syndrome is not a neurological disorder; it is a rare condition characterized by spontaneous bruising in the hand or fingers.\n2. FALSE [correction]: Achenbach's syndrome does not affect the autonomic nervous system; it involves spontaneous bruising.\n3. FALSE [correction]: Achenbach's syndrome is not characterized by orthostatic intolerance. Orthostatic intolerance is a symptom of different conditions, such as postural orthostatic tachycardia syndrome (POTS).\n4. FALSE [correction]: Symptoms of Achenbach's syndrome are typically localized bruising or bleeding in the hands or fingers, not systemic symptoms like lightheadedness, dizziness, fatigue, headache, nausea, and vomiting.\n5. UNKNOWN",
     "llama-7b_judge": [
       "false",
       "false",
       "false",
-      "unknown",
-      "false"
+      "false",
+      "unknown"
     ]
   },
   {
@@ -1333,25 +1302,29 @@
     "llama-7b_fact": [
       "Gas vesicles have an approximate diameter of 100 nm."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "unknown"
+      "true"
     ]
   },
   {
     "id": 2589,
     "user_query": "List BET proteins.",
     "llama-7b_response": "BET proteins are a family of transcriptional regulators that contain three zinc-finger motifs. The first member of the family, BET1, was identified in a yeast two-hybrid screen using the human estrogen receptor as bait. Subsequently, several other family members have been identified in both humans and other species.",
-    "llama-7b_fact_raw": "1. BET proteins contain three zinc-finger motifs.\n2. The first member of the BET protein family, BET1, was identified using the human estrogen receptor as bait in a yeast two-hybrid screen.\n3. Several other BET family members have been identified in both humans and other species.",
+    "llama-7b_fact_raw": "1. BET proteins are a family of transcriptional regulators.\n2. BET proteins contain three zinc-finger motifs.\n3. The first member of the BET protein family, BET1, was identified using a yeast two-hybrid screen.\n4. The human estrogen receptor was used as bait in the screen that identified BET1.\n5. Several other members of the BET protein family have been identified in humans and other species.",
     "llama-7b_fact": [
+      "BET proteins are a family of transcriptional regulators.",
       "BET proteins contain three zinc-finger motifs.",
-      "The first member of the BET protein family, BET1, was identified using the human estrogen receptor as bait in a yeast two-hybrid screen.",
-      "Several other BET family members have been identified in both humans and other species."
+      "The first member of the BET protein family, BET1, was identified using a yeast two-hybrid screen.",
+      "The human estrogen receptor was used as bait in the screen that identified BET1.",
+      "Several other members of the BET protein family have been identified in humans and other species."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: BET proteins contain two bromodomains and an extra-terminal (ET) domain, not three zinc-finger motifs.\n2. TRUE\n3. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: BET proteins typically contain two bromodomains and an extra-terminal (ET) domain, not three zinc-finger motifs.\n3. UNKNOWN\n4. UNKNOWN\n5. TRUE",
     "llama-7b_judge": [
-      "false",
       "true",
+      "false",
+      "unknown",
+      "unknown",
       "true"
     ]
   },
@@ -1367,13 +1340,15 @@
     "id": 2634,
     "user_query": "What is MULTOVL?",
     "llama-7b_response": "MULTOVL is a library for multi-threaded programming in Python.",
-    "llama-7b_fact_raw": "1. MULTOVL is a library designed for multi-threaded programming.\n2. MULTOVL is used with the Python programming language.",
+    "llama-7b_fact_raw": "1. MULTOVL is a library.\n2. MULTOVL is used for multi-threaded programming.\n3. MULTOVL is designed for use with the Python programming language.",
     "llama-7b_fact": [
-      "MULTOVL is a library designed for multi-threaded programming.",
-      "MULTOVL is used with the Python programming language."
+      "MULTOVL is a library.",
+      "MULTOVL is used for multi-threaded programming.",
+      "MULTOVL is designed for use with the Python programming language."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n\nWithout specific context or additional information about \"MULTOVL,\" it is not possible to determine the accuracy of these statements. \"MULTOVL\" is not a widely recognized term or acronym that can be associated with a library or multi-threaded programming, especially in relation to Python, based on the knowledge available up to early 2023.",
     "llama-7b_judge": [
+      "unknown",
       "unknown",
       "unknown"
     ]
@@ -1394,22 +1369,22 @@
     "llama-7b_fact": [
       "Recursive splicing is more common in short introns."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Recursive splicing is more common in long introns.",
     "llama-7b_judge": [
-      "unknown"
+      "false"
     ]
   },
   {
     "id": 2679,
     "user_query": "What is the TALE-iD method used for?",
     "llama-7b_response": "The TALE-iD method is used for the identification of proteins.",
-    "llama-7b_fact_raw": "1. The TALE-iD method is used for protein identification.",
+    "llama-7b_fact_raw": "1. The TALE-iD method is used for the identification of proteins.",
     "llama-7b_fact": [
-      "The TALE-iD method is used for protein identification."
+      "The TALE-iD method is used for the identification of proteins."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The TALE-iD method is used for the identification of transcription factor binding sites, not proteins.",
     "llama-7b_judge": [
-      "true"
+      "false"
     ]
   },
   {
@@ -1432,14 +1407,9 @@
     "id": 2763,
     "user_query": "Which complex is bound by estrogen-related receptor β (Esrrb)?",
     "llama-7b_response": "Estradiol",
-    "llama-7b_fact_raw": "1. Estrogen-related receptor β (Esrrb) is bound by Estradiol.",
-    "llama-7b_fact": [
-      "Estrogen-related receptor β (Esrrb) is bound by Estradiol."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Estrogen-related receptor β (Esrrb) is not bound by Estradiol, it is an orphan receptor that is not activated by naturally occurring estrogens.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2842,
@@ -1450,32 +1420,19 @@
       "ZCCHC17 is a protein.",
       "ZCCHC17 binds to DNA."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: ZCCHC17, also known as NSAP1 or ZC3H17, is a protein that is known to bind to RNA, not DNA.",
     "llama-7b_judge": [
       "true",
-      "unknown"
+      "false"
     ]
   },
   {
     "id": 2861,
     "user_query": "Which proteins form the nuclear pore basket in human cells?",
     "llama-7b_response": "The proteins that form the nuclear pore basket in human cells are:\n- Nup98\n- Nup96\n- Nup88\n- Nup84\n- Nup82\n- Nup75\n- Nup62\n- Nup58\n- Nup54\n- Nup50\n- Nup46\n- Nup44\n- Nup42\n- Nup38\n- Nup36\n- Nup34\n- Nup32\n- Nup30\n- Nup28\n- Nup26\n- Nup24\n- Nup22\n- Nup20\n- Nup18\n- Nup16\n- Nup14\n- Nup12\n- Nup10\n- Nup8\n- Nup6\n- Nup4\n- Nup2",
-    "llama-7b_fact_raw": "1. Nup98 is a protein that forms the nuclear pore basket in human cells.\n2. Nup96 is a protein that forms the nuclear pore basket in human cells.\n3. Nup88 is a protein that forms the nuclear pore basket in human cells.\n4. Nup84 is a protein that forms the nuclear pore basket in human cells.\n5. Nup82 is a protein that forms the nuclear pore basket in human cells.",
-    "llama-7b_fact": [
-      "Nup98 is a protein that forms the nuclear pore basket in human cells.",
-      "Nup96 is a protein that forms the nuclear pore basket in human cells.",
-      "Nup88 is a protein that forms the nuclear pore basket in human cells.",
-      "Nup84 is a protein that forms the nuclear pore basket in human cells.",
-      "Nup82 is a protein that forms the nuclear pore basket in human cells."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Nup98 is a protein that is a component of the nuclear pore complex, but it does not form the nuclear pore basket specifically.\n2. FALSE [correction]: Nup96 is a protein that is a component of the nuclear pore complex, but it does not form the nuclear pore basket specifically.\n3. FALSE [correction]: Nup88 is a protein that is a component of the nuclear pore complex, but it does not form the nuclear pore basket specifically.\n4. UNKNOWN\n5. UNKNOWN",
-    "llama-7b_judge": [
-      "false",
-      "false",
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2919,
@@ -1489,21 +1446,21 @@
     "id": 2943,
     "user_query": "Describe Canvas SPW",
     "llama-7b_response": "Canvas SPW is a web-based platform that allows users to create, share and collaborate on documents in real-time. It is designed for teams of all sizes, from small businesses to large enterprises. The platform offers a range of features including document collaboration, commenting, version control, task management, and more.",
-    "llama-7b_fact_raw": "1. Canvas SPW is a web-based platform.\n2. Users can create, share, and collaborate on documents in real-time on Canvas SPW.\n3. Canvas SPW is designed for teams of all sizes, including small businesses and large enterprises.\n4. The platform includes features such as document collaboration, commenting, and version control.\n5. Canvas SPW also offers task management.",
+    "llama-7b_fact_raw": "1. Canvas SPW is a web-based platform.\n2. Canvas SPW enables users to create, share, and collaborate on documents in real-time.\n3. The platform is designed for teams of all sizes.\n4. Canvas SPW includes features such as document collaboration, commenting, and version control.\n5. Task management is a feature offered by Canvas SPW.",
     "llama-7b_fact": [
       "Canvas SPW is a web-based platform.",
-      "Users can create, share, and collaborate on documents in real-time on Canvas SPW.",
-      "Canvas SPW is designed for teams of all sizes, including small businesses and large enterprises.",
-      "The platform includes features such as document collaboration, commenting, and version control.",
-      "Canvas SPW also offers task management."
+      "Canvas SPW enables users to create, share, and collaborate on documents in real-time.",
+      "The platform is designed for teams of all sizes.",
+      "Canvas SPW includes features such as document collaboration, commenting, and version control.",
+      "Task management is a feature offered by Canvas SPW."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN\n\nWithout specific information about \"Canvas SPW,\" it is not possible to determine the accuracy of these statements. \"Canvas SPW\" does not correspond to a widely recognized web-based platform like \"Canvas LMS\" or \"Google Docs,\" which are known for their collaborative features. If \"Canvas SPW\" is a fictional or less-known platform, additional context would be required to assess these statements.",
     "llama-7b_judge": [
-      "true",
-      "true",
-      "true",
-      "true",
-      "true"
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
     ]
   },
   {
@@ -1518,35 +1475,37 @@
     "id": 2964,
     "user_query": "Describe SLIC-CAGE",
     "llama-7b_response": "SLIC-CAGE is a cryptographic algorithm that uses a combination of symmetric and asymmetric encryption to protect data. It was developed by researchers at the University of Waterloo in Canada. The algorithm works by first encrypting the data with a symmetric encryption algorithm, such as AES, and then encrypting the encrypted data with an asymmetric algorithm, such as RSA. This ensures that even if an attacker were to gain access to the encrypted data, they would still be unable to decrypt it.",
-    "llama-7b_fact_raw": "1. SLIC-CAGE is a cryptographic algorithm that combines symmetric and asymmetric encryption.\n2. Researchers at the University of Waterloo in Canada developed SLIC-CAGE.\n3. SLIC-CAGE first encrypts data using a symmetric encryption algorithm like AES.\n4. After symmetric encryption, SLIC-CAGE further encrypts the data with an asymmetric algorithm such as RSA.",
+    "llama-7b_fact_raw": "1. SLIC-CAGE is a cryptographic algorithm.\n2. SLIC-CAGE uses both symmetric and asymmetric encryption methods.\n3. The algorithm was developed by researchers at the University of Waterloo in Canada.\n4. SLIC-CAGE involves first encrypting data with a symmetric encryption algorithm like AES.\n5. After symmetric encryption, SLIC-CAGE further encrypts the data with an asymmetric algorithm such as RSA.",
     "llama-7b_fact": [
-      "SLIC-CAGE is a cryptographic algorithm that combines symmetric and asymmetric encryption.",
-      "Researchers at the University of Waterloo in Canada developed SLIC-CAGE.",
-      "SLIC-CAGE first encrypts data using a symmetric encryption algorithm like AES.",
+      "SLIC-CAGE is a cryptographic algorithm.",
+      "SLIC-CAGE uses both symmetric and asymmetric encryption methods.",
+      "The algorithm was developed by researchers at the University of Waterloo in Canada.",
+      "SLIC-CAGE involves first encrypting data with a symmetric encryption algorithm like AES.",
       "After symmetric encryption, SLIC-CAGE further encrypts the data with an asymmetric algorithm such as RSA."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: SLIC-CAGE is not a known cryptographic algorithm. It appears to be a fabricated term or a mistake.\n2. FALSE [correction]: Since SLIC-CAGE is not a recognized cryptographic algorithm, it cannot be said to use both symmetric and asymmetric encryption methods.\n3. FALSE [correction]: As SLIC-CAGE is not an established cryptographic algorithm, it was not developed by researchers at the University of Waterloo or anywhere else.\n4. FALSE [correction]: Since SLIC-CAGE is not a real cryptographic algorithm, it does not involve encrypting data with a symmetric encryption algorithm like AES.\n5. FALSE [correction]: Similarly, SLIC-CAGE does not involve further encrypting data with an asymmetric algorithm such as RSA, because it is not a recognized cryptographic process.",
     "llama-7b_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
     ]
   },
   {
     "id": 2978,
     "user_query": "What are the roles of LEM-3?",
     "llama-7b_response": "LEM-3 is a leucine-rich repeat-containing protein that is expressed in the brain. It has been shown to be involved in the regulation of synaptic plasticity and memory formation.",
-    "llama-7b_fact_raw": "1. LEM-3 is a protein that contains leucine-rich repeats.\n2. LEM-3 is expressed in the brain.\n3. LEM-3 is involved in the regulation of synaptic plasticity.\n4. LEM-3 plays a role in memory formation.",
+    "llama-7b_fact_raw": "1. LEM-3 is a leucine-rich repeat-containing protein.\n2. LEM-3 is expressed in the brain.\n3. LEM-3 is involved in the regulation of synaptic plasticity.\n4. LEM-3 plays a role in memory formation.",
     "llama-7b_fact": [
-      "LEM-3 is a protein that contains leucine-rich repeats.",
+      "LEM-3 is a leucine-rich repeat-containing protein.",
       "LEM-3 is expressed in the brain.",
       "LEM-3 is involved in the regulation of synaptic plasticity.",
       "LEM-3 plays a role in memory formation."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: LEM-3 does not contain leucine-rich repeats; it is a DNA repair nuclease.\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n\nWithout specific scientific context or references, it's not possible to verify these statements about LEM-3. The details provided are not sufficient to determine the truthfulness of the statements regarding the expression, function, or role of LEM-3 in synaptic plasticity or memory formation. More information would be needed to accurately assess these claims.",
     "llama-7b_judge": [
-      "false",
+      "unknown",
       "unknown",
       "unknown",
       "unknown"
@@ -1580,18 +1539,18 @@
     "id": 3045,
     "user_query": "List the four advances integrated into the SHERLOCKv2 platform.",
     "llama-7b_response": "The four advances integrated into the SHERLOCKv2 platform are:\n1. Natural Language Processing (NLP) - SHERLOCKv2 uses NLP to understand the meaning of user input.\n2. Machine Learning (ML) - SHERLOCKv2 uses ML to learn from user interactions and improve its accuracy.\n3. Knowledge Graph - SHERLOCKv2 uses a knowledge graph to store and retrieve information.\n4. Chatbot - SHERLOCKv2 is a chatbot that can interact with users in natural language.",
-    "llama-7b_fact_raw": "1. SHERLOCKv2 integrates Natural Language Processing (NLP) to understand user input.\n2. SHERLOCKv2 uses Machine Learning (ML) to learn from user interactions.\n3. SHERLOCKv2 utilizes a knowledge graph for information storage and retrieval.\n4. SHERLOCKv2 functions as a chatbot that interacts in natural language.",
+    "llama-7b_fact_raw": "1. SHERLOCKv2 integrates Natural Language Processing (NLP) to understand user input.\n2. SHERLOCKv2 utilizes Machine Learning (ML) to learn from user interactions and enhance its accuracy.\n3. SHERLOCKv2 employs a knowledge graph for storing and retrieving information.\n4. SHERLOCKv2 functions as a chatbot capable of interacting with users in natural language.",
     "llama-7b_fact": [
       "SHERLOCKv2 integrates Natural Language Processing (NLP) to understand user input.",
-      "SHERLOCKv2 uses Machine Learning (ML) to learn from user interactions.",
-      "SHERLOCKv2 utilizes a knowledge graph for information storage and retrieval.",
-      "SHERLOCKv2 functions as a chatbot that interacts in natural language."
+      "SHERLOCKv2 utilizes Machine Learning (ML) to learn from user interactions and enhance its accuracy.",
+      "SHERLOCKv2 employs a knowledge graph for storing and retrieving information.",
+      "SHERLOCKv2 functions as a chatbot capable of interacting with users in natural language."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. UNKNOWN\n4. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
-      "true",
+      "unknown",
       "true"
     ]
   },
@@ -1599,18 +1558,9 @@
     "id": 3078,
     "user_query": "Describe the bartender algorithm",
     "llama-7b_response": "The bartender algorithm is a simple algorithm for solving the problem of finding the shortest path between two nodes in a graph. It works by first finding the shortest path from the first node to every other node in the graph, and then using this information to determine the shortest path from the first node to the second node.",
-    "llama-7b_fact_raw": "1. The bartender algorithm is used for finding the shortest path between two nodes in a graph.\n2. It finds the shortest path from the first node to every other node in the graph.\n3. The algorithm then uses this information to determine the shortest path from the first node to the second node.",
-    "llama-7b_fact": [
-      "The bartender algorithm is used for finding the shortest path between two nodes in a graph.",
-      "It finds the shortest path from the first node to every other node in the graph.",
-      "The algorithm then uses this information to determine the shortest path from the first node to the second node."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The Dijkstra's algorithm is used for finding the shortest path between two nodes in a graph.\n2. FALSE [correction]: The Dijkstra's algorithm finds the shortest path from the source node to every other node in the graph.\n3. TRUE",
-    "llama-7b_judge": [
-      "false",
-      "false",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3100,
@@ -1649,11 +1599,11 @@
     "id": 3113,
     "user_query": "Through which protein interaction does MLP regulate F-actin dynamics?",
     "llama-7b_response": "MLP regulates F-actin dynamics through its interaction with the Arp2/3 complex.",
-    "llama-7b_fact_raw": "1. MLP interacts with the Arp2/3 complex to regulate F-actin dynamics.",
+    "llama-7b_fact_raw": "1. MLP regulates F-actin dynamics through interaction with the Arp2/3 complex.",
     "llama-7b_fact": [
-      "MLP interacts with the Arp2/3 complex to regulate F-actin dynamics."
+      "MLP regulates F-actin dynamics through interaction with the Arp2/3 complex."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nThe statement is very specific and without the proper context or source material, it's not possible to verify the accuracy of the claim regarding the role of MLP (presumably Myosin Light Chain Phosphatase) in regulating F-actin dynamics through interaction with the Arp2/3 complex. This would require specific scientific knowledge or literature that provides evidence for such a role.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1662,26 +1612,21 @@
     "id": 3125,
     "user_query": "How many pseudokinases are there in the human kinome?",
     "llama-7b_response": "There are 5 pseudokinases in the human kinome.",
-    "llama-7b_fact_raw": "1. There are 5 pseudokinases in the human kinome.",
-    "llama-7b_fact": [
-      "There are 5 pseudokinases in the human kinome."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: There are more than 5 pseudokinases in the human kinome; the exact number is debated but estimated to be around 10-20% of the approximately 500-600 protein kinases.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3139,
     "user_query": "List 3 apoE mimetics.",
     "llama-7b_response": "apoE mimetics are a class of compounds that have been shown to reduce the risk of Alzheimer's disease. These compounds include curcumin, green tea, and resveratrol.",
-    "llama-7b_fact_raw": "1. Curcumin is an apoE mimetic.\n2. Green tea is an apoE mimetic.\n3. Resveratrol is an apoE mimetic.",
+    "llama-7b_fact_raw": "1. Curcumin is considered an apoE mimetic.\n2. Green tea is considered an apoE mimetic.\n3. Resveratrol is considered an apoE mimetic.",
     "llama-7b_fact": [
-      "Curcumin is an apoE mimetic.",
-      "Green tea is an apoE mimetic.",
-      "Resveratrol is an apoE mimetic."
+      "Curcumin is considered an apoE mimetic.",
+      "Green tea is considered an apoE mimetic.",
+      "Resveratrol is considered an apoE mimetic."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Curcumin is not an apoE mimetic; it is a natural compound found in turmeric with anti-inflammatory and antioxidant properties.\n2. UNKNOWN\n3. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Curcumin is not typically considered an apoE mimetic. It is a bioactive compound found in turmeric with various reported health benefits, but it is not classified as an apoE mimetic.\n2. UNKNOWN: While green tea contains various polyphenols and has been associated with several health benefits, whether it is considered an apoE mimetic is not well-established and would require specific scientific evidence to confirm.\n3. UNKNOWN: Resveratrol is a compound found in red wine and has been studied for its potential health benefits. Whether it is considered an apoE mimetic would depend on specific scientific research that demonstrates it has properties that mimic apolipoprotein E (apoE). Without specific context or evidence, this cannot be determined as true or false.",
     "llama-7b_judge": [
       "false",
       "unknown",
@@ -1700,25 +1645,20 @@
     "id": 3205,
     "user_query": "Does RUNX2 inhibit astrocyte differentiation?",
     "llama-7b_response": "Yes, RUNX2 inhibits astrocyte differentiation.",
-    "llama-7b_fact_raw": "1. RUNX2 inhibits astrocyte differentiation.",
-    "llama-7b_fact": [
-      "RUNX2 inhibits astrocyte differentiation."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3209,
     "user_query": "Where, in the body, would the Cobb-Stainsby excision arthroplasty be performed?",
     "llama-7b_response": "The Cobb-Stainsby excision arthroplasty would be performed on the medial side of the knee joint.",
-    "llama-7b_fact_raw": "1. The Cobb-Stainsby excision arthroplasty is performed on the knee joint.\n2. The procedure is performed on the medial side of the knee joint.",
+    "llama-7b_fact_raw": "1. The Cobb-Stainsby excision arthroplasty is a procedure performed on the knee joint.\n2. The Cobb-Stainsby excision arthroplasty targets the medial side of the knee joint.",
     "llama-7b_fact": [
-      "The Cobb-Stainsby excision arthroplasty is performed on the knee joint.",
-      "The procedure is performed on the medial side of the knee joint."
+      "The Cobb-Stainsby excision arthroplasty is a procedure performed on the knee joint.",
+      "The Cobb-Stainsby excision arthroplasty targets the medial side of the knee joint."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The Cobb-Stainsby excision arthroplasty is performed on the hip joint.\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The Cobb-Stainsby excision arthroplasty is a procedure performed on the hip joint, not the knee joint.\n2. UNKNOWN",
     "llama-7b_judge": [
       "false",
       "unknown"
@@ -1744,16 +1684,20 @@
     "id": 3268,
     "user_query": "What is known about the orphan receptor GPR151?",
     "llama-7b_response": "GPR151 is a G protein-coupled receptor. It is expressed in the brain, heart, and kidney. The function of GPR151 is not known.",
-    "llama-7b_fact_raw": "1. GPR151 is a G protein-coupled receptor.\n2. GPR151 is expressed in the brain, heart, and kidney.\n3. The function of GPR151 is not known.",
+    "llama-7b_fact_raw": "1. GPR151 is a G protein-coupled receptor.\n2. GPR151 is expressed in the brain.\n3. GPR151 is expressed in the heart.\n4. GPR151 is expressed in the kidney.\n5. The function of GPR151 is not known.",
     "llama-7b_fact": [
       "GPR151 is a G protein-coupled receptor.",
-      "GPR151 is expressed in the brain, heart, and kidney.",
+      "GPR151 is expressed in the brain.",
+      "GPR151 is expressed in the heart.",
+      "GPR151 is expressed in the kidney.",
       "The function of GPR151 is not known."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: GPR151 is not typically expressed in the heart; it is primarily expressed in the central nervous system.\n4. FALSE [correction]: GPR151 is not known to be expressed in the kidney; it is primarily expressed in the central nervous system.\n5. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
+      "false",
+      "false",
       "true"
     ]
   },
@@ -1761,14 +1705,14 @@
     "id": 3285,
     "user_query": "List the attenuated live viruses contained in the Fluzone intradermal quadrivalent vaccine.",
     "llama-7b_response": "Fluzone intradermal quadrivalent vaccine contains attenuated live viruses of the following four strains: influenza A (H1N1), influenza A (H3N2), influenza B, and influenza B.",
-    "llama-7b_fact_raw": "1. Fluzone intradermal quadrivalent vaccine contains attenuated live viruses.\n2. The vaccine includes the influenza A (H1N1) virus strain.\n3. The vaccine includes the influenza A (H3N2) virus strain.\n4. The vaccine includes two influenza B virus strains.",
+    "llama-7b_fact_raw": "1. The Fluzone intradermal quadrivalent vaccine contains attenuated live viruses.\n2. The vaccine includes the influenza A (H1N1) strain.\n3. The vaccine includes the influenza A (H3N2) strain.\n4. The vaccine includes two strains of influenza B.",
     "llama-7b_fact": [
-      "Fluzone intradermal quadrivalent vaccine contains attenuated live viruses.",
-      "The vaccine includes the influenza A (H1N1) virus strain.",
-      "The vaccine includes the influenza A (H3N2) virus strain.",
-      "The vaccine includes two influenza B virus strains."
+      "The Fluzone intradermal quadrivalent vaccine contains attenuated live viruses.",
+      "The vaccine includes the influenza A (H1N1) strain.",
+      "The vaccine includes the influenza A (H3N2) strain.",
+      "The vaccine includes two strains of influenza B."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Fluzone intradermal quadrivalent vaccine contains inactivated (killed) viruses, not live ones.\n2. TRUE\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The Fluzone intradermal quadrivalent vaccine contains inactivated (killed) viruses, not attenuated live viruses.\n2. TRUE\n3. TRUE\n4. TRUE",
     "llama-7b_judge": [
       "false",
       "true",
@@ -1780,13 +1724,13 @@
     "id": 3345,
     "user_query": "Which part of the TNFR2 gene is genetically associated with Systemic Lupus Erythematosus?",
     "llama-7b_response": "The part of the TNFR2 gene that is genetically associated with Systemic Lupus Erythematosus is the promoter region.",
-    "llama-7b_fact_raw": "1. The TNFR2 gene has a promoter region that is genetically associated with Systemic Lupus Erythematosus.",
+    "llama-7b_fact_raw": "1. The promoter region of the TNFR2 gene is genetically associated with Systemic Lupus Erythematosus.",
     "llama-7b_fact": [
-      "The TNFR2 gene has a promoter region that is genetically associated with Systemic Lupus Erythematosus."
+      "The promoter region of the TNFR2 gene is genetically associated with Systemic Lupus Erythematosus."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
-      "true"
+      "unknown"
     ]
   },
   {
@@ -1810,7 +1754,7 @@
     "llama-7b_fact": [
       "The Fxy gene is located on the X chromosome."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\n[Explanation]: Without specific scientific context or a reference to a known gene, it's not possible to verify the existence of an \"Fxy gene\" or its chromosomal location. The statement is too vague to determine its accuracy.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1819,18 +1763,18 @@
     "id": 3397,
     "user_query": "What is the basis of the methidiumpropyl-EDTA sequencing (MPE-seq) method?",
     "llama-7b_response": "The MPE-seq method is based on the fact that methidiumpropyl-EDTA (MPE) is a competitive inhibitor of the enzyme DNA polymerase. When MPE is added to a reaction mixture containing DNA polymerase and single-stranded DNA (ssDNA), the enzyme will preferentially bind to the MPE instead of the ssDNA. This results in a decrease in the amount of DNA polymerase bound to the ssDNA, which can be detected by gel electrophoresis.",
-    "llama-7b_fact_raw": "1. Methidiumpropyl-EDTA (MPE) is a competitive inhibitor of the enzyme DNA polymerase.\n2. MPE-seq method involves adding MPE to a reaction mixture containing DNA polymerase and single-stranded DNA (ssDNA).\n3. DNA polymerase preferentially binds to MPE instead of ssDNA when MPE is present.\n4. The decrease in the amount of DNA polymerase bound to ssDNA can be detected by gel electrophoresis.",
+    "llama-7b_fact_raw": "1. Methidiumpropyl-EDTA (MPE) is a competitive inhibitor of the enzyme DNA polymerase.\n2. In the presence of MPE, DNA polymerase will preferentially bind to MPE rather than single-stranded DNA (ssDNA).\n3. The MPE-seq method involves adding MPE to a reaction mixture containing DNA polymerase and ssDNA.\n4. A decrease in the amount of DNA polymerase bound to ssDNA can be detected by gel electrophoresis when using the MPE-seq method.",
     "llama-7b_fact": [
       "Methidiumpropyl-EDTA (MPE) is a competitive inhibitor of the enzyme DNA polymerase.",
-      "MPE-seq method involves adding MPE to a reaction mixture containing DNA polymerase and single-stranded DNA (ssDNA).",
-      "DNA polymerase preferentially binds to MPE instead of ssDNA when MPE is present.",
-      "The decrease in the amount of DNA polymerase bound to ssDNA can be detected by gel electrophoresis."
+      "In the presence of MPE, DNA polymerase will preferentially bind to MPE rather than single-stranded DNA (ssDNA).",
+      "The MPE-seq method involves adding MPE to a reaction mixture containing DNA polymerase and ssDNA.",
+      "A decrease in the amount of DNA polymerase bound to ssDNA can be detected by gel electrophoresis when using the MPE-seq method."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: DNA polymerase does not preferentially bind to MPE; MPE is a competitive inhibitor that binds to the active site of the enzyme, thereby blocking the binding of ssDNA.\n4. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Methidiumpropyl-EDTA (MPE) is a non-competitive inhibitor of the enzyme DNA polymerase.\n2. FALSE [correction]: As a non-competitive inhibitor, MPE does not prevent DNA polymerase from binding to single-stranded DNA (ssDNA); instead, it binds to the enzyme at a different site than the substrate, potentially altering the enzyme's activity without blocking substrate binding.\n3. TRUE\n4. TRUE",
     "llama-7b_judge": [
-      "true",
-      "true",
       "false",
+      "false",
+      "true",
       "true"
     ]
   },
@@ -1842,7 +1786,7 @@
     "llama-7b_fact": [
       "GWAR is implemented in Python."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or information about what \"GWAR\" refers to, it is impossible to determine the veracity of the statement. GWAR could be an acronym or name for a software, algorithm, or project that might be implemented in Python, but without specific details, the truth of the statement cannot be ascertained.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1859,11 +1803,11 @@
     "id": 3410,
     "user_query": "In which chromosome are transgenes inserted in the case of the LiPS-A3S line?",
     "llama-7b_response": "In the LiPS-A3S line, transgenes are inserted in the X chromosome.",
-    "llama-7b_fact_raw": "1. Transgenes are inserted in the X chromosome in the LiPS-A3S line.",
+    "llama-7b_fact_raw": "1. In the LiPS-A3S line, transgenes are inserted in the X chromosome.",
     "llama-7b_fact": [
-      "Transgenes are inserted in the X chromosome in the LiPS-A3S line."
+      "In the LiPS-A3S line, transgenes are inserted in the X chromosome."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or specific information about the \"LiPS-A3S line\" and the nature of the transgenes, it is not possible to determine the accuracy of the statement. The LiPS-A3S line could refer to a specific genetic line in a particular study or experiment, and without access to that specific information, the truthfulness of the statement cannot be assessed.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1920,7 +1864,7 @@
       "Cyclin-dependent kinase 2 (Cdk2) is dephosphorylated during cytokinesis.",
       "Cyclin-dependent kinase 3 (Cdk3) is dephosphorylated during cytokinesis."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Cyclin B1 is phosphorylated during cytokinesis.\n2. UNKNOWN\n3. TRUE\n4. UNKNOWN\n5. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Cyclin B1 is not dephosphorylated during cytokinesis; rather, it is degraded.\n2. UNKNOWN: The specific regulation of Cyclin A1 during cytokinesis is not well-characterized, and without additional context, it is difficult to determine the accuracy of this statement.\n3. TRUE: Cyclin-dependent kinase 1 (Cdk1) is indeed dephosphorylated during cytokinesis, which leads to its inactivation.\n4. UNKNOWN: The specific regulation of Cyclin-dependent kinase 2 (Cdk2) during cytokinesis is not well-characterized, and without additional context, it is difficult to determine the accuracy of this statement.\n5. UNKNOWN: The specific regulation of Cyclin-dependent kinase 3 (Cdk3) during cytokinesis is not well-characterized, and without additional context, it is difficult to determine the accuracy of this statement.",
     "llama-7b_judge": [
       "false",
       "unknown",
@@ -1938,10 +1882,10 @@
       "Xanamem is a drug.",
       "Xanamem is used to treat Alzheimer's disease."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
-      "unknown",
-      "unknown"
+      "true",
+      "true"
     ]
   },
   {
@@ -1964,19 +1908,19 @@
     "id": 3607,
     "user_query": "What is the Lupus Severity Index (LSI)?",
     "llama-7b_response": "The Lupus Severity Index (LSI) is a scale used to measure the severity of lupus. It ranges from 0 to 10, with 0 being the least severe and 10 being the most severe.",
-    "llama-7b_fact_raw": "1. The Lupus Severity Index (LSI) measures the severity of lupus.\n2. The LSI scale ranges from 0 to 10.\n3. On the LSI scale, 0 represents the least severe lupus.\n4. On the LSI scale, 10 represents the most severe lupus.",
+    "llama-7b_fact_raw": "1. The Lupus Severity Index (LSI) is a scale used to measure the severity of lupus.\n2. The LSI scale ranges from 0 to 10.\n3. On the LSI scale, 0 represents the least severe form of lupus.\n4. On the LSI scale, 10 represents the most severe form of lupus.",
     "llama-7b_fact": [
-      "The Lupus Severity Index (LSI) measures the severity of lupus.",
+      "The Lupus Severity Index (LSI) is a scale used to measure the severity of lupus.",
       "The LSI scale ranges from 0 to 10.",
-      "On the LSI scale, 0 represents the least severe lupus.",
-      "On the LSI scale, 10 represents the most severe lupus."
+      "On the LSI scale, 0 represents the least severe form of lupus.",
+      "On the LSI scale, 10 represents the most severe form of lupus."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n\n[Note: The Lupus Severity Index (LSI) is not a widely recognized or standardized scale for measuring the severity of lupus in medical literature as of my knowledge cutoff date. The statements provided do not correspond to a specific, validated scale that is commonly used in clinical practice for lupus assessment. Therefore, without additional context or information about this specific scale, the truthfulness of these statements cannot be determined.]",
     "llama-7b_judge": [
-      "true",
       "unknown",
-      "true",
-      "true"
+      "unknown",
+      "unknown",
+      "unknown"
     ]
   },
   {
@@ -1988,7 +1932,7 @@
       "De novo mutations in ZSWIM6 can cause Autism.",
       "De novo mutations in ZSWIM6 can cause Schizophrenia."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nThe relationship between specific genetic mutations and complex neurological or developmental disorders such as autism and schizophrenia is an area of ongoing research. While certain genes have been associated with an increased risk for these conditions, it is difficult to make definitive statements without specific, up-to-date research findings to back them up. As of my last update, there is no widely accepted or conclusive evidence that directly links de novo mutations in ZSWIM6 specifically to autism or schizophrenia. However, it is possible that newer studies may have found associations that were not known at the time of my last update. Therefore, without the current context or specific research references, the truth of these statements remains unknown.",
     "llama-7b_judge": [
       "unknown",
       "unknown"
@@ -2006,14 +1950,14 @@
     "id": 3628,
     "user_query": "What are the in vivo effects of AZD8601?",
     "llama-7b_response": "AZD8601 is a small molecule that binds to and inhibits the activity of mutant epidermal growth factor receptors (EGFR) that contain an activating mutation. In vitro studies have shown that AZD8601 has potent anti-proliferative activity against EGFR-mutant cell lines, with IC50 values ranging from 0.03 to 0.11 µM. In vivo studies have shown that AZD8601 has anti-tumor activity in models of EGFR-mutant lung cancer.",
-    "llama-7b_fact_raw": "1. AZD8601 is a small molecule that can bind to and inhibit mutant epidermal growth factor receptors.\n2. AZD8601 has shown potent anti-proliferative activity against EGFR-mutant cell lines in vitro.\n3. In vitro studies reported IC50 values for AZD8601 ranging from 0.03 to 0.11 µM.\n4. In vivo studies demonstrated anti-tumor activity of AZD8601 in models of EGFR-mutant lung cancer.",
+    "llama-7b_fact_raw": "1. AZD8601 is a small molecule that inhibits the activity of mutant epidermal growth factor receptors (EGFR) with an activating mutation.\n2. In vitro studies indicate that AZD8601 has potent anti-proliferative activity against EGFR-mutant cell lines.\n3. The IC50 values of AZD8601 against EGFR-mutant cell lines range from 0.03 to 0.11 µM.\n4. In vivo studies demonstrate that AZD8601 has anti-tumor activity in models of EGFR-mutant lung cancer.",
     "llama-7b_fact": [
-      "AZD8601 is a small molecule that can bind to and inhibit mutant epidermal growth factor receptors.",
-      "AZD8601 has shown potent anti-proliferative activity against EGFR-mutant cell lines in vitro.",
-      "In vitro studies reported IC50 values for AZD8601 ranging from 0.03 to 0.11 µM.",
-      "In vivo studies demonstrated anti-tumor activity of AZD8601 in models of EGFR-mutant lung cancer."
+      "AZD8601 is a small molecule that inhibits the activity of mutant epidermal growth factor receptors (EGFR) with an activating mutation.",
+      "In vitro studies indicate that AZD8601 has potent anti-proliferative activity against EGFR-mutant cell lines.",
+      "The IC50 values of AZD8601 against EGFR-mutant cell lines range from 0.03 to 0.11 µM.",
+      "In vivo studies demonstrate that AZD8601 has anti-tumor activity in models of EGFR-mutant lung cancer."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: AZD8601 is not a small molecule, it is actually an mRNA therapy that encodes for vascular endothelial growth factor A (VEGF-A).\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: AZD8601 is not a small molecule inhibitor; it is an mRNA-based therapy that encodes for vascular endothelial growth factor A (VEGF-A) for the treatment of diseases with a vascular component.\n2. UNKNOWN (The statement pertains to a small molecule inhibitor of EGFR, but AZD8601 is not such a molecule. Without additional context about a different compound or a corrected name, the anti-proliferative activity of AZD8601 against EGFR-mutant cell lines cannot be confirmed.)\n3. UNKNOWN (Similar to statement 2, the IC50 values provided are for an EGFR inhibitor, but since AZD8601 is not an EGFR inhibitor, these values cannot be confirmed for AZD8601.)\n4. UNKNOWN (The statement is about the anti-tumor activity of an EGFR inhibitor in vivo, but since AZD8601 is an mRNA therapy for VEGF-A, the anti-tumor activity of AZD8601 in models of EGFR-mutant lung cancer cannot be confirmed without additional context.)",
     "llama-7b_judge": [
       "false",
       "unknown",
@@ -2033,34 +1977,34 @@
     "id": 3672,
     "user_query": "What is the function of the PDZ domain in SATB1?",
     "llama-7b_response": "The PDZ domain of SATB1 is a protein interaction domain that binds to other proteins.",
-    "llama-7b_fact_raw": "1. The PDZ domain of SATB1 is a protein interaction domain.\n2. The PDZ domain binds to other proteins.",
+    "llama-7b_fact_raw": "1. The PDZ domain of SATB1 is a protein interaction domain.\n2. The PDZ domain of SATB1 binds to other proteins.",
     "llama-7b_fact": [
       "The PDZ domain of SATB1 is a protein interaction domain.",
-      "The PDZ domain binds to other proteins."
+      "The PDZ domain of SATB1 binds to other proteins."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: SATB1 does not have a PDZ domain; it contains a CUT domain and a homeodomain that are involved in DNA binding.\n2. FALSE [correction]: Since SATB1 does not have a PDZ domain, it does not bind to other proteins through a PDZ domain. However, SATB1 can bind to other proteins through different domains or regions it possesses.",
     "llama-7b_judge": [
-      "true",
-      "true"
+      "false",
+      "false"
     ]
   },
   {
     "id": 3678,
     "user_query": "What is the basis of the BLISS technique?",
     "llama-7b_response": "The basis of the BLISS technique is to use a combination of bitwise operators and shift operators. The bitwise operators are used to set or clear bits in a byte, while the shift operators are used to move the bits to different positions in the byte.",
-    "llama-7b_fact_raw": "1. The BLISS technique uses a combination of bitwise operators.\n2. The BLISS technique also uses shift operators.\n3. Bitwise operators in the BLISS technique can set or clear bits in a byte.\n4. Shift operators in the BLISS technique are used to move bits to different positions in the byte.",
+    "llama-7b_fact_raw": "1. The BLISS technique uses a combination of bitwise operators.\n2. Bitwise operators in the BLISS technique are used to set or clear bits in a byte.\n3. Shift operators are part of the BLISS technique.\n4. Shift operators in the BLISS technique move bits to different positions in the byte.",
     "llama-7b_fact": [
       "The BLISS technique uses a combination of bitwise operators.",
-      "The BLISS technique also uses shift operators.",
-      "Bitwise operators in the BLISS technique can set or clear bits in a byte.",
-      "Shift operators in the BLISS technique are used to move bits to different positions in the byte."
+      "Bitwise operators in the BLISS technique are used to set or clear bits in a byte.",
+      "Shift operators are part of the BLISS technique.",
+      "Shift operators in the BLISS technique move bits to different positions in the byte."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n\n[Explanation]: Without additional context about what the BLISS technique is, it's not possible to determine the truthfulness of these statements. The BLISS technique could refer to a specific algorithm or method in computing or another field, and without knowing its specifics, one cannot accurately confirm or correct these statements.",
     "llama-7b_judge": [
-      "true",
-      "true",
-      "true",
-      "true"
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
     ]
   },
   {
@@ -2083,15 +2027,15 @@
     "id": 3693,
     "user_query": "What is the protective efficacy of vaxchora against moderate to severe cholera?",
     "llama-7b_response": "Vaxchora is a vaccine for cholera. It was approved by the FDA in 2016 and is currently the only cholera vaccine available in the United States. The vaccine is administered as a single dose and provides protection against moderate to severe cases of cholera.",
-    "llama-7b_fact_raw": "1. Vaxchora is a vaccine for cholera.\n2. The FDA approved Vaxchora in 2016.\n3. Vaxchora is the only cholera vaccine available in the United States.\n4. The vaccine is administered as a single dose.\n5. Vaxchora provides protection against moderate to severe cases of cholera.",
+    "llama-7b_fact_raw": "1. Vaxchora is a vaccine for cholera.\n2. The FDA approved Vaxchora in 2016.\n3. Vaxchora is currently the only cholera vaccine available in the United States.\n4. The vaccine is administered as a single dose.\n5. Vaxchora provides protection against moderate to severe cases of cholera.",
     "llama-7b_fact": [
       "Vaxchora is a vaccine for cholera.",
       "The FDA approved Vaxchora in 2016.",
-      "Vaxchora is the only cholera vaccine available in the United States.",
+      "Vaxchora is currently the only cholera vaccine available in the United States.",
       "The vaccine is administered as a single dose.",
       "Vaxchora provides protection against moderate to severe cases of cholera."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE (As of my knowledge cutoff in 2023, Vaxchora is the only single-dose cholera vaccine approved for use in the United States.)\n4. TRUE\n5. TRUE (Vaxchora is designed to protect against cholera caused by serogroup O1, which is responsible for the majority of cholera cases worldwide, including moderate to severe cases.)",
     "llama-7b_judge": [
       "true",
       "true",
@@ -2112,27 +2056,24 @@
     "id": 3737,
     "user_query": "Which is the most common monogenic cause of common variable immunodeficiency (CVID) in Europeans?",
     "llama-7b_response": "CVID is most commonly caused by a mutation in the gene that codes for the protein CD40.",
-    "llama-7b_fact_raw": "1. The most common monogenic cause of common variable immunodeficiency in Europeans is a mutation in the gene that codes for the protein CD40.",
-    "llama-7b_fact": [
-      "The most common monogenic cause of common variable immunodeficiency in Europeans is a mutation in the gene that codes for the protein CD40."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The most common monogenic cause of common variable immunodeficiency in Europeans is a mutation in the gene that codes for the protein ICOS.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3743,
     "user_query": "Which is the role of the IFIT1 gene in Systemic Lupus Erythematosus (SLE)?",
     "llama-7b_response": "IFIT1 is a gene that encodes a protein of the same name. The protein is found in the endoplasmic reticulum and is involved in the innate immune response to viruses. It has been shown to be upregulated in patients with systemic lupus erythematosus, suggesting that it may play a role in the disease.",
-    "llama-7b_fact_raw": "1. The IFIT1 gene encodes a protein that is found in the endoplasmic reticulum.\n2. The IFIT1 protein is involved in the innate immune response to viruses.\n3. The IFIT1 gene is upregulated in patients with systemic lupus erythematosus.",
+    "llama-7b_fact_raw": "1. IFIT1 is a gene that encodes a protein also named IFIT1.\n2. The IFIT1 protein is located in the endoplasmic reticulum.\n3. IFIT1 is involved in the innate immune response to viruses.\n4. IFIT1 has been shown to be upregulated in patients with systemic lupus erythematosus (SLE).",
     "llama-7b_fact": [
-      "The IFIT1 gene encodes a protein that is found in the endoplasmic reticulum.",
-      "The IFIT1 protein is involved in the innate immune response to viruses.",
-      "The IFIT1 gene is upregulated in patients with systemic lupus erythematosus."
+      "IFIT1 is a gene that encodes a protein also named IFIT1.",
+      "The IFIT1 protein is located in the endoplasmic reticulum.",
+      "IFIT1 is involved in the innate immune response to viruses.",
+      "IFIT1 has been shown to be upregulated in patients with systemic lupus erythematosus (SLE)."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The IFIT1 gene encodes a protein that is not found in the endoplasmic reticulum, but in the cytoplasm.\n2. TRUE\n3. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The IFIT1 protein is not primarily located in the endoplasmic reticulum; it is typically found in the cytoplasm where it plays a role in the immune response to viral infection.\n3. TRUE\n4. TRUE",
     "llama-7b_judge": [
+      "true",
       "false",
       "true",
       "true"
@@ -2142,18 +2083,18 @@
     "id": 3752,
     "user_query": "What is the use of the Liverpool Elbow Score?",
     "llama-7b_response": "The Liverpool Elbow Score is used to assess the severity of elbow injuries. It was first described by Andrews et al. in 1996. The score ranges from 0 to 3, with 0 being no injury and 3 being a complete tear of the ligament.",
-    "llama-7b_fact_raw": "1. The Liverpool Elbow Score assesses the severity of elbow injuries.\n2. The Liverpool Elbow Score was first described by Andrews et al. in 1996.\n3. The score ranges from 0 to 3.\n4. A score of 0 on the Liverpool Elbow Score indicates no injury.\n5. A score of 3 on the Liverpool Elbow Score indicates a complete tear of the ligament.",
+    "llama-7b_fact_raw": "1. The Liverpool Elbow Score is used to assess the severity of elbow injuries.\n2. The Liverpool Elbow Score was first described by Andrews et al. in 1996.\n3. The score ranges from 0 to 3.\n4. A score of 0 on the Liverpool Elbow Score indicates no injury.\n5. A score of 3 on the Liverpool Elbow Score indicates a complete tear of the ligament.",
     "llama-7b_fact": [
-      "The Liverpool Elbow Score assesses the severity of elbow injuries.",
+      "The Liverpool Elbow Score is used to assess the severity of elbow injuries.",
       "The Liverpool Elbow Score was first described by Andrews et al. in 1996.",
       "The score ranges from 0 to 3.",
       "A score of 0 on the Liverpool Elbow Score indicates no injury.",
       "A score of 3 on the Liverpool Elbow Score indicates a complete tear of the ligament."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The score ranges from 0 to 100.\n4. TRUE\n5. FALSE [correction]: A score of 3 does not specifically indicate a complete tear of the ligament; the highest score on the scale reflects the most severe injury, but the specific type of injury is not designated by the score alone.",
+    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. FALSE [correction]: The Liverpool Elbow Score typically ranges from 0 to 100, with various domains assessing pain, function, and other factors.\n4. TRUE\n5. FALSE [correction]: A score of 3 on the Liverpool Elbow Score does not specifically indicate a complete tear of the ligament. The score is a composite measure of various factors and does not directly correspond to specific types of tissue damage.",
     "llama-7b_judge": [
       "true",
-      "true",
+      "unknown",
       "false",
       "true",
       "false"
@@ -2163,21 +2104,21 @@
     "id": 3763,
     "user_query": "Describe efforts on Sarcoma from the 100,000 Genomes Project",
     "llama-7b_response": "The 100,000 Genomes Project is a UK-based project that aims to sequence 100,000 whole genomes from NHS patients with cancer or rare diseases. The project was launched in 2012 and is expected to be completed by 2017. It is one of the largest genomic sequencing projects in the world.",
-    "llama-7b_fact_raw": "1. The 100,000 Genomes Project is based in the UK.\n2. The project aims to sequence 100,000 whole genomes from NHS patients with cancer or rare diseases.\n3. The 100,000 Genomes Project was launched in 2012.\n4. The project was expected to be completed by 2017.\n5. It is one of the largest genomic sequencing projects in the world.",
+    "llama-7b_fact_raw": "1. The 100,000 Genomes Project is based in the UK.\n2. The project's goal is to sequence 100,000 whole genomes from NHS patients.\n3. The patients targeted by the project have cancer or rare diseases.\n4. The 100,000 Genomes Project was launched in 2012.\n5. The project was expected to be completed by 2017.",
     "llama-7b_fact": [
       "The 100,000 Genomes Project is based in the UK.",
-      "The project aims to sequence 100,000 whole genomes from NHS patients with cancer or rare diseases.",
+      "The project's goal is to sequence 100,000 whole genomes from NHS patients.",
+      "The patients targeted by the project have cancer or rare diseases.",
       "The 100,000 Genomes Project was launched in 2012.",
-      "The project was expected to be completed by 2017.",
-      "It is one of the largest genomic sequencing projects in the world."
+      "The project was expected to be completed by 2017."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The 100,000 Genomes Project was launched in 2013.\n4. FALSE [correction]: The project was expected to be completed by the end of 2018.\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The 100,000 Genomes Project was launched in 2013.\n5. FALSE [correction]: The project was completed in 2018.",
     "llama-7b_judge": [
       "true",
       "true",
+      "true",
       "false",
-      "false",
-      "true"
+      "false"
     ]
   },
   {
@@ -2192,9 +2133,18 @@
     "id": 3789,
     "user_query": "List enzymes that removes histone modifications.",
     "llama-7b_response": "There are several enzymes that can remove histone modifications. These include histone deacetylases (HDACs), histone methyltransferases (HMTs), and histone demethylases (HDMs). HDACs remove acetyl groups from histones, while HMTs and HDMs add methyl groups to histones.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Histone deacetylases (HDACs) remove acetyl groups from histones.\n2. Histone methyltransferases (HMTs) add methyl groups to histones.\n3. Histone demethylases (HDMs) remove methyl groups from histones.",
+    "llama-7b_fact": [
+      "Histone deacetylases (HDACs) remove acetyl groups from histones.",
+      "Histone methyltransferases (HMTs) add methyl groups to histones.",
+      "Histone demethylases (HDMs) remove methyl groups from histones."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "llama-7b_judge": [
+      "true",
+      "true",
+      "true"
+    ]
   },
   {
     "id": 3806,
@@ -2212,20 +2162,20 @@
     "llama-7b_fact": [
       "Otx2 is associated with transient pluripotency."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "unknown"
+      "true"
     ]
   },
   {
     "id": 3815,
     "user_query": "How many DNaseI hypersensitive sites (DHS) mark the murine beta globin locus region?",
     "llama-7b_response": "There are 3 DHS in the murine beta globin locus region.",
-    "llama-7b_fact_raw": "1. There are 3 DNaseI hypersensitive sites (DHS) in the murine beta globin locus region.",
+    "llama-7b_fact_raw": "1. There are 3 DNaseI hypersensitive sites in the murine beta globin locus region.",
     "llama-7b_fact": [
-      "There are 3 DNaseI hypersensitive sites (DHS) in the murine beta globin locus region."
+      "There are 3 DNaseI hypersensitive sites in the murine beta globin locus region."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nThe number of DNaseI hypersensitive sites in the murine beta globin locus region is a specific detail that would require access to current scientific literature or a specific study on the murine beta globin locus. Without the specific context or reference, it is not possible to determine the accuracy of this statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -2242,7 +2192,7 @@
       "The intradermal influenza vaccine (IDV) is available in Europe.",
       "The recombinant influenza vaccine (RIV) is available in Europe."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nAs of my knowledge cutoff in 2023, all these types of influenza vaccines have been developed and are available in various parts of the world, including Europe. The trivalent influenza vaccine (TIV) covers three strains of the flu virus, the quadrivalent influenza vaccine (QIV) covers four strains, the high-dose influenza vaccine (HDV) is designed for better immune response in older adults, the intradermal influenza vaccine (IDV) is administered into the skin instead of the muscle, and the recombinant influenza vaccine (RIV) is a type of flu vaccine that uses recombinant technology. Availability can vary by country and over time, but generally, these vaccines have been approved and are available in Europe.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -2255,16 +2205,9 @@
     "id": 3832,
     "user_query": "Is the Paramyxovirus geneome segmented, negative-sense RNA?",
     "llama-7b_response": "Yes, the Paramyxovirus geneome segmented, negative-sense RNA.",
-    "llama-7b_fact_raw": "1. The Paramyxovirus genome is segmented.\n2. The Paramyxovirus genome is negative-sense RNA.",
-    "llama-7b_fact": [
-      "The Paramyxovirus genome is segmented.",
-      "The Paramyxovirus genome is negative-sense RNA."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The Paramyxovirus genome is non-segmented.\n2. TRUE",
-    "llama-7b_judge": [
-      "false",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3869,
@@ -2284,7 +2227,7 @@
       "RNAmmer is a tool developed for identifying ncRNA promoters using a similarity search algorithm.",
       "RNAfold is a tool developed for identifying ncRNA promoters using a folding algorithm."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: RNAhybrid is a tool developed for predicting microRNA target sites based on hybridization between microRNA and mRNA.\n2. FALSE [correction]: RNAmmer is a tool developed for predicting ribosomal RNA in full genomes using a similarity search algorithm.\n3. FALSE [correction]: RNAfold is a tool developed for predicting the secondary structure of single-stranded RNA using a folding algorithm.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: RNAhybrid is a tool developed for predicting microRNA targets by finding the minimum free energy hybridisation between a microRNA and a target mRNA.\n2. FALSE [correction]: RNAmmer is a tool developed for predicting ribosomal RNA genes in full genome sequences using a hidden Markov model.\n3. FALSE [correction]: RNAfold is a tool that predicts the secondary structure of single-stranded RNA or DNA sequences by computing the minimum free energy structure, not specifically for identifying ncRNA promoters.",
     "llama-7b_judge": [
       "false",
       "false",
@@ -2295,22 +2238,9 @@
     "id": 3918,
     "user_query": "List example genes that SWIM tool has identified and which are down-regulated in glioblastoma",
     "llama-7b_response": "SWIM tool has identified the following genes to be down-regulated in glioblastoma:\n- AKT1\n- AKT2\n- AKT3\n- AKT4\n- AKT5\n- AKT6\n- AKT7\n- AKT8\n- AKT9\n- BCL2\n- BCL3\n- BCL4\n- BCL5\n- BCL6\n- BCL7\n- BCL8\n- BCL9\n- CDK4\n- CDK5\n- CDK6\n- CDK7\n- CDK8\n- CDK9\n- EGFR\n- EGFR2\n- EGFR3\n- EGFR4\n- EGFR5\n- EGFR6\n- EGFR7\n- EGFR8\n- EGFR9\n- ERBB2\n- ERBB3\n- ERBB4\n- ERBB5\n- ERBB6\n- ERBB7\n- ERBB8\n- ERBB9\n- FGFR1\n- FGFR2\n- FGFR3\n- FGFR4\n- FGFR5\n- FGFR6\n- FGFR7\n- FGFR8\n- FGFR9\n- HER1\n- HER2\n- HER3\n- HER4\n- HER5\n- HER6\n- HER7\n- HER8\n- HER9\n- IGF1\n- IGF2\n- IGF3\n- IGF4\n- IGF5\n- IGF6\n- IGF7\n- IGF8\n- IGF9\n- MET\n- MET2\n- MET3\n- MET4\n- MET5\n- MET6\n- MET7\n- MET8\n- MET9\n- PI3K\n- PI3K2\n- PI3K3\n- PI3K4\n- PI3K5\n- PI3K6\n- PI3K7\n- PI3K8\n- PI3K9\n- PTEN\n- PTEN2\n- PT",
-    "llama-7b_fact_raw": "1. SWIM tool has identified AKT1 as a gene down-regulated in glioblastoma.\n2. SWIM tool has identified BCL2 as a gene down-regulated in glioblastoma.\n3. SWIM tool has identified CDK4 as a gene down-regulated in glioblastoma.\n4. SWIM tool has identified EGFR as a gene down-regulated in glioblastoma.\n5. SWIM tool has identified ERBB2 as a gene down-regulated in glioblastoma.",
-    "llama-7b_fact": [
-      "SWIM tool has identified AKT1 as a gene down-regulated in glioblastoma.",
-      "SWIM tool has identified BCL2 as a gene down-regulated in glioblastoma.",
-      "SWIM tool has identified CDK4 as a gene down-regulated in glioblastoma.",
-      "SWIM tool has identified EGFR as a gene down-regulated in glioblastoma.",
-      "SWIM tool has identified ERBB2 as a gene down-regulated in glioblastoma."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. FALSE [correction]: SWIM tool has identified EGFR as a gene up-regulated in glioblastoma.\n5. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "false",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3926,
@@ -2332,9 +2262,9 @@
     "id": 3933,
     "user_query": "What are the end products of the shikimate pathway?",
     "llama-7b_response": "The end products of the shikimate pathway are aromatic acids.",
-    "llama-7b_fact_raw": "1. The end products of the shikimate pathway are aromatic acids.",
+    "llama-7b_fact_raw": "1. The shikimate pathway produces aromatic acids as end products.",
     "llama-7b_fact": [
-      "The end products of the shikimate pathway are aromatic acids."
+      "The shikimate pathway produces aromatic acids as end products."
     ],
     "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
@@ -2353,30 +2283,23 @@
     "id": 3939,
     "user_query": "What is the main manifestation of Liebenberg syndrome?",
     "llama-7b_response": "The main manifestation of Liebenberg syndrome is a triad of symptoms consisting of headache, fever and neck stiffness.",
-    "llama-7b_fact_raw": "1. Liebenberg syndrome manifests primarily as a triad of symptoms.\n2. The symptoms of Liebenberg syndrome include headache, fever, and neck stiffness.",
-    "llama-7b_fact": [
-      "Liebenberg syndrome manifests primarily as a triad of symptoms.",
-      "The symptoms of Liebenberg syndrome include headache, fever, and neck stiffness."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3977,
     "user_query": "List orally bioavailable MPS1 kinase inhibitors",
     "llama-7b_response": "There are currently no orally bioavailable MPS1 kinase inhibitors available. However, several compounds are in various stages of development. For example, AT9283 is a potent and selective ATP-competitive MPS1 kinase inhibitor that has been shown to reduce MPS1 activity in vitro and in vivo. It has been tested in Phase I clinical trials for the treatment of solid tumors. Additionally, several other MPS1 kinase inhibitors are currently in preclinical development.",
-    "llama-7b_fact_raw": "1. There are no orally bioavailable MPS1 kinase inhibitors available.\n2. AT9283 is a potent and selective ATP-competitive MPS1 kinase inhibitor.\n3. AT9283 has shown to reduce MPS1 activity in vitro and in vivo.\n4. AT9283 has been tested in Phase I clinical trials for the treatment of solid tumors.\n5. Several other MPS1 kinase inhibitors are currently in preclinical development.",
+    "llama-7b_fact_raw": "1. There are no orally bioavailable MPS1 kinase inhibitors currently available.\n2. AT9283 is a potent and selective ATP-competitive MPS1 kinase inhibitor.\n3. AT9283 has been shown to reduce MPS1 activity in vitro and in vivo.\n4. AT9283 has been tested in Phase I clinical trials for the treatment of solid tumors.\n5. Several MPS1 kinase inhibitors are in preclinical development.",
     "llama-7b_fact": [
-      "There are no orally bioavailable MPS1 kinase inhibitors available.",
+      "There are no orally bioavailable MPS1 kinase inhibitors currently available.",
       "AT9283 is a potent and selective ATP-competitive MPS1 kinase inhibitor.",
-      "AT9283 has shown to reduce MPS1 activity in vitro and in vivo.",
+      "AT9283 has been shown to reduce MPS1 activity in vitro and in vivo.",
       "AT9283 has been tested in Phase I clinical trials for the treatment of solid tumors.",
-      "Several other MPS1 kinase inhibitors are currently in preclinical development."
+      "Several MPS1 kinase inhibitors are in preclinical development."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nPlease note that the first statement is difficult to verify without a current and comprehensive knowledge of the pharmaceutical market and ongoing research. As of my last update, there may or may not be orally bioavailable MPS1 kinase inhibitors available, and new developments could have occurred.",
     "llama-7b_judge": [
       "unknown",
       "true",
@@ -2397,26 +2320,23 @@
     "id": 4055,
     "user_query": "Is progeria caused by an autosomal recessive gene?",
     "llama-7b_response": "Progeria is caused by an autosomal recessive gene.",
-    "llama-7b_fact_raw": "1. Progeria is caused by an autosomal recessive gene.",
-    "llama-7b_fact": [
-      "Progeria is caused by an autosomal recessive gene."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Progeria is caused by an autosomal dominant gene mutation in the LMNA gene.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 4082,
     "user_query": "What are common variants at 12q14 and 12q24 associated with?",
     "llama-7b_response": "Common variants at 12q14 and 12q24 are associated with the risk of developing type 2 diabetes.",
-    "llama-7b_fact_raw": "1. Common variants at 12q14 and 12q24 are associated with type 2 diabetes risk.",
+    "llama-7b_fact_raw": "1. Common variants at 12q14 are associated with the risk of developing type 2 diabetes.\n2. Common variants at 12q24 are associated with the risk of developing type 2 diabetes.",
     "llama-7b_fact": [
-      "Common variants at 12q14 and 12q24 are associated with type 2 diabetes risk."
+      "Common variants at 12q14 are associated with the risk of developing type 2 diabetes.",
+      "Common variants at 12q24 are associated with the risk of developing type 2 diabetes."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE\n\nExplanation:\nThe association of genetic variants with diseases like type 2 diabetes is a topic of ongoing research, and specific loci may be implicated in various studies. Without specific research references, it's difficult to confirm the association of the 12q14 locus with type 2 diabetes. However, the 12q24 locus has been reported in scientific literature to be associated with the risk of developing type 2 diabetes.",
     "llama-7b_judge": [
-      "unknown"
+      "unknown",
+      "true"
     ]
   },
   {
@@ -2443,7 +2363,7 @@
     "llama-7b_fact": [
       "Atenolol is metabolized by CYP2D6."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Atenolol is not primarily metabolized by CYP2D6; it is primarily excreted unchanged in urine.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Atenolol is not significantly metabolized by the liver and is excreted primarily unchanged in the urine. Cytochrome P450 enzymes, such as CYP2D6, are not majorly involved in its metabolism.",
     "llama-7b_judge": [
       "false"
     ]
@@ -2452,21 +2372,21 @@
     "id": 4158,
     "user_query": "List versions of ExpansionHunter",
     "llama-7b_response": "- ExpansionHunter v1.0\n- ExpansionHunter v1.1\n- ExpansionHunter v1.2\n- ExpansionHunter v1.3\n- ExpansionHunter v1.4\n- ExpansionHunter v1.5\n- ExpansionHunter v1.6\n- ExpansionHunter v1.7\n- ExpansionHunter v1.8\n- ExpansionHunter v1.9\n- ExpansionHunter v2.0\n- ExpansionHunter v2.1\n- ExpansionHunter v2.2\n- ExpansionHunter v2.3\n- ExpansionHunter v2.4\n- ExpansionHunter v2.5\n- ExpansionHunter v2.6\n- ExpansionHunter v2.7\n- ExpansionHunter v2.8\n- ExpansionHunter v2.9\n- ExpansionHunter v3.0\n- ExpansionHunter v3.1\n- ExpansionHunter v3.2\n- ExpansionHunter v3.3\n- ExpansionHunter v3.4\n- ExpansionHunter v3.5\n- ExpansionHunter v3.6\n- ExpansionHunter v3.7\n- ExpansionHunter v3.8\n- ExpansionHunter v3.9\n- ExpansionHunter v4.0\n- ExpansionHunter v4.1\n- ExpansionHunter v4.2\n- ExpansionHunter v4.3\n- ExpansionHunter v4.4\n- ExpansionHunter v4.5\n- ExpansionHunter v4.6\n- ExpansionHunter v4.7\n- ExpansionHunter v4.8\n- ExpansionHunter v4.9\n- ExpansionHunter v5.0\n- ExpansionHunter v5.1\n- ExpansionHunter v5.2\n- ExpansionHunter v5.3\n- ExpansionHunter v5.4\n- ExpansionHunter v5.5\n- ExpansionHunter v5.6\n- ExpansionHunter v5.7\n- ExpansionHunter v5.8\n- ExpansionHunter v5.9\n- ExpansionHunter v6.0\n- Exp",
-    "llama-7b_fact_raw": "1. ExpansionHunter has a version 1.0.\n2. ExpansionHunter has a version 2.0.\n3. ExpansionHunter has a version 3.0.\n4. ExpansionHunter has a version 4.0.\n5. ExpansionHunter has a version 5.0.",
+    "llama-7b_fact_raw": "1. ExpansionHunter v1.0 is a version of the ExpansionHunter software.\n2. ExpansionHunter has versions ranging from v1.0 to at least v6.0.\n3. ExpansionHunter v2.0, v3.0, v4.0, and v5.0 are major version releases of the software.\n4. ExpansionHunter has incremental versions such as v1.1, v1.2, v1.3, and so on.\n5. ExpansionHunter v6.0 is listed as a version of the software.",
     "llama-7b_fact": [
-      "ExpansionHunter has a version 1.0.",
-      "ExpansionHunter has a version 2.0.",
-      "ExpansionHunter has a version 3.0.",
-      "ExpansionHunter has a version 4.0.",
-      "ExpansionHunter has a version 5.0."
+      "ExpansionHunter v1.0 is a version of the ExpansionHunter software.",
+      "ExpansionHunter has versions ranging from v1.0 to at least v6.0.",
+      "ExpansionHunter v2.0, v3.0, v4.0, and v5.0 are major version releases of the software.",
+      "ExpansionHunter has incremental versions such as v1.1, v1.2, v1.3, and so on.",
+      "ExpansionHunter v6.0 is listed as a version of the software."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n5. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: As of my knowledge cutoff in 2023, there is no information available that confirms the existence of ExpansionHunter v6.0. The latest version might be different.\n3. TRUE\n4. UNKNOWN\n5. FALSE [correction]: As of my knowledge cutoff in 2023, there is no information available that confirms the existence of ExpansionHunter v6.0.",
     "llama-7b_judge": [
+      "true",
+      "false",
+      "true",
       "unknown",
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
+      "false"
     ]
   },
   {
@@ -2487,7 +2407,7 @@
       "Thiazovivin is metabolized to Thiabendazole in the liver.",
       "Thiabendazole is excreted in the urine."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Thiazovivin is not a prodrug of Thiabendazole; it is a ROCK inhibitor used in stem cell research.\n2. FALSE [correction]: Since Thiazovivin is not a prodrug of Thiabendazole, it is not metabolized to Thiabendazole in the liver.\n3. TRUE (assuming the statement is referring to Thiabendazole being excreted in the urine, which is correct for Thiabendazole).",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Thiazovivin is not a prodrug of Thiabendazole; it is a small molecule inhibitor used in stem cell research.\n2. FALSE [correction]: Since Thiazovivin is not a prodrug of Thiabendazole, it is not metabolized to Thiabendazole in the liver.\n3. TRUE (assuming the statement refers to Thiabendazole): Thiabendazole is indeed excreted in the urine, among other routes of excretion.",
     "llama-7b_judge": [
       "false",
       "false",

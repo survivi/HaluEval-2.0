@@ -35,14 +35,14 @@
     "id": 32,
     "user_query": "What is the validity of the assertion that \"A single nucleotide variant the gene DGKK is strongly associated with increased risk of hypospadias.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"A single nucleotide variant the gene DGKK is strongly associated with increased risk of hypospadias.\" is supported by the following facts:\n- The study was conducted by a team of researchers from the University of California, San Francisco.\n- The study was published in the journal Nature Genetics.\n- The study found that a single nucleotide variant in the gene DGKK was strongly associated with increased risk of hypospadias.\n- The study was funded by the National Institutes of Health.",
-    "llama-7b_fact_raw": "1. A study on the association between a single nucleotide variant in the gene DGKK and hypospadias risk was conducted by researchers from the University of California, San Francisco.\n2. The study was published in the journal Nature Genetics.\n3. The study found a strong association between a single nucleotide variant in the gene DGKK and increased risk of hypospadias.\n4. The National Institutes of Health funded the study.",
+    "llama-7b_fact_raw": "1. A team of researchers from the University of California, San Francisco conducted the study.\n2. The study was published in the journal Nature Genetics.\n3. The study found a strong association between a single nucleotide variant in the gene DGKK and an increased risk of hypospadias.\n4. The National Institutes of Health funded the study.",
     "llama-7b_fact": [
-      "A study on the association between a single nucleotide variant in the gene DGKK and hypospadias risk was conducted by researchers from the University of California, San Francisco.",
+      "A team of researchers from the University of California, San Francisco conducted the study.",
       "The study was published in the journal Nature Genetics.",
-      "The study found a strong association between a single nucleotide variant in the gene DGKK and increased risk of hypospadias.",
+      "The study found a strong association between a single nucleotide variant in the gene DGKK and an increased risk of hypospadias.",
       "The National Institutes of Health funded the study."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n\nWithout specific information about the study in question, it is not possible to verify these statements.",
     "llama-7b_judge": [
       "unknown",
       "unknown",
@@ -75,7 +75,7 @@
       "Autologous mechanical circulatory support has been shown to be effective in treating acute myocardial infarction.",
       "Allogeneic mechanical circulatory support has not been shown to be effective in treating acute myocardial infarction."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nThe statements provided are specific to medical treatments and their effectiveness, which would require specialized knowledge or current medical literature to confirm or refute. Without access to the latest research or medical guidelines, it is not possible to accurately determine the truthfulness of these statements.",
     "llama-7b_judge": [
       "unknown",
       "unknown"
@@ -117,17 +117,17 @@
     "id": 112,
     "user_query": "What is the validity of the assertion that \"British female students are bullied more than British male students.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"British female students are bullied more than British male students\" is supported by the following facts:\n- According to a survey conducted by the National Union of Students in 2015, 60% of female students reported that they had experienced some form of harassment or abuse during their time at university, compared to 37% of male students.\n- In 2016, the Office for Students reported that female students were more likely to be victims of sexual violence than male students.\n- In 2017, the Higher Education Statistics Agency reported that female students were more likely to be victims of rape or sexual assault than male students.",
-    "llama-7b_fact_raw": "1. A 2015 survey by the National Union of Students found that 60% of female students experienced harassment or abuse, compared to 37% of male students.\n2. The Office for Students reported in 2016 that female students were more likely to be victims of sexual violence than male students.\n3. The Higher Education Statistics Agency reported in 2017 that female students were more likely to be victims of rape or sexual assault than male students.",
+    "llama-7b_fact_raw": "1. A survey by the National Union of Students in 2015 found that 60% of female students reported experiencing harassment or abuse at university.\n2. According to the Office for Students in 2016, female students were more likely to be victims of sexual violence than male students.\n3. The Higher Education Statistics Agency reported in 2017 that female students were more likely to be victims of rape or sexual assault than male students.",
     "llama-7b_fact": [
-      "A 2015 survey by the National Union of Students found that 60% of female students experienced harassment or abuse, compared to 37% of male students.",
-      "The Office for Students reported in 2016 that female students were more likely to be victims of sexual violence than male students.",
+      "A survey by the National Union of Students in 2015 found that 60% of female students reported experiencing harassment or abuse at university.",
+      "According to the Office for Students in 2016, female students were more likely to be victims of sexual violence than male students.",
       "The Higher Education Statistics Agency reported in 2017 that female students were more likely to be victims of rape or sexual assault than male students."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The Higher Education Statistics Agency does not report on crime statistics, so they would not have reported this information.",
+    "llama-7b_judge_raw": "1. UNKNOWN: Without access to the specific survey results from the National Union of Students in 2015, the truthfulness of this statement cannot be verified.\n2. UNKNOWN: The statement refers to a specific report by the Office for Students in 2016, but without access to that report or additional information, the truthfulness of the statement cannot be verified.\n3. UNKNOWN: The statement refers to a report by the Higher Education Statistics Agency in 2017, but without access to the report or additional data, the truthfulness of the statement cannot be verified.",
     "llama-7b_judge": [
-      "true",
-      "true",
-      "false"
+      "unknown",
+      "unknown",
+      "unknown"
     ]
   },
   {
@@ -204,7 +204,7 @@
       "Cnn1 levels increase during the G1 phase of the cell cycle.",
       "Cnn1 levels decrease during the S phase of the cell cycle."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n\nExplanation: While the first statement is true as Cnn1 (also known as Centrosomin) is indeed a cell cycle-dependent protein that plays a role in centrosome function, the specific dynamics of Cnn1 levels during the G1 or S phases of the cell cycle are not common knowledge and would require specific scientific literature to confirm or refute. Therefore, without additional context or a specific reference, the truth value of statements 2 and 3 cannot be determined.",
     "llama-7b_judge": [
       "true",
       "unknown",
@@ -462,14 +462,14 @@
     "id": 342,
     "user_query": "What is the validity of the assertion that \"Including pharmacists in rounding teams does not alter the incidence of adverse drug events (ADEs).\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"Including pharmacists in rounding teams does not alter the incidence of adverse drug events (ADEs).\" is supported by the following facts:\n- The study was conducted in a real-world setting, which is more representative of actual practice than a laboratory setting.\n- The sample size was large enough to detect a meaningful difference in the incidence of ADEs if one existed.\n- The results were consistent across different types of hospitals.\n- The results were also consistent across different countries.",
-    "llama-7b_fact_raw": "1. The study regarding pharmacists in rounding teams was conducted in a real-world setting.\n2. The sample size of the study was sufficient to detect a meaningful difference in ADE incidence.\n3. The study results were consistent across various hospital types.\n4. The study results were consistent across different countries.",
+    "llama-7b_fact_raw": "1. A study was conducted in a real-world setting to assess the impact of including pharmacists in rounding teams on the incidence of adverse drug events (ADEs).\n2. The study had a sample size that was deemed large enough to detect a meaningful difference in the incidence of ADEs.\n3. The study's results were consistent across different types of hospitals.\n4. The study's results were consistent across different countries.",
     "llama-7b_fact": [
-      "The study regarding pharmacists in rounding teams was conducted in a real-world setting.",
-      "The sample size of the study was sufficient to detect a meaningful difference in ADE incidence.",
-      "The study results were consistent across various hospital types.",
-      "The study results were consistent across different countries."
+      "A study was conducted in a real-world setting to assess the impact of including pharmacists in rounding teams on the incidence of adverse drug events (ADEs).",
+      "The study had a sample size that was deemed large enough to detect a meaningful difference in the incidence of ADEs.",
+      "The study's results were consistent across different types of hospitals.",
+      "The study's results were consistent across different countries."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n(Note: Without specific details or access to the actual study, it is impossible to determine the truthfulness of these statements.)",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n\nWithout specific details from the passage regarding the study's methodology, sample size, and the scope of its consistency, it is not possible to determine the truthfulness of these statements.",
     "llama-7b_judge": [
       "unknown",
       "unknown",
@@ -701,7 +701,7 @@
     "llama-7b_fact": [
       "PKG-la is not required for the expression of spinal long term potentiation in PGK-la knockout mice."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\nThe statement's accuracy depends on specific scientific research findings that are not provided in the context. Without additional information or a reference to the relevant study, it is not possible to determine the truthfulness of the statement regarding PKG-la and its role in the expression of spinal long term potentiation in PGK-la knockout mice.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -854,9 +854,14 @@
     "id": 637,
     "user_query": "What is the validity of the assertion that \"Stroke patients with prior use of direct oral anticoagulants have a higher risk of in-hospital mortality than stroke patients with prior use of warfarin.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"Stroke patients with prior use of direct oral anticoagulants have a higher risk of in-hospital mortality than stroke patients with prior use of warfarin.\" is supported by the following facts:\n- Fact 1: Stroke patients with prior use of direct oral anticoagulants have a higher risk of in-hospital mortality than stroke patients with prior use of warfarin.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Stroke patients with prior use of direct oral anticoagulants have a higher risk of in-hospital mortality than stroke patients with prior use of warfarin.",
+    "llama-7b_fact": [
+      "Stroke patients with prior use of direct oral anticoagulants have a higher risk of in-hospital mortality than stroke patients with prior use of warfarin."
+    ],
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific data or a reference to a study that compares the in-hospital mortality rates of stroke patients with prior use of direct oral anticoagulants (DOACs) versus those with prior use of warfarin, it is not possible to determine the accuracy of this statement. The risk of in-hospital mortality for stroke patients on different anticoagulants can vary based on numerous factors, including the type of stroke, the severity of the condition, and other individual patient characteristics. Therefore, without additional context or evidence, the truthfulness of this statement cannot be assessed.",
+    "llama-7b_judge": [
+      "unknown"
+    ]
   },
   {
     "id": 645,
@@ -1070,17 +1075,17 @@
     "id": 822,
     "user_query": "What is the validity of the assertion that \"Alirocumab treatment increases apo(a) fractional clearance rate.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"Alirocumab treatment increases apo(a) fractional clearance rate\" is supported by the following facts:\n1. Alirocumab is a drug that has been approved by the FDA for the treatment of high blood cholesterol.\n2. Apo(a) is a protein that is produced by the liver and is involved in the formation of blood clots.\n3. Alirocumab binds to and blocks the action of apo(a).\n4. Treatment with Alirocumab increases the fractional clearance rate of apo(a).\n5. Therefore, the assertion that \"Alirocumab treatment increases apo(a) fractional clearance rate\" is valid.",
-    "llama-7b_fact_raw": "1. Alirocumab is a drug approved by the FDA for treating high blood cholesterol.\n2. Apo(a) is a liver-produced protein involved in blood clot formation.\n3. Alirocumab binds to and blocks the action of apo(a).\n4. Treatment with Alirocumab increases the fractional clearance rate of apo(a).",
+    "llama-7b_fact_raw": "1. Alirocumab is a drug approved by the FDA for the treatment of high blood cholesterol.\n2. Apo(a) is a protein produced by the liver and is involved in the formation of blood clots.\n3. Alirocumab binds to and blocks the action of apo(a).\n4. Treatment with Alirocumab increases the fractional clearance rate of apo(a).",
     "llama-7b_fact": [
-      "Alirocumab is a drug approved by the FDA for treating high blood cholesterol.",
-      "Apo(a) is a liver-produced protein involved in blood clot formation.",
+      "Alirocumab is a drug approved by the FDA for the treatment of high blood cholesterol.",
+      "Apo(a) is a protein produced by the liver and is involved in the formation of blood clots.",
       "Alirocumab binds to and blocks the action of apo(a).",
       "Treatment with Alirocumab increases the fractional clearance rate of apo(a)."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Alirocumab binds to and blocks the action of PCSK9, not apo(a).\n4. UNKNOWN",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Apo(a) is a protein that is part of lipoprotein(a), which is involved in cholesterol transport and is associated with an increased risk of cardiovascular disease, not directly in the formation of blood clots.\n3. FALSE [correction]: Alirocumab binds to and blocks the action of PCSK9 (proprotein convertase subtilisin/kexin type 9), not apo(a).\n4. UNKNOWN",
     "llama-7b_judge": [
       "true",
-      "true",
+      "false",
       "false",
       "unknown"
     ]
@@ -1089,31 +1094,33 @@
     "id": 824,
     "user_query": "How truthful is the statement that \"All six cathelicidins are located on chromosome two.\"? Present a series of factual points about the statement.",
     "llama-7b_response": "The statement is true because all six cathelicidins are located on chromosome two.",
-    "llama-7b_fact_raw": "1. There are six cathelicidins.\n2. All six cathelicidins are located on chromosome two.",
+    "llama-7b_fact_raw": "1. All six cathelicidins are located on chromosome two.",
     "llama-7b_fact": [
-      "There are six cathelicidins.",
       "All six cathelicidins are located on chromosome two."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: There is one cathelicidin, LL-37, in humans.\n2. TRUE",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific context or a reference to a particular species or study, it's not possible to confirm the accuracy of the statement regarding the location of all six cathelicidins on chromosome two. The number and location of cathelicidin genes can vary among different organisms.",
     "llama-7b_judge": [
-      "false",
-      "true"
+      "unknown"
     ]
   },
   {
     "id": 842,
     "user_query": "What is the validity of the assertion that \"Bromodomain proteins promote the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"Bromodomain proteins promote the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites\" is supported by the following facts:\n1. Bromodomain proteins are known to be involved in the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites.\n2. Bromodomain proteins have been shown to promote the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites in vitro and in vivo.\n3. Bromodomain proteins have been shown to be essential for the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites.\n4. Bromodomain proteins have been shown to be required for the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites.\n5. Bromodomain proteins have been shown to be indispensable for the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites.",
-    "llama-7b_fact_raw": "1. Bromodomain proteins are involved in the differentiation process from BSF to PCF parasites.\n2. Bromodomain proteins promote the differentiation of BSF to PCF parasites in vitro and in vivo.\n3. Bromodomain proteins are essential for the differentiation process from BSF to PCF parasites.",
+    "llama-7b_fact_raw": "1. Bromodomain proteins are involved in the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites.\n2. Bromodomain proteins promote the differentiation process of BSF to PCF parasites in vitro and in vivo.\n3. Bromodomain proteins are essential for the differentiation process of BSF to PCF parasites.\n4. Bromodomain proteins are required for the differentiation process of BSF to PCF parasites.\n5. Bromodomain proteins are indispensable for the differentiation process of BSF to PCF parasites.",
     "llama-7b_fact": [
-      "Bromodomain proteins are involved in the differentiation process from BSF to PCF parasites.",
-      "Bromodomain proteins promote the differentiation of BSF to PCF parasites in vitro and in vivo.",
-      "Bromodomain proteins are essential for the differentiation process from BSF to PCF parasites."
+      "Bromodomain proteins are involved in the differentiation process of bloodstream form (BSF) to procyclic form (PCF) parasites.",
+      "Bromodomain proteins promote the differentiation process of BSF to PCF parasites in vitro and in vivo.",
+      "Bromodomain proteins are essential for the differentiation process of BSF to PCF parasites.",
+      "Bromodomain proteins are required for the differentiation process of BSF to PCF parasites.",
+      "Bromodomain proteins are indispensable for the differentiation process of BSF to PCF parasites."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Bromodomain proteins are not essential for the differentiation process from BSF to PCF parasites, but they do play a role in the process.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Bromodomain proteins are not essential for the differentiation process of BSF to PCF parasites, as the process can still occur albeit less efficiently in their absence.\n4. FALSE [correction]: Bromodomain proteins are not strictly required for the differentiation process of BSF to PCF parasites, but they may enhance or regulate the process.\n5. FALSE [correction]: Bromodomain proteins are not indispensable for the differentiation process of BSF to PCF parasites, as the process can occur without them, although possibly at a reduced efficiency or altered regulation.",
     "llama-7b_judge": [
       "true",
       "true",
+      "false",
+      "false",
       "false"
     ]
   },
@@ -1352,15 +1359,13 @@
     "id": 1072,
     "user_query": "What is the validity of the assertion that \"The minor G allele of FOXO3 represses IL-10.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"The minor G allele of FOXO3 represses IL-10\" is supported by the fact that the minor G allele of FOXO3 has been shown to repress IL-10 in vitro and in vivo.",
-    "llama-7b_fact_raw": "1. The assertion that the minor G allele of FOXO3 represses IL-10 is supported by evidence.\n2. The minor G allele of FOXO3 has been shown to repress IL-10 in vitro.\n3. The minor G allele of FOXO3 has been shown to repress IL-10 in vivo.",
+    "llama-7b_fact_raw": "1. The minor G allele of FOXO3 has been shown to repress IL-10 in vitro.\n2. The minor G allele of FOXO3 has been shown to repress IL-10 in vivo.",
     "llama-7b_fact": [
-      "The assertion that the minor G allele of FOXO3 represses IL-10 is supported by evidence.",
       "The minor G allele of FOXO3 has been shown to repress IL-10 in vitro.",
       "The minor G allele of FOXO3 has been shown to repress IL-10 in vivo."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nWithout specific scientific studies or data provided in the context, it is not possible to confirm the accuracy of these statements regarding the effects of the minor G allele of FOXO3 on IL-10 expression in vitro or in vivo.",
     "llama-7b_judge": [
-      "unknown",
       "unknown",
       "unknown"
     ]
@@ -1401,16 +1406,18 @@
     "id": 1112,
     "user_query": "What is the validity of the assertion that \"5% of perinatal mortality is due to low birth weight.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"5% of perinatal mortality is due to low birth weight\" is supported by the following facts:\n- According to the World Health Organization, low birth weight is one of the leading causes of perinatal mortality.\n- In 2015, approximately 2.6 million babies were born with low birth weight.\n- In 2015, approximately 303,000 babies died before their first birthday.\n- Therefore, 5% of perinatal mortality is due to low birth weight.",
-    "llama-7b_fact_raw": "1. The World Health Organization identifies low birth weight as a leading cause of perinatal mortality.\n2. In 2015, around 2.6 million babies were born with low birth weight.\n3. In 2015, approximately 303,000 babies died before their first birthday.",
+    "llama-7b_fact_raw": "1. The World Health Organization identifies low birth weight as one of the leading causes of perinatal mortality.\n2. In 2015, around 2.6 million babies were born with low birth weight.\n3. In 2015, approximately 303,000 babies died before their first birthday.\n4. The assertion claims that 5% of perinatal mortality is attributed to low birth weight.",
     "llama-7b_fact": [
-      "The World Health Organization identifies low birth weight as a leading cause of perinatal mortality.",
+      "The World Health Organization identifies low birth weight as one of the leading causes of perinatal mortality.",
       "In 2015, around 2.6 million babies were born with low birth weight.",
-      "In 2015, approximately 303,000 babies died before their first birthday."
+      "In 2015, approximately 303,000 babies died before their first birthday.",
+      "The assertion claims that 5% of perinatal mortality is attributed to low birth weight."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: In 2015, around 20.5 million babies were born with low birth weight.\n3. FALSE [correction]: In 2015, around 2.6 million babies died before their first birthday.",
+    "llama-7b_judge_raw": "1. TRUE\n2. UNKNOWN\n3. UNKNOWN\n4. FALSE [correction]: The specific percentage of perinatal mortality attributed to low birth weight is not provided in the statement, and without additional context, the exact percentage cannot be confirmed. The World Health Organization does indicate that low birth weight is a major determinant of perinatal mortality, but the exact figure may vary.",
     "llama-7b_judge": [
       "true",
-      "false",
+      "unknown",
+      "unknown",
       "false"
     ]
   },
@@ -1514,14 +1521,14 @@
     "id": 1192,
     "user_query": "What is the validity of the assertion that \"Ethanol stress decreases the expression of IBP in bacteria.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"Ethanol stress decreases the expression of IBP in bacteria\" is supported by the following facts:\n1. The expression of IBP in bacteria is decreased by ethanol stress.\n2. Ethanol is a type of stress that can be applied to bacteria.\n3. Therefore, the assertion is valid.",
-    "llama-7b_fact_raw": "1. Ethanol stress decreases the expression of IBP in bacteria.\n2. Ethanol is a type of stress that can be applied to bacteria.",
+    "llama-7b_fact_raw": "1. Ethanol stress can decrease the expression of IBP in bacteria.\n2. Ethanol is a type of stress that can be applied to bacteria.",
     "llama-7b_fact": [
-      "Ethanol stress decreases the expression of IBP in bacteria.",
+      "Ethanol stress can decrease the expression of IBP in bacteria.",
       "Ethanol is a type of stress that can be applied to bacteria."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
-      "unknown",
+      "true",
       "true"
     ]
   },
@@ -1537,9 +1544,16 @@
     "id": 1201,
     "user_query": "Do you agree with the claim that \"Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation\"? Provide factual statements about the claim.",
     "llama-7b_response": "I agree with the claim that \"Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation\".\nFz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells.\n2. This localization occurs during zebrafish neurulation.",
+    "llama-7b_fact": [
+      "Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells.",
+      "This localization occurs during zebrafish neurulation."
+    ],
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nThe statements provided are very specific and pertain to developmental biology, particularly the localization of a protein (presumably Fz/PCP-dependent Pk) during a developmental process (zebrafish neurulation). Without the specific context or scientific literature to verify these statements, it is not possible to accurately determine their truthfulness.",
+    "llama-7b_judge": [
+      "unknown",
+      "unknown"
+    ]
   },
   {
     "id": 1227,
@@ -1569,21 +1583,21 @@
     "id": 1237,
     "user_query": "What is the validity of the assertion that \"In young and middle-aged adults, current or remote uses of ADHD medications do not increase the risk of serious cardiovascular events.\"? Outline fact-based statements about the assertion.",
     "llama-7b_response": "The validity of the assertion that \"In young and middle-aged adults, current or remote uses of ADHD medications do not increase the risk of serious cardiovascular events\" is supported by the following facts:\n1. A recent study published in the Journal of the American Medical Association found that ADHD medications do not increase the risk of serious cardiovascular events in young and middle-aged adults.\n2. The U.S. Food and Drug Administration (FDA) has approved ADHD medications for use in children, adolescents, and adults.\n3. The American Academy of Pediatrics (AAP) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n4. The American Psychiatric Association (APA) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n5. The National Institutes of Health (NIH) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n6. The Centers for Disease Control and Prevention (CDC) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n7. The European Medicines Agency (EMA) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n8. The World Health Organization (WHO) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n9. The National Institute of Mental Health (NIMH) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n10. The American Academy of Child and Adolescent Psychiatry (AACAP) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n11. The American Psychological Association (APA) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolesc",
-    "llama-7b_fact_raw": "1. A study published in the Journal of the American Medical Association found no increase in risk of serious cardiovascular events from ADHD medication usage in young and middle-aged adults.\n2. The U.S. Food and Drug Administration has approved ADHD medications for use in children, adolescents, and adults.\n3. The American Academy of Pediatrics has endorsed the safety and effectiveness of ADHD medication for treating ADHD across various age groups.\n4. The American Psychiatric Association has affirmed the safety and effectiveness of ADHD medications for ADHD treatment.\n5. The Centers for Disease Control and Prevention has indicated the safety and effectiveness of ADHD medications for ADHD treatment.",
+    "llama-7b_fact_raw": "1. A study published in the Journal of the American Medical Association found that ADHD medications do not increase the risk of serious cardiovascular events in young and middle-aged adults.\n2. The U.S. Food and Drug Administration (FDA) has approved ADHD medications for use in children, adolescents, and adults.\n3. The American Academy of Pediatrics (AAP) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n4. The American Psychiatric Association (APA) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.\n5. The National Institutes of Health (NIH) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.",
     "llama-7b_fact": [
-      "A study published in the Journal of the American Medical Association found no increase in risk of serious cardiovascular events from ADHD medication usage in young and middle-aged adults.",
-      "The U.S. Food and Drug Administration has approved ADHD medications for use in children, adolescents, and adults.",
-      "The American Academy of Pediatrics has endorsed the safety and effectiveness of ADHD medication for treating ADHD across various age groups.",
-      "The American Psychiatric Association has affirmed the safety and effectiveness of ADHD medications for ADHD treatment.",
-      "The Centers for Disease Control and Prevention has indicated the safety and effectiveness of ADHD medications for ADHD treatment."
+      "A study published in the Journal of the American Medical Association found that ADHD medications do not increase the risk of serious cardiovascular events in young and middle-aged adults.",
+      "The U.S. Food and Drug Administration (FDA) has approved ADHD medications for use in children, adolescents, and adults.",
+      "The American Academy of Pediatrics (AAP) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.",
+      "The American Psychiatric Association (APA) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults.",
+      "The National Institutes of Health (NIH) has stated that ADHD medications are safe and effective for the treatment of ADHD in children, adolescents, and adults."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE - The American Academy of Pediatrics (AAP) does provide guidelines indicating that ADHD medications are safe and effective for the treatment of ADHD in children and adolescents. However, the statement includes \"adults,\" which the AAP guidelines may not explicitly cover, as their focus is typically on pediatric care. Without specific evidence to the contrary, we can assume the statement is generally true, but it may require further clarification regarding adults.\n4. TRUE - The American Psychiatric Association (APA) provides guidelines and supports the use of ADHD medications for the treatment of ADHD across different age groups, including children, adolescents, and adults.\n5. UNKNOWN - The National Institutes of Health (NIH) conducts and supports a wide range of research, but it does not typically issue direct statements about the safety and efficacy of medications. Such statements are more commonly issued by regulatory agencies like the FDA. Without a specific reference to an NIH statement, the truth of this statement cannot be determined.",
     "llama-7b_judge": [
       "true",
       "true",
       "true",
       "true",
-      "true"
+      "unknown"
     ]
   },
   {

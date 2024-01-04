@@ -27,11 +27,11 @@
     "id": 86,
     "user_query": "You MUST give a detailed answer to the following question: how many people in the world are estimated to be blind from cataracts ?",
     "llama-7b_response": "The World Health Organization estimates that there are 20 million people blind from cataracts.",
-    "llama-7b_fact_raw": "1. The World Health Organization estimates that there are 20 million people in the world who are blind from cataracts.",
+    "llama-7b_fact_raw": "1. The World Health Organization estimates that there are 20 million people blind from cataracts.",
     "llama-7b_fact": [
-      "The World Health Organization estimates that there are 20 million people in the world who are blind from cataracts."
+      "The World Health Organization estimates that there are 20 million people blind from cataracts."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Note: As of the last knowledge update of 2023, the specific number of people worldwide who are blind from cataracts provided by WHO may have changed. Without access to the most current WHO reports or data, the true status of this statement cannot be verified.]",
+    "llama-7b_judge_raw": "UNKNOWN\n\n[Explanation]: Without a specific date or time frame for the estimate, it's not possible to verify the accuracy of the statement regarding the number of people blind from cataracts as estimated by the World Health Organization. The number of people affected by cataracts can change over time due to various factors such as population growth, access to healthcare, and advancements in medical treatments.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -48,20 +48,9 @@
     "id": 154,
     "user_query": "You MUST give a detailed answer to the following question: two friends ride skateboards in opposite directions . the speed of the first skateboarder is 5 miles per hour faster than the second . after 2 hours , they are 70 miles apart . what are their rates ?",
     "llama-7b_response": "The first skateboarder is going at a speed of 5 miles per hour faster than the second. After 2 hours, they are 70 miles apart. So, the rate of the first skateboarder is 5 miles per hour and the rate of the second skateboarder is 4 miles per hour.",
-    "llama-7b_fact_raw": "1. The first skateboarder's speed is 5 miles per hour faster than the second skateboarder's speed.\n2. After 2 hours of riding in opposite directions, the two friends are 70 miles apart.\n3. The rate of the first skateboarder is 5 miles per hour.\n4. The rate of the second skateboarder is 4 miles per hour.",
-    "llama-7b_fact": [
-      "The first skateboarder's speed is 5 miles per hour faster than the second skateboarder's speed.",
-      "After 2 hours of riding in opposite directions, the two friends are 70 miles apart.",
-      "The rate of the first skateboarder is 5 miles per hour.",
-      "The rate of the second skateboarder is 4 miles per hour."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN\n\nEach of these statements lacks enough context for me to determine their truth value, as they are math problem conditions, not factual statements. The truth of statements 1, 2, 3, and 4 would depend on additional information and mathematical calculations based on that information, which are not provided.",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown",
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 163,
@@ -83,11 +72,11 @@
     "id": 195,
     "user_query": "You MUST give a detailed answer to the following question: what kinds of activities tend to slow a person ’ s perception of time ?",
     "llama-7b_response": "Activities that require a lot of concentration tend to slow a person ’ s perception of time. For example, reading a book or listening to music can make you forget about the passage of time.",
-    "llama-7b_fact_raw": "1. Activities that require a lot of concentration can slow a person's perception of time.\n2. Reading a book may slow a person's perception of time.\n3. Listening to music can make a person forget about the passage of time.",
+    "llama-7b_fact_raw": "1. Activities that require a lot of concentration can slow a person's perception of time.\n2. Reading a book is an example of an activity that may slow a person's perception of time.\n3. Listening to music is another example of an activity that can make a person forget about the passage of time.",
     "llama-7b_fact": [
       "Activities that require a lot of concentration can slow a person's perception of time.",
-      "Reading a book may slow a person's perception of time.",
-      "Listening to music can make a person forget about the passage of time."
+      "Reading a book is an example of an activity that may slow a person's perception of time.",
+      "Listening to music is another example of an activity that can make a person forget about the passage of time."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
     "llama-7b_judge": [
@@ -113,13 +102,13 @@
     "id": 314,
     "user_query": "You MUST give a detailed answer to the following question: about how many species of songbirds migrate ?",
     "llama-7b_response": "There are about 300 species of songbirds that migrate.",
-    "llama-7b_fact_raw": "1. Approximately 300 species of songbirds undergo migration.",
+    "llama-7b_fact_raw": "1. Approximately 300 species of songbirds migrate.",
     "llama-7b_fact": [
-      "Approximately 300 species of songbirds undergo migration."
+      "Approximately 300 species of songbirds migrate."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
-      "true"
+      "unknown"
     ]
   },
   {
@@ -150,15 +139,15 @@
     "id": 373,
     "user_query": "You MUST give a detailed answer to the following question: what is the longest-lived isotope of californium and what is its half-life ?",
     "llama-7b_response": "Californium-252 has a half-life of 2.6 years.",
-    "llama-7b_fact_raw": "1. Californium-252 is an isotope of californium.\n2. The half-life of Californium-252 is approximately 2.6 years.",
+    "llama-7b_fact_raw": "1. Californium-252 is an isotope of californium.\n2. The half-life of Californium-252 is 2.6 years.",
     "llama-7b_fact": [
       "Californium-252 is an isotope of californium.",
-      "The half-life of Californium-252 is approximately 2.6 years."
+      "The half-life of Californium-252 is 2.6 years."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The half-life of Californium-252 is approximately 2.645 years.",
     "llama-7b_judge": [
       "true",
-      "true"
+      "false"
     ]
   },
   {
@@ -189,13 +178,13 @@
     "id": 429,
     "user_query": "You MUST give a detailed answer to the following question: if you know that among four otherwise identical coins one is heavier than the others , what is the minimum number of weighs you would need to uncover the single counterfeit coin ?",
     "llama-7b_response": "You need to weigh the coins twice.",
-    "llama-7b_fact_raw": "1. Among four coins, where one is heavier, the minimum number of weighs required to identify the counterfeit coin is two.",
+    "llama-7b_fact_raw": "1. Among four otherwise identical coins, one can be identified as heavier with a minimum of two weighings.",
     "llama-7b_fact": [
-      "Among four coins, where one is heavier, the minimum number of weighs required to identify the counterfeit coin is two."
+      "Among four otherwise identical coins, one can be identified as heavier with a minimum of two weighings."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Among four coins, where one is heavier, the minimum number of weighs required to identify the counterfeit coin is three if using a balance scale without any additional knowledge. It's possible to determine the heavier coin in two weighs by first comparing two coins against two other coins, and then using the second weigh to determine the heavier coin from the two that were heavier in the first weigh. If the first weigh balances out, then one of the two not weighed must be the heavier, and the second weigh can determine which one it is.",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "false"
+      "true"
     ]
   },
   {
@@ -226,30 +215,21 @@
     "id": 463,
     "user_query": "You MUST give a detailed answer to the following question: consider the same two frogs sitting next to each other . we inform you that the frog sitting on the right is definitely male . what is the probability that the frog on the left is female ?",
     "llama-7b_response": "0.5",
-    "llama-7b_fact_raw": "1. The probability that the frog sitting on the left is female, given that the frog on the right is male, is 0.5.",
-    "llama-7b_fact": [
-      "The probability that the frog sitting on the left is female, given that the frog on the right is male, is 0.5."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nThe probability that a given frog is female could be 0.5 under the presumption of a 1:1 sex ratio and no additional context being provided. However, this statement lacks information on the specific population dynamics of the frogs in question, which could alter the sex ratio. Also, if there are environmental, behavioral, or genetic factors at play that influence the sex ratio, the probability might not be 0.5. Without further context, an accurate assessment cannot be made.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 487,
     "user_query": "You MUST give a detailed answer to the following question: suppose there are just 6 musicians . how many distinct 6 box loops are there ?",
     "llama-7b_response": "There are 6! = 720 loops.",
-    "llama-7b_fact_raw": "1. There are 720 distinct 6 box loops that can be formed with 6 musicians.\n2. The mathematical operation used to determine the number of loops is factorial, denoted by \"!\".\n3. The factorial of 6 (notated as 6!) equals 720.",
+    "llama-7b_fact_raw": "1. There are 720 distinct 6 box loops possible with 6 musicians.",
     "llama-7b_fact": [
-      "There are 720 distinct 6 box loops that can be formed with 6 musicians.",
-      "The mathematical operation used to determine the number of loops is factorial, denoted by \"!\".",
-      "The factorial of 6 (notated as 6!) equals 720."
+      "There are 720 distinct 6 box loops possible with 6 musicians."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE\n3. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
-      "unknown",
-      "true",
-      "true"
+      "unknown"
     ]
   },
   {
@@ -272,11 +252,11 @@
     "id": 504,
     "user_query": "You MUST give a detailed answer to the following question: after two lions are on the left , the third lion rafts back ( fourth crossing ) . which animals raft now from the right side of the river back to the left ( fifth crossing ) ?",
     "llama-7b_response": "The fifth crossing is made by the elephant.",
-    "llama-7b_fact_raw": "1. During the fifth crossing, it is the elephant that moves from the right side of the river back to the left side.",
+    "llama-7b_fact_raw": "1. The fifth crossing from the right side of the river to the left is made by the elephant.",
     "llama-7b_fact": [
-      "During the fifth crossing, it is the elephant that moves from the right side of the river back to the left side."
+      "The fifth crossing from the right side of the river to the left is made by the elephant."
     ],
-    "llama-7b_judge_raw": "UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or information about which river or situation is being referred to, it is impossible to determine the truthfulness of the statement regarding the fifth crossing by an elephant.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -301,15 +281,15 @@
     "id": 523,
     "user_query": "You MUST give a detailed answer to the following question: suppose the size of the room was not n x n , but n x m. what do you know about the values of n and m that would make it possible to go directly from the northwest corner to the southeast corner without having to re-enter a room ? what values would make it impossible ?",
     "llama-7b_response": "If the size of the room was not n x n , but n x m, then we could go directly from the northwest corner to the southeast corner without having to re-enter a room if m = n - 1. If the size of the room was not n x n , but n x m, then we could not go directly from the northwest corner to the southeast corner without having to re-enter a room if m < n - 1.",
-    "llama-7b_fact_raw": "1. Direct movement from the northwest corner to the southeast corner without re-entering a room is possible if m equals n minus 1 (m = n - 1).\n2. Direct movement from the northwest corner to the southeast corner without re-entering a room is impossible if m is less than n minus 1 (m < n - 1).",
+    "llama-7b_fact_raw": "1. If the room size is n x m, one can go directly from the northwest corner to the southeast corner without re-entering a room if m equals n minus 1 (m = n - 1).\n2. If the room size is n x m, it is impossible to go directly from the northwest corner to the southeast corner without re-entering a room if m is less than n minus 1 (m < n - 1).",
     "llama-7b_fact": [
-      "Direct movement from the northwest corner to the southeast corner without re-entering a room is possible if m equals n minus 1 (m = n - 1).",
-      "Direct movement from the northwest corner to the southeast corner without re-entering a room is impossible if m is less than n minus 1 (m < n - 1)."
+      "If the room size is n x m, one can go directly from the northwest corner to the southeast corner without re-entering a room if m equals n minus 1 (m = n - 1).",
+      "If the room size is n x m, it is impossible to go directly from the northwest corner to the southeast corner without re-entering a room if m is less than n minus 1 (m < n - 1)."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nThese statements appear to be related to a specific puzzle or problem involving movement through a grid or a series of rooms. Without additional context to understand the constraints of the movement, the rules of the grid or the dimensions of the rooms, it's not possible to determine the truth of these statements.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: If the room size is n x m, one cannot necessarily go directly from the northwest corner to the southeast corner without re-entering a room if m equals n minus 1 (m = n - 1). The ability to go directly from one corner to the opposite corner depends on the layout of the room and any obstacles, not just the dimensions of the room.\n2. TRUE",
     "llama-7b_judge": [
-      "unknown",
-      "unknown"
+      "false",
+      "true"
     ]
   },
   {
@@ -332,13 +312,13 @@
     "id": 661,
     "user_query": "You MUST give a detailed answer to the following question: what is the application of curium steve mentioned in the video ?",
     "llama-7b_response": "Curium steve is used in the production of nuclear weapons.",
-    "llama-7b_fact_raw": "1. Curium steve is utilized in the production of nuclear weapons.",
+    "llama-7b_fact_raw": "1. Curium is used in the production of nuclear weapons.",
     "llama-7b_fact": [
-      "Curium steve is utilized in the production of nuclear weapons."
+      "Curium is used in the production of nuclear weapons."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: No known isotope or compound goes by the name \"Curium steve.\" However, curium, particularly curium-242 and curium-244, have been considered in the design of nuclear weapons.",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "false"
+      "true"
     ]
   },
   {
@@ -373,7 +353,7 @@
     "llama-7b_fact": [
       "New York City appointed its first trained medical examiner in the year 1846."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: New York City appointed its first trained and full-time medical examiner in 1918. Before that, the role was filled by elected coroners without specific medical training.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: New York City appointed its first trained medical examiner, Charles Norris, in the year 1918.",
     "llama-7b_judge": [
       "false"
     ]
@@ -427,13 +407,13 @@
     "id": 859,
     "user_query": "You MUST give a detailed answer to the following question: thanks to its chemistry , europium is easier to isolate than the other lanthanides , so investigators know a little more about it . which is the stable , low oxidation state that europium shares with samarium , but not the other lanthanides ?",
     "llama-7b_response": "The stable , low oxidation state that europium shares with samarium , but not the other lanthanides is +2.",
-    "llama-7b_fact_raw": "1. Europium has a stable low oxidation state of +2.\n2. Samarium shares this +2 oxidation state with europium.\n3. The other lanthanides do not typically share this +2 oxidation state.",
+    "llama-7b_fact_raw": "1. Europium has a stable, low oxidation state of +2.\n2. Samarium also has a stable, low oxidation state of +2.\n3. The other lanthanides do not share this stable, low oxidation state of +2 with europium and samarium.",
     "llama-7b_fact": [
-      "Europium has a stable low oxidation state of +2.",
-      "Samarium shares this +2 oxidation state with europium.",
-      "The other lanthanides do not typically share this +2 oxidation state."
+      "Europium has a stable, low oxidation state of +2.",
+      "Samarium also has a stable, low oxidation state of +2.",
+      "The other lanthanides do not share this stable, low oxidation state of +2 with europium and samarium."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: While europium and samarium commonly have a +2 oxidation state, other lanthanides can also have a +2 oxidation state, but it is less common and less stable than their +3 state.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Several other lanthanides also have a stable +2 oxidation state, though it may not be as common as their +3 state. For example, ytterbium and thulium can also exhibit a stable +2 oxidation state under certain conditions.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -444,18 +424,9 @@
     "id": 872,
     "user_query": "You MUST give a detailed answer to the following question: when two bridges were built on a hillside in northern manhattan , what happened to the northern dusky salamanders that lived there ?",
     "llama-7b_response": "The northern dusky salamanders were probably killed by the construction of the bridges.",
-    "llama-7b_fact_raw": "1. Two bridges were built on a hillside in northern Manhattan.\n2. Northern dusky salamanders resided at the site where the bridges were constructed.\n3. The construction of the bridges likely resulted in the death of the northern dusky salamanders.",
-    "llama-7b_fact": [
-      "Two bridges were built on a hillside in northern Manhattan.",
-      "Northern dusky salamanders resided at the site where the bridges were constructed.",
-      "The construction of the bridges likely resulted in the death of the northern dusky salamanders."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Bridges are not typically built on a hillside; they are typically built over water bodies or valleys. It is more likely that bridges were built in northern Manhattan, but not specifically on a hillside unless referring to roadways elevated above the land like overpasses or viaducts in hilly terrain, which would need more context for accuracy.\n2. UNKNOWN: Without context or a specific location, it isn’t possible to confirm if northern dusky salamanders resided at the site where the bridges were constructed. The northern dusky salamander is native to the eastern United States, but further information is needed.\n3. UNKNOWN: The impact of construction on wildlife can vary greatly. Without specific details on the steps taken to protect the wildlife or the environmental assessments conducted before and after construction, it is not possible to determine the exact impact on the northern dusky salamanders.",
-    "llama-7b_judge": [
-      "false",
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 878,
@@ -469,11 +440,11 @@
     "id": 900,
     "user_query": "You MUST give a detailed answer to the following question: how old was ronald mcnair when he tried to check out books from the library ?",
     "llama-7b_response": "Ronald McNair was 15 years old when he tried to check out books from the library.",
-    "llama-7b_fact_raw": "1. Ronald McNair was 15 years old when he attempted to check out books from the library.",
+    "llama-7b_fact_raw": "1. Ronald McNair was 15 years old when he tried to check out books from the library.",
     "llama-7b_fact": [
-      "Ronald McNair was 15 years old when he attempted to check out books from the library."
+      "Ronald McNair was 15 years old when he tried to check out books from the library."
     ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nGiven just the statement and no other context, it’s difficult to determine whether the age mentioned regarding Ronald McNair's attempt to check out books from the segregated library is accurate. Ronald McNair did have an incident involving a library when he was a child, but without further details or a specific reference to historical records, the exact age cannot be confirmed.",
+    "llama-7b_judge_raw": "UNKNOWN\n\n[Without additional context or a specific year mentioned, it's not possible to determine the truthfulness of the statement regarding Ronald McNair's age when he tried to check out books from the library.]",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -482,15 +453,13 @@
     "id": 901,
     "user_query": "You MUST give a detailed answer to the following question: what television show did the mcnair brothers watch together that showed them a future where people of all kinds could work together ?",
     "llama-7b_response": "The McNair brothers watched a television show that showed them a future where people of all kinds could work together. The name of the show was \"Star Trek\".",
-    "llama-7b_fact_raw": "1. The McNair brothers watched the television show \"Star Trek\" together.\n2. \"Star Trek\" depicted a future where people of all kinds could work together.",
+    "llama-7b_fact_raw": "1. The McNair brothers watched the television show \"Star Trek\".",
     "llama-7b_fact": [
-      "The McNair brothers watched the television show \"Star Trek\" together.",
-      "\"Star Trek\" depicted a future where people of all kinds could work together."
+      "The McNair brothers watched the television show \"Star Trek\"."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
-      "unknown",
-      "true"
+      "unknown"
     ]
   },
   {
@@ -505,22 +474,9 @@
     "id": 1024,
     "user_query": "You MUST give a detailed answer to the following question: you drive 200 miles in 3 hours before stopping for 30 minutes for lunch and gas . after lunch you travel 150 miles in an hour and a half . what was your average speed for the trip ?",
     "llama-7b_response": "Your average speed for the trip was 60 miles per hour.",
-    "llama-7b_fact_raw": "1. The trip covered a total distance of 350 miles.\n2. The first part of the trip was 200 miles driven in 3 hours.\n3. There was a 30-minute stop for lunch and gas.\n4. The second part of the trip was 150 miles driven in an hour and a half. \n5. The computed average speed for the entire trip was 60 miles per hour.",
-    "llama-7b_fact": [
-      "The trip covered a total distance of 350 miles.",
-      "The first part of the trip was 200 miles driven in 3 hours.",
-      "There was a 30-minute stop for lunch and gas.",
-      "The second part of the trip was 150 miles driven in an hour and a half.",
-      "The computed average speed for the entire trip was 60 miles per hour."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN (There is no information provided to verify the total distance of the trip.)\n2. FALSE [correction]: If 200 miles were driven in 3 hours, the speed would be approximately 66.67 miles per hour (200 miles / 3 hours). The statement doesn't provide the average speed, but the timeframe indicates that the statement about the distance and time might be accurate. Yet without the claim of average speed, it remains impossible to correct it fully.\n3. TRUE (There is no information contradicting the 30-minute stop for lunch and gas.)\n4. TRUE (150 miles driven in 1.5 hours equates to an average speed of 100 miles per hour, which is plausible.)\n5. FALSE [correction]: To compute the average speed, divide the total distance by the total time. Assuming the two parts of the trip and the lunch break are the only components of the trip, the total travel time is 4.5 hours (3 hours + 1.5 hours), not including the 30-minute stop. \n\nThe correct average speed calculation, including the stop, would be: \n350 miles / (4.5 hours + 0.5 hours) = 350 miles / 5 hours = 70 miles per hour. \n\nWithout including the stop, it would be:\n350 miles / 4.5 hours ≈ 77.78 miles per hour.\n\nThus, the computed average speed for the entire trip was not 60 miles per hour; it either would be approximately 70 mph including the stop or approximately 77.78 mph not including the stop.",
-    "llama-7b_judge": [
-      "unknown",
-      "false",
-      "true",
-      "true",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1026,
@@ -534,15 +490,15 @@
     "id": 1031,
     "user_query": "You MUST give a detailed answer to the following question: when did eye details and other embellishments start showing up on gyotaku ?",
     "llama-7b_response": "Gyotaku was first invented in the 1800s by Japanese fishermen. It was used to record the size and species of fish that they caught. The fishermen would draw the outline of the fish on a piece of paper, and then rubber stamp it with ink from a bottle. They would then place the fish on top of the paper and press down hard with their hands. This would leave an impression of the fish on the paper.",
-    "llama-7b_fact_raw": "1. Gyotaku was invented in the 1800s by Japanese fishermen.\n2. The original purpose of gyotaku was to record the size and species of caught fish.\n3. In traditional gyotaku, fishermen would draw the outline of the fish on paper.\n4. The process involved using ink from a bottle to create a rubber stamp impression.\n5. Fishermen would press the fish against the paper to leave its impression.",
+    "llama-7b_fact_raw": "1. Gyotaku was first invented in the 1800s by Japanese fishermen.\n2. The original purpose of gyotaku was to record the size and species of fish caught by fishermen.\n3. The process involved drawing the outline of the fish on a piece of paper.\n4. Fishermen used ink from a bottle to rubber stamp the outline.\n5. Pressing the fish onto the paper would leave an impression of the fish.",
     "llama-7b_fact": [
-      "Gyotaku was invented in the 1800s by Japanese fishermen.",
-      "The original purpose of gyotaku was to record the size and species of caught fish.",
-      "In traditional gyotaku, fishermen would draw the outline of the fish on paper.",
-      "The process involved using ink from a bottle to create a rubber stamp impression.",
-      "Fishermen would press the fish against the paper to leave its impression."
+      "Gyotaku was first invented in the 1800s by Japanese fishermen.",
+      "The original purpose of gyotaku was to record the size and species of fish caught by fishermen.",
+      "The process involved drawing the outline of the fish on a piece of paper.",
+      "Fishermen used ink from a bottle to rubber stamp the outline.",
+      "Pressing the fish onto the paper would leave an impression of the fish."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: In traditional gyotaku, fishermen would not draw the outline of the fish; instead, they would apply ink directly to the fish and then press it onto paper to transfer the image.\n4. FALSE [correction]: The process of gyotaku involved applying ink directly to the fish, not creating a rubber stamp impression from a bottle.\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The process involved applying ink to the fish and then pressing the paper onto the fish to create an impression.\n4. FALSE [correction]: Fishermen did not use ink from a bottle to rubber stamp the outline; they applied ink directly to the fish and then pressed the paper onto it.\n5. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
@@ -579,11 +535,11 @@
     "id": 1168,
     "user_query": "You MUST give a detailed answer to the following question: the landmark clinical trial showing a benefit of aspirin on heart attacks lowered risk by what extent ?",
     "llama-7b_response": "The landmark clinical trial showing a benefit of aspirin on heart attacks lowered risk by 20%.",
-    "llama-7b_fact_raw": "1. A landmark clinical trial demonstrated that aspirin could lower the risk of heart attacks by 20%.",
+    "llama-7b_fact_raw": "1. A landmark clinical trial demonstrated that aspirin lowers the risk of heart attacks by 20%.",
     "llama-7b_fact": [
-      "A landmark clinical trial demonstrated that aspirin could lower the risk of heart attacks by 20%."
+      "A landmark clinical trial demonstrated that aspirin lowers the risk of heart attacks by 20%."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: Without specific details regarding the clinical trial such as the name, the year it was conducted, the sample size, and other relevant information, it's not possible to confirm the accuracy of the statement. Clinical trials concerning aspirin and heart attacks have been conducted, but the statement is too vague to verify the precise findings.",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific details about the clinical trial mentioned, such as the name of the study, the year it was conducted, or the journal it was published in, it is not possible to verify the accuracy of the statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -592,12 +548,12 @@
     "id": 1284,
     "user_query": "You MUST give a detailed answer to the following question: what was the first company to institute standard time ?",
     "llama-7b_response": "The first company to institute standard time was the Pennsylvania Railroad in 1848.",
-    "llama-7b_fact_raw": "1. The Pennsylvania Railroad was the first company to institute standard time.\n2. This standardization by the Pennsylvania Railroad occurred in 1848.",
+    "llama-7b_fact_raw": "1. The Pennsylvania Railroad was the first company to institute standard time.\n2. The institution of standard time by the Pennsylvania Railroad occurred in 1848.",
     "llama-7b_fact": [
       "The Pennsylvania Railroad was the first company to institute standard time.",
-      "This standardization by the Pennsylvania Railroad occurred in 1848."
+      "The institution of standard time by the Pennsylvania Railroad occurred in 1848."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The Pennsylvania Railroad was not the first company to institute standard time. It was the railroads collectively that established standard time zones on November 18, 1883, often called \"The Day of Two Noons,\" and it wasn't done by a single company.\n2. FALSE [correction]: Standard time was not instituted by the Pennsylvania Railroad in 1848. The standard time zones were adopted by the railroads in 1883.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The first company to institute standard time was not the Pennsylvania Railroad; it was actually the Great Western Railway in England in 1840.\n2. FALSE [correction]: Standard time was not instituted by the Pennsylvania Railroad in 1848. The standard time system was adopted in the United States by the railroads on November 18, 1883.",
     "llama-7b_judge": [
       "false",
       "false"
@@ -607,18 +563,18 @@
     "id": 1297,
     "user_query": "You MUST give a detailed answer to the following question: what effects does the grouping of information from neighboring photoreceptors in the brain of hawkmoths have ?",
     "llama-7b_response": "The grouping of information from neighboring photoreceptors in the brain of hawkmoths has a number of effects. First, it allows the moth to see more clearly in the dark. Second, it allows the moth to see better at long distances. Third, it allows the moth to see better when there is a lot of motion around it. Finally, it allows the moth to see better when there is a lot of light coming from the sky.",
-    "llama-7b_fact_raw": "1. The grouping of information from neighboring photoreceptors allows hawkmoths to see more clearly in the dark.\n2. This adaptation also helps hawkmoths to see better at long distances.\n3. Hawkmoths can see better in the presence of a lot of motion due to the grouping of information from neighboring photoreceptors.\n4. The grouping enables hawkmoths to have improved vision when there is a lot of light coming from the sky.",
+    "llama-7b_fact_raw": "1. The grouping of information from neighboring photoreceptors allows hawkmoths to see more clearly in the dark.\n2. This grouping enables hawkmoths to see better at long distances.\n3. Hawkmoths can see better in conditions with a lot of motion due to the grouping of information from neighboring photoreceptors.\n4. The grouping of photoreceptor information helps hawkmoths to see better when there is a lot of light coming from the sky.",
     "llama-7b_fact": [
       "The grouping of information from neighboring photoreceptors allows hawkmoths to see more clearly in the dark.",
-      "This adaptation also helps hawkmoths to see better at long distances.",
-      "Hawkmoths can see better in the presence of a lot of motion due to the grouping of information from neighboring photoreceptors.",
-      "The grouping enables hawkmoths to have improved vision when there is a lot of light coming from the sky."
+      "This grouping enables hawkmoths to see better at long distances.",
+      "Hawkmoths can see better in conditions with a lot of motion due to the grouping of information from neighboring photoreceptors.",
+      "The grouping of photoreceptor information helps hawkmoths to see better when there is a lot of light coming from the sky."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The adaptation primarily helps hawkmoths see more clearly in low-light conditions, rather than at long distances.\n3. UNKNOWN\n4. FALSE [correction]: The grouping of information from neighboring photoreceptors in hawkmoths is an adaptation for low-light vision, not for dealing with a lot of light coming from the sky.",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: The grouping of information from neighboring photoreceptors allows hawkmoths to increase their visual sensitivity, which is beneficial for seeing in low-light conditions, not necessarily for seeing better at long distances.\n3. TRUE\n4. FALSE [correction]: The grouping of photoreceptor information helps hawkmoths to see better in low-light conditions, not when there is a lot of light coming from the sky.",
     "llama-7b_judge": [
       "true",
       "false",
-      "unknown",
+      "true",
       "false"
     ]
   },
@@ -698,21 +654,26 @@
     "id": 1534,
     "user_query": "You MUST give a detailed answer to the following question: how many grandfather clocks could you run using the same amount of power it takes to light a standard lightbulb ?",
     "llama-7b_response": "You can run 10 grandfather clocks using the same amount of power it takes to light a standard lightbulb.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Ten grandfather clocks can be run using the same amount of power it takes to light a standard lightbulb.",
+    "llama-7b_fact": [
+      "Ten grandfather clocks can be run using the same amount of power it takes to light a standard lightbulb."
+    ],
+    "llama-7b_judge_raw": "UNKNOWN\n\nThe statement about the power consumption of ten grandfather clocks compared to a standard lightbulb is vague without specific details about the power consumption of both the clocks and the lightbulb. Grandfather clocks are typically powered by mechanical energy, often using weights or springs that are wound periodically, and do not require electricity to run. However, if the statement is referring to electric grandfather clocks, then specific power ratings would be needed to determine the truth of the statement. Without additional context or specifications, the truthfulness of the statement cannot be determined.",
+    "llama-7b_judge": [
+      "unknown"
+    ]
   },
   {
     "id": 1550,
     "user_query": "You MUST give a detailed answer to the following question: taking medicines as tablets ( or any other oral form ) implies that some drug can be neutralized by liver enzymes before reaching the bloodstream and its target . injecting the drug directly into the bloodstream bypasses this process . do other routes also bypass the liver and deliver the drug directly into the bloodstream ?",
     "llama-7b_response": "Yes, other routes also bypass the liver and deliver the drug directly into the bloodstream. For example, intramuscular injection bypasses the liver and delivers the drug directly into the bloodstream.",
-    "llama-7b_fact_raw": "1. Taking medicines orally can result in some drugs being neutralized by liver enzymes before reaching the bloodstream. \n2. Injecting the drug directly into the bloodstream bypasses the process where liver enzymes may neutralize the drug.\n3. Intramuscular injection is an example of a route that bypasses the liver and delivers the drug directly into the bloodstream.",
+    "llama-7b_fact_raw": "1. Taking medicines as tablets or any other oral form can result in some of the drug being neutralized by liver enzymes before reaching the bloodstream.\n2. Injecting the drug directly into the bloodstream bypasses the process of being neutralized by liver enzymes.\n3. Intramuscular injection is a route that bypasses the liver and delivers the drug directly into the bloodstream.",
     "llama-7b_fact": [
-      "Taking medicines orally can result in some drugs being neutralized by liver enzymes before reaching the bloodstream.",
-      "Injecting the drug directly into the bloodstream bypasses the process where liver enzymes may neutralize the drug.",
-      "Intramuscular injection is an example of a route that bypasses the liver and delivers the drug directly into the bloodstream."
+      "Taking medicines as tablets or any other oral form can result in some of the drug being neutralized by liver enzymes before reaching the bloodstream.",
+      "Injecting the drug directly into the bloodstream bypasses the process of being neutralized by liver enzymes.",
+      "Intramuscular injection is a route that bypasses the liver and delivers the drug directly into the bloodstream."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Intramuscular injection does not deliver the drug directly into the bloodstream; rather, it allows the drug to be absorbed into the blood through capillaries in the muscle tissue, which may still be subject to some first-pass metabolism by the liver, albeit to a lesser extent than oral administration.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Intramuscular injection does not deliver the drug directly into the bloodstream; it delivers the drug into a muscle, from where it is then absorbed into the bloodstream over time. This route can still be subject to first-pass metabolism by the liver, but to a lesser extent than oral administration.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -755,15 +716,13 @@
     "id": 1615,
     "user_query": "You MUST give a detailed answer to the following question: the third number within a third group of twelve is 27. what is the fifth number within a fifth group of twelve ?",
     "llama-7b_response": "The fifth number within a fifth group of twelve is 35.",
-    "llama-7b_fact_raw": "1. The third number within a third group of twelve is 27.\n2. The fifth number within a fifth group of twelve is 35.",
+    "llama-7b_fact_raw": "1. The fifth number within a fifth group of twelve is 35.",
     "llama-7b_fact": [
-      "The third number within a third group of twelve is 27.",
       "The fifth number within a fifth group of twelve is 35."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "UNKNOWN\n\nThe statement \"The fifth number within a fifth group of twelve is 35\" lacks context and does not provide enough information to determine its truth value. Without additional information about the sequence, grouping method, or any specific pattern being referred to, it is impossible to verify or correct the statement.",
     "llama-7b_judge": [
-      "true",
-      "true"
+      "unknown"
     ]
   },
   {
@@ -791,11 +750,11 @@
     "id": 1858,
     "user_query": "You MUST give a detailed answer to the following question: how many bridges of königsberg remained immediately after world war ii ?",
     "llama-7b_response": "There were 4 bridges remaining immediately after world war ii .",
-    "llama-7b_fact_raw": "1. After World War II, there were 4 bridges remaining in Königsberg.",
+    "llama-7b_fact_raw": "1. There were 4 bridges remaining in Königsberg immediately after World War II.",
     "llama-7b_fact": [
-      "After World War II, there were 4 bridges remaining in Königsberg."
+      "There were 4 bridges remaining in Königsberg immediately after World War II."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: After World War II, there were no bridges remaining in Königsberg, as they had been destroyed during the war. The original problem of the Seven Bridges of Königsberg, which was historically significant in the development of graph theory by Leonhard Euler in the 18th century, was rendered moot by the destruction of the bridges.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: After World War II, the city of Königsberg, which had seven bridges before the war, was heavily damaged, and many of the bridges were destroyed. The exact number of remaining bridges immediately after the war is not specified here, but it is known that the original seven bridges were a famous feature of the city before their destruction during the war. Additionally, Königsberg was renamed Kaliningrad and became part of the Soviet Union after the war.",
     "llama-7b_judge": [
       "false"
     ]
@@ -812,14 +771,9 @@
     "id": 1862,
     "user_query": "You MUST give a detailed answer to the following question: create a map with one more island between two land masses . what is the minimum number of bridges needed to create a eulerian path ?",
     "llama-7b_response": "The minimum number of bridges needed to create a eulerian path is 3.",
-    "llama-7b_fact_raw": "1. To create a Eulerian path, an odd number of bridges must be used when connecting islands or land masses.",
-    "llama-7b_fact": [
-      "To create a Eulerian path, an odd number of bridges must be used when connecting islands or land masses."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: To create a Eulerian path, all nodes (vertices) except two must have an even number of edges (bridges), and those two can have an odd number. A Eulerian circuit, where you end up where you started, requires all nodes to have an even number of edges.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1964,
@@ -861,7 +815,7 @@
     "llama-7b_fact": [
       "Mesler attributed three decisions to reaching the top of the mountain."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\nWithout additional context or details regarding what \"Mesler\" refers to, or what \"top of the mountain\" symbolizes (literal or metaphorical), it is not possible to determine the truthfulness of the statement.",
+    "llama-7b_judge_raw": "1. UNKNOWN",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -878,14 +832,9 @@
     "id": 2123,
     "user_query": "You MUST give a detailed answer to the following question: according to the ideal gas law : pv=nrt , what happens to the temperature when the pressure decreases ?",
     "llama-7b_response": "The temperature decreases.",
-    "llama-7b_fact_raw": "1. According to the ideal gas law, if the pressure (p) decreases, the temperature (T) decreases, assuming the volume (V) and the amount of substance (n) are constant.",
-    "llama-7b_fact": [
-      "According to the ideal gas law, if the pressure (p) decreases, the temperature (T) decreases, assuming the volume (V) and the amount of substance (n) are constant."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: According to the ideal gas law (PV=nRT), if the pressure (P) decreases while the volume (V) and the amount of substance (n) are held constant, the temperature (T) must increase to maintain the equality.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2143,
@@ -907,18 +856,9 @@
     "id": 2147,
     "user_query": "You MUST give a detailed answer to the following question: it 's estimated that 330 billion photographs are taken each year . if there are 6.9 billion people in the world , how many photos on average is that per person ? how many photos do you estimate you take each year ?",
     "llama-7b_response": "I take about 1000 photos per year.",
-    "llama-7b_fact_raw": "1. It is estimated that 330 billion photographs are taken each year.\n2. The world population is considered to be 6.9 billion people.\n\nThe last part of the answer where the user states their personal experience (\"I take about 1000 photos per year.\") is not a verifiable factual statement because it is subjective and cannot be independently verified for all users.",
-    "llama-7b_fact": [
-      "It is estimated that 330 billion photographs are taken each year.",
-      "The world population is considered to be 6.9 billion people.",
-      "e last part of the answer where the user states their personal experience (\"I take about 1000 photos per year.\") is not a verifiable factual statement because it is subjective and cannot be independently verified for all users."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: The world population as of my knowledge cutoff in early 2023 is estimated to be approximately 7.9 billion people, not 6.9 billion.\n3. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown",
-      "false",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2188,
@@ -948,19 +888,26 @@
     "id": 2298,
     "user_query": "You MUST give a detailed answer to the following question: the first claw machines were explicitly marketed as highly profitable for owners . when were they invented and why were they so popular at the time ?",
     "llama-7b_response": "Claw machines were invented in the early 20th century. They were popular at the time because they allowed people to play games without having to pay for them.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Claw machines were invented in the early 20th century.\n2. They were popular because they allowed people to play games without having to pay for them.",
+    "llama-7b_fact": [
+      "Claw machines were invented in the early 20th century.",
+      "They were popular because they allowed people to play games without having to pay for them."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Claw machines were popular because they offered entertainment and the chance to win prizes, but they typically required payment to play.",
+    "llama-7b_judge": [
+      "true",
+      "false"
+    ]
   },
   {
     "id": 2330,
     "user_query": "You MUST give a detailed answer to the following question: how many electrons does a lawrencium atom have in its outermost shell ?",
     "llama-7b_response": "Lawrencium has 10 electrons in its outermost shell.",
-    "llama-7b_fact_raw": "1. A lawrencium atom has 10 electrons in its outermost shell.",
+    "llama-7b_fact_raw": "1. Lawrencium has 10 electrons in its outermost shell.",
     "llama-7b_fact": [
-      "A lawrencium atom has 10 electrons in its outermost shell."
+      "Lawrencium has 10 electrons in its outermost shell."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: A lawrencium atom has 3 electrons in its outermost shell (it belongs to the actinide series which are characterized by filling the 5f orbital; its electron configuration ends with 5f^14 7s^2 7p^1).",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Lawrencium, with the atomic number 103, is expected to have 3 electrons in its outermost shell (7s^2 7p^1), according to the Aufbau principle and its position in the periodic table.",
     "llama-7b_judge": [
       "false"
     ]
@@ -969,25 +916,20 @@
     "id": 2345,
     "user_query": "You MUST give a detailed answer to the following question: what substance was most commonly used amongst teenagers in the 1980 's ?",
     "llama-7b_response": "Marijuana",
-    "llama-7b_fact_raw": "1. Marijuana was the most commonly used substance among teenagers in the 1980s.",
-    "llama-7b_fact": [
-      "Marijuana was the most commonly used substance among teenagers in the 1980s."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nThe statement about marijuana being the most commonly used substance among teenagers in the 1980s would require specific data to confirm which substance was most commonly used. Without access to that data or relevant context, I cannot determine the truth of this statement.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2354,
     "user_query": "You MUST give a detailed answer to the following question: from 1974 to 1978 , carr and his teammates shared the world record for individual time in space . how many hours did they log ?",
     "llama-7b_response": "Carr and his teammates shared the world record for individual time in space from 1974 to 1978. They logged a total of 4,848 hours in space.",
-    "llama-7b_fact_raw": "1. Carr and his teammates held a world record for individual time in space between 1974 and 1978.\n2. They logged a total of 4,848 hours in space.",
+    "llama-7b_fact_raw": "1. Carr and his teammates held the world record for individual time in space from 1974 to 1978.\n2. They logged a total of 4,848 hours in space.",
     "llama-7b_fact": [
-      "Carr and his teammates held a world record for individual time in space between 1974 and 1978.",
+      "Carr and his teammates held the world record for individual time in space from 1974 to 1978.",
       "They logged a total of 4,848 hours in space."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nWithout additional context providing specific information about the individual named Carr and their specific space mission, it's impossible to determine the veracity of the statements related to world records for individual time in space or the total hours logged. Additionally, \"Carr\" could refer to multiple individuals, and without a first name or mission detail, it's not feasible to correct or verify these statements.",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nWithout additional context or information about who \"Carr\" refers to and which specific world record is being discussed, it is not possible to verify the accuracy of these statements.",
     "llama-7b_judge": [
       "unknown",
       "unknown"
@@ -1005,9 +947,14 @@
     "id": 2435,
     "user_query": "You MUST give a detailed answer to the following question: if concentration gradients help explain the movement of electrons in electricity . how is the word voltage related to concentration gradients ?",
     "llama-7b_response": "Voltage is a measure of the difference in electric potential between two points.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Voltage measures the difference in electric potential between two points.",
+    "llama-7b_fact": [
+      "Voltage measures the difference in electric potential between two points."
+    ],
+    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge": [
+      "true"
+    ]
   },
   {
     "id": 2472,
@@ -1069,14 +1016,12 @@
     "id": 2655,
     "user_query": "You MUST give a detailed answer to the following question: what is one reason the video gives as a reason why those who are in charge of shaping high school physics curricula do not include any topics that were discovered/developed after 1865 ?",
     "llama-7b_response": "The video gives as a reason that those who are in charge of shaping high school physics curricula do not include any topics that were discovered/developed after 1865 because they believe that students are not ready for them.",
-    "llama-7b_fact_raw": "1. High school physics curricula do not include topics that were discovered or developed after 1865.\n2. The reason given is that curriculum designers believe students are not ready for post-1865 physics topics.",
+    "llama-7b_fact_raw": "1. Those in charge of shaping high school physics curricula believe that students are not ready for topics discovered/developed after 1865.",
     "llama-7b_fact": [
-      "High school physics curricula do not include topics that were discovered or developed after 1865.",
-      "The reason given is that curriculum designers believe students are not ready for post-1865 physics topics."
+      "Those in charge of shaping high school physics curricula believe that students are not ready for topics discovered/developed after 1865."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: High school physics curricula often include topics that were discovered or developed after 1865, such as electromagnetism (Maxwell's equations, 1865), special relativity (1905), and quantum mechanics (early 20th century).\n2. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or a specific source, it's impossible to determine the beliefs of all individuals responsible for shaping high school physics curricula regarding the readiness of students for topics discovered or developed after 1865. This statement is too broad and lacks specificity.",
     "llama-7b_judge": [
-      "false",
       "unknown"
     ]
   },
@@ -1096,9 +1041,9 @@
     "llama-7b_fact": [
       "Einstein referred to the special theory of relativity as the only truly revolutionary thing that he did."
     ],
-    "llama-7b_judge_raw": "1. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Einstein referred to the general theory of relativity, not the special theory of relativity, as the only truly revolutionary thing that he did.",
     "llama-7b_judge": [
-      "true"
+      "false"
     ]
   },
   {
@@ -1111,9 +1056,9 @@
       "Four penguin species are listed as threatened.",
       "Two penguin species are listed as endangered."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: As of my knowledge cutoff date in 2023, the number of penguin species listed as near-threatened varies depending on the source, so the number six may not be accurate. The International Union for Conservation of Nature (IUCN) Red List of Threatened Species would provide the most up-to-date information on the status of penguin species.\n2. UNKNOWN: The statement is vague because it does not specify the criterion for being considered \"threatened.\" If referring to the IUCN classification, \"threatened\" includes species categorized as vulnerable or endangered, so the number four could be incorrect as the status of species can change with new assessments.\n3. UNKNOWN: Similar to statement 2, the statement regarding endangered species is unclear because it does not specify the criteria used for categorization. The IUCN Red List should be referenced for the accurate and current status of penguin species.",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n\nWithout the specific context or a current reference to the conservation status of penguin species, it is not possible to determine the accuracy of these statements. The conservation status of species can change over time due to various factors, and it would require up-to-date information from a reliable source such as the International Union for Conservation of Nature (IUCN) Red List to confirm these statements.",
     "llama-7b_judge": [
-      "false",
+      "unknown",
       "unknown",
       "unknown"
     ]
@@ -1130,25 +1075,36 @@
     "id": 2723,
     "user_query": "You MUST give a detailed answer to the following question: even with more of the circular pies , why would it have been impossible to cover the area of the circle with them and calculate pi using the area of a circle formula area = pi * r^2 ?",
     "llama-7b_response": "The area of a circle formula area = pi * r^2 can be used to calculate the area of a circle with radius r. However, if we have a circle with radius r and we want to cover it with circular pies, then the area of each pie will be (r/2)^2 = (1/2)^2 = 1/4. So, if we want to cover the area of the circle with pies, then we need to have at least 4 times more pies than the radius of the circle. In other words, if we have a circle with radius r, then we need to have at least 4r pies to cover the area of the circle. However, if we have a circle with radius r and we want to calculate pi using the area of a circle formula area = pi * r^2 , then we need to divide the area of the circle by the radius of the circle. So, if we have a circle with radius r, then we need to divide 1 by r to get pi. But, if we have a circle with radius r and we want to cover the area of the circle with pies, then we need to multiply 1 by r to get pi. Therefore, if we want to cover the area of the circle with pies and calculate pi using the area of a circle formula area = pi * r^2 , then we need to multiply 1 by r to get pi.",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. The area of a circle formula is area = pi * r^2.\n2. To cover the area of a circle with circular pies, each pie's area would be (r/2)^2 = (1/2)^2 = 1/4 of the circle's area.\n3. To cover the area of the circle with pies, at least 4 times more pies than the radius of the circle are needed.\n4. To calculate pi using the area of a circle formula, one would need to divide the area of the circle by the radius squared.\n5. The answer suggests a misunderstanding in the calculation process for pi, as it incorrectly states that multiplying 1 by r would yield pi.",
+    "llama-7b_fact": [
+      "The area of a circle formula is area = pi * r^2.",
+      "To cover the area of a circle with circular pies, each pie's area would be (r/2)^2 = (1/2)^2 = 1/4 of the circle's area.",
+      "To cover the area of the circle with pies, at least 4 times more pies than the radius of the circle are needed.",
+      "To calculate pi using the area of a circle formula, one would need to divide the area of the circle by the radius squared.",
+      "The answer suggests a misunderstanding in the calculation process for pi, as it incorrectly states that multiplying 1 by r would yield pi."
+    ],
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: To cover the area of a circle with circular pies, each pie's area would be pi * (r/2)^2, which is pi * r^2 / 4, so each pie would indeed be 1/4 of the circle's area. However, the statement \"(r/2)^2 = (1/2)^2 = 1/4\" is incorrect as it implies r = 1, which is not given in the statement.\n3. FALSE [correction]: To cover the area of the circle with pies, you would need exactly 4 pies if each pie's area is 1/4 of the circle's area, not 4 times more pies than the radius of the circle.\n4. TRUE\n5. UNKNOWN",
+    "llama-7b_judge": [
+      "true",
+      "false",
+      "false",
+      "true",
+      "unknown"
+    ]
   },
   {
     "id": 2724,
     "user_query": "You MUST give a detailed answer to the following question: knowing the small pies have a diameter of 10.5cm - what is the area of the circle created in this video ?",
     "llama-7b_response": "The area of the circle created in this video is π*r^2 = π*10.5^2 = 112.5π cm^2.",
-    "llama-7b_fact_raw": "1. The diameter of the small pies mentioned is 10.5 cm.\n2. The radius of the pies, being half of the diameter, is 5.25 cm.\n3. The formula used to calculate the area of the circle is π*r^2.\n4. The area of the circle, using the given diameter, is calculated to be 112.5π cm^2.",
+    "llama-7b_fact_raw": "1. The diameter of the small pies mentioned is 10.5 cm.\n2. The formula to calculate the area of a circle is π*r^2.\n3. The area of the circle created in the video is 112.5π cm^2.",
     "llama-7b_fact": [
       "The diameter of the small pies mentioned is 10.5 cm.",
-      "The radius of the pies, being half of the diameter, is 5.25 cm.",
-      "The formula used to calculate the area of the circle is π*r^2.",
-      "The area of the circle, using the given diameter, is calculated to be 112.5π cm^2."
+      "The formula to calculate the area of a circle is π*r^2.",
+      "The area of the circle created in the video is 112.5π cm^2."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN (Without additional context, it's not clear which pies are being referred to.)\n2. TRUE (If the diameter is indeed 10.5 cm, then the radius is half of that, which is 5.25 cm.)\n3. TRUE (The formula π*r^2 is indeed used to calculate the area of a circle.)\n4. FALSE [correction]: The area of the circle, using the given radius of 5.25 cm, is calculated to be π*(5.25 cm)^2 = π*(27.5625 cm^2) = 86.59π cm^2 approximately.",
+    "llama-7b_judge_raw": "1. UNKNOWN (The statement does not provide a context or reference to verify the diameter of the pies mentioned.)\n2. TRUE\n3. FALSE [correction]: If the diameter of the circle is 10.5 cm, the radius r would be half of that, which is 5.25 cm. The area A of the circle would be π*(5.25 cm)^2 = π*27.5625 cm^2 = 86.59π cm^2 (rounded to two decimal places).",
     "llama-7b_judge": [
       "unknown",
-      "true",
       "true",
       "false"
     ]
@@ -1157,16 +1113,16 @@
     "id": 2726,
     "user_query": "You MUST give a detailed answer to the following question: p has coordinates ( 3,3 ) and is translated by 5 units in the x direction . what are the coordinates of p after translation ?",
     "llama-7b_response": "( 8,3 )",
-    "llama-7b_fact_raw": "1. The original coordinates of point p are (3,3).\n2. Point p is translated by 5 units in the x direction.\n3. The new coordinates of point p after the translation are (8,3).",
+    "llama-7b_fact_raw": "1. The original coordinates of point P are (3,3).\n2. Point P is translated by 5 units in the x direction.\n3. The new coordinates of point P after translation are (8,3).",
     "llama-7b_fact": [
-      "The original coordinates of point p are (3,3).",
-      "Point p is translated by 5 units in the x direction.",
-      "The new coordinates of point p after the translation are (8,3)."
+      "The original coordinates of point P are (3,3).",
+      "Point P is translated by 5 units in the x direction.",
+      "The new coordinates of point P after translation are (8,3)."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. TRUE",
     "llama-7b_judge": [
-      "true",
-      "true",
+      "unknown",
+      "unknown",
       "true"
     ]
   },
@@ -1190,20 +1146,20 @@
     "id": 2770,
     "user_query": "You MUST give a detailed answer to the following question: what does the professor give as the possible reason for the fact that we call burned garden rubbish “ potash ” ?",
     "llama-7b_response": "The professor gives the following possible reason for the fact that we call burned garden rubbish “ potash ” :\nPotassium is a chemical element with the symbol K and atomic number 19. It is a soft silvery-white metallic element that is very reactive and flammable. Its compounds are used as fertilizers and explosives.",
-    "llama-7b_fact_raw": "1. Potassium is a chemical element with the symbol K.\n2. Potassium has the atomic number 19.\n3. Potassium is very reactive and flammable.\n4. Potassium compounds are used as fertilizers.\n5. Potassium compounds are used in explosives.",
+    "llama-7b_fact_raw": "1. Potassium is a chemical element with the symbol K.\n2. The atomic number of potassium is 19.\n3. Potassium is a soft silvery-white metallic element.\n4. Potassium is very reactive and flammable.\n5. Potassium compounds are used as fertilizers and explosives.",
     "llama-7b_fact": [
       "Potassium is a chemical element with the symbol K.",
-      "Potassium has the atomic number 19.",
+      "The atomic number of potassium is 19.",
+      "Potassium is a soft silvery-white metallic element.",
       "Potassium is very reactive and flammable.",
-      "Potassium compounds are used as fertilizers.",
-      "Potassium compounds are used in explosives."
+      "Potassium compounds are used as fertilizers and explosives."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: Potassium is very reactive, especially with water, but it is not flammable. It reacts with water to produce hydrogen gas which can ignite, but the potassium itself is not flammable.\n5. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
       "true",
-      "true",
+      "false",
       "true"
     ]
   },
@@ -1219,14 +1175,9 @@
     "id": 2816,
     "user_query": "You MUST give a detailed answer to the following question: what is chi 's second prototyping rule ?",
     "llama-7b_response": "Chi's second prototyping rule is \"Don't Repeat Yourself\".",
-    "llama-7b_fact_raw": "1. Chi's second prototyping rule is \"Don't Repeat Yourself\".",
-    "llama-7b_fact": [
-      "Chi's second prototyping rule is \"Don't Repeat Yourself\"."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Chi's second prototyping rule is not \"Don't Repeat Yourself\". \"Don't Repeat Yourself\" is a software development principle. It's unclear what Chi's second prototyping rule is without additional context.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2878,
@@ -1240,13 +1191,15 @@
     "id": 2879,
     "user_query": "You MUST give a detailed answer to the following question: why did steve say that samarium is a beautiful element to work with in the research lab ?",
     "llama-7b_response": "Steve said that samarium is a beautiful element to work with in the research lab because it has a very stable nucleus, which makes it easy to study.",
-    "llama-7b_fact_raw": "1. Steve stated that samarium has a very stable nucleus.",
+    "llama-7b_fact_raw": "1. Steve described samarium as a beautiful element to work with in the research lab.\n2. Samarium is said to have a very stable nucleus.",
     "llama-7b_fact": [
-      "Steve stated that samarium has a very stable nucleus."
+      "Steve described samarium as a beautiful element to work with in the research lab.",
+      "Samarium is said to have a very stable nucleus."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Samarium has several isotopes, some of which are unstable; however, Samarium-149 is known for its high neutron capture cross-section, which is a characteristic that is not typically associated with very stable nuclei.",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE",
     "llama-7b_judge": [
-      "false"
+      "unknown",
+      "true"
     ]
   },
   {
@@ -1269,11 +1222,11 @@
     "id": 2905,
     "user_query": "You MUST give a detailed answer to the following question: which phrase did shakespeare not invent ?",
     "llama-7b_response": "Shakespeare did not invent the phrase \"to be or not to be\".",
-    "llama-7b_fact_raw": "1. Shakespeare did not invent the phrase \"to be or not to be.\"",
+    "llama-7b_fact_raw": "1. Shakespeare did not invent the phrase \"to be or not to be\".",
     "llama-7b_fact": [
-      "Shakespeare did not invent the phrase \"to be or not to be.\""
+      "Shakespeare did not invent the phrase \"to be or not to be\"."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n\nExplanation: The phrase \"to be or not to be\" is famously from William Shakespeare's play \"Hamlet\" (Act 3, Scene 1), and while Shakespeare wrote it for the character of Hamlet, it would be incorrect to say that he \"invented\" it in the sense that it was a common expression before the play. Rather, Shakespeare coined this particular arrangement of words for his play. It is a noteworthy example of Shakespeare's influence on the English language, but the concept of pondering existence itself is not unique to Shakespeare and has been a philosophical question throughout history.",
+    "llama-7b_judge_raw": "1. TRUE\n\nThe phrase \"to be or not to be\" is from Shakespeare's play \"Hamlet,\" specifically from the opening line of a soliloquy in Act 3, Scene 1. While Shakespeare wrote the play and included this phrase, he did not \"invent\" the concepts of \"to be\" or \"not to be.\" The phrase has become famous as part of his work, but the idea of contemplating existence or non-existence is a philosophical question that predates Shakespeare.",
     "llama-7b_judge": [
       "true"
     ]
@@ -1282,11 +1235,11 @@
     "id": 2991,
     "user_query": "You MUST give a detailed answer to the following question: who told makeba stories—and stressed the importance of storytelling—when she was a little girl ?",
     "llama-7b_response": "Makeba's mother told her stories when she was a little girl.",
-    "llama-7b_fact_raw": "1. Makeba's mother was the person who told her stories during her childhood.",
+    "llama-7b_fact_raw": "1. Makeba's mother was the person who told her stories when she was a little girl.",
     "llama-7b_fact": [
-      "Makeba's mother was the person who told her stories during her childhood."
+      "Makeba's mother was the person who told her stories when she was a little girl."
     ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or information regarding who Makeba is and the source of the statements, it is impossible to determine the truthfulness of the statement regarding her mother telling her stories during her childhood.",
+    "llama-7b_judge_raw": "UNKNOWN",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1327,21 +1280,19 @@
     "id": 3063,
     "user_query": "You MUST give a detailed answer to the following question: like other ethnic groups , many japanese-americans suffered discrimination by other americans . this was also true in the u.s. military . describe what happened to harry akune just before he boarded the paratrooper plane that was to drop them over enemy territory . why do you think harry had good reason to suspect the white officer of discriminating against him ?",
     "llama-7b_response": "Harry Akune was a Japanese-American soldier who served in the United States Army during World War II. He was a member of the 100th Infantry Battalion, 442nd Regimental Combat Team, and the 522nd Field Artillery Battalion. On June 6, 1944, he was one of the first American soldiers to land on Omaha Beach during the Normandy invasion. After the war, he returned to Hawaii and became a police officer.",
-    "llama-7b_fact_raw": "1. Harry Akune was a Japanese-American soldier who served in the United States Army during World War II.\n2. He was a member of the 100th Infantry Battalion.\n3. Harry Akune served in the 442nd Regimental Combat Team.\n4. He also served in the 522nd Field Artillery Battalion.\n5. Harry Akune landed on Omaha Beach during the Normandy invasion on June 6, 1944.",
+    "llama-7b_fact_raw": "1. Harry Akune was a Japanese-American soldier who served in the United States Army during World War II.\n2. He was a member of the 100th Infantry Battalion, 442nd Regimental Combat Team, and the 522nd Field Artillery Battalion.\n3. Harry Akune landed on Omaha Beach during the Normandy invasion on June 6, 1944.\n4. After World War II, Harry Akune became a police officer in Hawaii.",
     "llama-7b_fact": [
       "Harry Akune was a Japanese-American soldier who served in the United States Army during World War II.",
-      "He was a member of the 100th Infantry Battalion.",
-      "Harry Akune served in the 442nd Regimental Combat Team.",
-      "He also served in the 522nd Field Artillery Battalion.",
-      "Harry Akune landed on Omaha Beach during the Normandy invasion on June 6, 1944."
+      "He was a member of the 100th Infantry Battalion, 442nd Regimental Combat Team, and the 522nd Field Artillery Battalion.",
+      "Harry Akune landed on Omaha Beach during the Normandy invasion on June 6, 1944.",
+      "After World War II, Harry Akune became a police officer in Hawaii."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. Unknown (Without more specific historical context or a source verifying this statement, it is difficult to confirm Harry Akune's membership in the 100th Infantry Battalion.)\n3. TRUE (Harry Akune is known to have served as an interpreter and interrogator in the Military Intelligence Service attached to the 442nd Regimental Combat Team.)\n4. TRUE (The 522nd Field Artillery Battalion was part of the 442nd Regimental Combat Team, and as an intelligence specialist, Akune may have worked with various battalions.)\n5. FALSE [correction]: Harry Akune did not land on Omaha Beach during the Normandy invasion. The 442nd Regimental Combat Team, including the 522nd, did not participate in the D-Day landings. They were fighting in Italy at that time and did not arrive in France until after the invasion.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: Harry Akune was not part of the Normandy invasion on June 6, 1944. The 100th Infantry Battalion and the 442nd Regimental Combat Team, which he was a part of, fought in the Italian campaign and other locations in Europe, but not during the initial Normandy invasion.\n4. UNKNOWN",
     "llama-7b_judge": [
       "true",
-      "unknown",
       "true",
-      "true",
-      "false"
+      "false",
+      "unknown"
     ]
   },
   {
@@ -1356,11 +1307,11 @@
     "id": 3109,
     "user_query": "You MUST give a detailed answer to the following question: which of these particles is the smallest ?",
     "llama-7b_response": "The smallest particle is the electron.",
-    "llama-7b_fact_raw": "1. The electron is smaller than the other particles in question.",
+    "llama-7b_fact_raw": "1. The electron is the smallest particle among the options provided.",
     "llama-7b_fact": [
-      "The electron is smaller than the other particles in question."
+      "The electron is the smallest particle among the options provided."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "UNKNOWN\n\n[Explanation]: Without knowing what the \"options provided\" are, it is impossible to determine the truthfulness of the statement. If the options included particles like protons or neutrons, the statement could be true, as electrons are generally smaller than protons and neutrons. However, if the options included quarks or neutrinos, the statement could be false, as these particles are considered to be smaller than electrons.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1377,17 +1328,17 @@
     "id": 3177,
     "user_query": "You MUST give a detailed answer to the following question: for some people , the use of live animals ( even cockroaches ) in experiments like gage ’ s seems cruel . what evidence does gage offer that this is not the case ? what ’ s your reaction ?",
     "llama-7b_response": "Gage offers evidence that live animals are not used in his experiments. He says that he uses cockroaches because they are easy to handle and do not feel pain. He also says that he uses anesthesia to make sure that the cockroaches do not feel any pain.",
-    "llama-7b_fact_raw": "1. Gage claims that live animals are not used in his experiments.\n2. Gage indicates that he uses cockroaches in his experiments.\n3. Gage believes cockroaches do not feel pain.\n4. Gage mentions using anesthesia on cockroaches to prevent them from feeling pain.",
+    "llama-7b_fact_raw": "1. Gage claims that live animals are not used in his experiments.\n2. Gage uses cockroaches in his experiments because they are easy to handle.\n3. Gage asserts that cockroaches do not feel pain.\n4. Gage uses anesthesia on cockroaches to ensure they do not feel any pain.",
     "llama-7b_fact": [
       "Gage claims that live animals are not used in his experiments.",
-      "Gage indicates that he uses cockroaches in his experiments.",
-      "Gage believes cockroaches do not feel pain.",
-      "Gage mentions using anesthesia on cockroaches to prevent them from feeling pain."
+      "Gage uses cockroaches in his experiments because they are easy to handle.",
+      "Gage asserts that cockroaches do not feel pain.",
+      "Gage uses anesthesia on cockroaches to ensure they do not feel any pain."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: If Gage claims he does not use live animals in his experiments but also indicates that he uses cockroaches, this is contradictory, as cockroaches are live animals.\n2. TRUE\n3. UNKNOWN: Without additional context, it's impossible to determine Gage's beliefs about whether cockroaches feel pain.\n4. UNKNOWN: There's not enough information to confirm whether Gage uses anesthesia on cockroaches.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: If Gage uses cockroaches in his experiments, then live animals are used in his experiments.\n2. UNKNOWN\n3. UNKNOWN\n4. UNKNOWN",
     "llama-7b_judge": [
       "false",
-      "true",
+      "unknown",
       "unknown",
       "unknown"
     ]
@@ -1436,22 +1387,9 @@
     "id": 3380,
     "user_query": "You MUST give a detailed answer to the following question: currently there are 40 time zones on land . because the earliest and latest time zones are 26 hours apart , any given calendar date exists at some point on the globe for 50 hours . what are your thoughts regarding this ? do you think there should be more or fewer time zones ? why ?",
     "llama-7b_response": "I think there should be fewer time zones. The reason is that it is hard to keep track of the time in different time zones. For example, if it is 10:00 AM in New York, then it is 7:00 PM in London. So if you want to call someone in London, you have to wait for 3 hours. It would be better if there were only one time zone.",
-    "llama-7b_fact_raw": "1. There are 40 time zones on land.\n2. The earliest and latest time zones are 26 hours apart.\n3. Any given calendar date exists for 50 hours at some point on the globe.\n4. If it is 10:00 AM in New York, it is 7:00 PM in London.\n5. The responder suggests there should be fewer time zones due to the difficulty in tracking different time zones.",
-    "llama-7b_fact": [
-      "There are 40 time zones on land.",
-      "The earliest and latest time zones are 26 hours apart.",
-      "Any given calendar date exists for 50 hours at some point on the globe.",
-      "If it is 10:00 AM in New York, it is 7:00 PM in London.",
-      "The responder suggests there should be fewer time zones due to the difficulty in tracking different time zones."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: There are 24 standard time zones on land, not 40.\n2. FALSE [correction]: The earliest and latest time zones are not 26 hours apart. The maximum difference between time zones is 26 hours due to the International Date Line, but that includes the repetition of the date on both sides of the line.\n3. FALSE [correction]: Any given calendar date exists for 48 hours at some point on the globe, not 50 hours. This is due to the Date Line where the day effectively \"wraps around\" the globe.\n4. FALSE [correction]: If it is 10:00 AM in New York, it is typically 3:00 PM in London, accounting for the five-hour difference between Eastern Standard Time (EST) and Greenwich Mean Time (GMT) when daylight savings time is not in effect. However, when daylight savings time is in effect, the difference can be four hours with New York being on Eastern Daylight Time (EDT) and London on British Summer Time (BST).\n5. UNKNOWN",
-    "llama-7b_judge": [
-      "false",
-      "false",
-      "false",
-      "false",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3389,
@@ -1465,10 +1403,10 @@
     "id": 3411,
     "user_query": "You MUST give a detailed answer to the following question: in what chinese dynasty was the tea plant first transported to japan ?",
     "llama-7b_response": "The tea plant was first transported to Japan in the 8th century, during the Tang Dynasty.",
-    "llama-7b_fact_raw": "1. The tea plant was first transported to Japan in the 8th century.\n2. The tea plant was transported to Japan during the Tang Dynasty.",
+    "llama-7b_fact_raw": "1. The tea plant was first transported to Japan in the 8th century.\n2. The transportation of the tea plant to Japan occurred during the Tang Dynasty.",
     "llama-7b_fact": [
       "The tea plant was first transported to Japan in the 8th century.",
-      "The tea plant was transported to Japan during the Tang Dynasty."
+      "The transportation of the tea plant to Japan occurred during the Tang Dynasty."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
@@ -1517,7 +1455,7 @@
     "llama-7b_fact": [
       "Hilbert proposed his grand hotel in 1927."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The concept of Hilbert's Grand Hotel, which illustrates the concept of infinity, was first proposed by the mathematician David Hilbert in a 1924 lecture.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The concept of Hilbert's Grand Hotel, which is a thought experiment about infinity, was introduced by German mathematician David Hilbert in a 1924 lecture.",
     "llama-7b_judge": [
       "false"
     ]
@@ -1526,14 +1464,9 @@
     "id": 3454,
     "user_query": "You MUST give a detailed answer to the following question: why can ’ t the manager find rooms for everyone if the number of guests is not “ countably ” infinite ?",
     "llama-7b_response": "The number of guests is not countably infinite because there are only a finite number of rooms.",
-    "llama-7b_fact_raw": "1. The manager cannot find rooms for everyone because there is only a finite number of rooms available.",
-    "llama-7b_fact": [
-      "The manager cannot find rooms for everyone because there is only a finite number of rooms available."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n(The statement is too vague as it lacks context about the specific situation. Without additional details, such as the size of the group needing rooms, the capacity of the establishment, or the circumstances under which the rooms are being sought, it is impossible to determine the truth value of the statement.)",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3462,
@@ -1560,13 +1493,13 @@
     "id": 3472,
     "user_query": "You MUST give a detailed answer to the following question: what percentage of our brain 's communication is conscious ?",
     "llama-7b_response": "Conscious communication is about 5% of the total brain communication.",
-    "llama-7b_fact_raw": "1. 5% of the brain's communication is conscious.",
+    "llama-7b_fact_raw": "1. Conscious communication accounts for approximately 5% of the total brain communication.",
     "llama-7b_fact": [
-      "5% of the brain's communication is conscious."
+      "Conscious communication accounts for approximately 5% of the total brain communication."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\nThe statement \"5% of the brain's communication is conscious\" is vague and cannot be confirmed as true or false without more context or specific scientific sourcing. Statements about brain function can be complex and are often subject to interpretation and ongoing research. The percentage of brain activity that is conscious versus unconscious is not a fixed number and can vary depending on the study, methodology, and what aspects of \"communication\" or \"brain activity\" are being measured.",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "unknown"
+      "true"
     ]
   },
   {
@@ -1594,20 +1527,9 @@
     "id": 3509,
     "user_query": "You MUST give a detailed answer to the following question: assume today ’ s congress called for a national meeting of delegates from each state to discuss proposed amendments to the constitution . what do you think some of the significant differences would be between the grand convention and this hypothetical convention ?",
     "llama-7b_response": "The most significant difference between the Grand Convention and this hypothetical convention is that the delegates in the Grand Convention were elected by the people, while the delegates in this hypothetical convention would be appointed by the states. Another difference is that the delegates in the Grand Convention had to agree on a majority vote to pass an amendment, while the delegates in this hypothetical convention would only need a simple majority to pass an amendment.",
-    "llama-7b_fact_raw": "1. Delegates to the Grand Convention were elected by the people.\n2. In the hypothetical convention mentioned, delegates would be appointed by the states.\n3. To pass an amendment in the Grand Convention, a majority vote was required.\n4. In the hypothetical convention, only a simple majority would be needed to pass an amendment.",
-    "llama-7b_fact": [
-      "Delegates to the Grand Convention were elected by the people.",
-      "In the hypothetical convention mentioned, delegates would be appointed by the states.",
-      "To pass an amendment in the Grand Convention, a majority vote was required.",
-      "In the hypothetical convention, only a simple majority would be needed to pass an amendment."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Delegates to the Grand Convention, also known as the Constitutional Convention of 1787, were generally appointed by the legislatures of the states, not elected by the people.\n2. TRUE\n3. FALSE [correction]: To pass an amendment in the Grand Convention, it was not a simple majority vote that was required. Instead, amendments to the Articles of Confederation required the consent of all thirteen states, but the Constitution itself set a new rule, needing the ratification by nine of the thirteen states to come into effect, which was not necessarily part of the deliberative process within the convention.\n4. UNKNOWN",
-    "llama-7b_judge": [
-      "false",
-      "true",
-      "false",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3519,
@@ -1621,36 +1543,32 @@
     "id": 3541,
     "user_query": "You MUST give a detailed answer to the following question: why does cgp grey hypothesize that the biggest cities in the `` new world '' were in south america ?",
     "llama-7b_response": "CGP Grey hypothesizes that the biggest cities in the \"new world\" were in south america because he believes that the Incas were the most advanced civilization in the world at the time. He also mentions that the Incas had a population of around 10 million people, which is much larger than any other civilization at the time.",
-    "llama-7b_fact_raw": "1. CGP Grey hypothesized that the biggest cities in the \"new world\" were in South America.\n2. He believed that the Incas were the most advanced civilization in the world at their time.\n3. The Inca civilization had a population of around 10 million people.",
+    "llama-7b_fact_raw": "1. CGP Grey hypothesizes that the biggest cities in the \"new world\" were in South America.\n2. He believes that the Incas were the most advanced civilization in the world at the time.\n3. The Incas had a population of around 10 million people.",
     "llama-7b_fact": [
-      "CGP Grey hypothesized that the biggest cities in the \"new world\" were in South America.",
-      "He believed that the Incas were the most advanced civilization in the world at their time.",
-      "The Inca civilization had a population of around 10 million people."
+      "CGP Grey hypothesizes that the biggest cities in the \"new world\" were in South America.",
+      "He believes that the Incas were the most advanced civilization in the world at the time.",
+      "The Incas had a population of around 10 million people."
     ],
-    "llama-7b_judge_raw": "1. TRUE \n2. UNKNOWN\n3. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: CGP Grey does not necessarily claim that the Incas were the most advanced civilization in the world at the time, as this is a subjective measure and can depend on various criteria.\n3. UNKNOWN",
     "llama-7b_judge": [
       "true",
-      "unknown",
-      "true"
+      "false",
+      "unknown"
     ]
   },
   {
     "id": 3554,
     "user_query": "You MUST give a detailed answer to the following question: imagine the following multilayered rock face : the rock layers ’ colors correspond with each other on both sides of a fault , but the layers west of the fault are 2 feet higher than the east side ’ s layers , which are tilted 30 degrees . which of the following was the first thing to happen after the layers were laid down horizontally ?",
     "llama-7b_response": "The layers were tilted 30 degrees .",
-    "llama-7b_fact_raw": "1. The rock layers were originally laid down horizontally.\n2. There exists a fault where the rock layers are displaced.\n3. The rock layers west of the fault are 2 feet higher than those on the east side.\n4. The rock layers on the east side of the fault are tilted at an angle of 30 degrees.\n5. The tilting of the rock layers occurred first, after their initial horizontal formation.",
+    "llama-7b_fact_raw": "1. The rock layers were originally laid down horizontally.\n2. The rock layers on the east side of the fault are tilted at a 30-degree angle.\n3. The rock layers on the west side of the fault are 2 feet higher than those on the east side.",
     "llama-7b_fact": [
       "The rock layers were originally laid down horizontally.",
-      "There exists a fault where the rock layers are displaced.",
-      "The rock layers west of the fault are 2 feet higher than those on the east side.",
-      "The rock layers on the east side of the fault are tilted at an angle of 30 degrees.",
-      "The tilting of the rock layers occurred first, after their initial horizontal formation."
+      "The rock layers on the east side of the fault are tilted at a 30-degree angle.",
+      "The rock layers on the west side of the fault are 2 feet higher than those on the east side."
     ],
-    "llama-7b_judge_raw": "1. TRUE: The principle of original horizontality states that layers of sediment are originally deposited horizontally under the action of gravity.\n2. TRUE: The presence of a fault implies that there has been some displacement of the rock layers due to tectonic forces.\n3. UNKNOWN: Without specific geological data or observations, the relative heights of rock layers on either side of a fault cannot be determined as true or false.\n4. UNKNOWN: Similar to statement 3, without specific information about the geological features observed, it is not possible to determine the truth of the angle at which the rock layers are tilted.\n5. UNKNOWN: The sequence of geological events (such as tilting and faulting) requires specific contextual information or evidence from which a determination can be made. Geological principles like the law of superposition and cross-cutting relationships can help determine the sequence of events, but without detailed context, the order of these events remains uncertain.",
+    "llama-7b_judge_raw": "1. TRUE (This statement is generally true as the Principle of Original Horizontality states that layers of sediment are originally deposited horizontally under the action of gravity.)\n2. UNKNOWN (Without specific geological context or a reference to a particular fault, it's impossible to verify the angle at which rock layers are tilted.)\n3. UNKNOWN (Similar to statement 2, without specific context or reference to a particular fault and its geological features, the relative height of rock layers on either side of the fault cannot be determined.)",
     "llama-7b_judge": [
       "true",
-      "true",
-      "unknown",
       "unknown",
       "unknown"
     ]
@@ -1691,14 +1609,14 @@
     "id": 3639,
     "user_query": "You MUST give a detailed answer to the following question: you purchased three bars of chocolate . the utility of purchasing the first bar of chocolate is 10 units . the utility of purchasing second bar of chocolate is 8 units . the utility of the third bar of chocolate is 6 units . what is the total value or total utility of purchasing three bars of chocolate ?",
     "llama-7b_response": "The total value or total utility of purchasing three bars of chocolate is 24 units .",
-    "llama-7b_fact_raw": "1. The utility of the first bar of chocolate is 10 units.\n2. The utility of the second bar of chocolate is 8 units.\n3. The utility of the third bar of chocolate is 6 units.\n4. The total utility of purchasing three bars of chocolate is 24 units.",
+    "llama-7b_fact_raw": "1. The utility of purchasing the first bar of chocolate is 10 units.\n2. The utility of purchasing the second bar of chocolate is 8 units.\n3. The utility of purchasing the third bar of chocolate is 6 units.\n4. The total utility of purchasing three bars of chocolate is 24 units.",
     "llama-7b_fact": [
-      "The utility of the first bar of chocolate is 10 units.",
-      "The utility of the second bar of chocolate is 8 units.",
-      "The utility of the third bar of chocolate is 6 units.",
+      "The utility of purchasing the first bar of chocolate is 10 units.",
+      "The utility of purchasing the second bar of chocolate is 8 units.",
+      "The utility of purchasing the third bar of chocolate is 6 units.",
       "The total utility of purchasing three bars of chocolate is 24 units."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. TRUE\n\nThe utility values specified for the first, second, and third bars of chocolate are specific numbers that must be given or determined within a certain context, such as in an economic study or consumer preference analysis. They cannot be verified as true or false without the specific context from which they are derived, thus the response is \"UNKNOWN\" for statements 1, 2, and 3.\n\nHowever, assuming the utility values for the first, second, and third bars of chocolate provided in statements 1, 2, and 3 are accurate, the total utility of purchasing three bars of chocolate would be the sum of the individual utilities. Therefore, if you add the utilities of the three bars (10 + 8 + 6), the total utility equals 24 units, which makes statement 4 \"TRUE.\"",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. UNKNOWN\n4. TRUE\n\nThe statements about the utility of purchasing bars of chocolate are subjective and depend on the specific context or assumptions of a hypothetical scenario, such as a utility function in economics. Without additional context, it's impossible to determine the truth of the individual utility values. However, if we assume the given utilities for the first, second, and third bars of chocolate are correct (10, 8, and 6 units respectively), then the total utility of purchasing three bars of chocolate would indeed be the sum of those values, which is 24 units (10 + 8 + 6 = 24).",
     "llama-7b_judge": [
       "unknown",
       "unknown",
@@ -1731,13 +1649,13 @@
     "id": 3753,
     "user_query": "You MUST give a detailed answer to the following question: john green says , `` poetry is so often musical and rhythmic it has a way of sticking in our heads . '' what are some sound devices frost uses in `` the road not taken '' that make it musical and rhythmic ?",
     "llama-7b_response": "Sound devices are used to make a poem musical and rhythmic. For example, in \"The Road Not Taken\", Robert Frost uses repetition to make it musical and rhythmic. He repeats the word \"two\" in the first stanza and \"three\" in the second stanza. This makes it musical and rhythmic.",
-    "llama-7b_fact_raw": "1. Robert Frost's poem \"The Road Not Taken\" uses repetition as a sound device.\n2. The word \"two\" is repeated in the first stanza of \"The Road Not Taken.\"\n3. The word \"three\" is repeated in the second stanza of \"The Road Not Taken.\"",
+    "llama-7b_fact_raw": "1. Robert Frost uses repetition as a sound device in \"The Road Not Taken\".\n2. The word \"two\" is repeated in the first stanza of \"The Road Not Taken\".\n3. The word \"three\" is repeated in the second stanza of \"The Road Not Taken\".",
     "llama-7b_fact": [
-      "Robert Frost's poem \"The Road Not Taken\" uses repetition as a sound device.",
-      "The word \"two\" is repeated in the first stanza of \"The Road Not Taken.\"",
-      "The word \"three\" is repeated in the second stanza of \"The Road Not Taken.\""
+      "Robert Frost uses repetition as a sound device in \"The Road Not Taken\".",
+      "The word \"two\" is repeated in the first stanza of \"The Road Not Taken\".",
+      "The word \"three\" is repeated in the second stanza of \"The Road Not Taken\"."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The word \"three\" is not repeated in the second stanza of \"The Road Not Taken.\" The word \"both\" is repeated in the second stanza.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. FALSE [correction]: The word \"three\" is not repeated in the second stanza of \"The Road Not Taken\". The poem does not contain the word \"three\" at all.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -1748,14 +1666,12 @@
     "id": 3779,
     "user_query": "You MUST give a detailed answer to the following question: fermented dairy drinks are particularly popular in south east asia compared to other parts of the world . what is one of the main reasons these drinks are consumed more in south east asia ?",
     "llama-7b_response": "Fermented dairy drinks are particularly popular in south east asia compared to other parts of the world because they are believed to have medicinal properties.",
-    "llama-7b_fact_raw": "1. Fermented dairy drinks are particularly popular in South East Asia compared to other parts of the world.\n2. One of the main reasons for their popularity is the belief that these drinks have medicinal properties.",
+    "llama-7b_fact_raw": "1. Fermented dairy drinks are believed to have medicinal properties in South East Asia.",
     "llama-7b_fact": [
-      "Fermented dairy drinks are particularly popular in South East Asia compared to other parts of the world.",
-      "One of the main reasons for their popularity is the belief that these drinks have medicinal properties."
+      "Fermented dairy drinks are believed to have medicinal properties in South East Asia."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Fermented dairy drinks are particularly popular in Eastern Europe, Central Asia, and some parts of East Asia. Their popularity in South East Asia varies and is not as notable compared to the aforementioned regions.\n2. TRUE",
+    "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
-      "false",
       "true"
     ]
   },
@@ -1784,7 +1700,7 @@
       "The treadmill was first patented in the United States on March 20, 1883.",
       "John P. Morgan was the individual who patented the treadmill in the United States."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: The treadmill was not first patented in the United States on March 20, 1883. The first US treadmill patent recorded is from 1913 when Claude Lauraine Hagen filed patent number US1064964.\n2. FALSE [correction]: There is no record of an individual named John P. Morgan patenting the treadmill in the United States. Claude Lauraine Hagen is the one who patented an early version of the exercise treadmill in 1913.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: The treadmill was not first patented on March 20, 1883. The first US patent for a treadmill \"training machine\" was issued to William Staub in the 1960s.\n2. FALSE [correction]: It was not John P. Morgan who patented the treadmill in the United States. The individual who patented a version of the modern exercise treadmill was William Staub.",
     "llama-7b_judge": [
       "false",
       "false"
@@ -1806,7 +1722,7 @@
     "llama-7b_fact": [
       "Centrifugation is the most commonly used physical separation process for separating uranium-235 from uranium-238."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Gas centrifugation, a type of centrifugation, is the commonly used process for enriching uranium, which involves separating isotopes of uranium – separating uranium-235 from uranium-238. However, the term \"centrifugation\" alone generally refers to a broader range of applications in which centrifugal force is used to separate substances of different densities, not specifically for uranium isotope separation. The isotope separation process specifically for uranium enrichment is better termed as \"gas centrifuge enrichment\" or \"uranium enrichment by centrifugation.\"",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Gas centrifugation is a commonly used process for enriching uranium, which involves separating isotopes of uranium (uranium-235 from uranium-238) based on their mass differences. However, the most commonly used physical separation process for separating isotopes is the gas centrifuge method, not centrifugation in a general sense, which could imply other types of centrifugal separation processes.",
     "llama-7b_judge": [
       "false"
     ]
@@ -1815,11 +1731,11 @@
     "id": 4070,
     "user_query": "You MUST give a detailed answer to the following question: what percentage of the human population lived in cities 100 years ago ?",
     "llama-7b_response": "The percentage of the human population living in cities 100 years ago was about 20%.",
-    "llama-7b_fact_raw": "1. Approximately 20% of the human population lived in cities 100 years ago.",
+    "llama-7b_fact_raw": "1. About 20% of the human population lived in cities 100 years ago.",
     "llama-7b_fact": [
-      "Approximately 20% of the human population lived in cities 100 years ago."
+      "About 20% of the human population lived in cities 100 years ago."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n\nAccording to historical demography estimates, in the early 20th century, about 10-20% of the world's population lived in urban areas or cities, which would roughly correspond to a period of 100 years ago from today. However, this is a general estimate and the exact figure can vary depending on the sources and methods used for calculation.",
+    "llama-7b_judge_raw": "1. TRUE\n\nAccording to historical urbanization data, around 20% of the world's population lived in urban areas by the early 20th century. This percentage has significantly increased over the past century.",
     "llama-7b_judge": [
       "true"
     ]
@@ -1835,7 +1751,7 @@
       "Vanadium has an oxidation state of +4.",
       "Vanadium has an oxidation state of +5."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n\n(Vanadium can exhibit multiple oxidation states, with +2, +3, +4, and +5 being the most common ones.)",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n\n[Explanation]: Vanadium is a transition metal known to exhibit multiple oxidation states, including +2, +3, +4, and +5.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -1855,15 +1771,13 @@
     "id": 4239,
     "user_query": "You MUST give a detailed answer to the following question: how many ways can you answer a true-false quiz that only has 2 questions ?",
     "llama-7b_response": "There are 2^2 = 4 ways to answer a true-false quiz that only has 2 questions.",
-    "llama-7b_fact_raw": "1. There are four ways to answer a true-false quiz with two questions.\n2. Each question in a true-false quiz has two possible answers.",
+    "llama-7b_fact_raw": "1. There are 4 ways to answer a true-false quiz that has 2 questions.",
     "llama-7b_fact": [
-      "There are four ways to answer a true-false quiz with two questions.",
-      "Each question in a true-false quiz has two possible answers."
+      "There are 4 ways to answer a true-false quiz that has 2 questions."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
+    "llama-7b_judge_raw": "1. FALSE [correction]: There are 2^2 = 4 ways to answer a true-false quiz that has 2 questions, which means there are 4 possible combinations of answers (TT, TF, FT, FF).",
     "llama-7b_judge": [
-      "true",
-      "true"
+      "unknown"
     ]
   },
   {
@@ -1878,19 +1792,19 @@
     "id": 4307,
     "user_query": "You MUST give a detailed answer to the following question: try doing a little research on calories . look up the average amount in these five food items : an apple , a slice of bread , a chocolate chip cookie , a slice of cheese and a soft drink . compare them with one another . which one is the most energy-rich , and which one has the least energy ?",
     "llama-7b_response": "An apple has about 60 calories, a slice of bread has about 80 calories, a chocolate chip cookie has about 100 calories, a slice of cheese has about 120 calories, and a soft drink has about 150 calories. So, the most energy-rich food is a chocolate chip cookie, and the least energy-rich food is a soft drink.",
-    "llama-7b_fact_raw": "1. An apple has approximately 60 calories.\n2. A slice of bread contains about 80 calories.\n3. A chocolate chip cookie has around 100 calories.\n4. A slice of cheese has roughly 120 calories.\n5. A soft drink contains approximately 150 calories.",
+    "llama-7b_fact_raw": "1. An apple has about 60 calories.\n2. A slice of bread has about 80 calories.\n3. A chocolate chip cookie has about 100 calories.\n4. A slice of cheese has about 120 calories.\n5. A soft drink has about 150 calories.",
     "llama-7b_fact": [
-      "An apple has approximately 60 calories.",
-      "A slice of bread contains about 80 calories.",
-      "A chocolate chip cookie has around 100 calories.",
-      "A slice of cheese has roughly 120 calories.",
-      "A soft drink contains approximately 150 calories."
+      "An apple has about 60 calories.",
+      "A slice of bread has about 80 calories.",
+      "A chocolate chip cookie has about 100 calories.",
+      "A slice of cheese has about 120 calories.",
+      "A soft drink has about 150 calories."
     ],
-    "llama-7b_judge_raw": "1. TRUE: Although the calorie content can vary, an average-size apple commonly does have about 60 calories.\n2. TRUE: A typical slice of bread contains about 80 calories, but this can vary depending on the type and size of the bread.\n3. FALSE [correction]: The calorie content of a chocolate chip cookie can vary widely based on size and recipe, but a standard store-bought cookie can have more than 100 calories, often ranging from 200 to 400 calories.\n4. TRUE: A slice of cheese can have roughly 120 calories, though this varies significantly based on the type of cheese and the thickness of the slice.\n5. TRUE: A soft drink can contain approximately 150 calories per 12 ounces, but this too can vary based on the specific brand and type of soft drink.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE\n\nPlease note that the calorie content can vary based on the size and specific type of each food item. The statements provided are general estimates.",
     "llama-7b_judge": [
       "true",
       "true",
-      "false",
+      "true",
       "true",
       "true"
     ]
@@ -1903,7 +1817,7 @@
     "llama-7b_fact": [
       "Approximately 10% of the United States population suffers from depression."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: The prevalence of depression can vary widely based on the criteria used for diagnosis, the time frame of the data collection, and the specific population being studied. Without specific and current data or a clear reference to a particular study or survey, it is not possible to confirm the accuracy of this statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1912,35 +1826,35 @@
     "id": 4406,
     "user_query": "You MUST give a detailed answer to the following question: what were some other contemporary terms for minimalist abstract art ?",
     "llama-7b_response": "- Abstract Expressionism\n- Color Field Painting\n- Hard Edge Painting\n- Lyrical Abstraction\n- Post-Painterly Abstraction\n- Pop Art\n- Op Art\n- Minimalism",
-    "llama-7b_fact_raw": "1. Abstract Expressionism is a term used to describe a style of minimalist abstract art.\n2. Color Field Painting is recognized as a style of minimalist abstract art.\n3. Hard Edge Painting is a term associated with minimalist abstract art.\n4. Lyrical Abstraction is considered a form of minimalist abstract art.\n5. Post-Painterly Abstraction refers to a style within minimalist abstract art.",
+    "llama-7b_fact_raw": "1. Abstract Expressionism is a term used for a style of minimalist abstract art.\n2. Color Field Painting is a term used for a style of minimalist abstract art.\n3. Hard Edge Painting is a term used for a style of minimalist abstract art.\n4. Lyrical Abstraction is a term used for a style of minimalist abstract art.\n5. Post-Painterly Abstraction is a term used for a style of minimalist abstract art.",
     "llama-7b_fact": [
-      "Abstract Expressionism is a term used to describe a style of minimalist abstract art.",
-      "Color Field Painting is recognized as a style of minimalist abstract art.",
-      "Hard Edge Painting is a term associated with minimalist abstract art.",
-      "Lyrical Abstraction is considered a form of minimalist abstract art.",
-      "Post-Painterly Abstraction refers to a style within minimalist abstract art."
+      "Abstract Expressionism is a term used for a style of minimalist abstract art.",
+      "Color Field Painting is a term used for a style of minimalist abstract art.",
+      "Hard Edge Painting is a term used for a style of minimalist abstract art.",
+      "Lyrical Abstraction is a term used for a style of minimalist abstract art.",
+      "Post-Painterly Abstraction is a term used for a style of minimalist abstract art."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Abstract Expressionism is not typically described as minimalist; it is known for being a non-representational style of painting that emerged in the 1940s and 1950s characterized by spontaneous, emotional, or expressive gestures.\n2. FALSE [correction]: Color Field Painting is a style of abstract art that features large areas of a single color, but it's not necessarily considered minimalist, as minimalism emphasizes simplicity and objectivity, which can contrast with the expressive quality of Color Field Painting.\n3. FALSE [correction]: Hard Edge Painting is associated with abstract art characterized by large, flat areas of color with sharp, clean edges, which can align with some principles of minimalism, but Hard Edge Painting as a term is not solely defined by minimalist principles.\n4. FALSE [correction]: Lyrical Abstraction is considered a form of abstract art that may include emotional or personal expression, which often contrasts with the objective and simplified qualities of minimalist abstract art.\n5. FALSE [correction]: Post-Painterly Abstraction refers to a style of abstract art that emphasizes a more rigorous notion of abstraction and a less personal brushwork, which can have minimalist traits but the term does not exclusively sit within minimalist abstract art.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Abstract Expressionism is not specifically minimalist; it refers to a post-World War II art movement characterized by spontaneous, automatic, or subconscious creation.\n2. FALSE [correction]: Color Field Painting is a style of abstract painting that emerged in New York City during the 1940s and 1950s. It is characterized by large fields of flat, solid color spread across or stained into the canvas to create areas of unbroken surface and a flat picture plane. It is not necessarily minimalist, as it focuses on the emotional resonance of color.\n3. TRUE: Hard Edge Painting is known for its economy of form, fullness of color, and smooth surface planes, which align with minimalist characteristics.\n4. FALSE [correction]: Lyrical Abstraction is a term that refers to a type of abstract painting that emerged in the 1940s and 1950s, characterized by an intuitive and spontaneous approach. It is not necessarily minimalist and can be quite expressive.\n5. TRUE: Post-Painterly Abstraction is a term coined by art critic Clement Greenberg for a broad range of new developments in abstract painting in the late 1950s and early 1960s, characterized by a more rigorous approach to abstraction that sought clarity and a reduction of rhetorical content, which can be associated with minimalism.",
     "llama-7b_judge": [
       "false",
       "false",
+      "true",
       "false",
-      "false",
-      "false"
+      "true"
     ]
   },
   {
     "id": 4409,
     "user_query": "You MUST give a detailed answer to the following question: how did the technological advances of the 18th century affect weight gain trends ?",
     "llama-7b_response": "The technological advances of the 18th century led to an increase in the production of food. This resulted in a decrease in the price of food, which led to an increase in the consumption of food. As a result, people gained more weight.",
-    "llama-7b_fact_raw": "1. Technological advances in the 18th century increased the production of food.\n2. The increase in food production led to a decrease in the price of food.\n3. The decrease in food prices led to an increase in the consumption of food.\n4. The increase in food consumption contributed to weight gain trends among people during that time period.",
+    "llama-7b_fact_raw": "1. Technological advances in the 18th century increased the production of food.\n2. The increase in food production led to a decrease in the price of food.\n3. The decrease in the price of food led to an increase in the consumption of food.\n4. The increase in food consumption resulted in people gaining more weight.",
     "llama-7b_fact": [
       "Technological advances in the 18th century increased the production of food.",
       "The increase in food production led to a decrease in the price of food.",
-      "The decrease in food prices led to an increase in the consumption of food.",
-      "The increase in food consumption contributed to weight gain trends among people during that time period."
+      "The decrease in the price of food led to an increase in the consumption of food.",
+      "The increase in food consumption resulted in people gaining more weight."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE - Generally, an increase in the production of goods, including food, can lead to a decrease in price according to supply and demand principles. However, this is contingent on other factors such as market demands, agricultural policies, and external influences on the economy.\n3. TRUE - If the decrease in food prices was significant and consistent, it could lead to increased consumption since people would be able to afford more food. However, this is a simplification as other socioeconomic factors also play a role in consumption patterns.\n4. UNKNOWN - The direct link between increased food consumption and weight gain trends would require specific historical health and dietary data from the time period to confirm. Without such data, it is not possible to accurately determine the truthfulness of this statement.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. UNKNOWN\n\nThe first three statements are generally true as technological advances in agriculture during the 18th century, such as the Agricultural Revolution, did increase the production of food, which in turn led to a decrease in the price of food and likely an increase in consumption. However, the fourth statement is too vague and lacks specific context or evidence to determine its truthfulness. While increased food consumption could lead to weight gain, it would also depend on the types of food consumed, overall diet, lifestyle, and other factors.",
     "llama-7b_judge": [
       "true",
       "true",
@@ -1952,20 +1866,20 @@
     "id": 4420,
     "user_query": "You MUST give a detailed answer to the following question: one way that cells can increase their amount of surface area relative to their volume is by folding their membrane . lay a rubber band flat on a table . the band itself represents the cell membrane and the empty space inside represents the volume - the guts of the cell . taking care to not stretch the rubber band , which would change its surface area , use your fingers and make several folds in the band . how does this affect the volume of the empty space even though the surface area didn ’ t change ?",
     "llama-7b_response": "The volume of the empty space inside the rubber band did not change because we were careful not to stretch the rubber band.",
-    "llama-7b_fact_raw": "1. Cells can increase their amount of surface area relative to their volume by folding their membrane.\n2. In the rubber band analogy, the rubber band represents the cell membrane.\n3. The empty space inside the rubber band represents the cell's volume.\n4. Folding the rubber band is analogous to the cell membrane folding without changing the rubber band's surface area.\n5. The volume of the empty space inside the rubber band does not change when you make folds without stretching it.",
+    "llama-7b_fact_raw": "1. Cells can increase their amount of surface area relative to their volume by folding their membrane.\n2. The rubber band represents the cell membrane in the given analogy.\n3. The empty space inside the rubber band represents the cell's volume.\n4. Folding the rubber band with fingers without stretching it is analogous to how cells fold their membrane to increase surface area without changing volume.\n5. The volume of the empty space inside the rubber band does not change when the rubber band is folded without stretching.",
     "llama-7b_fact": [
       "Cells can increase their amount of surface area relative to their volume by folding their membrane.",
-      "In the rubber band analogy, the rubber band represents the cell membrane.",
+      "The rubber band represents the cell membrane in the given analogy.",
       "The empty space inside the rubber band represents the cell's volume.",
-      "Folding the rubber band is analogous to the cell membrane folding without changing the rubber band's surface area.",
-      "The volume of the empty space inside the rubber band does not change when you make folds without stretching it."
+      "Folding the rubber band with fingers without stretching it is analogous to how cells fold their membrane to increase surface area without changing volume.",
+      "The volume of the empty space inside the rubber band does not change when the rubber band is folded without stretching."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE \n3. TRUE\n4. FALSE [correction]: Folding the rubber band is analogous to the cell membrane folding, which increases the rubber band's (cell membrane's) effective surface area without significantly changing the volume of space it encloses.\n5. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
     "llama-7b_judge": [
       "true",
       "true",
       "true",
-      "false",
+      "true",
       "true"
     ]
   },
@@ -1973,24 +1887,17 @@
     "id": 4488,
     "user_query": "You MUST give a detailed answer to the following question: who was the industrial engineer mentioned in this video and said to be the creator of the look of america in the 20th century ?",
     "llama-7b_response": "The industrial engineer mentioned in this video and said to be the creator of the look of america in the 20th century is Frank Lloyd Wright.",
-    "llama-7b_fact_raw": "1. Frank Lloyd Wright was an industrial engineer.\n2. Frank Lloyd Wright is credited as the creator of the look of America in the 20th century.",
-    "llama-7b_fact": [
-      "Frank Lloyd Wright was an industrial engineer.",
-      "Frank Lloyd Wright is credited as the creator of the look of America in the 20th century."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Frank Lloyd Wright was an architect, not an industrial engineer.\n2. TRUE",
-    "llama-7b_judge": [
-      "false",
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 4514,
     "user_query": "You MUST give a detailed answer to the following question: what animals are thought to be the natural carriers of the ebola virus ?",
     "llama-7b_response": "The natural carriers of the ebola virus are thought to be fruit bats.",
-    "llama-7b_fact_raw": "1. Fruit bats are considered the natural carriers of the Ebola virus.",
+    "llama-7b_fact_raw": "1. Fruit bats are thought to be the natural carriers of the Ebola virus.",
     "llama-7b_fact": [
-      "Fruit bats are considered the natural carriers of the Ebola virus."
+      "Fruit bats are thought to be the natural carriers of the Ebola virus."
     ],
     "llama-7b_judge_raw": "1. TRUE",
     "llama-7b_judge": [
@@ -2030,19 +1937,15 @@
     "id": 4791,
     "user_query": "You MUST give a detailed answer to the following question: how did the design for felix the cat change as the series began to get more popular ?",
     "llama-7b_response": "The design for felix the cat changed as the series began to get more popular. In the early days, felix was drawn with a long tail and big eyes. However, as the series became more popular, the artist decided to change the design to make it more appealing to the audience. The new design had a shorter tail and smaller eyes.",
-    "llama-7b_fact_raw": "1. Felix the Cat originally had a design featuring a long tail and big eyes.\n2. As the series became more popular, Felix the Cat's design was altered.\n3. In the updated design of Felix the Cat, he had a shorter tail.\n4. The redesign of Felix the Cat included smaller eyes to make the character more appealing to the audience.",
+    "llama-7b_fact_raw": "1. Felix the Cat was originally drawn with a long tail and big eyes.\n2. The design of Felix the Cat was changed to have a shorter tail and smaller eyes as the series became more popular.",
     "llama-7b_fact": [
-      "Felix the Cat originally had a design featuring a long tail and big eyes.",
-      "As the series became more popular, Felix the Cat's design was altered.",
-      "In the updated design of Felix the Cat, he had a shorter tail.",
-      "The redesign of Felix the Cat included smaller eyes to make the character more appealing to the audience."
+      "Felix the Cat was originally drawn with a long tail and big eyes.",
+      "The design of Felix the Cat was changed to have a shorter tail and smaller eyes as the series became more popular."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. FALSE [correction]: The redesign of Felix the Cat did not necessarily include smaller eyes to make the character more appealing; in fact, over different iterations, his eyes have varied but have often been depicted as large to maintain his expressive character.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
       "true",
-      "true",
-      "true",
-      "false"
+      "true"
     ]
   },
   {
@@ -2073,11 +1976,11 @@
     "id": 4808,
     "user_query": "You MUST give a detailed answer to the following question: how long have arctic glass sponges been estimated to live ?",
     "llama-7b_response": "Arctic glass sponges have been estimated to live for up to 10,000 years.",
-    "llama-7b_fact_raw": "1. Arctic glass sponges are estimated to have a longevity of up to 10,000 years.",
+    "llama-7b_fact_raw": "1. Arctic glass sponges have been estimated to live for up to 10,000 years.",
     "llama-7b_fact": [
-      "Arctic glass sponges are estimated to have a longevity of up to 10,000 years."
+      "Arctic glass sponges have been estimated to live for up to 10,000 years."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Arctic glass sponges have been estimated to live for hundreds of years, but not up to 10,000 years. Some of the oldest known glass sponges are estimated to be over 1,000 years old.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Arctic glass sponges have been estimated to live for up to about 15,000 years, but the more commonly cited figure for the longevity of glass sponges is hundreds or over a thousand years, not 10,000 years.",
     "llama-7b_judge": [
       "false"
     ]
@@ -2086,11 +1989,11 @@
     "id": 4878,
     "user_query": "You MUST give a detailed answer to the following question: australia has one of the highest rates of skin cancer in the world . why might this population be particularly susceptible ?",
     "llama-7b_response": "Australia has one of the highest rates of skin cancer in the world. This population may be particularly susceptible to skin cancer because of its high ultraviolet radiation exposure, due to the country's geographic location and climate.",
-    "llama-7b_fact_raw": "1. Australia has one of the highest rates of skin cancer in the world.\n2. High ultraviolet radiation exposure is a reason why the Australian population may be particularly susceptible to skin cancer.\n3. Australia's geographic location and climate contribute to its high ultraviolet radiation exposure.",
+    "llama-7b_fact_raw": "1. Australia has one of the highest rates of skin cancer in the world.\n2. The population in Australia may be particularly susceptible to skin cancer due to high ultraviolet radiation exposure.\n3. Australia's geographic location and climate contribute to the high ultraviolet radiation exposure.",
     "llama-7b_fact": [
       "Australia has one of the highest rates of skin cancer in the world.",
-      "High ultraviolet radiation exposure is a reason why the Australian population may be particularly susceptible to skin cancer.",
-      "Australia's geographic location and climate contribute to its high ultraviolet radiation exposure."
+      "The population in Australia may be particularly susceptible to skin cancer due to high ultraviolet radiation exposure.",
+      "Australia's geographic location and climate contribute to the high ultraviolet radiation exposure."
     ],
     "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE",
     "llama-7b_judge": [
@@ -2115,7 +2018,7 @@
     "llama-7b_fact": [
       "The ice structure has 6 sides."
     ],
-    "llama-7b_judge_raw": "UNKNOWN\n\n[Reasoning]: Without additional information regarding what \"the ice structure\" refers to or what passage these statements are extracted from, I cannot verify the accuracy of the claim that the ice structure has 6 sides. If the statement is about an individual snowflake, which typically has a hexagonal structure, then it may be true. However, this cannot be confirmed without proper context. If additional information is provided, I could give a more definitive response.",
+    "llama-7b_judge_raw": "UNKNOWN\n\n[Note: The statement is vague as it does not specify which ice structure is being referred to. If it is referring to the molecular structure of a water ice crystal, then the statement could be considered true, as snowflakes, which are ice crystals, typically have a hexagonal (six-sided) structure. However, without specific context, the accuracy of the statement cannot be determined.]",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -2148,28 +2051,25 @@
     "id": 5066,
     "user_query": "You MUST give a detailed answer to the following question: what was the longest an adult great white shark survived in captivity ?",
     "llama-7b_response": "The longest an adult great white shark survived in captivity was 3.5 years.",
-    "llama-7b_fact_raw": "1. An adult great white shark survived in captivity for 3.5 years.",
-    "llama-7b_fact": [
-      "An adult great white shark survived in captivity for 3.5 years."
-    ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: No adult great white shark has survived in captivity for 3.5 years. The longest a great white shark has been kept in captivity is 198 days.",
-    "llama-7b_judge": [
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 5083,
     "user_query": "You MUST give a detailed answer to the following question: what are some ways director throughout history have adapted `` macbeth '' ?",
     "llama-7b_response": "Macbeth is a tragedy written by William Shakespeare. It is thought to have been first performed in 1606, and it was first published in the Folio of 1623. The play is based on the historical account of King Macbeth of Scotland by Raphael Holinshed and other chroniclers.",
-    "llama-7b_fact_raw": "1. Macbeth was written by William Shakespeare.\n2. Macbeth is believed to have been first performed in 1606.\n3. Macbeth was first published in the Folio of 1623.\n4. The play Macbeth is based on the historical account of King Macbeth of Scotland.",
+    "llama-7b_fact_raw": "1. Macbeth is a tragedy written by William Shakespeare.\n2. Macbeth is believed to have been first performed in 1606.\n3. Macbeth was first published in the Folio of 1623.\n4. The play Macbeth is based on the historical account of King Macbeth of Scotland.\n5. Raphael Holinshed and other chroniclers provided the historical accounts that the play is based on.",
     "llama-7b_fact": [
-      "Macbeth was written by William Shakespeare.",
+      "Macbeth is a tragedy written by William Shakespeare.",
       "Macbeth is believed to have been first performed in 1606.",
       "Macbeth was first published in the Folio of 1623.",
-      "The play Macbeth is based on the historical account of King Macbeth of Scotland."
+      "The play Macbeth is based on the historical account of King Macbeth of Scotland.",
+      "Raphael Holinshed and other chroniclers provided the historical accounts that the play is based on."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE\n3. TRUE\n4. TRUE\n5. TRUE",
     "llama-7b_judge": [
+      "true",
       "true",
       "true",
       "true",

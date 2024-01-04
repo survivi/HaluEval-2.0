@@ -11,24 +11,19 @@
     "id": 1,
     "user_query": "You MUST give a detailed answer to the following question: What year did the British politician born in 1967 began to represent the Daventry in the UK House of Commons?",
     "llama-7b_response": "1997",
-    "llama-7b_fact_raw": "1. The British politician born in 1967 began to represent Daventry in the UK House of Commons in 1997.",
-    "llama-7b_fact": [
-      "The British politician born in 1967 began to represent Daventry in the UK House of Commons in 1997."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\n[explanation]: Without specific information on which British politician is being referred to (the name is missing), it is impossible to determine the veracity of the statement. If the name of the politician were provided, one could verify if they were born in 1967 and began representing Daventry in the UK House of Commons in 1997.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2,
     "user_query": "You MUST give a detailed answer to the following question: Which franchise was founded in 1978, Chuck E. Cheese's or Jet's Pizza?",
     "llama-7b_response": "chuck e. cheese ",
-    "llama-7b_fact_raw": "1. Chuck E. Cheese's franchise was founded in 1978.",
+    "llama-7b_fact_raw": "1. Chuck E. Cheese's was founded in 1978.",
     "llama-7b_fact": [
-      "Chuck E. Cheese's franchise was founded in 1978."
+      "Chuck E. Cheese's was founded in 1978."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Chuck E. Cheese's franchise was founded in 1977.",
+    "llama-7b_judge_raw": "1. FALSE [correction]: Chuck E. Cheese's was founded in 1977.",
     "llama-7b_judge": [
       "false"
     ]
@@ -37,12 +32,12 @@
     "id": 43,
     "user_query": "You MUST give a detailed answer to the following question: Munich and Bavarian language are spoken in what country?",
     "llama-7b_response": "germany",
-    "llama-7b_fact_raw": "1. Munich is located in Germany.\n2. Bavarian language is spoken in Germany.",
+    "llama-7b_fact_raw": "1. Munich is located in Germany.\n2. The Bavarian language is spoken in Germany.",
     "llama-7b_fact": [
       "Munich is located in Germany.",
-      "Bavarian language is spoken in Germany."
+      "The Bavarian language is spoken in Germany."
     ],
-    "llama-7b_judge_raw": "1. TRUE\n2. TRUE [clarification]: While the official language of Germany is German, various dialects including Bavarian (Bairisch) are spoken in the state of Bavaria and its surroundings.",
+    "llama-7b_judge_raw": "1. TRUE\n2. TRUE",
     "llama-7b_judge": [
       "true",
       "true"
@@ -260,29 +255,17 @@
     "id": 732,
     "user_query": "You MUST give a detailed answer to the following question: Mike Hart played for the American League Central team that played its games in what stadium from 1961 to 1981?",
     "llama-7b_response": "old comiskey park",
-    "llama-7b_fact_raw": "1. Mike Hart played for an American League Central team.\n2. The team played its games at old Comiskey Park from 1961 to 1981.",
-    "llama-7b_fact": [
-      "Mike Hart played for an American League Central team.",
-      "The team played its games at old Comiskey Park from 1961 to 1981."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: The team referred to, presumably the Chicago White Sox, played its games at old Comiskey Park from 1910 to 1990. However, without specifying which team Mike Hart played for, it's not possible to correct this statement with complete accuracy.",
-    "llama-7b_judge": [
-      "unknown",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 740,
     "user_query": "You MUST give a detailed answer to the following question: How many kilometers long is the cyclist/pedestrian path that accesses the Melbourne Zoo?",
     "llama-7b_response": "12",
-    "llama-7b_fact_raw": "1. The cyclist/pedestrian path that accesses the Melbourne Zoo is 12 kilometers long.",
-    "llama-7b_fact": [
-      "The cyclist/pedestrian path that accesses the Melbourne Zoo is 12 kilometers long."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN\n\nThe provided statement about the cyclist/pedestrian path accessing the Melbourne Zoo does not contain enough information to determine its accuracy. There is no reference to a specific name of the path or its official length, and without additional context or sources, it is not possible to verify the statement.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 744,
@@ -312,13 +295,13 @@
     "id": 828,
     "user_query": "You MUST give a detailed answer to the following question: The Italian romance drama Mahesh Bhatt compared \"Jism 2\" to came out in what year?",
     "llama-7b_response": "2012",
-    "llama-7b_fact_raw": "1. The Italian romance drama \"Jism 2\" that Mahesh Bhatt compared came out in the year 2012.",
+    "llama-7b_fact_raw": "1. The Italian romance drama \"Jism 2\" that Mahesh Bhatt compared to came out in the year 2012.",
     "llama-7b_fact": [
-      "The Italian romance drama \"Jism 2\" that Mahesh Bhatt compared came out in the year 2012."
+      "The Italian romance drama \"Jism 2\" that Mahesh Bhatt compared to came out in the year 2012."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
+    "llama-7b_judge_raw": "1. FALSE [correction]: \"Jism 2\" is an Indian erotic thriller film, not an Italian romance drama. It was indeed released in the year 2012.",
     "llama-7b_judge": [
-      "unknown"
+      "false"
     ]
   },
   {
@@ -477,14 +460,9 @@
     "id": 1236,
     "user_query": "You MUST give a detailed answer to the following question: when is the retired Italian boxer and actor who won the  semifinals in1960 Olympics born",
     "llama-7b_response": "1941",
-    "llama-7b_fact_raw": "1. The retired Italian boxer and actor who won the semifinals in the 1960 Olympics was born in 1941.",
-    "llama-7b_fact": [
-      "The retired Italian boxer and actor who won the semifinals in the 1960 Olympics was born in 1941."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\n[Explanation]: Without a specific name provided for the \"retired Italian boxer and actor,\" I cannot verify the statement's accuracy or provide a correction if necessary. The details given are not enough to determine the truth of the statement.",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1254,
@@ -583,9 +561,9 @@
       "Nike Air Max was originally designed by Nike's Vice President for Design and Special Projects.",
       "The Vice President for Design and Special Projects at Nike oversees footwear."
     ],
-    "llama-7b_judge_raw": "Context: <statements>:\n1. TRUE: Tinker Hatfield, who at the time was Nike's Vice President for Design and Special Projects, originally designed the Nike Air Max.\n2. TRUE: At Nike, the Vice President for Design and Special Projects would oversee aspects of design which would include footwear, among other responsibilities.",
+    "llama-7b_judge_raw": "1. TRUE (Tinker Hatfield, who was Nike's Vice President for Design and Special Projects, is credited with designing the original Nike Air Max.)\n2. TRUE (As the Vice President for Design and Special Projects, overseeing footwear design would be within the scope of responsibilities.)",
     "llama-7b_judge": [
-      "unknown",
+      "true",
       "true"
     ]
   },
@@ -689,14 +667,9 @@
     "id": 1712,
     "user_query": "You MUST give a detailed answer to the following question: When was the band formed whose debut album was Salvation Town ?",
     "llama-7b_response": "1972",
-    "llama-7b_fact_raw": "1. The band whose debut album was \"Salvation Town\" was formed in 1972.",
-    "llama-7b_fact": [
-      "The band whose debut album was \"Salvation Town\" was formed in 1972."
-    ],
-    "llama-7b_judge_raw": "UNKNOWN",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1728,
@@ -766,18 +739,9 @@
     "id": 1875,
     "user_query": "You MUST give a detailed answer to the following question: Which fortune 500 company that WLS Stamping supplies to is headquartered in Berlin and Munich?",
     "llama-7b_response": "allianz",
-    "llama-7b_fact_raw": "1. WLS Stamping supplies to Allianz.\n2. Allianz is a Fortune 500 company.\n3. Allianz is headquartered in Berlin and Munich.",
-    "llama-7b_fact": [
-      "WLS Stamping supplies to Allianz.",
-      "Allianz is a Fortune 500 company.",
-      "Allianz is headquartered in Berlin and Munich."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. TRUE\n3. FALSE [correction]: Allianz is headquartered in Munich, not Berlin and Munich.",
-    "llama-7b_judge": [
-      "unknown",
-      "true",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 1924,
@@ -823,7 +787,7 @@
     "id": 2058,
     "user_query": "You MUST give a detailed answer to the following question: Whose character was Livai Soprano from ,\"The Sopranos\" and also appeared on a live telecast, \"The Philco Television Playhouse?\"",
     "llama-7b_response": "james gandolfini",
-    "llama-7b_fact_raw": "NO FACTS\n\nThe answer provided simply states \"James Gandolfini,\" which does not include any verifiable factual statements—it does not elaborate on who James Gandolfini is or his roles related to the query.",
+    "llama-7b_fact_raw": "NO FACTS",
     "llama-7b_fact": [],
     "llama-7b_judge": []
   },
@@ -999,9 +963,16 @@
     "id": 2435,
     "user_query": "You MUST give a detailed answer to the following question: What was introduced to the Pacific Games in 1979 that the Vanuatu national cricket team participated in?",
     "llama-7b_response": "cricket",
-    "llama-7b_fact_raw": "NO FACTS",
-    "llama-7b_fact": [],
-    "llama-7b_judge": []
+    "llama-7b_fact_raw": "1. Cricket was introduced to the Pacific Games in 1979.\n2. The Vanuatu national cricket team participated in the Pacific Games when cricket was introduced.",
+    "llama-7b_fact": [
+      "Cricket was introduced to the Pacific Games in 1979.",
+      "The Vanuatu national cricket team participated in the Pacific Games when cricket was introduced."
+    ],
+    "llama-7b_judge_raw": "1. FALSE [correction]: Cricket was introduced to the Pacific Games in 1979 as an exhibition sport but it was not until 2003 that it was included as a medal sport.\n2. UNKNOWN",
+    "llama-7b_judge": [
+      "false",
+      "unknown"
+    ]
   },
   {
     "id": 2477,
@@ -1047,16 +1018,9 @@
     "id": 2568,
     "user_query": "You MUST give a detailed answer to the following question: School is Cool is a song in the fusion genre that emerged in what decade?",
     "llama-7b_response": "1990 ",
-    "llama-7b_fact_raw": "1. \"School is Cool\" is a song in the fusion genre.\n2. \"School is Cool\" emerged in the 1990s decade.",
-    "llama-7b_fact": [
-      "\"School is Cool\" is a song in the fusion genre.",
-      "\"School is Cool\" emerged in the 1990s decade."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nThere isn't enough context provided about the song \"School is Cool\" to determine the genre or the decade it emerged in.",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2612,
@@ -1070,16 +1034,9 @@
     "id": 2629,
     "user_query": "You MUST give a detailed answer to the following question: Loïc Baa has made an appearance for which team that was founded in 1893?",
     "llama-7b_response": "celtic",
-    "llama-7b_fact_raw": "1. Loïc Baa has made an appearance for Celtic.\n2. Celtic was founded in 1893.",
-    "llama-7b_fact": [
-      "Loïc Baa has made an appearance for Celtic.",
-      "Celtic was founded in 1893."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. FALSE [correction]: Celtic was founded in 1887.",
-    "llama-7b_judge": [
-      "unknown",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2641,
@@ -1125,16 +1082,9 @@
     "id": 2795,
     "user_query": "You MUST give a detailed answer to the following question: Which Argentine professional basketball player currently plays for the San Antonio Spurs, Juan Pablo Vaulet or Manu Ginóbili?",
     "llama-7b_response": "juan pablo vaulet",
-    "llama-7b_fact_raw": "1. Juan Pablo Vaulet is an Argentine professional basketball player.\n2. Juan Pablo Vaulet plays for the San Antonio Spurs.",
-    "llama-7b_fact": [
-      "Juan Pablo Vaulet is an Argentine professional basketball player.",
-      "Juan Pablo Vaulet plays for the San Antonio Spurs."
-    ],
-    "llama-7b_judge_raw": "1. TRUE\n2. FALSE [correction]: Without a current year context, it cannot be verified if Juan Pablo Vaulet plays for the San Antonio Spurs, as professional athletes can change teams. As of my last update, Juan Pablo Vaulet was not listed as a player for the San Antonio Spurs.",
-    "llama-7b_judge": [
-      "true",
-      "false"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 2798,
@@ -1188,11 +1138,11 @@
     "id": 2906,
     "user_query": "You MUST give a detailed answer to the following question: When did shooting for the episode \"Pilot\" begin for the HBO series The Deuce?",
     "llama-7b_response": "June 6, 2016",
-    "llama-7b_fact_raw": "1. Shooting for the \"Pilot\" episode of the HBO series The Deuce began on June 6, 2016.",
+    "llama-7b_fact_raw": "1. Shooting for the episode \"Pilot\" of the HBO series The Deuce began on June 6, 2016.",
     "llama-7b_fact": [
-      "Shooting for the \"Pilot\" episode of the HBO series The Deuce began on June 6, 2016."
+      "Shooting for the episode \"Pilot\" of the HBO series The Deuce began on June 6, 2016."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n\nWith the information provided, I cannot verify the exact date when shooting for the \"Pilot\" episode of the HBO series \"The Deuce\" began. Additional context or a source would be required to determine the accuracy of this statement.",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout specific information about the shooting dates for the HBO series \"The Deuce,\" it is not possible to confirm the accuracy of the statement.",
     "llama-7b_judge": [
       "unknown"
     ]
@@ -1225,14 +1175,9 @@
     "id": 3010,
     "user_query": "You MUST give a detailed answer to the following question: what month did equestrian games take place in 2006 in Qatar's capital city?",
     "llama-7b_response": "April",
-    "llama-7b_fact_raw": "1. Equestrian games took place in April 2006 in Qatar's capital city.",
-    "llama-7b_fact": [
-      "Equestrian games took place in April 2006 in Qatar's capital city."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN",
-    "llama-7b_judge": [
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3038,
@@ -1283,29 +1228,17 @@
     "id": 3075,
     "user_query": "You MUST give a detailed answer to the following question: Portland's copy of the Joan of Arc statue was dedicated to members of what branch of military?",
     "llama-7b_response": "oregon national guard",
-    "llama-7b_fact_raw": "1. The Portland copy of the Joan of Arc statue was dedicated to members of the Oregon National Guard.",
-    "llama-7b_fact": [
-      "The Portland copy of the Joan of Arc statue was dedicated to members of the Oregon National Guard."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3147,
     "user_query": "You MUST give a detailed answer to the following question: Ensemble Pieces, which was a classical work done in part by John Adams, had strong roots in what style of music?",
     "llama-7b_response": "minimalism",
-    "llama-7b_fact_raw": "1. \"Ensemble Pieces\" is a classical work done in part by John Adams.\n2. \"Ensemble Pieces\" has strong roots in the style of music known as minimalism.",
-    "llama-7b_fact": [
-      "\"Ensemble Pieces\" is a classical work done in part by John Adams.",
-      "\"Ensemble Pieces\" has strong roots in the style of music known as minimalism."
-    ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n\nThe context provided does not include enough information to verify the truthfulness of these statements about \"Ensemble Pieces\" and its stylistic roots. The work referenced may exist and could be related to minimalism, which John Adams is known for, but without further details, the correctness of the statements cannot be determined.",
-    "llama-7b_judge": [
-      "unknown",
-      "unknown"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3171,
@@ -1461,7 +1394,7 @@
       "The portrait surrounds Maynard Holbrook Jackson.",
       "Maynard Holbrook Jackson served as the 58th mayor of Atlanta."
     ],
-    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. FALSE [correction]: Maynard Holbrook Jackson served as the 49th and 56th mayor of Atlanta, not the 58th.",
+    "llama-7b_judge_raw": "1. UNKNOWN\n2. UNKNOWN\n3. FALSE [correction]: Maynard Holbrook Jackson served as the 56th mayor of Atlanta, not the 58th.",
     "llama-7b_judge": [
       "unknown",
       "unknown",
@@ -1504,14 +1437,9 @@
     "id": 3776,
     "user_query": "You MUST give a detailed answer to the following question: What conference did the team that plays for a public research university in Norman, Oklahoma compete in 1991?",
     "llama-7b_response": "big eight",
-    "llama-7b_fact_raw": "1. In 1991, the team from a public research university in Norman, Oklahoma competed in the Big Eight Conference.",
-    "llama-7b_fact": [
-      "In 1991, the team from a public research university in Norman, Oklahoma competed in the Big Eight Conference."
-    ],
-    "llama-7b_judge_raw": "1. TRUE",
-    "llama-7b_judge": [
-      "true"
-    ]
+    "llama-7b_fact_raw": "NO FACTS",
+    "llama-7b_fact": [],
+    "llama-7b_judge": []
   },
   {
     "id": 3805,
@@ -1537,9 +1465,9 @@
     "llama-7b_fact": [
       "The Birks Group took over Rodens Brothers in 1924."
     ],
-    "llama-7b_judge_raw": "1. FALSE [correction]: Birks Group did not take over Rodens Brothers in 1924. The company that Birks Group, originally known as Henry Birks and Sons, took over in 1924 was Ryrie Bros.",
+    "llama-7b_judge_raw": "UNKNOWN\n\nWithout additional context or information about the Birks Group and Rodens Brothers, it is not possible to determine the accuracy of the statement.",
     "llama-7b_judge": [
-      "false"
+      "unknown"
     ]
   },
   {
