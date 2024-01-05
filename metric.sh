@@ -123,15 +123,15 @@
 
 # # SFT
 
-# DirList=("complexity" "difficulty" "diversity" "scaling")
-# for dir in ${DirList[*]}; do
-#     python metric.py --model llama-7b --data-dir "./task/SFT/sft_judge/$dir"
-# done
-
-DirList=("flan" "sharegpt" "sinstruct" "sinstruct_sharegpt" "sinstruct_sharegpt_flan_10k")
+DirList=("complexity" "difficulty" "diversity" "scaling")
 for dir in ${DirList[*]}; do
     python metric.py --model llama-7b --data-dir "./task/SFT/sft_judge/$dir"
 done
+
+# DirList=("flan" "sharegpt" "sinstruct" "sinstruct_sharegpt" "sinstruct_sharegpt_flan_10k")
+# for dir in ${DirList[*]}; do
+#     python metric.py --model llama-7b --data-dir "./task/SFT/sft_judge/$dir"
+# done
 
 # python metric.py --model llama-7b --data-dir "./task/SFT/sft_judge/llama-7b/"
 
