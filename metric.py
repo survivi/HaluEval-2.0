@@ -12,9 +12,9 @@ def load_pure_data(data_dir, file):
     with open(os.path.join(data_dir, f"{file}.json"), "r", encoding="utf-8") as f:
         raw = json.load(f)
         data = [d for d in raw if d[model + "_judge"]]
-        # print(
-        #     f"Total: {len(data)}, original: {len(raw)}, filtered: {len(raw) - len(data)}"
-        # )
+        print(
+            f"Total: {len(data)}, original: {len(raw)}, filtered: {len(raw) - len(data)}"
+        )
     return data
 
 
@@ -111,10 +111,10 @@ if __name__ == "__main__":
     TO_EXCEL = 0
     if TO_EXCEL:
         tasks = [
-            # "prompt_format",
-            # "prompt_improvement",
+            "prompt_format",
+            "prompt_improvement",
             "self_reflexion",
-            # "origin",
+            "origin",
         ]
         file_list = [
             "Bio-Medical",

@@ -40,24 +40,13 @@ class Factbot(Chatbot):
         """
         if len(data) == 0:
             return
-
-        if self.assist_model == "gpt-4":
-            # complete_func = self.gpt_4_complete
-            complete_func = self.openai_complete
-        else:
-            complete_func = self.openai_complete
-
         for i in tqdm(range(len(data)), ncols=100):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
             query = prompt.format(
                 query=data[i]["user_query"], answer=data[i][self.model + "_response"]
             )
-
-            ans = complete_func(query, self.assist_model, **kwargs)
-            if ans == "FAILED" or ans == "TIMEOUT":
-                continue
-
+            ans = self.openai_complete(query, self.assist_model, **kwargs)
             data[i][self.model + "_fact_raw"] = ans
             ans = self.post_process(ans)
             facts = self.get_facts_lst(ans)

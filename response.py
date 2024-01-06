@@ -15,30 +15,6 @@ from transformers import (
 )
 
 
-def check_exist(path):
-    """
-    Check if the path exists, if not, create it.
-    """
-    if not os.path.exists(path):
-        os.makedirs(path)
-
-
-class ExceedException(Exception):
-    """
-    Exception for exceeding daily limit.
-    """
-
-    pass
-
-
-class NoneTypeException(Exception):
-    """
-    Exception for requests where the returned data is None.
-    """
-
-    pass
-
-
 class Bot(object):
     """
     Base class for chatbot.
@@ -47,17 +23,17 @@ class Bot(object):
     def __init__(self, model):
         self.model = model  # chat model
         self.model2path = {
-            "llama-2-7b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-7b-chat-hf/",
-            "llama-2-13b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-13b-chat-hf/",
-            "alpaca-7b": "/media/public/models/huggingface/alpaca-7b/",
-            "vicuna-7b": "/media/public/models/huggingface/vicuna-7b/",
-            "vicuna-13b": "/media/public/models/huggingface/vicuna-13b-v1.1/",
-            "llama-7b": "/media/public/models/huggingface/llama-7b/",
-            "yulan-chat-2-13b-fp16": "/media/public/models/huggingface/YuLan-Chat-2-13b-fp16",
-            "llama-2-70b-chat-hf": "/media/public/models/huggingface/meta-llama/Llama-2-70b-chat-hf/",
-            "falcon-40b": "/media/public/models/huggingface/falcon-40b",
-            "galactica-30b": "/media/public/models/huggingface/galactica-30b",
-            "gpt-neox-20b": "/media/public/models/huggingface/gpt-neox-20b",
+            "llama-2-7b-chat-hf": "",
+            "llama-2-13b-chat-hf": "",
+            "alpaca-7b": "",
+            "vicuna-7b": "",
+            "vicuna-13b": "",
+            "llama-7b": "",
+            "yulan-chat-2-13b-fp16": "",
+            "llama-2-70b-chat-hf": "",
+            "falcon-40b": "",
+            "galactica-30b": "",
+            "gpt-neox-20b": "",
         }  # local model path
         self.tokenizer = None  # tokenizer
         self.llm = None  # model to generate response
@@ -119,8 +95,8 @@ class Chatbot(Bot):
         self.data_path = data_path  # path to data
         self.save_path = save_path  # path to save
         self.save_data = []  # data to save
-        self.max_retry = 3  # max retry times
-        self.frequency = 3  # save frequency
+        self.max_retry = 5  # max retry times
+        self.frequency = 100  # save frequency
 
     def load_data(self, part=0):
         """
@@ -159,94 +135,6 @@ class Chatbot(Bot):
             ids = [i["id"] for i in self.save_data]
             data = [i for i in data if i["id"] not in ids]
         return data
-
-    @func_set_timeout(10)
-    def get_access_token(self):
-        """
-        Get access token for chatgpt_hi_request.
-        """
-        url = "https://hi-open.zhipin.com/open-apis/auth/tenant_access_token/internal"
-        payload = json.dumps(
-            {
-                "app_id": "bli_yt3xllynei5rqqdj",
-                "app_secret": "dd9684e41df14f69a4244583ca03ac54",
-            }
-        )
-        headers = {"Content-Type": "application/json"}
-        response = requests.request("POST", url, headers=headers, data=payload)
-        data = json.loads(response.text)
-        return data["data"]["tenant_access_token"]
-
-    @func_set_timeout(20)
-    def chatgpt_hi_request(
-        self,
-        message,
-        # sys_msg="You are good at Text-to-SQL",
-        model="4",
-        # temperature=1.0,
-        # top_p=0.9,
-    ):
-        """
-        model type:
-            2: GPT3.5
-            4: GPT4-8k
-            5: GPT-4-32k
-        """
-        url = "https://hi-open.zhipin.com/open-apis/ai/open/api/send/message"
-        headers = {
-            "Authorization": "Bearer {0}".format(self.get_access_token()),
-            "Content-Type": "application/json",
-        }
-        messages = [
-            # {"role": "system", "content": sys_msg},
-            {"role": "user", "content": message},
-        ]
-        payload = json.dumps(
-            {
-                "model": model,
-                "messages": messages,
-                "temperature": 0.0,
-                # "top_p": top_p,
-            }
-        )
-        response = requests.request("POST", url, headers=headers, data=payload)
-        if response is None:
-            raise NoneTypeException
-        data = json.loads(response.text)
-        if data is None:
-            raise NoneTypeException
-        if data["msg"] == "应用触发每日tokens频控，请明日再试":
-            raise ExceedException
-        return data["data"]["choices"][0]["message"]["content"]
-
-    def gpt_4_complete(self, query, chat_model, **kwargs):
-        """
-        Complete using GPT-4.
-        """
-        coun = 0
-        while True:
-            try:
-                res = self.chatgpt_hi_request(query)
-                break
-            except ExceedException:
-                raise Exception("Exceed daily limit")
-            except NoneTypeException:
-                print("NoneType\nRetrying after 5s...")
-                time.sleep(5)
-            except func_timeout.exceptions.FunctionTimedOut:
-                coun += 1
-                if coun > self.max_retry:
-                    res = "TIMEOUT"
-                    break
-            except Exception as e:
-                print(f"Error: {str(e)}\nRetrying...")
-                coun += 1
-                if coun > self.max_retry:
-                    res = "FAILED"
-                    break
-        if res is None:
-            res = "FAILED"
-        return res
 
     @func_set_timeout(20)
     def chatgpt_complete(self, query, **kwargs):
@@ -560,7 +448,6 @@ class Parser(object):
             "--assist-model",
             default="gpt-4",
             choices=[
-                "chatgpt",
                 "gpt-4",
             ],
             help="facts generation model to use",
@@ -586,7 +473,6 @@ class Parser(object):
             "--assist-model",
             default="gpt-4",
             choices=[
-                "chatgpt",
                 "gpt-4",
             ],
             help="judge model to use",
@@ -619,6 +505,14 @@ class Parser(object):
         print(f"Process ID: [{os.getpid()}] | Arguments:")
         for arg in vars(self.args):
             print(f"    {arg}: {getattr(self.args, arg)}")
+
+
+def check_exist(path):
+    """
+    Check if the path exists, if not, create it.
+    """
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 
 if __name__ == "__main__":

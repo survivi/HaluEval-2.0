@@ -53,13 +53,6 @@ class Judgebot(Chatbot):
         """
         if len(data) == 0:
             return
-
-        if self.assist_model == "gpt-4":
-            # complete_func = self.gpt_4_complete
-            complete_func = self.openai_complete
-        else:
-            complete_func = self.openai_complete
-
         for i in tqdm(range(len(data)), ncols=100):
             if len(self.save_data) % self.frequency == 0:
                 self.save()
@@ -70,11 +63,9 @@ class Judgebot(Chatbot):
                 query = prompt.format(
                     facts="\n".join([f"{i+1}. {fact}" for i, fact in enumerate(facts)])
                 )
-
-                ans = complete_func(query, self.assist_model, **kwargs)
+                ans = self.openai_complete(query, self.assist_model, **kwargs)
                 if ans == "FAILED" or ans == "TIMEOUT":
                     continue
-
                 data[i][self.model + "_judge_raw"] = ans
                 ans = self.post_process(ans)
                 judge_lst = self.get_judge_lst(ans, facts)
