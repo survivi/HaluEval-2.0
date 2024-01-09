@@ -4,4 +4,4 @@
 
 </div>
 
-This is the repo for our paper: The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models.
+**The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models**
